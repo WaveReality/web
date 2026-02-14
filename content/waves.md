@@ -189,7 +189,7 @@ todo: potential implications for gravitation, etc?
 
 At this point, it is useful to use the [[wave-reality]] simulator to see how the above equations give rise to wave behavior, so you have a solid understanding of that, along with some basic wave behavior, before continuing. Follow the directions given in the [[waves-sim]] exploration --- stick to the one dimensional wave equation for the time being --- we'll pick up the 3D one later.
 
-One of the most fascinating and amazing properties that you'll explore in this simulation is **superposition**, as shown in --- it is even more compelling seeing it happen in full motion in the simulation.
+One of the most fascinating and amazing properties that you'll explore in this simulation is **superposition**, as shown in [[#figure_superposition]] --- it is even more compelling seeing it happen in full motion in the simulation.
 
 The absolutely critical point about superposition is this: **linear superposition means that the wave packets have no possible way of interacting with each other --- they just pass right through each other like ghosts** --- the entire edifice of standard quantum mechanics, being based on the linear Schrodinger wave equation, is thus fundamentally incapable of capturing any form of possible interaction among wave packets --- all interaction must be mediated either through an external potential, or more typically, by putting the waves into high-dimensional spaces where the interaction becomes an unfolding dynamic of wave propagation across these different dimensions.
 
@@ -198,13 +198,13 @@ Another critical property of waves is that there must be an integer (discrete, q
 ## Second-order Derivative Formulation and the Laplacian
 
 {id="figure_derivative" style="height:20em"}
-![A derivative is just the slope of a function at a given point --- figure shows the slopes at three different points on the function. It is computed in discrete space and time in terms of the change in y divided by the change in x.](media/fig_derivatives.png)
+![A derivative is just the slope of a function at a given point. This figure shows the slopes at three different points on the function. It is computed in discrete space and time in terms of the change in y divided by the change in x.](media/fig_derivatives.png)
 
 {id="figure_derivative-1d" style="height:20em"}
 ![Discrete space derivatives for our wave equation, computed as difference in y values divided by space between "cells".](media/fig_wave_eq_1d_derivatives.png)
 
 {id="figure_laplacian-1d" style="height:20em"}
-![The second-order spatial derivative, which is the difference of the first-order derivatives around the central point, divided as we must do in a derivative by the distance between points. This is the source of the restoring force in the wave equation, which should be familiar from the Newtonian version of the wave equation as shown in Figure 2. When this equation is properly generalized to multiple spatial dimensions, it is called the *Laplacian*.](media/fig_wave_eq_1d_laplacian.png)
+![The second-order spatial derivative, which is the difference of the first-order derivatives around the central point, divided as we must do in a derivative by the distance between points. This is the source of the restoring force in the wave equation, which should be familiar from the Newtonian version of the wave equation as shown in Figure 2. When this equation is properly generalized to multiple spatial dimensions, it is called the _Laplacian_.](media/fig_wave_eq_1d_laplacian.png)
 
 Now that you understand how waves emerge from the simple wave equation, we can work in a bit more mathematical notation based on **derivatives**, moving beyond the dot and double-dot introduced above ([[#figure_derivative]]). This will help in obtaining a more complete understanding of the wave equation, and provides a simpler, more compact notation that will be used in developing more complex wave equations later.
 

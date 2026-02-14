@@ -1,36 +1,55 @@
-![fig1](media/fig_wave_packet_raw.png)
++++
+bibfile = "mechphys.json"
++++
 
-**Figure 4.1:** A wave packet, which is a spatially localized wave disturbance that propagates through space as a coherent entity. The two values shown here are the state value and the first derivative --- the relationship between these two determines which direction the wave travels. This is our model for a particle. Mathematically, it can be constructed by multiplying a Gaussian function (normal bell-shaped distribution curve) times a sine wave.
+{id="figure_packet" style="height:20em"}
+![A wave packet, which is a spatially localized wave disturbance that propagates through space as a coherent entity. The two values shown here are the state value and the first derivative --- the relationship between these two determines which direction the wave travels. This is our model for a particle. Mathematically, it can be constructed by multiplying a Gaussian function (normal bell-shaped distribution curve) times a sine wave.](media/fig_wave_packet_raw.png)
 
-![fig2](media/fig_kg_mass_drag.png)
+{id="figure_mass" style="height:20em"}
+![The additional mass term $-m_0^2 \varphi$ in the Klein-Gordon (KG) wave equation "drags down" the wave in proportion to the height of the waves (i.e., amplitude away from zero, either positive or negative). This fights against the curvature of the wave, computed by $\nabla^2$. Higher frequency waves have higher curvature, and thus move faster than lower frequency waves.](media/fig_kg_mass_drag.png)
 
-**Figure 4.2:** The additional mass term $-m_0^2 \varphi$ in the Klein-Gordon (KG) wave equation "drags down" the wave in proportion to the height of the waves (i.e., amplitude away from zero, either positive or negative). This fights against the curvature of the wave, computed by $\nabla^2$. Higher frequency waves have higher curvature, and thus move faster than lower frequency waves.
+In beginning to explore the wave model of matter, we need to first establish a few basic concepts of what it would even mean for a particle to be described by a wave. The main idea is that a particle corresponds to a _wave packet_, which is a spatially localized wave disturbance ([[#figure_packet]]). It can act like a particle in that it is somewhat spatially localized, and moves as a coherent entity. If you zoomed out very far, and blurred your eyes, you could imagine that a wave packet would look like a tiny point particle.
 
-In beginning to explore the wave model of matter, we need to first establish a few basic concepts of what it would even mean for a particle to be described by a wave. The main idea is that a particle corresponds to a {\em wave packet}, which is a spatially localized wave disturbance . It can act like a particle in that it is somewhat spatially localized, and moves as a coherent entity. If you zoomed out very far, and blurred your eyes, you could imagine that a wave packet would look like a tiny point particle. Nevertheless, it fundamentally acts like a wave, in the sense that it is actually made of oscillations, and obeys a wave equation. As to what exactly the wave material is and what it means for observations, we'll postpone for later. At this point, we'll content ourselves with this level of description, and just start developing some new twists on the basic wave equation; we'll return to the thorny interpretational issues (e.g., wave-particle duality, probabilistic interpretation of the wave, etc), once we have a better sense of how these new waves behave.
+Nevertheless, it fundamentally acts like a wave, in the sense that it is actually made of oscillations, and obeys a wave equation. As to what exactly the wave material is and what it means for observations, we'll postpone for later. At this point, we'll content ourselves with this level of description, and just start developing some new twists on the basic wave equation; we'll return to the thorny interpretational issues (e.g., wave-particle duality, probabilistic interpretation of the wave, etc), once we have a better sense of how these new waves behave.
 
 Recall that the wave equation can be written as a second-order differential equation:
 
-- **standard wave equation:** $\frac{\partial^2 {\varphi}}{\partial t^2} = c^2 \nabla^2 \varphi $
+{id="eq_wave" title="standard wave equation"}
+$$
+\frac{\partial^2 {\varphi}}{\partial t^2} = c^2 \nabla^2 \varphi
+$$
 
-What if we add a single new term to this equation, where we subtract away some *mass* ($m_0$, a constant) from the Laplacian ($\nabla^2 \varphi$) curvature driving force term ():
+What if we add a single new term to this equation, where we subtract away some *mass* ($m_0$, a constant) from the Laplacian ($\nabla^2 \varphi$) curvature driving force term ([[#figure_mass]]):
 
-- $\frac{\partial^2 {\varphi}}{\partial t^2} = c^2 \left( \nabla^2 \varphi - \frac{m_0^2}{\hbar^2} \varphi \right) $
+{id="eq_mass" title="mass subtraction"}
+$$
+\frac{\partial^2 {\varphi}}{\partial t^2} = c^2 \left( \nabla^2 \varphi - \frac{m_0^2}{\hbar^2} \varphi \right)
+$$
 
 or, in somewhat simpler notation that we'll use more frequently:
 
-- $\frac{\partial^2 {\varphi}}{\partial t^2} {{=}} c^2 \left(\nabla^2 - \frac{m_0^2}{\hbar^2} \right) \varphi $
+{id="eq_kg" title="Klein-Gordon equation"}
+$$
+\frac{\partial^2 {\varphi}}{\partial t^2} {{=}} c^2 \left(\nabla^2 - \frac{m_0^2}{\hbar^2} \right) \varphi
+$$
 
-where "hbar" $\hbar = \frac{h}{2\pi}$ and $h$ is Planck's constant. As we elaborate below, the most natural interpretation of Planck's constant here is as a simple scaling term on the impact of mass on the matter wave dynamics --- for this reason, we strongly argue that anything having to do with this constant reflects an interaction with matter waves, and for example it makes no sense to use *h* in characterizing the behavior of light waves, because they have no mass and as we saw in the previous chapter, there is no evidence of any such constant in the fundamental EM wave equations. Thus, as we discussed in the [Introduction](ch01_intro.md), Einstein's creation of the photon with energy $E = h \nu$ is really just a calculational tool for representing the interaction between EM waves and matter in atomic systems, and it is the matter waves that impart the *h* constant, not the EM "photon".
+where "hbar" $\hbar = \frac{h}{2\pi}$ and $h$ is Planck's constant. As we elaborate below, the most natural interpretation of Planck's constant here is as a simple scaling term on the impact of mass on the matter wave dynamics. For this reason, we strongly argue that anything having to do with this constant reflects an interaction with matter waves, and for example it makes no sense to use *h* in characterizing the behavior of light waves, because they have no mass. There is no evidence of any such constant in [[Maxwell]]'s EM wave equations.
 
-As noted, this new equation is called the **Klein-Gordon (KG)** equation, named after Oskar Klein and Walter Gordon, who published the first papers on it (Klein, 1926; Gordon, 1927; see Kragh, 1984 for a detailed history of this equation, which was actually discovered by many individuals, including Schrodinger). This equation captures a surprising number of important phenomena, as we detail next.
+Thus, Einstein's creation of the photon with energy $E = h \nu$ is really just a calculational tool for representing the interaction between EM waves and matter in atomic systems, and it is the matter waves that impart the *h* constant, not the EM "photon".
+
+This new equation ([[#eq_kg]]) is called the **Klein-Gordon (KG)** equation, named after Oskar Klein and Walter Gordon, who published the first papers on it ([[@Klein26]]; [[@Gordon27]]; see [[@Kragh84]] for a detailed history of this equation, which was actually discovered by many individuals, including Schrodinger). This equation captures a surprising number of important phenomena, as we detail next.
 
 First, we'll introduce some variations on how to write this equation, which are all obviously identical to the KG equation given above, but highlight different features of it, as we'll see more later. Here's one such variation:
 
-- $\frac{\partial^2 {\varphi}}{\partial t^2} - c^2 \nabla^2\varphi = -\frac{c^2 m_0^2}{\hbar^2} \varphi $
+$$
+\frac{\partial^2 {\varphi}}{\partial t^2} - c^2 \nabla^2\varphi = -\frac{c^2 m_0^2}{\hbar^2} \varphi
+$$
 
 and another:
 
-- $\left(\frac{\partial^2 {}}{\partial t^2} - c^2 \nabla^2 + \frac{c^2 m_0^2}{\hbar^2}\right) \varphi = 0 $
+$$
+\left(\frac{\partial^2 {}}{\partial t^2} - c^2 \nabla^2 + \frac{c^2 m_0^2}{\hbar^2}\right) \varphi = 0
+$$
 
 These last two forms are useful for relating to the four-vector version of the wave equation, where we saw that:
 
@@ -46,15 +65,17 @@ or:
 
 To actually implement this KG equation in our cellular automaton model, we make one modification to the acceleration term, to subtract off the mass:
 
-- **Discrete Klein-Gordon equation:** $\ddot \varphi_i^{t+1} = c^2 \frac{3}{13}\sum\_{j \in N\_{26}} k_j (\varphi_j - \varphi_i) - \frac{c^2 m_0^2}{\hbar^2} \varphi_i $
+{id="eq_disc" title="discrete Klein-Gordon equation"}
+$$
+\ddot \varphi_i^{t+1} = c^2 \frac{3}{13}\sum\_{j \in N\_{26}} k_j (\varphi_j - \varphi_i) - \frac{c^2 m_0^2}{\hbar^2} \varphi_i
+$$
 
 ## Variable Speeds: Momentum from Frequency
 
 {id="figure_frequency" style="height:20em"}
 ![Relationship between frequency and speed in the Klein-Gordon (KG) wave function, which derives from competition between the "mass drag" and the overall curvature of the wave. Higher frequency waves have more curvature and thus move faster.](media/fig_kg_freq_speed.png)
 
-
-One of the most important features of this KG equation is that waves now travel at *variable speeds*, instead of always moving at exactly the same speed (the speed of light). This speed now depends on the relationship between the curvature ($\nabla^2 \varphi$) and the squared-mass value $\frac{m_0^2}{\hbar^2} \varphi$. In essence, the mass "drags down" the wave propagation force conveyed by the local curvature, $\nabla^2 \varphi$. Therefore, to get the wave to move faster, you need more curvature, which is to say, a higher frequency wave, because higher frequency waves have more waves per unit length, and this means overall greater "curvature" ([[#figure_frequency]]).
+One of the most important features of this KG equation is that waves now travel at _variable speeds_, instead of always moving at exactly the same speed (the speed of light). This speed now depends on the relationship between the curvature ($\nabla^2 \varphi$) and the squared-mass value $\frac{m_0^2}{\hbar^2} \varphi$. In essence, the mass "drags down" the wave propagation force conveyed by the local curvature, $\nabla^2 \varphi$. Therefore, to get the wave to move faster, you need more curvature, which is to say, a higher frequency wave, because higher frequency waves have more waves per unit length, and this means overall greater "curvature" ([[#figure_frequency]]).
 
 This relationship between frequency $f$ of a wave and the momentum (velocity \* mass) of the particle that it describes is captured in one of the most basic equations of quantum physics:
 
@@ -72,17 +93,26 @@ so that momentum is inversely proportional to the length of the waves:
 
 Although it might be tempting to compute the velocity from the momentum expression given above (e.g., $p = m v$ so $v = \frac{p}{m}$), this is not accurate due to the effects of special relativity as we discuss in greater detail below. Instead, the appropriate equation that relates the momentum and the velocity is:
 
-- **relativistic momentum-velocity relationship:** $p = \gamma m_0 v $
+{id="eq_" title="relativistic momentum-velocity relationship"}
+$$
+p = \gamma m_0 v
+$$
 
-where $\gamma$ is the Lorentz factor as described here: [Special Relativity](#special_relativity). When we make all the necessary substitutions and do a bit of algebra, we end up with this expression for the velocity of the "particle" as a function of wavelength, rest mass, and the relevant constants:
+where $\gamma$ is the Lorentz factor as described in [[special relativity]]. When we make all the necessary substitutions and do a bit of algebra, we end up with this expression for the velocity of the "particle" as a function of wavelength, rest mass, and the relevant constants:
 
-- **velocity as function of wavelength, relativistically correct:** $v = \frac{h c}{\sqrt{c^2 m_0^2 \lambda^2 + h^2}}$
+{id="eq_" title="velocity as function of wavelength, relativistically correct"}
+$$
+v = \frac{h c}{\sqrt{c^2 m_0^2 \lambda^2 + h^2}}
+$$
 
-See [Velocity Derivation](#velocity_derivation) for all the algebraic steps in this derivation. In the exploration below we'll confirm this equation experimentally. The complexity of this equation for velocity versus the much simpler expressions for momentum indicate why momentum and not velocity is the natural quantity to deal with in relativistic wave functions.
+See [[#velocity_derivation]] for all the algebraic steps in this derivation. In the exploration below we'll confirm this equation experimentally. The complexity of this equation for velocity versus the much simpler expressions for momentum indicate why momentum and not velocity is the natural quantity to deal with in relativistic wave functions.
 
 Also, as we will explore in greater detail later, the momentum can be computed directly from the wave function in terms of the first-order spatial derivative or gradient:
 
-- **essence of momentum operator:** $\vec{p} \propto \vec{\nabla} \varphi $
+{id="eq_" title="essence of momentum operator"}
+$$
+\vec{p} \propto \vec{\nabla} \varphi
+$$
 
 where this spatial gradient is again going to be greater overall as the wave frequency increases, as suggested by the quantum mechanical relationships above.
 
@@ -116,7 +146,7 @@ As a continuous-valued second-order wave equation, the KG equation still has all
 
 In contrast, models with a discrete particle suffer from all manner of complexity in overcoming such problems. Thus, by describing a particle exclusively using this wave equation, we avoid many difficulties, and it remains to be seen if we encounter any other problems.
 
-# Exploration of Klein-Gordon Waves
+## Exploration of Klein-Gordon Waves
 
 Now we explore the above properties of the Klein-Gordon wave equation, to get a concrete sense of how it works, before turning to a more extended discussion of how the KG wave equation explains the stretchy properties of matter implied by the Lorentz transformation and special relativity.
 
@@ -124,21 +154,23 @@ Now we explore the above properties of the Klein-Gordon wave equation, to get a 
 
 Creating a moving wave packet that moves with a given velocity is a bit more complicated than for the simple wave equation, because we have more constraints to take into account.
 
-# Schrodinger's Equation vs Klein-Gordon
+## Schrodinger's Equation vs Klein-Gordon
 
 The Klein-Gordon equation that we've been exploring is typically introduced as a strange and problematic alternative to the Schrodinger wave equation, which provides the cornerstone of standard quantum physics. As we saw, the KG equation is derived from the relativistic total energy, whereas we'll see here that Schrodinger's equation can be derived from *Newtonian* total energy, and thus is clearly not accurate for anything moving very fast (a significant fraction of the speed of light), or where new particles are created out of raw energy. The fact that it holds such strong sway in the field can be attributed to its strict conservation properties --- as normally interpreted, the Schrodinger equation conserves the total probability value, as it propagates through space. In contrast, the KG equation does not have such a strict conservation behavior.
 
-Furthermore, the Schrodinger equation is a first-order wave equation, which has many advantages from an analytical perspective, even as it makes it very difficult for many people to understand, due to its reliance on [Complex Numbers](#complex_numbers). In general, wave-like behavior can either be described by a second-order equation involving normal scalar variables (as we've been doing), or it can be described by a first-order equation involving complex numbers, exemplified by the Schrodinger equation. In the first-order version, you have two variables for every one variable in the second-order one --- we'll see later that this fact allows us to use only four variables to represent an electron using a second-order wave equation, whereas the standard first-order Dirac equation requires eight. The general intuition is that a first-order wave equation involves motion as rotation among its complex variables, in addition to motion through space, whereas the second-order equation just has motion through space. This will be clearer as we examine Schrodinger's equation more closely.
+Furthermore, the Schrodinger equation is a first-order wave equation, which has many advantages from an analytical perspective, even as it makes it very difficult for many people to understand, due to its reliance on [[complex numbers]]. In general, wave-like behavior can either be described by a second-order equation involving normal scalar variables (as we've been doing), or it can be described by a first-order equation involving complex numbers, exemplified by the Schrodinger equation.
 
-Before we do so, you should review [Complex Numbers](#complex_numbers) if you are not completely familiar with them. Complex numbers are important for understanding Schrodinger's equation (as described thereafter), and for subsequent developments of the KG equation, which requires complex numbers to represent a conserved charge value.
+In the first-order version, you have two variables for every one variable in the second-order one --- we'll see later that this fact allows us to use only four variables to represent an electron using a second-order wave equation, whereas the standard first-order Dirac equation requires eight. The general intuition is that a first-order wave equation involves motion as rotation among its complex variables, in addition to motion through space, whereas the second-order equation just has motion through space. This will be clearer as we examine Schrodinger's equation more closely.
 
-Using the total energy (Hamiltonian) approach, we can derive Schrodinger's equation, using the very same energy and momentum operators that we used in the derivation of the KG equation above. To remind, these operators are:
+Before we do so, you should review [[complex numbers]] if you are not completely familiar with them. Complex numbers are important for understanding [[Schrodinger]]'s equation (as described thereafter), and for subsequent developments of the KG equation, which requires complex numbers to represent a conserved charge value.
+
+Using the total energy ([[Hamiltonian]]) approach, we can derive Schrodinger's equation, using the very same energy and momentum operators that we used in the derivation of the KG equation above. To remind, these operators are:
 
 - **momentum operator:** $\hat{p} = -i \hbar \vec{\nabla} $
 - **energy operator:** $\hat{E} = i \hbar \frac{\partial }{\partial t} $
 - gradient operator: $\vec{\nabla} = \left(\frac{\partial {}}{\partial {x}}, \frac{\partial {}}{\partial {y}}, \frac{\partial}{\partial {z}}\right)$
 
-Next, we need to define the total energy Hamiltonian. Instead of the relativistic total energy, we use the classical Newtonian expression for the kinetic energy of a particle, in terms of its velocity $\vec{v}$, just as we did in the simple wave energy calculation in the [Waves Chapter](ch02_waves.md):
+Next, we need to define the total energy Hamiltonian. Instead of the relativistic total energy, we use the classical Newtonian expression for the kinetic energy of a particle, in terms of its velocity $\vec{v}$, just as we did in the simple wave energy calculation in [[waves]]:
 
 - $K = \frac{1}{2} m_0 \vec{v}^2 = \frac{1}{2 m_0} \vec{p}^2$
 
@@ -199,7 +231,7 @@ One critical property of Schrodinger's equation (which our current scalar KG equ
 
 In other words, the wave packet defines a kind of "cloud of probability" for finding a discrete particle within its midst. However, these probabilities have different meanings in different scenarios, and it is notoriously difficult to come up with a intuitively sensible interpretation of what these probability clouds mean. We return to these issues later.
 
-TODO: say more about conjugate thing and conserved probability.
-
-% todo: demos of schrodinger..
+<!--- TODO: say more about conjugate thing and conserved probability. -->
+<!---  -->
+<!--- % todo: demos of schrodinger.. -->
 
