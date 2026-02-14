@@ -1,4 +1,8 @@
-TODO: intro
++++
+bibfile = "mechphys.json"
++++
+
+<!--- TODO: intro, also [[@MallickChandrashekar16]] -->
 
 # Complex Klein-Gordon Waves: Charge!
 

@@ -14,6 +14,10 @@
 
 <p id="Jaynes90">Jaynes, E.T. (1990). <i>Probability in quantum theory. </i>381. document. Google Scholar. Addison-Wesley, Redwood City, CA. <a href="https://worrydream.com/refs/Jaynes_1990_-_Probability_in_Quantum_Theory.pdf">https://worrydream.com/refs/Jaynes_1990_-_Probability_in_Quantum_Theory.pdf</a></p>
 
+<p id="KochenSpecker90">Kochen, S., & Specker, E.P. (1990). The Problem of Hidden Variables in Quantum Mechanics. In G. Jäger, H. Läuchli, B. Scarpellini, & V. Strassen (Eds.), <i>Ernst Specker Selecta</i> (pp. 235–263). Birkhäuser. <a href="https://doi.org/10.1007/978-3-0348-9259-9_21">https://doi.org/10.1007/978-3-0348-9259-9_21</a><a href="http://doi.org/10.1007/978-3-0348-9259-9_21"> http://doi.org/10.1007/978-3-0348-9259-9_21</a></p>
+
+<p id="MallickChandrashekar16">Mallick, A., & Chandrashekar, C.M. (2016). Dirac Cellular Automaton from Split-step Quantum Walk. <i>Scientific Reports, 6</i>(1), 25779. <a href="http://www.nature.com/articles/srep25779">http://www.nature.com/articles/srep25779</a><a href="http://doi.org/10.1038/srep25779"> http://doi.org/10.1038/srep25779</a></p>
+
 <p id="MarshallSantos88">Marshall, T., & Santos, E. (1988). Stochastic optics: A reaffirmation of the wave nature of light. <i>Foundations of Physics, 18</i>, 185–223. <a href="https://doi.org/10.1007/BF01882931">https://doi.org/10.1007/BF01882931</a><a href="http://doi.org/10.1007/BF01882931"> http://doi.org/10.1007/BF01882931</a></p>
 
 <p id="MarshallSantos97">Marshall, T.W., & Santos, E. (1997). The Myth of The Photon. In S. Jeffers, S. Roy, J. Vigier, & G. Hunter (Eds.), <i>The Present Status of the Quantum Theory of Light</i> (pp. 67–77). Springer Netherlands. <a href="http://doi.org/10.1007/978-94-011-5682-0_7"> http://doi.org/10.1007/978-94-011-5682-0_7</a></p>
@@ -21,6 +25,8 @@
 <p id="Mermin18">Mermin, N.D. (2018). Making better sense of quantum mechanics. <i>Reports on Progress in Physics, 82</i>, 012002. <a href="https://dx.doi.org/10.1088/1361-6633/aae2c6">https://dx.doi.org/10.1088/1361-6633/aae2c6</a><a href="http://doi.org/10.1088/1361-6633/aae2c6"> http://doi.org/10.1088/1361-6633/aae2c6</a></p>
 
 <p id="Nelson66">Nelson, E. (1966). Derivation of the Schr\"odinger Equation from Newtonian Mechanics. <i>Physical Review, 150</i>, 1079–1085. <a href="https://link.aps.org/doi/10.1103/PhysRev.150.1079">https://link.aps.org/doi/10.1103/PhysRev.150.1079</a><a href="http://doi.org/10.1103/PhysRev.150.1079"> http://doi.org/10.1103/PhysRev.150.1079</a></p>
+
+<p id="NeyAlbert13">Ney, A., & Albert, D. (2013). <i>The Wave Function: Essays on the Metaphysics of Quantum Mechanics. </i> Oxford University Press. </p>
 
 <p id="Norsen14">Norsen, T. (2014). The pilot-wave perspective on spin. <i>American Journal of Physics, 82</i>, 337–348. <a href="https://doi.org/10.1119/1.4848217">https://doi.org/10.1119/1.4848217</a><a href="http://doi.org/10.1119/1.4848217"> http://doi.org/10.1119/1.4848217</a></p>
 
@@ -32,9 +38,17 @@
 
 <p id="North12">North, J. (2012). <i>The Structure of a Quantum World. </i>Preprint. <a href="https://philsci-archive.pitt.edu/9347/">https://philsci-archive.pitt.edu/9347/</a></p>
 
+<p id="Ord96">Ord, G.N. (1996). The Schrödinger and diffusion propagators coexisting on a lattice. <i>Journal of Physics A: Mathematical and General, 29</i>, L123–L128. <a href="https://doi.org/10.1088/0305-4470/29/5/007">https://doi.org/10.1088/0305-4470/29/5/007</a><a href="http://doi.org/10.1088/0305-4470/29/5/007"> http://doi.org/10.1088/0305-4470/29/5/007</a></p>
+
+<p id="Santos15">Santos, E. (2015). Towards a Realistic Interpretation of Quantum Mechanics Providing a Model of the Physical World. <i>Foundations of Science, 20</i>, 357–386. <a href="https://doi.org/10.1007/s10699-014-9366-y">https://doi.org/10.1007/s10699-014-9366-y</a><a href="http://doi.org/10.1007/s10699-014-9366-y"> http://doi.org/10.1007/s10699-014-9366-y</a></p>
+
 <p id="Sciarretta18">Sciarretta, A. (2018). A Local-Realistic Model of Quantum Mechanics Based on a Discrete Spacetime (Extended version) <i>Foundations of Physics, 48</i>, 60–91. <a href="http://arxiv.org/abs/1712.03227">http://arxiv.org/abs/1712.03227</a><a href="http://doi.org/10.1007/s10701-017-0129-9"> http://doi.org/10.1007/s10701-017-0129-9</a></p>
 
+<p id="Sciarretta21">Sciarretta, A. (2021). A local-realistic quantum mechanical model of spin and spin entanglement. <i>International Journal of Quantum Information, 19</i>, 2150006. <a href="http://www.worldscientific.com/doi/abs/10.1142/S0219749921500064">http://www.worldscientific.com/doi/abs/10.1142/S0219749921500064</a><a href="http://doi.org/10.1142/S0219749921500064"> http://doi.org/10.1142/S0219749921500064</a></p>
+
 <p id="Spekkens05">Spekkens, R.W. (2005). Contextuality for preparations, transformations, and unsharp measurements. <i>Physical Review A, 71</i>, 052108. <a href="https://link.aps.org/doi/10.1103/PhysRevA.71.052108">https://link.aps.org/doi/10.1103/PhysRevA.71.052108</a><a href="http://doi.org/10.1103/PhysRevA.71.052108"> http://doi.org/10.1103/PhysRevA.71.052108</a></p>
+
+<p id="Struyve20">Struyve, W. (2020). Semi-classical approximations based on Bohmian mechanics. <i>International Journal of Modern Physics A, <a href="https://www.worldscientific.com/worldscinet/ijmpa">https://www.worldscientific.com/worldscinet/ijmpa</a></i><a href="http://doi.org/10.1142/S0217751X20500700"> http://doi.org/10.1142/S0217751X20500700</a></p>
 
 <p id="Tegmark10">Tegmark, M. (2010). Many Worlds in Context. <a href="http://arxiv.org/abs/0905.2182">http://arxiv.org/abs/0905.2182</a><a href="http://doi.org/10.48550/arXiv.0905.2182"> http://doi.org/10.48550/arXiv.0905.2182</a></p>
 

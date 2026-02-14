@@ -2,7 +2,7 @@
 bibfile = "mechphys.json"
 +++
 
-When David Bohm reinvented the then-neglected pilot-wave framework of de Broglie, he naturally applied it within the prevalent framework of the time, namely the [[Schrodinger]] wave equation operating within non-local, high-dimensional configuration space. He was able to show that you can use the gradient of the Schrodinger wave to guide the motion of discrete particles through 3D space, without ever requiring a final wave collapse event. 
+When David Bohm reinvented the then-neglected pilot-wave framework of de Broglie, he naturally applied it within the prevalent framework of the time, namely the [[Schrodinger]] wave equation operating within non-local, high-dimensional [[configuration space]]. He was able to show that you can use the gradient of the Schrodinger wave to guide the motion of discrete particles through 3D space, without ever requiring a final wave collapse event. 
 
 Instead, the final positions of these particles represent the predicted outcome of an experiment, and, critically, you have to perform many different "runs" of the experiment with the particles starting in different locations that would be consistent with the actual experimental uncertainty in starting state, as captured in the initial configuration of the Schrodinger wave function. Furthermore, you can simply include the "measurement apparatus" as one of the elements in your configuration space, to get specific predictions about the position of a needle or other readout device.
 
