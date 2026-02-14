@@ -1,0 +1,16 @@
++++
+bibfile = "mechphys.json"
++++
+
+Compared to the [[Hilbert space]] approach, the explicit use of the **Schrodinger wave equation** represents an increased level of commitment to the details involved in the dynamics of the wave updating, its frequency and phase characteristics, and how it spreads out over time. As shown in [[Klein-Gordon]], Schrodinger's wave equation captures basic non-relativistic Newtonian physics in a simple linear, first-order framework, and can be derived from a [[Hamiltonian]] representing the total energy of the system, which is strictly conserved over time. It captures the fundamental relationships between momentum and wave frequency described earlier.
+
+However, it has a rather simplistic treatment for how forces affect charged particles in terms of overall scalar potentials, and says nothing in detail about how electric charge generates the EM wave field (or photons for that matter), or the detailed way in which different particles might interact with each other. Indeed, because the Schrodinger wave equation is linear, it is incapable of capturing particle interactions, because the waves simply superpose (additively combine) past each other, without impacting each other at all.
+
+Thus, in order to capture relevant interactions, the Schrodinger wave equation is applied to a multi-dimensional  _configuration space_ representation that is essentially equivalent to the state space representation in matrix mechanics. For example, if there are two interacting particles, then they each get their own set of 3D dimensional coordinates within this configuration space, and the entire wave function evolves over time so as to conserve the overall energy / probability represented in the configuration space.
+
+As noted above, this configuration space is entirely [[non-locality|non-local]] by its very construction, representing at each instant of time the entire configuration of the system, regardless of how far apart any of the particles might be. Interestingly, exactly such a configuration space model is used in _classical_ applications of the Hamiltonian framework, and yet somehow its use there is widely recognized as just being a calculational tool.
+
+In summary, the high-dimensional non-local configuration space is very different from anything anyone would recognize as actual 3D physical space. Nevertheless, one of the most striking and challenging results from these standard QM models is that the non-local effects that they predict actually do appear to be empirically validated. Thus, a significant challenge remains to understand the underlying physical nature of these effects, and how they can occur without violating everything else we have come to regard as strict physical laws, specifically the speed-of-light constraints of special relativity ([[@DurrGoldsteinNorsenEtAl14]]).
+
+Also, while the dimensionality of configuration space increases linearly in the number of particles involved, the underlying computational complexity of the space grows exponentially, and quickly becomes computationally intractable for even relatively moderately-sized such spaces. This is precisely what makes quantum computers so attractive. Nevertheless, it remains unclear how Nature might get around such prohibitive exponential scaling problems, in whatever computation it is performing.
+
