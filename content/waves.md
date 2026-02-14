@@ -351,7 +351,7 @@ The conceptual bottom line for the Laplacian is the same as before: it measures 
 
 {id="eq_wave-2" title="Laplacian wave equation"}
 $$
-\frac{\partial^2 \varphi}{\partial t^2} {{=}} c^2 \nabla^2 \varphi
+\frac{\partial^2 \varphi}{\partial t^2} = c^2 \nabla^2 \varphi
 $$
 
 We prefer the $\nabla^2$ version of the Laplacian because it conveys its essential second-order nature.
@@ -362,7 +362,7 @@ The net result of this is that _a wave packet that is initially localized will i
 
 ## The Discrete 3D Laplacian
 
-{id="figure_cubes" style="height:20em"}
+{id="figure_cubes" style="height:40em"}
 ![The 26 neighbors of a given cell in 3D space, each of which is weighted differently according to its distance --- faces are 1 unit away, edges are $\sqrt{2}$ away, and corners are $\sqrt{3}$ away.](media/fig_space_cubes_fec_lapl.png) 
 
 Now we consider how to compute the 3D Laplacian in the discrete space and time CA framework. To start, we only consider the 6 faces adjacent to the central point ([[#figure_cubes]]), which are relatively easy because each pair of opposing faces can be treated just like a separate one-dimensional second-order derivative like we computed before, so we just have three times the number of terms as before:
@@ -376,14 +376,21 @@ where the subscript indicates the relative offset along the _(x,y,z)_ dimensions
 
 {id="eq_faces-2" title="discrete 3D Laplacian, faces only"}
 $$
-\nabla^2 \varphi = \frac{1}{\epsilon^2} \sum\_{j \in N\_{faces}} (\varphi_j - \varphi_0)
+\nabla^2 \varphi = \frac{1}{\epsilon^2} \sum_{j \in N_{faces}} (\varphi_j - \varphi_0)
 $$
 
 where _j_ is just an index into the set of 6 different faces and $\varphi_0$ is the central point.
 
 The problem with only using the 6 face neighbors is that it misses all the curvature present in the other neighboring points (edges and corners; [[#figure_cubes]]) and as a result, the wave propagation is very **anisotropic** --- it is not the same in every possible direction. Waves flowing along one of the 3 primary dimensions work great, wave disturbances in other directions propagate very differently. If this was how nature worked, then we would easily be able to tell that the rules of physics are different in different directions, which is definitely not the case.
 
-The anisotropy problem can be fixed by including all 26 neighbors, in a relatively simple generalization of the last sum-based expression: \nabla^2 \varphi {{=}} \frac{3}{13 \epsilon^2} \sum\_{j \in N\_{26}} k_j (\varphi_j - \varphi_0) $}} The key to making this work is to have different weighting factors $k_j$ for the different neighbors, depending on their Euclidian distance *d* from the central point:
+The anisotropy problem can be fixed by including all 26 neighbors, in a relatively simple generalization of the last sum-based expression:
+
+{id="eq_all26" title="discrete 3D Laplacian, all 26 neighbors"}
+$$
+\nabla^2 \varphi = \frac{3}{13 \epsilon^2} \sum_{j \in N_{26}} k_j (\varphi_j - \varphi_0)
+$$
+
+The key to making this work is to have different weighting factors $k_j$ for the different neighbors, depending on their Euclidian distance *d* from the central point:
 
 {id="eq_wt" title="neighbor weight"}
 $$
