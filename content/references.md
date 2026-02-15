@@ -2,6 +2,8 @@
 
 <p id="Bell64">Bell, J.S. (1964). On the Einstein Podolsky Rosen paradox. <i>Physics Physique Fizika, 1</i>, 195–200. </p>
 
+<p id="BohmVigier54">Bohm, D., & Vigier, J.P. (1954). Model of the Causal Interpretation of Quantum Theory in Terms of a Fluid with Irregular Fluctuations. <i>Physical Review, 96</i>, 208–216. <a href="https://link.aps.org/doi/10.1103/PhysRev.96.208">https://link.aps.org/doi/10.1103/PhysRev.96.208</a><a href="http://doi.org/10.1103/PhysRev.96.208"> http://doi.org/10.1103/PhysRev.96.208</a></p>
+
 <p id="BudiyonoRohrlich17">Budiyono, A., & Rohrlich, D. (2017). Quantum mechanics as classical statistical mechanics with an ontic extension and an epistemic restriction. <i>Nature Communications, 8</i>, 1306. <a href="https://www.nature.com/articles/s41467-017-01375-w">https://www.nature.com/articles/s41467-017-01375-w</a><a href="http://doi.org/10.1038/s41467-017-01375-w"> http://doi.org/10.1038/s41467-017-01375-w</a></p>
 
 <p id="CavesFuchsSchack02">Caves, C.M., Fuchs, C.A., & Schack, R. (2002). Quantum probabilities as Bayesian probabilities. <i>Physical Review A, 65</i>, 022305. <a href="https://link.aps.org/doi/10.1103/PhysRevA.65.022305">https://link.aps.org/doi/10.1103/PhysRevA.65.022305</a><a href="http://doi.org/10.1103/PhysRevA.65.022305"> http://doi.org/10.1103/PhysRevA.65.022305</a></p>
@@ -33,6 +35,8 @@
 <p id="Norsen17">Norsen, T. (2017). <i>Foundations of Quantum Mechanics: An Exploration of the Physical Meaning of Quantum Theory. <a href="https://ui.adsabs.harvard.edu/abs/2017fqma.book.....N">https://ui.adsabs.harvard.edu/abs/2017fqma.book.....N</a></i><a href="http://doi.org/10.1007/978-3-319-65867-4"> http://doi.org/10.1007/978-3-319-65867-4</a></p>
 
 <p id="Norsen22">Norsen, T. (2022). A Pilot-Wave Approach to the Many-Body Problem: Beyond the Small Entanglement Approximation. <i>Foundations of Physics, 52</i>, 103. <a href="https://doi.org/10.1007/s10701-022-00621-6">https://doi.org/10.1007/s10701-022-00621-6</a><a href="http://doi.org/10.1007/s10701-022-00621-6"> http://doi.org/10.1007/s10701-022-00621-6</a></p>
+
+<p id="Norsen22a">Norsen, T. (2022). Quantum Ontology: Out of This World? In V. Allori (Ed.), <i>Quantum Mechanics and Fundamentality : Naturalizing Quantum Theory between Scientific Realism and Ontological  Indeterminacy</i> (pp. 63–79). Springer International Publishing. <a href="https://doi.org/10.1007/978-3-030-99642-0_5">https://doi.org/10.1007/978-3-030-99642-0_5</a><a href="http://doi.org/10.1007/978-3-030-99642-0_5"> http://doi.org/10.1007/978-3-030-99642-0_5</a></p>
 
 <p id="NorsenMarianOriols15">Norsen, T., Marian, D., & Oriols, X. (2015). Can the wave function in configuration space be replaced by single-particle wave functions in physical space? <i>Synthese, 192</i>, 3125–3151. <a href="https://doi.org/10.1007/s11229-014-0577-0">https://doi.org/10.1007/s11229-014-0577-0</a><a href="http://doi.org/10.1007/s11229-014-0577-0"> http://doi.org/10.1007/s11229-014-0577-0</a></p>
 
