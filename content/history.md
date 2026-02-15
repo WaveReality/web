@@ -2,16 +2,6 @@
 bibfile = "mechphys.json"
 +++
 
-{id="figure_double-slit" style="height:20em"}
-![The double-slit experiment --- narrow openings in the slits cause the wave to spread through diffraction, and because of the different distances traveled in the path from the two different slits to a given point on the far screen P, the waves will experience either constructive or destructive interference, resulting in the wavy bands of light and dark as shown. The quantum paradox here is that this pattern obtains even when a _single particle_ is emitted at a time --- the particle only ever goes through one slit or the other, but somehow the wave goes through both. Figure from wikimedia commons by Lacatosias.](media/fig_double_slit_expt.png)
-
-{id="figure_double-slit-elec" style="height:40em"}
-![Results of a double-slit experiment using electrons, with increasing numbers of electrons recorded (11, 200, 6000, 40000, and 140000). The interference pattern emerges over time, even though only single electrons are detected on each trial. Figure from by Dr. Tonomura via wikimedia commons.](media/fig_double_slit_expt_electrons.jpg)
-
-The _double-slit_ experiment (also known as Young's experiment) ([[#figure_double-slit]]), is said to illustrate the full mystery of quantum mechanics, and nicely demonstrates some puzzling aspects of wave-particle duality. Interestingly, the double slit experiment was around long before quantum mechanics, as a way of generating interference patterns with waves, but it "just got weird" when the intensity of the light, or beam of electrons or other particles, is reduced to the point where there is only a _single particle_ passing through the apparatus at a time.
-
-Surprisingly, one still observes the interference effect in this case ([[#figure_double-slit-elec]]). How can a single "hard little particle", all by itself, produce this wave-like interference effect?  There are _many_ other results that all add up to the strong conclusion that, somehow, elementary particles like electrons have _both_ wave and particle properties.
-
 Historically, the early development of this wave-like property of particles was focused on understanding the nature of simple atoms like hydrogen, which has a single electron orbiting a nucleus. The dominant classical physical model of the atomic system in the early 1900's was the Rutherford model of 1911, with electrons as tiny points of charge and mass, orbiting a nucleus, much like planets orbiting the sun. This model had important failings, which the full development of quantum mechanics resolved, thus cementing the demise of the classical worldview, and solidly establishing quantum mechanics.
 
 The major problem with the classical atom was that it is fundamentally unstable: the electron should emit electromagnetic radiation as it orbits around the nucleus, and thus lose energy. As it loses energy, the orbit must get tighter, and eventually the electron should just collapse into the nucleus, just like one of those quarters you roll around in a gravity well at a science museum. Furthermore, as its orbit gets tighter, it should emit higher frequency radiation, predicting a continuous and increasingly high frequency emission spectrum. Instead, it was known that atoms emit consistent, discrete frequencies of radiation.
@@ -48,7 +38,7 @@ $$
 
 This wavelength is about .165 nanometers for the electrons in the Davisson-Germer experiment (very tiny, but enough to produce a measurable diffraction pattern through the crystal).
 
-Both de Broglie and Schrodinger thought that these [[matter waves]] were real physical things, like light waves. Furthermore, de Broglie suggested that the wave acted to _guide_ the point particle electron around, in his [[pilot wave]] theory. Schrodinger initially had an even more radical view, which abandoned the point electron entirely: he thought his wave equation described a wave of _charge density_ that _is_ the actual electron, without any need for a dual particle-like entity.
+Both de Broglie and Schrodinger thought that these [[matter waves]] were real physical things, like light waves. Furthermore, de Broglie suggested that the wave acted to _guide_ the point particle electron around, in his [[pilot-wave]] theory. Schrodinger initially had an even more radical view, which abandoned the point electron entirely: he thought his wave equation described a wave of _charge density_ that _is_ the actual electron, without any need for a dual particle-like entity.
 
 However, both of these attempts to provide a "physically realistic" perspective on the phenomena were quickly abandoned in the face of further evidence suggesting that the wave function fundamentally describes the _probability_ that a particle might appear at a given point in space when measured. As such, the wave is somehow "non physical",  and yet exerts physically-measurable effects.
 
@@ -70,7 +60,7 @@ This strong discretization of the laws of physics is at the root of many seeming
 However, in the 1950's, David Bohm reinvented the original _pilot-wave_ model of de Broglie, and showed that in fact it can fully explain the same phenomena as the standard Copenhagen QM framework. Critically, in this _de Broglie-Bohm pilot-wave_ framework, _particles always have a definite well-defined location_. There is no longer a complementary discretization of the world into measurement vs. wave-function evolution phases: the two are _always_ operating hand-in-glove, all the time.
 
 {id="figure_double-slit-deb" style="height:20em"}
-![Trajectories for particles in the double-slit experiment computed according to the de Broglie-Bohm pilot wave model. The interference effects can be seen as relatively localized bumps in the trajectories, corresponding to steep gradients in the Schrodinger wave equation. Critically, the underlying trajectories are considered to exist at all points even if you don't happen to observe them.](media/fig_double_slit_debroglie_bohm.png)
+![Trajectories for particles in the double-slit experiment computed according to the de Broglie-Bohm pilot-wave model. The interference effects can be seen as relatively localized bumps in the trajectories, corresponding to steep gradients in the Schrodinger wave equation. Critically, the underlying trajectories are considered to exist at all points even if you don't happen to observe them.](media/fig_double_slit_debroglie_bohm.png)
 
 [[#figure_double-slit-deb]] shows what the underlying trajectories of particles under the pilot-wave framework look like in a double-slit experiment, and [[#figure_double-slit-kocsis]] shows some recent data from an experiment where _weak measurements_ that minimally disturb the system allow one to infer particle trajectories, which look remarkably similar to those predicted by the pilot-wave model ([[@KocsisEtAl11]]).
 

@@ -10,7 +10,7 @@ If the quantum wave function is largely (or even partially) reflecting epistemic
 
 By contrast, the Copenhagen interpretation already takes a laissez-faire epistemic-level approach to the wave function in the first place: it is all just a big untouchable ball of mystery until you do a measurement anyway, so it might as well be epistemic or whatever! The Quantum Bayesianism (QBism) approach takes this to its logical extreme, with an entirely subjective epistemic treatment of the wave function ([[@FuchsMerminSchack14]]; [[@Mermin18]]).
 
-Critically, there is clear evidence from _within the pilot-wave approach itself_ that a not-insignificant portion of the pilot wave actually does represent epistemic uncertainty, because many different possible initial starting states must be modeled to capture our very real uncertainty about the precise starting state of any actual experimental configuration.
+Critically, there is clear evidence from _within the pilot-wave approach itself_ that a not-insignificant portion of the pilot-wave actually does represent epistemic uncertainty, because many different possible initial starting states must be modeled to capture our very real uncertainty about the precise starting state of any actual experimental configuration.
 
 The Heisenberg uncertainty principle dictates that there is a fundamental limit to which we can simultaneously determine all of the relevant degrees of freedom about a physical system, and in practice we almost certainly have well less certainty than this lower limit, because it is very difficult to make any kind of precise measurement of microscopic quantum-scale systems.
 
