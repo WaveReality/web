@@ -1,16 +1,13 @@
 +++
+Name = "Klein-Gordon"
 bibfile = "mechphys.json"
 +++
 
-{id="figure_packet" style="height:20em"}
-![A wave packet, which is a spatially localized wave disturbance that propagates through space as a coherent entity. The two values shown here are the state value and the first derivative --- the relationship between these two determines which direction the wave travels. This is our model for a particle. Mathematically, it can be constructed by multiplying a Gaussian function (normal bell-shaped distribution curve) times a sine wave.](media/fig_wave_packet_raw.png)
+The **Klein-Gordon** (KG) wave function is the simplest version of a [[waves|wave]] equation that captures the known physics of particles such as an [[electron]]. In fact, it explains a surprisingly wide range of physical phenomena, including Newtonian and relativistic equations of motion, the Lorentz transformations of [[special relativity]], and the quantum mechanical relationship between wave frequency and velocity (momentum), all with an incredibly simple equation. 
 
-{id="figure_mass" style="height:20em"}
-![The additional mass term $-m_0^2 \varphi$ in the Klein-Gordon (KG) wave equation "drags down" the wave in proportion to the height of the waves (i.e., amplitude away from zero, either positive or negative). This fights against the curvature of the wave, computed by $\nabla^2$. Higher frequency waves have higher curvature, and thus move faster than lower frequency waves.](media/fig_kg_mass_drag.png)
+Thus, it is tempting to think that particles are actually [[matter waves]], in the form of a spatially-localized _wave packet_. However, despite all the amazing properties of the KG equation (and its more complicated iteration in the [[Dirac]] wave function), these matter waves have a fatal flaw: they inevitably diffuse away into amorphous blobs that fail to account for the precise localization of particles like electrons. The process by which a widely distributed matter wave function could somehow become localized, gathering up all of its far-flung bits in order to satisfy strict conservation laws, is precisely as implausible as the standard [[Copenhagen]] interpretation of QM.
 
-In beginning to explore the wave model of matter, we need to first establish a few basic concepts of what it would even mean for a particle to be described by a wave. The main idea is that a particle corresponds to a _wave packet_, which is a spatially localized wave disturbance ([[#figure_packet]]). It can act like a particle in that it is somewhat spatially localized, and moves as a coherent entity. If you zoomed out very far, and blurred your eyes, you could imagine that a wave packet would look like a tiny point particle.
-
-Nevertheless, it fundamentally acts like a wave, in the sense that it is actually made of oscillations, and obeys a wave equation. As to what exactly the wave material is and what it means for observations, we'll postpone for later. At this point, we'll content ourselves with this level of description, and just start developing some new twists on the basic wave equation; we'll return to the thorny interpretational issues (e.g., wave-particle duality, probabilistic interpretation of the wave, etc), once we have a better sense of how these new waves behave.
+Nevertheless, there is much to learn about physics and wave functions by understanding the almost miraculous properties of the KG wave function.
 
 Recall that the wave equation can be written as a second-order differential equation:
 
@@ -18,6 +15,9 @@ Recall that the wave equation can be written as a second-order differential equa
 $$
 \frac{\partial^2 {\varphi}}{\partial t^2} = c^2 \nabla^2 \varphi
 $$
+
+{id="figure_mass" style="height:20em"}
+![The additional mass term $-m_0^2 \varphi$ in the Klein-Gordon (KG) wave equation "drags down" the wave in proportion to the height of the waves (i.e., amplitude away from zero, either positive or negative). This fights against the curvature of the wave, computed by $\nabla^2$. Higher frequency waves have higher curvature, and thus move faster than lower frequency waves.](media/fig_kg_mass_drag.png)
 
 What if we add a single new term to this equation, where we subtract away some *mass* ($m_0$, a constant) from the Laplacian ($\nabla^2 \varphi$) curvature driving force term ([[#figure_mass]]):
 

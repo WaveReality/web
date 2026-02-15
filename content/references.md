@@ -1,4 +1,10 @@
+<p id="AharonovRohrlich08">Aharonov, Y., & Rohrlich, D. (2008). <i>Quantum Paradoxes: Quantum Theory for the Perplexed. </i> John Wiley & Sons. </p>
+
 <p id="AspectDalibardRoger82">Aspect, A., Dalibard, J., & Roger, G. (1982). Experimental Test of Bell's Inequalities Using Time-Varying Analyzers. <i>Physical Review Letters, 49</i>, 1804–1807. <a href="https://link.aps.org/doi/10.1103/PhysRevLett.49.1804">https://link.aps.org/doi/10.1103/PhysRevLett.49.1804</a><a href="http://doi.org/10.1103/PhysRevLett.49.1804"> http://doi.org/10.1103/PhysRevLett.49.1804</a></p>
+
+<p id="BallentineJarrett87">Ballentine, L.E., & Jarrett, J.P. (1987). Bell’s theorem: Does quantum mechanics contradict relativity? <i>American Journal of Physics, 55</i>, 696–701. <a href="https://doi.org/10.1119/1.15059">https://doi.org/10.1119/1.15059</a><a href="http://doi.org/10.1119/1.15059"> http://doi.org/10.1119/1.15059</a></p>
+
+<p id="BancalPironioAcinEtAl12">Bancal, J., Pironio, S., Acín, A., Liang, Y., Scarani, V., & Gisin, N. (2012). Quantum non-locality based on finite-speed causal influences leads to superluminal signalling. <i>Nature Physics, 8</i>, 867–870. <a href="https://www.nature.com/articles/nphys2460">https://www.nature.com/articles/nphys2460</a><a href="http://doi.org/10.1038/nphys2460"> http://doi.org/10.1038/nphys2460</a></p>
 
 <p id="Bell64">Bell, J.S. (1964). On the Einstein Podolsky Rosen paradox. <i>Physics Physique Fizika, 1</i>, 195–200. </p>
 
@@ -24,11 +30,15 @@
 
 <p id="MarshallSantos97">Marshall, T.W., & Santos, E. (1997). The Myth of The Photon. In S. Jeffers, S. Roy, J. Vigier, & G. Hunter (Eds.), <i>The Present Status of the Quantum Theory of Light</i> (pp. 67–77). Springer Netherlands. <a href="http://doi.org/10.1007/978-94-011-5682-0_7"> http://doi.org/10.1007/978-94-011-5682-0_7</a></p>
 
+<p id="Maudlin11">Maudlin, T. (2011). <i>Quantum Non-Locality and Relativity: Metaphysical Intimations of Modern Physics. </i> John Wiley & Sons. </p>
+
 <p id="Mermin18">Mermin, N.D. (2018). Making better sense of quantum mechanics. <i>Reports on Progress in Physics, 82</i>, 012002. <a href="https://dx.doi.org/10.1088/1361-6633/aae2c6">https://dx.doi.org/10.1088/1361-6633/aae2c6</a><a href="http://doi.org/10.1088/1361-6633/aae2c6"> http://doi.org/10.1088/1361-6633/aae2c6</a></p>
 
 <p id="Nelson66">Nelson, E. (1966). Derivation of the Schr\"odinger Equation from Newtonian Mechanics. <i>Physical Review, 150</i>, 1079–1085. <a href="https://link.aps.org/doi/10.1103/PhysRev.150.1079">https://link.aps.org/doi/10.1103/PhysRev.150.1079</a><a href="http://doi.org/10.1103/PhysRev.150.1079"> http://doi.org/10.1103/PhysRev.150.1079</a></p>
 
 <p id="NeyAlbert13">Ney, A., & Albert, D. (2013). <i>The Wave Function: Essays on the Metaphysics of Quantum Mechanics. </i> Oxford University Press. </p>
+
+<p id="Norsen11">Norsen, T. (2011). John S. Bell’s concept of local causality. <i>American Journal of Physics, 79</i>, 1261–1275. <a href="https://doi.org/10.1119/1.3630940">https://doi.org/10.1119/1.3630940</a><a href="http://doi.org/10.1119/1.3630940"> http://doi.org/10.1119/1.3630940</a></p>
 
 <p id="Norsen14">Norsen, T. (2014). The pilot-wave perspective on spin. <i>American Journal of Physics, 82</i>, 337–348. <a href="https://doi.org/10.1119/1.4848217">https://doi.org/10.1119/1.4848217</a><a href="http://doi.org/10.1119/1.4848217"> http://doi.org/10.1119/1.4848217</a></p>
 
@@ -44,17 +54,29 @@
 
 <p id="Ord96">Ord, G.N. (1996). The Schrödinger and diffusion propagators coexisting on a lattice. <i>Journal of Physics A: Mathematical and General, 29</i>, L123–L128. <a href="https://doi.org/10.1088/0305-4470/29/5/007">https://doi.org/10.1088/0305-4470/29/5/007</a><a href="http://doi.org/10.1088/0305-4470/29/5/007"> http://doi.org/10.1088/0305-4470/29/5/007</a></p>
 
+<p id="Popescu14">Popescu, S. (2014). Nonlocality beyond quantum mechanics. <i>Nature Physics, 10</i>, 264–270. <a href="https://www.nature.com/articles/nphys2916">https://www.nature.com/articles/nphys2916</a><a href="http://doi.org/10.1038/nphys2916"> http://doi.org/10.1038/nphys2916</a></p>
+
+<p id="PuseyBarrettRudolph12">Pusey, M.F., Barrett, J., & Rudolph, T. (2012). On the reality of the quantum state. <i>Nature Physics, 8</i>, 475–478. <a href="https://www.nature.com/articles/nphys2309">https://www.nature.com/articles/nphys2309</a><a href="http://doi.org/10.1038/nphys2309"> http://doi.org/10.1038/nphys2309</a></p>
+
+<p id="ReidDrummond26">Reid, M.D., & Drummond, P.D. (2026). Forward-backward stochastic simulations: $Q$-based model for measurement and Bell nonlocality consistent with weak local realistic premises. <i>Physical Review A, 113</i>, 012210. <a href="https://link.aps.org/doi/10.1103/qdyg-2nv4">https://link.aps.org/doi/10.1103/qdyg-2nv4</a><a href="http://doi.org/10.1103/qdyg-2nv4"> http://doi.org/10.1103/qdyg-2nv4</a></p>
+
 <p id="Santos15">Santos, E. (2015). Towards a Realistic Interpretation of Quantum Mechanics Providing a Model of the Physical World. <i>Foundations of Science, 20</i>, 357–386. <a href="https://doi.org/10.1007/s10699-014-9366-y">https://doi.org/10.1007/s10699-014-9366-y</a><a href="http://doi.org/10.1007/s10699-014-9366-y"> http://doi.org/10.1007/s10699-014-9366-y</a></p>
+
+<p id="SchlosshauerKoflerZeilinger13">Schlosshauer, M., Kofler, J., & Zeilinger, A. (2013). A Snapshot of Foundational Attitudes Toward Quantum Mechanics. <i>Studies in History and Philosophy of Science Part B: Studies in History and Philosophy of Modern Physics, 44</i>, 222–230. <a href="http://arxiv.org/abs/1301.1069">http://arxiv.org/abs/1301.1069</a><a href="http://doi.org/10.1016/j.shpsb.2013.04.004"> http://doi.org/10.1016/j.shpsb.2013.04.004</a></p>
 
 <p id="Sciarretta18">Sciarretta, A. (2018). A Local-Realistic Model of Quantum Mechanics Based on a Discrete Spacetime (Extended version) <i>Foundations of Physics, 48</i>, 60–91. <a href="http://arxiv.org/abs/1712.03227">http://arxiv.org/abs/1712.03227</a><a href="http://doi.org/10.1007/s10701-017-0129-9"> http://doi.org/10.1007/s10701-017-0129-9</a></p>
 
 <p id="Sciarretta21">Sciarretta, A. (2021). A local-realistic quantum mechanical model of spin and spin entanglement. <i>International Journal of Quantum Information, 19</i>, 2150006. <a href="http://www.worldscientific.com/doi/abs/10.1142/S0219749921500064">http://www.worldscientific.com/doi/abs/10.1142/S0219749921500064</a><a href="http://doi.org/10.1142/S0219749921500064"> http://doi.org/10.1142/S0219749921500064</a></p>
+
+<p id="Shimony93">Shimony, A. (1993). <i>The Search for a Naturalistic World View: Volume 1. </i> Cambridge University Press. </p>
 
 <p id="Spekkens05">Spekkens, R.W. (2005). Contextuality for preparations, transformations, and unsharp measurements. <i>Physical Review A, 71</i>, 052108. <a href="https://link.aps.org/doi/10.1103/PhysRevA.71.052108">https://link.aps.org/doi/10.1103/PhysRevA.71.052108</a><a href="http://doi.org/10.1103/PhysRevA.71.052108"> http://doi.org/10.1103/PhysRevA.71.052108</a></p>
 
 <p id="Struyve20">Struyve, W. (2020). Semi-classical approximations based on Bohmian mechanics. <i>International Journal of Modern Physics A, <a href="https://www.worldscientific.com/worldscinet/ijmpa">https://www.worldscientific.com/worldscinet/ijmpa</a></i><a href="http://doi.org/10.1142/S0217751X20500700"> http://doi.org/10.1142/S0217751X20500700</a></p>
 
 <p id="Tegmark10">Tegmark, M. (2010). Many Worlds in Context. <a href="http://arxiv.org/abs/0905.2182">http://arxiv.org/abs/0905.2182</a><a href="http://doi.org/10.48550/arXiv.0905.2182"> http://doi.org/10.48550/arXiv.0905.2182</a></p>
+
+<p id="Tegmark98">Tegmark, M. (1998). The Interpretation of Quantum Mechanics: Many Worlds or Many Words? <i>Fortschritte der Physik, 46</i>, 855–862. <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291521-3978%28199811%2946%3A6/8%3C855%3A%3AAID-PROP855%3E3.0.CO%3B2-Q">https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291521-3978%28199811%2946%3A6/8%3C855%3A%3AAID-PROP855%3E3.0.CO%3B2-Q</a><a href="http://doi.org/10.1002/(SICI)1521-3978(199811)46:6/8<855::AID-PROP855>3.0.CO;2-Q"> http://doi.org/10.1002/(SICI)1521-3978(199811)46:6/8<855::AID-PROP855>3.0.CO;2-Q</a></p>
 
 <p id="tHooft05">Hooft, G. (2005). <i>Determinism Beneath Quantum Mechanics. </i>In Quo Vadis Quantum Mechanics (pp. 99–111)? <a href="https://ui.adsabs.harvard.edu/abs/2005qvqm.book...99T">https://ui.adsabs.harvard.edu/abs/2005qvqm.book...99T</a></p>
 
