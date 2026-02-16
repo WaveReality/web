@@ -1,125 +1,80 @@
-TODO: this page is out of date --- needs integration.
++++
+bibfile = "mechphys.json"
++++
 
-This page provides an accounting of all the major phenomenology of physics that strongly constrains theorizing, along with how different frameworks account for these phenomena. It is mostly a device for thinking through these issues and is not really intended to be comprehensible to people not otherwise familiar with the phenomena and theories.
+This page provides an accounting of all the major phenomenology of (quantum) physics that strongly constrains theorizing, along with how different frameworks account for these phenomena.
 
-# Philosophical Foundations
+## Space-time
 
-First, the bedrock philosophical principles governing the approach:
+### Core phenomena
 
-- Despite the primacy and limitations of our inevitably subjective windows onto reality, I believe there is an objective reality that exists outside of my mind.
+* Physics appears to operate within 3 spatial dimensions, evolving over time.
+* With the notable exception of non-locality effects in QM, many phenomena are compatible with strictly local interactions within spacetime --- the light-speed cone of causality etc.
+* Cosmologically, space seems remarkably, suspiciously flat.
+* Philosophically, it seems overall more elegant to imagine that space is infinite in extent and time --- this avoids the inevitable conundrums of "edges" in spacetime --- something outside the bubble of the big-bang or whatever.
 
-<!-- -->
+### Implications
 
-- As such, this reality must somehow *function [autonomously](autonomous "wikilink")* --- it just happens, even when nobody is looking. The notion that the human mind plays any kind of special role in physics seems strongly inconsistent with all available evidence that our minds evolved very recently in astronomical time.
+* From the mechanistic, autonomous perspective, the [[cellular automaton]] framework (CA) fits exceptionally well with these basic facts of spacetime. Space is primary, and physical rules are defined as update equations operating on cubic cells of primary _stuff._ The speed of light emerges naturally from this framework. It can easily accommodate all of classical EM --- we have a nice implementation of [[Maxwell]]'s equations within this framework.
 
-<!-- -->
+* But QM [[non-locality]] flies in the face of this framework. Now that we have to take this seriously, we need to see if all the "pros" of the CA framework can be somehow augmented with whatever it takes to accommodate nonlocality, or whether it needs to be discarded entirely as a nice idea that simply doesn't "work".
 
-- Autonomous functioning systems are *mechanistic* --- they have certain rules or laws, operating on some kind of *something*, and, given a set of initial conditions of the universe, proceed to generate the unfolding of phenomena that we observe from our narrow subjective human windows.
+## Waves
 
-<!-- -->
+### Core phenomena
 
-- We do not know if we can understand these laws, but we do have a *standard model* that, despite its many limitations, provides a very accurate means of predicting the outcomes of experiments. One of the most important limitations of this standard model is that it does not provide an autonomous, mechanistic understanding of physics. It allows us, under very limited situations, to compute predicted outcomes, but many core hurdles prevent us from running a numerical simulation of the model autonomously evolving over time to describe even the most essential and basic phenomena such as the hydrogen atom absorbing and emitting electromagnetic radiation --- again we can compute predicted outcomes to high accuracy, but we can't even in principle "run" such an atom as a complete system evolving autonomously over time. The question then is: how does *nature* run? Can we ever understand the answer to such a question? Most practicing physicists have long eschewed such a question in favor of the "shut up and calculate" approach --- the barriers to deriving a "mechanistic" framework of quantum physics are so seemingly daunting that most have long-since given up such a futile adventure. But as a non-practicing non-physicist, I have the luxury of such futile pursuits!
+* EM is well described by [[waves]], and the surprising success of the [[semiclassical]] approach suggests that perhaps the [[photon]] is unnecessary.
+* [[Dirac]] wave equation --- relativistic generalization of [[Schroedinger]] equation --- can be implemented nicely within CA framework (in its second order form).
+* [[double-slit]] interference effects, etc.
 
-<!-- -->
+### Implications
 
-- The central gambit here is that, perhaps, by thinking through what it would take for nature to "run" autonomously, we can develop a more satisfying theoretical framework overall. Instead of starting from more abstract "elegant" principles like symmetry, we take a more gritty, pragmatic perspective: what would it take to make an autonomous system that does everything nature does? There are a lot of amazing things going on here --- lots of different tradeoffs and compromises --- maybe by understanding those from a "design" perspective, we can figure out why it is the way it is? Maybe there are a really small, even singular, set of mechanisms that are the simplest set of things that make "interesting" stuff happen? e.g., pure waves do a lot of great things, but they also just fall apart --- need to add in some particle rectification --- how do you get that to play well with the waves, etc?
+* [[@Bialynicki-Birula94]] and [[@Meyer96]] models: uniqueness of conservative (unitary) local transfer functions, require bidirectional flow --- need to investigate those, esp BB.
 
-<!-- -->
+* Another approach: lattice particles with wave-functions on the links can potentially regularize wave dynamics --- digitizes wave functions at every step.
 
-- Of course, the most important overriding consideration in this pursuit is: the *truth* --- ultimately we need a mechanistic model that generates all of the known phenomenology of physics, and this wiki page is an attempt to keep an accounting of that scope of phenomenology. As every student of physics knows, however, there is great utility in simpler approximations and models that *intentionally* omit certain complexities in the service of rendering core principles clearer and easier to compute: the fictitious frictionless plane, etc. And the pursuit of ideas in physics is riddled with seemingly great ideas that just don't "work" for one reason or another. Sometimes, just a few tweaks can turn those into the great ideas that *do* work.. In the course of developing this approach, for example, the pure-wave WELD idea seemed like it could "go all the way", but after further investigations and reflections, major limitations are apparent.. Thus, the path is not straight, and it is *essential* to be clearly mindful of the limitations of any given framework or model --- this can be challenging in early stages when such limitations are not yet obvious, and the potential seems so compelling. But the long arc of physics always bends toward the truth, eventually..
+## Particles
 
-# Space-time
+### Core phenomena
 
-## Core phenomena
+* Strictly quantized, conserved charge.
+* Conserved fermion number.
+* Scattering, scattering, scattering! how do waves ever scatter!? Cross sections appear pointlike?
+* Fundamental frequency / momentum relationship: $\lambda = \frac{h}{p}$, $p = \frac{h}{\lambda}$ -- this is the absolute essence of QM, reflected in wave equations, but what about discrete [[stochastic particles]]?
+* Photoelectric effect? maybe more about atoms than EM? maybe not though? [[Semiclassical]] models can get pretty far --- what are the remaining phenomena that we need to deal with? photon-based entanglement maybe the most strong?
+* Particles transform into other particles! what are the rules that govern creation and destruction of particles?? this basic fact greatly complicates any particle model --- would have been much simpler to think of particles as hard little permanent things --- but they are only partially that. Other times they are rather fluid..
+* Furthermore, many particles are strictly temporary and unstable --- what makes them unstable?
+* Virtual particles --- short-lived but "real" --- have measurable effects.. what is the deal!?
 
-- Physics appears to operate within 3 spatial dimensions, evolving over time.
-- With the notable exception of non-locality effects in QM, many phenomena are compatible with strictly local interactions within spacetime --- the light-speed cone of causality etc.
-- Cosmologically, space seems remarkably, suspiciously flat.
-- Philosophically, it seems overall more elegant to imagine that space is infinite in extent and time --- this avoids the inevitable conundrums of "edges" in spacetime --- something outside the bubble of the big-bang or whatever.
+### Implications
 
-## Implications
-
-- From the mechanistic, autonomous perspective, the cellular automaton framework (CA) fits exceptionally well with these basic facts of spacetime. This is a foundational principle of the WELD approach. Space is primary, and physical rules are defined as update equations operating on cubic cells of primary *stuff*. The speed of light emerges naturally from this framework. It can easily accommodate all of classical EM --- we have a nice implementation of Maxwell's equations within this framework.
-
-<!-- -->
-
-- But QM nonlocality flies in the face of this framework. Now that we have to take this seriously, we need to see if all the "pros" of the CA framework can be somehow augmented with whatever it takes to accommodate nonlocality, or whether it needs to be discarded entirely as a nice idea that simply doesn't "work".
-
-# Waves
-
-## Core phenomena
-
-- EM --- per above.
-- Dirac wave equation --- relativistic generalization of Schroedinger equation --- can be implemented nicely within CA framework (in its second order form).
-- two-slit interference, etc --- all good..
-
-## Implications
-
-- Love the waves! can't get enough of them!
-
-<!-- -->
-
-- Major problem with current impl: leaky waves --- waves are spreading out all over the place --- electron wave doesn't remain contained within atomic system. What if this is due to 26 neighbor model that nicely deals with grid aliasing artifacts, but maybe we really need to separately propagate along each of the canonical axes, like what happens with the A, B vector fields in EM? spread is no problem in 1d Schrodinger models really --- seems like nobody really worries about this as far as I can tell --- always using 1d and generalizing from there? 3d = just sum of 1d cases?
-
-<!-- -->
-
-- Bialynicki-Birula (1993) and David Meyer (1996?) models: uniqueness of conservative (unitary) local transfer functions, require bidirectional flow --- need to investigate those, esp BB.
-
-<!-- -->
-
-- Another approach: lattice particles with wave-functions on the links can potentially regularize wave dynamics --- digitizes wave functions at every step..
-
-# Particles
-
-## Core phenomena
-
-- Strictly quantized, conserved charge
-- Conserved fermion number
-- Scattering, scattering, scattering! how do waves ever scatter!?
-- Photoelectric effect? maybe more about atoms than EM? maybe not though? hmm. Semiclassical literature etc can get pretty far --- what are the remaining phenomena that we need to deal with? photon-based entanglement maybe the most strong?
-- Particles transform into other particles! what are the rules that govern creation and destruction of particles?? this basic fact greatly complicates any particle model --- would have been much simpler to think of particles as hard little permanent things --- but they are only partially that. other times they are rather fluid..
-- Furthermore, many particles are strictly temporary and unstable --- what makes them unstable?
-- Virtual particles --- short-lived but "real" --- have measurable effects.. what is the deal!?
-
-## Implications
-
-- all really challenge pure wave-based approach, *except* the fluidity of particles and and virtual particles --- but emergent particles within a pure wave framework doesn't seem likely to handle all the strong particle phenomena.
-- as we know from QM, once you fully acknowledge the dual wave-particle reality, all the conundrums emerge. the pure-wave dodge isn't going to work. we need to confront this head-on.
-- classic copenhagen / Born rule approach is non-starter as mechanistic theory: doesn't define when collapse happens, depends on vaugely-defined "measurement" events, etc.
-- Bohm is very appealing: particles always somewhere, have well-defined trajectories, no collapse. all the nonlocality is in the wave function --- particles themselves are fully in 3D spacetime.
+* all really challenge pure wave-based approach, *except* the fluidity of particles and and virtual particles --- but emergent particles within a pure wave framework doesn't seem likely to handle all the strong particle phenomena.
+* as we know from QM, once you fully acknowledge the dual wave-particle reality, all the conundrums emerge. the pure-wave dodge isn't going to work. we need to confront this head-on.
+* classic copenhagen / Born rule approach is non-starter as mechanistic theory: doesn't define when collapse happens, depends on vaugely-defined "measurement" events, etc.
+* Bohm is very appealing: particles always somewhere, have well-defined trajectories, no collapse. all the nonlocality is in the wave function --- particles themselves are fully in 3D spacetime.
   - doesn't have a good relativistic formulation? actually it does --- H. Nikolic has shown this.
   - doesn't deal with fluidity of particles --- also work by Nikolic attempts to merge QFT particle creation / destruction with Bohmian world view.
-- Quantum Field approach (QED): fourier space, particles are modes of vibration --- naturally non-local, deals with particle transformations, virtual particles..
+* Quantum Field approach (QED): fourier space, particles are modes of vibration --- naturally non-local, deals with particle transformations, virtual particles..
 
-# Zero point energy and coherent background field effects
+## Zero point energy and coherent background field effects
 
-- There is a non-zero background energy level in a 2nd quantized system --- this plays a critical role in the stochastic electrodynamics (SED) and stochastic optics models (Marshall & Santos, 1988; Marshall & Santos, 1997; de la Pena & Cetto, 1996) --- the ZPF = Zero Point Field.
+* There is a non-zero background energy level in a 2nd quantized system --- this plays a critical role in the stochastic electrodynamics (SED) and stochastic optics models (Marshall & Santos, 1988; Marshall & Santos, 1997; de la Pena & Cetto, 1996) --- the ZPF = Zero Point Field.
 
-<!-- -->
+* In the oil drop simulations of QM, the wave field emerges from a coordinated shaking of the fluid.
 
-- In the oil drop simulations of QM, the wave field emerges from a coordinated shaking of the fluid.
-
-<!-- -->
-
-- I think the ZPF / ZPE seems to emerge because of the synchronization of all the points in a lattice?? if we have a big lattice system, all phenomena may emerge as disturbances on top of a coordinated synchronized vibrating field. Disturbances themselves can propagate at the "speed of light" in such a system, but perhaps some nonlocal things could happen in terms of coordinated changes across the entire field???
+* I think the ZPF / ZPE seems to emerge because of the synchronization of all the points in a lattice?? if we have a big lattice system, all phenomena may emerge as disturbances on top of a coordinated synchronized vibrating field. Disturbances themselves can propagate at the "speed of light" in such a system, but perhaps some nonlocal things could happen in terms of coordinated changes across the entire field???
 
 ## Quantum Harmonic Oscillator (QHO) and second quantization
 
 Trying to make sense of the foundations of QFT --- key pages: <https://en.wikipedia.org/wiki/Quantum_harmonic_oscillator> <https://en.wikipedia.org/wiki/Phonon> <https://en.wikipedia.org/wiki/Normal_mode> <https://en.wikipedia.org/wiki/Zero-point_energy>
 
-- The basic QHO and phonon theory is derived from classical wave equations, where the acceleration is proportional to distances from neighbors, as derived here: <https://grey.colorado.edu/WELD/index.php/WELDBook/Waves>
+* The basic QHO and phonon theory is derived from classical wave equations, where the acceleration is proportional to distances from neighbors, as derived here: <https://grey.colorado.edu/WELD/index.php/WELDBook/Waves>
 
-<!-- -->
+* The "mass" and "spring constant" coupling relationship of the particles in the lattice model determine the speed of propagation, equivalent to the speed-of-light squared (c^2).
 
-- The "mass" and "spring constant" coupling relationship of the particles in the lattice model determine the speed of propagation, equivalent to the speed-of-light squared (c^2).
+* As near as I can tell, second quantization of this lattice field amounts to the following moves:
 
-<!-- -->
-
-- As near as I can tell, second quantization of this lattice field amounts to the following moves:
-
-<!-- -->
-
-- - Representing everything in terms of the normal modes of oscillation. The normal modes are an orthogonal basis set of sine waves across the entire state, in multiples of the fundamental frequency. In other words, Fourier space.
+* Representing everything in terms of the normal modes of oscillation. The normal modes are an orthogonal basis set of sine waves across the entire state, in multiples of the fundamental frequency. In other words, Fourier space.
   - This also clarifies the situation a bit: <https://physics.stackexchange.com/questions/122570/which-is-more-fundamental-fields-or-particles> --- the original state-based formulation in terms of wave functions for particles is a problem because particles are indistinquishable from each other and thus it has 2x the amount of info and needs to subtract that out --- representing in terms of Fourier space doesn't have that problem.
   - It seems implicit that the states one is considering are all "contextualized" or "conditioned" on a particular situation --- they are not true [autonomous](autonomous "wikilink") states --- in other words, they are like the violin string --- about a particular constrained object like an electron in an atom --- they cannot apply more generally because then the particles extend across the entire universe in the Fourier representation.
     - Indeed, <https://physics.stackexchange.com/questions/248754/what-do-the-wave-functions-associated-to-the-fock-states-of-each-mode-of-a-bound> states that "Each fock state has an associated wave function" --- i.e., the QFT bookkeeping is not the full picture --- there is an additional wave function associated with each such state! This might be relevant: <http://iopscience.iop.org/article/10.1088/1751-8121/aa70ba/meta>
