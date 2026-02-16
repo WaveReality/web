@@ -2,7 +2,7 @@
 bibfile = "mechphys.json"
 +++
 
-The widely discussed  distinction between **contextual** vs. "real" variables is a source of considerable confusion within the QM world ([[@Shimony84]]; [[@Gudder70]]; [[@Khrenniko0]]; [[@Rovelli96]]. A contextual variable is effectively something that cannot be discretely localized and quantified --- its value depends in some necessary way on the surrounding _context_, which is usually taken to mean the state of the measurement apparatus. In the standard Copenhagen interpretation, _everything_ could be described as being contextual, given that _nothing_ is thought to exist in any localized, definite way prior to the measurement process.
+The widely discussed  distinction between **contextual** vs. "real" variables is a source of considerable confusion within the QM world ([[@Shimony84]]; [[@Gudder70]]; [[@Khrennikov01]]; [[@Rovelli96]]. A contextual variable is effectively something that cannot be discretely localized and quantified --- its value depends in some necessary way on the surrounding _context_, which is usually taken to mean the state of the measurement apparatus. In the standard Copenhagen interpretation, _everything_ could be described as being contextual, given that _nothing_ is thought to exist in any localized, definite way prior to the measurement process.
 
 However, in the pilot-wave framework, the positions of the particles (and _only_ these variables) are given a privileged status as being _real_, non-contextual variables, and _everything else_ about the quantum state is relegated to the usual _contextual_ status. Another way of stating this is that everything that must be computed from the wave function itself is contextual, and only the position values are excluded from this status.
 

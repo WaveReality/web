@@ -33,7 +33,7 @@ Within this broad framework of discrete particles interacting via continuous wav
 
     The key question here is whether the continuous wave function plus stochastic behavior in a real particle ends up capturing everything that is otherwise captured by the virtual particles? From a complexity management perspective, it makes sense in any case to start with the much simpler frameork of the known [[Dirac]] wave function operating on a real [[electron]], and see how far that goes.
     
-* How does the particle influence the wave fields? This is the _back reaction_ question that has long bedeviled attempts to understand the detailed "mechanistic" physics taking place up close around a charged particle. Specifically, very near the particle itself, the electromagnetic potential would be very strong, and thus correspond to a very high energy density, which should then end up producing virtual particles etc. This is known as the _ultraviolet divergence_ problem. It can be "solved" by having some kind of cutoff at short length scales, but that seems fairly arbitrary. Also, as the particle moves discretely to neighboring grid points, that creates ripples in the force field. 
+* How does the particle influence the wave fields? This is the _back reaction_ question that has long bedeviled attempts to understand the detailed "mechanistic" physics taking place up close around a charged particle ([[@FordOConnell91]]; [[@FordOConnell93]]). Specifically, very near the particle itself, the electromagnetic potential would be very strong, and thus correspond to a very high energy density, which should then end up producing virtual particles etc. This is known as the _ultraviolet divergence_ problem. It can be "solved" by having some kind of cutoff at short length scales, but that seems fairly arbitrary. Also, as the particle moves discretely to neighboring grid points, that creates ripples in the force field. 
 
     One solution, consistent with the [[pilot-wave]] approach, is that the discrete particle itself doesn't actually generate any back reaction, and is instead purely a "surfer" on the waves. This would imply that the [[Dirac]] field itself would generate the corresponding [[Maxwell]] EM field, which also solves many conceptual difficulties because it is smoothly distributed over space. In short, the same arguments that favor the Dirac field as a kind of antenna for the force field also apply in the reverse direction, for the generation of force fields from charged matter.
 
@@ -65,3 +65,6 @@ In particular, a simple schema is that the probability waves associated with the
 
 It is essential that these probability computations are all propagated in terms of _amplitudes_, not the probability values themselves, which are obtained by the product with the complex conjugate ("squaring").
 
+## TODO
+
+* zitterbewegung and helical spin in electron: [[@Hestenes08]]; [[@Hestenes90]]]
