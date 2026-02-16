@@ -43,7 +43,7 @@ Within this broad framework of discrete particles interacting via continuous wav
     
 * Hidden particle states. The [[@Ord96]] model involves 2 state variables for each particle, that correspond qualitatively to the spin degrees of freedom in a fermion particle. The Dirac equation in its second order formulation likewise has 4 wave state variables that mutually interact to produce spin, via the _spinor_ dynamics. These also produce the phase dynamics of quantum wave functions, and are important for the conservation properties of these functions. Thus, the possibility of these internal state degrees of freedom, beyond just a single binary state value, must be properly explored, especially as it might interact with the Dirac spinor states.
 
-    One intuition is that the resting energy of a particle is associated with this constant cycling through the spin states, and that somehow this cycling dynamic within a single cell is capable of maintaining some kind of momentum value, perhaps as it couples with the Dirac-like wave state that it is generating.
+    One intuition is that the resting energy of a particle is associated with this constant cycling through the spin states, and that somehow this cycling dynamic within a single cell is capable of maintaining some kind of momentum value, perhaps as it couples with the Dirac-like wave state that it is generating. This may be related to the phenomenon of _zitterbewegung_ ([[@Hestenes08]]; [[@Hestenes90]]]; [[@Sidharth09]]; [[@RomanRosoPlaja03]]; [[@BarutBracken81]]; [[@WangZhang01]]).
     
     One tempting idea in this space is that you could somehow imagine a spatially distributed collection of "sub states" for each particle, kind of like a very compact localized wave function. However, once you stray outside of a single discrete cell, it becomes logistically very difficult to keep track of these distributed states, and preventing them from leaking out all over the place.
 
@@ -67,4 +67,4 @@ It is essential that these probability computations are all propagated in terms 
 
 ## TODO
 
-* zitterbewegung and helical spin in electron: [[@Hestenes08]]; [[@Hestenes90]]]
+* zitterbewegung and helical spin in electron: [[@Hestenes08]]; [[@Hestenes90]]]; [[@Sidharth09]]; [[@RomanRosoPlaja03]]; [[@BarutBracken81]]; [[@WangZhang01]]

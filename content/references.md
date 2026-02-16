@@ -8,6 +8,8 @@
 
 <p id="BancalPironioAcinEtAl12">Bancal, J., Pironio, S., Acín, A., Liang, Y., Scarani, V., & Gisin, N. (2012). Quantum non-locality based on finite-speed causal influences leads to superluminal signalling. <i>Nature Physics, 8</i>, 867–870. <a href="https://www.nature.com/articles/nphys2460">https://www.nature.com/articles/nphys2460</a><a href="http://doi.org/10.1038/nphys2460"> http://doi.org/10.1038/nphys2460</a></p>
 
+<p id="BarutBracken81">Barut, A.O., & Bracken, A.J. (1981). Zitterbewegung and the internal geometry of the electron. <i>Physical Review D, 23</i>, 2454–2463. <a href="https://link.aps.org/doi/10.1103/PhysRevD.23.2454">https://link.aps.org/doi/10.1103/PhysRevD.23.2454</a><a href="http://doi.org/10.1103/PhysRevD.23.2454"> http://doi.org/10.1103/PhysRevD.23.2454</a></p>
+
 <p id="Bell64">Bell, J.S. (1964). On the Einstein Podolsky Rosen paradox. <i>Physics Physique Fizika, 1</i>, 195–200. </p>
 
 <p id="Bohm52">Bohm, D. (1952). A Suggested Interpretation of the Quantum Theory in Terms of "Hidden" Variables. I. <i>Physical Review, 85</i>, 166–179. <a href="https://link.aps.org/doi/10.1103/PhysRev.85.166">https://link.aps.org/doi/10.1103/PhysRev.85.166</a><a href="http://doi.org/10.1103/PhysRev.85.166"> http://doi.org/10.1103/PhysRev.85.166</a></p>
@@ -30,7 +32,23 @@
 
 <p id="Franklin07">Franklin, J. (2007). The nature of electromagnetic energy. <a href="http://arxiv.org/abs/0707.3421">http://arxiv.org/abs/0707.3421</a><a href="http://doi.org/10.48550/arXiv.0707.3421"> http://doi.org/10.48550/arXiv.0707.3421</a></p>
 
+<p id="Fredkin90">Fredkin, E. (1990). An informational process based on reversible universal cellular automata. <i>Physica D: Nonlinear Phenomena, 45</i>, 254–270. <a href="https://www.sciencedirect.com/science/article/pii/016727899090186S">https://www.sciencedirect.com/science/article/pii/016727899090186S</a><a href="http://doi.org/10.1016/0167-2789(90)90186-S"> http://doi.org/10.1016/0167-2789(90)90186-S</a></p>
+
+<p id="FredkinToffoli82">Fredkin, E., & Toffoli, T. (1982). Conservative logic. <i>International Journal of Theoretical Physics, 21</i>, 219–253. <a href="https://doi.org/10.1007/BF01857727">https://doi.org/10.1007/BF01857727</a><a href="http://doi.org/10.1007/BF01857727"> http://doi.org/10.1007/BF01857727</a></p>
+
 <p id="FuchsMerminSchack14">Fuchs, C.A., Mermin, N.D., & Schack, R. (2014). An introduction to QBism with an application to the locality of quantum mechanics. <i>American Journal of Physics, 82</i>, 749–754. <a href="https://doi.org/10.1119/1.4874855">https://doi.org/10.1119/1.4874855</a><a href="http://doi.org/10.1119/1.4874855"> http://doi.org/10.1119/1.4874855</a></p>
+
+<p id="Gardner70">Gardner, M. (1970). Mathematical Games: The fantastic combinations of John Conway’s new solitaire game “life" <i>Scientific American, </i></p>
+
+<p id="GerryKnight05">Gerry, C.C., & Knight, P.L. (2005). <i>Introductory Quantum Optics. </i> Cambridge University Press. </p>
+
+<p id="Gleason75">Gleason, A.M. (1975). Measures on the Closed Subspaces of a Hilbert Space. In C.A. Hooker (Ed.), <i>The Logico-Algebraic Approach to Quantum Mechanics: Volume I: Historical Evolution</i> (pp. 123–133). Springer Netherlands. <a href="https://doi.org/10.1007/978-94-010-1795-4_7">https://doi.org/10.1007/978-94-010-1795-4_7</a><a href="http://doi.org/10.1007/978-94-010-1795-4_7"> http://doi.org/10.1007/978-94-010-1795-4_7</a></p>
+
+<p id="Gordon27">Gordon, W. (1927). <i>Zeitschrift für Physik, 40</i>, 117–133. </p>
+
+<p id="Grandy91">Grandy, W.T. (1991). The Explicit Nonlinearity of Quantum Electrodynamics. In D. Hestenes, & A. Weingartshofer (Eds.), <i>The Electron: New Theory and Experiment</i> (pp. 149–164). Springer Netherlands. <a href="https://doi.org/10.1007/978-94-011-3570-2_7">https://doi.org/10.1007/978-94-011-3570-2_7</a><a href="http://doi.org/10.1007/978-94-011-3570-2_7"> http://doi.org/10.1007/978-94-011-3570-2_7</a></p>
+
+<p id="GrangierRogerAspect86">Grangier, P., Roger, G., & Aspect, A. (1986). Experimental Evidence for a Photon Anticorrelation Effect on a Beam Splitter: A New Light on Single-Photon Interferences. <i>Europhysics Letters, 1</i>, 173. <a href="https://doi.org/10.1209/0295-5075/1/4/004">https://doi.org/10.1209/0295-5075/1/4/004</a><a href="http://doi.org/10.1209/0295-5075/1/4/004"> http://doi.org/10.1209/0295-5075/1/4/004</a></p>
 
 <p id="Gudder70">Gudder, S.P. (1970). On Hidden‐Variable Theories. <i>Journal of Mathematical Physics, 11</i>, 431–436. <a href="https://doi.org/10.1063/1.1665156">https://doi.org/10.1063/1.1665156</a><a href="http://doi.org/10.1063/1.1665156"> http://doi.org/10.1063/1.1665156</a></p>
 
@@ -44,6 +62,8 @@
 
 <p id="Jackson02">Jackson, J.D. (2002). From Lorenz to Coulomb and other explicit gauge transformations. <i>American Journal of Physics, 70</i>, 917–928. <a href="https://doi.org/10.1119/1.1491265">https://doi.org/10.1119/1.1491265</a><a href="http://doi.org/10.1119/1.1491265"> http://doi.org/10.1119/1.1491265</a></p>
 
+<p id="Jaffe05">Jaffe, R.L. (2005). Casimir effect and the quantum vacuum. <i>Physical Review D, 72</i>, 021301. <a href="https://link.aps.org/doi/10.1103/PhysRevD.72.021301">https://link.aps.org/doi/10.1103/PhysRevD.72.021301</a><a href="http://doi.org/10.1103/PhysRevD.72.021301"> http://doi.org/10.1103/PhysRevD.72.021301</a></p>
+
 <p id="Jaynes73">Jaynes, E.T. (1973). Survey of the Present Status of Neoclassical Radiation Theory. In L. Mandel, & E. Wolf (Eds.), <i>Coherence and Quantum Optics</i> (pp. 35–81). Springer US. <a href="http://doi.org/10.1007/978-1-4684-2034-0_5"> http://doi.org/10.1007/978-1-4684-2034-0_5</a></p>
 
 <p id="Jaynes90">Jaynes, E.T. (1990). <i>Probability in quantum theory. </i>381. document. Google Scholar. Addison-Wesley, Redwood City, CA. <a href="https://worrydream.com/refs/Jaynes_1990_-_Probability_in_Quantum_Theory.pdf">https://worrydream.com/refs/Jaynes_1990_-_Probability_in_Quantum_Theory.pdf</a></p>
@@ -51,6 +71,8 @@
 <p id="JaynesCummings63">Jaynes, E., & Cummings, F. (1963). Comparison of quantum and semiclassical radiation theories with application to the beam maser. <i>Proceedings of the IEEE, 51</i>, 89–109. <a href="https://ieeexplore.ieee.org/abstract/document/1443594">https://ieeexplore.ieee.org/abstract/document/1443594</a><a href="http://doi.org/10.1109/PROC.1963.1664"> http://doi.org/10.1109/PROC.1963.1664</a></p>
 
 <p id="Khrennikov01">Khrennikov, A. (2001). Linear representations of probabilistic transformations induced by context transitions. <i>Journal of Physics A: Mathematical and General, 34</i>, 9965. <a href="https://doi.org/10.1088/0305-4470/34/47/304">https://doi.org/10.1088/0305-4470/34/47/304</a><a href="http://doi.org/10.1088/0305-4470/34/47/304"> http://doi.org/10.1088/0305-4470/34/47/304</a></p>
+
+<p id="Klein26">Klein, O. (1926). <i>Zeitschrift für Physik, 37</i>, 895. </p>
 
 <p id="KochenSpecker90">Kochen, S., & Specker, E.P. (1990). The Problem of Hidden Variables in Quantum Mechanics. In G. Jäger, H. Läuchli, B. Scarpellini, & V. Strassen (Eds.), <i>Ernst Specker Selecta</i> (pp. 235–263). Birkhäuser. <a href="https://doi.org/10.1007/978-3-0348-9259-9_21">https://doi.org/10.1007/978-3-0348-9259-9_21</a><a href="http://doi.org/10.1007/978-3-0348-9259-9_21"> http://doi.org/10.1007/978-3-0348-9259-9_21</a></p>
 
@@ -102,11 +124,15 @@
 
 <p id="ReidDrummond26">Reid, M.D., & Drummond, P.D. (2026). Forward-backward stochastic simulations: $Q$-based model for measurement and Bell nonlocality consistent with weak local realistic premises. <i>Physical Review A, 113</i>, 012210. <a href="https://link.aps.org/doi/10.1103/qdyg-2nv4">https://link.aps.org/doi/10.1103/qdyg-2nv4</a><a href="http://doi.org/10.1103/qdyg-2nv4"> http://doi.org/10.1103/qdyg-2nv4</a></p>
 
+<p id="RomanRosoPlaja03">Roman, J.S., Roso, L., & Plaja, L. (2003). The Zitterbewegung for a Dirac electron driven by an intense laser field. <i>Journal of Physics B: Atomic, Molecular and Optical Physics, 36</i>, 2253. <a href="https://doi.org/10.1088/0953-4075/36/11/310">https://doi.org/10.1088/0953-4075/36/11/310</a><a href="http://doi.org/10.1088/0953-4075/36/11/310"> http://doi.org/10.1088/0953-4075/36/11/310</a></p>
+
 <p id="Rovelli96">Rovelli, C. (1996). Relational quantum mechanics. <i>International Journal of Theoretical Physics, 35</i>, 1637–1678. <a href="https://doi.org/10.1007/BF02302261">https://doi.org/10.1007/BF02302261</a><a href="http://doi.org/10.1007/BF02302261"> http://doi.org/10.1007/BF02302261</a></p>
 
 <p id="Santos15">Santos, E. (2015). Towards a Realistic Interpretation of Quantum Mechanics Providing a Model of the Physical World. <i>Foundations of Science, 20</i>, 357–386. <a href="https://doi.org/10.1007/s10699-014-9366-y">https://doi.org/10.1007/s10699-014-9366-y</a><a href="http://doi.org/10.1007/s10699-014-9366-y"> http://doi.org/10.1007/s10699-014-9366-y</a></p>
 
 <p id="SchlosshauerKoflerZeilinger13">Schlosshauer, M., Kofler, J., & Zeilinger, A. (2013). A Snapshot of Foundational Attitudes Toward Quantum Mechanics. <i>Studies in History and Philosophy of Science Part B: Studies in History and Philosophy of Modern Physics, 44</i>, 222–230. <a href="http://arxiv.org/abs/1301.1069">http://arxiv.org/abs/1301.1069</a><a href="http://doi.org/10.1016/j.shpsb.2013.04.004"> http://doi.org/10.1016/j.shpsb.2013.04.004</a></p>
+
+<p id="Schroeren22">Schroeren, D. (2022). Wavefunction realism does not ‘privilege position’. <i>Synthese, 200</i>, 27. <a href="https://doi.org/10.1007/s11229-022-03525-0">https://doi.org/10.1007/s11229-022-03525-0</a><a href="http://doi.org/10.1007/s11229-022-03525-0"> http://doi.org/10.1007/s11229-022-03525-0</a></p>
 
 <p id="Sciarretta18">Sciarretta, A. (2018). A Local-Realistic Model of Quantum Mechanics Based on a Discrete Spacetime (Extended version) <i>Foundations of Physics, 48</i>, 60–91. <a href="http://arxiv.org/abs/1712.03227">http://arxiv.org/abs/1712.03227</a><a href="http://doi.org/10.1007/s10701-017-0129-9"> http://doi.org/10.1007/s10701-017-0129-9</a></p>
 
@@ -115,6 +141,8 @@
 <p id="Shimony84">Shimony, A. (1984). Contextual Hidden Variables Theories and Bell's Inequalities. <i>The British Journal for the Philosophy of Science, 35</i>, 25–45. <a href="https://doi.org/10.1093/bjps/35.1.25">https://doi.org/10.1093/bjps/35.1.25</a><a href="http://doi.org/10.1093/bjps/35.1.25"> http://doi.org/10.1093/bjps/35.1.25</a></p>
 
 <p id="Shimony93">Shimony, A. (1993). <i>The Search for a Naturalistic World View: Volume 1. </i> Cambridge University Press. </p>
+
+<p id="Sidharth09">Sidharth, B.G. (2009). Revisiting Zitterbewegung. <i>International Journal of Theoretical Physics, 48</i>, 497–506. <a href="https://doi.org/10.1007/s10773-008-9825-8">https://doi.org/10.1007/s10773-008-9825-8</a><a href="http://doi.org/10.1007/s10773-008-9825-8"> http://doi.org/10.1007/s10773-008-9825-8</a></p>
 
 <p id="Spekkens05">Spekkens, R.W. (2005). Contextuality for preparations, transformations, and unsharp measurements. <i>Physical Review A, 71</i>, 052108. <a href="https://link.aps.org/doi/10.1103/PhysRevA.71.052108">https://link.aps.org/doi/10.1103/PhysRevA.71.052108</a><a href="http://doi.org/10.1103/PhysRevA.71.052108"> http://doi.org/10.1103/PhysRevA.71.052108</a></p>
 
@@ -126,9 +154,17 @@
 
 <p id="tHooft05">Hooft, G. (2005). <i>Determinism Beneath Quantum Mechanics. </i>In Quo Vadis Quantum Mechanics (pp. 99–111)? <a href="https://ui.adsabs.harvard.edu/abs/2005qvqm.book...99T">https://ui.adsabs.harvard.edu/abs/2005qvqm.book...99T</a></p>
 
+<p id="tHooft16">Hooft, G. (2016). <i>The Cellular Automaton Interpretation of Quantum Mechanics. </i> Springer. </p>
+
+<p id="TittelBrendelGisinEtAl98">Tittel, W., Brendel, J., Gisin, B., Herzog, T., Zbinden, H., & Gisin, N. (1998). Experimental demonstration of quantum correlations over more than 10 km. <i>Physical Review A, 57</i>, 3229–3232. <a href="https://link.aps.org/doi/10.1103/PhysRevA.57.3229">https://link.aps.org/doi/10.1103/PhysRevA.57.3229</a><a href="http://doi.org/10.1103/PhysRevA.57.3229"> http://doi.org/10.1103/PhysRevA.57.3229</a></p>
+
 <p id="Wallace20">Wallace, D. (2020). <i>Against Wavefunction Realism. </i>In Current Controversies in Philosophy of Science. Routledge. </p>
+
+<p id="WangZhang01">Wang, Z., & Zhang, A. (2001). New interpretation to zitterbewegung. <a href="http://arxiv.org/abs/hep-ph/0110079">http://arxiv.org/abs/hep-ph/0110079</a><a href="http://doi.org/10.48550/arXiv.hep-ph/0110079"> http://doi.org/10.48550/arXiv.hep-ph/0110079</a></p>
 
 <p id="Wolfram97">Wolfram, S. (1997). <i>A new kind of science. </i></p>
 
 <p id="Zuse69">Zuse, K. (1969). Rechnender Raum (Calculating Space) <i>Schriften Zur Dataverarbeitung, 1</i>, </p>
+
+<p id="Zuse70">Zuse, K. (1970). Calculating Space (Rechnender Raum) <i>Massachusetts Institute of Technology Technical Translation AZT-70-164-GEMIT., <a href="https://www.worldscientific.com/doi/abs/10.1142/9789814374309_0036">https://www.worldscientific.com/doi/abs/10.1142/9789814374309_0036</a></i></p>
 
