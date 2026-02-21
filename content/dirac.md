@@ -33,13 +33,13 @@ where the $e$ value is a constant (.0787??) that converts natural units into pro
 
 This can be expressed in terms of the underlying scalar state variables that make up the complex state ($\phi = \varphi_a + i \varphi_b$), and their first temporal derivatives ($\dot \varphi_a$ and $\dot \varphi_b$), and using natural units where $c=\hbar=1$, as:
 
-- $\rho_i = \frac{e}{m_0} ({\varphi_b}\_i \dot {\varphi_a}\_i - {\varphi_a}\_i \dot {\varphi_b}\_i) $
+- $\rho_i = \frac{e}{m_0} ({\varphi_b}_i \dot {\varphi_a}_i - {\varphi_a}_i \dot {\varphi_b}_i) $
 
 This is directly computable for each cubic cell $i$ in the system.
 
 It becomes very clear when explicitly written out in this manner that charge represents a coupling of the two otherwise independent variables in the complex number, and this suggests why a single scalar number cannot represent a conserved charge value. The fact that these variables are coupled here, but not in the actual wave equations that drive their updating, seems magical.
 
-Perhaps the most important feature of this equation is that it can be either positive or negative. For example, if ${\varphi_a}\_i \dot {\varphi_b}\_i$ happens to be larger than ${\varphi_b}\_i \dot {\varphi_a}\_i$ (and there is nothing preventing this from being the case), then it will be negative. This is not true of the corresponding expression for Schrodinger's equation, which is "definitely positive", or, in mathematical terminology, "positive definite". As noted earlier, this is one of the major reasons why standard quantum physics has strongly embraced Schrodinger's equation, and not KG: KG does not fit with the standard probabilistic framework, where the wave describes a probability, and a probability is always positive.
+Perhaps the most important feature of this equation is that it can be either positive or negative. For example, if ${\varphi_a}_i \dot {\varphi_b}_i$ happens to be larger than ${\varphi_b}_i \dot {\varphi_a}_i$ (and there is nothing preventing this from being the case), then it will be negative. This is not true of the corresponding expression for Schrodinger's equation, which is "definitely positive", or, in mathematical terminology, "positive definite". As noted earlier, this is one of the major reasons why standard quantum physics has strongly embraced Schrodinger's equation, and not KG: KG does not fit with the standard probabilistic framework, where the wave describes a probability, and a probability is always positive.
 
 Interestingly, the Dirac equation, which standard physics has adopted as a model of the electron (and we'll cover later), also produces negative "probabilities", but these have been (correctly, in our framework) reinterpreted as representing antiparticles (i.e., particles with an opposite charge). The antiparticle of the electron is the **positron**, and it is just like an electron, except it has the opposite charge. Historically, this antiparticle nature of the Dirac equation was regarded as a major problem, until positrons were subsequently discovered, and then Dirac looked like a genius for having made such a bold prediction. Nevertheless, there seems to be some residual discomfort in all this, and many treatments of quantum electrodynamics marginalize the Dirac equation in favor of a largely particle-based treatment. We return to these issues later.
 
@@ -72,15 +72,15 @@ See [Discrete Gradient](ch03_em.md) for how to compute the gradient in the discr
 
 So, in the end, the computation of the current, which is a vector having three separate components ($J_x, J_y, J_z$), looks like this:
 
-- $J_x = \frac{e}{m_0} \left\[ \varphi_a \left( \sum\_{j \in N\_{X}} k_j {(\varphi_b}\_{j+} - {\varphi_b}\_{j-}) \right) - \varphi_b \left( \sum\_{j \in N\_{X}} k_j ({\varphi_a}\_{j+} - {\varphi_a}\_{j-}) \right) \right\] $
-- $J_y = \frac{e}{m_0} \left\[ \varphi_a \left( \sum\_{j \in N\_{Y}} k_j ({\varphi_b}\_{j+} - {\varphi_b}\_{j-}) \right) - \varphi_b \left( \sum\_{j \in N\_{Y}} k_j ({\varphi_a}\_{j+} - {\varphi_a}\_{j-}) \right) \right\] $
-- $J_z = \frac{e}{m_0} \left\[ \varphi_a \left( \sum\_{j \in N\_{Z}} k_j ({\varphi_b}\_{j+} - {\varphi_b}\_{j-}) \right) - \varphi_b \left( \sum\_{j \in N\_{Z}} k_j ({\varphi_a}\_{j+} - {\varphi_a}\_{j-}) \right) \right\] $
+- $J_x = \frac{e}{m_0} \left\[ \varphi_a \left( \sum_{j \in N_{X}} k_j {(\varphi_b}_{j+} - {\varphi_b}_{j-}) \right) - \varphi_b \left( \sum_{j \in N_{X}} k_j ({\varphi_a}_{j+} - {\varphi_a}_{j-}) \right) \right\] $
+- $J_y = \frac{e}{m_0} \left\[ \varphi_a \left( \sum_{j \in N_{Y}} k_j ({\varphi_b}_{j+} - {\varphi_b}_{j-}) \right) - \varphi_b \left( \sum_{j \in N_{Y}} k_j ({\varphi_a}_{j+} - {\varphi_a}_{j-}) \right) \right\] $
+- $J_z = \frac{e}{m_0} \left\[ \varphi_a \left( \sum_{j \in N_{Z}} k_j ({\varphi_b}_{j+} - {\varphi_b}_{j-}) \right) - \varphi_b \left( \sum_{j \in N_{Z}} k_j ({\varphi_a}_{j+} - {\varphi_a}_{j-}) \right) \right\] $
 
 Again, it does not look as simple as before, but nevertheless it is necessary to have a current to be able to drive the magnetic field in an manner consistent with known physics. Specifically, as we saw earlier, the electromagnetic field equations require both $\rho$ and $\vec{J}$ values as their sources. In addition, this gradient operation is necessary for several other computations in our model, so, like the laplacian, it can be thought of as one of just a few basic operations that take place over the neighborhood of cells.
 
 # Minimal Coupling of Charge Waves with Electromagnetic Fields
 
-At this point, we have a charged wave that can generate an electromagnetic field according to the charge density $\rho$ and current density $\vec{J}$, and we know how this electromagnetic field propagates according to wave equations. Now, we need to have that electromagnetic field interact with the charge wave to produce actual forces on our model \`\`particles*. This occurs by introducing new terms into the complex KG wave equation, which, intuitively speaking, act as external \`\`driving forces* on this charge wave, in much the same way that the charge and current act as driving forces on the electromagnetic wave equations.
+At this point, we have a charged wave that can generate an electromagnetic field according to the charge density $\rho$ and current density $\vec{J}$, and we know how this electromagnetic field propagates according to wave equations. Now, we need to have that electromagnetic field interact with the charge wave to produce actual forces on our model. This occurs by introducing new terms into the complex KG wave equation, which, intuitively speaking, act as external driving forces on this charge wave, in much the same way that the charge and current act as driving forces on the electromagnetic wave equations.
 
 In the electromagnetic field equations, the driving force from charge $\rho$ adds into the second-order temporal derivative $\frac{\partial^2 {}}{\partial t^2}$ (equation~\ref{eq.em_pot_wv}):
 
@@ -98,19 +98,19 @@ Our KG (Klein-Gordon) charge wave equation is a second-order equation, expressed
 
 We can then substitute this first-order four-vector derivative into the four-vector version of the KG wave equation (in natural units), which is (equation~\ref{eq.kg_4vm}):
 
-- $\partial\_\mu \partial^\mu \phi = - m_0^2 \phi $
+- $\partial_\mu \partial^\mu \phi = - m_0^2 \phi $
 
 because, as we've noted before (equation~\ref{eq.covgrcongr}):
 
-- $\partial\_\mu \partial^\mu = \frac{\partial^2 {}}{\partial t^2} - \nabla^2 $
+- $\partial_\mu \partial^\mu = \frac{\partial^2 {}}{\partial t^2} - \nabla^2 $
 
 So the compact form of the KG wave equation with minimal coupling is therefore:
 
-- $\left( \partial\_\mu - e {A}\_\mu \right) \left(\partial^\mu - e {A}^\mu \right) \phi = -m_0^2 \phi $
+- $\left( \partial_\mu - e {A}_\mu \right) \left(\partial^\mu - e {A}^\mu \right) \phi = -m_0^2 \phi $
 
 To get all the units right, and perhaps add some conceptual clarity, we can do the same thing with the four-momentum version of the wave equation (equation~\ref{eq.kg_p4v}), which is:
 
-- $\hat{p}^\mu \hat{p}\_\mu \phi = m_0^2 c^2 \phi $
+- $\hat{p}^\mu \hat{p}_\mu \phi = m_0^2 c^2 \phi $
 
 where the momentum operator is essentially just the four-derivative, plus the pesky $i$ and $\hbar$ factors (equation~\ref{eq.4p}):
 
@@ -122,15 +122,15 @@ So now we can say that the electromagnetic potential pushes directly on the mome
 
 and the same goes for the covariant forms:
 
-- $\hat{p}\_\mu \rightarrow i \hbar \partial\_\mu - \frac{e}{c} {A}\_\mu $
+- $\hat{p}_\mu \rightarrow i \hbar \partial_\mu - \frac{e}{c} {A}_\mu $
 
 This notion of the potential pushing directly on the momentum of the particle hopefully makes good intuitive sense, even if all the associated mathematics does not. In any case, the resulting KG wave equation becomes:
 
-- $\left({\hat{p}^\mu} - \frac{e}{c}{A}^\mu \right) \left({\hat{p}\_\mu} - \frac{e}{c}{A}\_\mu \right)\phi = m_0^2 c^2 \phi $
+- $\left({\hat{p}^\mu} - \frac{e}{c}{A}^\mu \right) \left({\hat{p}_\mu} - \frac{e}{c}{A}_\mu \right)\phi = m_0^2 c^2 \phi $
 
 which can also just be written more compactly as a squared expression:
 
-- $\left(i \hbar \partial\_\mu - \frac{e}{c}{A}\_\mu \right)^2\phi = m_0^2 c^2 \phi $
+- $\left(i \hbar \partial_\mu - \frac{e}{c}{A}_\mu \right)^2\phi = m_0^2 c^2 \phi $
 
 When this equation is crunched through to produce separate time and space derivatives (as detailed in a subsequent section), we get a standard second-order wave update equation plus a few extra terms (in natural units):
 
@@ -204,15 +204,15 @@ Where the $\chi$ term is the amount that you're rotating (the rest are just conv
 
 If $\chi$ is independent of location ($x$), then it is just a constant and nothing happens. This is a *global* gauge/phase transformation, and it is not very interesting. However, if $\chi$ is now itself a function of location (i.e., $\chi(x)$ ), this is a *local* gauge transformation, and this is where the electromagnetic coupling comes in. If you have such a local variable, and you take the derivative of the resulting overall system that includes this locally-varying thing, you get this extra term for the derivative of $\chi(x)$ with respect to x:
 
-- $\partial\_\mu \phi(x) \rightarrow \exp \left( \frac{ie}{\hbar c} \chi(x) \right) \left(\partial\_\mu + \frac{ie}{\hbar c} \partial\_\mu \chi(x) \right) \phi(x) $
+- $\partial_\mu \phi(x) \rightarrow \exp \left( \frac{ie}{\hbar c} \chi(x) \right) \left(\partial_\mu + \frac{ie}{\hbar c} \partial_\mu \chi(x) \right) \phi(x) $
 
-So now your nice wave equation is a mess, and it varies from one place to another as a function of this $\partial\_\mu \chi(x)$ term. So here is the trick: you basically just add this annoying term into the overall EM potential field (which is OK because such additions do not change the gradients and therefore do not affect observable EM field vectors):
+So now your nice wave equation is a mess, and it varies from one place to another as a function of this $\partial_\mu \chi(x)$ term. So here is the trick: you basically just add this annoying term into the overall EM potential field (which is OK because such additions do not change the gradients and therefore do not affect observable EM field vectors):
 
-- ${A}\_\mu(x) \rightarrow {A}\_\mu(x) + \partial\_\mu \chi(x) $
+- ${A}_\mu(x) \rightarrow {A}_\mu(x) + \partial_\mu \chi(x) $
 
 And then you just subtract this whole thing back out from your messy equation, and this gives you something just slightly less messy:
 
-- $\left(i \hbar \partial\_\mu - \frac{e}{c} {A}\_\mu\right)\phi $
+- $\left(i \hbar \partial_\mu - \frac{e}{c} {A}_\mu\right)\phi $
 
 So, this ends up being the same thing as the minimal coupling described earlier. Somehow, this whole process seems like a rather contrived way to end up with something that already made quite a bit of sense before hand. However, as noted earlier, the true payoff of such a procedure appears to come in addressing the weak and strong forces, which we leave for a future refinement of the model.
 
@@ -239,25 +239,24 @@ Incidentally, quantum physics holds that photons (which we think of as wave pack
 Our first step is to introduce a new state variable $\psi$, to represent a field having four independent scalar values. Mathematically, this is defined as a vector of two complex numbers:
 
 $$
-\psi = \left( \begin{array}{c} \varphi\_{1a} + i \varphi\_{1b} \\
-\varphi\_{2a} + i \varphi\_{2b} \end{array} \right)
+\psi = \left( \varphi_{1a} + i \varphi_{1b} \over{\varphi_{2a} + i \varphi_{2b}} \right)
 $$
 
-where the first complex number is denoted with a subscript $1$, and contains the two real-valued components $\varphi\_{1a}$ and $\varphi\_{1b}$, and the second has subscript $2$, and contains $\varphi\_{2a}$ and $\varphi\_{2b}$. So, the spin is going to amount to these four variables rotating amongst themselves.
+where the first complex number is denoted with a subscript $1$, and contains the two real-valued components $\varphi_{1a}$ and $\varphi_{1b}$, and the second has subscript $2$, and contains $\varphi_{2a}$ and $\varphi_{2b}$. So, the spin is going to amount to these four variables rotating amongst themselves.
 
 How do we extend our basic complex-coupled KG equation to include this spin factor? Several authors in the literature have described a second-order version of the Dirac equation, which should look very familiar to you at this point, because it is essentially our current KG equation plus one additional spin term. One of the first references to such a thing comes from \incite{FeynmanGellMann58}, where they describe an equation that possesses all of the critical properties of the standard first-order Dirac equation, and note that it only requires four state variables instead of the eight required for the first-order equation. Indeed, Feynman states that he much prefers this form of the equation. This affection is presumably not widely shared, because there are relatively few other references to such an equation in the literature. Most of them come from a series of papers by Levere Hostler (e.g., Hostler, 1982, 1983, 1985).
 
 The version of the equation described by Feynman & Gell-Mann (1958) is:
 
-- $\left\[ \left(i {\nabla}\_\mu - {A}\_\mu\right)^2 + \vec{\sigma} \cdot \left(\vec{B} + i \vec{E} \right) \right\] \psi = m_0^2 \psi $
+- $\left\[ \left(i {\nabla}_\mu - {A}_\mu\right)^2 + \vec{\sigma} \cdot \left(\vec{B} + i \vec{E} \right) \right\] \psi = m_0^2 \psi $
 
 where $\vec{\sigma}$ are the standard Pauli matricies that we'll describe in a moment. Hostler (1985) describes a similar equation (which has the minus sign reversed in various places, but is otherwise the same):
 
-- $\left\[ \left(-i \partial\_\mu - e {A}\_\mu\right)^2 + m_0^2 + e i \vec{\sigma} \cdot \left(\vec{E} + i \vec{B}\right) \right\] \psi = 0 $
+- $\left\[ \left(-i \partial_\mu - e {A}_\mu\right)^2 + m_0^2 + e i \vec{\sigma} \cdot \left(\vec{E} + i \vec{B}\right) \right\] \psi = 0 $
 
 It should be clear that the first squared term is just the complex KG equation coupled to the EM field. Therefore, we can write this equation in our current notation as:
 
-- $\left\[\left(i \hbar \partial\_\mu - \frac{e}{c}{A}\_\mu \right)^2 + \frac{e}{c} \vec{\sigma} \cdot \left(\vec{B} + i \vec{E} \right) \right\] \psi = m_0^2 c^2 \psi $
+- $\left\[\left(i \hbar \partial_\mu - \frac{e}{c}{A}_\mu \right)^2 + \frac{e}{c} \vec{\sigma} \cdot \left(\vec{B} + i \vec{E} \right) \right\] \psi = m_0^2 c^2 \psi $
 
 Now for the Pauli matricies $\vec{\sigma}$. This is a vector of values $(\sigma_x, \sigma_y, \sigma_z)$ that enter into a dot product with the complex-valued vector composed of the magnetic and electric field values $\vec{B}$ and $\vec{E}$:
 
@@ -296,44 +295,68 @@ This entire result then is multiplied by the two complex numbers in the $\psi$ s
 $$
 \left( \begin{array}{cc} B_z + iE_z & B_x + E_y + i(E_x - B_y) \\
 B_x - E_y + i(E_x + B_y) & -B_z - iE_z \end{array} \right)
-\times \left( \begin{array}{c} \varphi\_{1a} + i \varphi\_{1b} \\
-\varphi\_{2a} + i \varphi\_{2b} \end{array} \right)
+\times \left( \begin{array}{c} \varphi_{1a} + i \varphi_{1b} \\
+\varphi_{2a} + i \varphi_{2b} \end{array} \right)
 $$
 
 Which produces this for the first complex number:
 
-- $\varphi\_{1a} + i \varphi\_{1b} = (\varphi\_{1a} + i \varphi\_{1b})(B_z + iE_z) + (\varphi\_{2a} + i \varphi\_{2b})(B_x + E_y + i(E_x - B_y)) $
+- $\varphi_{1a} + i \varphi_{1b} = (\varphi_{1a} + i \varphi_{1b})(B_z + iE_z) + (\varphi_{2a} + i \varphi_{2b})(B_x + E_y + i(E_x - B_y)) $
 
 which decomposes into the two scalar variables as:
 
-- $\varphi\_{1a} = \varphi\_{1a} B_z - \varphi\_{1b} E_z + \varphi\_{2a} (B_x + E_y) - \varphi\_{2b} (E_x - B_y) $
-- $\varphi\_{1b} = \varphi\_{1b} B_z + \varphi\_{1a} E_z + \varphi\_{2b} (B_x + E_y) + \varphi\_{2a} (E_x - B_y) $
+- $\varphi_{1a} = \varphi_{1a} B_z - \varphi_{1b} E_z + \varphi_{2a} (B_x + E_y) - \varphi_{2b} (E_x - B_y) $
+- $\varphi_{1b} = \varphi_{1b} B_z + \varphi_{1a} E_z + \varphi_{2b} (B_x + E_y) + \varphi_{2a} (E_x - B_y) $
 
 And for the second complex number:
 
-- $\varphi\_{2a} + i \varphi\_{2b} = (\varphi\_{2a} + i \varphi\_{2b})(-B_z - iE_z) + (\varphi\_{1a} + i \varphi\_{1b})(B_x - E_y + i(E_x + B_y)) $
+- $\varphi_{2a} + i \varphi_{2b} = (\varphi_{2a} + i \varphi_{2b})(-B_z - iE_z) + (\varphi_{1a} + i \varphi_{1b})(B_x - E_y + i(E_x + B_y)) $
 
 which decomposes into:
 
-- $\varphi\_{2a} = -\varphi\_{2a} B_z + \varphi\_{2b} E_z + \varphi\_{1a} (B_x - E_y) - \varphi\_{1b} (E_x + B_y) $
-- $\varphi\_{2b} = -\varphi\_{2b} B_z - \varphi\_{2a} E_z + \varphi\_{1b} (B_x - E_y) + \varphi\_{1a} (E_x + B_y) $
+- $\varphi_{2a} = -\varphi_{2a} B_z + \varphi_{2b} E_z + \varphi_{1a} (B_x - E_y) - \varphi_{1b} (E_x + B_y) $
+- $\varphi_{2b} = -\varphi_{2b} B_z - \varphi_{2a} E_z + \varphi_{1b} (B_x - E_y) + \varphi_{1a} (E_x + B_y) $
 
 So, with the minus sign flip that took place in the main equation, and the fact that all of the rest of the equation operates on each complex component of $\psi$ separately, without any mixing across components, the final update equations for this second-order Dirac equation are just the basic complex KG equations plus these terms:
 
-- $\ddot \varphi\_{1a} = \nabla^2 \varphi\_{1a} - m_0^2 \varphi\_{1a} + 2 e \left(A_0 \dot \varphi\_{1b} + \vec{A} \cdot \vec{\nabla} \varphi\_{1b} \right) + $
-- $e^2 \varphi\_{1a} \left(A_0^2 - \vec{A}^2 \right) + e \left( \varphi\_{1a} B_z - \varphi\_{1b} E_z + \varphi\_{2a} (B_x + E_y) - \varphi\_{2b} (E_x - B_y) \right) $
-- $\ddot \varphi\_{1b} = \nabla^2 \varphi\_{1b} - m_0^2 \varphi\_{1b} - 2 e \left(A_0 \dot \varphi\_{1a} + \vec{A} \cdot \vec{\nabla} \varphi\_{1a} \right) + $
-- $e^2 \varphi\_{1b} \left(A_0^2 - \vec{A}^2 \right) + e \left( \varphi\_{1b} B_z + \varphi\_{1a} E_z + \varphi\_{2b} (B_x + E_y) + \varphi\_{2a} (E_x - B_y) \right) $
-- $\ddot \varphi\_{2a} = \nabla^2 \varphi\_{2a} - m_0^2 \varphi\_{2a} + 2 e \left(A_0 \dot \varphi\_{2b} + \vec{A} \cdot \vec{\nabla} \varphi\_{2b} \right) + $
-- $e^2 \varphi\_{2a} \left(A_0^2 - \vec{A}^2 \right) + e \left( -\varphi\_{2a} B_z + \varphi\_{2b} E_z + \varphi\_{1a} (B_x - E_y) - \varphi\_{1b} (E_x + B_y) \right) $
-- $\ddot \varphi\_{2b} = \nabla^2 \varphi\_{2b} - m_0^2 \varphi\_{2b} - 2 e \varphi\_{2a} \left(A_0 \dot \varphi\_{2a} + \vec{A} \cdot \vec{\nabla} \varphi\_{2a} \right) + $
-- $e^2 \varphi\_{2b} \left(A_0^2 - \vec{A}^2 \right) + e \left( -\varphi\_{2b} B_z - \varphi\_{2a} E_z + \varphi\_{1b} (B_x - E_y) + \varphi\_{1a} (E_x + B_y) \right) $
+{id="eq_dirac" title="Dirac functions in real, second-order form"}
+$$
+\ddot{\varphi}_{1a} = \nabla^2 \varphi_{1a} - m_0^2 \varphi_{1a} + 2 e \left(A_0 \dot \varphi_{1b} + \vec{A} \cdot \vec{\nabla} \varphi_{1b} \right) +
+$$
+
+$$
+\thinspace \thinspace \thinspace e^2 \varphi_{1a} \left(A_0^2 - \vec{A}^2 \right) + e \left( \varphi_{1a} B_z - \varphi_{1b} E_z + \varphi_{2a} (B_x + E_y) - \varphi_{2b} (E_x - B_y) \right)
+$$
+
+$$
+\ddot \varphi_{1b} = \nabla^2 \varphi_{1b} - m_0^2 \varphi_{1b} - 2 e \left(A_0 \dot \varphi_{1a} + \vec{A} \cdot \vec{\nabla} \varphi_{1a} \right) +
+$$
+
+$$
+e^2 \varphi_{1b} \left(A_0^2 - \vec{A}^2 \right) + e \left( \varphi_{1b} B_z + \varphi_{1a} E_z + \varphi_{2b} (B_x + E_y) + \varphi_{2a} (E_x - B_y) \right)
+$$
+
+$$
+\ddot \varphi_{2a} = \nabla^2 \varphi_{2a} - m_0^2 \varphi_{2a} + 2 e \left(A_0 \dot \varphi_{2b} + \vec{A} \cdot \vec{\nabla} \varphi_{2b} \right) +
+$$
+
+$$
+e^2 \varphi_{2a} \left(A_0^2 - \vec{A}^2 \right) + e \left( -\varphi_{2a} B_z + \varphi_{2b} E_z + \varphi_{1a} (B_x - E_y) - \varphi_{1b} (E_x + B_y) \right)
+$$
+
+$$
+\ddot \varphi_{2b} = \nabla^2 \varphi_{2b} - m_0^2 \varphi_{2b} - 2 e \varphi_{2a} \left(A_0 \dot \varphi_{2a} + \vec{A} \cdot \vec{\nabla} \varphi_{2a} \right) +
+$$
+
+$$
+e^2 \varphi_{2b} \left(A_0^2 - \vec{A}^2 \right) + e \left( -\varphi_{2b} B_z - \varphi_{2a} E_z + \varphi_{1b} (B_x - E_y) + \varphi_{1a} (E_x + B_y) \right)
+$$
 
 Again, it is fundamentally the wave equation, plus three additional terms that characterize the interaction with the electromagnetic field. Note that, as with the mixing across complex components $\varphi_a$ and $\varphi_b$ that occurred in the previous version of the coupled KG equations, the mixing or spin across $\phi_1$ and $\phi_2$ occurs via the electromagnetic field interaction. This time, the vector force fields are now required for the coupling, requiring that we compute them from the potentials, as described earlier (involving the $\vec{\nabla}$ first-order gradient and, for the first time, the $\vec{\nabla} \times$ function, which is very similar in its discrete form to the $\vec{\nabla}$ function).
 
 % todo: run KG versions of the basic tests and see whether this is true!!!
 
-Interestingly, although we need to continue the broken symmetry from the previous coupled-complex KG equation, where we use the current values of $\dot \varphi\_{1a}$ and $\dot \varphi\_{2a}$ to update the $\varphi\_{1b}$ and $\varphi\_{2b}$ variables, we apparently do not need to perform a similar symmetry breaking for the new couplings in this Dirac equation.
+Interestingly, although we need to continue the broken symmetry from the previous coupled-complex KG equation, where we use the current values of $\dot \varphi_{1a}$ and $\dot \varphi_{2a}$ to update the $\varphi_{1b}$ and $\varphi_{2b}$ variables, we apparently do not need to perform a similar symmetry breaking for the new couplings in this Dirac equation.
 
 So, to answer the question of "what is spin?", we need only look at these equations. Spin, it seems, is this rotation of state values through the two complex variables in the $\psi$ state: $\phi_1$ and $\phi_2$. As is evident, this spinning occurs via interactions with the electromagnetic field vectors oriented along the three different spatial directions. The fact that, in our CA model we actually fix these directions according to the underlying cubic grid may seem strange and arbitrary. However, this does not mean that stuff can only spin along these fixed directions, anymore than it means that waves can only propagate in certain directions. By having different continuous values along these dimensions, any "direction" of spin relative to the underlying grid can occur.
 
@@ -343,9 +366,10 @@ Although somewhat complex, these equations should describe the entirety of the c
 
 One final thing to note is that the charge and current density equations from the previous version of the coupled complex KG equation still hold for this Dirac version, because these additional terms to not enter into the covariant derivative, and are therefore canceled out in the subtraction, just like the mass term. The actual numerical calculation changes only to accommodate the $\psi$ state value instead of the single complex $\phi$ state. The charge and current equations are:
 
-- $\rho = \frac{\hbar e}{m_0 c^2} \left((\varphi\_{1b} \dot \varphi\_{1a} - \varphi\_{1a} \dot \varphi\_{1b}) + (\varphi\_{2b} \dot \varphi\_{2a} - \varphi\_{2a} \dot \varphi\_{2b})\right) - $
-- $\frac{e^2}{m_0 c^2} A_0 (\varphi\_{1a}^2 + \varphi\_{1b}^2 + \varphi\_{2a}^2 + \varphi\_{2b}^2) $
-- $\vec{J} = \frac{\hbar e}{m_0 c^2} \left((\varphi\_{1a} \vec{\nabla} \varphi\_{1b} - \varphi\_{1b} \vec{\nabla} \varphi\_{1a}) + (\varphi\_{2a} \vec{\nabla} \varphi\_{2b} - \varphi\_{2b} \vec{\nabla} \varphi\_{2a})\right) -$
-- $\frac{e^2}{m_0 c^2} \vec{A} (\varphi\_{1a}^2 + \varphi\_{1b}^2 + \varphi\_{2a}^2 + \varphi\_{2b}^2) $
+- $\rho = \frac{\hbar e}{m_0 c^2} \left((\varphi_{1b} \dot \varphi_{1a} - \varphi_{1a} \dot \varphi_{1b}) + (\varphi_{2b} \dot \varphi_{2a} - \varphi_{2a} \dot \varphi_{2b})\right) - $
+
+- $\frac{e^2}{m_0 c^2} A_0 (\varphi_{1a}^2 + \varphi_{1b}^2 + \varphi_{2a}^2 + \varphi_{2b}^2) $
+- $\vec{J} = \frac{\hbar e}{m_0 c^2} \left((\varphi_{1a} \vec{\nabla} \varphi_{1b} - \varphi_{1b} \vec{\nabla} \varphi_{1a}) + (\varphi_{2a} \vec{\nabla} \varphi_{2b} - \varphi_{2b} \vec{\nabla} \varphi_{2a})\right) -$
+- $\frac{e^2}{m_0 c^2} \vec{A} (\varphi_{1a}^2 + \varphi_{1b}^2 + \varphi_{2a}^2 + \varphi_{2b}^2) $
 
 
