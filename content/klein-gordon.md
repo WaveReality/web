@@ -53,15 +53,21 @@ $$
 
 These last two forms are useful for relating to the four-vector version of the wave equation, where we saw that:
 
-- $\partial\_\mu \partial^\mu = \frac{\partial^2}{\partial t^2} - c^2 \nabla^2 $
+$$
+\partial\_\mu \partial^\mu = \frac{\partial^2}{\partial t^2} - c^2 \nabla^2
+$$
 
 so that the equation can be written:
 
-- $\partial\_\mu \partial^\mu \varphi = - \frac{c^2 m_0^2}{\hbar^2} \varphi $
+$$
+\partial\_\mu \partial^\mu \varphi = - \frac{c^2 m_0^2}{\hbar^2} \varphi
+$$
 
 or:
 
-- $\left(\partial\_\mu \partial^\mu + \frac{c^2 m_0^2}{\hbar^2}\right) \varphi = 0 $
+$$
+\left(\partial\_\mu \partial^\mu + \frac{c^2 m_0^2}{\hbar^2}\right) \varphi = 0
+$$
 
 To actually implement this KG equation in our cellular automaton model, we make one modification to the acceleration term, to subtract off the mass:
 
@@ -77,19 +83,31 @@ $$
 
 One of the most important features of this KG equation is that waves now travel at _variable speeds_, instead of always moving at exactly the same speed (the speed of light). This speed now depends on the relationship between the curvature ($\nabla^2 \varphi$) and the squared-mass value $\frac{m_0^2}{\hbar^2} \varphi$. In essence, the mass "drags down" the wave propagation force conveyed by the local curvature, $\nabla^2 \varphi$. Therefore, to get the wave to move faster, you need more curvature, which is to say, a higher frequency wave, because higher frequency waves have more waves per unit length, and this means overall greater "curvature" ([[#figure_frequency]]).
 
-This relationship between frequency $f$ of a wave and the momentum (velocity \* mass) of the particle that it describes is captured in one of the most basic equations of quantum physics:
+This relationship between frequency $f$ of a wave and the momentum (velocity * mass) of the particle that it describes is captured in one of the most basic equations of quantum physics:
 
-- $p = \frac{h}{c} f $
+$$
+p = \frac{h}{c} f
+$$
 
 where $p$ is the momentum, and $h$ is Planck's constant. This can also be written in terms of the wavelength $\lambda$, which is the inverse of the frequency:
 
-- $f = \frac{c}{\lambda} $
-- $\lambda = \frac{c}{f} $
-- $\lambda f = c $
+$$
+f = \frac{c}{\lambda}
+$$
+
+$$
+\lambda = \frac{c}{f}
+$$
+
+$$
+\lambda f = c
+$$
 
 so that momentum is inversely proportional to the length of the waves:
 
-- $p = \frac{h}{\lambda} $
+$$
+p = \frac{h}{\lambda}
+$$
 
 Although it might be tempting to compute the velocity from the momentum expression given above (e.g., $p = m v$ so $v = \frac{p}{m}$), this is not accurate due to the effects of special relativity as we discuss in greater detail below. Instead, the appropriate equation that relates the momentum and the velocity is:
 
@@ -122,7 +140,9 @@ Again, the main point for now is just that introducing the mass term makes the r
 
 We can intuitively see that this very simple modification to the wave equation captures all of classical (Newtonian) mechanics for a "particle" characterized by a wave according to this equation. In the absence of any external forces, the wave will propagate along at a constant velocity (Newton's first law of inertia), because the frequency of the wave does not decrease (and it would not change its overall direction of propagation). If a force is applied to this system, it will change the frequency of the oscillation of the wave, and thus result in a change in momentum, in accord with Newton's second law:
 
-- $F = \frac{\partial \vec{p}}{\partial t} = m \frac{\partial \vec{v}}{\partial t} = m \vec{a} $
+$$
+F = \frac{\partial \vec{p}}{\partial t} = m \frac{\partial \vec{v}}{\partial t} = m \vec{a}
+$$
 
 After a few more developments, we can make this relationship much more formally accurate and precise, by considering the overall energy and momentum relationships computed by the KG wave equation. We will see that Schrodinger's equation, which is the primary wave equation for basic quantum physics, captures classical Newtonian physics, and that the KG equation is a version of Schrodinger's equation that also takes into account special relativity, which is important when particles are moving very fast (i.e., relatively close to the speed of light).
 
@@ -136,7 +156,9 @@ For an electron, this mass is $9.1x10^{-31}$ kg, which is an extremely tiny weig
 
 The value of $m_0$ also defines the **Compton wavelength** of a given particle, which is the wavelength of a particle at rest, due strictly to the rest mass. The formula for the Compton wavelength $\lambda_C$ is:
 
-- $\lambda_C = \frac{h}{m_0 c} $
+$$
+\lambda_C = \frac{h}{m_0 c}
+$$
 
 One other thing about the rest mass --- we can consider what happens when you set the rest mass of our particle to zero. You should see that we immediately recover the basic wave equation from before. Thus, it is immediately obvious that "particles" with a zero rest mass must move at the speed of light. This is a basic postulate of special relativity. Note also that it is impossible for a massive particle to travel at the speed of light, because it would have to have an infinitely high frequency, and this is not possible (even in a continuous spatial model).
 
@@ -166,60 +188,111 @@ Before we do so, you should review [[complex numbers]] if you are not completely
 
 Using the total energy ([[Hamiltonian]]) approach, we can derive Schrodinger's equation, using the very same energy and momentum operators that we used in the derivation of the KG equation above. To remind, these operators are:
 
-- **momentum operator:** $\hat{p} = -i \hbar \vec{\nabla} $
-- **energy operator:** $\hat{E} = i \hbar \frac{\partial }{\partial t} $
-- gradient operator: $\vec{\nabla} = \left(\frac{\partial {}}{\partial {x}}, \frac{\partial {}}{\partial {y}}, \frac{\partial}{\partial {z}}\right)$
+{id="eq_momentum" title="momentum operator"}
+$$
+\hat{p} = -i \hbar \vec{\nabla}
+$$
+
+{id="eq_energy" title="energy operator"}
+$$
+\hat{E} = i \hbar \frac{\partial }{\partial t}
+$$
+
+{id="eq_gradient" title="gradient operator"}
+$$
+\vec{\nabla} = \left(\frac{\partial {}}{\partial {x}}, \frac{\partial {}}{\partial {y}}, \frac{\partial}{\partial {z}}\right)
+$$
 
 Next, we need to define the total energy Hamiltonian. Instead of the relativistic total energy, we use the classical Newtonian expression for the kinetic energy of a particle, in terms of its velocity $\vec{v}$, just as we did in the simple wave energy calculation in [[waves]]:
 
-- $K = \frac{1}{2} m_0 \vec{v}^2 = \frac{1}{2 m_0} \vec{p}^2$
+{id="eq_kinetic" title="kinetic energy of particle"}
+$$
+K = \frac{1}{2} m_0 \vec{v}^2 = \frac{1}{2 m_0} \vec{p}^2
+$$
 
 The second form uses the Newtonian relationship of momentum to velocity (just $\vec{p} = m_0 \vec{v}$) --- because we have a momentum operator, we need to use this momentum form.
 
 We also include a potential energy term that is a function of any kind of electrical or other force potential that the particle experiences. We won't deal much with such forces at this point, so we just call this potential energy $V$ for now, and focus on the kinetic energy. The total energy or Hamiltonian in abstract terms is just the kinetic energy $K$ plus this potential energy:
 
-- $E = K + V$
-- $E = \frac{1}{2 m_0} \vec{p}^2 + V $
+{id="eq_kv" title="kinetic and potential energy"}
+$$
+E = K + V
+$$
+
+$$
+E = \frac{1}{2 m_0} \vec{p}^2 + V
+$$
 
 We can now just apply our momentum and energy operators to these expressions, and the result is in fact:
 
-- **Schrodinger's equation:** $i \hbar \frac{\partial {\phi}}{\partial t} = -\frac{\hbar^2}{2 m_0} \nabla^2 \phi + V \phi $
+{id="eq_schrodinger" title="Schrodinger's equation"}
+$$
+i \hbar \frac{\partial {\phi}}{\partial t} = -\frac{\hbar^2}{2 m_0} \nabla^2 \phi + V \phi
+$$
 
 The net result is that we can conclude that Schrodinger's equation provides an accurate description of the flow of energy and momentum over time of a "particle" described by a wave, such that it obeys classical Newtonian physical laws.
 
 Omitting various constants (factors of $h$) and any external force potential, Schrodinger's equation is:
 
-- $i \frac{\partial {\phi}}{\partial t} = - \frac{1}{2m_0} \nabla^2 \phi $
+{id="eq_schrodinger" title="Schrodinger's equation, essence"}
+$$
+i \frac{\partial {\phi}}{\partial t} = - \frac{1}{2m_0} \nabla^2 \phi
+$$
 
 where $m_0$ is again the rest mass of the particle in question. This is clearly very similar to the basic second-order KG wave equation:
 
-- $\frac{\partial^2 {\varphi}}{\partial t^2} = c^2 \nabla^2 \varphi - \frac{m_0^2}{\hbar^2} \varphi $
+{id="eq_KG" title="Klein-Gordon equation"}
+$$
+\frac{\partial^2 {\varphi}}{\partial t^2} = c^2 \nabla^2 \varphi - \frac{m_0^2}{\hbar^2} \varphi
+$$
 
 except that the temporal derivative is first-order, and mass enters in a different way. Nevertheless, the driving force is still the overall curvature of the wave, computed by $\nabla^2 \varphi$. As we noted above, the multiplication by the $i$ term causes things to rotate --- this rotation is key for making the first-order equation behave like a wave.
 
 To see this effect more explicitly, we can write out Schrodinger's equation in terms of the two underlying scalar values:
 
-- $i \frac{\partial {\varphi_a + i \varphi_b}}{\partial t} = - \frac{1}{2m_0} \nabla^2 (\varphi_a + i \varphi_b) $
-- $-\frac{\partial {\varphi_b}}{\partial t} + \frac{\partial {i \varphi_a}}{\partial t} = -\frac{1}{2m_0} \nabla^2 \varphi_a - i \nabla^2 \varphi_b $
+$$
+i \frac{\partial {\varphi_a + i \varphi_b}}{\partial t} = - \frac{1}{2m_0} \nabla^2 (\varphi_a + i \varphi_b)
+$$
+
+$$
+-\frac{\partial {\varphi_b}}{\partial t} + \frac{\partial {i \varphi_a}}{\partial t} = -\frac{1}{2m_0} \nabla^2 \varphi_a - i \nabla^2 \varphi_b
+$$
 
 where $\varphi_a$ indicates a scalar state variable that is the $a$ component of $\phi$, and $\varphi_b$ is the $b$ component of $\phi$. Note that the derivatives operate separately on each of the two variables. At this point, we now can just separate all the terms that involve an $i$ from those that do not, to get update equations for each of the two variables. For the real-valued components (without the $i$):
 
-- $-\frac{\partial {\varphi_b}}{\partial t} = - \frac{1}{2m_0} \nabla^2 \varphi_a $
-- $\frac{\partial {\varphi_b}}{\partial t} = \frac{1}{2m_0} \nabla^2 \varphi_a $
+$$
+-\frac{\partial {\varphi_b}}{\partial t} = - \frac{1}{2m_0} \nabla^2 \varphi_a
+$$
+
+$$
+\frac{\partial {\varphi_b}}{\partial t} = \frac{1}{2m_0} \nabla^2 \varphi_a
+$$
 
 and for the imaginary components (dropping the $i$ now, because we no longer need it to keep the variables separated):
 
-- $\frac{\partial {\varphi_a}}{\partial t} = - \frac{1}{2m_0} \nabla^2 \varphi_b $
+$$
+\frac{\partial {\varphi_a}}{\partial t} = - \frac{1}{2m_0} \nabla^2 \varphi_b
+$$
 
 In a discrete-space and time CA-like implementation, these equations would be written:
 
-- $\dot {\varphi_a}\_i^{t+1} = - \frac{3}{26 m_0} \sum\_{j \in N\_{26}} k_j ({\varphi_b}\_j^t - {\varphi_b}\_i^t) $
-- ${\varphi_a}\_i^{t+1} = {\varphi_a}\_i^t + \dot {\varphi_a}\_i^{t+1} $
+$$
+\dot {\varphi_a}\_i^{t+1} = - \frac{3}{26 m_0} \sum\_{j \in N\_{26}} k_j ({\varphi_b}\_j^t - {\varphi_b}\_i^t)
+$$
+
+$$
+{\varphi_a}\_i^{t+1} = {\varphi_a}\_i^t + \dot {\varphi_a}\_i^{t+1}
+$$
 
 and:
 
-- $\dot {\varphi_b}\_i^{t+1} = \frac{3}{26 m_0}\sum\_{j \in N\_{26}} k_j ({\varphi_a}\_j^t - {\varphi_a}\_i^t) $
-- ${\varphi_b}\_i^{t+1} = {\varphi_b}\_i^t + \dot {\varphi_b}\_i^{t+1} $
+$$
+\dot {\varphi_b}\_i^{t+1} = \frac{3}{26 m_0}\sum\_{j \in N\_{26}} k_j ({\varphi_a}\_j^t - {\varphi_a}\_i^t)
+$$
+
+$$
+{\varphi_b}\_i^{t+1} = {\varphi_b}\_i^t + \dot {\varphi_b}\_i^{t+1}
+$$
 
 So, in the end, Schrodinger's equation really just boils down to two very simple differential equations. Interestingly, these equations are *coupled*, in the sense that it is the curvature of $\varphi_a$ that drives the change in $\varphi_b$, and vice-versa. This is the rotational aspect of the equation mentioned earlier, which is caused by the presence of the $i$ in the equation.
 
@@ -227,7 +300,7 @@ When you actually implement Schrodinger's equation on a computer using the updat
 
 The basic phenomenology of Schrodinger's equation is that wave packets propagate through space, with a speed that is proportional to $\nabla^2 \phi$, which in turn is proportional to the frequency of the wave. In other words, it describes exactly the same behavior as the KG equation, where particle speed is proportional to frequency.
 
-One critical property of Schrodinger's equation (which our current scalar KG equation does not have) is that it preserves the overall magnitude of the $\phi$ state values across all of space, for all time. This is to say, if you compute the sum of $\phi \phi^\*$ for each point in space, this sum will remain the same across time under the Schrodinger equation. This conserved value is interpreted as a probability in standard quantum mechanics. For example, we can initialize the state with a localized wave packet (Figure 4.1) to represent the initial probability for the location and velocity of a particle (velocity being a function of the frequency of the wave packet). If we then apply the Schrodinger equation repeatedly, we can interpret the resulting $\phi \phi^\*$ values as the probability of the particle having moved to the corresponding location.
+One critical property of Schrodinger's equation (which our current scalar KG equation does not have) is that it preserves the overall magnitude of the $\phi$ state values across all of space, for all time. This is to say, if you compute the sum of $\phi \phi^*$ for each point in space, this sum will remain the same across time under the Schrodinger equation. This conserved value is interpreted as a probability in standard quantum mechanics. For example, we can initialize the state with a localized wave packet (Figure 4.1) to represent the initial probability for the location and velocity of a particle (velocity being a function of the frequency of the wave packet). If we then apply the Schrodinger equation repeatedly, we can interpret the resulting $\phi \phi^*$ values as the probability of the particle having moved to the corresponding location.
 
 In other words, the wave packet defines a kind of "cloud of probability" for finding a discrete particle within its midst. However, these probabilities have different meanings in different scenarios, and it is notoriously difficult to come up with a intuitively sensible interpretation of what these probability clouds mean. We return to these issues later.
 

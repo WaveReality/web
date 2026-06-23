@@ -12,6 +12,7 @@ import (
 	"cogentcore.org/core/icons"
 	"cogentcore.org/core/text/csl"
 	_ "cogentcore.org/core/text/tex" // include this to get math
+	"cogentcore.org/core/text/tex/texcache"
 	"cogentcore.org/core/tree"
 	_ "cogentcore.org/lab/yaegilab"
 )
@@ -23,14 +24,19 @@ import (
 // todo: include link for configuring here
 
 //go:generate mdcite -vv -refs ./mechphys.json -d ./content
+//go:generate go run ./genmath.go
 
 //go:embed content citedrefs.json
 var econtent embed.FS
+
+//go:embed mathcache.json.gz
+var mathcache embed.FS
 
 //go:embed icon.svg
 var icon string
 
 func main() {
+	texcache.OpenFS(mathcache, "mathcache.json.gz")
 	core.AppIcon = icon
 	content.Settings.SiteTitle = "Wave Reality"
 	content.OfflineURL = "https://wavereality.org"

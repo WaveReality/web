@@ -24,7 +24,7 @@ The physical consequence of such a process (i.e., the entire reason for its hypo
 
 In our alternative cosmological framework, this grain of sand, containing all of the mass / energy of the universe, would represent the maximum energy / particle density that a black hole could support. Because the flatness of space is a given in this framework, we would only need to explain why this initial black hole state would result in a relatively homogeneous and isotropic distribution of mass and energy. Perhaps because it spent a long time bouncing around in this grain of sand prior to blowing up?
 
-It is highly uncertain (to me at least) what physics would look like within this primordial black hole. Is it just pure energy or do the fermion particles remain in some fashion?  Presumably, due to the high energies present, we would need the "full" standard model including quarks etc to represent this state. I guess it might be some kind of [quark-gluon plasma](https://en.wikipedia.org/wiki/Quark%E2%80%93gluon_plasma)?
+It is highly uncertain (to me at least) what physics would look like within this primordial black hole. Is it just pure energy or do the fermion particles remain in some fashion?  Presumably, due to the high energies present, we would need the "full" standard model including quarks etc to represent this state. I guess it might be some kind of [quark-gluon plasma](https://en.wikipedia.org/wiki/Quark-gluon_plasma)?
 
 ## Spin Coupling to Gravity
 

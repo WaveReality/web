@@ -36,11 +36,11 @@ Geometrically, this is equivalent to rotating a vector by 90 degrees! If you do 
 
 The **complex conjugate** of a complex number is just that number with imaginary dimension inverted:
 
-- $y^\* = a - i b $
+- $y^* = a - i b $
 
 The primary use of such a thing is to find the magnitude of a complex number (i.e., the length of the vector that it represents), as:
 
-- $y y^\* = (a + i b)(a - i b) $
+- $y y^* = (a + i b)(a - i b) $
 - $= a^2 - iab + iab + b^2 $
 - $= a^2 + b^2 $
 

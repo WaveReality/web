@@ -12,6 +12,8 @@
 
 <p id="Bell64">Bell, J.S. (1964). On the Einstein Podolsky Rosen paradox. <i>Physics Physique Fizika, 1</i>, 195–200. </p>
 
+<p id="Bialynicki-Birula94">Bialynicki-Birula, I. (1994). Weyl, Dirac, and Maxwell equations on a lattice as unitary cellular automata. <i>Physical Review D, 49</i>, 6920–6927. <a href="https://link.aps.org/doi/10.1103/PhysRevD.49.6920">https://link.aps.org/doi/10.1103/PhysRevD.49.6920</a><a href="http://doi.org/10.1103/PhysRevD.49.6920"> http://doi.org/10.1103/PhysRevD.49.6920</a></p>
+
 <p id="Bohm52">Bohm, D. (1952). A Suggested Interpretation of the Quantum Theory in Terms of "Hidden" Variables. I. <i>Physical Review, 85</i>, 166–179. <a href="https://link.aps.org/doi/10.1103/PhysRev.85.166">https://link.aps.org/doi/10.1103/PhysRev.85.166</a><a href="http://doi.org/10.1103/PhysRev.85.166"> http://doi.org/10.1103/PhysRev.85.166</a></p>
 
 <p id="BrillGoodman67">Brill, O.L., & Goodman, B. (1967). Causality in the Coulomb Gauge. <i>American Journal of Physics, 35</i>, 832–837. <a href="https://doi.org/10.1119/1.1974261">https://doi.org/10.1119/1.1974261</a><a href="http://doi.org/10.1119/1.1974261"> http://doi.org/10.1119/1.1974261</a></p>
@@ -95,6 +97,8 @@
 <p id="Maudlin11">Maudlin, T. (2011). <i>Quantum Non-Locality and Relativity: Metaphysical Intimations of Modern Physics. </i> John Wiley & Sons. </p>
 
 <p id="Mermin18">Mermin, N.D. (2018). Making better sense of quantum mechanics. <i>Reports on Progress in Physics, 82</i>, 012002. <a href="https://dx.doi.org/10.1088/1361-6633/aae2c6">https://dx.doi.org/10.1088/1361-6633/aae2c6</a><a href="http://doi.org/10.1088/1361-6633/aae2c6"> http://doi.org/10.1088/1361-6633/aae2c6</a></p>
+
+<p id="Meyer96">Meyer, D.A. (1996). From quantum cellular automata to quantum lattice gases. <i>Journal of Statistical Physics, 85</i>, 551–574. <a href="https://doi.org/10.1007/BF02199356">https://doi.org/10.1007/BF02199356</a><a href="http://doi.org/10.1007/BF02199356"> http://doi.org/10.1007/BF02199356</a></p>
 
 <p id="Nelson66">Nelson, E. (1966). Derivation of the Schr\"odinger Equation from Newtonian Mechanics. <i>Physical Review, 150</i>, 1079–1085. <a href="https://link.aps.org/doi/10.1103/PhysRev.150.1079">https://link.aps.org/doi/10.1103/PhysRev.150.1079</a><a href="http://doi.org/10.1103/PhysRev.150.1079"> http://doi.org/10.1103/PhysRev.150.1079</a></p>
 
