@@ -68,7 +68,7 @@
 
 <p id="Jaynes73">Jaynes, E.T. (1973). Survey of the Present Status of Neoclassical Radiation Theory. In L. Mandel, & E. Wolf (Eds.), <i>Coherence and Quantum Optics</i> (pp. 35–81). Springer US. <a href="http://doi.org/10.1007/978-1-4684-2034-0_5"> http://doi.org/10.1007/978-1-4684-2034-0_5</a></p>
 
-<p id="Jaynes90">Jaynes, E.T. (1990). <i>Probability in quantum theory. </i>381. document. Google Scholar. Addison-Wesley, Redwood City, CA. <a href="https://worrydream.com/refs/Jaynes_1990_-_Probability_in_Quantum_Theory.pdf">https://worrydream.com/refs/Jaynes_1990_-_Probability_in_Quantum_Theory.pdf</a></p>
+<p id="Jaynes90">Jaynes, E.T. (1990). <i>Probability in quantum theory. </i>Complexity, entropy, and the physics of information, 381. document. Google Scholar. Addison-Wesley, Redwood City, CA. <a href="https://worrydream.com/refs/Jaynes_1990_-_Probability_in_Quantum_Theory.pdf">https://worrydream.com/refs/Jaynes_1990_-_Probability_in_Quantum_Theory.pdf</a></p>
 
 <p id="JaynesCummings63">Jaynes, E., & Cummings, F. (1963). Comparison of quantum and semiclassical radiation theories with application to the beam maser. <i>Proceedings of the IEEE, 51</i>, 89–109. <a href="https://ieeexplore.ieee.org/abstract/document/1443594">https://ieeexplore.ieee.org/abstract/document/1443594</a><a href="http://doi.org/10.1109/PROC.1963.1664"> http://doi.org/10.1109/PROC.1963.1664</a></p>
 
@@ -127,6 +127,8 @@
 <p id="PuseyBarrettRudolph12">Pusey, M.F., Barrett, J., & Rudolph, T. (2012). On the reality of the quantum state. <i>Nature Physics, 8</i>, 475–478. <a href="https://www.nature.com/articles/nphys2309">https://www.nature.com/articles/nphys2309</a><a href="http://doi.org/10.1038/nphys2309"> http://doi.org/10.1038/nphys2309</a></p>
 
 <p id="ReidDrummond26">Reid, M.D., & Drummond, P.D. (2026). Forward-backward stochastic simulations: $Q$-based model for measurement and Bell nonlocality consistent with weak local realistic premises. <i>Physical Review A, 113</i>, 012210. <a href="https://link.aps.org/doi/10.1103/qdyg-2nv4">https://link.aps.org/doi/10.1103/qdyg-2nv4</a><a href="http://doi.org/10.1103/qdyg-2nv4"> http://doi.org/10.1103/qdyg-2nv4</a></p>
+
+<p id="RingbauerDuffusBranciardEtAl15">Ringbauer, M., Duffus, B., Branciard, C., Cavalcanti, E.G., White, A.G., & Fedrizzi, A. (2015). Measurements on the reality of the wavefunction. <i>Nature Physics, 11</i>, 249–254. <a href="https://www.nature.com/articles/nphys3233">https://www.nature.com/articles/nphys3233</a><a href="http://doi.org/10.1038/nphys3233"> http://doi.org/10.1038/nphys3233</a></p>
 
 <p id="RomanRosoPlaja03">Roman, J.S., Roso, L., & Plaja, L. (2003). The Zitterbewegung for a Dirac electron driven by an intense laser field. <i>Journal of Physics B: Atomic, Molecular and Optical Physics, 36</i>, 2253. <a href="https://doi.org/10.1088/0953-4075/36/11/310">https://doi.org/10.1088/0953-4075/36/11/310</a><a href="http://doi.org/10.1088/0953-4075/36/11/310"> http://doi.org/10.1088/0953-4075/36/11/310</a></p>
 

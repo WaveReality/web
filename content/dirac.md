@@ -54,16 +54,7 @@ Perhaps the most important feature of this equation is that it can be either pos
 
 Interestingly, the Dirac equation, which standard physics has adopted as a model of the electron (and we'll cover later), also produces negative "probabilities", but these have been (correctly, in our framework) reinterpreted as representing antiparticles (i.e., particles with an opposite charge). The antiparticle of the electron is the **positron**, and it is just like an electron, except it has the opposite charge. Historically, this antiparticle nature of the Dirac equation was regarded as a major problem, until positrons were subsequently discovered, and then Dirac looked like a genius for having made such a bold prediction. Nevertheless, there seems to be some residual discomfort in all this, and many treatments of quantum electrodynamics marginalize the Dirac equation in favor of a largely particle-based treatment. We return to these issues later.
 
-`\begin{figure}`
-` \centering\includegraphics[height=2in]{fig.vgrad.eps}`  
-` \caption{\small The gradient of a scalar field ($\vec{\nabla}$), which`  
-`   produces a vector field describing the slope at each point in space.`  
-`    These gradient vectors point in the direction of maximum ``downhill''`
-`   slope.  In this example the scalar field is a circularly-symmetric bump.}`  
-` \label{fig.vgrad}`
-`\end{figure}`
-
-We can also derive an expression for the motion charge over space, which is the *charge current density* $\vec{J}$:
+We can also derive an expression for the motion of charge over space, which is the *charge current density* $\vec{J}$:
 
 $$
 \vec{J} \equiv - \frac{i \hbar e}{2m_0} \left( \phi^* \vec{\nabla} \phi - \phi \vec{\nabla} \phi^* \right)
@@ -81,11 +72,14 @@ $$
 \vec{\nabla} \equiv \left(\frac{\partial}{\partial x}, \frac{\partial}{\partial y}, \frac{\partial }{\partial z}\right)
 $$
 
-This just means that this $\vec{\nabla}$ takes a three-dimensional field, in this case the field of our wave value $\varphi_a$ or $\varphi_b$ distributed over space, and computes how steeply this field is changing in each of the three different directions (Figure~\ref{fig.vgrad}). If we assume that this value is actually computed in our model, then we'll need a way of computing the gradient $\vec{\nabla}$ in discrete space-time. This is covered in the next section.
+{id="figure_vgrad" style="height:20em"}
+![The gradient of a scalar field ($\vec{\nabla}$), which produces a vector field describing the slope at each point in space. These gradient vectors point in the direction of maximum "downhill" slope. In this example the scalar field is a circularly-symmetric bump.](media/fig_vgrad.jpg)
+
+This just means that this $\vec{\nabla}$ takes a three-dimensional field, in this case the field of our wave value $\varphi_a$ or $\varphi_b$ distributed over space, and computes how steeply this field is changing in each of the three different directions [[#figure_vgrad]]. If we assume that this value is actually computed in our model, then we'll need a way of computing the gradient $\vec{\nabla}$ in discrete space-time. This is covered in the next section.
 
 Before proceeding, we look ahead to the next major development. We have ways of computing the density and current of charge ($\rho$, $\vec{J}$), which drive the electromagnetic field. Thus, we need to think of these variables as physically real values, which can be computed directly from the underlying wave state variables, that give rise to long-range electromagnetic forces, through which our particle-waves interact. The next step is to see how the electromagnetic fields can push our particle waves around.
 
-See [Discrete Gradient](ch03_em.md) for how to compute the gradient in the discrete CA framework.
+See [[discrete gradient]] for how to compute the gradient in the discrete CA framework.
 
 So, in the end, the computation of the current, which is a vector having three separate components ($J_x, J_y, J_z$), looks like this:
 
@@ -245,7 +239,9 @@ When you actually simulate these equations on the computer, something very inter
 
 Intuitively, the electromagnetic potentials drive a rotation through the $\varphi_a$ and $\varphi_b$ variables, which is evident in the fact that they subtract from $\varphi_b$ but add to $\varphi_a$ --- these opposite signs are the signature of a rotation (and incidentally are caused by the presence of the imaginary $i$ numbers in the equations). To the extent that the potentials are pushing the $\varphi_a$ variable up, there should be an equal and opposite pushing of the $\varphi_b$ variable down, causing the rotation. However, if the $\varphi_b$ variable only has the "old" data from the previous time step about how much $\varphi_a$ got pushed up, then it doesn't compensate correctly in how much it gets pushed down. Thus, you end up with a "leak" in the system, where instead of rotating nicely in place, the system starts to fly out of control, spinning wider and wider circles each time.
 
-The solution to this problem is to *break the symmetry* between $\varphi_a$ and $\varphi_b$ in these update equations. Instead of updating each of them at the same time, based on the prior values of the other, we choose one variable ($\varphi_a$, arbitrarily) and update its values first. Then, when we compute $\varphi_b$, we use the {\em current value} of $\dot \varphi_a$ in the update equation for $\varphi_b$. This prevents the rotation between these variables from getting out of whack, and restores numerical stability to the system. % todo: run KG invr5 case, plot figure!
+The solution to this problem is to *break the symmetry* between $\varphi_a$ and $\varphi_b$ in these update equations. Instead of updating each of them at the same time, based on the prior values of the other, we choose one variable ($\varphi_a$, arbitrarily) and update its values first. Then, when we compute $\varphi_b$, we use the _current value_ of $\dot \varphi_a$ in the update equation for $\varphi_b$. This prevents the rotation between these variables from getting out of whack, and restores numerical stability to the system.
+
+<!--- todo: run KG invr5 case, plot figure! -->
 
 `\begin{figure}`
 ` \centering\includegraphics[height=2in]{fig.dirac_invr5_50.eps}   \caption{\small Total charge for updating of the charge wave     equation over 100,000 time steps in the presence of a fixed $1/r$ potential with magnitude .5, in a universe of $50^3$ cubes.  The`  
@@ -298,7 +294,7 @@ This is just a brief stop, to reiterate that we now have a full electrodynamic s
 
 Perhaps the most surprising development here is that we had to break the symmetry between the two components of the complex state variable, and introduce a preferred direction of rotation, in order to avoid numerical instability. This numerical instability results when variables are coupled, and the rotation through the $\varphi_a$ and $\varphi_b$ variables produced by the interaction with the electromagnetic field is manifest as such a coupling. This break in symmetry and preferred direction of rotation bears a tantalizing resemblance to features of the weak force, suggesting a possible explanation for an otherwise very strange aspect of nature.
 
-Our overall model at this point consists of a small handful of locally computable equations, which can be readily simulated on a computer. As these equations play out, they deterministically, locally, and automatically generate physics that should be largely consistent with what we know about the world. However, as we noted before, our equations are missing one critical piece, which is {\em spin}.
+Our overall model at this point consists of a small handful of locally computable equations, which can be readily simulated on a computer. As these equations play out, they deterministically, locally, and automatically generate physics that should be largely consistent with what we know about the world. However, as we noted before, our equations are missing one critical piece, which is _spin_.
 
 Interestingly, the introduction of spin creates a parity in the number of variables participating in the electromagnetic field equations (four) with those in the particle charge wave, which is currently two, but will now double to four. Overall, the elegance of having four variables each in two systems of interacting wave equations, which unfold in a four-dimensional space-time, seems suspiciously neat.
 
@@ -306,7 +302,7 @@ Interestingly, the introduction of spin creates a parity in the number of variab
 
 The final step in our long journey is to come to terms with the full glory of the electron. The standard model of physics has a set of parameters that are used to characterize the basic properties of the fundamental particles. One such property is the rest mass $m_0$, which we introduced into our particle-wave equation to make the waves slow down and move at variable speeds. Another such property is electrical charge, which we were able to extract from our wave equation once we used a complex-valued state variable, having two independent scalar values within it. Furthermore, we found that this charge could come with two different signs, positive or negative. This turns out to be convenient, because electrons also come in a positive form, called a positron. The positron has the same mass as the electron, but just an opposite charge.
 
-The third basic property of the electron is known as its spin. It is known as a spin $\frac{1}{2}$ particle, along with all of the other fundamental particles know (e.g., quarks). Unfortunately, our wave equations so far do not support this spin property, and so we'll need to do a little bit more work. However, once we're done, we'll find that our equations capture all of the fundamental properties of the electron: we should have a 100% complete description of it! Actually there is one last thing, which is that the electron is a member of the {\em lepton} family, whereas the other fundamental particles are quarks, and they have other fundamental properties in addition to those carried by leptons. But, this is presumably because quarks live in some other set of state variables separate from the lepton state variables we're simulating here in our model. So, with that assumption, we might have captured everything about the electron.
+The third basic property of the electron is known as its spin. It is known as a spin $\frac{1}{2}$ particle, along with all of the other fundamental particles know (e.g., quarks). Unfortunately, our wave equations so far do not support this spin property, and so we'll need to do a little bit more work. However, once we're done, we'll find that our equations capture all of the fundamental properties of the electron: we should have a 100% complete description of it! Actually there is one last thing, which is that the electron is a member of the _lepton_ family, whereas the other fundamental particles are quarks, and they have other fundamental properties in addition to those carried by leptons. But, this is presumably because quarks live in some other set of state variables separate from the lepton state variables we're simulating here in our model. So, with that assumption, we might have captured everything about the electron.
 
 So what exactly does it mean for an electron to have spin $\frac{1}{2}$? The quantum mechanical concept of spin is perhaps one of the most difficult to grasp. Sometimes people try to think of a little point particle spinning about like a top on its axis, but this doesn't actually fit the facts very well. In the end, the best strategy may be to just see what the equations we derive next actually do, and call that spin. Indeed, in the computer simulations, one can clearly see a spinning motion. This spin is very much like the first-order Schrodinger equation dynamics, where the two different elements of the complex variable rotate into each other. We also saw this kind of rotation earlier in the complex coupled KG equation, where the electromagnetic potential introduced a rotation among the complex variables. In the present case, we're going to have four different variables, and they will all rotate amongst themselves to produce this mysterious spin.
 
@@ -360,7 +356,7 @@ So applied to our $\vec{B} + i\vec{E}$ vector, it is:
 
 $$
 \vec{\sigma} \cdot \left(\vec{B} + i \vec{E} \right) =
-$$$
+$$
 
 $$
 \left( \begin{array}{cc} B_z + iE_z & B_x + iE_x - iB_y + E_y \\
@@ -452,7 +448,7 @@ $$
 
 Again, it is fundamentally the wave equation, plus three additional terms that characterize the interaction with the electromagnetic field. Note that, as with the mixing across complex components $\varphi_a$ and $\varphi_b$ that occurred in the previous version of the coupled KG equations, the mixing or spin across $\phi_1$ and $\phi_2$ occurs via the electromagnetic field interaction. This time, the vector force fields are now required for the coupling, requiring that we compute them from the potentials, as described earlier (involving the $\vec{\nabla}$ first-order gradient and, for the first time, the $\vec{\nabla} \times$ function, which is very similar in its discrete form to the $\vec{\nabla}$ function).
 
-% todo: run KG versions of the basic tests and see whether this is true!!!
+<!--- todo: run KG versions of the basic tests and see whether this is true!!! -->
 
 Interestingly, although we need to continue the broken symmetry from the previous coupled-complex KG equation, where we use the current values of $\dot \varphi_{1a}$ and $\dot \varphi_{2a}$ to update the $\varphi_{1b}$ and $\varphi_{2b}$ variables, we apparently do not need to perform a similar symmetry breaking for the new couplings in this Dirac equation.
 
@@ -460,7 +456,7 @@ So, to answer the question of "what is spin?", we need only look at these equati
 
 Although somewhat complex, these equations should describe the entirety of the complexity of the electron's interaction with the electromagnetic field, which is to say, with other electrons and positive electric charges in the nucleus. Therefore, as we know, a huge proportion of the known complexity of the universe stems from the consequences of these basic equations. So, perhaps they do not look so complex in comparison.
 
-% todo: introduce coupled complex KG (CCKG) equation nomenclature % todo: also introduce covariant derivative term
+<!--- todo: introduce coupled complex KG (CCKG) equation nomenclature % todo: also introduce covariant derivative term -->
 
 One final thing to note is that the charge and current density equations from the previous version of the coupled complex KG equation still hold for this Dirac version, because these additional terms to not enter into the covariant derivative, and are therefore canceled out in the subtraction, just like the mass term. The actual numerical calculation changes only to accommodate the $\psi$ state value instead of the single complex $\phi$ state. The charge and current equations are:
 

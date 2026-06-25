@@ -30,7 +30,7 @@ or, in somewhat simpler notation that we'll use more frequently:
 
 {id="eq_kg" title="Klein-Gordon equation"}
 $$
-\frac{\partial^2 {\varphi}}{\partial t^2} {{=}} c^2 \left(\nabla^2 - \frac{m_0^2}{\hbar^2} \right) \varphi
+\frac{\partial^2 {\varphi}}{\partial t^2} = c^2 \left(\nabla^2 - \frac{m_0^2}{\hbar^2} \right) \varphi
 $$
 
 where "hbar" $\hbar = \frac{h}{2\pi}$ and $h$ is Planck's constant. As we elaborate below, the most natural interpretation of Planck's constant here is as a simple scaling term on the impact of mass on the matter wave dynamics. For this reason, we strongly argue that anything having to do with this constant reflects an interaction with matter waves, and for example it makes no sense to use *h* in characterizing the behavior of light waves, because they have no mass. There is no evidence of any such constant in [[Maxwell]]'s EM wave equations.
@@ -54,26 +54,26 @@ $$
 These last two forms are useful for relating to the four-vector version of the wave equation, where we saw that:
 
 $$
-\partial\_\mu \partial^\mu = \frac{\partial^2}{\partial t^2} - c^2 \nabla^2
+\partial_\mu \partial^\mu = \frac{\partial^2}{\partial t^2} - c^2 \nabla^2
 $$
 
 so that the equation can be written:
 
 $$
-\partial\_\mu \partial^\mu \varphi = - \frac{c^2 m_0^2}{\hbar^2} \varphi
+\partial_\mu \partial^\mu \varphi = - \frac{c^2 m_0^2}{\hbar^2} \varphi
 $$
 
 or:
 
 $$
-\left(\partial\_\mu \partial^\mu + \frac{c^2 m_0^2}{\hbar^2}\right) \varphi = 0
+\left(\partial_\mu \partial^\mu + \frac{c^2 m_0^2}{\hbar^2}\right) \varphi = 0
 $$
 
 To actually implement this KG equation in our cellular automaton model, we make one modification to the acceleration term, to subtract off the mass:
 
 {id="eq_disc" title="discrete Klein-Gordon equation"}
 $$
-\ddot \varphi_i^{t+1} = c^2 \frac{3}{13}\sum\_{j \in N\_{26}} k_j (\varphi_j - \varphi_i) - \frac{c^2 m_0^2}{\hbar^2} \varphi_i
+\ddot \varphi_i^{t+1} = c^2 \frac{3}{13}\sum_{j \in N_{26}} k_j (\varphi_j - \varphi_i) - \frac{c^2 m_0^2}{\hbar^2} \varphi_i
 $$
 
 ## Variable Speeds: Momentum from Frequency
@@ -277,21 +277,21 @@ $$
 In a discrete-space and time CA-like implementation, these equations would be written:
 
 $$
-\dot {\varphi_a}\_i^{t+1} = - \frac{3}{26 m_0} \sum\_{j \in N\_{26}} k_j ({\varphi_b}\_j^t - {\varphi_b}\_i^t)
+\dot {\varphi_a}_i^{t+1} = - \frac{3}{26 m_0} \sum_{j \in N_{26}} k_j ({\varphi_b}_j^t - {\varphi_b}_i^t)
 $$
 
 $$
-{\varphi_a}\_i^{t+1} = {\varphi_a}\_i^t + \dot {\varphi_a}\_i^{t+1}
+{\varphi_a}_i^{t+1} = {\varphi_a}_i^t + \dot {\varphi_a}_i^{t+1}
 $$
 
 and:
 
 $$
-\dot {\varphi_b}\_i^{t+1} = \frac{3}{26 m_0}\sum\_{j \in N\_{26}} k_j ({\varphi_a}\_j^t - {\varphi_a}\_i^t)
+\dot {\varphi_b}_i^{t+1} = \frac{3}{26 m_0}\sum_{j \in N_{26}} k_j ({\varphi_a}_j^t - {\varphi_a}_i^t)
 $$
 
 $$
-{\varphi_b}\_i^{t+1} = {\varphi_b}\_i^t + \dot {\varphi_b}\_i^{t+1}
+{\varphi_b}_i^{t+1} = {\varphi_b}_i^t + \dot {\varphi_b}_i^{t+1}
 $$
 
 So, in the end, Schrodinger's equation really just boils down to two very simple differential equations. Interestingly, these equations are *coupled*, in the sense that it is the curvature of $\varphi_a$ that drives the change in $\varphi_b$, and vice-versa. This is the rotational aspect of the equation mentioned earlier, which is caused by the presence of the $i$ in the equation.

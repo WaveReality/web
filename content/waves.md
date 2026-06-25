@@ -26,11 +26,11 @@ We start by deriving the second order wave equation from basic Newtonian physica
 
 {id="eq_force" title="restoring force"}
 $$
-f = f_l + f_r = \left( y^t\_{x-1} - y^t_x \right) + \left( y^t\_{x+1} - y^t_x \right)
+f = f_l + f_r = \left( y^t_{x-1} - y^t_x \right) + \left( y^t_{x+1} - y^t_x \right)
 $$
 
 $$
-f = \left( y^t\_{x-1} + y^t\_{x+1} \right) - 2 y^t_x
+f = \left( y^t_{x-1} + y^t_{x+1} \right) - 2 y^t_x
 $$
 
 Using the standard equations of Newtonian physics, e.g., $f=ma$, this force then drives an acceleration _a_:
@@ -44,7 +44,7 @@ In the discrete time framework, we can simply increment a new *velocity* term *v
 
 {id="eq_" title="new velocity"}
 $$
-v^{t+1}\_x = v^t_x + a^t_x
+v^{t+1}_x = v^t_x + a^t_x
 $$
 
 where the time index for this new velocity is given by _t+1_, which is the next step in time, to distinguish it from the current velocity value, designated at time _t_. One could just as well refer to _t_ as the new value and _t-1_ as the previous value --- it is just a matter of taste or convention as to what is used. The notation used here emphasizes the process of computing a new value by putting it into the future relative to the present values that drive the calculation of this new value. We also provide the full time and space indices of the acceleration just for clarity.
@@ -53,7 +53,7 @@ Next, this new velocity is used to update the state value, completing a given ti
 
 {id="eq_" title="new state"}
 $$
-y^{t+1}\_x = y^t_x + v^{t+1}\_x
+y^{t+1}_x = y^t_x + v^{t+1}_x
 $$
 
 In the **synchronous update** mode used in the CA framework, each state location is updated at the same time (synchronously), and the new states then all become the current states for the next iteration, and so on. In a computer program, one typically has to actually iterate sequentially through all the states one at a time, and the "current" and "next" states must both be maintained for each location to achieve the proper synchronous computation without order of update effects.
@@ -104,17 +104,17 @@ Thus, we can re-write our basic equations using this speed-of-light factor, and 
 
 {id="eq_acc" title="acceleration"}
 $$
-a^t_x = \ddot y^t_x = c^2 \left( y^t\_{x-1} + y^t\_{x+1} - 2 y^t_x \right)
+a^t_x = \ddot y^t_x = c^2 \left( y^t_{x-1} + y^t_{x+1} - 2 y^t_x \right)
 $$
 
 {id="eq_vel" title="velocity"}
 $$
-v^{t+1}\_x = \dot y^{t+1}\_x = \dot y^t_x + \ddot y^t_x
+v^{t+1}_x = \dot y^{t+1}_x = \dot y^t_x + \ddot y^t_x
 $$
 
 {id="eq_vel" title="state"}
 $$
-y^{t+1}\_x = y^t_x + \dot y^{t+1}\_x
+y^{t+1}_x = y^t_x + \dot y^{t+1}_x
 $$
 
 ## Energy
@@ -143,7 +143,7 @@ The potential energy turns out to be a function of the squared differences betwe
 
 {id="eq_potential" title="potential energy"}
 $$
-E_p = \frac{1}{2} \left( \left( y^t\_{x-1} - y^t_x \right)^2 + \left( y^t\_{x+1} - y^t_x \right)^2 \right)
+E_p = \frac{1}{2} \left( \left( y^t_{x-1} - y^t_x \right)^2 + \left( y^t_{x+1} - y^t_x \right)^2 \right)
 $$
 
 In general, energy values are squared, because they tend to be positive numbers, and they almost always have this 1/2 multiplier. It is interesting that each neighborhood difference (to the left and right) is squared separately and then added together, instead of squaring the sum of these differences --- this makes sense because the energy is really in each of these differences, and even if they happened to cancel out across the left and right sides (e.g., the left neighbor was as low as the right neighbor is high relative to the cell's state value), there is a lot of energy latent in those two differences, compared to a case where left and right were actually each the same value as the cell's current state.
@@ -255,14 +255,14 @@ This shows how this second order spatial derivative is computed in the discrete 
 
 {id="eq_x-2-2" title="second order spatial derivative"}
 $$
-\frac{\partial^2y}{\partial x^2} = \frac{\left( \frac{y^t\_{x+1} - y^t_x}{\epsilon} \right) - \left( \frac{y^t_x - y^t\_{x-1}}{\epsilon} \right)}{\epsilon} = \frac{1}{\epsilon^2} (y^t\_{x+1} + y^t\_{x-1}) - 2 y^t_x
+\frac{\partial^2y}{\partial x^2} = \frac{\left( \frac{y^t_{x+1} - y^t_x}{\epsilon} \right) - \left( \frac{y^t_x - y^t_{x-1}}{\epsilon} \right)}{\epsilon} = \frac{1}{\epsilon^2} (y^t_{x+1} + y^t_{x-1}) - 2 y^t_x
 $$
 
 Interestingly, this second order spatial derivative is effectively the same as the restoring force in the wave equation --- there is just a factor of the epsilon squared difference between them:
 
 {id="eq_r-f" title="restoring force"}
 $$
-f = \left( \frac{y^t\_{x-1} + y^t\_{x+1}}{2} \right) - 2 y^t_x = \epsilon^2 \frac{\partial^2y}{\partial x^2} = \left( y^t\_{x+1} + y^t\_{x-1} \right) - 2 y^t_x
+f = \left( \frac{y^t_{x-1} + y^t_{x+1}}{2} \right) - 2 y^t_x = \epsilon^2 \frac{\partial^2y}{\partial x^2} = \left( y^t_{x+1} + y^t_{x-1} \right) - 2 y^t_x
 $$
 
 We normally set this epsilon constant to be 1 in the native units of the simulation, so that it effectively disappears from the computation. Nevertheless, understanding these constants is important when trying to get all the units right, but they don't affect the core conceptual basis of what is going on, which is that the restoring force is driven by the curvature of the curvature (slope of the slope) of the wave medium.
@@ -280,14 +280,14 @@ Putting this all together, we can now transform our previous equation for the wa
 
 {id="eq_acc-2" title="acceleration"}
 $$
-\ddot y^t_x = c^2 \left( y^t\_{x-1} + y^t\_{x+1} - 2 y^t_x \right)
+\ddot y^t_x = c^2 \left( y^t_{x-1} + y^t_{x+1} - 2 y^t_x \right)
 $$
 
 into the following elegant expression based on second-order derivatives: 
 
 {id="eq_wave" title="the wave equation"}
 $$
-\frac{\partial^2 y}{\partial t^2} {{=}} c^2 \frac{\partial^2y}{\partial x^2}
+\frac{\partial^2 y}{\partial t^2} = c^2 \frac{\partial^2y}{\partial x^2}
 $$
 
 Note that this equation directly implies the velocity and state update equations given above, which are really definitional in terms of what a velocity is: a velocity is updated by an acceleration, and it updates the state value. Thus, this one equation captures everything needed to produce wave dynamics.
@@ -369,7 +369,7 @@ Now we consider how to compute the 3D Laplacian in the discrete space and time C
 
 {id="eq_faces" title="discrete 3D Laplacian, faces only"}
 $$
-\nabla^2 \varphi = \frac{1}{\epsilon^2} \left( \varphi\_{(1,0,0)} + \varphi\_{(-1,0,0)} + \varphi\_{(0,1,0)} + \varphi\_{(0,-1,0)} + \varphi\_{(0,0,1)} + \varphi\_{(0,0,-1)} - 6 \varphi\_{(0,0,0)} \right)
+\nabla^2 \varphi = \frac{1}{\epsilon^2} \left( \varphi_{(1,0,0)} + \varphi_{(-1,0,0)} + \varphi_{(0,1,0)} + \varphi_{(0,-1,0)} + \varphi_{(0,0,1)} + \varphi_{(0,0,-1)} - 6 \varphi_{(0,0,0)} \right)
 $$
 
 where the subscript indicates the relative offset along the _(x,y,z)_ dimensions from the central point, which is then at _(0,0,0)_. We can simplify this expression by just computing a sum of pairwise differences for each face element:
@@ -413,7 +413,7 @@ The equation for the wave energy for the 3D version just requires an update to t
 
 {id="eq_pe" title="potential energy in 3D, all 26 neighbors"}
 $$
-E_p = \frac{3}{13 \epsilon^2} \sum\_{j \in N\_{26}} k_j (\varphi_j - \varphi_0)^2
+E_p = \frac{3}{13 \epsilon^2} \sum_{j \in N_{26}} k_j (\varphi_j - \varphi_0)^2
 $$
 
 ## Dealing with Edges
