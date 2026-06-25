@@ -5,13 +5,13 @@
 package main
 
 import (
+	"bytes"
 	"embed"
 
 	"cogentcore.org/core/content"
 	"cogentcore.org/core/core"
 	"cogentcore.org/core/icons"
 	"cogentcore.org/core/text/csl"
-	_ "cogentcore.org/core/text/tex" // include this to get math
 	"cogentcore.org/core/text/tex/texcache"
 	"cogentcore.org/core/tree"
 	_ "cogentcore.org/lab/yaegilab"
@@ -30,13 +30,14 @@ import (
 var econtent embed.FS
 
 //go:embed mathcache.json.gz
-var mathcache embed.FS
+var mathcache []byte
 
 //go:embed icon.svg
 var icon string
 
 func main() {
-	texcache.OpenFS(mathcache, "mathcache.json.gz")
+	texcache.ReadGzip(bytes.NewBuffer(mathcache))
+	texcache.SetShapeMath()
 	core.AppIcon = icon
 	content.Settings.SiteTitle = "Wave Reality"
 	content.OfflineURL = "https://wavereality.org"
