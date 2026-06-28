@@ -4,10 +4,11 @@ go 1.25.6
 
 require (
 	cogentcore.org/core v0.3.36
-	cogentcore.org/lab v0.1.15
+	github.com/WaveReality/waves v0.0.1
 )
 
 require (
+	cogentcore.org/lab v0.1.15 // indirect
 	github.com/Bios-Marcel/wastebasket/v2 v2.0.3 // indirect
 	github.com/Masterminds/vcs v1.13.3 // indirect
 	github.com/adrg/strutil v0.3.1 // indirect
@@ -35,6 +36,7 @@ require (
 	github.com/jinzhu/copier v0.4.0 // indirect
 	github.com/lucasb-eyer/go-colorful v1.2.0 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
+	github.com/mattn/go-shellwords v1.0.12 // indirect
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
 	github.com/muesli/termenv v0.16.0 // indirect
 	github.com/oliverbestmann/webgpu v1.33.5-0.20260523154840-fa113c1fb662 // indirect

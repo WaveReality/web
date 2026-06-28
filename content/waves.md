@@ -182,12 +182,25 @@ todo: potential implications for gravitation, etc?
 {id="figure_superposition" style="height:20em"}
 ![Superposition of two wave packets, shown initially separate moving toward each other in the first (left) panel, then in a state of superposition where it is hard to imagine that two complete and separate wave packets could be latent within such a wave pattern (middle panel), and finally the two waves re-emerge fully intact after passing right through each other. This mind-boggling property of linear wave equations plays a crucial role in standard quantum mechanics (QM), and also represents a major limitation of QM, in that it eliminates any way for such wave packets to interact with each other.](media/fig_wave_superpos.png)
 
-
-
 {id="figure_integer" style="height:20em"}
 ![A wave within fixed bounds, having an integer number of wavelengths within the fixed width. This ''bound state'' wave provides a basic model of the quantized atomic system --- the quantization comes entirely from the fact that the only stable wave configuration within such boundaries must have an integral number of wavelengths. This is the quantum in quantum mechanics.](media/fig_bound_wave_integer_fit.png)
 
-At this point, it is useful to use the [[wave-reality]] simulator to see how the above equations give rise to wave behavior, so you have a solid understanding of that, along with some basic wave behavior, before continuing. Follow the directions given in the [[waves-sim]] exploration --- stick to the one dimensional wave equation for the time being --- we'll pick up the 3D one later.
+{id="sim_waves1d" title="Basic 1D Waves" collapsed="true"}
+```Goal
+wavesim.Embed(b,
+	func(sim *wavesim.Sim) { // config
+		sim.Config.Equation = wavesim.Wave1D
+		sim.Config.Size.Set(80, 1, 1)
+        sim.ViewInit(func(view *wavesim.View) {
+            view.Settings.Height = 0.5
+        })
+	},
+	func(sim *wavesim.Sim) { // init
+		sim.MovingWavePacket(wavesim.WavePos, math32.X, math32.Vec3i(40, 0, 0), -1, 8, 8, 0, 1.5)
+	})
+```
+
+At this point, it is useful to use the [[waves simulator]] to see how the above equations give rise to wave behavior, so you have a solid understanding of that, along with some basic wave behavior, before continuing. Follow the directions given in the [[waves-sim]] exploration --- stick to the one dimensional wave equation for the time being --- we'll pick up the 3D one later.
 
 One of the most fascinating and amazing properties that you'll explore in this simulation is **superposition**, as shown in [[#figure_superposition]] --- it is even more compelling seeing it happen in full motion in the simulation.
 

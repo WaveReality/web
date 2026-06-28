@@ -14,7 +14,7 @@ import (
 	"cogentcore.org/core/text/csl"
 	"cogentcore.org/core/text/tex/texcache"
 	"cogentcore.org/core/tree"
-	_ "cogentcore.org/lab/yaegilab"
+	_ "github.com/WaveReality/waves/yaegiwaves"
 )
 
 // NOTE: you must make a symbolic link to the zotero MechPhys CSL file as mechphys.json
