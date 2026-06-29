@@ -10,8 +10,8 @@ github.com/Bios-Marcel/wastebasket/v2 v2.0.3 h1:TkoDPcSqluhLGE+EssHu7UGmLgUEkWg7
 github.com/Bios-Marcel/wastebasket/v2 v2.0.3/go.mod h1:769oPCv6eH7ugl90DYIsWwjZh4hgNmMS3Zuhe1bH6KU=
 github.com/Masterminds/vcs v1.13.3 h1:IIA2aBdXvfbIM+yl/eTnL4hb1XwdpvuQLglAix1gweE=
 github.com/Masterminds/vcs v1.13.3/go.mod h1:TiE7xuEjl1N4j016moRd6vezp6e6Lz23gypeXfzXeW8=
-github.com/WaveReality/waves v0.0.2 h1:1CKs0TTbWjzsqUH/HFiaRBLTLZMMEoYCjrez/hEDygo=
-github.com/WaveReality/waves v0.0.2/go.mod h1:KGk0G9rcpVP/lWMnMN4jmX9tcLZjGiMwIFMUfkDz8/8=
+github.com/WaveReality/waves v0.0.3 h1:JsDhFCAEuaIW0gEIzqYg4/9GX6rQGpygV8qU5W4+LbE=
+github.com/WaveReality/waves v0.0.3/go.mod h1:KGk0G9rcpVP/lWMnMN4jmX9tcLZjGiMwIFMUfkDz8/8=
 github.com/adrg/strutil v0.3.1 h1:OLvSS7CSJO8lBii4YmBt8jiK9QOtB9CzCzwl4Ic/Fz4=
 github.com/adrg/strutil v0.3.1/go.mod h1:8h90y18QLrs11IBffcGX3NW/GFBXCMcNg4M7H6MspPA=
 github.com/alecthomas/assert/v2 v2.11.0 h1:2Q9r3ki8+JYXvGsDyBXwH3LcJ+WK5D0gc5E8vS6K3D0=
