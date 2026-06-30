@@ -15,7 +15,7 @@ Surprisingly, one still observes the interference effect in this case ([[#figure
 The [[pilot-wave]] framework of de Broglie and Bohm provides the most natural, intuitive explanation of these effects: the wave goes through both slits, and the particle goes through one, but it is influenced by the wave.
 
 {id="figure_double-slit-deb" style="height:20em"}
-![Trajectories for particles in the double-slit experiment computed according to the de Broglie-Bohm pilot-wave model. The interference effects can be seen as relatively localized bumps in the trajectories, corresponding to steep gradients in the Schrodinger wave equation. Critically, the underlying trajectories are considered to exist at all points even if you don't happen to observe them.](media/fig_double_slit_debroglie_bohm.png)
+![Trajectories for particles in the double-slit experiment computed according to the de Broglie-Bohm pilot-wave model. The interference effects can be seen as relatively localized bumps in the trajectories, corresponding to steep gradients in the Schrödinger wave equation. Critically, the underlying trajectories are considered to exist at all points even if you don't happen to observe them.](media/fig_double_slit_debroglie_bohm.png)
 
 [[#figure_double-slit-deb]] shows what the underlying trajectories of particles under the pilot-wave framework look like in a double-slit experiment, and [[#figure_double-slit-kocsis]] shows some recent data from an experiment where _weak measurements_ that minimally disturb the system allow one to infer particle trajectories, which look remarkably similar to those predicted by the pilot-wave model ([[@KocsisBravermanRavetsEtAl11]]).
 

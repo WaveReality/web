@@ -26,6 +26,8 @@
 
 <p id="DurrGoldsteinNorsenEtAl14">Dürr, D., Goldstein, S., Norsen, T., Struyve, W., & Zanghì, N. (2014). Can Bohmian mechanics be made relativistic? <i>Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences, 470</i>, 20130699. <a href="https://royalsocietypublishing.org/doi/full/10.1098/rspa.2013.0699">https://royalsocietypublishing.org/doi/full/10.1098/rspa.2013.0699</a><a href="http://doi.org/10.1098/rspa.2013.0699"> http://doi.org/10.1098/rspa.2013.0699</a></p>
 
+<p id="Einstein05a">Einstein, A. (1905). Über einem die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt. <i>Annalen der physik, 4</i>, <a href="https://sedici.unlp.edu.ar/handle/10915/2784">https://sedici.unlp.edu.ar/handle/10915/2784</a></p>
+
 <p id="Everett57">Everett, H. (1957). "Relative State" Formulation of Quantum Mechanics. <i>Reviews of Modern Physics, 29</i>, 454–462. <a href="https://link.aps.org/doi/10.1103/RevModPhys.29.454">https://link.aps.org/doi/10.1103/RevModPhys.29.454</a><a href="http://doi.org/10.1103/RevModPhys.29.454"> http://doi.org/10.1103/RevModPhys.29.454</a></p>
 
 <p id="FordOConnell91">Ford, G.W., & O'Connell, R.F. (1991). Radiation reaction in electrodynamics and the elimination of runaway solutions. <i>Physics Letters A, 157</i>, 217–220. <a href="https://www.sciencedirect.com/science/article/pii/037596019190054C">https://www.sciencedirect.com/science/article/pii/037596019190054C</a><a href="http://doi.org/10.1016/0375-9601(91)90054-C"> http://doi.org/10.1016/0375-9601(91)90054-C</a></p>
@@ -73,6 +75,8 @@
 <p id="JaynesCummings63">Jaynes, E., & Cummings, F. (1963). Comparison of quantum and semiclassical radiation theories with application to the beam maser. <i>Proceedings of the IEEE, 51</i>, 89–109. <a href="https://ieeexplore.ieee.org/abstract/document/1443594">https://ieeexplore.ieee.org/abstract/document/1443594</a><a href="http://doi.org/10.1109/PROC.1963.1664"> http://doi.org/10.1109/PROC.1963.1664</a></p>
 
 <p id="Khrennikov01">Khrennikov, A. (2001). Linear representations of probabilistic transformations induced by context transitions. <i>Journal of Physics A: Mathematical and General, 34</i>, 9965. <a href="https://doi.org/10.1088/0305-4470/34/47/304">https://doi.org/10.1088/0305-4470/34/47/304</a><a href="http://doi.org/10.1088/0305-4470/34/47/304"> http://doi.org/10.1088/0305-4470/34/47/304</a></p>
+
+<p id="Klassen11">Klassen, S. (2011). The Photoelectric Effect: Reconstructing the Story for the Physics Classroom. <i>Science & Education, 20</i>, 719–731. <a href="https://doi.org/10.1007/s11191-009-9214-6">https://doi.org/10.1007/s11191-009-9214-6</a><a href="http://doi.org/10.1007/s11191-009-9214-6"> http://doi.org/10.1007/s11191-009-9214-6</a></p>
 
 <p id="Klein26">Klein, O. (1926). <i>Zeitschrift für Physik, 37</i>, 895. </p>
 
