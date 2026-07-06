@@ -13,7 +13,7 @@ wavesim.Embed(b,
 		sim.ViewInit(wavesim.Wave1DViewAll)
 	},
 	func(sim *wavesim.Sim) { // init
-		sim.MovingWavePacket(wavesim.WavePos, math32.X, math32.Vec3i(40, 0, 0), -1, 8, 8, 0, 1.5)
+		sim.PosWavePacket(wavesim.WavePos, math32.X, math32.Vec3i(40, 0, 0), -1, 8, 8, 0, 1.5)
 	})
 ```
 

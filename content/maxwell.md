@@ -6,11 +6,13 @@ The basic equations of electromagnetism were developed in the 1800's, through th
 
 Although Maxwell's equations describe the same kind of wave propagation we explored in [[waves]], they do so in a somewhat complex way, involving vector fields and various vector operators that can be difficult to understand. Therefore, we start with a formulation of the EM equations that will be immediately familiar from the previous chapter, using second-order wave equations. These second-order wave equations operate on the **electromagnetic potentials**, instead of the electric and magnetic vector fields, which are described by the standard Maxwell's equations.
 
-Although many people regard the vector fields as the primary physical reality underlying EM, there is solid physical evidence showing that the electromagnetic potentials are physically real, and exert measurable physical effects, for example the **Aharonov-Bohm** effect (described later). Thus, in addition to being mathematically simpler, the potential-based formulation seems to be physically necessary. It is the formulation that we use in the remainder of the book. Nevertheless, there remain several important sources of controversy and confusion over this choice, which will be introduced as we go through.
+Although many people regard the vector fields as the primary physical reality underlying EM, there is solid physical evidence showing that the electromagnetic potentials are physically real, and exert measurable physical effects, for example the **Aharonov-Bohm** effect (described later). Thus, in addition to being mathematically simpler, the potential-based formulation seems to be physically necessary. Nevertheless, there remain several important sources of controversy and confusion over this choice, which will be introduced as we go through.
 
-There are two electromagnetic potentials, the **electrical scalar potential**, which is variously written as $\Phi$ (capital Greek "Phi") or $V$ or $A_0$, and the **magnetic vector potential**, typically written as: $\vec{A} = (A_x, A_y, A_z)$. Most readers should be familiar with the notion of the electrical potential $V$, in terms of the voltage of a battery or an electrical outlet --- therefore, we'll focus on it first. Then we'll cover the more difficult vector potential, which underlies the magnetic field. After exploring each of these and obtaining a solid understanding of their behavior, we relate these potential wave equations back to the original Maxwell equations, and cover various important issues with our potential-based formulation of EM. We then introduce the powerful **four-vector space-time notation**, which will be used in the remainder of the book.
+There are two electromagnetic potentials, the **electrical scalar potential**, which is variously written as $\Phi$ (capital Greek "Phi") or $V$ or $A_0$, and the **magnetic vector potential**, typically written as: $\vec{A} = (A_x, A_y, A_z)$. Most readers should be familiar with the notion of the electrical potential $V$, in terms of the voltage of a battery or an electrical outlet --- therefore, we'll focus on it first. Then we'll cover the more difficult vector potential, which underlies the magnetic field. After exploring each of these and obtaining a solid understanding of their behavior, we relate these potential wave equations back to the original Maxwell equations, and cover various important issues with our potential-based formulation of EM. We then introduce the powerful **four-vector space-time notation**.
 
-What should not get lost in all this discussion is the bare amazing fact that all of EM can be captured in the simple second-order wave equation (with appropriate source terms from electrical charge and current) --- this is the only equation we need to simulate the propagation of the EM fields over space and time. This wave equation naturally produces the **inverse square law** of the electrical force, and it does so through strictly local wave propagation mechanisms, avoiding the apparent action-at-a-distance that the calculational tool of the usual Coulomb version of this force law, where you literally compute the force as a function of the distance between two charges. Furthermore, the wave equation provides the framework for many aspects of special relativity, such as the constant speed of light in a vacuum, and the four-vector notation enables us to know immediately whether something is **manifestly covariant** --- which means, obviously compatible with the principles of special relativity (i.e., invariant with respect to the Lorentz transformation). Thus, we see that a huge swath of fundamental physics falls right out of the basic wave equation, which in turn reflects the simplest form of cellular-automaton neighborhood interaction that does anything interesting.
+What should not get lost in all this discussion is the bare amazing fact that all of EM can be captured in the simple second-order wave equation (with appropriate source terms from electrical charge and current): this is the only equation we need to simulate the propagation of the EM fields over space and time. This wave equation naturally produces the **inverse square law** of the electrical force, and it does so through strictly local wave propagation mechanisms, avoiding the apparent action-at-a-distance that the calculational tool of the usual Coulomb version of this force law, where you literally compute the force as a function of the distance between two charges.
+
+Furthermore, the wave equation provides the framework for many aspects of special relativity, such as the constant speed of light in a vacuum, and the four-vector notation enables us to know immediately whether something is **manifestly covariant** --- which means, obviously compatible with the principles of special relativity (i.e., invariant with respect to the Lorentz transformation). Thus, we see that a huge swath of fundamental physics falls right out of the basic wave equation, which in turn reflects the simplest form of cellular-automaton neighborhood interaction that does anything interesting.
 
 ## The Electrical Scalar Potential
 
@@ -29,6 +31,7 @@ This means that you already understand exactly how this potential will behave, b
 
 To include the effects of **electrical charge**, we can extend the equation to include a simple additive factor that is proportional to the local charge density, written by convention as the Greek letter "rho" $\rho$:
 
+{id="eq_scalar-pot-chg" title="electrical scalar potential, with charge"}
 $$
 \frac{\partial^2 {A_0}}{\partial t^2} = c^2 \nabla^2 A_0 + \frac{1}{\epsilon_0} \rho
 $$
@@ -56,7 +59,9 @@ $$
 {id="figure_gradient" style="height:20em"}
 ![The gradient, which is a vector consisting of the local slope along each of the different dimensions (two-dimensional case shown here). The electric field $\vec{E}$ is the gradient of the electrical scalar potential field $A_0$.](media/fig_gradient.png)
 
-This wave equation fully characterizes the behavior of the electrical field --- *we don't need anything else to numerically simulate it, and account for all known behavior of the field itself.* Thus, from a physical perspective, we can imagine that only this electrical potential field exists, and things like light waves are just wave propagation over this field. However, to understand how this electrical field influences charged "particles" such as the electron, we do need to extract the electric field vector, which represents the force exerted by the electric field. We can think of this physically as reflecting the force impact of the electrical potential field, derived entirely from the potential, and not as a separate physical entity. Electrical forces ensue from the slope of change (i.e., the **gradient**, as introduced in the waves chapter and pictured in ([[#figure_gradient]) of the electrical scalar potential across space, plus the rate of change of the magnetic vector field, which we'll discuss later.
+This wave equation fully characterizes the behavior of the electrical field: _we don't need anything else to numerically simulate it, and account for all known behavior of the field itself._ Thus, from a physical perspective, we can imagine that only this electrical potential field exists, and things like light waves are just wave propagation over this field.
+
+However, to understand how this electrical field influences charged "particles" such as the electron, we do need to extract the electric field vector, which represents the force exerted by the electric field. We can think of this physically as reflecting the force impact of the electrical potential field, derived entirely from the potential, and not as a separate physical entity. Electrical forces ensue from the slope of change (i.e., the **gradient**, as introduced in the waves chapter and pictured in ([[#figure_gradient]]) of the electrical scalar potential across space, plus the rate of change of the magnetic vector field, which we'll discuss later.
 
 Loosely speaking, if you have more potential in one place than another, there is a pressure to flow "downhill" along this gradient to equalize the potential. Mathematically speaking, this can be expressed as:
 
@@ -64,7 +69,7 @@ $$
 \vec{E} = - \vec{\nabla} A_0 - \frac{\partial \vec{A}}{\partial t}
 $$
 
-In words, the electrical field is the spatial gradient of the scalar potential (plus the temporal derivative of the magnetic vector potential $\vec{A}$). Recall the definition of the gradient operator $\vec{\nabla}$ from before: it computes the slope or amount of change in a scalar field along each of the three axes, yielding a vector of three values ().
+In words, the electrical field is the spatial gradient of the scalar potential (plus the temporal derivative of the magnetic vector potential $\vec{A}$). Recall the definition of the gradient operator $\vec{\nabla}$ from before: it computes the slope or amount of change in a scalar field along each of the three axes, yielding a vector of three values ($[E_x, E_y, E_z]$).
 
 To actually compute this vector quantity in our discrete 3D framework, we need a discrete gradient operator that is basically just the first-order version of the discrete Laplacian operator that we introduced in [[waves]]. It is described in detail in this page [[discrete gradient]].
 
@@ -77,7 +82,7 @@ $$
 F = \frac{q_1 q_2}{r^2}
 $$
 
-How does this derive from the second order wave equation and the charge acceleration? It turns out that the wave equation naturally produces a 1/r dropoff in the electrical potential, only in the 3D form of the wave equation (Whittaker, 1903). We can see this in the simulation exploration in the next section. This 1/r dropoff in the potential is then translated into an inverse square function $\frac{1}{r^2}$ in the process of computing the gradient force field from the scalar potential field.
+How does this derive from the second order wave equation and the charge acceleration? It turns out that the wave equation naturally produces a 1/r dropoff in the electrical potential, only in the 3D form of the wave equation ([[@Whittaker03]]). We can see this in the simulation exploration in the next section. This 1/r dropoff in the potential is then translated into an inverse square function $\frac{1}{r^2}$ in the process of computing the gradient force field from the scalar potential field.
 
 The fact that this critical inverse-square behavior emerges naturally from the wave equation is just another in a long series of amazing features of this equation.
 
@@ -281,7 +286,7 @@ $$
 \equiv \left(\frac{\partial {}}{\partial {t}}, \vec{\nabla} \right)
 $$
 
-where the $\vec{\nabla}$ symbol represents the spatial *gradient* operator :
+where the $\vec{\nabla}$ symbol represents the spatial _gradient_ operator:
 
 $$
 \vec{\nabla} \equiv \left(\frac{\partial {}}{\partial {x}}, \frac{\partial {}}{\partial {y}}, \frac{\partial {}}{\partial {z}}\right)
@@ -544,7 +549,7 @@ $$
 When you take this latter form and plug it into the above two Maxwell equations, you end up canceling some of the nasty bits out, and you get a very nice form of standard wave equations. For [[#eq_maxeq-i]], we get:
 
 $$
-\nabla^2 A_0 + \vec{\nabla} \cdot \frac{\partial {\vec{A}}{\partial t}} = - \frac{1}{\epsilon_0} \rho
+\nabla^2 A_0 + \vec{\nabla} \cdot \frac{\partial {\vec{A}}}{\partial t}} = - \frac{1}{\epsilon_0} \rho
 $$
 
 $$

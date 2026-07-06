@@ -6,9 +6,14 @@ Using [[special relativity]], plus the notion of **conservation of energy** --- 
 
 This motif of using the total energy of the system to derive basic physical laws seems to work quite well in many cases, and is thus the primary way that such laws are derived for different definitions of the total energy. Essentially, the physical laws are latent in any given definition of total energy, and really amount to specifying the dynamics by which energy gets moved around in different ways, without ever gaining or losing any total energy.
 
-This [Veritasium](https://www.youtube.com/watch?v=Q10_srZ-pbs) video is strongly recommended for the history of the development of this approach, which started with the **principle of least action** developed originally by Pierre Louis Maupertuis. The second video in this series of two shows how this same principle applies to the [path integral](https://www.youtube.com/watch?v=qJZ1Ez28C-A) formulation of quantum mechanics, and compellingly demonstrates how quantum waves really must be spreading out through space in order to _find the right path for a particle to take_. In anthropomorphic terms, the quantum wave function is like a perceptual system for particles, telling them how to move in order to go in the most efficient way!
+This [Veritasium](https://www.youtube.com/watch?v=Q10_srZ-pbs) video is strongly recommended for the history of the development of this approach, which started with the **principle of least action** developed originally by Pierre Louis Maupertuis. The second video in this series of two shows how this same principle applies to the [path integral](https://www.youtube.com/watch?v=qJZ1Ez28C-A) formulation of quantum mechanics, and compellingly demonstrates how quantum waves really must be spreading out through space in order to _find the right path for a particle to take_.
 
-After we derive the KG equations from a relativistic total energy Hamiltonian here, we will then derive the Schrödinger equation from a different Hamiltonian. The Hamiltonian can be extended to include spin and coupling to the EM field, to derive the [[Dirac]] equation (which is just a more complicated version of the KG equation). You will see that the total energy equation and the corresponding wave equation are very directly related mathematically, and thus this overall approach of using the total energy to derive the wave equation is a very powerful tool that is important to understand if you want to really understand what these wave equations are doing.
+In anthropomorphic terms, the quantum wave function is like a perceptual system for particles, telling them how to move in order to go in the most efficient way! And the Hamiltonian provides a mathematical framework for defining what "the most efficient way" actually means.
+
+The form of the total energy that is used as a starting point determines the scope of the physics that the resulting equations of motion support. The KG equations are derived directly from the relativistic total energy (from Einstein's [[special relativity]]), so they therefore automatically produce all of that relativistic phenomena. However, [[Schrodinger]]'s equation is derived from a _Newtonian_ total energy function, which means that it does _not_ handle relativistic phenomena. That derivation is shown in 
+
+
+ The Hamiltonian can be extended to include spin and coupling to the EM field, to derive the [[Dirac]] equation (which is just a more complicated version of the KG equation). You will see that the total energy equation and the corresponding wave equation are very directly related mathematically, and thus this overall approach of using the total energy to derive the wave equation is a very powerful tool that is important to understand if you want to really understand what these wave equations are doing.
 
 You should be familiar with our computation of the total energy associated with a simple wave, which we calculated in [[waves]]. There we saw that for each cell element in our wave matrix, the total energy was the sum of the **kinetic** and **potential** energy, where kinetic energy is a function of how fast the state value is moving, and potential energy is a function of how much stress or tension there was between the state and its neighbors (i.e., the curvature of the space).
 
@@ -92,7 +97,7 @@ $$
 = \left(\frac{\hat{E}}{c}, \hat{p}\right)
 $$
 
-As indicated, it should be clear that the first (time) component of this is the energy operator given above, while the spatial components are the momentum operator (equation~\ref{eq.ep_operators}):
+As indicated, it should be clear that the first (time) component of this is the energy operator given above, while the spatial components are the momentum operator ([[#eq_momentum-op]]):
 
 $$
 \hat{E} = i \hbar \frac{\partial}{\partial t}

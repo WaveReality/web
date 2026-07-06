@@ -10,6 +10,10 @@
 
 <p id="BarutBracken81">Barut, A.O., & Bracken, A.J. (1981). Zitterbewegung and the internal geometry of the electron. <i>Physical Review D, 23</i>, 2454–2463. <a href="https://link.aps.org/doi/10.1103/PhysRevD.23.2454">https://link.aps.org/doi/10.1103/PhysRevD.23.2454</a><a href="http://doi.org/10.1103/PhysRevD.23.2454"> http://doi.org/10.1103/PhysRevD.23.2454</a></p>
 
+<p id="BarutDowling90">Barut, A.O., & Dowling, J.P. (1990). Self-field quantum electrodynamics: The two-level atom. <i>Physical Review A, 41</i>, 2284–2294. <a href="https://link.aps.org/doi/10.1103/PhysRevA.41.2284">https://link.aps.org/doi/10.1103/PhysRevA.41.2284</a><a href="http://doi.org/10.1103/PhysRevA.41.2284"> http://doi.org/10.1103/PhysRevA.41.2284</a></p>
+
+<p id="BarutVanHuele85">Barut, A.O., & Van Huele, J.F. (1985). Quantum electrodynamics based on self-energy: Lamb shift and spontaneous emission without field quantization. <i>Physical Review A, 32</i>, 3187–3195. <a href="https://link.aps.org/doi/10.1103/PhysRevA.32.3187">https://link.aps.org/doi/10.1103/PhysRevA.32.3187</a><a href="http://doi.org/10.1103/PhysRevA.32.3187"> http://doi.org/10.1103/PhysRevA.32.3187</a></p>
+
 <p id="Bell64">Bell, J.S. (1964). On the Einstein Podolsky Rosen paradox. <i>Physics Physique Fizika, 1</i>, 195–200. </p>
 
 <p id="Bialynicki-Birula94">Bialynicki-Birula, I. (1994). Weyl, Dirac, and Maxwell equations on a lattice as unitary cellular automata. <i>Physical Review D, 49</i>, 6920–6927. <a href="https://link.aps.org/doi/10.1103/PhysRevD.49.6920">https://link.aps.org/doi/10.1103/PhysRevD.49.6920</a><a href="http://doi.org/10.1103/PhysRevD.49.6920"> http://doi.org/10.1103/PhysRevD.49.6920</a></p>
@@ -22,6 +26,10 @@
 
 <p id="CavesFuchsSchack02">Caves, C.M., Fuchs, C.A., & Schack, R. (2002). Quantum probabilities as Bayesian probabilities. <i>Physical Review A, 65</i>, 022305. <a href="https://link.aps.org/doi/10.1103/PhysRevA.65.022305">https://link.aps.org/doi/10.1103/PhysRevA.65.022305</a><a href="http://doi.org/10.1103/PhysRevA.65.022305"> http://doi.org/10.1103/PhysRevA.65.022305</a></p>
 
+<p id="Crisp96">Crisp, M.D. (1996). Relativistic neoclassical radiation theory. <i>Physical Review A, 54</i>, 87–92. <a href="https://link.aps.org/doi/10.1103/PhysRevA.54.87">https://link.aps.org/doi/10.1103/PhysRevA.54.87</a><a href="http://doi.org/10.1103/PhysRevA.54.87"> http://doi.org/10.1103/PhysRevA.54.87</a></p>
+
+<p id="CrispJaynes69">Crisp, M.D., & Jaynes, E.T. (1969). Radiative Effects in Semiclassical Theory. <i>Physical Review, 179</i>, 1253–1261. <a href="https://link.aps.org/doi/10.1103/PhysRev.179.1253">https://link.aps.org/doi/10.1103/PhysRev.179.1253</a><a href="http://doi.org/10.1103/PhysRev.179.1253"> http://doi.org/10.1103/PhysRev.179.1253</a></p>
+
 <p id="DemiralpRabitz97">Demiralp, M., & Rabitz, H. (1997). Dispersion-free wave packets and feedback solitonic motion in controlled quantum dynamics. <i>Physical Review A, 55</i>, 673–677. <a href="https://link.aps.org/doi/10.1103/PhysRevA.55.673">https://link.aps.org/doi/10.1103/PhysRevA.55.673</a><a href="http://doi.org/10.1103/PhysRevA.55.673"> http://doi.org/10.1103/PhysRevA.55.673</a></p>
 
 <p id="DurrGoldsteinNorsenEtAl14">Dürr, D., Goldstein, S., Norsen, T., Struyve, W., & Zanghì, N. (2014). Can Bohmian mechanics be made relativistic? <i>Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences, 470</i>, 20130699. <a href="https://royalsocietypublishing.org/doi/full/10.1098/rspa.2013.0699">https://royalsocietypublishing.org/doi/full/10.1098/rspa.2013.0699</a><a href="http://doi.org/10.1098/rspa.2013.0699"> http://doi.org/10.1098/rspa.2013.0699</a></p>
@@ -29,6 +37,10 @@
 <p id="Einstein05a">Einstein, A. (1905). Über einem die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt. <i>Annalen der physik, 4</i>, <a href="https://sedici.unlp.edu.ar/handle/10915/2784">https://sedici.unlp.edu.ar/handle/10915/2784</a></p>
 
 <p id="Everett57">Everett, H. (1957). "Relative State" Formulation of Quantum Mechanics. <i>Reviews of Modern Physics, 29</i>, 454–462. <a href="https://link.aps.org/doi/10.1103/RevModPhys.29.454">https://link.aps.org/doi/10.1103/RevModPhys.29.454</a><a href="http://doi.org/10.1103/RevModPhys.29.454"> http://doi.org/10.1103/RevModPhys.29.454</a></p>
+
+<p id="FeynmanGell-Mann58">Feynman, R.P., & Gell-Mann, M. (1958). Theory of the Fermi Interaction. <i>Physical Review, 109</i>, 193–198. <a href="https://link.aps.org/doi/10.1103/PhysRev.109.193">https://link.aps.org/doi/10.1103/PhysRev.109.193</a><a href="http://doi.org/10.1103/PhysRev.109.193"> http://doi.org/10.1103/PhysRev.109.193</a></p>
+
+<p id="FinsterSmollerYau99a">Finster, F., Smoller, J., & Yau, S. (1999). Particlelike solutions of the Einstein-Dirac equations. <i>Physical Review D, 59</i>, 104020. <a href="https://link.aps.org/doi/10.1103/PhysRevD.59.104020">https://link.aps.org/doi/10.1103/PhysRevD.59.104020</a><a href="http://doi.org/10.1103/PhysRevD.59.104020"> http://doi.org/10.1103/PhysRevD.59.104020</a></p>
 
 <p id="FordOConnell91">Ford, G.W., & O'Connell, R.F. (1991). Radiation reaction in electrodynamics and the elimination of runaway solutions. <i>Physics Letters A, 157</i>, 217–220. <a href="https://www.sciencedirect.com/science/article/pii/037596019190054C">https://www.sciencedirect.com/science/article/pii/037596019190054C</a><a href="http://doi.org/10.1016/0375-9601(91)90054-C"> http://doi.org/10.1016/0375-9601(91)90054-C</a></p>
 
@@ -46,6 +58,8 @@
 
 <p id="GerryKnight05">Gerry, C.C., & Knight, P.L. (2005). <i>Introductory Quantum Optics. </i> Cambridge University Press. </p>
 
+<p id="Gingrich04">Gingrich, D.M. (2004). <i>Phys 512: Advanced Quantum Mechanics II. </i> University of Alberta, Department of Physics. </p>
+
 <p id="Gleason75">Gleason, A.M. (1975). Measures on the Closed Subspaces of a Hilbert Space. In C.A. Hooker (Ed.), <i>The Logico-Algebraic Approach to Quantum Mechanics: Volume I: Historical Evolution</i> (pp. 123–133). Springer Netherlands. <a href="https://doi.org/10.1007/978-94-010-1795-4_7">https://doi.org/10.1007/978-94-010-1795-4_7</a><a href="http://doi.org/10.1007/978-94-010-1795-4_7"> http://doi.org/10.1007/978-94-010-1795-4_7</a></p>
 
 <p id="Gordon27">Gordon, W. (1927). <i>Zeitschrift für Physik, 40</i>, 117–133. </p>
@@ -53,6 +67,8 @@
 <p id="Grandy91">Grandy, W.T. (1991). The Explicit Nonlinearity of Quantum Electrodynamics. In D. Hestenes, & A. Weingartshofer (Eds.), <i>The Electron: New Theory and Experiment</i> (pp. 149–164). Springer Netherlands. <a href="https://doi.org/10.1007/978-94-011-3570-2_7">https://doi.org/10.1007/978-94-011-3570-2_7</a><a href="http://doi.org/10.1007/978-94-011-3570-2_7"> http://doi.org/10.1007/978-94-011-3570-2_7</a></p>
 
 <p id="GrangierRogerAspect86">Grangier, P., Roger, G., & Aspect, A. (1986). Experimental Evidence for a Photon Anticorrelation Effect on a Beam Splitter: A New Light on Single-Photon Interferences. <i>Europhysics Letters, 1</i>, 173. <a href="https://doi.org/10.1209/0295-5075/1/4/004">https://doi.org/10.1209/0295-5075/1/4/004</a><a href="http://doi.org/10.1209/0295-5075/1/4/004"> http://doi.org/10.1209/0295-5075/1/4/004</a></p>
+
+<p id="Greiner00">Greiner, W. (2000). <i>Relativistic Quantum Mechanics. Wave Equations. </i> Springer. </p>
 
 <p id="Gudder70">Gudder, S.P. (1970). On Hidden‐Variable Theories. <i>Journal of Mathematical Physics, 11</i>, 431–436. <a href="https://doi.org/10.1063/1.1665156">https://doi.org/10.1063/1.1665156</a><a href="http://doi.org/10.1063/1.1665156"> http://doi.org/10.1063/1.1665156</a></p>
 
@@ -63,6 +79,12 @@
 <p id="Holland05c">Holland, P. (2005). Quantum back-reaction and the particle law of motion. <i>Journal of Physics A: Mathematical and General, 39</i>, 559. <a href="https://doi.org/10.1088/0305-4470/39/3/008">https://doi.org/10.1088/0305-4470/39/3/008</a><a href="http://doi.org/10.1088/0305-4470/39/3/008"> http://doi.org/10.1088/0305-4470/39/3/008</a></p>
 
 <p id="HongOuMandel87">Hong, C.K., Ou, Z.Y., & Mandel, L. (1987). Measurement of subpicosecond time intervals between two photons by interference. <i>Physical Review Letters, 59</i>, 2044–2046. <a href="https://link.aps.org/doi/10.1103/PhysRevLett.59.2044">https://link.aps.org/doi/10.1103/PhysRevLett.59.2044</a><a href="http://doi.org/10.1103/PhysRevLett.59.2044"> http://doi.org/10.1103/PhysRevLett.59.2044</a></p>
+
+<p id="Hostler82">Hostler, L.C. (1982). An SL(2,C )‐invariant representation of the Dirac equation. <i>Journal of Mathematical Physics, 23</i>, 1179–1184. <a href="https://doi.org/10.1063/1.525449">https://doi.org/10.1063/1.525449</a><a href="http://doi.org/10.1063/1.525449"> http://doi.org/10.1063/1.525449</a></p>
+
+<p id="Hostler83">Hostler, L.C. (1983). An SL(2,C)‐invariant representation of the Dirac equation. II. Coulomb Green’s function. <i>Journal of Mathematical Physics, 24</i>, 2366–2373. <a href="https://doi.org/10.1063/1.525985">https://doi.org/10.1063/1.525985</a><a href="http://doi.org/10.1063/1.525985"> http://doi.org/10.1063/1.525985</a></p>
+
+<p id="Hostler85">Hostler, L.C. (1985). Scalar formalism for quantum electrodynamics. <i>Journal of Mathematical Physics, 26</i>, 1348–1354. <a href="https://doi.org/10.1063/1.526945">https://doi.org/10.1063/1.526945</a><a href="http://doi.org/10.1063/1.526945"> http://doi.org/10.1063/1.526945</a></p>
 
 <p id="Jackson02">Jackson, J.D. (2002). From Lorenz to Coulomb and other explicit gauge transformations. <i>American Journal of Physics, 70</i>, 917–928. <a href="https://doi.org/10.1119/1.1491265">https://doi.org/10.1119/1.1491265</a><a href="http://doi.org/10.1119/1.1491265"> http://doi.org/10.1119/1.1491265</a></p>
 
@@ -92,11 +114,15 @@
 
 <p id="Mandel76">Mandel, L. (1976). <i>II The Case for and Against Semiclassical Radiation Theory. </i>In Progress in Optics (pp. 27–68). Elsevier. <a href="https://www.sciencedirect.com/science/chapter/bookseries/abs/pii/S0079663808700180">https://www.sciencedirect.com/science/chapter/bookseries/abs/pii/S0079663808700180</a><a href="http://doi.org/10.1016/S0079-6638(08)70018-0"> http://doi.org/10.1016/S0079-6638(08)70018-0</a></p>
 
+<p id="MandlShaw13">Mandl, F., & Shaw, G. (2013). <i>Quantum Field Theory. </i> John Wiley & Sons. </p>
+
 <p id="MarshallSantos07">Marshall, T.W., & Santos, E. (2007). A classical model for a photodetector in the presence of electromagnetic vacuum fluctuations. <i>arXiv:0707.2137 [quant-ph], <a href="http://arxiv.org/abs/0707.2137">http://arxiv.org/abs/0707.2137</a></i></p>
 
 <p id="MarshallSantos88">Marshall, T., & Santos, E. (1988). Stochastic optics: A reaffirmation of the wave nature of light. <i>Foundations of Physics, 18</i>, 185–223. <a href="https://doi.org/10.1007/BF01882931">https://doi.org/10.1007/BF01882931</a><a href="http://doi.org/10.1007/BF01882931"> http://doi.org/10.1007/BF01882931</a></p>
 
 <p id="MarshallSantos97">Marshall, T.W., & Santos, E. (1997). The Myth of The Photon. In S. Jeffers, S. Roy, J. Vigier, & G. Hunter (Eds.), <i>The Present Status of the Quantum Theory of Light</i> (pp. 67–77). Springer Netherlands. <a href="http://doi.org/10.1007/978-94-011-5682-0_7"> http://doi.org/10.1007/978-94-011-5682-0_7</a></p>
+
+<p id="MasielloDeumensOhrn05">Masiello, D., Deumens, E., & Öhrn, Y. (2005). <i>On the Canonical Formulation of Electrodynamics and Wave Mechanics. </i>In Advances in Quantum Chemistry (pp. 249–297). Elsevier. <a href="https://linkinghub.elsevier.com/retrieve/pii/S0065327605490061">https://linkinghub.elsevier.com/retrieve/pii/S0065327605490061</a><a href="http://doi.org/10.1016/S0065-3276(05)49006-1"> http://doi.org/10.1016/S0065-3276(05)49006-1</a></p>
 
 <p id="Maudlin11">Maudlin, T. (2011). <i>Quantum Non-Locality and Relativity: Metaphysical Intimations of Modern Physics. </i> John Wiley & Sons. </p>
 
@@ -129,6 +155,8 @@
 <p id="Popescu14">Popescu, S. (2014). Nonlocality beyond quantum mechanics. <i>Nature Physics, 10</i>, 264–270. <a href="https://www.nature.com/articles/nphys2916">https://www.nature.com/articles/nphys2916</a><a href="http://doi.org/10.1038/nphys2916"> http://doi.org/10.1038/nphys2916</a></p>
 
 <p id="PuseyBarrettRudolph12">Pusey, M.F., Barrett, J., & Rudolph, T. (2012). On the reality of the quantum state. <i>Nature Physics, 8</i>, 475–478. <a href="https://www.nature.com/articles/nphys2309">https://www.nature.com/articles/nphys2309</a><a href="http://doi.org/10.1038/nphys2309"> http://doi.org/10.1038/nphys2309</a></p>
+
+<p id="Radford03">Radford, C.J. (2003). The stationary Maxwell–Dirac equations. <i>Journal of Physics A: Mathematical and General, 36</i>, 5663. <a href="https://doi.org/10.1088/0305-4470/36/20/321">https://doi.org/10.1088/0305-4470/36/20/321</a><a href="http://doi.org/10.1088/0305-4470/36/20/321"> http://doi.org/10.1088/0305-4470/36/20/321</a></p>
 
 <p id="ReidDrummond26">Reid, M.D., & Drummond, P.D. (2026). Forward-backward stochastic simulations: $Q$-based model for measurement and Bell nonlocality consistent with weak local realistic premises. <i>Physical Review A, 113</i>, 012210. <a href="https://link.aps.org/doi/10.1103/qdyg-2nv4">https://link.aps.org/doi/10.1103/qdyg-2nv4</a><a href="http://doi.org/10.1103/qdyg-2nv4"> http://doi.org/10.1103/qdyg-2nv4</a></p>
 
@@ -171,6 +199,8 @@
 <p id="Wallace20">Wallace, D. (2020). <i>Against Wavefunction Realism. </i>In Current Controversies in Philosophy of Science. Routledge. </p>
 
 <p id="WangZhang01">Wang, Z., & Zhang, A. (2001). New interpretation to zitterbewegung. <a href="http://arxiv.org/abs/hep-ph/0110079">http://arxiv.org/abs/hep-ph/0110079</a><a href="http://doi.org/10.48550/arXiv.hep-ph/0110079"> http://doi.org/10.48550/arXiv.hep-ph/0110079</a></p>
+
+<p id="Whittaker03">Whittaker, E.T. (1903). On the partial differential equations of mathematical physics. <i>Mathematische Annalen, 57</i>, 333–355. <a href="https://doi.org/10.1007/BF01444290">https://doi.org/10.1007/BF01444290</a><a href="http://doi.org/10.1007/BF01444290"> http://doi.org/10.1007/BF01444290</a></p>
 
 <p id="Wolfram97">Wolfram, S. (1997). <i>A new kind of science. </i></p>
 

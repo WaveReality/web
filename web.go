@@ -5,7 +5,6 @@
 package main
 
 import (
-	"bytes"
 	"embed"
 
 	"cogentcore.org/core/content"
@@ -14,7 +13,7 @@ import (
 	"cogentcore.org/core/text/csl"
 	"cogentcore.org/core/text/tex/texcache"
 	"cogentcore.org/core/tree"
-	_ "github.com/WaveReality/waves/yeagiwaves"
+	_ "github.com/WaveReality/waves/yaegiwaves"
 )
 
 // NOTE: you must make a symbolic link to the zotero MechPhys CSL file as mechphys.json
@@ -30,13 +29,13 @@ import (
 var econtent embed.FS
 
 //go:embed mathcache.json.gz
-var mathcache []byte
+var mathcache embed.FS
 
 //go:embed icon.svg
 var icon string
 
 func main() {
-	texcache.ReadGzip(bytes.NewBuffer(mathcache))
+	texcache.OpenFS(mathcache, "mathcache.json.gz")
 	texcache.SetShapeMath()
 	core.AppIcon = icon
 	content.Settings.SiteTitle = "Wave Reality"

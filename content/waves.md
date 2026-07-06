@@ -304,7 +304,7 @@ Next, we extend this wave equation to the full three-dimensional case, which jus
 
 The second-order wave equation in three-dimensional space is not too different at an abstract mathematical level from the one dimension case --- you basically just have to add extra terms for each of the additional dimensions. One minor complication is that we conventionally use _x,y,z_ for the spatial dimensions, and we've been previously using _y_ to represent the state value, so now we'll switch over to the notation that is typically used in quantum physics, based on the Greek symbols "psi" $\psi$, "phi" $\phi$, and a variant of phi: $\varphi$.
 
-To keep things consistent and clear over the course of the book, we establish the following convention for these state variables:
+To keep things consistent and clear, we establish the following convention for these state variables:
 
 * $\varphi$ = varphi = simple scalar state value --- one single real-valued number, like we've been considering already.
 * $\phi$ = phi = complex-number state value --- two independent real-valued numbers per state.
@@ -403,7 +403,7 @@ The full mathematical justification for this equation, and the demonstration of 
 
 - O'Reilly, R. C. & Beck, J. M. (2006/unpublished). A Family of Large-Stencil Discrete Laplacian Approximations in Three Dimensions.
 
-This is the equation we use in the remainder of the simulations in this book. As we emphasized for the 1D equation before, this 3D equation also provides an appealingly simple mechanism for nature to compute: it is just an average over all the neighbors of a given point, weighted by the relative distance. It is difficult to imagine a simpler kind of neighborhood interaction.
+This is the equation we use for all 3D simulations. As we emphasized for the 1D equation before, this 3D equation also provides an appealingly simple mechanism for nature to compute: it is just an average over all the neighbors of a given point, weighted by the relative distance. It is difficult to imagine a simpler kind of neighborhood interaction.
 
 ## Wave Energy in 3D
 

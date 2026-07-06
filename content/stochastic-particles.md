@@ -41,7 +41,7 @@ Within this broad framework of discrete particles interacting via continuous wav
 
     A further wrinkle is the possibility that particles leave some kind of _trace_ on the wave field that then influences subsequent particles, as a way of explaining the apparent [[non-locality]] phenomena ([[@Sciarretta18]]; [[@Sciarretta21]]).
     
-* Hidden particle states. The [[@Ord96]] model involves 2 state variables for each particle, that correspond qualitatively to the [[spin]] degrees of freedom in a fermion particle. The [[Dirac]] equation in its second order formulation likewise has 4 wave state variables that mutually interact to produce spin, via the _spinor_ dynamics. These also produce the phase dynamics of quantum wave functions, and are important for the conservation properties of these functions. Thus, the possibility of these internal state degrees of freedom, beyond just a single binary state value, must be properly explored, especially as it might interact with the Dirac spinor states.
+* Hidden particle states. The [[@^Ord96]] model involves 2 state variables for each particle, that correspond qualitatively to the [[spin]] degrees of freedom in a fermion particle. The [[Dirac]] equation in its second order formulation likewise has 4 wave state variables that mutually interact to produce spin, via the _spinor_ dynamics. These also produce the phase dynamics of quantum wave functions, and are important for the conservation properties of these functions. Thus, the possibility of these internal state degrees of freedom, beyond just a single binary state value, must be properly explored, especially as it might interact with the Dirac spinor states.
 
     One intuition is that the resting energy / mass of a particle is associated with this constant cycling through the [[spin]] states, and that somehow this cycling dynamic within a single cell is capable of maintaining some kind of momentum value, as it couples with the Dirac-like wave state that it is generating. This may be related to the phenomenon of _zitterbewegung_ ([[@Hestenes08]]; [[@Hestenes90]]]; [[@Sidharth09]]; [[@RomanRosoPlaja03]]; [[@BarutBracken81]]; [[@WangZhang01]]). Thus, the actual momentum represents a _spatial imbalance_ in this constant internal spin motion within the particle state.
     
@@ -59,7 +59,7 @@ Overall, this is a relatively large space to explore, and there are many potenti
 
 ## Photons    
 
-Unlike fermion particles such as electrons, the EM field is not amenable to a discrete particle-like framework: [[photons]] have many problematic issues as discrete particles of the EM field. Therefore, it makes more sense to retain a "classical" [[Maxwell]] EM field, interacting with the discretized fermion cells, as in the _semiclassical_ approach developed by a number of researchers (see [[@Struyve20]]; [[@Santos15]]).
+Unlike fermion particles such as electrons, the EM field is not amenable to a discrete particle-like framework: [[photons]] have many problematic issues as discrete particles of the EM field. Therefore, it makes more sense to retain a "classical" [[Maxwell]] EM field, interacting with the discretized fermion cells, as in the [[semiclassical]] approach developed by a number of researchers (see [[@Struyve20]]; [[@Santos15]]).
 
 ## Virtual particles, the discrete lattice, and probability waves
 

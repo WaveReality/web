@@ -3,9 +3,15 @@ Name = "Klein-Gordon"
 bibfile = "mechphys.json"
 +++
 
-The **Klein-Gordon** (KG) wave function is the simplest version of a [[waves|wave]] equation that captures the known physics of particles such as an [[electron]]. In fact, it explains a surprisingly wide range of physical phenomena, including Newtonian and relativistic equations of motion, the Lorentz transformations of [[special relativity]], and the quantum mechanical relationship between wave frequency and velocity (momentum), all with an incredibly simple equation. 
+The **Klein-Gordon** (KG) wave function is the simplest version of a [[waves|wave]] equation that captures the known physics of particles such as an [[electron]]. In fact, it explains a surprisingly wide range of physical phenomena, including Newtonian and relativistic equations of motion, the Lorentz transformations of [[special relativity]], and the quantum mechanical relationship between wave frequency and velocity (momentum), all with an incredibly simple equation.
 
-Thus, it is tempting to think that particles are actually [[matter waves]], in the form of a spatially-localized _wave packet_. However, despite all the amazing properties of the KG equation (and its more complicated iteration in the [[Dirac]] wave function), these matter waves have a fatal flaw: they inevitably diffuse away into amorphous blobs that fail to account for the precise localization of particles like electrons. The process by which a widely distributed matter wave function could somehow become localized, gathering up all of its far-flung bits in order to satisfy strict conservation laws, is precisely as implausible as the standard [[Copenhagen]] interpretation of QM.
+The KG wave function can be derived directly from Einstein's relativistic definition of total energy, via the [[Hamiltonian]] strategy. After reading this chapter, which covers the phenomenology of the KG wave equation, it is recommended to read that derivation to obtain a deeper understanding of why and how the KG equations account for all of special relativity.
+
+The incredible scope of phenomena accounted for by the simple KG equation makes it tempting to think that particles are actually [[matter waves]], in the form of a spatially-localized _wave packet_. However, despite all the amazing properties of the KG equation (and its more complicated iteration in the [[Dirac]] wave function), these matter waves have a fatal flaw: they inevitably diffuse away into amorphous blobs that fail to account for the precise localization of particles like electrons.
+
+If you were to imagine something like an electron to actually be a matter wave, then it becomes very difficult to understand how all of the widely distributed, far-flung bits could be somehow gathered up and accounted for, in order to satisfy strict conservation laws. Every time an electron is measured it has the exact same charge. And rest mass. This extremely difficult to imagine happening when you see what happens to the KG waves over time.
+
+In fact, it is precisely as implausible as the standard [[Copenhagen]] interpretation of QM, which requires the complete collapse of far-flung wave equations, which are thought to determine the probability of particle properties being measured in any given location.
 
 Nevertheless, there is much to learn about physics and wave functions by understanding the almost miraculous properties of the KG wave function.
 
@@ -59,6 +65,7 @@ $$
 
 so that the equation can be written:
 
+{id="eq_kg-4vec" title="Klein-Gordon four-vector"}
 $$
 \partial_\mu \partial^\mu \varphi = - \frac{c^2 m_0^2}{\hbar^2} \varphi
 $$
@@ -178,133 +185,13 @@ Creating a moving wave packet that moves with a given velocity is a bit more com
 
 ## Schrödinger's Equation vs Klein-Gordon
 
-The Klein-Gordon equation that we've been exploring is typically introduced as a strange and problematic alternative to the Schrödinger wave equation, which provides the cornerstone of standard quantum physics. As we saw, the KG equation is derived from the relativistic total energy, whereas we'll see here that Schrödinger's equation can be derived from *Newtonian* total energy, and thus is clearly not accurate for anything moving very fast (a significant fraction of the speed of light), or where new particles are created out of raw energy. The fact that it holds such strong sway in the field can be attributed to its strict conservation properties --- as normally interpreted, the Schrödinger equation conserves the total probability value, as it propagates through space. In contrast, the KG equation does not have such a strict conservation behavior.
+The Klein-Gordon equation that we've been exploring is typically introduced as a strange and problematic alternative to the Schrödinger wave equation, which provides the cornerstone of standard quantum physics, even to this day. In [[Hamiltonian]] (recommended as next reading), you can see how the KG equation can be derived from the relativistic total energy. By contrast, Schrödinger's equation can be derived from _Newtonian_ total energy, and therefore it fails to account for the phenomena of [[special relativity]].
+
+The fact that Schrödinger's equation remains the predominant tool used by practicing physicists can be attributed to its strict conservation properties, where the total probability value (computed as the complex conjugate of the wave values), is conserved as it propagates through space. In contrast, the KG equation does not have such a strict conservation behavior.
 
 Furthermore, the Schrödinger equation is a first-order wave equation, which has many advantages from an analytical perspective, even as it makes it very difficult for many people to understand, due to its reliance on [[complex numbers]]. In general, wave-like behavior can either be described by a second-order equation involving normal scalar variables (as we've been doing), or it can be described by a first-order equation involving complex numbers, exemplified by the Schrödinger equation.
 
-In the first-order version, you have two variables for every one variable in the second-order one --- we'll see later that this fact allows us to use only four variables to represent an electron using a second-order wave equation, whereas the standard first-order Dirac equation requires eight. The general intuition is that a first-order wave equation involves motion as rotation among its complex variables, in addition to motion through space, whereas the second-order equation just has motion through space. This will be clearer as we examine Schrödinger's equation more closely.
+In the first-order version, you have two variables for every one variable in the second-order one --- we'll see later that this fact allows us to use only four variables to represent an electron using a second-order wave equation, whereas the standard first-order Dirac equation requires eight. The general intuition is that a first-order wave equation involves motion as rotation among its complex variables, in addition to motion through space, whereas the second-order equation just has motion through space.
 
-Before we do so, you should review [[complex numbers]] if you are not completely familiar with them. Complex numbers are important for understanding [[Schrodinger]]'s equation (as described thereafter), and for subsequent developments of the KG equation, which requires complex numbers to represent a conserved charge value.
-
-Using the total energy ([[Hamiltonian]]) approach, we can derive Schrödinger's equation, using the very same energy and momentum operators that we used in the derivation of the KG equation above. To remind, these operators are:
-
-{id="eq_momentum" title="momentum operator"}
-$$
-\hat{p} = -i \hbar \vec{\nabla}
-$$
-
-{id="eq_energy" title="energy operator"}
-$$
-\hat{E} = i \hbar \frac{\partial }{\partial t}
-$$
-
-{id="eq_gradient" title="gradient operator"}
-$$
-\vec{\nabla} = \left(\frac{\partial {}}{\partial {x}}, \frac{\partial {}}{\partial {y}}, \frac{\partial}{\partial {z}}\right)
-$$
-
-Next, we need to define the total energy Hamiltonian. Instead of the relativistic total energy, we use the classical Newtonian expression for the kinetic energy of a particle, in terms of its velocity $\vec{v}$, just as we did in the simple wave energy calculation in [[waves]]:
-
-{id="eq_kinetic" title="kinetic energy of particle"}
-$$
-K = \frac{1}{2} m_0 \vec{v}^2 = \frac{1}{2 m_0} \vec{p}^2
-$$
-
-The second form uses the Newtonian relationship of momentum to velocity (just $\vec{p} = m_0 \vec{v}$) --- because we have a momentum operator, we need to use this momentum form.
-
-We also include a potential energy term that is a function of any kind of electrical or other force potential that the particle experiences. We won't deal much with such forces at this point, so we just call this potential energy $V$ for now, and focus on the kinetic energy. The total energy or Hamiltonian in abstract terms is just the kinetic energy $K$ plus this potential energy:
-
-{id="eq_kv" title="kinetic and potential energy"}
-$$
-E = K + V
-$$
-
-$$
-E = \frac{1}{2 m_0} \vec{p}^2 + V
-$$
-
-We can now just apply our momentum and energy operators to these expressions, and the result is in fact:
-
-{id="eq_schrodinger" title="Schrödinger's equation"}
-$$
-i \hbar \frac{\partial {\phi}}{\partial t} = -\frac{\hbar^2}{2 m_0} \nabla^2 \phi + V \phi
-$$
-
-The net result is that we can conclude that Schrödinger's equation provides an accurate description of the flow of energy and momentum over time of a "particle" described by a wave, such that it obeys classical Newtonian physical laws.
-
-Omitting various constants (factors of $h$) and any external force potential, Schrödinger's equation is:
-
-{id="eq_schrodinger" title="Schrödinger's equation, essence"}
-$$
-i \frac{\partial {\phi}}{\partial t} = - \frac{1}{2m_0} \nabla^2 \phi
-$$
-
-where $m_0$ is again the rest mass of the particle in question. This is clearly very similar to the basic second-order KG wave equation:
-
-{id="eq_KG" title="Klein-Gordon equation"}
-$$
-\frac{\partial^2 {\varphi}}{\partial t^2} = c^2 \nabla^2 \varphi - \frac{m_0^2}{\hbar^2} \varphi
-$$
-
-except that the temporal derivative is first-order, and mass enters in a different way. Nevertheless, the driving force is still the overall curvature of the wave, computed by $\nabla^2 \varphi$. As we noted above, the multiplication by the $i$ term causes things to rotate --- this rotation is key for making the first-order equation behave like a wave.
-
-To see this effect more explicitly, we can write out Schrödinger's equation in terms of the two underlying scalar values:
-
-$$
-i \frac{\partial {\varphi_a + i \varphi_b}}{\partial t} = - \frac{1}{2m_0} \nabla^2 (\varphi_a + i \varphi_b)
-$$
-
-$$
--\frac{\partial {\varphi_b}}{\partial t} + \frac{\partial {i \varphi_a}}{\partial t} = -\frac{1}{2m_0} \nabla^2 \varphi_a - i \nabla^2 \varphi_b
-$$
-
-where $\varphi_a$ indicates a scalar state variable that is the $a$ component of $\phi$, and $\varphi_b$ is the $b$ component of $\phi$. Note that the derivatives operate separately on each of the two variables. At this point, we now can just separate all the terms that involve an $i$ from those that do not, to get update equations for each of the two variables. For the real-valued components (without the $i$):
-
-$$
--\frac{\partial {\varphi_b}}{\partial t} = - \frac{1}{2m_0} \nabla^2 \varphi_a
-$$
-
-$$
-\frac{\partial {\varphi_b}}{\partial t} = \frac{1}{2m_0} \nabla^2 \varphi_a
-$$
-
-and for the imaginary components (dropping the $i$ now, because we no longer need it to keep the variables separated):
-
-$$
-\frac{\partial {\varphi_a}}{\partial t} = - \frac{1}{2m_0} \nabla^2 \varphi_b
-$$
-
-In a discrete-space and time CA-like implementation, these equations would be written:
-
-$$
-\dot {\varphi_a}_i^{t+1} = - \frac{3}{26 m_0} \sum_{j \in N_{26}} k_j ({\varphi_b}_j^t - {\varphi_b}_i^t)
-$$
-
-$$
-{\varphi_a}_i^{t+1} = {\varphi_a}_i^t + \dot {\varphi_a}_i^{t+1}
-$$
-
-and:
-
-$$
-\dot {\varphi_b}_i^{t+1} = \frac{3}{26 m_0}\sum_{j \in N_{26}} k_j ({\varphi_a}_j^t - {\varphi_a}_i^t)
-$$
-
-$$
-{\varphi_b}_i^{t+1} = {\varphi_b}_i^t + \dot {\varphi_b}_i^{t+1}
-$$
-
-So, in the end, Schrödinger's equation really just boils down to two very simple differential equations. Interestingly, these equations are *coupled*, in the sense that it is the curvature of $\varphi_a$ that drives the change in $\varphi_b$, and vice-versa. This is the rotational aspect of the equation mentioned earlier, which is caused by the presence of the $i$ in the equation.
-
-When you actually implement Schrödinger's equation on a computer using the update rules given above, the resulting system is numerically unstable. In other words, the resulting numbers quickly blow up to infinity. This is not due to any kind of numerical roundoff error from limited precision floating point numbers on the computer, but rather due to the way that changes in state values reverberate back and forth across the two scalar values. However, it is possible to overcome it relatively simply by just alternating the update: on one time step you compute one value, and on the next you update the other. This is what is done for illustrative purposes in the computer explorations.
-
-The basic phenomenology of Schrödinger's equation is that wave packets propagate through space, with a speed that is proportional to $\nabla^2 \phi$, which in turn is proportional to the frequency of the wave. In other words, it describes exactly the same behavior as the KG equation, where particle speed is proportional to frequency.
-
-One critical property of Schrödinger's equation (which our current scalar KG equation does not have) is that it preserves the overall magnitude of the $\phi$ state values across all of space, for all time. This is to say, if you compute the sum of $\phi \phi^*$ for each point in space, this sum will remain the same across time under the Schrödinger equation. This conserved value is interpreted as a probability in standard quantum mechanics. For example, we can initialize the state with a localized wave packet (Figure 4.1) to represent the initial probability for the location and velocity of a particle (velocity being a function of the frequency of the wave packet). If we then apply the Schrödinger equation repeatedly, we can interpret the resulting $\phi \phi^*$ values as the probability of the particle having moved to the corresponding location.
-
-In other words, the wave packet defines a kind of "cloud of probability" for finding a discrete particle within its midst. However, these probabilities have different meanings in different scenarios, and it is notoriously difficult to come up with a intuitively sensible interpretation of what these probability clouds mean. We return to these issues later.
-
-<!--- TODO: say more about conjugate thing and conserved probability. -->
-<!---  -->
-<!--- % todo: demos of schrodinger.. -->
+See [[schrodinger#Schrodinger's equation] for the full derivation, and exploration of its properties.
 
