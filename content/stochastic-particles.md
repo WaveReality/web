@@ -2,20 +2,37 @@
 bibfile = "mechphys.json"
 +++
 
-There are two key principles that allow discrete particles in a cubic lattice (as in the [[cellular automaton]] framework) to exhibit fully continuous, isotrophic motion:
+Wave equations provide such a natural explanation of so many physical phenomena, that it is very tempting to imagine that the entirety of physics can be produced exclusively through various coupled wave functions, as in the coupled [[Dirac]] -- [[Maxwell]] system. However, having implemented such a system, it is evident that the Achilles heel of waves is a fundamental problem: they inevitably just spread out and diffuse over time.
 
-* Stochastic Brownian movement enables a discrete particle to exhibit macroscopically continuous, isotropic overall behavior, based on the original work of [[@^Nelson66]], [[@^Ord96]], and subsequent work by [[@^Sciarretta18]]; [[@^Sciarretta21]] and others reviewed therein. The key intuition is that random timing and directions of discrete jumps can result in isotrophic, fully graded macroscopic motion trajectories.
+The obvious solution to this problem is to have some kind of discrete particle that cannot spread out, and remains localized in a specific point in space at any given point in time. In this context, the fundamental wave-particle duality in quantum physics suddenly starts to look like an essential _feature_ of the system, instead of some kind of paradoxical bug that nature threw at us for no good reason.
 
-	Furthermore, this motion naturally exhibits the main properties of the quantum wave function (e.g., the [[Schrodinger]] equation as shown by [[@Nelson66]]), where a slow drift rate produces a wide cloud of space where particle could be, corresponding to a long wavelength in the probability cloud that the Schrödinger wave function describes. However, when the particle has high momentum, it moves more deterministically in a given direction, resulting in a narrower range of variance around the particle's mean trajectory, resulting in a narrower effective wavelength ([[#figure_pf-origin]]).
-    
-    Thus, unlike the [[pilot-wave]] framework, the quantum wave function in a purely stochastic particle model is entirely [[epistemic vs ontic|epistemic]]: it just describes the expected value of a discrete particle's random walk trajectories over time. There is no physical reality to such a wave.
-    
-    While this is appealing in its simplicity, it does not appear to provide an explanation for phenomena such as the [[double-slit]] experiment, where somehow a particle can interfere _with itself_, but only if the other slit is open. Furthermore, it cannot be the case that these interference effects only arise in the rare cases when a discrete particle happens to wander so aimlessly as to go through both slits somehow.
+The basic [[waves|wave]] equation represents a fundamental interaction between **space** (the spatial gradient, i.e., the _momentum_ operator in the [[Hamiltonian]]) and **time** (acceleration within a single grid element, i.e., the Hamiltonian _energy_ operator). In this context, consistent with [[special relativity]], a massive particle lives strictly in the time component. This can be seen in the [[Klein-Gordon]] equation:
 
-* Discrete particles require some other continuous state values embedded in the same discrete lattice to drive the _probabilities_ underlying their stochastic behavior. The nature of such values is often unaddressed in existing frameworks. The [[pilot-wave]] framework of de Broglie and Bohm provides a natural mechanism for these continuous momentum values, where the continuous-valued wave function guides the motion of a discrete particle in some way.
+{id="eq_kg" title="Klein-Gordon equation"}
+$$
+\frac{\partial^2 {\varphi}}{\partial t^2} = c^2 \nabla^2 \varphi - \frac{c^2 m_0^2}{\hbar^2} \varphi
+$$
+
+where the mass-dependent factor enters without any spatial gradient operator, and directly subtracts away from the energy factor (acceleration) on the left-hand side. This lack of spatial extent is consistent with a discrete particle entity, that somehow consumes energy from the wave field in proportion to its rest mass. This is the qualitative picture for how our discrete particles emerge, with the energy consumption propelling an internal oscillation within the discrete cell in the cubic lattice of the [[cellular automaton]] (CA) framework.
+
+An obvious problem with this notion of something being contained entirely within a discrete cell is that it becomes challenging to imagine how it might ever move to another such cell. Such a move would have to happen in a discrete jump, creating a major discontinuity in the overall wave state, and potentially making the particle trajectory seemingly discontinuous and anisotrophic. 
+
+The only way to overcome those difficulties is to use **stochastic** discrete jumps, such that, on longer time averages, the timing and spatial distribution of such jumps smooths out into a continuous, isotrophic distribution. Thus, contrary to Einstein's oft-cited objection that "God does not play dice with the universe", in fact it seems that an essential form of randomness is _necessary_ for discrete particles to move in a physically plausible manner.
+
+Furthermore, although the continuum limit is mathematically approachable through the tools of calculus, it is problematic from a physics perspective due to the nearly-infinite field strengths (and thus energies) that would be present in the immediate vicinity of a charged particle. This _ultraviolet catastrophe_ is a recurring theme throughout the [[history]] of quantum physics, and it is nicely resolved through the use of the discrete cubic lattice of the CA framework.
+
+The seminal work in analyzing stochastic discrete particle motion within the context of quantum physics was done by [[@^Nelson66]], who showed that a form of stochastic discrete particle motion actually results in the [[Schrodinger]] wave function in the continuous time-average limit. Interestingly, this work builds on the original work by Einstein on Brownian random-walk motion, back in 1905. Subsequent work has developed these ideas in multiple ways ([[@Cufaro-PetroniVigier83]]; [[@CufaroPetroniVigier79]]; [[@Ord96]]; [[@^Sciarretta18]]; [[@^Sciarretta21]] and others reviewed therein).
+
+Critically none of this existing work involves an integrated wave-particle [[duality]]; it focuses exclusively on the time-average distributions of discrete particle motion. Thus, unlike the [[pilot-wave]] framework, the quantum wave function in a purely stochastic particle model is entirely [[epistemic vs ontic|epistemic]]: it just describes the expected value of a discrete particle's random walk trajectories over time. There is no physical reality to such a wave. By contrast, our goal here is to derive an integration of discrete particle motion with quantum wave functions.
 
 {id="figure_pf-origin" style="height:20em"}
 ![Stochastic origin of quantum momentum / frequency relationship. The momentum on the left is 0.5c while on the right is 0. The distribution of position is on the vertical axis, while time is on the horizontal axis, with each point centered at the origin in the center (i.e., the temporal autocorrelation function). The variance on the left is half of that on the right.](media/fig_asmom5_0_autoc.png)
+
+One key intuition for why discrete particle motion naturally exhibits quantum wave-like behavior is that a slow drift rate produces a wide cloud of space where particle could be, corresponding to a long wavelength in the probability cloud that the Schrödinger wave function describes. However, when the particle has high momentum (velocity), it moves more deterministically in a given direction, resulting in a narrower range of variance around the particle's mean trajectory, resulting in a narrower effective wavelength ([[#figure_pf-origin]]).
+
+While this pure particle-based approach is appealing in its simplicity, it does not appear to provide an explanation for phenomena such as the [[double-slit]] experiment, where somehow a particle can interfere _with itself_, but only if the other slit is open. Furthermore, it cannot be the case that these interference effects only arise in the rare cases when a discrete particle happens to wander so aimlessly as to go through both slits somehow.
+
+Furthermore, discrete particles require some other continuous state values embedded in the same discrete lattice to drive the _probabilities_ underlying their stochastic behavior. The nature of such values is often unaddressed in existing frameworks. The [[pilot-wave]] framework of de Broglie and Bohm provides a natural mechanism for these continuous momentum values, where the continuous-valued wave function guides the motion of a discrete particle in some way.
 
 Overall, the discrete particle framework does a great job of keeping the accounting tight, in comparison to the fundamentally sloppy [[matter waves]] that end up diffusing over time and space. The discrete particles can be strictly conserved, and always tightly localized, while the surrounding wave functions diffuse outward from this central island of stability.
 
@@ -74,3 +91,48 @@ It is essential that these probability computations are all propagated in terms 
 ## TODO
 
 * zitterbewegung and helical spin in electron: [[@Hestenes08]]; [[@Hestenes90]]]; [[@Sidharth09]]; [[@RomanRosoPlaja03]]; [[@BarutBracken81]]; [[@WangZhang01]]
+
+## Stochastic KG
+
+This is a first-pass attempt at an integrated wave-particle system based on the complex KG system.
+
+* The mass-drag term only exists at one discrete point, otherwise it is just standard wave equation.
+
+* The probability of a motion jump to the next cell is computed using the standard current density equation:
+
+{id="eq_kg-current" title="Klein-Gordon current density"}
+$$
+\vec{J} \equiv - \frac{i \hbar e}{2m_0} \left( \phi^* \vec{\nabla} \phi - \phi \vec{\nabla} \phi^* \right)
+$$
+
+In terms of the underlying scalar state variables (and again for natural units), this is:
+
+$$
+\vec{J} = \frac{e}{m_0} (\varphi_a \vec{\nabla} \varphi_b - \varphi_b \vec{\nabla} \varphi_a)
+$$
+
+* The probability of staying in the same location is from the charge density:
+
+{id="eq_kg-charge" title="Klein-Gordon charge density"}
+$$
+\rho \equiv \frac{i \hbar e}{2m_0c^2} \left( \phi^* \frac{\partial \phi}{\partial t} - \phi \frac{\partial \phi^*}{\partial t} \right)
+$$
+
+$$
+\rho_i = \frac{e}{m_0} ({\varphi_b}_i \dot {\varphi_a}_i - {\varphi_a}_i \dot {\varphi_b}_i)
+$$
+
+* everything is normalized by the sum, and then the stochastic choice is made on these normalized probabilities.
+
+* if staying put, then the energy equivalent of the mass-dependent factor:
+
+$$
+\frac{c^2 m_0^2}{\hbar^2} \varphi
+$$
+
+is converted into an acceleration of the complex state variables. How exactly??
+
+* if moving, this same quantity is used to drive the motion in the new cell that is chosen as a weighted function of the projection of the charge density vector onto the laplacian neighbor vectors.
+
+again, the force drives the rotation of the complex state values but how exactly?
+

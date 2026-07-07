@@ -285,7 +285,7 @@ into the following elegant expression based on second-order derivatives:
 
 {id="eq_wave" title="the wave equation"}
 $$
-\frac{\partial^2 y}{\partial t^2} = c^2 \frac{\partial^2y}{\partial x^2}
+\frac{\partial^2 y}{\partial t^2} = c^2 \frac{\partial^2 y}{\partial x^2}
 $$
 
 Note that this equation directly implies the velocity and state update equations given above, which are really definitional in terms of what a velocity is: a velocity is updated by an acceleration, and it updates the state value. Thus, this one equation captures everything needed to produce wave dynamics.

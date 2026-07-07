@@ -64,7 +64,7 @@ $$
 The primary use of such a thing is to find the magnitude of a complex number (i.e., the length of the vector that it represents), as:
 
 $$
-y y^* = (a + i b)(a - i b)
+|y|^2 = y y^* = (a + i b)(a - i b)
 $$
 
 $$

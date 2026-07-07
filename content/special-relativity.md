@@ -77,7 +77,7 @@ An alternative (and more conventional, but sometimes more confusing) way of usin
 
 In this case, things are exactly flipped, and we would say that $l'$ is the original rod length (say 1 meter), because it is in the F' reference frame that the rod is not moving, whereas in the F reference frame, the rod has shrunk to a shorter apparent length $l$ (say .5 meters, if $v=.866$). Similarly, the second measured in F' ($t'$) corresponds to a longer time interval $t$ in F (e.g., 2 seconds). It is definitely complicated to keep track of all this moving back and forth between reference frames!
 
-In this way of doing things, in frame F, we designate an event as occurring at space-time location $(t,x,y,z)$ (this is a **four-vector** or **space-time coordinate** in _Minkowski_ space, which we introduced at the end of [[Maxwell]]. In frame F', this same event has coordinates $(t',x',y',z')$, where the two coordinate systems are aligned such that the origin (0,0,0,0) is the same in both. As before, we specify that the relative velocity $v$ between the two frames is entirely along the $x$ axis, for simplicity. We can compute these F' coordinates directly from our F coordinates, using Lorentz transformations (again in natural units where $c=1$, and $v$ goes between 0 and 1):
+In this way of doing things, in frame F, we designate an event as occurring at space-time location $(t,x,y,z)$ (this is a [[four-vector]] or **space-time coordinate** in _Minkowski_ space. In frame F', this same event has coordinates $(t',x',y',z')$, where the two coordinate systems are aligned such that the origin (0,0,0,0) is the same in both. As before, we specify that the relative velocity $v$ between the two frames is entirely along the $x$ axis, for simplicity. We can compute these F' coordinates directly from our F coordinates, using Lorentz transformations (again in natural units where $c=1$, and $v$ goes between 0 and 1):
 
 * $t' = \gamma (t - vx) $
 * $x' = \gamma (x - vt) $
@@ -141,7 +141,7 @@ $$
 (t_1 - t_2)^2 = (x_1 - x_2)^2
 $$
 
-This is exactly the same time = space relationship that we discussed earlier for the basic wave equation. Perhaps now the fundamental importance of this for relativity is clearer.
+This is exactly the same time = space relationship for the basic [[wave]] equation. Perhaps now the fundamental importance of this for relativity is clearer.
 
 This distance metric also tells you in what way two events are separated. If the distance metric is positive, then the two points are separated by time, and if it is negative, they are separated by space.
 
@@ -197,7 +197,7 @@ Interestingly, the [[Klein-Gordon]] equation can be derived directly from this e
 
 Finally, we note that the warping of space and time that produces gravitational effects according to general relativity enters into our model in a very different way, as described later. Thus, in our model, special and general relativity result from two very different mechanisms.
 
-## Relativistic Momentum and Velocity
+## Relativistic momentum and velocity
 
 The following derivation shows all the mathematical steps needed to go from the relativistic relationship between momentum and velocity, to an expression for the velocity as a function of the wavelength $\lambda$, rest mass $m_0$, and the other standard constants (c, h). The $\gamma$ is the Lorentz factor used throughout special relativity.
 

@@ -8,11 +8,13 @@ Although Maxwell's equations describe the same kind of wave propagation we explo
 
 Although many people regard the vector fields as the primary physical reality underlying EM, there is solid physical evidence showing that the electromagnetic potentials are physically real, and exert measurable physical effects, for example the **Aharonov-Bohm** effect (described later). Thus, in addition to being mathematically simpler, the potential-based formulation seems to be physically necessary. Nevertheless, there remain several important sources of controversy and confusion over this choice, which will be introduced as we go through.
 
-There are two electromagnetic potentials, the **electrical scalar potential**, which is variously written as $\Phi$ (capital Greek "Phi") or $V$ or $A_0$, and the **magnetic vector potential**, typically written as: $\vec{A} = (A_x, A_y, A_z)$. Most readers should be familiar with the notion of the electrical potential $V$, in terms of the voltage of a battery or an electrical outlet --- therefore, we'll focus on it first. Then we'll cover the more difficult vector potential, which underlies the magnetic field. After exploring each of these and obtaining a solid understanding of their behavior, we relate these potential wave equations back to the original Maxwell equations, and cover various important issues with our potential-based formulation of EM. We then introduce the powerful **four-vector space-time notation**.
+There are two electromagnetic potentials, the **electrical scalar potential**, which is variously written as $\Phi$ (capital Greek "Phi") or $V$ or $A_0$, and the **magnetic vector potential**, typically written as: $\vec{A} = (A_x, A_y, A_z)$. Most readers should be familiar with the notion of the electrical potential $V$, in terms of the voltage of a battery or an electrical outlet --- therefore, we'll focus on it first. Then we'll cover the more difficult vector potential, which underlies the magnetic field. After exploring each of these and obtaining a solid understanding of their behavior, we relate these potential wave equations back to the original Maxwell equations, and cover various important issues with our potential-based formulation of EM.
 
 What should not get lost in all this discussion is the bare amazing fact that all of EM can be captured in the simple second-order wave equation (with appropriate source terms from electrical charge and current): this is the only equation we need to simulate the propagation of the EM fields over space and time. This wave equation naturally produces the **inverse square law** of the electrical force, and it does so through strictly local wave propagation mechanisms, avoiding the apparent action-at-a-distance that the calculational tool of the usual Coulomb version of this force law, where you literally compute the force as a function of the distance between two charges.
 
-Furthermore, the wave equation provides the framework for many aspects of special relativity, such as the constant speed of light in a vacuum, and the four-vector notation enables us to know immediately whether something is **manifestly covariant** --- which means, obviously compatible with the principles of special relativity (i.e., invariant with respect to the Lorentz transformation). Thus, we see that a huge swath of fundamental physics falls right out of the basic wave equation, which in turn reflects the simplest form of cellular-automaton neighborhood interaction that does anything interesting.
+Furthermore, the wave equation provides the framework for many aspects of [[special relativity]], such as the constant speed of light in a vacuum. The [[four-vector]] space-time notation establishes a deep connection between the way that space and time are interconnected in the wave equation, and in special relativity. This notation enables us to know immediately whether something is **manifestly covariant**, which means it is obviously compatible with the principles of special relativity (i.e., invariant with respect to the Lorentz transformation).
+
+Thus, we see that a huge swath of fundamental physics falls right out of the basic wave equation, which in turn reflects the simplest form of cellular-automaton neighborhood interaction that does anything interesting.
 
 ## The Electrical Scalar Potential
 
@@ -238,141 +240,11 @@ $$
 
 We will keep this condition in mind as we consider how the electron wave function generates both the electric and magnetic potential fields. Outside of the region where there are currents, this constraint is not relevant, and the simple second-order wave propagation can take place.
 
-## Four Vector Space-Time Notation
-
-The basic wave equation can also be expressed using a form of mathematical notation that was developed (initially by Minkowski) for dealing with Einstein's special relativity theory. This notation will become important in the latter parts of this paper, where certain equations are much more easily derived using it. We will revisit this notation then, but it might help to get a few repeated exposures to it, so we provide a brief introduction here.
-
-Hopefully most readers are generally aware that weird things happen to both space and time in special relativity. For example, both time and space can contract or expand, depending on how fast you're moving. We mentioned some of these effects earlier, in the context of our discussion of relative reference frames. To represent these effects, it is useful to have a single entity that represents both the space and time coordinates of a given event. This entity is called a *four-vector* because it has four coordinates: one for time and three for space, so for the point $a$ in space-time, we have:
-
-$$
-{a}^\mu = (t,x,y,z) = (a^t,a^x,a^y,a^z) = (a^0,a^1,a^2,a^3)
-$$
-
-(we're assuming natural units where $c=1$ here --- if it wasn't, you'd need to write $ct$ instead of just $t$). This form of writing the four-vector is called the **contravariant** form, and is indicated by the use of *superscripts* to denote the different elements. Thus the little $\mu$ (Greek "mu") superscript means that this is a contravariant vector, and further that $\mu$ goes from $0..3$ in counting out the different items in the vector, as shown.
-
-The reason we care what the superscript version of the four-vector is called is because there is another version called **covariant**, which uses *subscripts*:
-
-$$
-{a}_\mu = (t,-x,-y,-z) = (a_t,-a_x,-a_y,-a_z) = (a_0,-a_1,-a_2,-a_3)
-$$
-
-(the entire scheme may seem somewhat diabolical, but it will pay off later!) The only difference is that the covariant form has minus signs on the spatial terms. This form is called covariant because one of the key features of special relativity is that, in some abstract sense, time = space. Let's write that out in an equation, just using $x$ to represent space (and $t$ for time):
-
-$$
-t = x
-$$
-
-$$
-t - x = 0
-$$
-
-This captures the essential reason for the covariant form: if time and space are equal (i.e., they *co-vary*, or are *covariant*), then they should have opposite signs (you could have just as easily written $x - t = 0$, and in fact some authors do that, just to be even more dastardly).
-
-So what does any of this have to do with the wave equation? We're just two short steps away from that. First, we need the definition of multiplying two four-vectors:
-
-$$
-a \cdot b \equiv {a}^\mu {b}_\mu = {a}_\mu {b}^\mu \equiv a^0 b_0 + a^1 b_1 + a^2 b_2 + a^3 b_3 = a^t b^t - a^x b^x - a^y b^y - a^z b^z = \sum^3_{\mu = 0} {a}_\mu {b}^\mu
-$$
-
-We'll see some interesting properties of this multiplication rule later, but the main thing to notice is that it produces a time = space covariant result.
-
-Next, we need the definition of a derivative of a four-vector. Just like four-vectors themselves, there are two versions, a covariant and a contravariant. The problem is, the superscript/subscript relationship is *flipped* for the derivatives! So, the *covariant derivative* doesn't have any minus signs:
-
-$$
-\partial_\mu \equiv \frac{\partial {}}{\partial ^\mu} \equiv \left(\frac{\partial {}}{\partial {a^0}},\frac{\partial {}}{\partial {a^1}},\frac{\partial {}}{\partial {a^2}},\frac{\partial {}}{\partial {a^3}}\right)
-$$
-
-$$
-\equiv \left(\frac{\partial {}}{\partial {t}}, \vec{\nabla} \right)
-$$
-
-where the $\vec{\nabla}$ symbol represents the spatial _gradient_ operator:
-
-$$
-\vec{\nabla} \equiv \left(\frac{\partial {}}{\partial {x}}, \frac{\partial {}}{\partial {y}}, \frac{\partial {}}{\partial {z}}\right)
-$$
-
-The *contravariant derivative* is the same deal, except it now has the minus signs:
-
-$$
-\partial^\mu \equiv \frac{\partial {}}{\partial _\mu} \left(\frac{\partial {}}{\partial {a^0}},-\frac{\partial {}}{\partial {a^1}},-\frac{\partial {}}{\partial {a^2}},- \frac{\partial {}}{\partial {a^3}}\right)
-$$
-
-$$
-\equiv \left(\frac{\partial {}}{\partial t}, -\vec{\nabla} \right)
-$$
-
-Now, finally, for the payoff. If you take the second-order derivatives of a four-vector, you combine the vector multiplication rules with the derivative equations to get the following:
-
-$$
-\partial_\mu \partial^\mu = \frac{\partial {}}{\partial t} \frac{\partial {}}{\partial t} - \frac{\partial {}}{\partial {x}} \frac{\partial {}}{\partial {x}} - \frac{\partial {}}{\partial {y}} \frac{\partial {}}{\partial {y}} - \frac{\partial {}}{\partial {z}} \frac{\partial {}}{\partial {z}}
-$$
-
-$$
-= \frac{\partial^2 {}}{\partial t^2} - \frac{\partial^2 {}}{\partial {x}^2} - \frac{\partial^2 {}}{\partial {y}^2} - \frac{\partial^2 {}}{\partial {z}^2}
-$$
-
-$$
-= \frac{\partial^2 {}}{\partial t^2} - \nabla^2
-$$
-
-So we can now say that the basic wave equation is obtained by setting the second-order four-vector derivative to zero:
-
-$$
-\partial_\mu \partial^\mu s = 0
-$$
-
-$$
-\left(\frac{\partial^2 {}}{\partial t^2} - \nabla^2 \right) s = 0
-$$
-
-$$
-\frac{\partial^2 {s}}{\partial t^2} - \nabla^2 s = 0
-$$
-
-$$
-\frac{\partial^2 {s}}{\partial t^2} = \nabla^2 s
-$$
-
-Although this is equivalent to our basic wave equation, this way of computing the math, with time and space included in the same overall derivatives, will simplify calculations later. For example, we'll see later that all of Maxwell's equations for the electromagnetic field can be expressed as:
-
-$$
-\partial_\mu \partial^\mu A^\mu = - k^\mu J^\mu
-$$
-
-Notice that here the second-order derivative has a "source" term (instead of being $=0$), which acts like a driving force on the waves --- it represents the charge and currents that drive the electromagnetic field. But we're getting ahead of ourselves now..
-
-Finally, we introduce just two more items of terminology. First, sometimes we'll need to convert a contravariant four-vector into a covariant four-vector, and we can do this using something called the **metric tensor**, which has two equivalent forms (they differ for general relativity, but not for special relativity):
-
-$$
-g_{\mu\nu} = g^{\mu\nu} = (1, -1, -1, -1)
-$$
-
-(this is actually supposed to be a big matrix with these values on the diagonal, and everything else 0, but this is much simpler and suits our present purposes). So, to convert you just multiply (we arbitrarily choose $g^{\mu\nu}$ here):
-
-$$
-a^\mu = g^{\mu\nu} a_\mu
-$$
-
-$$
-a_\mu = g^{\mu\nu} a^\mu
-$$
-
-Finally, as if we needed an even simpler version of the wave equation (and one more symbol to memorize), the d'Alembertian $\sqcap$ (note: $\sqcap$ should actually just be a square box, but we don't have that available for technical reasons):
-
-$$
-\sqcap \equiv \frac{\partial^2 {}}{\partial t^2} - \nabla^2 = \partial_\mu \partial^\mu
-$$
-
-allows you to write the wave equation in the simplest possible way, as:
-
-$$
-\sqcap s = 0
-$$
-
 ### Lorentz Invariance of the Wave Equation
 
-The four-vector notation allows us to write all of EM using a single equation, in terms of the **four potential:**
+The [[four-vector]] notation provides a powerful and compact way of understanding the relationship between [[special relativity]] and wave equations. Now is a good time to read that page, so the following analysis of the EM wave functions will make sense.
+
+Specifically, the four-vector framework allows us to write all of EM using a single equation, in terms of the **four potential:**
 
 $$
 {A}^\mu = (A_0, \vec{A}) = (A_0, A_x, A_y, A_z)
@@ -392,7 +264,7 @@ $$
 
 where ${J}^\mu = (J_0, J_x, J_y, J_z)$, and $J_0 = \rho$, and ${k}^\mu = \left( \frac{1}{\epsilon_0}, \mu_0, \mu_0, \mu_0 \right)$.
 
-This extreme level of simplicity accurately expresses the fundamental point that the electromagnetic force can be described using only the basic wave equation (as we had promised earlier), plus the source driving terms. The charge density $\rho$ and current density $\vec{J}$ provide an external driving force on the electromagnetic field equations (and are thus the sources of the fields). Interestingly, this potential formalism just requires four variables, which is intriguingly convenient for the four-vector space-time framework.
+This extreme level of simplicity accurately expresses the fundamental point that the electromagnetic force can be described using only the basic wave equation, plus the source driving terms. The charge density $\rho$ and current density $\vec{J}$ provide an external driving force on the electromagnetic field equations (and are thus the sources of the fields). Interestingly, this potential formalism just requires four variables, which is intriguingly convenient for the four-vector space-time framework.
 
 One immediate payoff from the above mathematical detour into space-time coordinates and special relativity is that it provides a preliminary indication that the wave equation obeys the fundamental constraints of special relativity. Indeed, our model holds that the wave equation embodies special relativity. Specifically, the wave equation has the covariant form where time = space, and, equivalently, time and space are represented with opposite signs:
 
@@ -404,9 +276,9 @@ $$
 \frac{\partial^2 {s}}{\partial t^2} - \nabla^2 s = 0
 $$
 
-As we'll see later when we revisit [[special relativity]] in more detail, this covariant form means that _the wave equation works the same in any reference frame_. In other words, it is _invariant_ with respect to Lorentz transformations, which are the conversion operations that take you from one reference frame to another. Therefore, if reality happens to be a wave equation operating within one specific reference frame (the reference frame of our grid of cells), this wave equation will automatically appear the same to all observers regardless of their relative velocities with respect to this underlying grid.
+As explored in [[special relativity]], this covariant form means that **the wave equation works the same in any reference frame**. In other words, it is _invariant_ with respect to Lorentz transformations, which are the conversion operations that take you from one reference frame to another. Therefore, if reality happens to be a wave equation operating within one specific reference frame (the reference frame of our grid of cells), this wave equation will automatically appear the same to all observers regardless of their relative velocities with respect to this underlying grid.
 
-In other words, just because our CA model happened to produce the wave equation (based on more "bottom up" considerations of simplicity of underlying mechanisms) we also get special relativity for free in the bargain! Again, we'll explore this in more detail later, but take it as a promising sign for now.
+In other words, just because our CA model happened to produce the wave equation (based on more "bottom up" considerations of simplicity of underlying mechanisms) we also get special relativity for free in the bargain!
 
 ### The Lorenz Condition in Four-Vector Notation
 
