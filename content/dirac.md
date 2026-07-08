@@ -127,35 +127,19 @@ So, with the minus sign flip that took place in the main equation, and the fact 
 
 {id="eq_dirac" title="Dirac functions in real, second-order form"}
 $$
-\ddot{\varphi}_{1a} = \nabla^2 \varphi_{1a} - m_0^2 \varphi_{1a} + 2 e \left(A_0 \dot \varphi_{1b} + \vec{A} \cdot \vec{\nabla} \varphi_{1b} \right) +
-$$
+\begin{array}{lcl}
+\ddot{\varphi}_{1a} & = & \nabla^2 \varphi_{1a} - m_0^2 \varphi_{1a} + 2 e \left(A_0 \dot \varphi_{1b} + \vec{A} \cdot \vec{\nabla} \varphi_{1b} \right) +\\
+& & e^2 \varphi_{1a} \left(A_0^2 - \vec{A}^2 \right) + e \left( \varphi_{1a} B_z - \varphi_{1b} E_z + \varphi_{2a} (B_x + E_y) - \varphi_{2b} (E_x - B_y) \right)\\
 
-$$
-\thinspace \thinspace \thinspace e^2 \varphi_{1a} \left(A_0^2 - \vec{A}^2 \right) + e \left( \varphi_{1a} B_z - \varphi_{1b} E_z + \varphi_{2a} (B_x + E_y) - \varphi_{2b} (E_x - B_y) \right)
-$$
+\ddot \varphi_{1b} & = & \nabla^2 \varphi_{1b} - m_0^2 \varphi_{1b} - 2 e \left(A_0 \dot \varphi_{1a} + \vec{A} \cdot \vec{\nabla} \varphi_{1a} \right) +\\
+& & e^2 \varphi_{1b} \left(A_0^2 - \vec{A}^2 \right) + e \left( \varphi_{1b} B_z + \varphi_{1a} E_z + \varphi_{2b} (B_x + E_y) + \varphi_{2a} (E_x - B_y) \right)\\
 
-$$
-\ddot \varphi_{1b} = \nabla^2 \varphi_{1b} - m_0^2 \varphi_{1b} - 2 e \left(A_0 \dot \varphi_{1a} + \vec{A} \cdot \vec{\nabla} \varphi_{1a} \right) +
-$$
+\ddot \varphi_{2a} & = & \nabla^2 \varphi_{2a} - m_0^2 \varphi_{2a} + 2 e \left(A_0 \dot \varphi_{2b} + \vec{A} \cdot \vec{\nabla} \varphi_{2b} \right) +\\
+& & e^2 \varphi_{2a} \left(A_0^2 - \vec{A}^2 \right) + e \left( -\varphi_{2a} B_z + \varphi_{2b} E_z + \varphi_{1a} (B_x - E_y) - \varphi_{1b} (E_x + B_y) \right)\\
 
-$$
-e^2 \varphi_{1b} \left(A_0^2 - \vec{A}^2 \right) + e \left( \varphi_{1b} B_z + \varphi_{1a} E_z + \varphi_{2b} (B_x + E_y) + \varphi_{2a} (E_x - B_y) \right)
-$$
-
-$$
-\ddot \varphi_{2a} = \nabla^2 \varphi_{2a} - m_0^2 \varphi_{2a} + 2 e \left(A_0 \dot \varphi_{2b} + \vec{A} \cdot \vec{\nabla} \varphi_{2b} \right) +
-$$
-
-$$
-e^2 \varphi_{2a} \left(A_0^2 - \vec{A}^2 \right) + e \left( -\varphi_{2a} B_z + \varphi_{2b} E_z + \varphi_{1a} (B_x - E_y) - \varphi_{1b} (E_x + B_y) \right)
-$$
-
-$$
-\ddot \varphi_{2b} = \nabla^2 \varphi_{2b} - m_0^2 \varphi_{2b} - 2 e \varphi_{2a} \left(A_0 \dot \varphi_{2a} + \vec{A} \cdot \vec{\nabla} \varphi_{2a} \right) +
-$$
-
-$$
-e^2 \varphi_{2b} \left(A_0^2 - \vec{A}^2 \right) + e \left( -\varphi_{2b} B_z - \varphi_{2a} E_z + \varphi_{1b} (B_x - E_y) + \varphi_{1a} (E_x + B_y) \right)
+\ddot \varphi_{2b} & = & \nabla^2 \varphi_{2b} - m_0^2 \varphi_{2b} - 2 e \varphi_{2a} \left(A_0 \dot \varphi_{2a} + \vec{A} \cdot \vec{\nabla} \varphi_{2a} \right) +\\
+& & e^2 \varphi_{2b} \left(A_0^2 - \vec{A}^2 \right) + e \left( -\varphi_{2b} B_z - \varphi_{2a} E_z + \varphi_{1b} (B_x - E_y) + \varphi_{1a} (E_x + B_y) \right)\\
+\end{array}
 $$
 
 Again, it is fundamentally the wave equation, plus three additional terms that characterize the interaction with the electromagnetic field. Note that, as with the mixing across complex components $\varphi_a$ and $\varphi_b$ that occurred in the previous version of the coupled KG equations, the mixing or spin across $\phi_1$ and $\phi_2$ occurs via the electromagnetic field interaction. This time, the vector force fields are now required for the coupling, requiring that we compute them from the potentials, as described earlier (involving the $\vec{\nabla}$ first-order gradient and, for the first time, the $\vec{\nabla} \times$ function, which is very similar in its discrete form to the $\vec{\nabla}$ function).

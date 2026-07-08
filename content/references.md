@@ -1,3 +1,5 @@
+<p id="AharonovDavidovichZagury93">Aharonov, Y., Davidovich, L., & Zagury, N. (1993). Quantum random walks. <i>Physical Review A, 48</i>, 1687–1690. <a href="https://link.aps.org/doi/10.1103/PhysRevA.48.1687">https://link.aps.org/doi/10.1103/PhysRevA.48.1687</a><a href="http://doi.org/10.1103/PhysRevA.48.1687"> http://doi.org/10.1103/PhysRevA.48.1687</a></p>
+
 <p id="AharonovRohrlich08">Aharonov, Y., & Rohrlich, D. (2008). <i>Quantum Paradoxes: Quantum Theory for the Perplexed. </i> John Wiley & Sons. </p>
 
 <p id="AspectDalibardRoger82">Aspect, A., Dalibard, J., & Roger, G. (1982). Experimental Test of Bell's Inequalities Using Time-Varying Analyzers. <i>Physical Review Letters, 49</i>, 1804–1807. <a href="https://link.aps.org/doi/10.1103/PhysRevLett.49.1804">https://link.aps.org/doi/10.1103/PhysRevLett.49.1804</a><a href="http://doi.org/10.1103/PhysRevLett.49.1804"> http://doi.org/10.1103/PhysRevLett.49.1804</a></p>
@@ -26,6 +28,10 @@
 
 <p id="CavesFuchsSchack02">Caves, C.M., Fuchs, C.A., & Schack, R. (2002). Quantum probabilities as Bayesian probabilities. <i>Physical Review A, 65</i>, 022305. <a href="https://link.aps.org/doi/10.1103/PhysRevA.65.022305">https://link.aps.org/doi/10.1103/PhysRevA.65.022305</a><a href="http://doi.org/10.1103/PhysRevA.65.022305"> http://doi.org/10.1103/PhysRevA.65.022305</a></p>
 
+<p id="ChildsCleveDeottoEtAl03">Childs, A.M., Cleve, R., Deotto, E., Farhi, E., Gutmann, S., & Spielman, D.A. (2003). <i>Exponential algorithmic speedup by a quantum walk. </i>In Proceedings of the thirty-fifth annual ACM symposium on Theory of computing (pp. 59–68). Association for Computing Machinery. <a href="https://dl.acm.org/doi/10.1145/780542.780552">https://dl.acm.org/doi/10.1145/780542.780552</a><a href="http://doi.org/10.1145/780542.780552"> http://doi.org/10.1145/780542.780552</a></p>
+
+<p id="ChiribellaDArianoPerinotti11">Chiribella, G., D’Ariano, G.M., & Perinotti, P. (2011). Informational derivation of quantum theory. <i>Physical Review A, 84</i>, 012311. <a href="https://link.aps.org/doi/10.1103/PhysRevA.84.012311">https://link.aps.org/doi/10.1103/PhysRevA.84.012311</a><a href="http://doi.org/10.1103/PhysRevA.84.012311"> http://doi.org/10.1103/PhysRevA.84.012311</a></p>
+
 <p id="Crisp96">Crisp, M.D. (1996). Relativistic neoclassical radiation theory. <i>Physical Review A, 54</i>, 87–92. <a href="https://link.aps.org/doi/10.1103/PhysRevA.54.87">https://link.aps.org/doi/10.1103/PhysRevA.54.87</a><a href="http://doi.org/10.1103/PhysRevA.54.87"> http://doi.org/10.1103/PhysRevA.54.87</a></p>
 
 <p id="CrispJaynes69">Crisp, M.D., & Jaynes, E.T. (1969). Radiative Effects in Semiclassical Theory. <i>Physical Review, 179</i>, 1253–1261. <a href="https://link.aps.org/doi/10.1103/PhysRev.179.1253">https://link.aps.org/doi/10.1103/PhysRev.179.1253</a><a href="http://doi.org/10.1103/PhysRev.179.1253"> http://doi.org/10.1103/PhysRev.179.1253</a></p>
@@ -34,13 +40,25 @@
 
 <p id="CufaroPetroniVigier79">Cufaro Petroni, N., & Vigier, J.P. (1979). Markov process at the velocity of light: The Klein-Gordon statistic. <i>International Journal of Theoretical Physics, 18</i>, 807–818. <a href="https://ui.adsabs.harvard.edu/abs/1979IJTP...18..807C">https://ui.adsabs.harvard.edu/abs/1979IJTP...18..807C</a><a href="http://doi.org/10.1007/BF00670459"> http://doi.org/10.1007/BF00670459</a></p>
 
+<p id="DAriano17">D’Ariano, G.M. (2017). Physics Without Physics. <i>International Journal of Theoretical Physics, 56</i>, 97–128. <a href="https://doi.org/10.1007/s10773-016-3172-y">https://doi.org/10.1007/s10773-016-3172-y</a><a href="http://doi.org/10.1007/s10773-016-3172-y"> http://doi.org/10.1007/s10773-016-3172-y</a></p>
+
 <p id="DemiralpRabitz97">Demiralp, M., & Rabitz, H. (1997). Dispersion-free wave packets and feedback solitonic motion in controlled quantum dynamics. <i>Physical Review A, 55</i>, 673–677. <a href="https://link.aps.org/doi/10.1103/PhysRevA.55.673">https://link.aps.org/doi/10.1103/PhysRevA.55.673</a><a href="http://doi.org/10.1103/PhysRevA.55.673"> http://doi.org/10.1103/PhysRevA.55.673</a></p>
+
+<p id="Dudley65">Dudley, R.M. (1965). Lorentz-invariant Markov processes in relativistic phase space. <i>Arkiv för Matematik, 6</i>, 241–268. <a href="https://doi.org/10.1007/BF02592032">https://doi.org/10.1007/BF02592032</a><a href="http://doi.org/10.1007/BF02592032"> http://doi.org/10.1007/BF02592032</a></p>
+
+<p id="Dudley73">Dudley, R.M. (1973). Asymptotics of Some Relativistic Markov Processes. <i>Proceedings of the National Academy of Sciences, 70</i>, 3551–3555. <a href="https://www.pnas.org/doi/abs/10.1073/pnas.70.12.3551">https://www.pnas.org/doi/abs/10.1073/pnas.70.12.3551</a><a href="http://doi.org/10.1073/pnas.70.12.3551"> http://doi.org/10.1073/pnas.70.12.3551</a></p>
+
+<p id="DunkelHanggi05">Dunkel, J., & Hänggi, P. (2005). Theory of relativistic Brownian motion: The (1+3)-dimensional case. <i>Physical Review E, 72</i>, 036106. <a href="https://link.aps.org/doi/10.1103/PhysRevE.72.036106">https://link.aps.org/doi/10.1103/PhysRevE.72.036106</a><a href="http://doi.org/10.1103/PhysRevE.72.036106"> http://doi.org/10.1103/PhysRevE.72.036106</a></p>
+
+<p id="DunkelHanggi05a">Dunkel, J., & Hänggi, P. (2005). Theory of relativistic Brownian motion: The (1+1)-dimensional case. <i>Physical Review E, 71</i>, 016124. <a href="https://link.aps.org/doi/10.1103/PhysRevE.71.016124">https://link.aps.org/doi/10.1103/PhysRevE.71.016124</a><a href="http://doi.org/10.1103/PhysRevE.71.016124"> http://doi.org/10.1103/PhysRevE.71.016124</a></p>
 
 <p id="DurrGoldsteinNorsenEtAl14">Dürr, D., Goldstein, S., Norsen, T., Struyve, W., & Zanghì, N. (2014). Can Bohmian mechanics be made relativistic? <i>Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences, 470</i>, 20130699. <a href="https://royalsocietypublishing.org/doi/full/10.1098/rspa.2013.0699">https://royalsocietypublishing.org/doi/full/10.1098/rspa.2013.0699</a><a href="http://doi.org/10.1098/rspa.2013.0699"> http://doi.org/10.1098/rspa.2013.0699</a></p>
 
 <p id="Einstein05a">Einstein, A. (1905). Über einem die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt. <i>Annalen der physik, 4</i>, <a href="https://sedici.unlp.edu.ar/handle/10915/2784">https://sedici.unlp.edu.ar/handle/10915/2784</a></p>
 
 <p id="Everett57">Everett, H. (1957). "Relative State" Formulation of Quantum Mechanics. <i>Reviews of Modern Physics, 29</i>, 454–462. <a href="https://link.aps.org/doi/10.1103/RevModPhys.29.454">https://link.aps.org/doi/10.1103/RevModPhys.29.454</a><a href="http://doi.org/10.1103/RevModPhys.29.454"> http://doi.org/10.1103/RevModPhys.29.454</a></p>
+
+<p id="Feynman82">Feynman, R.P. (1982). Simulating physics with computers. <i>International Journal of Theoretical Physics, 21</i>, 467–488. <a href="https://doi.org/10.1007/BF02650179">https://doi.org/10.1007/BF02650179</a><a href="http://doi.org/10.1007/BF02650179"> http://doi.org/10.1007/BF02650179</a></p>
 
 <p id="FeynmanGell-Mann58">Feynman, R.P., & Gell-Mann, M. (1958). Theory of the Fermi Interaction. <i>Physical Review, 109</i>, 193–198. <a href="https://link.aps.org/doi/10.1103/PhysRev.109.193">https://link.aps.org/doi/10.1103/PhysRev.109.193</a><a href="http://doi.org/10.1103/PhysRev.109.193"> http://doi.org/10.1103/PhysRev.109.193</a></p>
 
@@ -76,6 +94,8 @@
 
 <p id="Gudder70">Gudder, S.P. (1970). On Hidden‐Variable Theories. <i>Journal of Mathematical Physics, 11</i>, 431–436. <a href="https://doi.org/10.1063/1.1665156">https://doi.org/10.1063/1.1665156</a><a href="http://doi.org/10.1063/1.1665156"> http://doi.org/10.1063/1.1665156</a></p>
 
+<p id="GuerraRuggiero78">Guerra, F., & Ruggiero, P. (1978). A note on relativistic Markov processes. <i>Lettere al Nuovo Cimento (1971-1985), 23</i>, 529–534. <a href="https://doi.org/10.1007/BF02770538">https://doi.org/10.1007/BF02770538</a><a href="http://doi.org/10.1007/BF02770538"> http://doi.org/10.1007/BF02770538</a></p>
+
 <p id="Hestenes08">Hestenes, D. (2008). Electron time, mass and zitter. </p>
 
 <p id="Hestenes90">Hestenes, D. (1990). The zitterbewegung interpretation of quantum mechanics. <i>Foundations of Physics, 20</i>, 1213–1232. <a href="https://doi.org/10.1007/BF01889466">https://doi.org/10.1007/BF01889466</a><a href="http://doi.org/10.1007/BF01889466"> http://doi.org/10.1007/BF01889466</a></p>
@@ -83,6 +103,8 @@
 <p id="Holland05c">Holland, P. (2005). Quantum back-reaction and the particle law of motion. <i>Journal of Physics A: Mathematical and General, 39</i>, 559. <a href="https://doi.org/10.1088/0305-4470/39/3/008">https://doi.org/10.1088/0305-4470/39/3/008</a><a href="http://doi.org/10.1088/0305-4470/39/3/008"> http://doi.org/10.1088/0305-4470/39/3/008</a></p>
 
 <p id="HongOuMandel87">Hong, C.K., Ou, Z.Y., & Mandel, L. (1987). Measurement of subpicosecond time intervals between two photons by interference. <i>Physical Review Letters, 59</i>, 2044–2046. <a href="https://link.aps.org/doi/10.1103/PhysRevLett.59.2044">https://link.aps.org/doi/10.1103/PhysRevLett.59.2044</a><a href="http://doi.org/10.1103/PhysRevLett.59.2044"> http://doi.org/10.1103/PhysRevLett.59.2044</a></p>
+
+<p id="Hooft15">Hooft, G. (2015). The Cellular Automaton Interpretation of Quantum Mechanics. <i>arXiv:1405.1548 [quant-ph], <a href="http://arxiv.org/abs/1405.1548">http://arxiv.org/abs/1405.1548</a></i></p>
 
 <p id="Hostler82">Hostler, L.C. (1982). An SL(2,C )‐invariant representation of the Dirac equation. <i>Journal of Mathematical Physics, 23</i>, 1179–1184. <a href="https://doi.org/10.1063/1.525449">https://doi.org/10.1063/1.525449</a><a href="http://doi.org/10.1063/1.525449"> http://doi.org/10.1063/1.525449</a></p>
 
@@ -99,6 +121,8 @@
 <p id="Jaynes90">Jaynes, E.T. (1990). <i>Probability in quantum theory. </i>Complexity, entropy, and the physics of information, 381. document. Google Scholar. Addison-Wesley, Redwood City, CA. <a href="https://worrydream.com/refs/Jaynes_1990_-_Probability_in_Quantum_Theory.pdf">https://worrydream.com/refs/Jaynes_1990_-_Probability_in_Quantum_Theory.pdf</a></p>
 
 <p id="JaynesCummings63">Jaynes, E., & Cummings, F. (1963). Comparison of quantum and semiclassical radiation theories with application to the beam maser. <i>Proceedings of the IEEE, 51</i>, 89–109. <a href="https://ieeexplore.ieee.org/abstract/document/1443594">https://ieeexplore.ieee.org/abstract/document/1443594</a><a href="http://doi.org/10.1109/PROC.1963.1664"> http://doi.org/10.1109/PROC.1963.1664</a></p>
+
+<p id="Kempe09">Kempe, J. (2009). Quantum random walks: an introductory overview: Contemporary Physics: Vol 50 , No 1 - Get Access. <i>Contemporary Physics, 50</i>, 339–359. <a href="https://www.tandfonline.com/doi/abs/10.1080/00107510902734722">https://www.tandfonline.com/doi/abs/10.1080/00107510902734722</a><a href="http://doi.org/10.1080/00107510902734722"> http://doi.org/10.1080/00107510902734722</a></p>
 
 <p id="Khrennikov01">Khrennikov, A. (2001). Linear representations of probabilistic transformations induced by context transitions. <i>Journal of Physics A: Mathematical and General, 34</i>, 9965. <a href="https://doi.org/10.1088/0305-4470/34/47/304">https://doi.org/10.1088/0305-4470/34/47/304</a><a href="http://doi.org/10.1088/0305-4470/34/47/304"> http://doi.org/10.1088/0305-4470/34/47/304</a></p>
 
@@ -133,6 +157,8 @@
 <p id="Mermin18">Mermin, N.D. (2018). Making better sense of quantum mechanics. <i>Reports on Progress in Physics, 82</i>, 012002. <a href="https://dx.doi.org/10.1088/1361-6633/aae2c6">https://dx.doi.org/10.1088/1361-6633/aae2c6</a><a href="http://doi.org/10.1088/1361-6633/aae2c6"> http://doi.org/10.1088/1361-6633/aae2c6</a></p>
 
 <p id="Meyer96">Meyer, D.A. (1996). From quantum cellular automata to quantum lattice gases. <i>Journal of Statistical Physics, 85</i>, 551–574. <a href="https://doi.org/10.1007/BF02199356">https://doi.org/10.1007/BF02199356</a><a href="http://doi.org/10.1007/BF02199356"> http://doi.org/10.1007/BF02199356</a></p>
+
+<p id="Nakagomi88">Nakagomi, T. (1988). Relativistic Random Walks Intrinsic to the Walker. <i>Progress of Theoretical Physics, 80</i>, 245–257. <a href="https://doi.org/10.1143/PTP.80.245">https://doi.org/10.1143/PTP.80.245</a><a href="http://doi.org/10.1143/PTP.80.245"> http://doi.org/10.1143/PTP.80.245</a></p>
 
 <p id="Nelson66">Nelson, E. (1966). Derivation of the Schr\"odinger Equation from Newtonian Mechanics. <i>Physical Review, 150</i>, 1079–1085. <a href="https://link.aps.org/doi/10.1103/PhysRev.150.1079">https://link.aps.org/doi/10.1103/PhysRev.150.1079</a><a href="http://doi.org/10.1103/PhysRev.150.1079"> http://doi.org/10.1103/PhysRev.150.1079</a></p>
 
@@ -199,6 +225,8 @@
 <p id="tHooft16">Hooft, G. (2016). <i>The Cellular Automaton Interpretation of Quantum Mechanics. </i> Springer. </p>
 
 <p id="TittelBrendelGisinEtAl98">Tittel, W., Brendel, J., Gisin, B., Herzog, T., Zbinden, H., & Gisin, N. (1998). Experimental demonstration of quantum correlations over more than 10 km. <i>Physical Review A, 57</i>, 3229–3232. <a href="https://link.aps.org/doi/10.1103/PhysRevA.57.3229">https://link.aps.org/doi/10.1103/PhysRevA.57.3229</a><a href="http://doi.org/10.1103/PhysRevA.57.3229"> http://doi.org/10.1103/PhysRevA.57.3229</a></p>
+
+<p id="VonNeumannBurks66">Von Neumann, J., & Burks, A.W. (1966). Theory of self-reproducing automata. <a href="http://www.cba.mit.edu/events/03.11.ASE/docs/VonNeumann.pdf">http://www.cba.mit.edu/events/03.11.ASE/docs/VonNeumann.pdf</a></p>
 
 <p id="Wallace20">Wallace, D. (2020). <i>Against Wavefunction Realism. </i>In Current Controversies in Philosophy of Science. Routledge. </p>
 

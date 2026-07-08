@@ -41,7 +41,7 @@ $$
 \rho \equiv \frac{i \hbar e}{2m_0c^2} \left( \phi^* \frac{\partial \phi}{\partial t} - \phi \frac{\partial \phi^*}{\partial t} \right)
 $$
 
-where the $e$ value is a constant (.0787??) that converts natural units into proper units of charge.
+where the $e$ value is a constant (1.6e-19 in SI units) that converts natural units into proper units of charge.
 
 This can be expressed in terms of the underlying scalar state variables that make up the complex state ($\phi = \varphi_a + i \varphi_b$), and their first temporal derivatives ($\dot \varphi_a$ and $\dot \varphi_b$), and using natural units where $c=\hbar=1$, as:
 
@@ -53,7 +53,133 @@ This is directly computable for each cubic cell $i$ in the system.
 
 It becomes very clear when explicitly written out in this manner that charge represents a coupling of the two otherwise independent variables in the complex number, and this suggests why a single scalar number cannot represent a conserved charge value. The fact that these variables are coupled here, but not in the actual wave equations that drive their updating, seems magical.
 
-Perhaps the most important feature of this equation is that it can be either positive or negative. For example, if ${\varphi_a}_i \dot {\varphi_b}_i$ happens to be larger than ${\varphi_b}_i \dot {\varphi_a}_i$ (and there is nothing preventing this from being the case), then it will be negative. This is not true of the corresponding expression for Schrödinger's equation, which is "definitely positive", or, in mathematical terminology, "positive definite". This is one of the major reasons why standard quantum physics has strongly embraced Schrödinger's equation, and not KG: KG does not fit with the standard probabilistic framework, where the wave describes a probability, and a probability is always positive.
+{id="sim_cc" title="Complex charge" collapsed="true"}
+```Goal
+ai := 1.0
+bphase := 90.0
+c := 1.0
+mass := 0.1
+hbar := 0.5
+e := 1.0
+csq := c * c
+mcOverHSq := (mass * mass * csq) / (hbar * hbar)
+heOver2mCSq := (hbar * e) / (2.0 * mass * csq)
+
+var bphaseStr, massStr, hbarStr, msgStr string
+
+##
+totalTime := 100
+sa := zeros(totalTime)
+sb := zeros(totalTime)
+da := zeros(totalTime)
+db := zeros(totalTime)
+chg := zeros(totalTime)
+##
+
+func valUpdate() {
+    mcOverHSq = (mass * mass * csq) / (hbar * hbar)
+    heOver2mCSq = (hbar * e) / (2.0 * mass * csq)
+    bphaseStr = fmt.Sprintf("b phase: %4.0f", bphase)
+    massStr = fmt.Sprintf("mass: %4.1f", mass)
+    hbarStr = fmt.Sprintf("hbar: %4.1f", hbar)
+    bi := ai * float64(math32.Cos(math32.DegToRad(float32(bphase))))
+    bvi := math.Sqrt(mcOverHSq) * ai * float64(math32.Cos(math32.DegToRad(float32(bphase+90))))
+    ##
+    mf := array(mcOverHSq)
+    cf := array(heOver2mCSq)
+    ap := array(ai)
+    bp := array(bi)
+    av := array(0.0)
+    bv := array(bvi)
+    mxv := array(0.0)
+    ##
+    for t := range 100 {
+        ##
+        sa[t] = ap
+        sb[t] = bp
+        da[t] = av
+        db[t] = bv
+        chg[t] = cf * (bp * av - ap * bv)
+        
+        av -= mf * ap
+        ap += av
+        
+        bv -= mf * bp
+        bp += bv
+        
+        mxv = max(mxv, av)
+        ##
+    }
+    msgStr = fmt.Sprintf("<b>Charge: %7.3g </b>", chg.Float(99))
+}
+
+valUpdate()
+
+plotStyler := func(s *plot.Style) {
+    s.Plot.XAxis.Label = "Time"
+    s.Plot.XAxis.Range.SetMax(100).SetMin(0)
+}
+plot.SetStyler(sa, plotStyler) 
+
+fig1, pw := lab.NewPlotWidget(b)
+al := plots.NewLine(fig1, sa)
+dal := plots.NewLine(fig1, da)
+bl := plots.NewLine(fig1, sb)
+dbl := plots.NewLine(fig1, db)
+chgl := plots.NewLine(fig1, chg)
+fig1.Legend.Add("a", al)
+fig1.Legend.Add("av", dal)
+fig1.Legend.Add("b", bl)
+fig1.Legend.Add("bv", dbl)
+fig1.Legend.Add("chg", chgl)
+
+msgTx := core.NewText(b)
+msgTx.Styler(func(s *styles.Style) {
+    s.Min.X.Ch(80) // clean rendering with variable width content
+})
+core.Bind(&msgStr, msgTx)
+
+func updt() {
+    valUpdate()
+    al.SetData(sa)
+    dal.SetData(da)
+    bl.SetData(sb)
+    dbl.SetData(db)
+    chgl.SetData(chg)
+    msgTx.UpdateRender()
+    pw.NeedsRender()
+}
+
+func addSlider(label *string, val *float64, mnVal, mxVal float32) {
+    tx := core.NewText(b)
+    tx.Styler(func(s *styles.Style) {
+        s.Min.X.Ch(40)  // clean rendering with variable width content
+    })
+    core.Bind(label, tx)
+	sld := core.NewSlider(b).SetMin(mnVal).SetMax(mxVal).SetEnforceStep(true)
+    if mxVal > 10 {
+        sld.SetStep(10)
+    } else {
+        sld.SetStep(0.1)
+    }
+	sld.SendChangeOnInput()
+	sld.OnChange(func(e events.Event) {
+		updt()
+		tx.UpdateRender()
+	})
+	core.Bind(val, sld)
+}
+
+addSlider(&bphaseStr, &bphase, -180, 180)
+addSlider(&massStr, &mass, 0.1, 1.0)
+addSlider(&hbarStr, &hbar, 0.1, 1.0)
+```
+
+[[#sim_cc]] demonstrates how this works, in terms of two simple harmonic oscillator variables _a_ and _b_, which are set to be a specific phase apart from each other. Regardless of the phase relationship, the computed charge value remains constant across the cycles of oscillation. However, critically, the value of the charge is directly a function of this phase relationship, with a maximum of 0.5 when the _b_ value is +90 degrees in relation to the _a_ value, and a minimum of -0.5 for -90 degrees, and zero for 0 or 180 degrees. These relationships are fairly obvious once you appreciate the relationship between velocity and position for each of the variables, and how they enter into the charge equation.
+
+Because the separate real-valued wave functions are independently updated, it thus becomes important that these two wave states are initialized with a specific phase relationship, which will then determine the charge value represented.
+
+Perhaps the most important feature of this charge equation is that it can be either positive or negative, as a function of the phase relationship. This is not true of the corresponding expression for Schrödinger's equation, which is "definitely positive", or, in mathematical terminology, "positive definite". This is one of the major reasons why standard quantum physics has strongly embraced Schrödinger's equation, and not KG: KG does not fit with the standard probabilistic framework, where the wave describes a probability, and a probability is always positive.
 
 Interestingly, the Dirac equation, which standard physics has adopted as a model of the electron (and we'll cover later), also produces negative "probabilities", but these have been (correctly, in our framework) reinterpreted as representing antiparticles (i.e., particles with an opposite charge). The antiparticle of the electron is the **positron**, and it is just like an electron, except it has the opposite charge. Historically, this antiparticle nature of the Dirac equation was regarded as a major problem, until positrons were subsequently discovered, and then Dirac looked like a genius for having made such a bold prediction. Nevertheless, there seems to be some residual discomfort in all this, and many treatments of quantum electrodynamics marginalize the Dirac equation in favor of a largely particle-based treatment. We return to these issues later.
 

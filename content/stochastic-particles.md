@@ -92,6 +92,65 @@ It is essential that these probability computations are all propagated in terms 
 
 * zitterbewegung and helical spin in electron: [[@Hestenes08]]; [[@Hestenes90]]]; [[@Sidharth09]]; [[@RomanRosoPlaja03]]; [[@BarutBracken81]]; [[@WangZhang01]]
 
+## Stochastic particle equations
+
+The basic behavior of a stochastic particle independent of any waves is described by [[@^Sciarretta18]] (in the 1D case; [[@Sciarretta21]] extends to the 3D case with spin). In this non-relativistic model, the particle has an associated real-valued 3-component normalized (range -1..1) momentum vector $\vec{\nu}$ that drives a _stable_ trajectory over time, despite the stochastic nature of each movement step. Any forces accumulate in this momentum vector, and it propagates with the particle. The motion of the particle is defined per dimension $\mu$ (per the [[four-vector]] notation), in reference to an energy-like factor:
+
+$$
+e_{\mu} = \frac{1 + \nu_{\mu}^2}{2} 
+$$
+
+The probability of moving in a positive or negative direction, or staying put, along a given dimension is given by:
+
+$$
+P(+1) = \frac{e_{\mu} + \nu_{\mu}}{2}
+$$
+
+$$
+P(-1) = \frac{e_{\mu} - \nu_{\mu}}{2}
+$$
+
+$$
+P(0) = 1 - e_{\mu}
+$$
+
+The energy-like factor $e$ is .5 when the momentum $\nu=0$, and thus there is a .25 probability of going in either direction, and a .5 probability of staying in the same location. As momentum increases in say the positive direction, the probability of moving in the positive direction increases in a proportional manner, while the opposite direction decreases. The squaring of the energy factor ensures a division among the staying and move directions works out.
+
+It would be useful to derive a relativistic version of these individual motion equations, where the effective mass, and thus momentum, increases with velocity. This is what the wave function naturally does.
+
+Key points: 
+
+* key point about simple harmonic oscillator (SHO): the height position _itself_ provides the acceleration force pulling back -- this is even simpler than a wave! So there is a 4 vector of SHO that represent the momentum of the particle, and are coupled to the wave variables! The time-like one is the "heartbeat" of the particle, representing the rest mass, while the 3 spatial ones represent the direction.
+
+* How does it represent both positive and negative directions? In phase relationship with the center? maybe they all just oscillate the same and it is ONLY the phase relationship? An acceleration kick just bumps the phase? doesn't capture the conservation dynamics among the SHOs.
+
+Weyl wave couples spin with direction as a helical thing.
+
+There is a literature on coupling of a stochastic particle with a "heat bath", somewhat like the [[zero-point]] field, and trying to understand the aggregate behavior of such a system. [[@^DunkelHanggi05a]], [[@DunkelHanggi05]] provide a relatively accessible treatment, building on foundational work ([[@Dudley65]], [[@Dudley73]], [[@GuerraRuggiero78]], [[@Nakagomi88]]). This all builds on Langevin equations, which are stochastic equations of motion, with connections to Ornstein-Ullenbach and Fokker-Planck etc. The specific restriction to heat bath dynamics vs. some kind of other intrinsic stochastic process is perhaps overly restrictive, but they nevertheless have a four-vector representation that seems to involve a conservation of energy between the time and momentum factors, which is really the essential calculus for the SHO model.
+
+One key "no-go" finding from [[@^Dudley65]] is that a purely markovian position-based system doesn't capture particle motion -- you _need_ an additional momentum / velocity vector as part of the state. This is definitely key.
+
+* compton wavelength as function of rest mass -- does this fall out?
+* $\nu$ is already 0-c normalized -- v/c
+* wave function trades energy against momentum -- momentum is $\gamma m0 \nu$, $E^2 = p^2 + m0^2$ so the 1 in above eq is like m0^2 -- not clear where the 1/2 comes from but whatever.
+* key idea that m0 is the internal motion of the particle rotating through spin, so need to just have that always going on as an "anchor", and then there are these extra $\nu_{\mu}$ factors where the x^2 + y^2 + z^2 hypotenuse of the momentum-velocity is v^2 relative to c^2 -- i.e., need to constrain total length to c^2.
+
+* probabilistically when it stays still it rotates the internal spin. if it never stays still it never rotates the spin. the nutrino very rarely rotates the spin, but does sometimes. spin coupling couples the two helicies of the Weyl. need to go back to that. are there 2 neutrinos trapped inside one electron??
+
+* todo:
+
+15. Ord GN, Schrödinger's Equation and Classical Brownian Motion, Fortschr. Phys. 46, 6–8, 889–
+896 (1998).
+16. Janaswamy R, Transitional probabilities for the 4-state random walk on a lattice, J. Phys. A: Math.
+Theor. 41, 1–11 (2008).
+17. Badiali JP, Entropy, time-irreversibility and the Schrödinger equation in a primarily discrete
+spacetime, J. Phys. A: Math. Gen. 38(13), 2835–2848 (2005).
+32. Snyder HS, Quantized space-time, Phys. Rev. 71(1), 38-41 (1947).
+33. Finkelstein D, Saller H, and Tang Z, Quantum spacetime, in: P. Pronin, et al. (Eds.), Gravity,
+Particles and Space Time, World Scientific, Singapore (1996).
+34. Sidharth BG, The Thermodynamic Universe: Exploring the Limits of Physics, World Scientific,
+Singapore (2008).
+
 ## Stochastic KG
 
 This is a first-pass attempt at an integrated wave-particle system based on the complex KG system.

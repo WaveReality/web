@@ -57,7 +57,7 @@ $$
 \left(\frac{\partial^2 {}}{\partial t^2} - c^2 \nabla^2 + \frac{c^2 m_0^2}{\hbar^2}\right) \varphi = 0
 $$
 
-These last two forms are useful for relating to the four-vector version of the wave equation, where we saw that:
+These last two forms are useful for relating to the [[four-vector]] version of the wave equation, where we saw that:
 
 $$
 \partial_\mu \partial^\mu = \frac{\partial^2}{\partial t^2} - c^2 \nabla^2
