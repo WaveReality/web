@@ -8,9 +8,12 @@ bibfile = "mechphys.json"
 wavesim.Embed(b,
 	func(sim *wavesim.Sim) { // config
         sim.Config.GPU = true
-		sim.Config.Equation = wavesim.Wave1D
+		sim.Params.C = 1
+		sim.Params.ThreeD.SetBool(false)
+		sim.Config.Equation = wavesim.Wave
 		sim.Config.Size.Set(80, 1, 1)
 		sim.ViewInit(wavesim.Wave1DViewAll)
+		sim.WaveStats()
 	},
 	func(sim *wavesim.Sim) { // init
 		sim.PosWavePacket(wavesim.WavePos, math32.X, math32.Vec3i(40, 0, 0), -1, 8, 8, 0, 1.5)

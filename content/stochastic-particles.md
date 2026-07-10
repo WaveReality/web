@@ -96,6 +96,8 @@ It is essential that these probability computations are all propagated in terms 
 
 The basic behavior of a stochastic particle independent of any waves is described by [[@^Sciarretta18]] (in the 1D case; [[@Sciarretta21]] extends to the 3D case with spin). In this non-relativistic model, the particle has an associated real-valued 3-component normalized (range -1..1) momentum vector $\vec{\nu}$ that drives a _stable_ trajectory over time, despite the stochastic nature of each movement step. Any forces accumulate in this momentum vector, and it propagates with the particle. The motion of the particle is defined per dimension $\mu$ (per the [[four-vector]] notation), in reference to an energy-like factor:
 
+todo: figure out if e should in fact be across all dims -- seems like it should. just run an empirical sim.
+
 $$
 e_{\mu} = \frac{1 + \nu_{\mu}^2}{2} 
 $$
@@ -120,15 +122,25 @@ It would be useful to derive a relativistic version of these individual motion e
 
 Key points: 
 
-* key point about simple harmonic oscillator (SHO): the height position _itself_ provides the acceleration force pulling back -- this is even simpler than a wave! So there is a 4 vector of SHO that represent the momentum of the particle, and are coupled to the wave variables! The time-like one is the "heartbeat" of the particle, representing the rest mass, while the 3 spatial ones represent the direction.
+* key point about simple [[harmonic oscillator]] (SHO): the height position _itself_ provides the acceleration force pulling back -- this is even simpler than a wave! So there is a 4 vector of SHO that represent the momentum of the particle, and are coupled to the wave variables! The time-like one is the "heartbeat" of the particle, representing the rest mass, while the 3 spatial ones represent the velocity direction.
 
-* How does it represent both positive and negative directions? In phase relationship with the center? maybe they all just oscillate the same and it is ONLY the phase relationship? An acceleration kick just bumps the phase? doesn't capture the conservation dynamics among the SHOs.
+* each velocity axis (X,Y,Z) has a phase relative to the central time-like beat, and this phase represents the -1..+1 velocity value. This phase relationship is now demonstrated in [[complex KG]]. The extreme nutrino-level particle would have the extreme case. There would have to be some kind of coordination across the 3 pairs, so the total norm could not exceed 1.
+
+* the resting state is all four oscillating in sync with 0 phase, and then forces act by boosting or lagging an axis wave relative to the central one. this could be pretty natural. the amount of boost needs to be dependent on existing phase to capture relativistic effects.
+
+* the wave oscillation frequency is determined by the relativistic E^2 energy which goes up as momentum increases. This captures the key momentum / frequency relationship with QM. Never quite gets to CSq with massive particles.
+
+* probability of jumping is then proportional to these values. can just implement that. it might emerge more naturally from some kind of phase offset dynamic, but that can be a later stage.
+
+* coupling to surrounding wave is directly via drive from the central time-like oscillator, which provides the driving input to the field in its neighborhood.
+
+* An acceleration kick just bumps the phase? doesn't capture the conservation dynamics among the SHOs.
 
 Weyl wave couples spin with direction as a helical thing.
 
 There is a literature on coupling of a stochastic particle with a "heat bath", somewhat like the [[zero-point]] field, and trying to understand the aggregate behavior of such a system. [[@^DunkelHanggi05a]], [[@DunkelHanggi05]] provide a relatively accessible treatment, building on foundational work ([[@Dudley65]], [[@Dudley73]], [[@GuerraRuggiero78]], [[@Nakagomi88]]). This all builds on Langevin equations, which are stochastic equations of motion, with connections to Ornstein-Ullenbach and Fokker-Planck etc. The specific restriction to heat bath dynamics vs. some kind of other intrinsic stochastic process is perhaps overly restrictive, but they nevertheless have a four-vector representation that seems to involve a conservation of energy between the time and momentum factors, which is really the essential calculus for the SHO model.
 
-One key "no-go" finding from [[@^Dudley65]] is that a purely markovian position-based system doesn't capture particle motion -- you _need_ an additional momentum / velocity vector as part of the state. This is definitely key.
+One key "no-go" finding from [[@^Dudley65]] is that a purely Markovian position-based system doesn't capture particle motion -- you _need_ an additional momentum / velocity vector as part of the state. This is definitely key.
 
 * compton wavelength as function of rest mass -- does this fall out?
 * $\nu$ is already 0-c normalized -- v/c

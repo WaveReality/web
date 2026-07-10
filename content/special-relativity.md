@@ -167,6 +167,7 @@ $$
 
 These two variables can be related in the relativistic energy-momentum equation:
 
+{id="eq_esq-p" title="relativistic energy-momentum"}
 $$
 E^2 = \vec{p}^2 c^2 + (m_0 c^2)^2
 $$
@@ -193,9 +194,51 @@ $$
 E \approx \frac{1}{2}m_0 \vec{v}^2 + m_0 c^2
 $$
 
-Interestingly, the [[Klein-Gordon]] equation can be derived directly from this equation!
+Interestingly, the [[Klein-Gordon]] equation can be derived directly from the full $E^2$ equation!
 
-Finally, we note that the warping of space and time that produces gravitational effects according to general relativity enters into our model in a very different way, as described later. Thus, in our model, special and general relativity result from two very different mechanisms.
+## Simplification of the energy factor
+
+The relativistic energy factor as normally expressed in [[#eq_esq-p]] actually just contains 3 essential variables, when you apply the Lorentz factor to the momentum expression. Thus, it can be simplified considerably to combine all these factors together, which reveals a rather interesting expression:
+
+{id="eq_esq-simp" title="simplified relativistic energy-momentum"}
+$$
+E^2 = \frac{c^6 m_0^2}{c^2 - v^2}
+$$
+
+The $c^6$ in the numerator is particularly striking, in that one rarely sees such a large power in a fundamental equation such as this. If the "basic" power for a squared equation such as this is $c^2$, then it seems that there are 3 such elements coming together in this energy expression. Does that perhaps have something to do with the 3 spatial dimensions? Interestingly, in [[stochastic particles]], we create a system of 3 simple [[harmonic oscillators]] to encode the momentum of a discrete particle, one for each spatial dimension, so perhaps this is in fact represented in the total energy of the particle.
+
+The denominator is also another way of understanding the Lorentz factor, where as the velocity $v$ increases toward $c$, this denominator gets smaller, and thus the $E^2$ factor grows toward infinity.
+
+### Algebraic steps
+
+For concreteness, here are the steps taken to arrive at this simplification:
+
+$$
+E^2 = \frac{c^2 m_0^2 v^2}{1 - \frac{v^2}{c^2}} + (c^4 m_0^2)
+$$
+
+$$
+E^2 = \frac{c^2 m_0^2 v^2}{\frac{c^2 - v^2}{c^2}} + (c^4 m_0^2)
+$$
+
+$$
+E^2 = \frac{c^4 m_0^2 v^2}{c^2 - v^2} + (c^4 m_0^2)
+$$
+
+$$
+E^2 = \frac{c^4 m_0^2 v^2}{c^2 - v^2} + \frac{(c^4 m_0^2)(c^2 - v^2)}{c^2 - v^2}
+$$
+
+$$
+E^2 = \frac{c^4 m_0^2 (v^2 + c^2 - v^2)}{c^2 - v^2}
+$$
+
+$$
+E^2 = \frac{c^6 m_0^2}{c^2 - v^2}
+$$
+
+
+<!--- Finally, we note that the warping of space and time that produces gravitational effects according to general relativity enters into our model in a very different way, as described later. Thus, in our model, special and general relativity result from two very different mechanisms. actually maybe not! -->
 
 ## Relativistic momentum and velocity
 

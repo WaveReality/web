@@ -51,7 +51,7 @@ $$
 
 This is directly computable for each cubic cell $i$ in the system.
 
-It becomes very clear when explicitly written out in this manner that charge represents a coupling of the two otherwise independent variables in the complex number, and this suggests why a single scalar number cannot represent a conserved charge value. The fact that these variables are coupled here, but not in the actual wave equations that drive their updating, seems magical.
+It becomes clear when explicitly written out in this manner that charge represents a coupling of the two otherwise independently-updated variables in the complex number, and this suggests why a single scalar number cannot represent a conserved charge value.
 
 {id="sim_cc" title="Complex charge" collapsed="true"}
 ```Goal
@@ -82,8 +82,8 @@ func valUpdate() {
     bphaseStr = fmt.Sprintf("b phase: %4.0f", bphase)
     massStr = fmt.Sprintf("mass: %4.1f", mass)
     hbarStr = fmt.Sprintf("hbar: %4.1f", hbar)
-    bi := ai * float64(math32.Cos(math32.DegToRad(float32(bphase))))
-    bvi := math.Sqrt(mcOverHSq) * ai * float64(math32.Cos(math32.DegToRad(float32(bphase+90))))
+    bi := ai * float64(math32.Cos(math32.DegToRad(float32(-bphase))))
+    bvi := math.Sqrt(mcOverHSq) * ai * float64(math32.Sin(math32.DegToRad(float32(-bphase))))
     ##
     mf := array(mcOverHSq)
     cf := array(heOver2mCSq)
@@ -91,7 +91,6 @@ func valUpdate() {
     bp := array(bi)
     av := array(0.0)
     bv := array(bvi)
-    mxv := array(0.0)
     ##
     for t := range 100 {
         ##
@@ -106,8 +105,6 @@ func valUpdate() {
         
         bv -= mf * bp
         bp += bv
-        
-        mxv = max(mxv, av)
         ##
     }
     msgStr = fmt.Sprintf("<b>Charge: %7.3g </b>", chg.Float(99))
@@ -175,9 +172,9 @@ addSlider(&massStr, &mass, 0.1, 1.0)
 addSlider(&hbarStr, &hbar, 0.1, 1.0)
 ```
 
-[[#sim_cc]] demonstrates how this works, in terms of two simple harmonic oscillator variables _a_ and _b_, which are set to be a specific phase apart from each other. Regardless of the phase relationship, the computed charge value remains constant across the cycles of oscillation. However, critically, the value of the charge is directly a function of this phase relationship, with a maximum of 0.5 when the _b_ value is +90 degrees in relation to the _a_ value, and a minimum of -0.5 for -90 degrees, and zero for 0 or 180 degrees. These relationships are fairly obvious once you appreciate the relationship between velocity and position for each of the variables, and how they enter into the charge equation.
+[[#sim_cc]] demonstrates how this works, in terms of two simple [[harmonic oscillator]] variables _a_ and _b_, which are set to be a specific phase apart from each other (+90 degrees shifts _b_ to the _left_ (earlier) relative to _a_, while -90 shifts to the right, due to the trigonometric convention of 0 degrees being at 1,0 and proceeding counter-clockwise from there). Regardless of the phase relationship, the computed charge value remains constant across the cycles of oscillation. However, critically, the value of the charge is directly a function of this phase relationship, with a maximum of 0.5 when the _b_ value is +90 degrees in relation to the _a_ value, and a minimum of -0.5 for -90 degrees, and zero for 0 or 180 degrees. These relationships are fairly obvious once you appreciate the relationship between velocity and position for each of the variables (which are 90 degrees out of phase with each other, always), and how they enter into the charge equation.
 
-Because the separate real-valued wave functions are independently updated, it thus becomes important that these two wave states are initialized with a specific phase relationship, which will then determine the charge value represented.
+Critically, complex numbers are _always_ 90 degrees out of phase with each other by the very nature of the complex plane. Thus, even though the separate real-valued wave functions are independently updated, it is critical that these two wave states are _initialized_ with the 90 degree phase relationship appropriate for complex numbers, which will then determine the sign of the charge value represented.
 
 Perhaps the most important feature of this charge equation is that it can be either positive or negative, as a function of the phase relationship. This is not true of the corresponding expression for Schrödinger's equation, which is "definitely positive", or, in mathematical terminology, "positive definite". This is one of the major reasons why standard quantum physics has strongly embraced Schrödinger's equation, and not KG: KG does not fit with the standard probabilistic framework, where the wave describes a probability, and a probability is always positive.
 

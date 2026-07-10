@@ -40,7 +40,7 @@ $$
 a = \frac{f}{m}
 $$
 
-In the discrete time framework, we can simply increment a new *velocity* term *v* by this acceleration:
+In the discrete time framework, we can simply increment a new _velocity_ term _v_ by this acceleration:
 
 {id="eq_" title="new velocity"}
 $$
