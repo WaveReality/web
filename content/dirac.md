@@ -22,6 +22,7 @@ Therefore, it would seem that it should have a spin of 0 as well. Countering thi
 
 Our first step is to introduce a new state variable $\psi$, to represent a field having four independent scalar values. Mathematically, this is defined as a vector of two complex numbers:
 
+{id="eq_two-component" title="two-component complex wave state"}
 $$
 \psi = \begin{bmatrix} \varphi_{1a} + i \varphi_{1b} \\ \varphi_{2a} + i \varphi_{2b} \end{bmatrix}
 $$
@@ -50,6 +51,7 @@ $$
 
 Now for the Pauli matricies $\vec{\sigma}$. This is a vector of values $(\sigma_x, \sigma_y, \sigma_z)$ that enter into a dot product with the complex-valued vector composed of the magnetic and electric field values $\vec{B}$ and $\vec{E}$:
 
+{id="eq_pauli" title="Pauli matricies"}
 $$
 \vec{\sigma} = \left( \begin{bmatrix} 0 & 1\\
 1 & 0 \end{bmatrix}, \begin{bmatrix} 0 & -i \\
@@ -164,4 +166,16 @@ $$
 \vec{J} = \frac{\hbar e}{m_0 c^2} \left((\varphi_{1a} \vec{\nabla} \varphi_{1b} - \varphi_{1b} \vec{\nabla} \varphi_{1a}) + (\varphi_{2a} \vec{\nabla} \varphi_{2b} - \varphi_{2b} \vec{\nabla} \varphi_{2a})\right) - \frac{e^2}{m_0 c^2} \vec{A} (\varphi_{1a}^2 + \varphi_{1b}^2 + \varphi_{2a}^2 + \varphi_{2b}^2)
 $$
 
+## First-order version
+
+{id="eq_dirac-first" title="first-order Dirac equation"}
+$$
+(i \gamma^{\mu} \partial_{\mu} - m)\psi = 0
+$$
+
+TODO: there is still the important issue of converting back and forth between the 2nd order and 1st order versions of the state. Also, it is important that the 2nd order does not have spin factors operating among the components directly, as the 1st order version does -- they only show up in the coupling to EM. This is weird. The thing doesn't actually spin on its own in 2nd order form.
+
+more refs: [[@Brown58]], [[@Tonin59]], [[@Marx67]], [[@Marx70]], [[@Case57]] <- weyl!!, [[@Diaz-CruzLopezMeza-AldamaEtAl15]], [[@KibblePolkinghorne58]], [[@BarutMullen62]], [[@BabinFigotin14]], [[@Cardoso93]], [[@Veblen33]], [[@DreinerHaberMartin10]]
+
+[[@BilenkyPetcov87]] <- neutrinos
 

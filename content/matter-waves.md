@@ -2,7 +2,7 @@
 bibfile = "mechphys.json"
 +++
 
-Historically, matter has typically been conceived of as something hard and solid: a particle of some form or another. However, it is also possible to produce many of the known properties of matter using a very simple extension of the simple second-order [[waves|wave]] equation, in the form of the [[Klein-Gordon]] (KG) wave function.
+Historically, matter has typically been conceived of as something hard and solid: a particle of some form or another. However, it is also possible to produce many of the known properties of matter using a very simple extension of the simple second-order [[wave]] equation, in the form of the [[Klein-Gordon]] (KG) wave function.
 
 {id="figure_packet" style="height:20em"}
 ![A wave packet, which is a spatially localized wave disturbance that propagates through space as a coherent entity. This could serve as a model for a particle, except that the wave inevitably diffuses as it propagates over time. Mathematically, it can be constructed by multiplying a Gaussian function (normal bell-shaped distribution curve) times a sine wave.](media/fig_wave_packet_raw.png)

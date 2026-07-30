@@ -2,7 +2,7 @@
 bibfile = "mechphys.json"
 +++
 
-From an [[epistemic-vs-ontic#ontological]] perspective (i.e., in terms of what we think is _actually real_), there are two seemingly-conflicting entities at the heart of QM: **waves** and **particles**: the fundamental wave-particle **duality**. Much of the confusion and paradox in QM is tied up with this duality. The overall approach here follows the [[pilot-wave]] framework in embracing the simultaneous and interacting reality of both particles and waves, and we spend a lot of time and effort understanding the seemingly "magical" properties of [[waves]] in particular.
+From an [[epistemic-vs-ontic#ontological]] perspective (i.e., in terms of what we think is _actually real_), there are two seemingly-conflicting entities at the heart of QM: **waves** and **particles**: the fundamental wave-particle **duality**. Much of the confusion and paradox in QM is tied up with this duality. The overall approach here follows the [[pilot-wave]] framework in embracing the simultaneous and interacting reality of both particles and waves, and we spend a lot of time and effort understanding the seemingly "magical" properties of [[wave]]s in particular.
 
 At one point, I was hopeful that somehow one could do away with particles entirely, given that wave equations can account for so much of the known phenomena in physics, including the mind-bending space-time distortions of [[special relativity]], and the complex dynamics of electricity and magnetism (EM, see [[Maxwell]]). However, pure waves end up being just a bit too "squishy" and tend to ooze out all over the place.
 

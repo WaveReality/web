@@ -4,7 +4,7 @@ bibfile = "mechphys.json"
 
 The basic equations of electromagnetism were developed in the 1800's, through the work of many people. James Clerk Maxwell put all this work together, with several important insights of his own, in a series of papers in 1861-2 that describe what are now known as Maxwell's equations, which fully characterize the behavior of the electromagnetic fields, in relation to electric charges. Maxwell conceived of these as propagating through the luminiferous [[aether]].
 
-Although Maxwell's equations describe the same kind of wave propagation we explored in [[waves]], they do so in a somewhat complex way, involving vector fields and various vector operators that can be difficult to understand. Therefore, we start with a formulation of the EM equations that will be immediately familiar from the previous chapter, using second-order wave equations. These second-order wave equations operate on the **electromagnetic potentials**, instead of the electric and magnetic vector fields, which are described by the standard Maxwell's equations.
+Although Maxwell's equations describe the same kind of wave propagation we explored in [[wave]]s, they do so in a somewhat complex way, involving vector fields and various vector operators that can be difficult to understand. Therefore, we start with a formulation of the EM equations that will be immediately familiar from the previous chapter, using second-order wave equations. These second-order wave equations operate on the **electromagnetic potentials**, instead of the electric and magnetic vector fields, which are described by the standard Maxwell's equations.
 
 Although many people regard the vector fields as the primary physical reality underlying EM, there is solid physical evidence showing that the electromagnetic potentials are physically real, and exert measurable physical effects, for example the **Aharonov-Bohm** effect (described later). Thus, in addition to being mathematically simpler, the potential-based formulation seems to be physically necessary. Nevertheless, there remain several important sources of controversy and confusion over this choice, which will be introduced as we go through.
 
@@ -29,7 +29,7 @@ $$
 \frac{\partial^2 {A_0}}{\partial t^2} = c^2 \nabla^2 A_0
 $$
 
-This means that you already understand exactly how this potential will behave, based on the explorations in [[waves]]. It will propagate at the speed of light (*c*), exhibit spreading over time due to the nature of the 3D Laplacian, etc.
+This means that you already understand exactly how this potential will behave, based on the explorations in [[wave]]s. It will propagate at the speed of light (*c*), exhibit spreading over time due to the nature of the 3D Laplacian, etc.
 
 To include the effects of **electrical charge**, we can extend the equation to include a simple additive factor that is proportional to the local charge density, written by convention as the Greek letter "rho" $\rho$:
 
@@ -73,7 +73,7 @@ $$
 
 In words, the electrical field is the spatial gradient of the scalar potential (plus the temporal derivative of the magnetic vector potential $\vec{A}$). Recall the definition of the gradient operator $\vec{\nabla}$ from before: it computes the slope or amount of change in a scalar field along each of the three axes, yielding a vector of three values ($[E_x, E_y, E_z]$).
 
-To actually compute this vector quantity in our discrete 3D framework, we need a discrete gradient operator that is basically just the first-order version of the discrete Laplacian operator that we introduced in [[waves]]. It is described in detail in this page [[discrete gradient]].
+To actually compute this vector quantity in our discrete 3D framework, we need a discrete gradient operator that is basically just the first-order version of the discrete Laplacian operator that we introduced in [[wave]]s. It is described in detail in this page [[discrete gradient]].
 
 ### 1/r Potential Dropoff = 1/r^2 Force Field
 

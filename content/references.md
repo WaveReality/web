@@ -6,6 +6,10 @@
 
 <p id="AspectGrangierRoger82">Aspect, A., Grangier, P., & Roger, G. (1982). Experimental Realization of Einstein-Podolsky-Rosen-Bohm Gedankenexperiment: A New Violation of Bell's Inequalities. <i>Physical Review Letters, 49</i>, 91–94. <a href="https://link.aps.org/doi/10.1103/PhysRevLett.49.91">https://link.aps.org/doi/10.1103/PhysRevLett.49.91</a><a href="http://doi.org/10.1103/PhysRevLett.49.91"> http://doi.org/10.1103/PhysRevLett.49.91</a></p>
 
+<p id="BabinFigotin14">Babin, A., & Figotin, A. (2014). Neoclassical theory of elementary charges with spin of 1/2. <i>Journal of Mathematical Physics, 55</i>, 082901. <a href="https://doi.org/10.1063/1.4893336">https://doi.org/10.1063/1.4893336</a><a href="http://doi.org/10.1063/1.4893336"> http://doi.org/10.1063/1.4893336</a></p>
+
+<p id="Baez20">Baez, J.C. (2020). Struggles with the Continuum. <a href="http://arxiv.org/abs/1609.01421">http://arxiv.org/abs/1609.01421</a><a href="http://doi.org/10.48550/arXiv.1609.01421"> http://doi.org/10.48550/arXiv.1609.01421</a></p>
+
 <p id="BallentineJarrett87">Ballentine, L.E., & Jarrett, J.P. (1987). Bell’s theorem: Does quantum mechanics contradict relativity? <i>American Journal of Physics, 55</i>, 696–701. <a href="https://doi.org/10.1119/1.15059">https://doi.org/10.1119/1.15059</a><a href="http://doi.org/10.1119/1.15059"> http://doi.org/10.1119/1.15059</a></p>
 
 <p id="BancalPironioAcinEtAl12">Bancal, J., Pironio, S., Acín, A., Liang, Y., Scarani, V., & Gisin, N. (2012). Quantum non-locality based on finite-speed causal influences leads to superluminal signalling. <i>Nature Physics, 8</i>, 867–870. <a href="https://www.nature.com/articles/nphys2460">https://www.nature.com/articles/nphys2460</a><a href="http://doi.org/10.1038/nphys2460"> http://doi.org/10.1038/nphys2460</a></p>
@@ -14,17 +18,27 @@
 
 <p id="BarutDowling90">Barut, A.O., & Dowling, J.P. (1990). Self-field quantum electrodynamics: The two-level atom. <i>Physical Review A, 41</i>, 2284–2294. <a href="https://link.aps.org/doi/10.1103/PhysRevA.41.2284">https://link.aps.org/doi/10.1103/PhysRevA.41.2284</a><a href="http://doi.org/10.1103/PhysRevA.41.2284"> http://doi.org/10.1103/PhysRevA.41.2284</a></p>
 
+<p id="BarutMullen62">Barut, A.O., & Mullen, G.H. (1962). Quantization of two-component higher order spinor equations. <i>Annals of Physics, 20</i>, 184–202. <a href="https://www.sciencedirect.com/science/article/pii/0003491662901975">https://www.sciencedirect.com/science/article/pii/0003491662901975</a><a href="http://doi.org/10.1016/0003-4916(62)90197-5"> http://doi.org/10.1016/0003-4916(62)90197-5</a></p>
+
 <p id="BarutVanHuele85">Barut, A.O., & Van Huele, J.F. (1985). Quantum electrodynamics based on self-energy: Lamb shift and spontaneous emission without field quantization. <i>Physical Review A, 32</i>, 3187–3195. <a href="https://link.aps.org/doi/10.1103/PhysRevA.32.3187">https://link.aps.org/doi/10.1103/PhysRevA.32.3187</a><a href="http://doi.org/10.1103/PhysRevA.32.3187"> http://doi.org/10.1103/PhysRevA.32.3187</a></p>
 
 <p id="Bell64">Bell, J.S. (1964). On the Einstein Podolsky Rosen paradox. <i>Physics Physique Fizika, 1</i>, 195–200. </p>
 
 <p id="Bialynicki-Birula94">Bialynicki-Birula, I. (1994). Weyl, Dirac, and Maxwell equations on a lattice as unitary cellular automata. <i>Physical Review D, 49</i>, 6920–6927. <a href="https://link.aps.org/doi/10.1103/PhysRevD.49.6920">https://link.aps.org/doi/10.1103/PhysRevD.49.6920</a><a href="http://doi.org/10.1103/PhysRevD.49.6920"> http://doi.org/10.1103/PhysRevD.49.6920</a></p>
 
+<p id="BilenkyPetcov87">Bilenky, S.M., & Petcov, S.T. (1987). Massive neutrinos and neutrino oscillations. <i>Reviews of Modern Physics, 59</i>, 671–754. <a href="https://link.aps.org/doi/10.1103/RevModPhys.59.671">https://link.aps.org/doi/10.1103/RevModPhys.59.671</a><a href="http://doi.org/10.1103/RevModPhys.59.671"> http://doi.org/10.1103/RevModPhys.59.671</a></p>
+
 <p id="Bohm52">Bohm, D. (1952). A Suggested Interpretation of the Quantum Theory in Terms of "Hidden" Variables. I. <i>Physical Review, 85</i>, 166–179. <a href="https://link.aps.org/doi/10.1103/PhysRev.85.166">https://link.aps.org/doi/10.1103/PhysRev.85.166</a><a href="http://doi.org/10.1103/PhysRev.85.166"> http://doi.org/10.1103/PhysRev.85.166</a></p>
 
 <p id="BrillGoodman67">Brill, O.L., & Goodman, B. (1967). Causality in the Coulomb Gauge. <i>American Journal of Physics, 35</i>, 832–837. <a href="https://doi.org/10.1119/1.1974261">https://doi.org/10.1119/1.1974261</a><a href="http://doi.org/10.1119/1.1974261"> http://doi.org/10.1119/1.1974261</a></p>
 
+<p id="Brown58">Brown, L.M. (1958). Two-Component Fermion Theory. <i>Physical Review, 111</i>, 957–964. <a href="https://link.aps.org/doi/10.1103/PhysRev.111.957">https://link.aps.org/doi/10.1103/PhysRev.111.957</a><a href="http://doi.org/10.1103/PhysRev.111.957"> http://doi.org/10.1103/PhysRev.111.957</a></p>
+
 <p id="BudiyonoRohrlich17">Budiyono, A., & Rohrlich, D. (2017). Quantum mechanics as classical statistical mechanics with an ontic extension and an epistemic restriction. <i>Nature Communications, 8</i>, 1306. <a href="https://www.nature.com/articles/s41467-017-01375-w">https://www.nature.com/articles/s41467-017-01375-w</a><a href="http://doi.org/10.1038/s41467-017-01375-w"> http://doi.org/10.1038/s41467-017-01375-w</a></p>
+
+<p id="Cardoso93">Cardoso, J.G. (1993). Complexified two-component spinor theory of Dirac-Weyl fields. <i>Physica Scripta, 47</i>, 708. <a href="https://doi.org/10.1088/0031-8949/47/6/002">https://doi.org/10.1088/0031-8949/47/6/002</a><a href="http://doi.org/10.1088/0031-8949/47/6/002"> http://doi.org/10.1088/0031-8949/47/6/002</a></p>
+
+<p id="Case57">Case, K.M. (1957). Reformulation of the Majorana Theory of the Neutrino. <i>Physical Review, 107</i>, 307–316. <a href="https://link.aps.org/doi/10.1103/PhysRev.107.307">https://link.aps.org/doi/10.1103/PhysRev.107.307</a><a href="http://doi.org/10.1103/PhysRev.107.307"> http://doi.org/10.1103/PhysRev.107.307</a></p>
 
 <p id="CavesFuchsSchack02">Caves, C.M., Fuchs, C.A., & Schack, R. (2002). Quantum probabilities as Bayesian probabilities. <i>Physical Review A, 65</i>, 022305. <a href="https://link.aps.org/doi/10.1103/PhysRevA.65.022305">https://link.aps.org/doi/10.1103/PhysRevA.65.022305</a><a href="http://doi.org/10.1103/PhysRevA.65.022305"> http://doi.org/10.1103/PhysRevA.65.022305</a></p>
 
@@ -44,6 +58,10 @@
 
 <p id="DemiralpRabitz97">Demiralp, M., & Rabitz, H. (1997). Dispersion-free wave packets and feedback solitonic motion in controlled quantum dynamics. <i>Physical Review A, 55</i>, 673–677. <a href="https://link.aps.org/doi/10.1103/PhysRevA.55.673">https://link.aps.org/doi/10.1103/PhysRevA.55.673</a><a href="http://doi.org/10.1103/PhysRevA.55.673"> http://doi.org/10.1103/PhysRevA.55.673</a></p>
 
+<p id="Diaz-CruzLopezMeza-AldamaEtAl15">Diaz-Cruz, J.L., Lopez, B.L., Meza-Aldama, O., & Perez, J.R. (2015). Weyl spinors and the helicity formalism. <a href="http://arxiv.org/abs/1511.07477">http://arxiv.org/abs/1511.07477</a><a href="http://doi.org/10.48550/arXiv.1511.07477"> http://doi.org/10.48550/arXiv.1511.07477</a></p>
+
+<p id="DreinerHaberMartin10">Dreiner, H.K., Haber, H.E., & Martin, S.P. (2010). Two-component spinor techniques and Feynman rules for quantum field theory and supersymmetry. <i>Physics Reports, 494</i>, 1–196. <a href="https://www.sciencedirect.com/science/article/pii/S0370157310001171">https://www.sciencedirect.com/science/article/pii/S0370157310001171</a><a href="http://doi.org/10.1016/j.physrep.2010.05.002"> http://doi.org/10.1016/j.physrep.2010.05.002</a></p>
+
 <p id="Dudley65">Dudley, R.M. (1965). Lorentz-invariant Markov processes in relativistic phase space. <i>Arkiv för Matematik, 6</i>, 241–268. <a href="https://doi.org/10.1007/BF02592032">https://doi.org/10.1007/BF02592032</a><a href="http://doi.org/10.1007/BF02592032"> http://doi.org/10.1007/BF02592032</a></p>
 
 <p id="Dudley73">Dudley, R.M. (1973). Asymptotics of Some Relativistic Markov Processes. <i>Proceedings of the National Academy of Sciences, 70</i>, 3551–3555. <a href="https://www.pnas.org/doi/abs/10.1073/pnas.70.12.3551">https://www.pnas.org/doi/abs/10.1073/pnas.70.12.3551</a><a href="http://doi.org/10.1073/pnas.70.12.3551"> http://doi.org/10.1073/pnas.70.12.3551</a></p>
@@ -55,6 +73,8 @@
 <p id="DurrGoldsteinNorsenEtAl14">Dürr, D., Goldstein, S., Norsen, T., Struyve, W., & Zanghì, N. (2014). Can Bohmian mechanics be made relativistic? <i>Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences, 470</i>, 20130699. <a href="https://royalsocietypublishing.org/doi/full/10.1098/rspa.2013.0699">https://royalsocietypublishing.org/doi/full/10.1098/rspa.2013.0699</a><a href="http://doi.org/10.1098/rspa.2013.0699"> http://doi.org/10.1098/rspa.2013.0699</a></p>
 
 <p id="Einstein05a">Einstein, A. (1905). Über einem die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt. <i>Annalen der physik, 4</i>, <a href="https://sedici.unlp.edu.ar/handle/10915/2784">https://sedici.unlp.edu.ar/handle/10915/2784</a></p>
+
+<p id="ElvangHuang14">Elvang, H., & Huang, Y. (2014). Scattering Amplitudes. <a href="http://arxiv.org/abs/1308.1697">http://arxiv.org/abs/1308.1697</a><a href="http://doi.org/10.48550/arXiv.1308.1697"> http://doi.org/10.48550/arXiv.1308.1697</a></p>
 
 <p id="Everett57">Everett, H. (1957). "Relative State" Formulation of Quantum Mechanics. <i>Reviews of Modern Physics, 29</i>, 454–462. <a href="https://link.aps.org/doi/10.1103/RevModPhys.29.454">https://link.aps.org/doi/10.1103/RevModPhys.29.454</a><a href="http://doi.org/10.1103/RevModPhys.29.454"> http://doi.org/10.1103/RevModPhys.29.454</a></p>
 
@@ -100,6 +120,8 @@
 
 <p id="Hestenes90">Hestenes, D. (1990). The zitterbewegung interpretation of quantum mechanics. <i>Foundations of Physics, 20</i>, 1213–1232. <a href="https://doi.org/10.1007/BF01889466">https://doi.org/10.1007/BF01889466</a><a href="http://doi.org/10.1007/BF01889466"> http://doi.org/10.1007/BF01889466</a></p>
 
+<p id="Hobson13">Hobson, A. (2013). There are no particles, there are only fields. <i>American Journal of Physics, 81</i>, 211–223. <a href="http://aapt.scitation.org/doi/full/10.1119/1.4789885">http://aapt.scitation.org/doi/full/10.1119/1.4789885</a><a href="http://doi.org/10.1119/1.4789885"> http://doi.org/10.1119/1.4789885</a></p>
+
 <p id="Holland05c">Holland, P. (2005). Quantum back-reaction and the particle law of motion. <i>Journal of Physics A: Mathematical and General, 39</i>, 559. <a href="https://doi.org/10.1088/0305-4470/39/3/008">https://doi.org/10.1088/0305-4470/39/3/008</a><a href="http://doi.org/10.1088/0305-4470/39/3/008"> http://doi.org/10.1088/0305-4470/39/3/008</a></p>
 
 <p id="HongOuMandel87">Hong, C.K., Ou, Z.Y., & Mandel, L. (1987). Measurement of subpicosecond time intervals between two photons by interference. <i>Physical Review Letters, 59</i>, 2044–2046. <a href="https://link.aps.org/doi/10.1103/PhysRevLett.59.2044">https://link.aps.org/doi/10.1103/PhysRevLett.59.2044</a><a href="http://doi.org/10.1103/PhysRevLett.59.2044"> http://doi.org/10.1103/PhysRevLett.59.2044</a></p>
@@ -126,6 +148,8 @@
 
 <p id="Khrennikov01">Khrennikov, A. (2001). Linear representations of probabilistic transformations induced by context transitions. <i>Journal of Physics A: Mathematical and General, 34</i>, 9965. <a href="https://doi.org/10.1088/0305-4470/34/47/304">https://doi.org/10.1088/0305-4470/34/47/304</a><a href="http://doi.org/10.1088/0305-4470/34/47/304"> http://doi.org/10.1088/0305-4470/34/47/304</a></p>
 
+<p id="KibblePolkinghorne58">Kibble, T.W.B., & Polkinghorne, J.C. (1958). Higher order spinor Lagrangians. <i>Il Nuovo Cimento (1955-1965), 8</i>, 74–83. <a href="https://doi.org/10.1007/BF02828852">https://doi.org/10.1007/BF02828852</a><a href="http://doi.org/10.1007/BF02828852"> http://doi.org/10.1007/BF02828852</a></p>
+
 <p id="Klassen11">Klassen, S. (2011). The Photoelectric Effect: Reconstructing the Story for the Physics Classroom. <i>Science & Education, 20</i>, 719–731. <a href="https://doi.org/10.1007/s11191-009-9214-6">https://doi.org/10.1007/s11191-009-9214-6</a><a href="http://doi.org/10.1007/s11191-009-9214-6"> http://doi.org/10.1007/s11191-009-9214-6</a></p>
 
 <p id="Klein26">Klein, O. (1926). <i>Zeitschrift für Physik, 37</i>, 895. </p>
@@ -149,6 +173,10 @@
 <p id="MarshallSantos88">Marshall, T., & Santos, E. (1988). Stochastic optics: A reaffirmation of the wave nature of light. <i>Foundations of Physics, 18</i>, 185–223. <a href="https://doi.org/10.1007/BF01882931">https://doi.org/10.1007/BF01882931</a><a href="http://doi.org/10.1007/BF01882931"> http://doi.org/10.1007/BF01882931</a></p>
 
 <p id="MarshallSantos97">Marshall, T.W., & Santos, E. (1997). The Myth of The Photon. In S. Jeffers, S. Roy, J. Vigier, & G. Hunter (Eds.), <i>The Present Status of the Quantum Theory of Light</i> (pp. 67–77). Springer Netherlands. <a href="http://doi.org/10.1007/978-94-011-5682-0_7"> http://doi.org/10.1007/978-94-011-5682-0_7</a></p>
+
+<p id="Marx67">Marx, E. (1967). Klein‐Gordon Equation for Spinors. <i>Journal of Mathematical Physics, 8</i>, 1559–1566. <a href="https://doi.org/10.1063/1.1705393">https://doi.org/10.1063/1.1705393</a><a href="http://doi.org/10.1063/1.1705393"> http://doi.org/10.1063/1.1705393</a></p>
+
+<p id="Marx70">Marx, E. (1970). The two-component spinor field. <i>Physica, 49</i>, 469–492. <a href="https://www.sciencedirect.com/science/article/pii/0031891470900789">https://www.sciencedirect.com/science/article/pii/0031891470900789</a><a href="http://doi.org/10.1016/0031-8914(70)90078-9"> http://doi.org/10.1016/0031-8914(70)90078-9</a></p>
 
 <p id="MasielloDeumensOhrn05">Masiello, D., Deumens, E., & Öhrn, Y. (2005). <i>On the Canonical Formulation of Electrodynamics and Wave Mechanics. </i>In Advances in Quantum Chemistry (pp. 249–297). Elsevier. <a href="https://linkinghub.elsevier.com/retrieve/pii/S0065327605490061">https://linkinghub.elsevier.com/retrieve/pii/S0065327605490061</a><a href="http://doi.org/10.1016/S0065-3276(05)49006-1"> http://doi.org/10.1016/S0065-3276(05)49006-1</a></p>
 
@@ -192,6 +220,12 @@
 
 <p id="RingbauerDuffusBranciardEtAl15">Ringbauer, M., Duffus, B., Branciard, C., Cavalcanti, E.G., White, A.G., & Fedrizzi, A. (2015). Measurements on the reality of the wavefunction. <i>Nature Physics, 11</i>, 249–254. <a href="https://www.nature.com/articles/nphys3233">https://www.nature.com/articles/nphys3233</a><a href="http://doi.org/10.1038/nphys3233"> http://doi.org/10.1038/nphys3233</a></p>
 
+<p id="Rohrlich00">Rohrlich, F. (2000). The self-force and radiation reaction. <i>American Journal of Physics, 68</i>, 1109–1112. <a href="https://doi.org/10.1119/1.1286430">https://doi.org/10.1119/1.1286430</a><a href="http://doi.org/10.1119/1.1286430"> http://doi.org/10.1119/1.1286430</a></p>
+
+<p id="Rohrlich97">Rohrlich, F. (1997). The dynamics of a charged sphere and the electron. <i>American Journal of Physics, 65</i>, 1051–1056. <a href="https://doi.org/10.1119/1.18719">https://doi.org/10.1119/1.18719</a><a href="http://doi.org/10.1119/1.18719"> http://doi.org/10.1119/1.18719</a></p>
+
+<p id="Rohrlich99">Rohrlich, F. (1999). Classical self-force. <i>Physical Review D, 60</i>, 084017. <a href="https://link.aps.org/doi/10.1103/PhysRevD.60.084017">https://link.aps.org/doi/10.1103/PhysRevD.60.084017</a><a href="http://doi.org/10.1103/PhysRevD.60.084017"> http://doi.org/10.1103/PhysRevD.60.084017</a></p>
+
 <p id="RomanRosoPlaja03">Roman, J.S., Roso, L., & Plaja, L. (2003). The Zitterbewegung for a Dirac electron driven by an intense laser field. <i>Journal of Physics B: Atomic, Molecular and Optical Physics, 36</i>, 2253. <a href="https://doi.org/10.1088/0953-4075/36/11/310">https://doi.org/10.1088/0953-4075/36/11/310</a><a href="http://doi.org/10.1088/0953-4075/36/11/310"> http://doi.org/10.1088/0953-4075/36/11/310</a></p>
 
 <p id="Rovelli96">Rovelli, C. (1996). Relational quantum mechanics. <i>International Journal of Theoretical Physics, 35</i>, 1637–1678. <a href="https://doi.org/10.1007/BF02302261">https://doi.org/10.1007/BF02302261</a><a href="http://doi.org/10.1007/BF02302261"> http://doi.org/10.1007/BF02302261</a></p>
@@ -205,6 +239,8 @@
 <p id="Sciarretta18">Sciarretta, A. (2018). A Local-Realistic Model of Quantum Mechanics Based on a Discrete Spacetime (Extended version) <i>Foundations of Physics, 48</i>, 60–91. <a href="http://arxiv.org/abs/1712.03227">http://arxiv.org/abs/1712.03227</a><a href="http://doi.org/10.1007/s10701-017-0129-9"> http://doi.org/10.1007/s10701-017-0129-9</a></p>
 
 <p id="Sciarretta21">Sciarretta, A. (2021). A local-realistic quantum mechanical model of spin and spin entanglement. <i>International Journal of Quantum Information, 19</i>, 2150006. <a href="http://www.worldscientific.com/doi/abs/10.1142/S0219749921500064">http://www.worldscientific.com/doi/abs/10.1142/S0219749921500064</a><a href="http://doi.org/10.1142/S0219749921500064"> http://doi.org/10.1142/S0219749921500064</a></p>
+
+<p id="Sebens22">Sebens, C.T. (2022). The fundamentality of fields. <i>Synthese, 200</i>, 380. <a href="https://doi.org/10.1007/s11229-022-03844-2">https://doi.org/10.1007/s11229-022-03844-2</a><a href="http://doi.org/10.1007/s11229-022-03844-2"> http://doi.org/10.1007/s11229-022-03844-2</a></p>
 
 <p id="Shimony84">Shimony, A. (1984). Contextual Hidden Variables Theories and Bell's Inequalities. <i>The British Journal for the Philosophy of Science, 35</i>, 25–45. <a href="https://doi.org/10.1093/bjps/35.1.25">https://doi.org/10.1093/bjps/35.1.25</a><a href="http://doi.org/10.1093/bjps/35.1.25"> http://doi.org/10.1093/bjps/35.1.25</a></p>
 
@@ -225,6 +261,10 @@
 <p id="tHooft16">Hooft, G. (2016). <i>The Cellular Automaton Interpretation of Quantum Mechanics. </i> Springer. </p>
 
 <p id="TittelBrendelGisinEtAl98">Tittel, W., Brendel, J., Gisin, B., Herzog, T., Zbinden, H., & Gisin, N. (1998). Experimental demonstration of quantum correlations over more than 10 km. <i>Physical Review A, 57</i>, 3229–3232. <a href="https://link.aps.org/doi/10.1103/PhysRevA.57.3229">https://link.aps.org/doi/10.1103/PhysRevA.57.3229</a><a href="http://doi.org/10.1103/PhysRevA.57.3229"> http://doi.org/10.1103/PhysRevA.57.3229</a></p>
+
+<p id="Tonin59">Tonin, M. (1959). Quantization of the two-component fermion theory. <i>Il Nuovo Cimento (1955-1965), 14</i>, 1108–1119. <a href="https://doi.org/10.1007/BF02728186">https://doi.org/10.1007/BF02728186</a><a href="http://doi.org/10.1007/BF02728186"> http://doi.org/10.1007/BF02728186</a></p>
+
+<p id="Veblen33">Veblen, O. (1933). Geometry of Two-Component Spinors. <i>Proceedings of the National Academy of Sciences, 19</i>, 462–474. <a href="https://www.pnas.org/doi/abs/10.1073/pnas.19.4.462">https://www.pnas.org/doi/abs/10.1073/pnas.19.4.462</a><a href="http://doi.org/10.1073/pnas.19.4.462"> http://doi.org/10.1073/pnas.19.4.462</a></p>
 
 <p id="VonNeumannBurks66">Von Neumann, J., & Burks, A.W. (1966). Theory of self-reproducing automata. <a href="http://www.cba.mit.edu/events/03.11.ASE/docs/VonNeumann.pdf">http://www.cba.mit.edu/events/03.11.ASE/docs/VonNeumann.pdf</a></p>
 

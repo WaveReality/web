@@ -98,7 +98,7 @@ $$
 m = \frac{1}{c^2}
 $$
 
-where we are using _c_ to represent the **speed of light** in the system. Waves using this simple second-order wave equation always travel at the same speed, and this speed is effectively the speed of light if these waves are electromagnetic waves (which we'll see in the next chapter can indeed be computed using this simple wave equation).
+where we are using _c_ to represent the **speed of light** in the system. Waves using this simple second-order wave equation always travel at the same speed, and this speed is effectively the speed of light if these waves are electromagnetic waves (which can indeed be computed using this simple wave equation, as shown in [[Maxwell]]).
 
 Thus, we can re-write our basic equations using this speed-of-light factor, and while we're at it, we'll also introduce the "dot" and "double-dot" notation for the velocity and acceleration terms, reflecting the fact that the velocity is the first temporal derivative (one dot), and acceleration is the second temporal derivative (two dots). As we discuss in greater detail in the next section, the velocity is the slope or rate of change in the state value, while acceleration is the slope or rate of change of the velocity --- a double-slope or double-rate-of-change of the state value.
 

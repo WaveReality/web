@@ -3,7 +3,7 @@ Name = "Klein-Gordon"
 bibfile = "mechphys.json"
 +++
 
-The **Klein-Gordon** (KG) wave function is the simplest version of a [[waves|wave]] equation that captures the known physics of particles such as an [[electron]]. In fact, it explains a surprisingly wide range of physical phenomena, including Newtonian and relativistic equations of motion, the Lorentz transformations of [[special relativity]], and the quantum mechanical relationship between wave frequency and velocity (momentum), all with an incredibly simple equation.
+The **Klein-Gordon** (KG) wave function is the simplest version of a [[wave]] equation that captures the known physics of particles such as an [[electron]]. In fact, it explains a surprisingly wide range of physical phenomena, including Newtonian and relativistic equations of motion, the Lorentz transformations of [[special relativity]], and the quantum mechanical relationship between wave frequency and velocity (momentum), all with an incredibly simple equation.
 
 The KG wave function can be derived directly from Einstein's relativistic definition of total energy, via the [[Hamiltonian]] strategy. After reading this chapter, which covers the phenomenology of the KG wave equation, it is recommended to read that derivation to obtain a deeper understanding of why and how the KG equations account for all of special relativity.
 
@@ -191,7 +191,7 @@ The Klein-Gordon equation that we've been exploring is typically introduced as a
 
 The fact that Schrödinger's equation remains the predominant tool used by practicing physicists can be attributed to its strict conservation properties, where the total probability value (computed as the complex conjugate of the wave values), is conserved as it propagates through space. In contrast, the KG equation does not have such a strict conservation behavior.
 
-Furthermore, the Schrödinger equation is a first-order wave equation, which has many advantages from an analytical perspective, even as it makes it very difficult for many people to understand, due to its reliance on [[complex numbers]]. In general, wave-like behavior can either be described by a second-order equation involving normal scalar variables (as we've been doing), or it can be described by a first-order equation involving complex numbers, exemplified by the Schrödinger equation.
+Furthermore, the Schrödinger equation is a first-order wave equation, which has many advantages from an analytical perspective, even as it makes it very difficult for many people to understand, due to its reliance on [[complex number]]s. In general, wave-like behavior can either be described by a second-order equation involving normal scalar variables (as we've been doing), or it can be described by a first-order equation involving complex numbers, exemplified by the Schrödinger equation.
 
 In the first-order version, you have two variables for every one variable in the second-order one --- we'll see later that this fact allows us to use only four variables to represent an electron using a second-order wave equation, whereas the standard first-order Dirac equation requires eight. The general intuition is that a first-order wave equation involves motion as rotation among its complex variables, in addition to motion through space, whereas the second-order equation just has motion through space.
 

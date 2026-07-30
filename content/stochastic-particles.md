@@ -6,7 +6,7 @@ Wave equations provide such a natural explanation of so many physical phenomena,
 
 The obvious solution to this problem is to have some kind of discrete particle that cannot spread out, and remains localized in a specific point in space at any given point in time. In this context, the fundamental wave-particle duality in quantum physics suddenly starts to look like an essential _feature_ of the system, instead of some kind of paradoxical bug that nature threw at us for no good reason.
 
-The basic [[waves|wave]] equation represents a fundamental interaction between **space** (the spatial gradient, i.e., the _momentum_ operator in the [[Hamiltonian]]) and **time** (acceleration within a single grid element, i.e., the Hamiltonian _energy_ operator). In this context, consistent with [[special relativity]], a massive particle lives strictly in the time component. This can be seen in the [[Klein-Gordon]] equation:
+The basic [[wave]] equation represents a fundamental interaction between **space** (the spatial gradient, i.e., the _momentum_ operator in the [[Hamiltonian]]) and **time** (acceleration within a single grid element, i.e., the Hamiltonian _energy_ operator). In this context, consistent with [[special relativity]], a massive particle lives strictly in the time component. This can be seen in the [[Klein-Gordon]] equation:
 
 {id="eq_kg" title="Klein-Gordon equation"}
 $$
@@ -20,6 +20,20 @@ An obvious problem with this notion of something being contained entirely within
 The only way to overcome those difficulties is to use **stochastic** discrete jumps, such that, on longer time averages, the timing and spatial distribution of such jumps smooths out into a continuous, isotrophic distribution. Thus, contrary to Einstein's oft-cited objection that "God does not play dice with the universe", in fact it seems that an essential form of randomness is _necessary_ for discrete particles to move in a physically plausible manner.
 
 Furthermore, although the continuum limit is mathematically approachable through the tools of calculus, it is problematic from a physics perspective due to the nearly-infinite field strengths (and thus energies) that would be present in the immediate vicinity of a charged particle. This _ultraviolet catastrophe_ is a recurring theme throughout the [[history]] of quantum physics, and it is nicely resolved through the use of the discrete cubic lattice of the CA framework.
+
+## Quantum cellular automata and random walks
+
+There is a growing literature on quantum cellular automata (QCA) and the quantum random walk (QW) model, going back to the influential papers by [[@^Feynman82]], [[@^AharonovDavidovichZagury93]], and [[@^Bialynicki-Birula94]]. This approach has become somewhat more active recently due to the practical application of these models for designing quantum algorithms ([[@ChildsCleveDeottoEtAl03]]; [[@ChiribellaDArianoPerinotti11]]; [[@DAriano17]]; [[@Kempe09]]). Although this work shares many essential properties in common with the present approach, it is not directly applicable, due to some differences in basic assumptions.
+
+The central idea behind the random walk model proposed originally by [[@^AharonovDavidovichZagury93]] is that a shift operator that translates the quantum state in either the left or right direction along a discrete 1D lattice can be driven by a quantum measurement process on a _different_ element of the quantum state (e.g., the spin), which thus would produce a random sample according to the usual probabilistic quantum theory. This "internal" source of randomness will thus produce an emergent random walk dynamic as the state evolves (translates) over time, in the same way that thermal noise produces Brownian random walk motion as originally analyzed by Einstein.
+
+The results from these analyses show that standard wave functions such as the [[Dirac]], [[Maxwell]] and [[Weyl]] functions emerge from these random walk processes. A closely related analysis in 3D by [[@^Bialynicki-Birula94]] showed the emergence of the Weyl and Maxwell wave functions in the context of a cellular automaton update rule with _unitary_ update rules.
+
+The basic intuition is that these unitary update rules cause the propagation of a wave-like pattern at the speed of light (one unit cell per unit time), and if multiple internal cell states are present, this propagation can also include the [[spin]] property where the state rotates through these internal states as it also propagates. This is the essential feature of the Weyl wave functions, which describe a "pure spin" particle such as a massless [[neutrino]] that travels at the speed of light while spinning in one fixed helical rotation.
+
+Critically, these approaches do _not_ provide a model of a discrete particle moving with graded momentum (velocities) in an isotrophic manner along a cubic grid, which is what we develop in [[stochastic particles]]. That work builds on the approach originated by [[@Nelson66]] in analyzing single-particle Brownian motion, using equations of motion initially developed by [[@^Sciarretta18]].
+
+## todo
 
 The seminal work in analyzing stochastic discrete particle motion within the context of quantum physics was done by [[@^Nelson66]], who showed that a form of stochastic discrete particle motion actually results in the [[Schrodinger]] wave function in the continuous time-average limit. Interestingly, this work builds on the original work by Einstein on Brownian random-walk motion, back in 1905. Subsequent work has developed these ideas in multiple ways ([[@Cufaro-PetroniVigier83]]; [[@CufaroPetroniVigier79]]; [[@Ord96]]; [[@^Sciarretta18]]; [[@^Sciarretta21]] and others reviewed therein).
 
@@ -135,6 +149,41 @@ Key points:
 * coupling to surrounding wave is directly via drive from the central time-like oscillator, which provides the driving input to the field in its neighborhood.
 
 * An acceleration kick just bumps the phase? doesn't capture the conservation dynamics among the SHOs.
+
+Fundamental problem with localist particle driving the surrounding field:
+
+* driven wave amplitude falloff is *always* 1/r, regardless of time constant!
+* this sharply peaked wave field then gets very distorted when the particle makes its quantum jumps.
+* if the surrounding field is supposed to be an antenna, this self-turbulence is going to create sharp high-frequency discontinuities.
+
+Basically, the quantum jumps are the problem!  But they are inevitable. any graded, deterministic movement is going to be subject to the aliasing problem, or is going to include some amount of randomness. There is no advantage to some more complex kind of randomness.  See particle_graded_move.goal for experiment that demonstrates this (to my satisfaction).
+
+Another alternative is to somehow propagate the driver in a more distributed fashion, so the local landscape is flatter.
+
+The real problem is that there is a major disconnection between the initial "wave packet" that corresponds to what the matter wave *should* look like, and what a point-particle locally driving the wave field actually produces. The spatial wavelength doesn't look anything like the wave packet. It is just a pointwise oscillating blob with sharp 1/r falloff.
+
+This is the fundamental back-reaction problem from the particle onto the field. it is completely unsolved ([[@Rohrlich00]]; [[@Rohrlich99]]; [[@Rohrlich97]]; [[@Baez20]]). whereas the SHO provides a very nice solution for the particle dynamics itself, I don't have any real plausible guidance here.
+
+Key point: if self-field from particle is perfectly symmetric, and it is the _gradient_ of the field that drives forces, then the self-field problem can disappear! Just make it sufficiently smooth, and there is no problem!  Only another particle, which is some spatially asymmetric location away (the only spatially symmetric location is the self-location), can then cause force interactions.
+
+Of course, the two slit example shows self-interactions, but here the self field "comes back" to interfere.. Normally it always just radiates _away_ (why exactly? key point!)
+
+* if we have SHO field, how is it different from [[QED]]?  could we just have some kind of wave dynamic operating over the SHOs?  what distinguishes the SHOs from the other wave variables? need to think outside the box a bit about this parcellation into particles vs. waves -- is there some kind of more synthetic model there that I'm not seeing?
+
+* first target should be the neutrino! not the electron! make a neutrino as a stochastic propagating SHO guy! why is it going at the speed of light?  Why is its phase dynamic set like that?  How does it 
+
+Unscrambling the omlette of epistemological vs ontological is very tricky!  also the point guy will be scrambling around spreading its point energy all over the place -- don't want to include any memory process here (markovian) beyond the basic memory of the velocity via the SHO's.
+
+How about a diffusion process that communicates the particle driver signal with only weak falloff proximally? basically a gaussian with a nice flat top?
+
+so far, using an exponential factor with a max tends to produce anisotrophic behavior.
+
+using laplacian form produces 1/r.  maybe just need a stronger recovery term, but it could blow up?
+
+
+* so there isn't any randomness!?
+
+
 
 Weyl wave couples spin with direction as a helical thing.
 

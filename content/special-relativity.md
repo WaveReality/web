@@ -4,7 +4,7 @@ bibfile = "mechphys.json"
 
 **Special relativity** is the first version of Einstein's famous relativity theories, published in 1904. Interestingly, most of the mathematical principles and phenomena were already well established prior to this publication. What the theory added was a comprehensive new framework for understanding these otherwise disparate phenomena.
 
-Apparently Einstein was motivated to come up with special relativity in part by thinking about what it would be like to catch up with a beam of light. Turns out you can't: light always moves at the same speed away from you, no matter how fast you are going. Thus, the [[waves]] described by the basic wave equation are always speeding along at the same speed, and are relativistic in a fairly straightforward but also somewhat uninteresting way: they just cruise around at the same speed of light, and not much else can be said for them.
+Apparently Einstein was motivated to come up with special relativity in part by thinking about what it would be like to catch up with a beam of light. Turns out you can't: light always moves at the same speed away from you, no matter how fast you are going. Thus, the [[wave]]s described by the basic wave equation are always speeding along at the same speed, and are relativistic in a fairly straightforward but also somewhat uninteresting way: they just cruise around at the same speed of light, and not much else can be said for them.
 
 In contrast, things that have a non-zero rest mass are subject to three major effects as their velocities increase ([[#figure_contract]], [[#figure_lorentz]]; all of these are as measured relative to a static observer watching such a thing whiz by --- in our model, we can conveniently use the underlying grid reference frame):
 
