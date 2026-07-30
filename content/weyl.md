@@ -58,5 +58,5 @@ Thus, the conclusion from all these considerations is that:
 
 > **spin 1/2 is fundamentally a particle-level phenomenon** 
 
-which must be captured by the [[stochastic particles]] model.
+which must be captured by the [[stochastic motion]] model.
 

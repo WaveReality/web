@@ -205,7 +205,7 @@ $$
 E^2 = \frac{c^6 m_0^2}{c^2 - v^2}
 $$
 
-The $c^6$ in the numerator is particularly striking, in that one rarely sees such a large power in a fundamental equation such as this. If the "basic" power for a squared equation such as this is $c^2$, then it seems that there are 3 such elements coming together in this energy expression. Does that perhaps have something to do with the 3 spatial dimensions? Interestingly, in [[stochastic particles]], we create a system of 3 simple [[harmonic oscillators]] to encode the momentum of a discrete particle, one for each spatial dimension, so perhaps this is in fact represented in the total energy of the particle.
+The $c^6$ in the numerator is particularly striking, in that one rarely sees such a large power in a fundamental equation such as this. If the "basic" power for a squared equation such as this is $c^2$, then it seems that there are 3 such elements coming together in this energy expression. Does that perhaps have something to do with the 3 spatial dimensions? Interestingly, in [[stochastic motion]], we create a system of 3 simple [[harmonic oscillators]] to encode the momentum of a discrete particle, one for each spatial dimension, so perhaps this is in fact represented in the total energy of the particle.
 
 The denominator is also another way of understanding the Lorentz factor, where as the velocity $v$ increases toward $c$, this denominator gets smaller, and thus the $E^2$ factor grows toward infinity.
 

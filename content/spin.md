@@ -14,7 +14,7 @@ In general, the spin of something like an electron is thought to be a strongly [
 
 ## Spin as particle momentum and mass mechanism
 
-Under the current [[stochastic particles]] plans, the phenomenon of spin reflects an internal dynamic process within discrete particles, operating over internal state values (similar to the spinors), that is responsible for the following particle properties:
+Under the current [[stochastic motion]] plans, the phenomenon of spin reflects an internal dynamic process within discrete particles, operating over internal state values (similar to the spinors), that is responsible for the following particle properties:
 
 * Maintaining the particle's momentum value across time and space.
 * Causing a massive particle to have a resting mass / energy.

@@ -40,7 +40,7 @@ This page provides an accounting of all the major phenomenology of (quantum) phy
 * Strictly quantized, conserved charge.
 * Conserved fermion number.
 * Scattering, scattering, scattering! how do waves ever scatter!? Cross sections appear pointlike?
-* Fundamental frequency / momentum relationship: $\lambda = \frac{h}{p}$, $p = \frac{h}{\lambda}$ -- this is the absolute essence of QM, reflected in wave equations, but what about discrete [[stochastic particles]]?
+* Fundamental frequency / momentum relationship: $\lambda = \frac{h}{p}$, $p = \frac{h}{\lambda}$ -- this is the absolute essence of QM, reflected in wave equations, but what about discrete [[stochastic motion]]?
 * Photoelectric effect? maybe more about atoms than EM? maybe not though? [[Semiclassical]] models can get pretty far --- what are the remaining phenomena that we need to deal with? photon-based entanglement maybe the most strong?
 * Particles transform into other particles! what are the rules that govern creation and destruction of particles?? this basic fact greatly complicates any particle model --- would have been much simpler to think of particles as hard little permanent things --- but they are only partially that. Other times they are rather fluid..
 * Furthermore, many particles are strictly temporary and unstable --- what makes them unstable?

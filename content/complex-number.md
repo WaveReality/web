@@ -2,8 +2,8 @@
 bibfile = "mechphys.json"
 +++
 
-{id="figure_complex" style="height:20em"}
-![Complex numbers are just a way of representing two real values with one number, where these two values are aligned along two separate orthogonal dimensions. The imaginary number $i$, where $i^2 = -1$, is what keeps these two values orthogonal --- the first value $a$ is along the real axis, and the second value $b$ is along the imaginary axis. The complex conjugate, $c^*$, is simply subtracting the imaginary part instead of adding it (i.e., it represents a reflection along the imaginary dimension). Multiplying $c c^*$ gives the squared magnitude of the vector, which is a single real-valued scalar number. It is the (squared) length of the hypotenuse of the vector.](media/fig_complex_numbers.png)
+{id="figure_complex" style="height:30em"}
+![Complex numbers are just a way of representing two real values with one number, where these two values are aligned along two separate orthogonal dimensions. The imaginary number $i$, where $i^2 = -1$, is what keeps these two values orthogonal --- the first value $a$ is along the real axis, and the second value $b$ is along the imaginary axis. The complex conjugate, $c^*$, is simply subtracting the imaginary part instead of adding it (i.e., it represents a reflection along the imaginary dimension). Multiplying $c c^*$ gives the squared magnitude of the vector, which is a single real-valued scalar number. It is the (squared) length of the hypotenuse of the vector. In the typical oscillatory use of complex numbers, they represent rotation around the complex plane, constrained to the (unit) circle as shown.](media/fig_complex_numbers.png)
 
 The symbol $\phi$ (another variant of the Greek symbol "phi", like $\varphi$) is used to represent a complex-valued state variable:
 

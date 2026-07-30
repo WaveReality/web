@@ -2,18 +2,23 @@
 bibfile = "mechphys.json"
 +++
 
-The **simple harmonic oscillator** (SHO) captures the core oscillatory behavior of [[wave]]s, without any spatial dimensions to bother with. It can be seen as the 0-dimensional version of a wave, where the force that drives the oscillation comes not from neighbors, but from the position (height) of the wave itself. As such, it provides a potentially interesting role in the mechanics of [[stochastic particles]] because it can be entirely localized to one discrete grid cell within the [[cellular automaton]] framework. Thus, a particle in this view can be considered to be a simple harmonic oscillator that periodically jumps between cells.
+The **simple harmonic oscillator** (SHO) captures the core oscillatory behavior of [[wave]]s, without any spatial dimensions to bother with. It can be seen as the 0-dimensional version of a wave, where the force that drives the oscillation comes not from neighbors, but from the position (height) of the wave itself.
 
-Because particles need to move in the [[spinfield]] model, the version with [[#complex numbers]] is more portable, because it is much more robust to drive at different frequencies, retaining a standard normalized amplitude regardless.
+As such, it provides a potentially interesting role in the mechanics of [[stochastic motion]] because it can be entirely localized to one discrete grid cell within the [[cellular automaton]] framework. Thus, a particle in this view can be considered to be a simple harmonic oscillator that periodically jumps between cells. 
 
-The basic equations from [[wave]]s for the SHO are:
+This discrete jumping creates many potential issues in interaction with a radiative wave field, which is solved in the [[spinfield]] model by propagating the discrete particle properties to surrounding locations. The version with [[#complex numbers]] developed below is more robust and appropriate for this framework for a number of reasons, but we start with the second-order SHO which is consistent with the second-order [[wave]] equations, and provides a clear macroscopic physical model.
+
+{id="figure_sho" style="height:20em"}
+![The mass-on-a-spring physical model of a simple harmonic oscillator, where the deviation of the mass from the neutral point of the spring creates a restoring force that drives the mass back toward the neutral point. Figure by [Svjo on wikimedia](https://commons.wikimedia.org/wiki/File:Mass-spring-system.png)](media/fig_harmonic_oscillator_mass_spring.png)
+
+As is intuitively clear from the mass-on-a-spring physical model of a SHO ([[#figure_sho]]), the restoring force is directly proportional to the height of the weight:
 
 {id="eq_force" title="restoring force"}
 $$
 f = -c^2 y^t
 $$
 
-where $c$ is the basic rate update constant, analogous to the speed of light in waves, which determines the effective strength of the restoring force, and thus the oscillation rate. The _t_ suffix indicates the time step (only for variables that require integration over time). Everything else from this point onward is the same, in the basic Newtonian physics framework of acceleration, velocity, and position:
+where $c$ is the basic rate update constant, analogous to the speed of light in waves, which determines the effective strength of the restoring force, and thus the oscillation rate. The _t_ suffix indicates the time step (only for variables that require integration over time). Everything else from this point onward is the same as for the wave equations, in the basic Newtonian physics framework of acceleration, velocity, and position:
 
 {id="eq_a" title="acceleration"}
 $$
@@ -51,6 +56,18 @@ $$
 \lambda = \frac{1}{f} = \frac{2 \pi \sqrt{m}}{c}
 $$
 
+As with the wave equation, the kinetic and potential energy of the system are defined as follows:
+
+{id="eq_kinetic" title="kinetic energy"}
+$$
+E_k = \frac{1}{2} m v^2 = \frac{1}{2 c^2} v^2
+$$
+
+{id="eq_potential" title="potential energy"}
+$$
+E_p = \frac{1}{2} \left( \left( y^t \right)^2 \right)
+$$
+
 The following simulation shows the behavior of this harmonic oscillator.
 
 {id="sim_sho" title="Simple harmonic oscillator" collapsed="true"}
@@ -78,8 +95,8 @@ func valUpdate() {
     cStr = fmt.Sprintf("c: %4.1f", c)
     ipStr = fmt.Sprintf("start: %4.1f", ip)
     csq = c * c
-    lambda := (2 * math.Pi * math.Sqrt(mass)) / c
-    freq := 1.0 / lambda
+    lambda = (2 * math.Pi * math.Sqrt(mass)) / c
+    freq = 1.0 / lambda
     ##
     mf := array(mass)
     cf := array(csq)
@@ -178,15 +195,27 @@ You can see that the overall behavior is independent of the amplitude (given by 
 
 ## Damping
 
-Damping in the SHO happens via a negative factor applied to the _velocity_ term.
+Damping in the SHO happens via a negative factor applied to the _velocity_ term:
+
+{id="eq_damping" title="force with damping"}
+$$
+f = -c^2 y^t - r v^t
+$$
+
+where _r_ is a damping constant applied to the velocity $v^t$.
 
 ## Driving
 
-Driving the SHO typically happens via a sine function added to the force. This need for a sine function introduces a significant implausibility for a fundamental physical process. For this reason, the version with complex numbers, described next, is more well-suited for the [[spinfield]] functionality.
+Driving the SHO typically happens via a sine function added to the force. This need for a sine function introduces a significant implausibility for a fundamental physical process. For this reason, the version with complex numbers, described next, is more appropriate for the [[spinfield]] functionality, because it can be driven with a simple linear factor.
 
 ## Complex numbers
 
-As we can see in many other cases (e.g., the [[Schrodinger]] wave function vs [[Klein-Gordon]], and the 1st order vs 2nd order versions of the [[Dirac]] equation), the two elements of a [[complex number]] can be used to drive an oscillator, using a first-order equation instead of a second-order equation.
+{id="figure_cvho" style="height:30em"}
+![Complex-valued simple harmonic oscillator, which rotates around the complex plane by the $\omega$ factor at each discrete time increment.](media/fig_complex_harmonic_oscillator.png)
+
+As we can see in many other cases (e.g., the [[Schrodinger]] wave function vs [[Klein-Gordon]], and the 1st order vs 2nd order versions of the [[Dirac]] equation), the two elements of a [[complex number]] can be used to drive an oscillator, using a first-order equation instead of a second-order equation. This equation effectively just rotates a point around the complex plane, as shown in [[#figure_cvho]]. We refer to this as a _complex-valued harmonic oscillator_ (_CVHO_), which is different than a _complex harmonic oscillator_, which is a harmonic oscillator with more complex dynamics (e.g., damping, driving).
+
+If you think of the real component as the position in the second-order SHO, then the imaginary component acts like the velocity, in being always 90 degrees out of phase. However, unlike the velocity, this imaginary component is of the same magnitude as the real component, and the two retain a hypotenuse (radius) of 1 as they rotate around the circle, which is what makes this system so simple and robust.
 
 {id="eq_csho" title="complex-valued simple harmonic oscillator"}
 $$
@@ -195,7 +224,9 @@ $$
 
 where $z = a + ib$ is a complex number, and $\omega$ is the effective angular frequency, determining how quickly the two components _a_ and _b_ rotate into each other.
 
-Expanding this with the complex number, and separating the terms into the real and imaginary parts, results in:
+To drive this system, or to damp it, you simply increment or decrement the $\omega$ factor, and it will always respond appropriately.
+
+Expanding [[#eq_csho]] with the complex number, and separating the terms into the real and imaginary parts, results in two simple update equations:
 
 $$
 \frac{d (a + ib)}{dt} = i \omega (a+ib)
@@ -228,6 +259,7 @@ ip := 1.0
 c := 0.2
 mass := 0.5
 csq := c * c
+lambda := (2 * math.Pi * math.Sqrt(mass)) / c
 
 var massStr, cStr, ipStr, msgStr string
 
@@ -241,6 +273,7 @@ func valUpdate() {
     massStr = fmt.Sprintf("mass: %4.1f", mass)
     cStr = fmt.Sprintf("c: %4.1f", c)
     ipStr = fmt.Sprintf("start: %4.1f", ip)
+    lambda = (2 * math.Pi * math.Sqrt(mass)) / c
     ##
     omega := array(c) / sqrt(array(mass))
     aa := array(ip)
@@ -259,7 +292,7 @@ func valUpdate() {
         sb[t] = pb
         ##
     }
-    msgStr = fmt.Sprintf("<b>Total E: %7.3g ω: %7.3g</b>", tE.Float(99), omega.Float(0))
+    msgStr = fmt.Sprintf("<b>Total E: %7.3g ω: %7.3g λ: %7.3g </b>", tE.Float(99), omega.Float(0), lambda)
 }
 
 valUpdate()
@@ -315,9 +348,11 @@ addSlider(&cStr, &c, 0.1, 1.0)
 addSlider(&ipStr, &ip, 0.1, 2.0)
 ```
 
-You can see that the behavior of the oscillation is identical to the physical harmonic oscillator. However, the notion of potential and kinetic energy is not as natural in this system, because there are just these two essentially symmetric values that rotate into each other.
+You can see that the behavior of the oscillation is identical to the physical harmonic oscillator. However, the notion of potential and kinetic energy is not as natural in this system, because there are just these two essentially symmetric values that rotate into each other. Instead, it makes more sense to think in terms of the [[special relativity|relativistic]] particle energy represented by the oscillator, as derived next.
 
-Furthermore, we can use the fundamental _Planck relation_ to derive an angular frequency term that would produce the **Compton wavelength** for a particle of a given rest mass:
+### Planck-like particle energy
+
+We can use the fundamental _Planck relation_ to derive an angular frequency term that would produce the **Compton wavelength** for a particle of a given rest mass:
 
 {id="eq_planck" title="Planck relation"}
 $$
@@ -368,8 +403,6 @@ $$
 
 Thus, unlike the mass in the physical harmonic oscillator, the rest mass of a particle has a direct proportional influence on the rate of oscillation, rather than an inverse relationship. Higher frequencies are associated with greater energy.
 
-TODO: conserved charge from 2 coupled complex-valued oscillators.
-
 ## Charge from phase
 
 As explored in the [[complex KG]] (Klein-Gordon) system, one can compute a stable scalar value as a function of the phase relationships between oscillators, in this case two complex-valued harmonic oscillators, numbered with subscripts 1 and 2, each with _a_ and _b_ components. The resulting charge value from this system is computed as:
@@ -380,6 +413,8 @@ $$
 $$
 
 where _e_ is the value of the unitary (electron) charge, and we assume that the complex values _a_ and _b_ are normalized with unit radius, which results in the maximum charge value for 90 degrees out of phase being 1.
+
+This simulation shows the conserved charge value generated from these phase relationships, and also uses the $\omega_0$ factor reflecting the rest mass energy of a particle.
 
 {id="sim_cc" title="Complex charge" collapsed="true"}
 ```Goal
@@ -411,7 +446,7 @@ func valUpdate() {
     // heOver2mCSq = (hbar * e) / (2.0 * mass * csq)
     heOver2mCSq = e
     phaseStr = fmt.Sprintf("phase off: %4.0f", phase)
-    massStr = fmt.Sprintf("mass: %4.1f", mass)
+    massStr = fmt.Sprintf("m_0: %4.1f", mass)
     hbarStr = fmt.Sprintf("hbar: %4.1f", hbar)
     ai2 := 0.0
     bi2 := 0.0
@@ -510,12 +545,9 @@ addSlider(&massStr, &mass, 0.1, 1.0)
 addSlider(&hbarStr, &hbar, 0.1, 1.0)
 ```
 
-The key points: 
+See [[spinfield]] for the application of all of these properties of the complex-valued harmonic oscillator to model particles.
 
-* using complex numbers allows oscillation to be copied across cells. the relationship between the two numbers (analogous to the pos and vel of SHO) automatically captures the exact point in the oscillation just by having these two numbers.
+## Quantum harmonic oscillator
 
-* this is the origin of spin in particles!
-
-* the [[zero point]] state is interesting: what does amplitude mean? doesn't change frequency, or does it?? Phase is everything?  what does the particle drive? what does this entrain in the complex wave function?
-
+The quantum harmonic oscillator (QHO) is a well-studied entity (see [wikipedia](https://en.wikipedia.org/wiki/Quantum_harmonic_oscillator)) that might otherwise be confused with our use of the complex-valued harmonic oscillator in the [spinfield] quantum particle model. The QHO uses the [[Schrodinger]] wave function to model the behavior of the mass-on-a-spring system ([[#figure_sho]]) instead of using Newtonian physics. This results in much more complex behavior than the very simple complex-valued harmonic oscillator used here.
 

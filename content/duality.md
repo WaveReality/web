@@ -18,7 +18,7 @@ The purely particle picture of an electron constantly spewing baseball-like phot
 
 Instead, it is far more straightforward to use [[Maxwell]]'s EM wave equations to model the force field interactions among electrons. However, the ability of a discrete localized electron to "sense" such a force field as a distributed wave remains problematic: EM waves that influence electrons are widely distributed things, and small discrete samples at one point of a wave would not provide the proper net influence that the physical laws require. Thus, it works much better for the electron to also have its own wave field that is directly coupled with the EM wave field.
 
-In effect, the electron's wave field acts like a kind of antenna that senses and responds to the EM forces, and then conveys the results to shape the unfolding trajectory of the discrete particle through space and time, as captured in the pilot-wave model. See [[stochastic particles]] for more details.
+In effect, the electron's wave field acts like a kind of antenna that senses and responds to the EM forces, and then conveys the results to shape the unfolding trajectory of the discrete particle through space and time, as captured in the pilot-wave model. See [[stochastic motion]] for more details.
 
 One approach is to implement a wave-particle model through coupled [[Dirac]] wave functions for the electron and [[Maxwell]]'s equations for EM, with the Dirac wave providing the guiding [[pilot-wave]] for a discrete electron particle localized within a cubic lattice grid.
 

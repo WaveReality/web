@@ -169,7 +169,7 @@ Interestingly, consider what happens when you set the rest mass of our particle 
 
 One potential challenge with the KG equation is that this rest mass parameter must be "baked in" to the wave function equations. What if we are simulating different types of particles, beyond just electrons? For example, the [[leptons]] class includes the much more massive _muon_ and _tau_ particles, which are otherwise identical to the electron. It seems rather inelegant to have to have different wave functions for each of these different types of particles, each with their own rest mass parameter.
 
-Indeed, the [[stochastic particles]] framework attempts to solve this problem by associating the rest mass with the internal dynamics of the particle: rest mass is just the energy associated with the internal gyrations of particles when they are not otherwise moving anywhere. This provides a much more elegant and natural explanation for the rest mass, and suggests that the [[matter waves]] approach may not be correct.
+Indeed, the [[stochastic motion]] framework attempts to solve this problem by associating the rest mass with the internal dynamics of the particle: rest mass is just the energy associated with the internal gyrations of particles when they are not otherwise moving anywhere. This provides a much more elegant and natural explanation for the rest mass, and suggests that the [[matter waves]] approach may not be correct.
 
 ## Smooth, continuous motion
 

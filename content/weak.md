@@ -2,7 +2,7 @@
 bibfile = "mechphys.json"
 +++
 
-The weak force seems to be intimately tied up with the internal dynamics of [[stochastic particles]], in relationship with the [[spin]] property, for example in the case of the [[neutrino]], which only interacts via the weak force, and can be thought of as a "pure spin" particle.
+The weak force seems to be intimately tied up with the internal dynamics of [[stochastic motion]], in relationship with the [[spin]] property, for example in the case of the [[neutrino]], which only interacts via the weak force, and can be thought of as a "pure spin" particle.
 
 It is also intimately connected with the _flavors_ or _generations_ of particles, e.g., muon and tau [[leptons]] in addition to the [[electron]], and is what allows the muon or tau to decay into an electron.
 

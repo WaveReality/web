@@ -31,7 +31,7 @@ The results from these analyses show that standard wave functions such as the [[
 
 The basic intuition is that these unitary update rules cause the propagation of a wave-like pattern at the speed of light (one unit cell per unit time), and if multiple internal cell states are present, this propagation can also include the [[spin]] property where the state rotates through these internal states as it also propagates. This is the essential feature of the Weyl wave functions, which describe a "pure spin" particle such as a massless [[neutrino]] that travels at the speed of light while spinning in one fixed helical rotation.
 
-Critically, these approaches do _not_ provide a model of a discrete particle moving with graded momentum (velocities) in an isotrophic manner along a cubic grid, which is what we develop in [[stochastic particles]]. That work builds on the approach originated by [[@Nelson66]] in analyzing single-particle Brownian motion, using equations of motion initially developed by [[@^Sciarretta18]].
+Critically, these approaches do _not_ provide a model of a discrete particle moving with graded momentum (velocities) in an isotrophic manner along a cubic grid, which is what we develop in [[stochastic motion]]. That work builds on the approach originated by [[@Nelson66]] in analyzing single-particle Brownian motion, using equations of motion initially developed by [[@^Sciarretta18]].
 
 ## todo
 

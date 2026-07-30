@@ -10,6 +10,6 @@ The need for configuration space at a mathematically deep level arises because t
 
 The [[pilot-wave]] approach has been (perhaps unfairly) criticized for using configuration space, because it posits that the wave function is actually a "real" thing, thus exposing the implausibility of this otherwise purely [[tools vs models|calculational tool]]. See [[@NorsenMarianOriols15]] for an analysis of the contributions of configuration space to the pilot-wave results. They concluded that indeed the configuration space contains a large amount of "redundant" information, and that even the simplest approximation for the inter-particle interaction terms does a reasonable (yet imperfect) job of capturing the behavior of the full configuration-space model. Exploration of higher-order terms in this approximation are ongoing ([[@Norsen22]]).
 
-If the underlying dynamics of the system are _nonlinear_, and in particular involve interactions between [[stochastic particles]] and wave functions, then it is possible that these nonlinear interactions end up producing all of the relevant dynamics that are otherwise captured via the configuration space calculational tool. This is the approach taken here.
+If the underlying dynamics of the system are _nonlinear_, and in particular involve interactions between [[stochastic motion]] and wave functions, then it is possible that these nonlinear interactions end up producing all of the relevant dynamics that are otherwise captured via the configuration space calculational tool. This is the approach taken here.
 
 
