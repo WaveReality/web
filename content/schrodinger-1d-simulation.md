@@ -10,6 +10,7 @@ wavesim.Embed(b,
 	func(sim *wavesim.Sim) { // config
         sim.Config.GPU = true
 		sim.Params.C = 0.5
+		sim.Params.Hbar = 0.5
 		sim.Params.ThreeD.SetBool(false)
 		sim.Config.Equation = wavesim.Schrodinger
 		sim.Config.Size.Set(500, 1, 1)
