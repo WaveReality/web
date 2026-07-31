@@ -1,12 +1,13 @@
 +++
+Categories = ["Standard Model"]
 bibfile = "mechphys.json"
 +++
 
 **Spin** is a uniquely quantum property that lies at the heart of the underlying mechanisms implemented in the current model. There are two known values of spin, 1 and +/- 1/2:
 
-* [[Bosons]] are nominally the particles that carry force fields, and they have a spin of 1, with the [[photon]] being the canonical example. A spin of 1 is effectively like a spin of 0: in a very abstract sense, they complete a full revolution every "step". It is unclear whether a boson is actually a thing or not under the current model, as the [[photon]] may not really exist, and the weak and strong charge carriers may be something else entirely.
+* [[Boson]]s are nominally the particles that carry force fields, and they have a spin of 1, with the [[photon]] being the canonical example. A spin of 1 is effectively like a spin of 0: in a very abstract sense, they complete a full revolution every "step". It is unclear whether a boson is actually a thing or not under the current model, as the [[photon]] may not really exist, and the weak and strong charge carriers may be something else entirely.
 
-* [[Fermions]] are massive particles like [[electron]]s and [[quark]]s, with a spin of +/- 1/2. Interestingly, the mysterious [[neutrino]] can be thought of as a particle that _only_ has spin and nothing else (no charge) -- it also has a spin of 1/2, but the "matter" neutrino is _always_ spinning in the left-hand direction, while the "antimatter" anti-neutrino spins in the left-hand direction. Although they are thought to have mass, it is possible that neutrinos have these fixed spin directions because they move at the speed of light in a kind of fixed helical pattern in relation to their spin, and they don't have a proper mass-like momentum property after all.
+* [[Fermion]]s are massive particles like [[electron]]s and [[quark]]s, with a spin of +/- 1/2. Interestingly, the mysterious [[neutrino]] can be thought of as a particle that _only_ has spin and nothing else (no charge) -- it also has a spin of 1/2, but the "matter" neutrino is _always_ spinning in the left-hand direction, while the "antimatter" anti-neutrino spins in the left-hand direction. Although they are thought to have mass, it is possible that neutrinos have these fixed spin directions because they move at the speed of light in a kind of fixed helical pattern in relation to their spin, and they don't have a proper mass-like momentum property after all.
 
 The [[Dirac]] equation introduced "Dirac spinors" as a mathematical formulation of spin for describing the spin 1/2 property of fermions.
 

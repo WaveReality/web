@@ -1,4 +1,5 @@
 +++
+Categories = ["Standard Model"]
 bibfile = "mechphys.json"
 +++
 
@@ -361,7 +362,7 @@ The net result of this is that _a wave packet that is initially localized will i
 ## The Discrete 3D Laplacian
 
 {id="figure_cubes" style="height:40em"}
-![The 26 neighbors of a given cell in 3D space, each of which is weighted differently according to its distance --- faces are 1 unit away, edges are $\sqrt{2}$ away, and corners are $\sqrt{3}$ away.](media/fig_space_cubes_fec_lapl.png) 
+![The 26 neighbors of a given cell in 3D space, each of which is weighted differently according to its distance, _d_: Faces $d^2 = 1$, edges $d^2 = 2$, corners $d^2 = 3$.](media/fig_space_cubes_fec_lapl.png) 
 
 Now we consider how to compute the 3D Laplacian in the discrete space and time CA framework. To start, we only consider the 6 faces adjacent to the central point ([[#figure_cubes]]), which are relatively easy because each pair of opposing faces can be treated just like a separate one-dimensional second-order derivative like we computed before, so we just have three times the number of terms as before:
 

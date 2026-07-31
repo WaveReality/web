@@ -1,5 +1,6 @@
 +++
-bibfile = "mechphys.json"
+Categories = ["Standard Model"]
+ibfile = "mechphys.json"
 +++
 
 Compared to the [[Hilbert space]] approach, the explicit use of the **Schrödinger wave equation** represents an increased level of commitment to the details involved in the dynamics of the wave updating, its frequency and phase characteristics, and how it spreads out over time. Schrödinger's wave equation captures basic non-relativistic Newtonian physics in a simple linear, first-order framework, and can be derived from a [[Hamiltonian]] representing the total energy of the system, which is strictly conserved over time. It captures the fundamental relationships between momentum and wave frequency at the heart of quantum physics, as discussed in [[Klein-Gordon]].

@@ -1,4 +1,5 @@
 +++
+Categories = ["Spinfield Model"]
 bibfile = "mechphys.json"
 +++
 

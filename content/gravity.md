@@ -1,3 +1,8 @@
++++
+Categories = ["Standard Model"]
+bibfile = "mechphys.json"
++++
+
 # Gravitation
 
 The problem of reconciling quantum mechanics and gravitation as described by Einstein's general theory of relativity is currently unsolved, and introduces many obstacles for the standard QM interpretations, which do not even admit to a well-specified source of gravitational mass / energy outside of the moments of wave function collapse.

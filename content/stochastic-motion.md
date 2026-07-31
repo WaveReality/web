@@ -1,4 +1,5 @@
 +++
+Categories = ["Spinfield Model"]
 bibfile = "mechphys.json"
 +++
 
@@ -82,7 +83,7 @@ Within this broad framework of discrete particles interacting via continuous wav
 
 * Multiparticle states are also an essential constraint on the system. The wave state variables must be shared across all particles of a given type (otherwise you're back in [[configuration space]]), but if they are holding important state for an individual particle, then how does that work when another particle's wave function gets close by? For example, if it is spinning the other way? Does that interfere with the spin of the other guy? This is also a good reason to keep the wave function less widely distributed, as should happen when the particle is the generator.
 
-* The particle zoo: muon and tau vs [[electron]]s, antiparticles, [[neutrinos]] are "pure spin" without any charge. All of this suggests that charge and spin are two separate factors that could potentially dissociate, but yet stick together. Neutrinos are always left-handed, and anti-neutrinos are right-handed: this is a key constraint on the nature of spin and mass. Charge gives rise to (lots of) mass, but spin does not (much)? Maybe just kinetic energy in spin? The spin model should definitely accommodate neutrinos. Also, they have muon and tau flavors. So overall, this all sounds like a factorizable dynamic system.
+* The particle zoo: muon and tau vs [[electron]]s, antiparticles, [[neutrino]]s are "pure spin" without any charge. All of this suggests that charge and spin are two separate factors that could potentially dissociate, but yet stick together. Neutrinos are always left-handed, and anti-neutrinos are right-handed: this is a key constraint on the nature of spin and mass. Charge gives rise to (lots of) mass, but spin does not (much)? Maybe just kinetic energy in spin? The spin model should definitely accommodate neutrinos. Also, they have muon and tau flavors. So overall, this all sounds like a factorizable dynamic system.
 
     The muon decays after an average lifetime of 2.2 millionths of a second into an electron, a neutrino, and an antineutrino. Ok, so the muon is somehow a regular electron plus these two additional neutrinos worth of spin? And that adds up to 200x the rest mass of the electron, and yet the neutrinos themselves are nearly massless! And all of this is tied up with the [[weak]] force, which must then be considered. Perhaps the short-range nature of this force plays a critical role in the localized stochastic dynamics. Also, the random nature of weak-mediated decay processes is broadly consistent with the true randomness required here.
 
