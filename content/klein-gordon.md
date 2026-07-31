@@ -181,6 +181,8 @@ In contrast, models with a discrete particle suffer from all manner of complexit
 
 Now we explore the above properties of the Klein-Gordon wave equation, to get a concrete sense of how it works, before turning to a more extended discussion of how the KG wave equation explains the stretchy properties of matter implied by the Lorentz transformation and special relativity.
 
+See [[KG 1D Simulation]] for the 1D version, and [[KG 3D Simulation]] for the 3D.
+
 ## Initial conditions
 
 Creating a moving wave packet that moves with a given velocity is a bit more complicated than for the simple wave equation, because we have more constraints to take into account.

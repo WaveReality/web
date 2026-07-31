@@ -136,3 +136,7 @@ For example, we can initialize the state with a localized wave packet (see [[mat
 
 In other words, the wave packet defines a kind of "cloud of probability" for finding a discrete particle within its midst. However, these probabilities have different meanings in different scenarios, and it is notoriously difficult to come up with a intuitively sensible interpretation of what these probability clouds mean (see [[Copenhagen]] for discussion).
 
+## Explorations
+
+See [[Schrodinger 1D Simulation]] and [[Schrdodinger 3D Simulation]].
+

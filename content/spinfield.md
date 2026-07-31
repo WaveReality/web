@@ -32,4 +32,9 @@ In effect, a particle thus appears as a distributed blob of phase offsets among 
 
 This distributed spin-up of phases also has qualitative similarities to the Higgs field in the [[standard model]], which is likewise closely associated with the [[weak]] dynamics. Therefore, all of these known weak / Higgs properties, which are also where the CP asymmetries arise (consistent with the basic asymmetry in integrating CVHO variables), provide the constraining data that the spinfield model must explain.
 
+## Source particle diffusion
+
+Standard diffusion equations in 3D result in a significant dissipation and dilution of the source signal across space, as they effectively take the average across all of the neighborhood states. As a new source signal spreads, it quickly gets averaged out with all the existing residual state values.
+
+One way to combat this is to also propagate a distance from the source signal, and then to preferentially use those states that are closest to the source. This leads to a rapid, preferential spread of the source signal.
 

@@ -4,7 +4,7 @@ go 1.25.6
 
 require (
 	cogentcore.org/core v0.3.39
-	github.com/WaveReality/waves v0.0.5
+	github.com/WaveReality/waves v0.0.6
 )
 
 require (
