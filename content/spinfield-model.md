@@ -1,9 +1,9 @@
 +++
-Categories = ["Spinfield Model"]
+Name = "Spinfield Model"
 bibfile = "mechphys.json"
 +++
 
-The **spinfield** model is based on a field of [[harmonic oscillator]] values using [[harmonic oscillator#complex numbers]] (i.e., a CVHO) to represent the [[spin]] and other associated properties of [[stochastic motion]] that drive and couple with a [[quantum wave]] field. It is a novel way of representing the same qualitative physical model provided by the [[pilot wave]] framework, in a way that functions within the discrete space and time constraints of a [[cellular automaton]] (CA).
+The **Spinfield Model** is based on a field of [[harmonic oscillator]] values using [[harmonic oscillator#complex numbers]] (i.e., a CVHO) to represent the [[spin]] and other associated properties of [[stochastic motion]] that drive and couple with a [[quantum wave]] field. It is a novel way of representing the same qualitative physical model provided by the [[pilot wave]] framework, in a way that functions within the discrete space and time constraints of a [[cellular automaton]] (CA).
 
 The core problem solved by this model is to make discrete, stochastic particle motion sufficiently smooth that the resulting coupled wave field can effectively communicate the impacts of other particles without being swamped by high-frequency oscillations emerging from the driving of the wave by the particle itself. This smoothing is accomplished by the discrete particle broadcasting its own parameters into the spin field, so that the entire neighborhood of cubes on the lattice is already prepared in advance of wherever the particle might move. 
 
@@ -38,4 +38,6 @@ This distributed spin-up of phases also has qualitative similarities to the Higg
 Standard diffusion equations in 3D result in a significant dissipation and dilution of the source signal across space, as they effectively take the average across all of the neighborhood states. As a new source signal spreads, it quickly gets averaged out with all the existing residual state values.
 
 One way to combat this is to also propagate a distance from the source signal, and then to preferentially use those states that are closest to the source. This leads to a rapid, preferential spread of the source signal.
+
+## Pages
 

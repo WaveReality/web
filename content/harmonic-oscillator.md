@@ -7,7 +7,7 @@ The **simple harmonic oscillator** (SHO) captures the core oscillatory behavior 
 
 As such, it provides a potentially interesting role in the mechanics of [[stochastic motion]] because it can be entirely localized to one discrete grid cell within the [[cellular automaton]] framework. Thus, a particle in this view can be considered to be a simple harmonic oscillator that periodically jumps between cells. 
 
-This discrete jumping creates many potential issues in interaction with a radiative wave field, which is solved in the [[spinfield]] model by propagating the discrete particle properties to surrounding locations. The version with [[#complex numbers]] developed below is more robust and appropriate for this framework for a number of reasons, but we start with the second-order SHO which is consistent with the second-order [[wave]] equations, and provides a clear macroscopic physical model.
+This discrete jumping creates many potential issues in interaction with a radiative wave field, which is solved in the [[Spinfield Model]] by propagating the discrete particle properties to surrounding locations. The version with [[#complex numbers]] developed below is more robust and appropriate for this framework for a number of reasons, but we start with the second-order SHO which is consistent with the second-order [[wave]] equations, and provides a clear macroscopic physical model.
 
 {id="figure_sho" style="height:20em"}
 ![The mass-on-a-spring physical model of a simple harmonic oscillator, where the deviation of the mass from the neutral point of the spring creates a restoring force that drives the mass back toward the neutral point. Figure by [Svjo on wikimedia](https://commons.wikimedia.org/wiki/File:Mass-spring-system.png)](media/fig_harmonic_oscillator_mass_spring.png)
@@ -207,7 +207,7 @@ where _r_ is a damping constant applied to the velocity $v^t$.
 
 ## Driving
 
-Driving the SHO typically happens via a sine function added to the force. This need for a sine function introduces a significant implausibility for a fundamental physical process. For this reason, the version with complex numbers, described next, is more appropriate for the [[spinfield]] functionality, because it can be driven with a simple linear factor.
+Driving the SHO typically happens via a sine function added to the force. This need for a sine function introduces a significant implausibility for a fundamental physical process. For this reason, the version with complex numbers, described next, is more appropriate for the [[Spinfield Model]] functionality, because it can be driven with a simple linear factor.
 
 ## Complex numbers
 
@@ -546,7 +546,7 @@ addSlider(&massStr, &mass, 0.1, 1.0)
 addSlider(&hbarStr, &hbar, 0.1, 1.0)
 ```
 
-See [[spinfield]] for the application of all of these properties of the complex-valued harmonic oscillator to model particles.
+See the [[Spinfield Model]] for the application of all of these properties of the complex-valued harmonic oscillator to model particles.
 
 ## Quantum harmonic oscillator
 

@@ -1,5 +1,5 @@
 +++
-Categories = ["Standard Model"]
+Categories = ["Interpretations"]
 Name = "Copenhagen"
 bibfile = "mechphys.json"
 +++

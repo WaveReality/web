@@ -18,5 +18,5 @@ The higher generations are unstable and ultimately decay back into an electron a
 
 There are also 3 corresponding generations of neutrinos, which have much smaller mass differences. The antineutrinos differ only in their spin direction.
 
-Explaining the nature of this **mass hierarchy** across generations, and the relationship between charged and uncharged leptons, is a major goal of the [[spinfield]] model.
+Explaining the nature of this **mass hierarchy** across generations, and the relationship between charged and uncharged leptons, is a major goal of the [[Spinfield Model]].
 
