@@ -39,7 +39,7 @@ Thus, [[stochastic motion]] is required, which uses random jump probabilities to
 
 ## Particles making waves
 
-Within the Standard Model, the electron and other charged particles are described as point particles, and yet these infinitesimal points must somehow generate the corresponding EM wave field. This is known as the [[back-reaction]] problem from the particle onto the field, and it remains a thorny and unsolved problem ([[@Rohrlich00]]; [[@Rohrlich99]]; [[@Rohrlich97]]; [[@Baez20]]). It has also been discussed within the pilot-wave framework, for the generation of the real quantum wave field ([[@Holland05c]]).
+Within the Standard Model, the electron and other charged particles are described as point particles, and yet these infinitesimal points must somehow generate the corresponding EM wave field. This is known as the [[back-reaction]] problem from the particle onto the field, and it remains a thorny and unsolved problem ([[@Rohrlich00]]; [[@Rohrlich99]]; [[@Rohrlich97]]; [[@FordOConnell91]]; [[@FordOConnell93]]; [[@Baez20]]). It has also been discussed within the pilot-wave framework, for the generation of the real quantum wave field ([[@Holland05c]]).
 
 The discretization of space imposed by the CA framework helps resolve the infinity problem, but creates another problem at the same time, by virtue of the discrete, stochastic motion dynamics within the CA grid. These discrete jumps create high-frequency perturbations from the driving of the wave by the particle, and due to the [[Planck relation]], such high-frequency perturbations have very high energy levels.
 
