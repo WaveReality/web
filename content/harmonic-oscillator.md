@@ -1,5 +1,5 @@
 +++
-Categories = ["Standard Model"]
+Categories = ["Spinfield Model"]
 bibfile = "mechphys.json"
 +++
 
@@ -353,40 +353,7 @@ You can see that the behavior of the oscillation is identical to the physical ha
 
 ### Planck-like particle energy
 
-We can use the fundamental _Planck relation_ to derive an angular frequency term that would produce the **Compton wavelength** for a particle of a given rest mass:
-
-{id="eq_planck" title="Planck relation"}
-$$
-E = h f
-$$
-
-For a particle at rest, the energy is a function of its rest mass $m_0$:
-
-{id="eq_emc" title="Einstein's mass-energy relation"}
-$$
-E_0 = m_0 c^2
-$$
-
-{id="eq_freq" title="rest frequency"}
-$$
-f_0 = \frac{m_0 c^2}{h}
-$$
-
-The relationship between wavelength and frequency also contains a speed-of-light factor:
-
-{id="eq_lambda-c" title="frequency-wavelength relationship"}
-$$
-\lambda = \frac{c}{f}
-$$
-
-So the rest-wavelength is:
-
-{id="eq_lambda-0" title="rest (Compton) wavelength"}
-$$
-\lambda_0 = \frac{h}{m_0 c}
-$$
-
-and the rest angular frequency is:
+We can use the fundamental [[Planck relation]] to derive an angular frequency term $\omega_0$ that would produce the **Compton wavelength** for a particle of a given rest mass:
 
 {id="eq_omega-0" title="rest angular frequency"}
 $$

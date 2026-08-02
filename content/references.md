@@ -74,6 +74,8 @@
 
 <p id="Einstein05a">Einstein, A. (1905). Über einem die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt. <i>Annalen der physik, 4</i>, <a href="https://sedici.unlp.edu.ar/handle/10915/2784">https://sedici.unlp.edu.ar/handle/10915/2784</a></p>
 
+<p id="EinsteinPodolskyRosen35">Einstein, A., Podolsky, B., & Rosen, N. (1935). Can Quantum-Mechanical Description of Physical Reality Be Considered Complete? <i>Physical Review, 47</i>, 777–780. <a href="https://link.aps.org/doi/10.1103/PhysRev.47.777">https://link.aps.org/doi/10.1103/PhysRev.47.777</a><a href="http://doi.org/10.1103/PhysRev.47.777"> http://doi.org/10.1103/PhysRev.47.777</a></p>
+
 <p id="ElvangHuang14">Elvang, H., & Huang, Y. (2014). Scattering Amplitudes. <a href="http://arxiv.org/abs/1308.1697">http://arxiv.org/abs/1308.1697</a><a href="http://doi.org/10.48550/arXiv.1308.1697"> http://doi.org/10.48550/arXiv.1308.1697</a></p>
 
 <p id="Everett57">Everett, H. (1957). "Relative State" Formulation of Quantum Mechanics. <i>Reviews of Modern Physics, 29</i>, 454–462. <a href="https://link.aps.org/doi/10.1103/RevModPhys.29.454">https://link.aps.org/doi/10.1103/RevModPhys.29.454</a><a href="http://doi.org/10.1103/RevModPhys.29.454"> http://doi.org/10.1103/RevModPhys.29.454</a></p>

@@ -1,4 +1,5 @@
 +++
+Name = "Schrodinger"
 Categories = ["Standard Model"]
 ibfile = "mechphys.json"
 +++
