@@ -3,7 +3,7 @@ Categories = ["Interpretations"]
 bibfile = "mechphys.json"
 +++
 
-**Semiclassical** models of electrodynamics feature a classical electromagnetic field evolving according to [[Maxwell]]'s differential equations, interacting with an atomic system that has quantum mechanical properties ([[@JaynesCummings63]]; [[@Jaynes73]]; [[@Mandel76]]; [[@Grandy91]]; [[@MarshallSantos97]]; [[@GerryKnight05]]). This contrasts with the standard QM model of electrodynamics ([[QED]]), which treats the electromagnetic field in terms of discrete _photon_ particles, instead of the classical differential equations.
+**Semiclassical** models of electrodynamics feature a classical electromagnetic field evolving according to [[Maxwell]]'s differential equations, interacting with an atomic system that has quantum mechanical properties ([[@JaynesCummings63]]; [[@Jaynes73]]; [[@Mandel76]]; [[@Grandy91]]; [[@MarshallSantos97]]; [[@GerryKnight05]]; [[@Santos15]]; [[@Struyve20]]). This contrasts with the standard QM model of electrodynamics ([[QED]]), which treats the electromagnetic field in terms of discrete _photon_ particles, instead of the classical differential equations.
 
 The basic intuition behind these semiclassical models is that electrons are locked into bound states in the atomic system, and a minimum resonant frequency is required to wedge them out of these states. Any wave that is below this minimum frequency just doesn't resonate properly with the wave field of the electron, and passes right through.
 

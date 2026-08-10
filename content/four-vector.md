@@ -5,7 +5,7 @@ bibfile = "mechphys.json"
 
 The **four-vector** framework provides an especially compact way of representing the mathematics of wave functions and associated quantities, in terms of a single **space-time-vector** with the first element representing time, and the remaining three elements representing 3D space. This notation was initially developed by Minkowski for dealing with Einstein's [[special relativity]] theory, where space and time expand and contract together, and in some sense can be converted into each other.
 
-The essence of the basic [[waves#wave]] function is indeed this dynamic interrelationship between the curvature of space (i.e., as the **momentum** factor in the [[Hamiltonian]]) and the resulting acceleration in time (i.e., the **energy** factor in the Hamiltonian), which is why special relativity can be seen as a consequence of the wave-like nature of physics:
+The essence of the basic [[wave]] function is indeed this dynamic interrelationship between the curvature of space (i.e., as the **momentum** factor in the [[Hamiltonian]]) and the resulting acceleration in time (i.e., the **energy** factor in the Hamiltonian), which is why special relativity can be seen as a consequence of the wave-like nature of physics:
 
 {id="eq_wave" title="the wave equation"}
 $$
@@ -61,7 +61,7 @@ $$
 \vec{\nabla} \equiv \left(\frac{\partial {}}{\partial {x}}, \frac{\partial {}}{\partial {y}}, \frac{\partial {}}{\partial {z}}\right)
 $$
 
-The *contravariant derivative* is the same deal, except it now has the minus signs:
+The _contravariant derivative_ is the same deal, except it now has the minus signs:
 
 {id="eq_con-deriv" title="contravariant derivative"}
 $$

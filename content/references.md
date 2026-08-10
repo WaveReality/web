@@ -24,6 +24,8 @@
 
 <p id="Bell64">Bell, J.S. (1964). On the Einstein Podolsky Rosen paradox. <i>Physics Physique Fizika, 1</i>, 195–200. </p>
 
+<p id="BezrukovShaposhnikov15">Bezrukov, F., & Shaposhnikov, M. (2015). Why should we care about the top quark Yukawa coupling? <i>Journal of Experimental and Theoretical Physics, 120</i>, 335–343. <a href="http://arxiv.org/abs/1411.1923">http://arxiv.org/abs/1411.1923</a><a href="http://doi.org/10.1134/S1063776115030152"> http://doi.org/10.1134/S1063776115030152</a></p>
+
 <p id="Bialynicki-Birula94">Bialynicki-Birula, I. (1994). Weyl, Dirac, and Maxwell equations on a lattice as unitary cellular automata. <i>Physical Review D, 49</i>, 6920–6927. <a href="https://link.aps.org/doi/10.1103/PhysRevD.49.6920">https://link.aps.org/doi/10.1103/PhysRevD.49.6920</a><a href="http://doi.org/10.1103/PhysRevD.49.6920"> http://doi.org/10.1103/PhysRevD.49.6920</a></p>
 
 <p id="BilenkyPetcov87">Bilenky, S.M., & Petcov, S.T. (1987). Massive neutrinos and neutrino oscillations. <i>Reviews of Modern Physics, 59</i>, 671–754. <a href="https://link.aps.org/doi/10.1103/RevModPhys.59.671">https://link.aps.org/doi/10.1103/RevModPhys.59.671</a><a href="http://doi.org/10.1103/RevModPhys.59.671"> http://doi.org/10.1103/RevModPhys.59.671</a></p>
@@ -46,6 +48,8 @@
 
 <p id="ChiribellaDArianoPerinotti11">Chiribella, G., D’Ariano, G.M., & Perinotti, P. (2011). Informational derivation of quantum theory. <i>Physical Review A, 84</i>, 012311. <a href="https://link.aps.org/doi/10.1103/PhysRevA.84.012311">https://link.aps.org/doi/10.1103/PhysRevA.84.012311</a><a href="http://doi.org/10.1103/PhysRevA.84.012311"> http://doi.org/10.1103/PhysRevA.84.012311</a></p>
 
+<p id="Collaboration26">Collaboration, A. (2026). Measurement of the top-quark Yukawa coupling from $t\overline{t}$ production in the lepton+jets final state using $pp$ collisions at $\sqrt{s} = 13$ TeV with the ATLAS detector. <i>Journal of High Energy Physics, 2026</i>, 117. <a href="http://arxiv.org/abs/2509.16039">http://arxiv.org/abs/2509.16039</a><a href="http://doi.org/10.1007/JHEP01(2026)117"> http://doi.org/10.1007/JHEP01(2026)117</a></p>
+
 <p id="Crisp96">Crisp, M.D. (1996). Relativistic neoclassical radiation theory. <i>Physical Review A, 54</i>, 87–92. <a href="https://link.aps.org/doi/10.1103/PhysRevA.54.87">https://link.aps.org/doi/10.1103/PhysRevA.54.87</a><a href="http://doi.org/10.1103/PhysRevA.54.87"> http://doi.org/10.1103/PhysRevA.54.87</a></p>
 
 <p id="CrispJaynes69">Crisp, M.D., & Jaynes, E.T. (1969). Radiative Effects in Semiclassical Theory. <i>Physical Review, 179</i>, 1253–1261. <a href="https://link.aps.org/doi/10.1103/PhysRev.179.1253">https://link.aps.org/doi/10.1103/PhysRev.179.1253</a><a href="http://doi.org/10.1103/PhysRev.179.1253"> http://doi.org/10.1103/PhysRev.179.1253</a></p>
@@ -55,6 +59,8 @@
 <p id="CufaroPetroniVigier79">Cufaro Petroni, N., & Vigier, J.P. (1979). Markov process at the velocity of light: The Klein-Gordon statistic. <i>International Journal of Theoretical Physics, 18</i>, 807–818. <a href="https://ui.adsabs.harvard.edu/abs/1979IJTP...18..807C">https://ui.adsabs.harvard.edu/abs/1979IJTP...18..807C</a><a href="http://doi.org/10.1007/BF00670459"> http://doi.org/10.1007/BF00670459</a></p>
 
 <p id="DAriano17">D’Ariano, G.M. (2017). Physics Without Physics. <i>International Journal of Theoretical Physics, 56</i>, 97–128. <a href="https://doi.org/10.1007/s10773-016-3172-y">https://doi.org/10.1007/s10773-016-3172-y</a><a href="http://doi.org/10.1007/s10773-016-3172-y"> http://doi.org/10.1007/s10773-016-3172-y</a></p>
+
+<p id="DeBroglie26">De Broglie, L. (1926). Remarques sur la nouvelle mécanique ondulatoire. <i>CR Acad. Sci, 183</i>, 272–274. </p>
 
 <p id="DemiralpRabitz97">Demiralp, M., & Rabitz, H. (1997). Dispersion-free wave packets and feedback solitonic motion in controlled quantum dynamics. <i>Physical Review A, 55</i>, 673–677. <a href="https://link.aps.org/doi/10.1103/PhysRevA.55.673">https://link.aps.org/doi/10.1103/PhysRevA.55.673</a><a href="http://doi.org/10.1103/PhysRevA.55.673"> http://doi.org/10.1103/PhysRevA.55.673</a></p>
 
@@ -78,6 +84,8 @@
 
 <p id="ElvangHuang14">Elvang, H., & Huang, Y. (2014). Scattering Amplitudes. <a href="http://arxiv.org/abs/1308.1697">http://arxiv.org/abs/1308.1697</a><a href="http://doi.org/10.48550/arXiv.1308.1697"> http://doi.org/10.48550/arXiv.1308.1697</a></p>
 
+<p id="EnglertBrout64">Englert, F., & Brout, R. (1964). Broken Symmetry and the Mass of Gauge Vector Mesons. <i>Physical Review Letters, 13</i>, 321–323. <a href="https://link.aps.org/doi/10.1103/PhysRevLett.13.321">https://link.aps.org/doi/10.1103/PhysRevLett.13.321</a><a href="http://doi.org/10.1103/PhysRevLett.13.321"> http://doi.org/10.1103/PhysRevLett.13.321</a></p>
+
 <p id="Everett57">Everett, H. (1957). "Relative State" Formulation of Quantum Mechanics. <i>Reviews of Modern Physics, 29</i>, 454–462. <a href="https://link.aps.org/doi/10.1103/RevModPhys.29.454">https://link.aps.org/doi/10.1103/RevModPhys.29.454</a><a href="http://doi.org/10.1103/RevModPhys.29.454"> http://doi.org/10.1103/RevModPhys.29.454</a></p>
 
 <p id="Feynman82">Feynman, R.P. (1982). Simulating physics with computers. <i>International Journal of Theoretical Physics, 21</i>, 467–488. <a href="https://doi.org/10.1007/BF02650179">https://doi.org/10.1007/BF02650179</a><a href="http://doi.org/10.1007/BF02650179"> http://doi.org/10.1007/BF02650179</a></p>
@@ -85,6 +93,8 @@
 <p id="FeynmanGell-Mann58">Feynman, R.P., & Gell-Mann, M. (1958). Theory of the Fermi Interaction. <i>Physical Review, 109</i>, 193–198. <a href="https://link.aps.org/doi/10.1103/PhysRev.109.193">https://link.aps.org/doi/10.1103/PhysRev.109.193</a><a href="http://doi.org/10.1103/PhysRev.109.193"> http://doi.org/10.1103/PhysRev.109.193</a></p>
 
 <p id="FinsterSmollerYau99a">Finster, F., Smoller, J., & Yau, S. (1999). Particlelike solutions of the Einstein-Dirac equations. <i>Physical Review D, 59</i>, 104020. <a href="https://link.aps.org/doi/10.1103/PhysRevD.59.104020">https://link.aps.org/doi/10.1103/PhysRevD.59.104020</a><a href="http://doi.org/10.1103/PhysRevD.59.104020"> http://doi.org/10.1103/PhysRevD.59.104020</a></p>
+
+<p id="Fock26">Fock, V. (1926). Zur Schrödingerschen Wellenmechanik. <i>Zeitschrift für Physik, 38</i>, 242–250. <a href="https://doi.org/10.1007/BF01399113">https://doi.org/10.1007/BF01399113</a><a href="http://doi.org/10.1007/BF01399113"> http://doi.org/10.1007/BF01399113</a></p>
 
 <p id="FordOConnell91">Ford, G.W., & O'Connell, R.F. (1991). Radiation reaction in electrodynamics and the elimination of runaway solutions. <i>Physics Letters A, 157</i>, 217–220. <a href="https://www.sciencedirect.com/science/article/pii/037596019190054C">https://www.sciencedirect.com/science/article/pii/037596019190054C</a><a href="http://doi.org/10.1016/0375-9601(91)90054-C"> http://doi.org/10.1016/0375-9601(91)90054-C</a></p>
 
@@ -106,7 +116,11 @@
 
 <p id="Gleason75">Gleason, A.M. (1975). Measures on the Closed Subspaces of a Hilbert Space. In C.A. Hooker (Ed.), <i>The Logico-Algebraic Approach to Quantum Mechanics: Volume I: Historical Evolution</i> (pp. 123–133). Springer Netherlands. <a href="https://doi.org/10.1007/978-94-010-1795-4_7">https://doi.org/10.1007/978-94-010-1795-4_7</a><a href="http://doi.org/10.1007/978-94-010-1795-4_7"> http://doi.org/10.1007/978-94-010-1795-4_7</a></p>
 
-<p id="Gordon27">Gordon, W. (1927). <i>Zeitschrift für Physik, 40</i>, 117–133. </p>
+<p id="Goldstone61">Goldstone, J. (1961). Field theories with « Superconductor » solutions. <i>Il Nuovo Cimento (1955-1965), 19</i>, 154–164. <a href="https://doi.org/10.1007/BF02812722">https://doi.org/10.1007/BF02812722</a><a href="http://doi.org/10.1007/BF02812722"> http://doi.org/10.1007/BF02812722</a></p>
+
+<p id="GoldstoneSalamWeinberg62">Goldstone, J., Salam, A., & Weinberg, S. (1962). Broken Symmetries. <i>Physical Review, 127</i>, 965–970. <a href="https://link.aps.org/doi/10.1103/PhysRev.127.965">https://link.aps.org/doi/10.1103/PhysRev.127.965</a><a href="http://doi.org/10.1103/PhysRev.127.965"> http://doi.org/10.1103/PhysRev.127.965</a></p>
+
+<p id="Gordon26">Gordon, W. (1926). Der Comptoneffekt nach der Schrödingerschen Theorie. <i>Zeitschrift für Physik, 40</i>, 117–133. <a href="https://doi.org/10.1007/BF01390840">https://doi.org/10.1007/BF01390840</a><a href="http://doi.org/10.1007/BF01390840"> http://doi.org/10.1007/BF01390840</a></p>
 
 <p id="Grandy91">Grandy, W.T. (1991). The Explicit Nonlinearity of Quantum Electrodynamics. In D. Hestenes, & A. Weingartshofer (Eds.), <i>The Electron: New Theory and Experiment</i> (pp. 149–164). Springer Netherlands. <a href="https://doi.org/10.1007/978-94-011-3570-2_7">https://doi.org/10.1007/978-94-011-3570-2_7</a><a href="http://doi.org/10.1007/978-94-011-3570-2_7"> http://doi.org/10.1007/978-94-011-3570-2_7</a></p>
 
@@ -118,9 +132,13 @@
 
 <p id="GuerraRuggiero78">Guerra, F., & Ruggiero, P. (1978). A note on relativistic Markov processes. <i>Lettere al Nuovo Cimento (1971-1985), 23</i>, 529–534. <a href="https://doi.org/10.1007/BF02770538">https://doi.org/10.1007/BF02770538</a><a href="http://doi.org/10.1007/BF02770538"> http://doi.org/10.1007/BF02770538</a></p>
 
+<p id="GuralnikHagenKibble64">Guralnik, G.S., Hagen, C.R., & Kibble, T.W.B. (1964). Global Conservation Laws and Massless Particles. <i>Physical Review Letters, 13</i>, 585–587. <a href="https://link.aps.org/doi/10.1103/PhysRevLett.13.585">https://link.aps.org/doi/10.1103/PhysRevLett.13.585</a><a href="http://doi.org/10.1103/PhysRevLett.13.585"> http://doi.org/10.1103/PhysRevLett.13.585</a></p>
+
 <p id="Hestenes08">Hestenes, D. (2008). Electron time, mass and zitter. </p>
 
 <p id="Hestenes90">Hestenes, D. (1990). The zitterbewegung interpretation of quantum mechanics. <i>Foundations of Physics, 20</i>, 1213–1232. <a href="https://doi.org/10.1007/BF01889466">https://doi.org/10.1007/BF01889466</a><a href="http://doi.org/10.1007/BF01889466"> http://doi.org/10.1007/BF01889466</a></p>
+
+<p id="Higgs64">Higgs, P.W. (1964). Broken Symmetries and the Masses of Gauge Bosons. <i>Physical Review Letters, 13</i>, 508–509. <a href="https://link.aps.org/doi/10.1103/PhysRevLett.13.508">https://link.aps.org/doi/10.1103/PhysRevLett.13.508</a><a href="http://doi.org/10.1103/PhysRevLett.13.508"> http://doi.org/10.1103/PhysRevLett.13.508</a></p>
 
 <p id="Hobson13">Hobson, A. (2013). There are no particles, there are only fields. <i>American Journal of Physics, 81</i>, 211–223. <a href="http://aapt.scitation.org/doi/full/10.1119/1.4789885">http://aapt.scitation.org/doi/full/10.1119/1.4789885</a><a href="http://doi.org/10.1119/1.4789885"> http://doi.org/10.1119/1.4789885</a></p>
 
@@ -154,7 +172,7 @@
 
 <p id="Klassen11">Klassen, S. (2011). The Photoelectric Effect: Reconstructing the Story for the Physics Classroom. <i>Science & Education, 20</i>, 719–731. <a href="https://doi.org/10.1007/s11191-009-9214-6">https://doi.org/10.1007/s11191-009-9214-6</a><a href="http://doi.org/10.1007/s11191-009-9214-6"> http://doi.org/10.1007/s11191-009-9214-6</a></p>
 
-<p id="Klein26">Klein, O. (1926). <i>Zeitschrift für Physik, 37</i>, 895. </p>
+<p id="Klein26">Klein, O. (1926). Quantentheorie und fünfdimensionale Relativitätstheorie. <i>Zeitschrift für Physik, 37</i>, 895–906. <a href="https://doi.org/10.1007/BF01397481">https://doi.org/10.1007/BF01397481</a><a href="http://doi.org/10.1007/BF01397481"> http://doi.org/10.1007/BF01397481</a></p>
 
 <p id="KochenSpecker90">Kochen, S., & Specker, E.P. (1990). The Problem of Hidden Variables in Quantum Mechanics. In G. Jäger, H. Läuchli, B. Scarpellini, & V. Strassen (Eds.), <i>Ernst Specker Selecta</i> (pp. 235–263). Birkhäuser. <a href="https://doi.org/10.1007/978-3-0348-9259-9_21">https://doi.org/10.1007/978-3-0348-9259-9_21</a><a href="http://doi.org/10.1007/978-3-0348-9259-9_21"> http://doi.org/10.1007/978-3-0348-9259-9_21</a></p>
 
@@ -190,9 +208,13 @@
 
 <p id="Nakagomi88">Nakagomi, T. (1988). Relativistic Random Walks Intrinsic to the Walker. <i>Progress of Theoretical Physics, 80</i>, 245–257. <a href="https://doi.org/10.1143/PTP.80.245">https://doi.org/10.1143/PTP.80.245</a><a href="http://doi.org/10.1143/PTP.80.245"> http://doi.org/10.1143/PTP.80.245</a></p>
 
+<p id="Nambu60">Nambu, Y. (1960). Quasi-Particles and Gauge Invariance in the Theory of Superconductivity. <i>Physical Review, 117</i>, 648–663. <a href="https://link.aps.org/doi/10.1103/PhysRev.117.648">https://link.aps.org/doi/10.1103/PhysRev.117.648</a><a href="http://doi.org/10.1103/PhysRev.117.648"> http://doi.org/10.1103/PhysRev.117.648</a></p>
+
 <p id="Nelson66">Nelson, E. (1966). Derivation of the Schr\"odinger Equation from Newtonian Mechanics. <i>Physical Review, 150</i>, 1079–1085. <a href="https://link.aps.org/doi/10.1103/PhysRev.150.1079">https://link.aps.org/doi/10.1103/PhysRev.150.1079</a><a href="http://doi.org/10.1103/PhysRev.150.1079"> http://doi.org/10.1103/PhysRev.150.1079</a></p>
 
 <p id="NeyAlbert13">Ney, A., & Albert, D. (2013). <i>The Wave Function: Essays on the Metaphysics of Quantum Mechanics. </i> Oxford University Press. </p>
+
+<p id="Noether18">Noether, E. (1918). Invariante Variationsprobleme. <i>Nachrichten von der Gesellschaft der Wissenschaften zu Göttingen, Mathematisch-Physikalische Klasse, 1918</i>, 235–257. <a href="https://eudml.org/doc/59024">https://eudml.org/doc/59024</a></p>
 
 <p id="Norsen11">Norsen, T. (2011). John S. Bell’s concept of local causality. <i>American Journal of Physics, 79</i>, 1261–1275. <a href="https://doi.org/10.1119/1.3630940">https://doi.org/10.1119/1.3630940</a><a href="http://doi.org/10.1119/1.3630940"> http://doi.org/10.1119/1.3630940</a></p>
 
@@ -211,6 +233,8 @@
 <p id="Onoochin01">Onoochin, V.V. (2001). On non-equivalence of Lorentz and Coulomb gauges within classical electrodynamics. <a href="http://arxiv.org/abs/physics/0111017">http://arxiv.org/abs/physics/0111017</a><a href="http://doi.org/10.48550/arXiv.physics/0111017"> http://doi.org/10.48550/arXiv.physics/0111017</a></p>
 
 <p id="Ord96">Ord, G.N. (1996). The Schrödinger and diffusion propagators coexisting on a lattice. <i>Journal of Physics A: Mathematical and General, 29</i>, L123–L128. <a href="https://doi.org/10.1088/0305-4470/29/5/007">https://doi.org/10.1088/0305-4470/29/5/007</a><a href="http://doi.org/10.1088/0305-4470/29/5/007"> http://doi.org/10.1088/0305-4470/29/5/007</a></p>
+
+<p id="ParticleDataGroup24">Group, P.D. (2024). Review of Particle Physics. <i>Physical Review D, 110</i>, <a href="http://doi.org/10.1103/PhysRevD.110.030001"> http://doi.org/10.1103/PhysRevD.110.030001</a></p>
 
 <p id="Popescu14">Popescu, S. (2014). Nonlocality beyond quantum mechanics. <i>Nature Physics, 10</i>, 264–270. <a href="https://www.nature.com/articles/nphys2916">https://www.nature.com/articles/nphys2916</a><a href="http://doi.org/10.1038/nphys2916"> http://doi.org/10.1038/nphys2916</a></p>
 
@@ -235,6 +259,8 @@
 <p id="Santos15">Santos, E. (2015). Towards a Realistic Interpretation of Quantum Mechanics Providing a Model of the Physical World. <i>Foundations of Science, 20</i>, 357–386. <a href="https://doi.org/10.1007/s10699-014-9366-y">https://doi.org/10.1007/s10699-014-9366-y</a><a href="http://doi.org/10.1007/s10699-014-9366-y"> http://doi.org/10.1007/s10699-014-9366-y</a></p>
 
 <p id="SchlosshauerKoflerZeilinger13">Schlosshauer, M., Kofler, J., & Zeilinger, A. (2013). A Snapshot of Foundational Attitudes Toward Quantum Mechanics. <i>Studies in History and Philosophy of Science Part B: Studies in History and Philosophy of Modern Physics, 44</i>, 222–230. <a href="http://arxiv.org/abs/1301.1069">http://arxiv.org/abs/1301.1069</a><a href="http://doi.org/10.1016/j.shpsb.2013.04.004"> http://doi.org/10.1016/j.shpsb.2013.04.004</a></p>
+
+<p id="Schrodinger26">Schrödinger, E. (1926). An Undulatory Theory of the Mechanics of Atoms and Molecules. <i>Physical Review, 28</i>, 1049–1070. <a href="https://link.aps.org/doi/10.1103/PhysRev.28.1049">https://link.aps.org/doi/10.1103/PhysRev.28.1049</a><a href="http://doi.org/10.1103/PhysRev.28.1049"> http://doi.org/10.1103/PhysRev.28.1049</a></p>
 
 <p id="Schroeren22">Schroeren, D. (2022). Wavefunction realism does not ‘privilege position’. <i>Synthese, 200</i>, 27. <a href="https://doi.org/10.1007/s11229-022-03525-0">https://doi.org/10.1007/s11229-022-03525-0</a><a href="http://doi.org/10.1007/s11229-022-03525-0"> http://doi.org/10.1007/s11229-022-03525-0</a></p>
 
@@ -274,9 +300,13 @@
 
 <p id="WangZhang01">Wang, Z., & Zhang, A. (2001). New interpretation to zitterbewegung. <a href="http://arxiv.org/abs/hep-ph/0110079">http://arxiv.org/abs/hep-ph/0110079</a><a href="http://doi.org/10.48550/arXiv.hep-ph/0110079"> http://doi.org/10.48550/arXiv.hep-ph/0110079</a></p>
 
+<p id="Weinberg67">Weinberg, S. (1967). A Model of Leptons. <i>Physical Review Letters, 19</i>, 1264–1266. <a href="https://link.aps.org/doi/10.1103/PhysRevLett.19.1264">https://link.aps.org/doi/10.1103/PhysRevLett.19.1264</a><a href="http://doi.org/10.1103/PhysRevLett.19.1264"> http://doi.org/10.1103/PhysRevLett.19.1264</a></p>
+
 <p id="Whittaker03">Whittaker, E.T. (1903). On the partial differential equations of mathematical physics. <i>Mathematische Annalen, 57</i>, 333–355. <a href="https://doi.org/10.1007/BF01444290">https://doi.org/10.1007/BF01444290</a><a href="http://doi.org/10.1007/BF01444290"> http://doi.org/10.1007/BF01444290</a></p>
 
 <p id="Wolfram97">Wolfram, S. (1997). <i>A new kind of science. </i></p>
+
+<p id="Yukawa35">Yukawa, H. (1935). On the Interaction of Elementary Particles. I. <i>Nippon Sugaku-Buturigakkwai Kizi Dai 3 Ki, 17</i>, 48–57. <a href="http://doi.org/10.11429/ppmsj1919.17.0_48"> http://doi.org/10.11429/ppmsj1919.17.0_48</a></p>
 
 <p id="Zuse69">Zuse, K. (1969). Rechnender Raum (Calculating Space) <i>Schriften Zur Dataverarbeitung, 1</i>, </p>
 

@@ -3,13 +3,13 @@ Name = "Spinfield Model"
 bibfile = "mechphys.json"
 +++
 
-The **Spinfield Model** is based on a field of [[harmonic oscillator]] values localized to individual [[cellular automata]] (CA) cells, using [[harmonic oscillator#complex numbers]] (i.e., a CVHO) to represent the [[spin]] and other associated properties of [[stochastic motion]]. These oscillators drive and couple with a [[quantum wave]] field and the [[Maxwell|EM]] field. Charge and velocity parameters arise in this model in terms of phase differences between CVHOs (as in [[Standard Model]] wave functions for charge / probability), and forces can shift these phases to directly affect the velocity. 
+The **Spinfield Model** is based on a field of [[harmonic oscillator]] values localized to individual [[cellular automata]] (CA) cells, using [[harmonic oscillator#complex numbers]] (i.e., a CVHO) to represent the [[spin]] and other associated properties of [[stochastic motion]]. These oscillators drive and couple with a physically real [[quantum wave]] field (in 3D CA space, not [[configuration space]]) and the [[Maxwell|EM]] field. Charge and velocity parameters arise in this model in terms of phase differences between CVHOs (as in [[Standard Model]] wave functions for charge / probability), and forces can shift these phases to directly affect the velocity. 
 
-Much of the rest mass of a particle emerges from these spinning oscillators, providing the potential to explain the _mass hierarchy_ across [[generations]] of particles, and between charged and uncharged [[leptons]], in these terms. Furthermore, different configurations of spinning oscillators provide a sufficient basis space for the different known types of [[particles]], providing a framework for understanding how these particles can transmute into each other, and can be converted to and from raw energy (i.e., high frequency oscillations in the EM field).
+Much of the rest mass of a particle emerges from these spinning oscillators, providing the potential to explain the _mass hierarchy_ across [[generations]] of particles, and between charged and uncharged [[leptons]] (i.e., [[electron]]s and [[neutrino]]s). Furthermore, different configurations of spinning oscillators provide a sufficient basis space for the different known types of [[particles]], providing a framework for understanding how these particles can transmute into each other (e.g., as described by the [[weak]] interactions), and can be converted to and from raw energy (i.e., high frequency oscillations in the EM field).
 
 The use of CVHOs to represent discrete particles coupled to radiative wave-based fields implements the essence of the [[pilot wave]] framework, while keeping everything within the same overall mathematical framework of oscillatory wave-like dynamics. The localization of the CVHOs to an individual CA cell is essential to keep the "accounting" of particle properties in order: once you let any of these properties leak out across multiple cells, the dissipative nature of wave dynamics irrevocably causes them to dilute away.
 
-However, a system based purely on discrete, cell-localized particles cannot effectively produce force-field interactions among particles: the odds of any other discrete particle "hitting" another are very small, whereas these big sloppy waves provide a nice continuous, broadly diffusing and saturating medium for force transmission. In effect, the radiative wave field is essential for the particle to be able to properly "sense" the force field effects, functioning like an _antenna_ or "whiskers" in sensing forces over a broader space, beyond its own singular cell.
+However, a system based purely on discrete, cell-localized particles cannot effectively produce force-field interactions among particles: the odds of any other discrete particle "hitting" another are very small, whereas these big sloppy waves provide a continuous, broadly diffusing and saturating medium for force transmission. In effect, the radiative wave field is essential for the particle to be able to properly "sense" the force field effects, functioning like an _antenna_ or "whiskers" in sensing forces over a broader space, beyond its own singular cell.
 
 These "mechanistic" considerations from the CA framework show how the otherwise strange wave-particle [[duality]] represents a hybrid "best of both worlds" solution, relative to something based exclusively on discrete particles, or exclusively on continuous wave functions.
 
@@ -29,23 +29,43 @@ The initial source of constraints on the particle aspect of the Spinfield Model 
 
 The massive [[boson]]s of the weak force quickly decay into various [[fermion]] particles, and they only interact infrequently, and at very short distances, with anything else. Thus, it is unclear exactly what these things really are. There are also lots of strange angles and other parameters associated with the weak force, along with parity violations that may reflect the fundamental ordering of harmonic oscillator updating.
 
-If it is possible to capture the behavior of these weak interactions in a more principled manner, that would certainly represent a major advance, even though we already have very accurate descriptions of this behavior. In general, the Standard Model framework of spontaneous symmetry breaking and electroweak integration seems like "putting lipstick on a pig:" it attempts to dress up something that is fundamentally complex and "ugly". And further attempts to push _supersymmetry_ as a general principle have failed. Thus, perhaps the Spinfield Model can provide a way of seeing why these weak interactions are actually functionally essential.
+If it is possible to capture the behavior of these weak interactions in a more principled manner, that would certainly represent a major advance, even though we already have very accurate descriptions of this behavior. In general, the Standard Model framework of spontaneous symmetry breaking and electroweak integration seems like an attempt to dress up something that is fundamentally complex and "ugly". And further attempts to push _supersymmetry_ as a general principle have failed. Thus, perhaps the Spinfield Model can provide a way of seeing why these weak interactions are actually functionally essential, within the constraints of the CA framework.
 
 ## Stochastic particle motion
 
 A major challenge for the CA framework is representing the motion of discrete particles. First, there is a basic coordination problem for the parallel update process, where the destination cell needs to receive the particle properties from the source, while the source needs to clear out these properties. Second, the cubic lattice makes it impossible to achieve _isotrophic_ motion along any vector direction using deterministic, local (Markovian) patterns of discrete jumps.
 
-Thus, [[stochastic motion]] is required, which uses random jump probabilities to accomplish isotrophic motion at a macroscopic level. As discussed in that page, certain forms of stochastic motion naturally produce the Schrödinger wave function as an expectation distribution for the location of a discrete particle ([[@Nelson66]]). Thus, an important component of the Standard Model wave function derives directly from stochastic motion, and this must also be subtracted from the Dirac wave in formulating the nature of the residual real quantum wave.
+[[Stochastic motion]] is required to accomplish isotrophic motion, using random jump probabilities along each axis to accomplish isotrophic motion at a macroscopic level. As discussed in that page, certain forms of stochastic motion naturally produce the Schrödinger wave function as an expectation distribution for the location of a discrete particle ([[@Nelson66]]).
+
+This intrinsic stochasticity accounts for an important component of the nondeterministic behavior of quantum physics, as reflected in the probabilistic nature of the [[Copenhagen]] interpretation and the Born probability rule. However, an additional source of apparent stochasticity is due to the inability to accurately measure the initial state of any quantum system, as captured by the Heisenberg [[uncertainty principle]].
+
+Both the intrinsic stochasticity and the uncertainty in initial states represent purely [[epistemic-vs-ontic|epistemic]] components of the Standard Model wave function. Thus, these components must also be taken into account in formulating the nature of the residual physically real quantum wave.
 
 ## Particles making waves
 
-Within the Standard Model, the electron and other charged particles are described as point particles, and yet these infinitesimal points must somehow generate the corresponding EM wave field. This is known as the [[back-reaction]] problem from the particle onto the field, and it remains a thorny and unsolved problem ([[@Rohrlich00]]; [[@Rohrlich99]]; [[@Rohrlich97]]; [[@FordOConnell91]]; [[@FordOConnell93]]; [[@Baez20]]). It has also been discussed within the pilot-wave framework, for the generation of the real quantum wave field ([[@Holland05c]]).
+Within the Standard Model, the electron and other charged particles are described as point particles, and yet these infinitesimal points must somehow generate the corresponding EM wave field. This is known as the [[back-reaction]] problem from the particle onto the field, and it remains a thorny and unsolved problem ([[@Rohrlich00]]; [[@Rohrlich99]]; [[@Rohrlich97]]; [[@FordOConnell91]]; [[@FordOConnell93]]; [[@Baez20]]). It has also been discussed within the pilot-wave framework, for the generation of the real quantum wave field ([[@Holland05c]]). The phenomenon of _zitterbewegung_, where the particle spin interacts with the generated waves, is also relevant ([[@Hestenes08]]; [[@Hestenes90]]]; [[@Sidharth09]]; [[@RomanRosoPlaja03]]; [[@BarutBracken81]]; [[@WangZhang01]]).
 
 The discretization of space imposed by the CA framework helps resolve the infinity problem, but creates another problem at the same time, by virtue of the discrete, stochastic motion dynamics within the CA grid. These discrete jumps create high-frequency perturbations from the driving of the wave by the particle, and due to the [[Planck relation]], such high-frequency perturbations have very high energy levels.
 
 Thus, it is necessary to impose some kind of local smoothing and distribution of particle properties across a local neighborhood, to eliminate these high-frequency perturbations.
 
 Interestingly, the properties of the weak force appear particularly well-suited for solving this problem, because they are very short range (on the order of $10^{-17}m$) and drop off exponentially. These are precisely the properties that would enable a local smoothing of the area surrounding a discrete particle, so that the entire neighborhood of cubes on the lattice is already prepared in advance of wherever the particle might move. This also provides an important constraint on the length scale for the CA cube sizes.
+
+## The uncertainty principle
+
+The discrete particle localization of the pilot wave framework already violates the strict interpretation of the uncertainty principle, in that the particle position is always precisely determined at the underlying CA level. However, any observer within this CA system cannot directly access this position information. Instead, the purely epistemic factors due to stochastic motion and uncertain initial state, combined with the influence of the quantum wave on particle motion, result in a level of uncertainty that should be generally consistent with the uncertainty principle.
+
+Nevertheless, for the specific case of the conjugate variables of momentum and position, these are both represented at the level of the discrete particle CVHOs, which raises the theoretical possibility of some kind of violation of the most strict form of the uncertainty principle. Although the quantum wave directly influences the particle velocity (momentum) in a manner consistent with standard wave functions, perhaps there might be some way to access the underlying particle-level values. Perhaps [[weak measurements]] might be related?
+
+<!--- TODO: investigate more, esp wrt existing pilot-wave work -->
+
+## Discrete photons
+
+Although there are compelling arguments in favor of the strong distinction between discrete localized [[fermion]] particles and purely wave-based radiative waves for the EM field, there remains a non-zero possibility that some kind of discrete particle-like aspect of the EM field, i.e., the [[photon]], might actually be necessary to account for all of the known physics.
+
+In this case, the photon could be an excitation in a harmonic oscillator field, like it is in the [[QED]] [[field theory]] model. However, so many aspects of EM radiation, e.g., very long wavelengths distributed over huge macroscopic length scales, appear to be are strongly incompatible with this framework. By contrast, particles have compton wavelengths in the 10^{-14}m length scale, and the stochastic motion of low-momentum particles creates a corresponding wide distribution of positions. As the momentum increases, the frequency also increases, which narrows the corresponding waves.
+
+Thus, there would have to be a very compelling reason to explore a discretized basis for photons, whereas it is very natural for fermions.
 
 ## Summary of model constraints
 
@@ -63,11 +83,13 @@ To summarize the above, the fundamental constraints shaping this model are as fo
 
 * The discrete particle properties (charge, 3 velocity vector) are represented using the complex phase relationships among multiple CVHO's (see [[harmonic oscillator#charge from phase]]), so the distribution process involves synchronizing these phase relationships to those of the discrete source particle.
 
-* In effect, a particle thus appears as a distributed blob of phase offsets among the spinfield of CVHO's. .
+* In effect, a particle thus appears as a distributed blob of phase offsets among the spinfield of CVHO's.
 
-* This distributed spin-up of phases also has qualitative similarities to the Higgs field in the [[Standard Model]], which is likewise closely associated with the [[weak]] dynamics. Therefore, all of these known weak / Higgs properties, which are also where the CP asymmetries arise (consistent with the basic asymmetry in integrating CVHO variables), provide the constraining data that the Spinfield Model must explain.
+* This distributed spin-up of phases also has qualitative similarities to the [[Higgs]] field in the [[Standard Model]], which is likewise associated with the [[weak]] dynamics. Therefore, all of these known weak / Higgs properties, which are also where the CP asymmetries arise (consistent with the basic asymmetry in integrating CVHO variables), provide the constraining data that the Spinfield Model must explain.
 
-* Furthermore, the ground, zero-point state of the spinfield consists of CVHO oscillators that are continuously decaying away whatever particle states they last encountered. As a discrete particle moves through, it spins-up these oscillators, entraining them to represent its momentum and charge properties, which then serve as the source of the radiative wave fields.
+* Furthermore, the ground, [[zero-point]] state of the spinfield consists of CVHO oscillators that are presumably continuously oscillating, while decaying away whatever particle states they last encountered. As a discrete particle moves through, it spins-up these oscillators, entraining them to represent its momentum and charge properties, which then serve as the source of the radiative wave fields.
+
+* This zero-point field can potentially account for the _virtual particles_ that are only transiently extant, within the [[QED]] Standard Model framework, i.e., the "quantum foam" associated with Feynmann diagrams and the path integral framework.
 
 ## Source particle diffusion
 
