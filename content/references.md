@@ -62,6 +62,8 @@
 
 <p id="DeBroglie26">De Broglie, L. (1926). Remarques sur la nouvelle mécanique ondulatoire. <i>CR Acad. Sci, 183</i>, 272–274. </p>
 
+<p id="DeLaPenaCetto96">De La Peña, L., & Cetto, A.M. (1996). <i>The Quantum Dice. </i> Springer Netherlands. <a href="http://link.springer.com/10.1007/978-94-015-8723-5">http://link.springer.com/10.1007/978-94-015-8723-5</a><a href="http://doi.org/10.1007/978-94-015-8723-5"> http://doi.org/10.1007/978-94-015-8723-5</a></p>
+
 <p id="DemiralpRabitz97">Demiralp, M., & Rabitz, H. (1997). Dispersion-free wave packets and feedback solitonic motion in controlled quantum dynamics. <i>Physical Review A, 55</i>, 673–677. <a href="https://link.aps.org/doi/10.1103/PhysRevA.55.673">https://link.aps.org/doi/10.1103/PhysRevA.55.673</a><a href="http://doi.org/10.1103/PhysRevA.55.673"> http://doi.org/10.1103/PhysRevA.55.673</a></p>
 
 <p id="Diaz-CruzLopezMeza-AldamaEtAl15">Diaz-Cruz, J.L., Lopez, B.L., Meza-Aldama, O., & Perez, J.R. (2015). Weyl spinors and the helicity formalism. <a href="http://arxiv.org/abs/1511.07477">http://arxiv.org/abs/1511.07477</a><a href="http://doi.org/10.48550/arXiv.1511.07477"> http://doi.org/10.48550/arXiv.1511.07477</a></p>
