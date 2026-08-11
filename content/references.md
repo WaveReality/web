@@ -2,6 +2,8 @@
 
 <p id="AharonovRohrlich08">Aharonov, Y., & Rohrlich, D. (2008). <i>Quantum Paradoxes: Quantum Theory for the Perplexed. </i> John Wiley & Sons. </p>
 
+<p id="Anderson63">Anderson, P.W. (1963). Plasmons, Gauge Invariance, and Mass. <i>Physical Review, 130</i>, 439–442. <a href="https://link.aps.org/doi/10.1103/PhysRev.130.439">https://link.aps.org/doi/10.1103/PhysRev.130.439</a><a href="http://doi.org/10.1103/PhysRev.130.439"> http://doi.org/10.1103/PhysRev.130.439</a></p>
+
 <p id="AspectDalibardRoger82">Aspect, A., Dalibard, J., & Roger, G. (1982). Experimental Test of Bell's Inequalities Using Time-Varying Analyzers. <i>Physical Review Letters, 49</i>, 1804–1807. <a href="https://link.aps.org/doi/10.1103/PhysRevLett.49.1804">https://link.aps.org/doi/10.1103/PhysRevLett.49.1804</a><a href="http://doi.org/10.1103/PhysRevLett.49.1804"> http://doi.org/10.1103/PhysRevLett.49.1804</a></p>
 
 <p id="AspectGrangierRoger82">Aspect, A., Grangier, P., & Roger, G. (1982). Experimental Realization of Einstein-Podolsky-Rosen-Bohm Gedankenexperiment: A New Violation of Bell's Inequalities. <i>Physical Review Letters, 49</i>, 91–94. <a href="https://link.aps.org/doi/10.1103/PhysRevLett.49.91">https://link.aps.org/doi/10.1103/PhysRevLett.49.91</a><a href="http://doi.org/10.1103/PhysRevLett.49.91"> http://doi.org/10.1103/PhysRevLett.49.91</a></p>
@@ -79,6 +81,8 @@
 <p id="DunkelHanggi05a">Dunkel, J., & Hänggi, P. (2005). Theory of relativistic Brownian motion: The (1+1)-dimensional case. <i>Physical Review E, 71</i>, 016124. <a href="https://link.aps.org/doi/10.1103/PhysRevE.71.016124">https://link.aps.org/doi/10.1103/PhysRevE.71.016124</a><a href="http://doi.org/10.1103/PhysRevE.71.016124"> http://doi.org/10.1103/PhysRevE.71.016124</a></p>
 
 <p id="DurrGoldsteinNorsenEtAl14">Dürr, D., Goldstein, S., Norsen, T., Struyve, W., & Zanghì, N. (2014). Can Bohmian mechanics be made relativistic? <i>Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences, 470</i>, 20130699. <a href="https://royalsocietypublishing.org/doi/full/10.1098/rspa.2013.0699">https://royalsocietypublishing.org/doi/full/10.1098/rspa.2013.0699</a><a href="http://doi.org/10.1098/rspa.2013.0699"> http://doi.org/10.1098/rspa.2013.0699</a></p>
+
+<p id="DurrHeisenbergMitterEtAl59">Dürr, H., Heisenberg, W., Mitter, H., Schlieder, S., & Yamazaki, K. (1959). Zur Theorie der Elementarteilchen. <i>Zeitschrift für Naturforschung A, 14</i>, 441–485. <a href="https://www.degruyterbrill.com/document/doi/10.1515/zna-1959-5-601/html?lang=en">https://www.degruyterbrill.com/document/doi/10.1515/zna-1959-5-601/html?lang=en</a><a href="http://doi.org/10.1515/zna-1959-5-601"> http://doi.org/10.1515/zna-1959-5-601</a></p>
 
 <p id="Einstein05a">Einstein, A. (1905). Über einem die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt. <i>Annalen der physik, 4</i>, <a href="https://sedici.unlp.edu.ar/handle/10915/2784">https://sedici.unlp.edu.ar/handle/10915/2784</a></p>
 
@@ -212,6 +216,8 @@
 
 <p id="Nambu60">Nambu, Y. (1960). Quasi-Particles and Gauge Invariance in the Theory of Superconductivity. <i>Physical Review, 117</i>, 648–663. <a href="https://link.aps.org/doi/10.1103/PhysRev.117.648">https://link.aps.org/doi/10.1103/PhysRev.117.648</a><a href="http://doi.org/10.1103/PhysRev.117.648"> http://doi.org/10.1103/PhysRev.117.648</a></p>
 
+<p id="NambuJona-Lasinio61">Nambu, Y., & Jona-Lasinio, G. (1961). Dynamical Model of Elementary Particles Based on an Analogy with Superconductivity. I. <i>Physical Review, 122</i>, 345–358. <a href="http://doi.org/10.1103/PhysRev.122.345"> http://doi.org/10.1103/PhysRev.122.345</a></p>
+
 <p id="Nelson66">Nelson, E. (1966). Derivation of the Schr\"odinger Equation from Newtonian Mechanics. <i>Physical Review, 150</i>, 1079–1085. <a href="https://link.aps.org/doi/10.1103/PhysRev.150.1079">https://link.aps.org/doi/10.1103/PhysRev.150.1079</a><a href="http://doi.org/10.1103/PhysRev.150.1079"> http://doi.org/10.1103/PhysRev.150.1079</a></p>
 
 <p id="NeyAlbert13">Ney, A., & Albert, D. (2013). <i>The Wave Function: Essays on the Metaphysics of Quantum Mechanics. </i> Oxford University Press. </p>
@@ -235,6 +241,8 @@
 <p id="Onoochin01">Onoochin, V.V. (2001). On non-equivalence of Lorentz and Coulomb gauges within classical electrodynamics. <a href="http://arxiv.org/abs/physics/0111017">http://arxiv.org/abs/physics/0111017</a><a href="http://doi.org/10.48550/arXiv.physics/0111017"> http://doi.org/10.48550/arXiv.physics/0111017</a></p>
 
 <p id="Ord96">Ord, G.N. (1996). The Schrödinger and diffusion propagators coexisting on a lattice. <i>Journal of Physics A: Mathematical and General, 29</i>, L123–L128. <a href="https://doi.org/10.1088/0305-4470/29/5/007">https://doi.org/10.1088/0305-4470/29/5/007</a><a href="http://doi.org/10.1088/0305-4470/29/5/007"> http://doi.org/10.1088/0305-4470/29/5/007</a></p>
+
+<p id="PalmerducaQin25">Palmerduca, E., & Qin, H. (2025). Four no-go theorems on the existence of spin and orbital angular momentum of massless bosons. <i>SciPost Physics, 18</i>, 188. <a href="http://arxiv.org/abs/2407.06276">http://arxiv.org/abs/2407.06276</a><a href="http://doi.org/10.21468/SciPostPhys.18.6.188"> http://doi.org/10.21468/SciPostPhys.18.6.188</a></p>
 
 <p id="ParticleDataGroup24">Group, P.D. (2024). Review of Particle Physics. <i>Physical Review D, 110</i>, <a href="http://doi.org/10.1103/PhysRevD.110.030001"> http://doi.org/10.1103/PhysRevD.110.030001</a></p>
 
@@ -265,6 +273,8 @@
 <p id="Schrodinger26">Schrödinger, E. (1926). An Undulatory Theory of the Mechanics of Atoms and Molecules. <i>Physical Review, 28</i>, 1049–1070. <a href="https://link.aps.org/doi/10.1103/PhysRev.28.1049">https://link.aps.org/doi/10.1103/PhysRev.28.1049</a><a href="http://doi.org/10.1103/PhysRev.28.1049"> http://doi.org/10.1103/PhysRev.28.1049</a></p>
 
 <p id="Schroeren22">Schroeren, D. (2022). Wavefunction realism does not ‘privilege position’. <i>Synthese, 200</i>, 27. <a href="https://doi.org/10.1007/s11229-022-03525-0">https://doi.org/10.1007/s11229-022-03525-0</a><a href="http://doi.org/10.1007/s11229-022-03525-0"> http://doi.org/10.1007/s11229-022-03525-0</a></p>
+
+<p id="Schwinger62">Schwinger, J. (1962). Gauge Invariance and Mass. <i>Physical Review, 125</i>, 397–398. <a href="https://link.aps.org/doi/10.1103/PhysRev.125.397">https://link.aps.org/doi/10.1103/PhysRev.125.397</a><a href="http://doi.org/10.1103/PhysRev.125.397"> http://doi.org/10.1103/PhysRev.125.397</a></p>
 
 <p id="Sciarretta18">Sciarretta, A. (2018). A Local-Realistic Model of Quantum Mechanics Based on a Discrete Spacetime (Extended version) <i>Foundations of Physics, 48</i>, 60–91. <a href="http://arxiv.org/abs/1712.03227">http://arxiv.org/abs/1712.03227</a><a href="http://doi.org/10.1007/s10701-017-0129-9"> http://doi.org/10.1007/s10701-017-0129-9</a></p>
 

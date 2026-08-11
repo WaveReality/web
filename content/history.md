@@ -43,7 +43,7 @@ $$
 
 This wavelength is about .165 nanometers for the electrons in the Davisson-Germer experiment (very tiny, but enough to produce a measurable diffraction pattern through the crystal).
 
-Both de Broglie and Schrödinger thought that these [[matter waves]] were real physical things, like light waves. Furthermore, de Broglie suggested that the wave acted to _guide_ the point particle electron around, in his [[pilot-wave]] theory. Schrödinger initially had an even more radical view, which abandoned the point electron entirely: he thought his wave equation described a wave of _charge density_ that _is_ the actual electron, without any need for a dual particle-like entity.
+Both de Broglie and Schrödinger thought that these [[matter wave]]s were real physical things, like light waves. Furthermore, de Broglie suggested that the wave acted to _guide_ the point particle electron around, in his [[pilot-wave]] theory. Schrödinger initially had an even more radical view, which abandoned the point electron entirely: he thought his wave equation described a wave of _charge density_ that _is_ the actual electron, without any need for a dual particle-like entity.
 
 However, both of these attempts to provide a "physically realistic" perspective on the phenomena were quickly abandoned in the face of further evidence suggesting that the wave function fundamentally describes the _probability_ that a particle might appear at a given point in space when measured. As such, the wave is somehow "non physical",  and yet exerts physically-measurable effects.
 
@@ -54,7 +54,7 @@ $$
 \sigma_x \sigma_p \geq \frac{\hbar}{2}
 $$
 
-Thus, any attempt to decrease the uncertainty in location $\sigma_x$ necessarily increases the uncertainty in momentum $\sigma_p$. This can be seen as a natural consequence of [[matter waves]], and more generally, because a wave is a spatially distributed thing, it is very hard to pin down precisely.
+Thus, any attempt to decrease the uncertainty in location $\sigma_x$ necessarily increases the uncertainty in momentum $\sigma_p$. This can be seen as a natural consequence of [[matter wave]]s, and more generally, because a wave is a spatially distributed thing, it is very hard to pin down precisely.
 
 From this complementarity principle, Bohr and Heisenberg developed the [[Copenhagen]] interpretation of QM in the late 1920's, and this is still dominant today. Central to this interpretation is the notion that the physical world operates in two complementary modes: you are _either_ making a _measurement_, which causes the wave function to _collapse_ down to a single discrete particle-like point, _or_ physics is otherwise evolving according to the wave function, which critically preserves all the quantum uncertainty, and just rotates it around in a _unitary_ manner over time.
 

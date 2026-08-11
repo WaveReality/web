@@ -1,5 +1,4 @@
 +++
-Name = "Standard Model"
 bibfile = "mechphys.json"
 +++
 

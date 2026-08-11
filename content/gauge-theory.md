@@ -3,11 +3,7 @@ Categories = ["Standard Model"]
 bibfile = "mechphys.json"
 +++
 
-**Gauge theory** is a central tool in the [[Standard Model]], used to predict the full form of the [[weak]] and [[strong]] forces. These forces can be transformed in various ways that do not alter their overall effects, known as a **gauge invariance**. Each form of invariance defines a corresponding **symmetry**, according to a famous theorem from Emmy Noether ([[@Noether18]]) and the full form of the weak and strong forces is defined in terms of a set such symmetries, known as a **symmetry group**.
-
-This approach represents a very abstract way of trying to understand the laws of nature, and its success in predicting previously unknown features of the weak and strong forces represented a major triumph of such an abstract theoretical approach. However, a number of different attempts to further extend the approach into "supersymmetry" theories have failed. Thus, it may be that the limited forms of symmetry in the Standard Model are perhaps more naturally explained in terms of the underlying mechanisms in the [[Spinfield Model]], rather than the abstract principle of symmetry groups per se.
-
-## Global and local gauge invariance
+**Gauge theory** is a central tool in the [[Standard Model]], used to predict the full form of the [[weak]] and [[strong]] forces, and how they interact with their sources. These forces can be transformed in various ways that do not alter their overall effects, known as a **gauge invariance**. This reflects the essential and defining role that [[conservation]] laws have in shaping the forces of nature: each conservation law is associated with a corresponding type of invariance.
 
 The principle of gauge invariance can be illustrated in the case of the electromagnetic force interaction with a "particle" defined by a complex wave state $\phi$. The classical [[Lagrangian]] field density can be defined as the kinetic energy minus a potential energy, where, in [[four-vector]] notation, the kinetic energy is the 2nd order temporal derivative of the wave function (i.e., the contravariant times the covariant):
 
@@ -37,7 +33,7 @@ This form of global gauge invariance and its resulting conserved current symmetr
 
 Instead of a global constant factor, it is also possible to introduce a _local_ factor that varies as a function of position, known as a **local gauge transformation**. To specify the value of this local transformation at every point, an _additional field_ of parameters is required, representing additional degrees of freedom in the physical system in question.
 
-When this local gauge transformation is  applied, the resulting laws of motion are  _not_ automatically preserved. However, one can change the definition of the _contravariant derivative_ $\partial^{\mu} \phi$ in a way that produces the same effects as the local gauge transformation.
+When this local gauge transformation is  applied, the resulting laws of motion are _not_ automatically preserved. However, one can change the definition of the _contravariant derivative_ $\partial^{\mu} \phi$ in a way that produces the same effects as the local gauge transformation.
 
 This new form of the derivative defines a **minimal coupling** between the new field of parameters and the original state field, and mathematically determines how to update the Lagrangian and the resulting laws of motion to specify this interaction between the two fields.
 
@@ -45,7 +41,7 @@ In effect, introducing the local gauge transformation is the primary way to intr
 
 Critically, without the local gauge transformation and these additional charge parameters, the system could only represent a single global charge value.
 
-Thus, the local gauge transformation represents physically-necessary additional degrees of freedom required to specify the nature of real physical systems. As such, it is not so much an assumption as a given fact of the system under consideration. Nevertheless, the gauge theory framework enables one to formalize the interactions in a way that evidently aligns with how it actually works in nature.
+Thus, the local gauge transformation represents physically-necessary additional degrees of freedom required to specify the nature of real physical systems. As such, the abstract symmetry properties are not really the primary motivation for introducing a local gauge transformation: instead it is really motivated by the physical reality of the system under consideration. Nevertheless, the gauge theory framework enables one to formalize the interactions in a way that evidently aligns with how it actually works in nature. The critical feature is that the approach guarantees the conservation (symmetry) of the source current. See this [stackexchange discussion](https://physics.stackexchange.com/questions/384978/why-do-can-we-impose-local-gauge-invariance) for an explanation that is consistent with this.
 
 Another application of this approach in the [[weak]] interaction is to introduce the Higgs field to specify the masses of individual particles. Without this additional parameterization field, defined as a local gauge transformation, the [[Klein-Gordon]] wave function can only describe particles with exactly the same rest mass.
 

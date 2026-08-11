@@ -5,9 +5,9 @@ bibfile = "mechphys.json"
 
 **Configuration space** is a critical but perhaps generally underappreciated element of standard quantum mechanics, in most of its various formulations (e.g., in the [[Hilbert space]] formulation). It is the space defined by the **multiparticle** configuration of all the elements of relevance to a given experimental setup being analyzed.
 
-Because it describes the _configuration_ of these elements, it is **exponential** in size, with a different space corresponding to each combination of such elements, and manifestly [[non-local]]. Thus, it is an entirely implausible, highly problematic element of standard quantum mechanical approaches, including the existing [[pilot-wave]] models.
+Because it describes the _configuration_ of these elements, it is **exponential** in size, with a different space corresponding to each combination of such elements, and manifestly [[non-locality|non-local]]. Thus, it is an entirely implausible, highly problematic element of standard quantum mechanical approaches, including the existing [[pilot-wave]] models.
 
-The need for configuration space at a mathematically deep level arises because the equations being used are _linear_, so they cannot represent any kind of actual interaction among different particles. Without configuration space, every particle would fully superpose on every other particle --- they would just slip on past each other. This is in fact how _bosons_ (e.g., [[photons]]) behave, but not how _fermions_ like [[electrons]] behave.
+The need for configuration space at a mathematically deep level arises because the equations being used are _linear_, so they cannot represent any kind of actual interaction among different particles. Without configuration space, every particle would fully superpose on every other particle --- they would just slip on past each other. This is in fact how _bosons_ (e.g., [[photon]]s) behave, but not how _fermions_ like [[electron]]s behave.
 
 The [[pilot-wave]] approach has been (perhaps unfairly) criticized for using configuration space, because it posits that the wave function is actually a "real" thing, thus exposing the implausibility of this otherwise purely [[tools vs models|calculational tool]].
 

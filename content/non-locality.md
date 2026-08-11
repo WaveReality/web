@@ -3,7 +3,7 @@ Categories = ["Interpretations"]
 bibfile = "mechphys.json"
 +++
 
-One of the primary challenges of adopting a [[cellular automaton]] (CA) framework for physics is reconciling the local interactions among neighboring cells, which so naturally produces a relativistic speed-of-light limit (one time step update per lattice cell), with the now irrefutable evidence for some kind of [[non-locality]] in quantum physics among _entangled_ particles. Recent work within the [[pilot-wave]] framework has helped to significantly clarify the nature of these non-local interactions, and the broader conflict that they actually pose for all of QM, despite many attempts to downplay these issues from within the standard QM frameworks ([[@DurrGoldsteinNorsenEtAl14]]).
+One of the primary challenges of adopting a [[cellular automaton]] (CA) framework for physics is reconciling the local interactions among neighboring cells, which so naturally produces a relativistic speed-of-light limit (one time step update per lattice cell), with the now irrefutable evidence for some kind of non-locality in quantum physics among _entangled_ particles. Recent work within the [[pilot-wave]] framework has helped to significantly clarify the nature of these non-local interactions, and the broader conflict that they actually pose for all of QM, despite many attempts to downplay these issues from within the standard QM frameworks ([[@DurrGoldsteinNorsenEtAl14]]).
 
 At the heart of all of this is a fundamental, pervasive confusion of what this non-locality means, where it comes from within the existing QM formalisms, and how it might actually work in a more physically plausible, localist manner.
 

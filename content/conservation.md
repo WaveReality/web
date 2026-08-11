@@ -3,7 +3,65 @@ Categories = ["Standard Model"]
 bibfile = "mechphys.json"
 +++
 
-A critical property of quantum wave functions is that they exhibit strict **conservation** of some overall quantity over time. In the case of the [[Schrodinger]] wave function, this quantity is interpreted as the overall **probability** of finding a particle in a given location, according to the standard [[Copenhagen]] interpretation. For the [[Klein-Gordon]] and [[Dirac]] functions, this quantity makes more sense as the **charge** of an associated particle such as an [[electron]], because the conserved quantity can be either positive or negative valued, just like charge (i.e., the anti-particle of the electron, the _positron_, has positive charge).
+> Nature is a meticulous accountant.
+
+therefore:
+
+> Physics is really just a branch of accounting.
+
+The single most important property of fundamental physical laws is that they exhibit **conservation** properties, such as the **conservation of total energy**. Consider what a disaster it would be if this weren't the case: stuff would either drain away over time, leaving nothing left behind, or accumulate, filling every corner of space with too much energy!
+
+Furthermore, these conservation laws need to be **local** in space and time, according to the principles of [[special relativity]] -- this is known as **Lorentz invariance** in this context. This is also consistent with the principles of the [[cellular automaton]] (CA) framework, where all interactions are local in space and time, defined over the local neighborhood of grid cells and discrete time update steps.
+
+Thus, you can see that another way of saying something is conserved is to say that it is **invariant** -- it doesn't change. Indeed, the entire edifice of the [[Standard Model]] of quantum physics is built upon [[gauge theory]], which is a mathematical framework for deriving locally invariant laws. This framework starts with the [[Lagrangian]] and [[Hamiltonian]] expressions of the total energy in a system, and derives _laws of motion_ that are **locally gauge invariant**, which means they conserve energy locally.
+
+According to Emmy Noether's famous theorems ([[@Noether18]]), each local conservation law implies a kind of **symmetry** in Nature. Although this seems very "deep" on the one hand, it also can seem fairly "trivial" or obvious on the other, because indeed the meaning of the word _symmetry_ in this context is essentially just _invariance_. For example, the symmetry (invariance) with respect to time is associated with the conservation of energy. Yeah, that's what it means for energy to not change over time. It is invariant over time. Time is right there in the definition of what energy is being conserved over. It isn't invariant over space!
+
+There is a set of spatial transformations associated with the geometry of special relativity (known as a **Minkowski space**) that preserve the space-time interval between events, known as the [Poincaré group](https://en.wikipedia.org/wiki/Poincar%C3%A9_group), which define the most basic conservation laws of physics, listed as the top 4 entries in [[#table_conserve]]. There is a whole branch of mathematics for such **Lie groups** (pronounced "Lee").
+
+{id="table_conserve" title="Physical Conservation Laws"}
+| Conservation law      | Invariance              | Parameters        |
+|-----------------------|-------------------------|-------------------|
+| energy                | time translation        | 1: t              |
+| linear momentum       | space translation       | 3: x,y,z          |
+| angular momentum      | rotation                | 3: x,y,z          |
+| boost                 | "velocity" (space-time) | 3: x,y,z          |
+|-----------------------|-------------------------|-------------------|
+| electric charge       | U(1) gauge invariance   | 1: V potential    |
+| weak isospin          | SU(2) gauge invariance  | 1: weak potential |
+| strong (color) charge | SU(3) gauge invariance  | 3: r,g,b          |
+
+The final 3 entries in the table define the "charge"-like values conserved (via the local gauge invariance mechanism in [[gauge theory]]) by the 3 fundamental forces in the Standard Model, which are defined by a _unitary group_ (U) or _special unitary group_ (SU) of the given dimensionality. A unitary group just means that it is conservative, like multiplying by the unit 1. The SU(2) group is defined by a 2x2 unitary matrix, which is the rotation group that is defined by a single parameter (the rotation angle), consistent with the idea that this group defines the property of [[spin]]. Thus, the [[weak]] force is fundamentally about spin.
+
+As a bit of a simplification (but not too much of one):
+
+> The 7 conservation / invariance laws represented in [[#table_conserve]] entirely determine the nature of fundamental physics!
+
+Thus, the quotes at the top of the page capture an essential truth: physics is fundamentally about allowing _something_ "interesting" to happen, while keeping the accounting airtight. Things can change, and exert forces on other things, but only in ways that don't ruin everything for the next generation, and which are fundamentally consistent everywhere.
+
+## Change without change: waves, spin and phase
+
+The seemingly strange properties of [[special relativity]], and the associated first four conservation laws in [[#table_conserve]], are all satisfied by the basic [[wave]] equation, which lies at the heart of the electromagnetic field equations defined by [[Maxwell]]. A pure, frictionless wave is basically _the_ way to move energy around from one place to another in a way that conserves total energy, and is completely local in space and time.
+
+Thus, the fact that all of quantum physics is built upon the machinery of wave equations can be seen as a direct consequence of the fundamental conservation laws. And special relativity can likewise be seen as a consequence of the properties of waves.
+
+The energy-conserving nature of waves derives from the fact that they are just vehicles for transmitting **perturbations** around -- the wave medium itself is "immaterial" (unlike the classical notion of the [[aether]]): what matters is the disturbance or perturbation that gets passed along from one place to the next as the waves propagate.
+
+However, a simple scalar wave field does not support the ability to represent a conserved scalar quantity like electrical charge, in a way that could be localized into a confined region of space. To do that, one needs _two_ coordinated waves, where the _phase_ relationship between these two waves can then define something that acts like an electrical charge. Thus, a moving charge could be represented as a moving phase perturbation between two wave states.
+
+Mathematically, one way to represent the coordinated phase relationship is via [[complex number]]s, which naturally leads to the phenomenon of [[spin]], where the real and imaginary components of a complex number are constantly rotating around the complex plane. Thus, in short order, we now encounter all of the major ingredients of the quantum wave functions, directly from the conservation laws.
+
+The strange properties of the [[weak]] interactions are all tied up with dealing with spin, and the difficulties in dealing with mass in the context of the gauge theory framework. Once you introduce a mass factor into the wave equation, as in the [[Klein-Gordon]] wave, it immediately fixes a specific gauge to the wave -- it is no longer gauge invariant. The strange properties of the [[Higgs]] mechanism within the overall weak interaction framework manage this delicate balance between the conservative properties of gauge invariance, and the need to represent the mass of massive particles.
+
+## Symmetry for symmetry's sake
+
+In the above account, _conservation laws_ are primary, and symmetry is a natural consequence thereof. However, there have been a number of attempts to build on the idea that symmetry itself is the primary thing driving the laws of nature, in the form of various "supersymmetry" theories. However, none of the unique predictions from these theories have been supported by the considerable evidence accumulated to date, and most scientists have concluded that this is a failed effort. Thus, it looks like this "minimal" set of conservation laws is all that is really going on.
+
+## Conserved charge and continuity equations
+
+In the remainder of this page, we develop the mathematical understanding of how a complex-valued wave function can represent a conserved quantity. This approach is based on continuity equations, which are appropriate for understanding the conservation properties of a single "free particle" wave function. The [[gauge theory]] framework is needed when describing conservation laws involving the _interaction_ between two or more waves.
+
+In the case of the [[Schrodinger]] wave function, the conserved quantity that can be extracted from the phase relationships is interpreted as the overall **probability** of finding a particle in a given location, according to the standard [[Copenhagen]] interpretation. For the [[Klein-Gordon]] and [[Dirac]] functions, this quantity makes more sense as the **charge** of an associated particle such as an [[electron]], because the conserved quantity can be either positive or negative valued, just like charge (i.e., the anti-particle of the electron, the _positron_, has positive charge).
 
 Here, we derive the relevant mathematical properties of this conserved quantity, which depends in general on the use of [[complex number]]s. The essential, intuitive reason for this is that the conserved quantity is like the **hypotenuse** of a triangle, i.e., the **radius** on a circle that the state of the system is continuously rotating through. If you only have one number, then that number will oscillate like the sine or cosine as the system oscillates. If you instead have the two numbers within a complex number, then you can compute this hypotenuse / radius as the square of these two numbers, which is what the **complex conjugate** function computes:
 

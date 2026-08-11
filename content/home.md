@@ -6,7 +6,7 @@ bibfile = "mechphys.json"
 
 <img src="media/icon.png" style="width:128px;height:128px;align-self:center">
 
-**Wave reality** is dedicated to exploring the idea that the quantum wave function is _real_, and not just a description of our state of [[epistemic vs ontic|epistemological]] ignorance. The reality of the wave function is strongly indicated by the classic [[double-slit]] experiment results, where some kind of spatially-distributed wave-like interference phenomenon seems to be influencing the trajectories of discrete particles. In addition, there are increasingly strong theoretical and empirical attempts to show that a purely epistemic account contradicts quantum theory ([[@PuseyBarrettRudolph12]], [[@RingbauerDuffusBranciardEtAl15]]).
+**Wave reality** is dedicated to exploring the idea that the **quantum wave function** is _real_, and not just a description of our state of [[epistemic vs ontic|epistemological]] ignorance. The reality of the wave function is strongly indicated by the classic [[double-slit]] experiment results, where some kind of spatially-distributed wave-like interference phenomenon seems to be influencing the trajectories of discrete particles. In addition, there are increasingly strong theoretical and empirical attempts to show that a purely epistemic account contradicts quantum theory ([[@PuseyBarrettRudolph12]], [[@RingbauerDuffusBranciardEtAl15]]).
 
 The relationship between waves and [[particle]]s is the central conundrum in quantum physics, and there have been attempts to resolve these issues by somehow eliminating either the particles or the waves. For example, if you carefully examine the mathematical foundations of quantum physics, you find that there are only waves (or wave-like fields), suggesting that particles can be somehow entirely eliminated ([[@Hobson13]]; [[@Sebens22]]).
 
@@ -32,15 +32,17 @@ A fundamental assumption here is that Nature must be doing one consistent thing 
 
 ## Developing an intuitive, deep understanding of the Standard Model
 
-One major function of the material here is to support the development of an intuitive and deep understanding of the core elements of the [[Standard Model]] of quantum / particle physics. The reader can benefit from this without caring about the mission to develop the [[Spinfield Model]]. The foundation of the Standard Model is a set of wave equations, which can be easily simulated in 3D space within the constraints of the [[cellular automata]] (CA) framework.
+One major function of the material here is to support the development of an intuitive and deep understanding of the core elements of the [[Standard Model]] of quantum / particle physics. The reader can benefit from this without caring about the mission to develop the [[Spinfield Model]]. The foundation of the Standard Model is a set of wave equations, which can be easily simulated in 3D space within the constraints of the [[cellular automaton]] (CA) framework.
 
-There are a number of [[Simulations]] implemented in an easy-to-use GUI-based [[waves simulator]], which allows one to interactively explore various physics models, providing a concrete and hands-on level of understanding. This provides a different and potentially valuable set of tools for someone trying to learn more about how quantum physics actually works, which may result in quicker and deeper understanding than staring at equations :)
+There are a number of [[Simulations]] implemented in an easy-to-use GUI-based tool, which allows one to interactively explore various physics models, providing a concrete and hands-on level of understanding. This provides a different and potentially valuable set of tools for someone trying to learn more about how quantum physics actually works, which may result in quicker and deeper understanding than staring at equations :)
 
 The following sequence of pages develops this understanding of the wave equations up through the [[Dirac]] equation for the [[electron]]:
 
-* [[Wave]]s provides the essential foundation for understanding the phenomenology and mathematical formulation of waves, within the CA framework.
+* [[Conservation]] describes how essentially the entire Standard Model can be seen as a consequence of basic conservation laws: conserving energy, charge, spin, etc.
 
-* [[Maxwell]]'s equations for the electromagnetic (EM) force field, as a classical field, implemented through CA-based wave functions. [[Special relativity]] explains this foundational pillar of physics, which can be seen as a natural consequence of the [[wave]] equations.
+* [[Wave]]s are the natural consequence of conservation laws, and this page provides the essential foundation for understanding the phenomenology and mathematical formulation of waves, within the CA framework.
+
+* [[Maxwell]] presents the wave equations for the electromagnetic (EM) force field, as a classical field, implemented through CA-based wave functions. [[Special relativity]] explains this foundational pillar of physics, which can be seen as a natural consequence of the [[wave]] equations.
 
 * The [[Klein-Gordon]] (KG) equation provides the simplest version of a relativistically-accurate quantum matter wave function, which can be seen as a kind of second-order version of the much more widely discussed [[Schrodinger]] wave function.
 

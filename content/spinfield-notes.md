@@ -19,7 +19,7 @@ Current model is to have one central T0 heartbeat, and then motion and charge as
 
 ## Photons
 
-Unlike fermion particles such as electrons, the EM field is not amenable to a discrete particle-like framework: [[photons]] have many problematic issues as discrete particles of the EM field. Therefore, it makes more sense to retain a "classical" [[Maxwell]] EM field, interacting with the discretized fermion cells, as in the [[semiclassical]] approach developed by a number of researchers (see [[@Struyve20]]; [[@Santos15]]).
+Unlike fermion particles such as electrons, the EM field is not amenable to a discrete particle-like framework: [[photon]]s have many problematic issues as discrete particles of the EM field. Therefore, it makes more sense to retain a "classical" [[Maxwell]] EM field, interacting with the discretized fermion cells, as in the [[semiclassical]] approach developed by a number of researchers (see [[@Struyve20]]; [[@Santos15]]).
 
 ## Virtual particles, the discrete lattice, and probability waves
 

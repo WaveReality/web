@@ -186,7 +186,7 @@ todo: potential implications for gravitation, etc?
 {id="figure_integer" style="height:20em"}
 ![A wave within fixed bounds, having an integer number of wavelengths within the fixed width. This ''bound state'' wave provides a basic model of the quantized atomic system --- the quantization comes entirely from the fact that the only stable wave configuration within such boundaries must have an integral number of wavelengths. This is the quantum in quantum mechanics.](media/fig_bound_wave_integer_fit.png)
 
-At this point, it is useful to use the [[waves simulator]] to see how the above equations give rise to wave behavior, so you have a solid understanding of that, along with some basic wave behavior, before continuing. Follow the directions given in the [[waves simulation]], which gets you familiar with the basic use of the simulator and observing the resulting wave behavior.
+At this point, it is useful to run the [[waves simulation]] to see how the above equations give rise to wave behavior, so you have a solid understanding of that, along with some basic wave behavior, before continuing. The directions in the simulation should get you familiar with the basic use of the simulator and observing the resulting wave behavior.
 
 One of the most fascinating and amazing properties that you'll explore in this simulation is **superposition**, as shown in [[#figure_superposition]] --- it is even more compelling seeing it happen in full motion in the simulation.
 

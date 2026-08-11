@@ -3,7 +3,7 @@ Categories = ["Spinfield Model"]
 bibfile = "mechphys.json"
 +++
 
-The [[pilot-wave]] model posits a discrete, localized particle whose motion is influenced by a distributed, physically real [[quantum wave]]. In the [[cellular automata]] (CA) framework, a discrete localized particle lives entirely within one CA cell.
+The [[pilot-wave]] model posits a discrete, localized particle whose motion is influenced by a distributed, physically real [[quantum wave]]. In the [[cellular automaton]] (CA) framework, a discrete localized particle lives entirely within one CA cell.
 
 An obvious problem with this notion of something being contained entirely within a discrete cell is that it becomes challenging to imagine how it might ever move to another such cell. Such a move would have to happen in a discrete jump, creating a major discontinuity in the overall wave state, and potentially making the particle trajectory seemingly discontinuous and anisotrophic. 
 

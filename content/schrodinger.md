@@ -134,11 +134,11 @@ The basic phenomenology of Schrödinger's equation is that wave packets propagat
 
 One critical property of Schrödinger's equation (which the scalar [[Klein-Gordon]] equation does not have) is that it preserves the overall magnitude of the $\phi$ state values across all of space, for all time. This is to say, if you compute the sum of $\phi \phi^*$ for each point in space, this sum will remain the same across time under the Schrödinger equation. This conserved value is interpreted as a probability in standard quantum mechanics.
 
-For example, we can initialize the state with a localized wave packet (see [[matter waves]]) to represent the initial probability for the location and velocity of a particle (velocity being a function of the frequency of the wave packet). If we then apply the Schrödinger equation repeatedly, we can interpret the resulting $\phi \phi^*$ values as the probability of the particle having moved to the corresponding location.
+For example, we can initialize the state with a localized wave packet (see [[matter wave]]s) to represent the initial probability for the location and velocity of a particle (velocity being a function of the frequency of the wave packet). If we then apply the Schrödinger equation repeatedly, we can interpret the resulting $\phi \phi^*$ values as the probability of the particle having moved to the corresponding location.
 
 In other words, the wave packet defines a kind of "cloud of probability" for finding a discrete particle within its midst. However, these probabilities have different meanings in different scenarios, and it is notoriously difficult to come up with a intuitively sensible interpretation of what these probability clouds mean (see [[Copenhagen]] for discussion).
 
 ## Explorations
 
-See [[Schrodinger 1D Simulation]] and [[Schrdodinger 3D Simulation]].
+See [[Schrodinger 1D Simulation]] and [[Schrodinger 3D Simulation]].
 

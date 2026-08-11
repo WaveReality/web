@@ -3,7 +3,7 @@ Categories = ["Standard Model"]
 bibfile = "mechphys.json"
 +++
 
-**Lagrangian** mechanics was formulated by Joseph-Louis Lagrange, in collaboration with Leonhard Euler, in 1788, providing a powerful way of understanding classical Newtonian physics. It also plays a critical role in the [[Standard Model]], where it is used to define the [[gauge invariance]]s that characterize **symmetries**, which define the way that forces interact with particles.
+**Lagrangian** mechanics was formulated by Joseph-Louis Lagrange, in collaboration with Leonhard Euler, in 1788, providing a powerful way of understanding classical Newtonian physics. It also plays a critical role in the [[Standard Model]], where it is used to define the [[gauge theory|gauge invariances]] that define the way that forces interact with particles.
 
 The Lagrangian (not to be confused with the _Laplacian_ that computes the spatial gradient of the [[wave]]), is typically defined as the total kinetic energy _T_ minus potential energy _V_:
 

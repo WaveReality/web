@@ -25,7 +25,7 @@ This page provides an accounting of all the major phenomenology of (quantum) phy
 ### Core phenomena
 
 * EM is well described by [[wave]]s, and the surprising success of the [[semiclassical]] approach suggests that perhaps the [[photon]] is unnecessary.
-* [[Dirac]] wave equation --- relativistic generalization of [[Schroedinger]] equation --- can be implemented nicely within CA framework (in its second order form).
+* [[Dirac]] wave equation --- relativistic generalization of [[Schrodinger]] equation --- can be implemented nicely within CA framework (in its second order form).
 * [[double-slit]] interference effects, etc.
 
 ### Implications

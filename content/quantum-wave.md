@@ -1,5 +1,4 @@
 +++
-Name = "Spinfield Model"
 bibfile = "mechphys.json"
 +++
 
