@@ -6,32 +6,40 @@ bibfile = "mechphys.json"
 
 <!--- todo: [[@MallickChandrashekar16]] -->
 
-In [[Klein-Gordon]] we saw that a major problem with the scalar KG equation is that it doesn't represent any kind of conserved value: you cannot compute some constant, unchanging value from the $\varphi$ state variables under this equation. This is a problem if you want to develop a probabilistic interpretation of the wave, as in [[Schrodinger]]'s equation for the standard [[Copenhagen]] interpretation. But it is also a problem for other interpretations as well.
+In [[Klein-Gordon]] we saw that a major problem with the scalar KG equation is that it doesn't represent any kind of conserved value: you cannot compute some constant, unchanging value from the $\phi$ state variables under this equation. This is a problem if you want to develop a probabilistic interpretation of the wave, as in [[Schrodinger]]'s equation for the standard [[Copenhagen]] interpretation. But it is also a problem for other interpretations as well. See [[conservation]] for an essential overview.
 
-In particular, the KG waves seem to actually represent **waves of charge** (i.e., [[matter wave]]s), because charge is also strictly conserved, and it comes in both positive and negative varieties, which the KG waves produce. By contrast, the Schrödinger wave only represents a positive-valued quantity, which fits better with the probabilistic interpretation. Indeed, the authors that do write extensively about the KG equation adopt this interpretation ([[@Greiner00]]; [[@Gingrich04]]; [[@MandlShaw13]]), and this idea was pursued initially by Schrödinger in 1926.
+In particular, we would like the KG waves to represent **waves of charge** (i.e., [[matter wave]]s), because charge is also strictly conserved, and it comes in both positive and negative varieties, which the KG waves produce. By contrast, the Schrödinger wave only represents a positive-valued quantity, which fits better with the probabilistic interpretation. Indeed, the authors that do write extensively about the KG equation adopt this interpretation ([[@Greiner00]]; [[@Gingrich04]]; [[@MandlShaw13]]), and this idea was pursued initially by Schrödinger in 1926. Furthermore, we will see that this charge interpretation fits naturally with the coupling of this KG equation to the electromagnetic (EM) field ([[Maxwell]]'s equations), where the conserved charge value acts just like the electric charge in driving the field. 
 
-Furthermore, we will see that this charge interpretation fits naturally with the coupling of this KG equation to the electromagnetic (EM) field ([[Maxwell]]'s equations), where the conserved charge value acts just like the electric charge in driving the field. However, to fully accomplish this coupling in a physically accurate way, the wave function needs [[spin]], which is what the [[Dirac]] wave function adds on top of the KG waves. This coupling of charge waves and EM waves has been pursued more recently in neoclassical self-coupled field theory ([[@JaynesCummings63]]; [[@CrispJaynes69]]; [[@BarutVanHuele85]]; [[@BarutDowling90]]; [[@Crisp96]]; [[@FinsterSmollerYau99a]]; [[@Radford03]]; [[@MasielloDeumensOhrn05]]).
+The critical step for transforming the KG equation into something that can represent a conserved charge value is to simply have it operate on wave state with [[complex number]]s instead of scalars! The reason is at once simple and yet deeply profound for the nature of the quantum realm:
 
-The first step toward a more complete wave function for something like an [[electron]] is to introduce a wave state with [[complex number]]s ($\phi$) instead of scalars ($\varphi$), which then supports the computation of a conserved quantity across the two complex state values. When we translate this complex wave function into two separate second-order wave equations without an $i$ imaginary number factor, the KG equation is identical to computing two separate KG equations on each of the two scalar values represented by the complex state variable (i.e., $\varphi_a$ and $\varphi_b$). Note that this was not true of Schrödinger's wave equation, which is first order and has an $i$ term that causes the $a$ and $b$ terms to intermix as the wave unfolds.
+> Complex numbers naturally maintain a constant radius as they rotate around the complex plane.
+
+It is this constant radius value that corresponds to the conserved charge value in the **complex KG** wave equations. This radius is the _hypotenuse_ of the triangle formed by the real and imaginary components of the complex number. According to the _Pythagorean theorem_, it is computed by the sum of the _squared_ values. In the language of complex numbers, this is computed by multiplying by the _complex conjugate_, and we'll see that this is how we compute the conserved charge value.
+
+The complex KG wave equations coupled to the electromagnetic four-potential $A^\mu$.
+
+However, to fully accomplish this coupling in a physically accurate way, the wave function needs [[spin]], which is what the [[Dirac]] wave function adds on top of the KG waves. This coupling of charge waves and EM waves has been pursued more recently in neoclassical self-coupled field theory ([[@JaynesCummings63]]; [[@CrispJaynes69]]; [[@BarutVanHuele85]]; [[@BarutDowling90]]; [[@Crisp96]]; [[@FinsterSmollerYau99a]]; [[@Radford03]]; [[@MasielloDeumensOhrn05]]).
+
+The first step toward a more complete wave function for something like an [[electron]] is to introduce a wave state with [[complex number]]s ($\chi$) instead of scalars ($\phi$), which then supports the computation of a conserved quantity across the two complex state values. When we translate this complex wave function into two separate second-order wave equations without an $i$ imaginary number factor, the KG equation is identical to computing two separate KG equations on each of the two scalar values represented by the complex state variable (i.e., $\phi_a$ and $\phi_b$). This is different from Schrödinger's wave equation, which is first order and has an $i$ term that causes the $a$ and $b$ terms to intermix as the wave unfolds.
 
 {id="eq_kg-complex" title="Klein-Gordon on complex state"}
 $$
-\frac{\partial^2 \phi}{\partial t^2} = (\nabla^2 - m_0^2) \phi
+\frac{\partial^2 \chi}{\partial t^2} = (\nabla^2 - m_0^2) \chi
 $$
 
 Because differentiation operates independently on the two separate scalar variables in a complex number, this is equivalent to two parallel scalar KG equations, which we can write as:
 
 $$d
-\frac{\partial^2 \varphi_a}{\partial t^2} = \left( \nabla^2 - m_0^2 \right) \varphi_a
+\frac{\partial^2 \phi_a}{\partial t^2} = \left( \nabla^2 - m_0^2 \right) \phi_a
 $$
 
 $$
-\frac{\partial^2 \varphi_b}{\partial t^2} = \left( \nabla^2 - m_0^2 \right) \varphi_b
+\frac{\partial^2 \phi_b}{\partial t^2} = \left( \nabla^2 - m_0^2 \right) \phi_b
 $$
 
-where again the $\varphi_a$ indicates a scalar state variable representing the real $a$ component of $\phi$, and $\varphi_b$ represents the imaginary $b$ value.
+where again the $\phi_a$ indicates a scalar state variable representing the real $a$ component of $\chi$, and $\phi_b$ represents the imaginary $b$ value.
 
-Ok, so how do you get a charge out of that, so to speak? As with Schrödinger's equation, the procedure involves multiplying by the complex conjugate ($\phi^* = \varphi_a - i \varphi_b$), which generally produces the overall magnitude or length of the vector represented by the two components of the complex number: $\varphi_a^2 + \varphi_b^2$.
+Ok, so how do you get a charge out of that, so to speak? As with Schrödinger's equation, the procedure involves multiplying by the complex conjugate ($\chi^* = \phi_a - i \phi_b$), which generally produces the overall magnitude or length of the vector represented by the two components of the complex number: $\phi_a^2 + \phi_b^2$.
 
 See this page for all of the details regarding the [[conservation]] properties of wave functions. In summary, if you compute the sum of the complex conjugate across all of space (actually an integral, using continuous equations), and set it equal to zero (so that it never changes), you end up with an expression for the density and motion (current) of a quantity that is conserved (i.e., the charge).
 
@@ -39,15 +47,15 @@ The resulting expression for computing the density of charge (typically written 
 
 {id="eq_kg-charge" title="Klein-Gordon charge density"}
 $$
-\rho \equiv \frac{i \hbar e}{2m_0c^2} \left( \phi^* \frac{\partial \phi}{\partial t} - \phi \frac{\partial \phi^*}{\partial t} \right)
+\rho \equiv \frac{i \hbar e}{2m_0c^2} \left( \chi^* \frac{\partial \chi}{\partial t} - \chi \frac{\partial \chi^*}{\partial t} \right)
 $$
 
 where the $e$ value is a constant (1.6e-19 in SI units) that converts natural units into proper units of charge.
 
-This can be expressed in terms of the underlying scalar state variables that make up the complex state ($\phi = \varphi_a + i \varphi_b$), and their first temporal derivatives ($\dot \varphi_a$ and $\dot \varphi_b$), and using natural units where $c=\hbar=1$, as:
+This can be expressed in terms of the underlying scalar state variables that make up the complex state ($\chi = \phi_a + i \phi_b$), and their first temporal derivatives ($\dot \phi_a$ and $\dot \phi_b$), and using natural units where $c=\hbar=1$, as:
 
 $$
-\rho_i = \frac{e}{m_0} ({\varphi_b}_i \dot {\varphi_a}_i - {\varphi_a}_i \dot {\varphi_b}_i)
+\rho_i = \frac{e}{m_0} ({\phi_b}_i \dot {\phi_a}_i - {\phi_a}_i \dot {\phi_b}_i)
 $$
 
 This is directly computable for each cubic cell $i$ in the system.
@@ -185,13 +193,13 @@ We can also derive an expression for the motion of charge over space, which is t
 
 {id="eq_kg-current" title="Klein-Gordon current density"}
 $$
-\vec{J} \equiv - \frac{i \hbar e}{2m_0} \left( \phi^* \vec{\nabla} \phi - \phi \vec{\nabla} \phi^* \right)
+\vec{J} \equiv - \frac{i \hbar e}{2m_0} \left( \chi^* \vec{\nabla} \chi - \chi \vec{\nabla} \chi^* \right)
 $$
 
 In terms of the underlying scalar state variables (and again for natural units), this is:
 
 $$
-\vec{J} = \frac{e}{m_0} (\varphi_a \vec{\nabla} \varphi_b - \varphi_b \vec{\nabla} \varphi_a)
+\vec{J} = \frac{e}{m_0} (\phi_a \vec{\nabla} \phi_b - \phi_b \vec{\nabla} \phi_a)
 $$
 
 This value indicates how much charge is moving in each of the three different coordinate directions; the $\vec{}$ symbol on top of $\vec{J}$ indicates that this is a vector, containing a separate real scalar value for each direction: $\vec{J} = (J_x, J_y, J_z)$. As noted earlier the $\vec{\nabla}$ symbol is the vector gradient operator, which computes the rate of change of the values along each dimension:
@@ -203,7 +211,7 @@ $$
 {id="figure_vgrad" style="height:20em"}
 ![The gradient of a scalar field ($\vec{\nabla}$), which produces a vector field describing the slope at each point in space. These gradient vectors point in the direction of maximum "downhill" slope. In this example the scalar field is a circularly-symmetric bump.](media/fig_vgrad.jpg)
 
-This just means that this $\vec{\nabla}$ takes a three-dimensional field, in this case the field of our wave value $\varphi_a$ or $\varphi_b$ distributed over space, and computes how steeply this field is changing in each of the three different directions [[#figure_vgrad]]. If we assume that this value is actually computed in our model, then we'll need a way of computing the gradient $\vec{\nabla}$ in discrete space-time. This is covered in the next section.
+This just means that this $\vec{\nabla}$ takes a three-dimensional field, in this case the field of our wave value $\phi_a$ or $\phi_b$ distributed over space, and computes how steeply this field is changing in each of the three different directions [[#figure_vgrad]]. If we assume that this value is actually computed in our model, then we'll need a way of computing the gradient $\vec{\nabla}$ in discrete space-time. This is covered in the next section.
 
 Before proceeding, we look ahead to the next major development. We have ways of computing the density and current of charge ($\rho$, $\vec{J}$), which drive the electromagnetic field. Thus, we need to think of these variables as physically real values, which can be computed directly from the underlying wave state variables, that give rise to long-range electromagnetic forces, through which our particle-waves interact. The next step is to see how the electromagnetic fields can push our particle waves around.
 
@@ -212,15 +220,15 @@ See [[discrete gradient]] for how to compute the gradient in the discrete CA fra
 So, in the end, the computation of the current, which is a vector having three separate components ($J_x, J_y, J_z$), looks like this:
 
 $$
-J_x = \frac{e}{m_0} \left[ \varphi_a \left( \sum_{j \in N_{X}} k_j {(\varphi_b}_{j+} - {\varphi_b}_{j-}) \right) - \varphi_b \left( \sum_{j \in N_{X}} k_j ({\varphi_a}_{j+} - {\varphi_a}_{j-}) \right) \right]
+J_x = \frac{e}{m_0} \left[ \phi_a \left( \sum_{j \in N_{X}} k_j {(\phi_b}_{j+} - {\phi_b}_{j-}) \right) - \phi_b \left( \sum_{j \in N_{X}} k_j ({\phi_a}_{j+} - {\phi_a}_{j-}) \right) \right]
 $$
 
 $$
-J_y = \frac{e}{m_0} \left[ \varphi_a \left( \sum_{j \in N_{Y}} k_j ({\varphi_b}_{j+} - {\varphi_b}_{j-}) \right) - \varphi_b \left( \sum_{j \in N_{Y}} k_j ({\varphi_a}_{j+} - {\varphi_a}_{j-}) \right) \right]
+J_y = \frac{e}{m_0} \left[ \phi_a \left( \sum_{j \in N_{Y}} k_j ({\phi_b}_{j+} - {\phi_b}_{j-}) \right) - \phi_b \left( \sum_{j \in N_{Y}} k_j ({\phi_a}_{j+} - {\phi_a}_{j-}) \right) \right]
 $$
 
 $$
-J_z = \frac{e}{m_0} \left[ \varphi_a \left( \sum_{j \in N_{Z}} k_j ({\varphi_b}_{j+} - {\varphi_b}_{j-}) \right) - \varphi_b \left( \sum_{j \in N_{Z}} k_j ({\varphi_a}_{j+} - {\varphi_a}_{j-}) \right) \right]
+J_z = \frac{e}{m_0} \left[ \phi_a \left( \sum_{j \in N_{Z}} k_j ({\phi_b}_{j+} - {\phi_b}_{j-}) \right) - \phi_b \left( \sum_{j \in N_{Z}} k_j ({\phi_a}_{j+} - {\phi_a}_{j-}) \right) \right]
 $$
 
 Again, it does not look as simple as before, but nevertheless it is necessary to have a current to be able to drive the magnetic field in an manner consistent with known physics. Specifically, the electromagnetic field equations require both $\rho$ and $\vec{J}$ values as their sources (see [[Maxwell]]). In addition, this gradient operation is necessary for several other computations in our model, so, like the laplacian, it can be thought of as one of just a few basic operations that take place over the neighborhood of cells.
@@ -238,7 +246,7 @@ $$
 However, in Schrödinger's equation, external forces enter as a potential ($V$), in the first-order derivative  $\frac{\partial {}}{\partial t}$:
 
 $$
-i \hbar \frac{\partial {\phi}}{\partial t} = \frac{\hbar^2}{2m} \nabla^2 \phi + V \phi
+i \hbar \frac{\partial {\chi}}{\partial t} = \frac{\hbar^2}{2m} \nabla^2 \chi + V \chi
 $$
 
 This makes sense, because force is the derivative of a potential, so potential is a first-order factor, and force is a second-order factor.
@@ -252,7 +260,7 @@ $$
 We can then substitute this first-order four-vector derivative into the four-vector version of the KG wave equation (in natural units), which is ([[klein-gordon#eq_kg-4vec]]):
 
 $$
-\partial_\mu \partial^\mu \phi = - m_0^2 \phi
+\partial_\mu \partial^\mu \chi = - m_0^2 \chi
 $$
 
 because, as we've noted before:
@@ -264,13 +272,13 @@ $$
 So the compact form of the KG wave equation with minimal coupling is therefore:
 
 $$
-\left( \partial_\mu - e {A}_\mu \right) \left(\partial^\mu - e {A}^\mu \right) \phi = -m_0^2 \phi
+\left( \partial_\mu - e {A}_\mu \right) \left(\partial^\mu - e {A}^\mu \right) \chi = -m_0^2 \chi
 $$
 
 To get all the units right, and perhaps add some conceptual clarity, we can do the same thing with the four-momentum version of the wave equation, which is:
 
 $$
-\hat{p}^\mu \hat{p}_\mu \phi = m_0^2 c^2 \phi
+\hat{p}^\mu \hat{p}_\mu \chi = m_0^2 c^2 \chi
 $$
 
 where the momentum operator is essentially just the four-derivative, plus the pesky $i$ and $\hbar$ factors:
@@ -294,43 +302,43 @@ $$
 This notion of the potential pushing directly on the momentum of the particle hopefully makes good intuitive sense, even if all the associated mathematics does not. In any case, the resulting KG wave equation becomes:
 
 $$
-\left({\hat{p}^\mu} - \frac{e}{c}{A}^\mu \right) \left({\hat{p}_\mu} - \frac{e}{c}{A}_\mu \right)\phi = m_0^2 c^2 \phi
+\left({\hat{p}^\mu} - \frac{e}{c}{A}^\mu \right) \left({\hat{p}_\mu} - \frac{e}{c}{A}_\mu \right)\chi = m_0^2 c^2 \chi
 $$
 
 which can also just be written more compactly as a squared expression:
 
 $$
-\left(i \hbar \partial_\mu - \frac{e}{c}{A}_\mu \right)^2\phi = m_0^2 c^2 \phi
+\left(i \hbar \partial_\mu - \frac{e}{c}{A}_\mu \right)^2\chi = m_0^2 c^2 \chi
 $$
 
 When this equation is crunched through to produce separate time and space derivatives (as detailed in a subsequent section), we get a standard second-order wave update equation plus a few extra terms (in natural units):
 
 $$
-\frac{\partial^2 {\phi}}{\partial t^2} = \nabla^2 \phi - m_0^2\phi - 2 i e \left(A_0 \frac{\partial
- {\phi}}{\partial t} + \vec{A} \cdot \vec{\nabla} \phi \right) + e^2 \phi \left(A_0^2 - \vec{A}^2\right)
+\frac{\partial^2 {\chi}}{\partial t^2} = \nabla^2 \chi - m_0^2\chi - 2 i e \left(A_0 \frac{\partial
+ {\chi}}{\partial t} + \vec{A} \cdot \vec{\nabla} \chi \right) + e^2 \chi \left(A_0^2 - \vec{A}^2\right)
 $$
 
 Including all of the various constants, it is:
 
 $$
-\frac{\partial^2 {\phi}}{\partial t^2} = c^2 \left( \nabla^2 - \frac{m_0^2 c^2}{\hbar^2} \right) \phi -
- \frac{2 i e}{\hbar} \left(A_0 \frac{\partial {\phi}}{\partial t} + c \vec{A} \cdot \vec{\nabla} \phi \right) + \frac{e^2 \phi}{\hbar^2} \left(A_0^2 - \vec{A}^2\right)
+\frac{\partial^2 {\chi}}{\partial t^2} = c^2 \left( \nabla^2 - \frac{m_0^2 c^2}{\hbar^2} \right) \chi -
+ \frac{2 i e}{\hbar} \left(A_0 \frac{\partial {\chi}}{\partial t} + c \vec{A} \cdot \vec{\nabla} \chi \right) + \frac{e^2 \chi}{\hbar^2} \left(A_0^2 - \vec{A}^2\right)
 $$
 
-This equation amounts to the basic KG wave equation, plus terms that involve the interaction between the charge wave and the electromagnetic field potentials $A_0$ and $\vec{A}$. For example, in the second term of this equation, the vector potential $\vec{A}$ "pushes" on the gradient of the wave function $\vec{\nabla} \phi$, and the scalar potential $A_0$ pushes on the temporal derivative $\frac{\partial {\phi}}{\partial t}$. Notice that these interactions are all first-order, in terms of the potentials and first-order derivatives of the wave equations. The second-order electromagnetic force fields $\vec{E}$ and $\vec{B}$ do not appear at all! This is despite the fact that these are widely regarded as the primary observables of electromagnetic force. Also, the electromagnetic terms introduce a coupling between the two components of the complex variable $\phi$, because of the presence of the imaginary number $i$ in this term. Therefore, it is only the "free" particle (without electromagnetic forces) that has the completely uncoupled scalar components.
+This equation amounts to the basic KG wave equation, plus terms that involve the interaction between the charge wave and the electromagnetic field potentials $A_0$ and $\vec{A}$. For example, in the second term of this equation, the vector potential $\vec{A}$ "pushes" on the gradient of the wave function $\vec{\nabla} \chi$, and the scalar potential $A_0$ pushes on the temporal derivative $\frac{\partial {\chi}}{\partial t}$. Notice that these interactions are all first-order, in terms of the potentials and first-order derivatives of the wave equations. The second-order electromagnetic force fields $\vec{E}$ and $\vec{B}$ do not appear at all! This is despite the fact that these are widely regarded as the primary observables of electromagnetic force. Also, the electromagnetic terms introduce a coupling between the two components of the complex variable $\chi$, because of the presence of the imaginary number $i$ in this term. Therefore, it is only the "free" particle (without electromagnetic forces) that has the completely uncoupled scalar components.
 
-Before we pause to reflect more, we need to take two more steps. First, because $\phi$ is a complex variable, we need to further compute the separate real-valued update equations for $\varphi_a$ and $\varphi_b$ to simulate this in our model. Second, we need to update the charge and current equations for this new version of the KG wave equations.
+Before we pause to reflect more, we need to take two more steps. First, because $\chi$ is a complex variable, we need to further compute the separate real-valued update equations for $\phi_a$ and $\phi_b$ to simulate this in our model. Second, we need to update the charge and current equations for this new version of the KG wave equations.
 
 The resulting CA model update equations (including all the relevant $c$ and $\hbar$ factors) are:
 
 $$
-\ddot \varphi_a^{t+1} = c^2 \left(\nabla^2 \varphi_a - \frac{m_0^2c^2}{\hbar^2} \varphi_a \right) + \frac{2 e}{\hbar} \left(A_0 \dot \varphi_b + c \vec{A} \cdot \vec{\nabla} \varphi_b \right) + \frac{e^2}{\hbar^2} \varphi_a \left(A_0^2 - \vec{A}^2 \right)
+\ddot \phi_a^{t+1} = c^2 \left(\nabla^2 \phi_a - \frac{m_0^2c^2}{\hbar^2} \phi_a \right) + \frac{2 e}{\hbar} \left(A_0 \dot \phi_b + c \vec{A} \cdot \vec{\nabla} \phi_b \right) + \frac{e^2}{\hbar^2} \phi_a \left(A_0^2 - \vec{A}^2 \right)
 $$
 
 and:
 
 $$
-\ddot \varphi_b^{t+1} = c^2 \left(\nabla^2 \varphi_b - \frac{m_0^2c^2}{\hbar^2} \varphi_b \right) - \frac{2 e}{\hbar} \left(A_0 \dot \varphi_a + c \vec{A} \cdot \vec{\nabla} \varphi_a \right) + \frac{e^2}{\hbar^2} \varphi_b \left(A_0^2 - \vec{A}^2 \right)
+\ddot \phi_b^{t+1} = c^2 \left(\nabla^2 \phi_b - \frac{m_0^2c^2}{\hbar^2} \phi_b \right) - \frac{2 e}{\hbar} \left(A_0 \dot \phi_a + c \vec{A} \cdot \vec{\nabla} \phi_a \right) + \frac{e^2}{\hbar^2} \phi_b \left(A_0^2 - \vec{A}^2 \right)
 $$
 
 (where for simplicity the right hand side variables are implicitly taken at time $t$ for cell $i$, and the discrete versions of $\nabla^2$ and $\vec{\nabla}$ presented earlier are assumed). Note that we again need the first-order spatial gradient operator $\vec{\nabla}$ as a basic computation in our model, but otherwise all the variables are local to the system.
@@ -338,13 +346,13 @@ $$
 The [[conservation|conserved]] charge and current values computed by this equation must also be updated. The coupling with the electromagnetic field has introduced additional factors here, which depend on the electromagnetic potentials $A_0$ and $\vec{A}$. For the charge density $\rho$, we have:
 
 $$
-\rho = \frac{i \hbar e}{2m_0c^2} \left( \phi^* \frac{\partial {\phi}}{\partial t} - \phi \frac{\partial {\phi^*}}{\partial t} \right) - \frac{e^2}{m_0 c^2} A_0 \phi \phi^*
+\rho = \frac{i \hbar e}{2m_0c^2} \left( \chi^* \frac{\partial {\chi}}{\partial t} - \chi \frac{\partial {\chi^*}}{\partial t} \right) - \frac{e^2}{m_0 c^2} A_0 \chi \chi^*
 $$
 
 If you compare with the original charge equation for the complex KG equation ([[#eq_kg-charge]]), it is the same except for the last term. Similarly, the current density $\vec{J}$ is:
 
 $$
-\vec{J} \equiv - \frac{i \hbar e}{2m_0} \left( \phi^* \vec{\nabla} \phi - \phi \vec{\nabla} \phi^* \right) - \frac{e^2}{m_0 c} \vec{A} \phi \phi^*
+\vec{J} \equiv - \frac{i \hbar e}{2m_0} \left( \chi^* \vec{\nabla} \chi - \chi \vec{\nabla} \chi^* \right) - \frac{e^2}{m_0 c} \vec{A} \chi \chi^*
 $$
 
 again with an extra term at the end relative to [[#eq_kg-current]].
@@ -352,22 +360,22 @@ again with an extra term at the end relative to [[#eq_kg-current]].
 These equations need to be converted into computational expressions in terms of the separate complex components, as before:
 
 $$
-\rho = \frac{\hbar e}{m_0c^2} (\varphi_b \dot \varphi_a - \varphi_a \dot \varphi_b) - \frac{e^2}{m_0 c^2} A_0 (\varphi_a^2 + \varphi_b^2)
+\rho = \frac{\hbar e}{m_0c^2} (\phi_b \dot \phi_a - \phi_a \dot \phi_b) - \frac{e^2}{m_0 c^2} A_0 (\phi_a^2 + \phi_b^2)
 $$
 
 $$
-\vec{J} = \frac{\hbar e}{m_0} (\varphi_a \vec{\nabla} \varphi_b - \varphi_b \vec{\nabla} \varphi_a) - \frac{e^2}{m_0c} \vec{A} (\varphi_a^2 + \varphi_b^2)
+\vec{J} = \frac{\hbar e}{m_0} (\phi_a \vec{\nabla} \phi_b - \phi_b \vec{\nabla} \phi_a) - \frac{e^2}{m_0c} \vec{A} (\phi_a^2 + \phi_b^2)
 $$
 
 At this point, we have reached an important milestone --- if you take the equations just presented above, this describes a particle as a distributed wave of charge that gets pushed around by the electromagnetic field potentials ($A_0$ and $\vec{A}$). Furthermore, this wave of charge produces electromagnetic fields, in terms of charge and current densities $\rho$ and $\vec{J}$. Thus, we finally have a complete system of equations that can potentially simulate charged particles whizzing around and interacting with each other. In other words, we finally have the potential to make direct contact with observable physics! Indeed, you can explore the behavior of this system in the model, by using the Complex Coupled KG wave equations setting.
 
 ## Numerical Issues with Coupling: Symmetry Breaking
 
-When you actually simulate these equations on the computer, something very interesting (and initially distressing) happens --- they blow up! As you run the equations over time in the presence of a fixed electromagnetic field, the total charge value, far from being a constant, increases steadily, and eventually you end up with numbers approaching infinity. This is not because the math is wrong (after very thorough checking!), but because of the coupling between the two elements of the complex variable that occurs in the update equation. Specifically, the update of $\varphi_a$ depends on $\dot \varphi_b$ and $\vec{\nabla} \varphi_b$, and vice-versa. This interdependency creates numerical instabilities when we simply substitute in the discrete computed values at each time step. In particular, because the change in $\varphi_a$ depends on the change in $\varphi_b$, this cycle of dependency can get out of whack.
+When you actually simulate these equations on the computer, something very interesting (and initially distressing) happens --- they blow up! As you run the equations over time in the presence of a fixed electromagnetic field, the total charge value, far from being a constant, increases steadily, and eventually you end up with numbers approaching infinity. This is not because the math is wrong (after very thorough checking!), but because of the coupling between the two elements of the complex variable that occurs in the update equation. Specifically, the update of $\phi_a$ depends on $\dot \phi_b$ and $\vec{\nabla} \phi_b$, and vice-versa. This interdependency creates numerical instabilities when we simply substitute in the discrete computed values at each time step. In particular, because the change in $\phi_a$ depends on the change in $\phi_b$, this cycle of dependency can get out of whack.
 
-Intuitively, the electromagnetic potentials drive a rotation through the $\varphi_a$ and $\varphi_b$ variables, which is evident in the fact that they subtract from $\varphi_b$ but add to $\varphi_a$ --- these opposite signs are the signature of a rotation (and incidentally are caused by the presence of the imaginary $i$ numbers in the equations). To the extent that the potentials are pushing the $\varphi_a$ variable up, there should be an equal and opposite pushing of the $\varphi_b$ variable down, causing the rotation. However, if the $\varphi_b$ variable only has the "old" data from the previous time step about how much $\varphi_a$ got pushed up, then it doesn't compensate correctly in how much it gets pushed down. Thus, you end up with a "leak" in the system, where instead of rotating nicely in place, the system starts to fly out of control, spinning wider and wider circles each time.
+Intuitively, the electromagnetic potentials drive a rotation through the $\phi_a$ and $\phi_b$ variables, which is evident in the fact that they subtract from $\phi_b$ but add to $\phi_a$ --- these opposite signs are the signature of a rotation (and incidentally are caused by the presence of the imaginary $i$ numbers in the equations). To the extent that the potentials are pushing the $\phi_a$ variable up, there should be an equal and opposite pushing of the $\phi_b$ variable down, causing the rotation. However, if the $\phi_b$ variable only has the "old" data from the previous time step about how much $\phi_a$ got pushed up, then it doesn't compensate correctly in how much it gets pushed down. Thus, you end up with a "leak" in the system, where instead of rotating nicely in place, the system starts to fly out of control, spinning wider and wider circles each time.
 
-The solution to this problem is to *break the symmetry* between $\varphi_a$ and $\varphi_b$ in these update equations. Instead of updating each of them at the same time, based on the prior values of the other, we choose one variable ($\varphi_a$, arbitrarily) and update its values first. Then, when we compute $\varphi_b$, we use the _current value_ of $\dot \varphi_a$ in the update equation for $\varphi_b$. This prevents the rotation between these variables from getting out of whack, and restores numerical stability to the system.
+The solution to this problem is to *break the symmetry* between $\phi_a$ and $\phi_b$ in these update equations. Instead of updating each of them at the same time, based on the prior values of the other, we choose one variable ($\phi_a$, arbitrarily) and update its values first. Then, when we compute $\phi_b$, we use the _current value_ of $\dot \phi_a$ in the update equation for $\phi_b$. This prevents the rotation between these variables from getting out of whack, and restores numerical stability to the system.
 
 <!--- todo: run KG invr5 case, plot figure! -->
 
@@ -395,15 +403,15 @@ However, it is not clear exactly how to reconcile such an argument with the fact
 Nevertheless, here is the argument for the electromagnetic coupling being a form of local gauge invariance. If you just take our basic complex KG wave equation, you can get exactly the same overall behavior if you multiply the thing by a "phase transformation" (it is often said that gauge invariance should really be phase invariance) which is basically just a rotation along the complex axes. This is exactly the kind of rotation discussed above. The generic form of a rotation in complex numbers is to multiply by an exponential term:
 
 $$
-\phi(x) \rightarrow \exp \left(\frac{ie}{\hbar c} \chi \right) \phi(x)
+\chi(x) \rightarrow \exp \left(\frac{ie}{\hbar c} \chi \right) \chi(x)
 $$
 
-Where the $\chi$ term is the amount that you're rotating (the rest are just convenient constants for getting $\chi$ into the right units) --- think of it as some number of degrees of rotating the underlying $\varphi_a$ value into $\varphi_b$ (and vice-versa) for the complex number $\phi$.
+Where the $\chi$ term is the amount that you're rotating (the rest are just convenient constants for getting $\chi$ into the right units) --- think of it as some number of degrees of rotating the underlying $\phi_a$ value into $\phi_b$ (and vice-versa) for the complex number $\chi$.
 
 If $\chi$ is independent of location ($x$), then it is just a constant and nothing happens. This is a *global* gauge/phase transformation, and it is not very interesting. However, if $\chi$ is now itself a function of location (i.e., $\chi(x)$ ), this is a *local* gauge transformation, and this is where the electromagnetic coupling comes in. If you have such a local variable, and you take the derivative of the resulting overall system that includes this locally-varying thing, you get this extra term for the derivative of $\chi(x)$ with respect to x:
 
 $$
-\partial_\mu \phi(x) \rightarrow \exp \left( \frac{ie}{\hbar c} \chi(x) \right) \left(\partial_\mu + \frac{ie}{\hbar c} \partial_\mu \chi(x) \right) \phi(x)
+\partial_\mu \chi(x) \rightarrow \exp \left( \frac{ie}{\hbar c} \chi(x) \right) \left(\partial_\mu + \frac{ie}{\hbar c} \partial_\mu \chi(x) \right) \chi(x)
 $$
 
 So now your nice wave equation is a mess, and it varies from one place to another as a function of this $\partial_\mu \chi(x)$ term. So here is the trick: you basically just add this annoying term into the overall EM potential field (which is OK because such additions do not change the gradients and therefore do not affect observable EM field vectors):
@@ -415,7 +423,7 @@ $$
 And then you just subtract this whole thing back out from your messy equation, and this gives you something just slightly less messy:
 
 $$
-\left(i \hbar \partial_\mu - \frac{e}{c} {A}_\mu\right)\phi
+\left(i \hbar \partial_\mu - \frac{e}{c} {A}_\mu\right)\chi
 $$
 
 So, this ends up being the same thing as the minimal coupling described earlier. Somehow, this whole process seems like a rather contrived way to end up with something that already made quite a bit of sense before hand. However, as noted earlier, the true payoff of such a procedure appears to come in addressing the weak and strong forces, which we leave for a future refinement of the model.
@@ -426,7 +434,7 @@ We now have a full electrodynamic system with bidirectional interactions between
 
 It may not be quite as elegant as our simplest system of a pure wave field for forces, and a simple scalar KG wave equation for our particle, but elegance cannot override physical facts. Still, all the broad implications of those core wave equations (special relativity, Newtonian-like dynamics, quantum physics, etc) all hold for our more elaborated equations.
 
-Perhaps the most surprising development here is that we had to break the symmetry between the two components of the complex state variable, and introduce a preferred direction of rotation, in order to avoid numerical instability. This numerical instability results when variables are coupled, and the rotation through the $\varphi_a$ and $\varphi_b$ variables produced by the interaction with the electromagnetic field is manifest as such a coupling. This break in symmetry and preferred direction of rotation bears a tantalizing resemblance to features of the weak force, suggesting a possible explanation for an otherwise very strange aspect of nature.
+Perhaps the most surprising development here is that we had to break the symmetry between the two components of the complex state variable, and introduce a preferred direction of rotation, in order to avoid numerical instability. This numerical instability results when variables are coupled, and the rotation through the $\phi_a$ and $\phi_b$ variables produced by the interaction with the electromagnetic field is manifest as such a coupling. This break in symmetry and preferred direction of rotation bears a tantalizing resemblance to features of the weak force, suggesting a possible explanation for an otherwise very strange aspect of nature.
 
 Our overall model at this point consists of a small handful of locally computable equations, which can be readily simulated on a computer. As these equations play out, they deterministically, locally, and automatically generate physics that should be largely consistent with what we know about the world. However, as we noted before, our equations are missing one critical piece, which is _spin_.
 

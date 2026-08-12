@@ -22,7 +22,7 @@ In effect, the spinning that happens in the Weyl equations represents a rotation
 
 {id="eq_two-component" title="two-component complex wave state"}
 $$
-\psi = \begin{bmatrix} \varphi_{1a} + i \varphi_{1b} \\ \varphi_{2a} + i \varphi_{2b} \end{bmatrix}
+\psi = \begin{bmatrix} \phi_{1a} + i \phi_{1b} \\ \phi_{2a} + i \phi_{2b} \end{bmatrix}
 $$
 
 This rotation happens at the speed of light, as the wave itself also propagates at light-speed. The two different _helicity_ variants of the Weyl equations reflects whether this rotation is effectively spinning in a right-hand or left-hand manner relative to the wave propagation direction. You can see this on your own hands, by having your thumb represent the motion direction, and the curled-around fingers represent the rotation direction.

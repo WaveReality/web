@@ -3,11 +3,11 @@ Categories = ["Standard Model"]
 bibfile = "mechphys.json"
 +++
 
-The **Higgs** field plays a central role in the [[weak]] interaction in the [[Standard Model]], providing a mechanism for converting mathematically _massless_ weak force [[boson]]s (which are represented as an expanded set of electromagnetic force field bosons, as described by [[Maxwell]]-like equations) into the actual $W^{\pm}$ and $Z^0$ vector bosons that have (large) masses. This occurs due to **spontaneous symmetry breaking** due to the Higgs field having a non-zero vacuum energy level: if it instead had a zero vacuum energy level, then these weak bosons would be massless.
+The **Higgs** field plays a central role in the [[weak]] interaction in the [[Standard Model]], providing a mechanism for converting mathematically _massless_ weak force [[boson]]s (which are represented as an expanded set of electromagnetic force field bosons, as described by [[Maxwell]]-like equations) into the actual $W^{\pm}$ and $Z^0$ vector bosons that have (large) masses. This occurs due to **spontaneous symmetry breaking** due to the Higgs field having a non-zero [[vacuum]] energy level: if it instead had a zero vacuum energy level, then these weak bosons would be massless.
 
 This Standard Model Higgs mechanism is central to the **electroweak** integration of electromagnetic and weak forces, developed in the 1960's and 70's ([[@Weinberg67]]; [[@Higgs64]]; [[@EnglertBrout64]]; [[@GuralnikHagenKibble64]]), based on mechanisms originally inspired by superconductivity ([[@Goldstone61]]; [[@GoldstoneSalamWeinberg62]]; [[@Nambu60]]; [[@NambuJona-Lasinio61]]; [[@DurrHeisenbergMitterEtAl59]]; [[@Schwinger62]]; [[@Anderson63]]). Furthermore, this same mechanism was extended so that the Higgs field also gives mass to the [[fermion]]s as well, through the Yukawa coupling factors ([[@Yukawa35]]; [wikipedia](https://en.wikipedia.org/wiki/Yukawa_coupling)).
 
-The Higgs field is represented by the [[Klein-Gordon]] equation in the Standard Model, which describes a _scalar_ field with a rest mass. The presence of the rest mass corresponds to the mass of the Higgs boson, and has the effect of causing the field to drop off in strength exponentially, as compared to the $1/r$ behavior of the electromagnetic radiation field characterized by a massless boson (i.e., the standard [[wave]] equation). The empirically-measured Higgs boson mass is around $125 GeV/c^2$ ([[@ParticleDataGroup24]]).
+The Higgs field is represented by the [[Klein-Gordon]] equation in the Standard Model, which describes a _scalar_ field with a rest mass. The presence of the rest mass corresponds to the mass of the Higgs boson. The empirically-measured Higgs boson mass is around $125 GeV/c^2$ ([[@ParticleDataGroup24]]).
 
 ## Superconductivity analogy
 
@@ -34,4 +34,4 @@ The heaviest currently-known fermion is the top [[quark]], which weighs in at ar
 
 This length scale is in the range of the weak force, which operates around the $10^{-18}m$, and is well above the Planck length scale of $10^{-35}m$, where gravitation is as strong as EM. Thus, consistent with the application of the [[renormalization]] procedure, the Higgs mass is consistent with the Standard Model being a _complete_ model, with no room for additional higher-energy (mass) particles, etc.
 
-
+## 

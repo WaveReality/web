@@ -212,6 +212,8 @@
 
 <p id="Meyer96">Meyer, D.A. (1996). From quantum cellular automata to quantum lattice gases. <i>Journal of Statistical Physics, 85</i>, 551–574. <a href="https://doi.org/10.1007/BF02199356">https://doi.org/10.1007/BF02199356</a><a href="http://doi.org/10.1007/BF02199356"> http://doi.org/10.1007/BF02199356</a></p>
 
+<p id="Minkowski08">Minkowski, H. (1908). Die Grundgleichungen für die elektromagnetischen Vorgänge in bewegten Körpern. <i>Nachrichten von der Gesellschaft der Wissenschaften zu Göttingen, Mathematisch-Physikalische Klasse, 1908</i>, 53–111. <a href="https://eudml.org/doc/58707">https://eudml.org/doc/58707</a></p>
+
 <p id="Nakagomi88">Nakagomi, T. (1988). Relativistic Random Walks Intrinsic to the Walker. <i>Progress of Theoretical Physics, 80</i>, 245–257. <a href="https://doi.org/10.1143/PTP.80.245">https://doi.org/10.1143/PTP.80.245</a><a href="http://doi.org/10.1143/PTP.80.245"> http://doi.org/10.1143/PTP.80.245</a></p>
 
 <p id="Nambu60">Nambu, Y. (1960). Quasi-Particles and Gauge Invariance in the Theory of Superconductivity. <i>Physical Review, 117</i>, 648–663. <a href="https://link.aps.org/doi/10.1103/PhysRev.117.648">https://link.aps.org/doi/10.1103/PhysRev.117.648</a><a href="http://doi.org/10.1103/PhysRev.117.648"> http://doi.org/10.1103/PhysRev.117.648</a></p>

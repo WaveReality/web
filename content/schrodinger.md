@@ -59,7 +59,7 @@ We can now just apply our momentum and energy operators to these expressions, an
 
 {id="eq_schrodinger" title="Schrödinger's equation"}
 $$
-i \hbar \frac{\partial {\phi}}{\partial t} = -\frac{\hbar^2}{2 m_0} \nabla^2 \phi + V \phi
+i \hbar \frac{\partial {\psi}}{\partial t} = -\frac{\hbar^2}{2 m_0} \nabla^2 \psi + V \psi
 $$
 
 The net result is that we can conclude that Schrödinger's equation provides an accurate description of the flow of energy and momentum over time of a "particle" described by a wave, such that it obeys classical Newtonian physical laws. Note that in comparison with the KG equation, there is no speed-of-light factor $c$ in this equation, consistent with its non-relativistic nature.
@@ -68,73 +68,73 @@ Omitting various constants (factors of $h$) and any external force potential, Sc
 
 {id="eq_schrodinger" title="Schrödinger's equation, essence"}
 $$
-i \frac{\partial {\phi}}{\partial t} = - \frac{1}{2m_0} \nabla^2 \phi
+i \frac{\partial {\psi}}{\partial t} = - \frac{1}{2m_0} \nabla^2 \psi
 $$
 
 where $m_0$ is again the rest mass of the particle in question. This is clearly very similar to the basic second-order KG wave equation:
 
 {id="eq_KG" title="Klein-Gordon equation"}
 $$
-\frac{\partial^2 {\varphi}}{\partial t^2} = c^2 \nabla^2 \varphi - \frac{m_0^2}{\hbar^2} \varphi
+\frac{\partial^2 {\phi}}{\partial t^2} = c^2 \nabla^2 \phi - \frac{m_0^2}{\hbar^2} \phi
 $$
 
-except that the temporal derivative is first-order, and mass enters in a different way. Nevertheless, the driving force is still the overall curvature of the wave, computed by $\nabla^2 \varphi$. As we noted above, the multiplication by the $i$ term causes things to rotate --- this rotation is key for making the first-order equation behave like a wave.
+except that the temporal derivative is first-order, and mass enters in a different way. Nevertheless, the driving force is still the overall curvature of the wave, computed by $\nabla^2 \phi$. As we noted above, the multiplication by the $i$ term causes things to rotate --- this rotation is key for making the first-order equation behave like a wave.
 
 To see this effect more explicitly, we can write out Schrödinger's equation in terms of the two underlying scalar values:
 
 $$
-i \frac{\partial ({\varphi_a + i \varphi_b})}{\partial t} = - \frac{1}{2m_0} \nabla^2 (\varphi_a + i \varphi_b)
+i \frac{\partial ({\phi_a + i \phi_b})}{\partial t} = - \frac{1}{2m_0} \nabla^2 (\phi_a + i \phi_b)
 $$
 
 $$
--\frac{\partial {\varphi_b}}{\partial t} + \frac{\partial {i \varphi_a}}{\partial t} = -\frac{1}{2m_0} \nabla^2 \varphi_a - i \nabla^2 \varphi_b
+-\frac{\partial {\phi_b}}{\partial t} + \frac{\partial {i \phi_a}}{\partial t} = -\frac{1}{2m_0} \nabla^2 \phi_a - i \nabla^2 \phi_b
 $$
 
-where $\varphi_a$ indicates a scalar state variable that is the $a$ component of $\phi$, and $\varphi_b$ is the $b$ component of $\phi$. Note that the derivatives operate separately on each of the two variables. At this point, we now can just separate all the terms that involve an $i$ from those that do not, to get update equations for each of the two variables. For the real-valued components (without the $i$):
+where $\phi_a$ indicates a scalar state variable that is the $a$ component of $\psi$, and $\phi_b$ is the $b$ component of $\psi$. Note that the derivatives operate separately on each of the two variables. At this point, we now can just separate all the terms that involve an $i$ from those that do not, to get update equations for each of the two variables. For the real-valued components (without the $i$):
 
 $$
--\frac{\partial {\varphi_b}}{\partial t} = - \frac{1}{2m_0} \nabla^2 \varphi_a
+-\frac{\partial {\phi_b}}{\partial t} = - \frac{1}{2m_0} \nabla^2 \phi_a
 $$
 
 $$
-\frac{\partial {\varphi_b}}{\partial t} = \frac{1}{2m_0} \nabla^2 \varphi_a
+\frac{\partial {\phi_b}}{\partial t} = \frac{1}{2m_0} \nabla^2 \phi_a
 $$
 
 and for the imaginary components (dropping the $i$ now, because we no longer need it to keep the variables separated):
 
 $$
-\frac{\partial {\varphi_a}}{\partial t} = - \frac{1}{2m_0} \nabla^2 \varphi_b
+\frac{\partial {\phi_a}}{\partial t} = - \frac{1}{2m_0} \nabla^2 \phi_b
 $$
 
 In a discrete-space and time [[cellular automaton]] implementation, these equations would be written:
 
 $$
-\dot {\varphi_a}_i^{t+1} = - \frac{3}{26 m_0} \sum_{j \in N_{26}} k_j ({\varphi_b}_j^t - {\varphi_b}_i^t)
+\dot {\phi_a}_i^{t+1} = - \frac{3}{26 m_0} \sum_{j \in N_{26}} k_j ({\phi_b}_j^t - {\phi_b}_i^t)
 $$
 
 $$
-{\varphi_a}_i^{t+1} = {\varphi_a}_i^t + \dot {\varphi_a}_i^{t+1}
+{\phi_a}_i^{t+1} = {\phi_a}_i^t + \dot {\phi_a}_i^{t+1}
 $$
 
 and:
 
 $$
-\dot {\varphi_b}_i^{t+1} = \frac{3}{26 m_0}\sum_{j \in N_{26}} k_j ({\varphi_a}_j^t - {\varphi_a}_i^t)
+\dot {\phi_b}_i^{t+1} = \frac{3}{26 m_0}\sum_{j \in N_{26}} k_j ({\phi_a}_j^t - {\phi_a}_i^t)
 $$
 
 $$
-{\varphi_b}_i^{t+1} = {\varphi_b}_i^t + \dot {\varphi_b}_i^{t+1}
+{\phi_b}_i^{t+1} = {\phi_b}_i^t + \dot {\phi_b}_i^{t+1}
 $$
 
-So, in the end, Schrödinger's equation really just boils down to two very simple differential equations. Interestingly, these equations are *coupled*, in the sense that it is the curvature of $\varphi_a$ that drives the change in $\varphi_b$, and vice-versa. This is the rotational aspect of the equation mentioned earlier, which is caused by the presence of the $i$ in the equation.
+So, in the end, Schrödinger's equation really just boils down to two very simple differential equations. Interestingly, these equations are *coupled*, in the sense that it is the curvature of $\phi_a$ that drives the change in $\phi_b$, and vice-versa. This is the rotational aspect of the equation mentioned earlier, which is caused by the presence of the $i$ in the equation.
 
 When you actually implement Schrödinger's equation on a computer using the update rules given above, the resulting system is numerically unstable. In other words, the resulting numbers quickly blow up to infinity. This is not due to any kind of numerical roundoff error from limited precision floating point numbers on the computer, but rather due to the way that changes in state values reverberate back and forth across the two scalar values. However, it is possible to overcome it relatively simply by just alternating the update: on one time step you compute one value, and on the next you update the other. This is what is done for illustrative purposes in the computer explorations.
 
-The basic phenomenology of Schrödinger's equation is that wave packets propagate through space, with a speed that is proportional to $\nabla^2 \phi$, which in turn is proportional to the frequency of the wave. In other words, it describes exactly the same behavior as the KG equation, where particle speed is proportional to frequency.
+The basic phenomenology of Schrödinger's equation is that wave packets propagate through space, with a speed that is proportional to $\nabla^2 \psi$, which in turn is proportional to the frequency of the wave. In other words, it describes exactly the same behavior as the KG equation, where particle speed is proportional to frequency.
 
-One critical property of Schrödinger's equation (which the scalar [[Klein-Gordon]] equation does not have) is that it preserves the overall magnitude of the $\phi$ state values across all of space, for all time. This is to say, if you compute the sum of $\phi \phi^*$ for each point in space, this sum will remain the same across time under the Schrödinger equation. This conserved value is interpreted as a probability in standard quantum mechanics.
+One critical property of Schrödinger's equation (which the scalar [[Klein-Gordon]] equation does not have) is that it preserves the overall magnitude of the $\psi$ state values across all of space, for all time. This is to say, if you compute the sum of $\psi \psi^*$ for each point in space, this sum will remain the same across time under the Schrödinger equation. This conserved value is interpreted as a probability in standard quantum mechanics.
 
-For example, we can initialize the state with a localized wave packet (see [[matter wave]]s) to represent the initial probability for the location and velocity of a particle (velocity being a function of the frequency of the wave packet). If we then apply the Schrödinger equation repeatedly, we can interpret the resulting $\phi \phi^*$ values as the probability of the particle having moved to the corresponding location.
+For example, we can initialize the state with a localized wave packet (see [[matter wave]]s) to represent the initial probability for the location and velocity of a particle (velocity being a function of the frequency of the wave packet). If we then apply the Schrödinger equation repeatedly, we can interpret the resulting $\psi \psi^*$ values as the probability of the particle having moved to the corresponding location.
 
 In other words, the wave packet defines a kind of "cloud of probability" for finding a discrete particle within its midst. However, these probabilities have different meanings in different scenarios, and it is notoriously difficult to come up with a intuitively sensible interpretation of what these probability clouds mean (see [[Copenhagen]] for discussion).
 

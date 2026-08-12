@@ -37,24 +37,24 @@ This is a first-pass attempt at an integrated wave-particle system based on the 
 
 {id="eq_kg-current" title="Klein-Gordon current density"}
 $$
-\vec{J} \equiv - \frac{i \hbar e}{2m_0} \left( \phi^* \vec{\nabla} \phi - \phi \vec{\nabla} \phi^* \right)
+\vec{J} \equiv - \frac{i \hbar e}{2m_0} \left( \chi^* \vec{\nabla} \chi - \chi \vec{\nabla} \chi^* \right)
 $$
 
 In terms of the underlying scalar state variables (and again for natural units), this is:
 
 $$
-\vec{J} = \frac{e}{m_0} (\varphi_a \vec{\nabla} \varphi_b - \varphi_b \vec{\nabla} \varphi_a)
+\vec{J} = \frac{e}{m_0} (\phi_a \vec{\nabla} \phi_b - \phi_b \vec{\nabla} \phi_a)
 $$
 
 * The probability of staying in the same location is from the charge density:
 
 {id="eq_kg-charge" title="Klein-Gordon charge density"}
 $$
-\rho \equiv \frac{i \hbar e}{2m_0c^2} \left( \phi^* \frac{\partial \phi}{\partial t} - \phi \frac{\partial \phi^*}{\partial t} \right)
+\rho \equiv \frac{i \hbar e}{2m_0c^2} \left( \chi^* \frac{\partial \chi}{\partial t} - \chi \frac{\partial \chi^*}{\partial t} \right)
 $$
 
 $$
-\rho_i = \frac{e}{m_0} ({\varphi_b}_i \dot {\varphi_a}_i - {\varphi_a}_i \dot {\varphi_b}_i)
+\rho_i = \frac{e}{m_0} ({\phi_b}_i \dot {\phi_a}_i - {\phi_a}_i \dot {\phi_b}_i)
 $$
 
 * everything is normalized by the sum, and then the stochastic choice is made on these normalized probabilities.
@@ -62,7 +62,7 @@ $$
 * if staying put, then the energy equivalent of the mass-dependent factor:
 
 $$
-\frac{c^2 m_0^2}{\hbar^2} \varphi
+\frac{c^2 m_0^2}{\hbar^2} \phi
 $$
 
 is converted into an acceleration of the complex state variables. How exactly??

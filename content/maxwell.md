@@ -8,15 +8,26 @@ The basic equations of electromagnetism were developed in the 1800's, through th
 
 Although Maxwell's equations describe the same kind of wave propagation we explored in [[wave]]s, they do so in a somewhat complex way, involving vector fields and various vector operators that can be difficult to understand. Therefore, we start with a formulation of the EM equations that will be immediately familiar from the previous chapter, using second-order wave equations. These second-order wave equations operate on the **electromagnetic potentials**, instead of the electric and magnetic vector fields, which are described by the standard Maxwell's equations.
 
-Although many people regard the vector fields as the primary physical reality underlying EM, there is solid physical evidence showing that the electromagnetic potentials are physically real, and exert measurable physical effects, for example the **Aharonov-Bohm** effect (described later). Thus, in addition to being mathematically simpler, the potential-based formulation seems to be physically necessary. Nevertheless, there remain several important sources of controversy and confusion over this choice, which will be introduced as we go through.
+Although many people regard the vector fields as the primary physical reality underlying EM, there is solid physical evidence showing that the electromagnetic potentials are physically real, and exert measurable physical effects, for example the [Aharonov-Bohm effect](https://en.wikipedia.org/wiki/Aharonov%E2%80%93Bohm_effect) (Wikipedia link). Thus, in addition to being mathematically simpler, the potential-based formulation seems to be physically necessary. Furthermore, the [[Standard Model]] and [[gauge theory]] are fundamentally based on this potential version. Nevertheless, there remain several important sources of controversy and confusion over this choice, which will be introduced as we go through.
 
 There are two electromagnetic potentials, the **electrical scalar potential**, which is variously written as $\Phi$ (capital Greek "Phi") or $V$ or $A_0$, and the **magnetic vector potential**, typically written as: $\vec{A} = (A_x, A_y, A_z)$. Most readers should be familiar with the notion of the electrical potential $V$, in terms of the voltage of a battery or an electrical outlet --- therefore, we'll focus on it first. Then we'll cover the more difficult vector potential, which underlies the magnetic field. After exploring each of these and obtaining a solid understanding of their behavior, we relate these potential wave equations back to the original Maxwell equations, and cover various important issues with our potential-based formulation of EM.
 
 What should not get lost in all this discussion is the bare amazing fact that all of EM can be captured in the simple second-order wave equation (with appropriate source terms from electrical charge and current): this is the only equation we need to simulate the propagation of the EM fields over space and time. This wave equation naturally produces the **inverse square law** of the electrical force, and it does so through strictly local wave propagation mechanisms, avoiding the apparent action-at-a-distance that the calculational tool of the usual Coulomb version of this force law, where you literally compute the force as a function of the distance between two charges.
 
-Furthermore, the wave equation provides the framework for many aspects of [[special relativity]], such as the constant speed of light in a vacuum. The [[four-vector]] space-time notation establishes a deep connection between the way that space and time are interconnected in the wave equation, and in special relativity. This notation enables us to know immediately whether something is **manifestly covariant**, which means it is obviously compatible with the principles of special relativity (i.e., invariant with respect to the Lorentz transformation).
+Furthermore, the wave equation provides the framework for many aspects of [[special relativity]], such as the constant speed of light in a [[vacuum]]. The [[four-vector]] space-time notation establishes a deep connection between the way that space and time are interconnected in the wave equation, and in special relativity. This notation enables us to know immediately whether something is **manifestly covariant**, which means it is obviously compatible with the principles of special relativity (i.e., invariant with respect to the Lorentz transformation). See [[conservation]] for a broad overview.
 
-Thus, we see that a huge swath of fundamental physics falls right out of the basic wave equation, which in turn reflects the simplest form of cellular-automaton neighborhood interaction that does anything interesting.
+As a sneak preview of where we end up, this is the four-vector version of all of Maxwell's equations operating on the four-potential $A^\mu = (A_0, \vec{A}) = (A_0, A_x, A_y, A_z)$:
+
+{id="eq_four-potential-sneak" title="four-potential form of Maxwell's equations"}
+$$
+\partial_\mu \partial^\mu A^\mu = k^\mu J^\mu
+$$
+
+where $k^\mu$ are constant factors representing the properties of "free space" (i.e., the vacuum, or aether in Maxwell's conception), and $J^\mu$ is the four-current that includes charge and magnetic field components. The expression on the left-hand side is a very compact way of writing the standard wave equation, and the right-hand side represents the driving sources of the wave.
+
+The purely electrical component is the first component in the four-vector, while the magnetic components are the remaining three. This is a profound feature of all of physics, central to special relativity (i.e., the Minkowski time-space coordinates), where there is a single time-like factor and three space-like factors. In the wave equation in 3D, this time-like factor represents the kinetic energy, while the space-like factors represent the potential energy. The [[Lagrangian]] and [[Hamiltonian]] frameworks upon which the [[Standard Model]] is built characterize how these two forms of energy are constantly shifting into each other, which is exactly what happens in a wave.
+
+Thus, we see that a huge swath of fundamental physics falls right out of the basic wave equation, which in turn reflects the simplest form of [[cellular automaton]] neighborhood interaction that does anything interesting.
 
 ## The Electrical Scalar Potential
 
@@ -246,25 +257,27 @@ We will keep this condition in mind as we consider how the electron wave functio
 
 The [[four-vector]] notation provides a powerful and compact way of understanding the relationship between [[special relativity]] and wave equations. Now is a good time to read that page, so the following analysis of the EM wave functions will make sense.
 
-Specifically, the four-vector framework allows us to write all of EM using a single equation, in terms of the **four potential:**
+Specifically, the four-vector framework allows us to write all of EM using a single equation, in terms of the **four-potential:**
 
+{id="eq_four-potential" title="four-potential"}
 $$
-{A}^\mu = (A_0, \vec{A}) = (A_0, A_x, A_y, A_z)
+A^\mu = (A_0, \vec{A}) = (A_0, A_x, A_y, A_z)
 $$
 
 In this four-vector notation, the wave equation arises as the double-application of the four-derivative operator:
 
 $$
-\partial_\mu \partial^\mu = \frac{\partial^2 {}}{\partial t^2} - \nabla^2
+\partial_\mu \partial^\mu = \frac{\partial^2}{\partial t^2} - \nabla^2
 $$
 
 Therefore, we can write:
 
+{id="eq_four-potential" title="four-potential form of Maxwell's equations"}
 $$
-\partial_\mu \partial^\mu {A}^\mu = {k}^\mu {J}^\mu
+\partial_\mu \partial^\mu A^\mu = k^\mu J^\mu
 $$
 
-where ${J}^\mu = (J_0, J_x, J_y, J_z)$, and $J_0 = \rho$, and ${k}^\mu = \left( \frac{1}{\epsilon_0}, \mu_0, \mu_0, \mu_0 \right)$.
+where $J^\mu = (J_0, J_x, J_y, J_z)$, and $J_0 = \rho$, and $k^\mu = \left( \frac{1}{\epsilon_0}, \mu_0, \mu_0, \mu_0 \right)$.
 
 This extreme level of simplicity accurately expresses the fundamental point that the electromagnetic force can be described using only the basic wave equation, plus the source driving terms. The charge density $\rho$ and current density $\vec{J}$ provide an external driving force on the electromagnetic field equations (and are thus the sources of the fields). Interestingly, this potential formalism just requires four variables, which is intriguingly convenient for the four-vector space-time framework.
 
@@ -401,7 +414,7 @@ $$
 So, perhaps you can see that now we are getting somewhat closer to a wave equation. We now have the $\nabla^2$ terms showing up in both equations, and in the latter we have a $\frac{\partial^2 {}}{\partial t^2}$ term, such that we get the classic wave equation signature, as indicated by the last line where we substituted in the d'Alembertian operator (note: $\sqcap$ should actually just be a square box, but we don't have that available for technical reasons):
 
 $$
-\sqcap = \frac{\partial^2 {}}{\partial t^2} - \nabla^2
+\sqcap = \frac{\partial^2}{\partial t^2} - \nabla^2
 $$
 
 which encapsulates the wave equation dynamics of second-order time minus second-order space differentials.

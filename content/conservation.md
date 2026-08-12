@@ -13,11 +13,13 @@ The single most important property of fundamental physical laws is that they exh
 
 Furthermore, these conservation laws need to be **local** in space and time, according to the principles of [[special relativity]] -- this is known as **Lorentz invariance** in this context. This is also consistent with the principles of the [[cellular automaton]] (CA) framework, where all interactions are local in space and time, defined over the local neighborhood of grid cells and discrete time update steps.
 
-Thus, you can see that another way of saying something is conserved is to say that it is **invariant** -- it doesn't change. Indeed, the entire edifice of the [[Standard Model]] of quantum physics is built upon [[gauge theory]], which is a mathematical framework for deriving locally invariant laws. This framework starts with the [[Lagrangian]] and [[Hamiltonian]] expressions of the total energy in a system, and derives _laws of motion_ that are **locally gauge invariant**, which means they conserve energy locally.
+Thus, you can see that another way of saying something is conserved is to say that it is **invariant** -- it doesn't change. Indeed, the entire edifice of the [[Standard Model]] of quantum physics is built upon [[gauge theory]], which is a mathematical framework for deriving locally invariant laws. This framework starts with the [[Lagrangian]] and [[Hamiltonian]] expressions of the total energy in a system, and derives _laws of motion_ that are **locally gauge invariant**, which means they conserve some kind of value (which turns out to be **charge**) locally.
 
-According to Emmy Noether's famous theorems ([[@Noether18]]), each local conservation law implies a kind of **symmetry** in Nature. Although this seems very "deep" on the one hand, it also can seem fairly "trivial" or obvious on the other, because indeed the meaning of the word _symmetry_ in this context is essentially just _invariance_. For example, the symmetry (invariance) with respect to time is associated with the conservation of energy. Yeah, that's what it means for energy to not change over time. It is invariant over time. Time is right there in the definition of what energy is being conserved over. It isn't invariant over space!
+According to Emmy Noether's famous theorems ([[@Noether18]]), each conservation law implies a kind of **symmetry** in Nature. Although this seems very "deep" on the one hand, it also can seem fairly "trivial" or obvious on the other, because indeed the meaning of the word _symmetry_ in this context is essentially just _invariance_. For example, the symmetry (invariance) with respect to time is associated with the conservation of energy. Yeah, that's what it means for energy to not change over time. It is invariant over time. Time is right there in the definition of what energy is being conserved over. It isn't invariant over space!
 
-There is a set of spatial transformations associated with the geometry of special relativity (known as a **Minkowski space**) that preserve the space-time interval between events, known as the [Poincaré group](https://en.wikipedia.org/wiki/Poincar%C3%A9_group), which define the most basic conservation laws of physics, listed as the top 4 entries in [[#table_conserve]]. There is a whole branch of mathematics for such **Lie groups** (pronounced "Lee").
+Mathematically, even though everything ultimately obeys local conservation laws, the specification of these laws can be divided into **global gauge invariant** conditions and local ones. Global invariants amount to transforming (translating or multiplying) the overall state of the system by _constant_ factors that apply the same way everywhere, while local ones emerge from introducing new _local_ transformation parameters at each point in spacetime. These local parameters represent a new _field_ of values, with the result specifying how two fields interact in a way that is locally conservative.
+
+The canonical example of the local gauge invariance is quantum electrodynamics ([[QED]]), where the two fields represent [[Maxwell]]'s electromagnetic (EM) field equations interacting with the [[Dirac]] field for [[electron]]s as the source of those EM fields. The locally conserved quantity from this interaction is electric charge.
 
 {id="table_conserve" title="Physical Conservation Laws"}
 | Conservation law      | Invariance              | Parameters        |
@@ -31,13 +33,15 @@ There is a set of spatial transformations associated with the geometry of specia
 | weak isospin          | SU(2) gauge invariance  | 1: weak potential |
 | strong (color) charge | SU(3) gauge invariance  | 3: r,g,b          |
 
-The final 3 entries in the table define the "charge"-like values conserved (via the local gauge invariance mechanism in [[gauge theory]]) by the 3 fundamental forces in the Standard Model, which are defined by a _unitary group_ (U) or _special unitary group_ (SU) of the given dimensionality. A unitary group just means that it is conservative, like multiplying by the unit 1. The SU(2) group is defined by a 2x2 unitary matrix, which is the rotation group that is defined by a single parameter (the rotation angle), consistent with the idea that this group defines the property of [[spin]]. Thus, the [[weak]] force is fundamentally about spin.
+There are 7 total conservation laws that define the Standard Model, shown in [[#table_conserve]]. The first four are global spatial transformations associated with the geometry of special relativity (known as a **Minkowski space**) that preserve the space-time interval between events, known as the [Poincaré group](https://en.wikipedia.org/wiki/Poincar%C3%A9_group), which define the most basic conservation laws of physics, listed as the top . There is a whole branch of mathematics surrounding such **Lie groups** (pronounced "Lee"), which you can read about in the above Wikipedia link.
+
+The final 3 entries in the table define the charge-like values conserved (via the local gauge invariance mechanism in [[gauge theory]]) by the 3 fundamental forces in the Standard Model. These are defined by a _unitary group_ (U) or _special unitary group_ (SU) of the given dimensionality. A unitary group just means that it is conservative, like multiplying by the unit 1. The SU(2) group is defined by a 2x2 unitary matrix, which is the rotation group that is defined by a single parameter (the rotation angle), consistent with the idea that this group defines the property of [[spin]]. Thus, the [[weak]] force is fundamentally about spin, and the conserved charge-like value is weak isospin, although this conservation status is complicated by the [[Higgs]] field.
 
 As a bit of a simplification (but not too much of one):
 
 > The 7 conservation / invariance laws represented in [[#table_conserve]] entirely determine the nature of fundamental physics!
 
-Thus, the quotes at the top of the page capture an essential truth: physics is fundamentally about allowing _something_ "interesting" to happen, while keeping the accounting airtight. Things can change, and exert forces on other things, but only in ways that don't ruin everything for the next generation, and which are fundamentally consistent everywhere.
+Thus, the quotes at the top of the page capture an essential truth: physics is fundamentally about allowing _something_ "interesting" to happen, while keeping the accounting airtight. Things can change, and exert forces on other things, but only in ways that don't ruin everything for the next generation, and which are fundamentally consistent everywhere. Nature follows the golden rule, even if we don't.
 
 ## Change without change: waves, spin and phase
 
@@ -71,10 +75,10 @@ $$
 
 In addition to computing the total conserved value, we are also interested in computing the local **density** and **current** flow of this conserved value, through the use of a **continuity equation**, which in the case of a conserved charge value then allows one to couple to the electromagnetic wave functions ([[Maxwell]]).
 
-Starting at the most general level, the mathematical definition of a conserved quantity is that the sum total (i.e., integral) of its value across all of space does not change. For the case of a complex-valued wave state $\phi$, this is the complex conjugate: $\phi \phi^*$. Therefore, the appropriate integral is:
+Starting at the most general level, the mathematical definition of a conserved quantity is that the sum total (i.e., integral) of its value across all of space does not change. For the case of a complex-valued wave state $\chi$, this is the complex conjugate: $\chi \chi^*$. Therefore, the appropriate integral is:
 
 $$
-\int_{-\infty}^{+\infty} \phi(t,\vec{x}) \phi^*(t,\vec{x}) dx
+\int_{-\infty}^{+\infty} \chi(t,\vec{x}) \chi^*(t,\vec{x}) dx
 $$
 
 where we have expressed the state value as a continuous function of both time and spatial coordinates, which we subsequently drop for convenience.
@@ -82,27 +86,27 @@ where we have expressed the state value as a continuous function of both time an
 To determine the conserved quantity, we set the rate of change of this integral to zero, which means that its value cannot change over time:
 
 $$
-\frac{\partial }{\partial t}\left[\int_{-\infty}^{+\infty} \phi \phi^* dx\right] = 0
+\frac{\partial }{\partial t}\left[\int_{-\infty}^{+\infty} \chi \chi^* dx\right] = 0
 $$
 
 by propagating the temporal derivative into the integral, you get:
 
 {id="eq_conserve-int" title="Conserved value"}
 $$
-\int_{-\infty}^{+\infty} \left( \frac{\partial \phi^*}{\partial t} \phi + \phi^* \frac{\partial \phi}{\partial t} \right) dx = 0
+\int_{-\infty}^{+\infty} \left( \frac{\partial \chi^*}{\partial t} \chi + \chi^* \frac{\partial \chi}{\partial t} \right) dx = 0
 $$
 
 For Schrödinger's equation, we have a definition of this first-order time differential directly within the wave function itself:
 
 {id="eq_schrodinger" title="Schrödinger's equation"}
 $$
-i \hbar \frac{\partial {\phi}}{\partial t} = -\frac{\hbar^2}{2 m_0} \nabla^2 \phi + V \phi
+i \hbar \frac{\partial {\chi}}{\partial t} = -\frac{\hbar^2}{2 m_0} \nabla^2 \chi + V \chi
 $$
 
 Therefore, the right-hand-side of this equation can be substituted directly, resulting in this definition of a **probability gradient**, which is the directional (vector) flow of the conserved probability across space and time:
 
 $$
-\vec{J} \equiv - \frac{i \hbar}{2 m_0} \left( \phi^* \vec{\nabla} \phi - \phi \vec{\nabla} \phi^* \right)
+\vec{J} \equiv - \frac{i \hbar}{2 m_0} \left( \chi^* \vec{\nabla} \chi - \chi \vec{\nabla} \chi^* \right)
 $$
 
 Another more general route for computing this probability gradient is to start with the **continuity equation** in terms of the _density_ $\rho$ and _current_ $\vec{J}$:
@@ -144,13 +148,13 @@ This one expression succinctly captures the key idea that the time-like first el
 From here, we can go back to [[#eq_conserve-int]] and establish the connection with the continuity equation, in the context of the KG wave function ([[@Greiner00]]; [[@Gingrich04]]), :
 
 $$
-\phi^* (\partial_{\mu} \partial^{\mu} + m_0^2) \phi - \phi (\partial_{\mu} \partial^{\mu} + m_0^2) \phi^* = 0
+\chi^* (\partial_{\mu} \partial^{\mu} + m_0^2) \chi - \chi (\partial_{\mu} \partial^{\mu} + m_0^2) \chi^* = 0
 $$
 
 where the KG wave equation can be written in four-vector notation as:
 
 $$
-(\partial_{\mu} \partial^{\mu} + m_0^2) \phi = 0
+(\partial_{\mu} \partial^{\mu} + m_0^2) \chi = 0
 $$
 
 because two of these four-derivatives gives you:
@@ -159,36 +163,36 @@ $$
 \partial_{\mu} \partial^{\mu} = \frac{\partial^2}{\partial t^2} - \nabla^2
 $$
 
-Thus, the starting expression amounts to multiplying the standard KG wave equation by the complex conjugate $\phi^*$, and subtracting the opposite configuration, which is the KG wave equation operating on the conjugate variable $\phi^*$, multiplied by the wave state $\phi$.
+Thus, the starting expression amounts to multiplying the standard KG wave equation by the complex conjugate $\chi^*$, and subtracting the opposite configuration, which is the KG wave equation operating on the conjugate variable $\chi^*$, multiplied by the wave state $\chi$.
 
 If we take the first half of this expression, it is:
 
 $$
-\phi^* (\partial_{\mu} \partial^{\mu} + m_0^2) \phi
+\chi^* (\partial_{\mu} \partial^{\mu} + m_0^2) \chi
 $$
 
 $$
-\partial_{\mu} (\phi^* \partial_{\mu} \phi) - (\partial_{\mu} \phi^*)(\partial^{\mu} \phi) + m_0^2 \phi^* \phi
+\partial_{\mu} (\chi^* \partial_{\mu} \chi) - (\partial_{\mu} \chi^*)(\partial^{\mu} \chi) + m_0^2 \chi^* \chi
 $$
 
 and for the opposite configuration:
 
 $$
-\phi (\partial_{\mu} \partial^{\mu} + m_0^2) \phi^*
+\chi (\partial_{\mu} \partial^{\mu} + m_0^2) \chi^*
 $$
 
 $$ 
-\partial_{\mu} (\phi \partial_{\mu} \phi^*) - (\partial_{\mu} \phi)(\partial^{\mu} \phi^*) + m_0^2 \phi \phi^*
+\partial_{\mu} (\chi \partial_{\mu} \chi^*) - (\partial_{\mu} \chi)(\partial^{\mu} \chi^*) + m_0^2 \chi \chi^*
 $$
 
 So when you subtract them, the second and third terms in each expression are the same, and cancel out, leaving only the difference in the first terms:
 
 $$
-(\partial_{\mu} \phi^*)(\partial^{\mu} \phi) - (\partial_{\mu} \phi)(\partial^{\mu} \phi^*) = 0
+(\partial_{\mu} \chi^*)(\partial^{\mu} \chi) - (\partial_{\mu} \chi)(\partial^{\mu} \chi^*) = 0
 $$
 
 $$
-\partial_{\mu} (\phi^* \partial^{\mu} \phi - \phi \partial^{\mu} \phi^*) = 0
+\partial_{\mu} (\chi^* \partial^{\mu} \chi - \chi \partial^{\mu} \chi^*) = 0
 $$
 
 Now this is exactly what we were looking for, if we recognize that this is an expression where the four-derivative of something equals zero. That something must be the conserved four-current, $J^{\mu}$:
@@ -198,36 +202,36 @@ $$
 $$
 
 $$
-\partial_{\mu} (\phi^* \partial^{\mu} \phi - \phi \partial^{\mu} \phi^*) = 0
+\partial_{\mu} (\chi^* \partial^{\mu} \chi - \chi \partial^{\mu} \chi^*) = 0
 $$
 
 {id="eq_charge-current-4vec" title="charge-current four vector"}
 $$ 
-J^{\mu} = \phi^* \partial^{\mu} \phi - \phi \partial^{\mu} \phi^*
+J^{\mu} = \chi^* \partial^{\mu} \chi - \chi \partial^{\mu} \chi^*
 $$
 
 We can then separate this into the charge ($J^0$) and current components, as:
 
 $$
-  \frac{J_0}{c} = \rho \equiv \frac{i \hbar e}{2m_0c^2} \left( \phi^* \frac{\partial \phi}{\partial t} - \phi \frac{\partial \phi^*}{\partial t} \right)
+  \frac{J_0}{c} = \rho \equiv \frac{i \hbar e}{2m_0c^2} \left( \chi^* \frac{\partial \chi}{\partial t} - \chi \frac{\partial \chi^*}{\partial t} \right)
 $$
 
 and
 
 $$
-\vec{J} \equiv - \frac{i \hbar e}{2m_0} \left( \phi^* \vec{\nabla} \phi - \phi \vec{\nabla} \phi^* \right)
+\vec{J} \equiv - \frac{i \hbar e}{2m_0} \left( \chi^* \vec{\nabla} \chi - \chi \vec{\nabla} \chi^* \right)
 $$
 
 where the extra conversion constants are inherited from the analogous expression for Schrödinger's equation, and ensure that the KG equation reduces to it in the non-relativistic limit.
 
-To actually compute these in a simulation, we need to again break down the complex field value $\phi$ into its two scalar components. We simplify $\hbar=1$ and $c=1$, but preserve the mass term, and use $a = \varphi_a$ and $b = \varphi_b$ for ease of calculation:
+To actually compute these in a simulation, we need to again break down the complex field value $\chi$ into its two scalar components. We simplify $\hbar=1$ and $c=1$, but preserve the mass term, and use $a = \phi_a$ and $b = \phi_b$ for ease of calculation:
 
 $$
-\rho = \frac{ie}{2m_0} \left(\phi^* \frac{\partial \phi}{\partial t} - \phi \frac{\partial \phi^*}{\partial t} \right)
+\rho = \frac{ie}{2m_0} \left(\chi^* \frac{\partial \chi}{\partial t} - \chi \frac{\partial \chi^*}{\partial t} \right)
 $$
 
 $$
-\phi^* \frac{\partial \phi}{\partial t} - \phi \frac{\partial \phi^*}{\partial t} = (a - ib) (\dot a + i \dot b) - (a + ib) (\dot a - i \dot b)
+\chi^* \frac{\partial \chi}{\partial t} - \chi \frac{\partial \chi^*}{\partial t} = (a - ib) (\dot a + i \dot b) - (a + ib) (\dot a - i \dot b)
 $$
 
 $$
@@ -243,17 +247,17 @@ $$
 $$
 
 $$
-\rho = \frac{e}{m_0} (\varphi_b \dot \varphi_a - \varphi_a \dot \varphi_b)
+\rho = \frac{e}{m_0} (\phi_b \dot \phi_a - \phi_a \dot \phi_b)
 $$
 
 and for the spatial (current) terms, it boils down to the same kind of equation in the end:
 
 $$
-\vec{J} = -\frac{ie}{2m_0} \left(\phi^* \vec{\nabla} \phi - \phi \vec{\nabla} \phi^* \right)
+\vec{J} = -\frac{ie}{2m_0} \left(\chi^* \vec{\nabla} \chi - \chi \vec{\nabla} \chi^* \right)
 $$
 
 $$
-\phi^* \vec{\nabla} \phi - \phi \vec{\nabla} \phi^* = 2 i a \vec{\nabla} b - 2 i b \vec{\nabla} a
+\chi^* \vec{\nabla} \chi - \chi \vec{\nabla} \chi^* = 2 i a \vec{\nabla} b - 2 i b \vec{\nabla} a
 $$
 
 $$
@@ -261,7 +265,7 @@ $$
 $$
 
 $$
-\vec{J} = \frac{e}{m_0} (\varphi_a \vec{\nabla} \varphi_b - \varphi_b \vec{\nabla} \varphi_a)
+\vec{J} = \frac{e}{m_0} (\phi_a \vec{\nabla} \phi_b - \phi_b \vec{\nabla} \phi_a)
 $$
 
 These are the expressions that are used in [[Dirac]] to couple with the electromagnetic field.

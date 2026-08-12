@@ -5,14 +5,14 @@ bibfile = "mechphys.json"
 
 **Gauge theory** is a central tool in the [[Standard Model]], used to predict the full form of the [[weak]] and [[strong]] forces, and how they interact with their sources. These forces can be transformed in various ways that do not alter their overall effects, known as a **gauge invariance**. This reflects the essential and defining role that [[conservation]] laws have in shaping the forces of nature: each conservation law is associated with a corresponding type of invariance.
 
-The principle of gauge invariance can be illustrated in the case of the electromagnetic force interaction with a "particle" defined by a complex wave state $\phi$. The classical [[Lagrangian]] field density can be defined as the kinetic energy minus a potential energy, where, in [[four-vector]] notation, the kinetic energy is the 2nd order temporal derivative of the wave function (i.e., the contravariant times the covariant):
+The principle of gauge invariance can be illustrated in the case of the electromagnetic force interaction with a "particle" defined by a complex wave state $\chi$. The classical [[Lagrangian]] field density can be defined as the kinetic energy minus a potential energy, where, in [[four-vector]] notation, the kinetic energy is the 2nd order temporal derivative of the wave function (i.e., the contravariant times the covariant):
 
 $$
 L = T - V
 $$
 
 $$
-L_0(\phi(x), \partial^{\mu}\phi(x)) = \partial_{\mu}\phi^*\partial^{\mu}\phi - V(\phi^* \phi)
+L_0(\chi(x), \partial^{\mu}\chi(x)) = \partial_{\mu}\chi^*\partial^{\mu}\chi - V(\chi^* \chi)
 $$
 
 ## Global gauge invariance
@@ -20,7 +20,7 @@ $$
 The integral form of the Lagrangian action essentially involves a subtraction between the ending and starting action values. Therefore, adding or multiplying the wave state by a constant global factor has no effect on the resulting laws of motion. This is known as a **global gauge transformation** and it gives rise to a corresponding symmetry, in the form of a conserved current (see [[conservation]] for the derivation):
 
 $$
-j^{\mu} = \text{const.} \phi^* \partial^{\mu} \phi
+j^{\mu} = \text{const.} \chi^* \partial^{\mu} \chi
 $$
 
 $$
@@ -33,7 +33,7 @@ This form of global gauge invariance and its resulting conserved current symmetr
 
 Instead of a global constant factor, it is also possible to introduce a _local_ factor that varies as a function of position, known as a **local gauge transformation**. To specify the value of this local transformation at every point, an _additional field_ of parameters is required, representing additional degrees of freedom in the physical system in question.
 
-When this local gauge transformation is  applied, the resulting laws of motion are _not_ automatically preserved. However, one can change the definition of the _contravariant derivative_ $\partial^{\mu} \phi$ in a way that produces the same effects as the local gauge transformation.
+When this local gauge transformation is  applied, the resulting laws of motion are _not_ automatically preserved. However, one can change the definition of the _contravariant derivative_ $\partial^{\mu} \chi$ in a way that produces the same effects as the local gauge transformation.
 
 This new form of the derivative defines a **minimal coupling** between the new field of parameters and the original state field, and mathematically determines how to update the Lagrangian and the resulting laws of motion to specify this interaction between the two fields.
 
@@ -52,7 +52,7 @@ To see how the local gauge transformation works in practice, we can use the exam
 Here is the local gauge transformation:
 
 $$
-\phi(x) \rightarrow U(x) \phi(x)
+\chi(x) \rightarrow U(x) \chi(x)
 $$
 
 $$
@@ -64,7 +64,7 @@ where $\alpha(x)$ is an arbitrary function specifying the phase of $U(x)$ at eve
 If you apply the covariant four-vector derivative to this transformed field, as required by the Lagrangian, you end up with an extra term:
 
 $$
-\partial^{\mu} \phi(x) \rightarrow U(x) \partial^{\mu} \phi(x) + \phi(x) \partial^{\mu} U(x)
+\partial^{\mu} \chi(x) \rightarrow U(x) \partial^{\mu} \chi(x) + \chi(x) \partial^{\mu} U(x)
 $$
 
 This extra term means that the system is not invariant to this local gauge transformation. No such system would be -- this is the whole point.
@@ -80,13 +80,13 @@ where $e$ is the **coupling constant** that will parameterize the strength of th
 Next, we define our own new "covariant derivative" in a way that will make all the math work out under the local gauge transformation:
 
 $$
-D^{\mu} \phi(x) \def [\partial^{\mu} + i e A^\mu(x)] \phi(x)
+D^{\mu} \chi(x) \def [\partial^{\mu} + i e A^\mu(x)] \chi(x)
 $$
 
 which can then be locally transformed just like we did above:
 
 $$
-D^{\mu} \phi(x) \rightarrow U(x) D^{\mu} \phi(x)
+D^{\mu} \chi(x) \rightarrow U(x) D^{\mu} \chi(x)
 $$
 
 todo: finish!

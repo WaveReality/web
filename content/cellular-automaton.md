@@ -21,7 +21,7 @@ In this CA (widely available as a screensaver), there is a two-dimensional grid 
 
 * If it was already "alive" then it remains so, only if it has 2-3 living neighbors.
 
-The CA framework provides the simplest kinds of answers to fundamental questions about space, time, and the basic nature of physical laws ([[@VonNeumannBurks66]]; [[@Zuse70]]; [[@FredkinToffoli82]]; [[@Feynman82]]; [[@Fredkin90]]; [[@Hooft15]]). Space is _real_ and fundamental in the form of the underlying cells --- it isn't just an empty vacuum or a mathematical continuum.
+The CA framework provides the simplest kinds of answers to fundamental questions about space, time, and the basic nature of physical laws ([[@VonNeumannBurks66]]; [[@Zuse70]]; [[@FredkinToffoli82]]; [[@Feynman82]]; [[@Fredkin90]]; [[@Hooft15]]). Space is _real_ and fundamental in the form of the underlying cells --- it isn't just an empty [[vacuum]] or a mathematical continuum.
 
 The discretization of space, as contrasted with a true continuum, can be motivated by the levels of infinities associated with the Cantor sets: a discrete space corresponds to the lowest level of infinity associated with the integer number line, and thus represents the simplest way of representing space.
 

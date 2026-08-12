@@ -3,7 +3,7 @@ Categories = ["Interpretations"]
 bibfile = "mechphys.json"
 +++
 
-In the [[QED]] framework, the vacuum is not actually treated as empty space, but is rather the province of the **zero point field (ZPF)**, which has a non-zero level of energy. This can be derived from the uncertainty principle: if a system had zero energy sitting in a confined space (i.e., the bottom of an EM potential well), it would have a definite momentum and position at the same time, which is forbidden by the [[uncertainty principle]].
+In the [[QED]] framework, the [[vacuum]] is not actually treated as empty space, but is rather the province of the **zero point field (ZPF)**, which has a non-zero level of energy. This can be derived from the uncertainty principle: if a system had zero energy sitting in a confined space (i.e., the bottom of an EM potential well), it would have a definite momentum and position at the same time, which is forbidden by the [[uncertainty principle]].
 
 Empirical evidence for this ZPF comes potentially from the Casimir effect, which is a tiny force measured between two parallel neutral metal plates brought very close together --- the region between these plates should exclude longer wavelengths of the ZPF, and thus have lower energy than the outside region, producing a net force. However, it is also possible that this force reflects a radiation reaction effect, as it can be derived from QED on that basis alone ([[@Jaffe05]]).
 

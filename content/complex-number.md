@@ -6,19 +6,25 @@ bibfile = "mechphys.json"
 {id="figure_complex" style="height:30em"}
 ![Complex numbers are just a way of representing two real values with one number, where these two values are aligned along two separate orthogonal dimensions. The imaginary number $i$, where $i^2 = -1$, is what keeps these two values orthogonal --- the first value $a$ is along the real axis, and the second value $b$ is along the imaginary axis. The complex conjugate, $c^*$, is simply subtracting the imaginary part instead of adding it (i.e., it represents a reflection along the imaginary dimension). Multiplying $c c^*$ gives the squared magnitude of the vector, which is a single real-valued scalar number. It is the (squared) length of the hypotenuse of the vector. In the typical oscillatory use of complex numbers, they represent rotation around the complex plane, constrained to the (unit) circle as shown.](media/fig_complex_numbers.png)
 
-The symbol $\phi$ (another variant of the Greek symbol "phi", like $\varphi$) is used to represent a complex-valued state variable:
+The symbol $\chi$ is used to represent a complex-valued state variable:
 
 $$
-\phi = a + i b
+\chi = a + i b
 $$
 
 $$
-= \varphi_a + i \varphi_b
+= \phi_a + i \phi_b
 $$
 
-So, $\phi$ is composed of two separate real-valued numbers, designated $a$ and $b$ (or $\varphi_a$ and $\varphi_b$, to indicate that they are scalar state variables). A complex number is really just a way of representing two separate real valued numbers, aligned along orthogonal dimensions, in an efficient and compact manner ([[#figure_complex]]). It is essential to appreciate that, despite the presence of the imaginary number $i$ (where $i^2 = -1$ or $i = \sqrt{-1}$), _all you ever really have is two real-valued numbers._ There is nothing "imaginary" or mysterious or spooky about the second number in a complex number: all the $i$ does is keep these two values separate from each other.
+So, $\chi$ is composed of two separate real-valued numbers, designated $a$ and $b$ (or $\phi_a$ and $\phi_b$, to indicate that they are scalar state variables). A complex number is really just a way of representing two separate real valued numbers, aligned along orthogonal dimensions, in an efficient and compact manner ([[#figure_complex]]). It is essential to appreciate that, despite the presence of the imaginary number $i$ (where $i^2 = -1$ or $i = \sqrt{-1}$), _all you ever really have is two real-valued numbers._ There is nothing "imaginary" or mysterious or spooky about the second number in a complex number: all the $i$ does is keep these two values separate from each other.
 
 In the end, we will deconstruct all of our complex numbers into their real-valued components, and write purely real-valued expressions that determine their update rules. These expressions will be more complicated than the ones using complex numbers, but they are required for actually implementing the equations on the computer, and they also provide a more explicit and obvious indication of exactly what drives each value.
+
+These are the conventions for state variables:
+
+* $\phi$ = phi = simple scalar state value: one single real-valued number per cell.
+* $\chi$ = chi = complex-number state value: two independent real-valued numbers per cell.
+* $\psi$ = psi = full [[Dirac]] state value, which has two separate complex numbers, and captures the property of [[spin]]. We also use this for the [[Schrodinger]] wave state, as it is conventionally done, even though it is just a single complex number.
 
 Here's a few interesting facts about complex numbers:
 

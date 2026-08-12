@@ -101,7 +101,7 @@ The basic [[wave]] equation represents a fundamental interaction between **space
 
 {id="eq_kg" title="Klein-Gordon equation"}
 $$
-\frac{\partial^2 {\varphi}}{\partial t^2} = c^2 \nabla^2 \varphi - \frac{c^2 m_0^2}{\hbar^2} \varphi
+\frac{\partial^2 {\phi}}{\partial t^2} = c^2 \nabla^2 \phi - \frac{c^2 m_0^2}{\hbar^2} \phi
 $$
 
 where the mass-dependent factor enters without any spatial gradient operator, and directly subtracts away from the energy factor (acceleration) on the left-hand side. This lack of spatial extent is consistent with a discrete particle entity, that somehow consumes energy from the wave field in proportion to its rest mass. This is the qualitative picture for how our discrete particles emerge in the Spinfield Model, with the energy consumption propelling an internal oscillation within the discrete cell in the cubic lattice of the [[cellular automaton]] (CA) framework.

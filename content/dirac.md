@@ -26,10 +26,10 @@ Our first step is to introduce a new state variable $\psi$, to represent a field
 
 {id="eq_two-component" title="two-component complex wave state"}
 $$
-\psi = \begin{bmatrix} \varphi_{1a} + i \varphi_{1b} \\ \varphi_{2a} + i \varphi_{2b} \end{bmatrix}
+\psi = \begin{bmatrix} \phi_{1a} + i \phi_{1b} \\ \phi_{2a} + i \phi_{2b} \end{bmatrix}
 $$
 
-where the first complex number is denoted with a subscript $1$, and contains the two real-valued components $\varphi_{1a}$ and $\varphi_{1b}$, and the second has subscript $2$, and contains $\varphi_{2a}$ and $\varphi_{2b}$. So, the spin is going to amount to these four variables rotating amongst themselves.
+where the first complex number is denoted with a subscript $1$, and contains the two real-valued components $\phi_{1a}$ and $\phi_{1b}$, and the second has subscript $2$, and contains $\phi_{2a}$ and $\phi_{2b}$. So, the spin is going to amount to these four variables rotating amongst themselves.
 
 How do we extend our basic complex-coupled KG equation to include this spin factor? Several authors in the literature have described a second-order version of the Dirac equation, which should look very familiar to you at this point, because it is essentially our current KG equation plus one additional spin term. One of the first references to such a thing comes from [[@^FeynmanGell-Mann58]], where they describe an equation that possesses all of the critical properties of the standard first-order Dirac equation, and note that it only requires four state variables instead of the eight required for the first-order equation. Indeed, Feynman states that he much prefers this form of the equation. This affection is presumably not widely shared, because there are relatively few other references to such an equation in the literature. Most of them come from a series of papers by Levere Hostler (e.g., [[@Hostler82]]; [[@Hostler83]]; [[@Hostler85]]).
 
@@ -91,40 +91,40 @@ This entire result then is multiplied by the two complex numbers in the $\psi$ s
 $$
 \begin{bmatrix} B_z + iE_z & B_x + E_y + i(E_x - B_y) \\
 B_x - E_y + i(E_x + B_y) & -B_z - iE_z \end{bmatrix} 
-\times \begin{bmatrix} \varphi_{1a} + i \varphi_{1b} \\
-\varphi_{2a} + i \varphi_{2b} \end{bmatrix}
+\times \begin{bmatrix} \phi_{1a} + i \phi_{1b} \\
+\phi_{2a} + i \phi_{2b} \end{bmatrix}
 $$
 
 Which produces this for the first complex number:
 
 $$
-\varphi_{1a} + i \varphi_{1b} = (\varphi_{1a} + i \varphi_{1b})(B_z + iE_z) + (\varphi_{2a} + i \varphi_{2b})(B_x + E_y + i(E_x - B_y))
+\phi_{1a} + i \phi_{1b} = (\phi_{1a} + i \phi_{1b})(B_z + iE_z) + (\phi_{2a} + i \phi_{2b})(B_x + E_y + i(E_x - B_y))
 $$
 
 which decomposes into the two scalar variables as:
 
 $$
-\varphi_{1a} = \varphi_{1a} B_z - \varphi_{1b} E_z + \varphi_{2a} (B_x + E_y) - \varphi_{2b} (E_x - B_y)
+\phi_{1a} = \phi_{1a} B_z - \phi_{1b} E_z + \phi_{2a} (B_x + E_y) - \phi_{2b} (E_x - B_y)
 $$
 
 $$
-\varphi_{1b} = \varphi_{1b} B_z + \varphi_{1a} E_z + \varphi_{2b} (B_x + E_y) + \varphi_{2a} (E_x - B_y)
+\phi_{1b} = \phi_{1b} B_z + \phi_{1a} E_z + \phi_{2b} (B_x + E_y) + \phi_{2a} (E_x - B_y)
 $$
 
 And for the second complex number:
 
 $$
-\varphi_{2a} + i \varphi_{2b} = (\varphi_{2a} + i \varphi_{2b})(-B_z - iE_z) + (\varphi_{1a} + i \varphi_{1b})(B_x - E_y + i(E_x + B_y))
+\phi_{2a} + i \phi_{2b} = (\phi_{2a} + i \phi_{2b})(-B_z - iE_z) + (\phi_{1a} + i \phi_{1b})(B_x - E_y + i(E_x + B_y))
 $$
 
 which decomposes into:
 
 $$
-\varphi_{2a} = -\varphi_{2a} B_z + \varphi_{2b} E_z + \varphi_{1a} (B_x - E_y) - \varphi_{1b} (E_x + B_y)
+\phi_{2a} = -\phi_{2a} B_z + \phi_{2b} E_z + \phi_{1a} (B_x - E_y) - \phi_{1b} (E_x + B_y)
 $$
 
 $$
-\varphi_{2b} = -\varphi_{2b} B_z - \varphi_{2a} E_z + \varphi_{1b} (B_x - E_y) + \varphi_{1a} (E_x + B_y)
+\phi_{2b} = -\phi_{2b} B_z - \phi_{2a} E_z + \phi_{1b} (B_x - E_y) + \phi_{1a} (E_x + B_y)
 $$
 
 So, with the minus sign flip that took place in the main equation, and the fact that all of the rest of the equation operates on each complex component of $\psi$ separately, without any mixing across components, the final update equations for this second-order Dirac equation are just the basic complex KG equations plus these terms:
@@ -132,40 +132,40 @@ So, with the minus sign flip that took place in the main equation, and the fact 
 {id="eq_dirac" title="Dirac functions in real, second-order form"}
 $$
 \begin{array}{lcl}
-\ddot{\varphi}_{1a} & = & \nabla^2 \varphi_{1a} - m_0^2 \varphi_{1a} + 2 e \left(A_0 \dot \varphi_{1b} + \vec{A} \cdot \vec{\nabla} \varphi_{1b} \right) +\\
-& & e^2 \varphi_{1a} \left(A_0^2 - \vec{A}^2 \right) + e \left( \varphi_{1a} B_z - \varphi_{1b} E_z + \varphi_{2a} (B_x + E_y) - \varphi_{2b} (E_x - B_y) \right)\\
+\ddot{\phi}_{1a} & = & \nabla^2 \phi_{1a} - m_0^2 \phi_{1a} + 2 e \left(A_0 \dot \phi_{1b} + \vec{A} \cdot \vec{\nabla} \phi_{1b} \right) +\\
+& & e^2 \phi_{1a} \left(A_0^2 - \vec{A}^2 \right) + e \left( \phi_{1a} B_z - \phi_{1b} E_z + \phi_{2a} (B_x + E_y) - \phi_{2b} (E_x - B_y) \right)\\
 
-\ddot \varphi_{1b} & = & \nabla^2 \varphi_{1b} - m_0^2 \varphi_{1b} - 2 e \left(A_0 \dot \varphi_{1a} + \vec{A} \cdot \vec{\nabla} \varphi_{1a} \right) +\\
-& & e^2 \varphi_{1b} \left(A_0^2 - \vec{A}^2 \right) + e \left( \varphi_{1b} B_z + \varphi_{1a} E_z + \varphi_{2b} (B_x + E_y) + \varphi_{2a} (E_x - B_y) \right)\\
+\ddot \phi_{1b} & = & \nabla^2 \phi_{1b} - m_0^2 \phi_{1b} - 2 e \left(A_0 \dot \phi_{1a} + \vec{A} \cdot \vec{\nabla} \phi_{1a} \right) +\\
+& & e^2 \phi_{1b} \left(A_0^2 - \vec{A}^2 \right) + e \left( \phi_{1b} B_z + \phi_{1a} E_z + \phi_{2b} (B_x + E_y) + \phi_{2a} (E_x - B_y) \right)\\
 
-\ddot \varphi_{2a} & = & \nabla^2 \varphi_{2a} - m_0^2 \varphi_{2a} + 2 e \left(A_0 \dot \varphi_{2b} + \vec{A} \cdot \vec{\nabla} \varphi_{2b} \right) +\\
-& & e^2 \varphi_{2a} \left(A_0^2 - \vec{A}^2 \right) + e \left( -\varphi_{2a} B_z + \varphi_{2b} E_z + \varphi_{1a} (B_x - E_y) - \varphi_{1b} (E_x + B_y) \right)\\
+\ddot \phi_{2a} & = & \nabla^2 \phi_{2a} - m_0^2 \phi_{2a} + 2 e \left(A_0 \dot \phi_{2b} + \vec{A} \cdot \vec{\nabla} \phi_{2b} \right) +\\
+& & e^2 \phi_{2a} \left(A_0^2 - \vec{A}^2 \right) + e \left( -\phi_{2a} B_z + \phi_{2b} E_z + \phi_{1a} (B_x - E_y) - \phi_{1b} (E_x + B_y) \right)\\
 
-\ddot \varphi_{2b} & = & \nabla^2 \varphi_{2b} - m_0^2 \varphi_{2b} - 2 e \varphi_{2a} \left(A_0 \dot \varphi_{2a} + \vec{A} \cdot \vec{\nabla} \varphi_{2a} \right) +\\
-& & e^2 \varphi_{2b} \left(A_0^2 - \vec{A}^2 \right) + e \left( -\varphi_{2b} B_z - \varphi_{2a} E_z + \varphi_{1b} (B_x - E_y) + \varphi_{1a} (E_x + B_y) \right)\\
+\ddot \phi_{2b} & = & \nabla^2 \phi_{2b} - m_0^2 \phi_{2b} - 2 e \phi_{2a} \left(A_0 \dot \phi_{2a} + \vec{A} \cdot \vec{\nabla} \phi_{2a} \right) +\\
+& & e^2 \phi_{2b} \left(A_0^2 - \vec{A}^2 \right) + e \left( -\phi_{2b} B_z - \phi_{2a} E_z + \phi_{1b} (B_x - E_y) + \phi_{1a} (E_x + B_y) \right)\\
 \end{array}
 $$
 
-Again, it is fundamentally the wave equation, plus three additional terms that characterize the interaction with the electromagnetic field. Note that, as with the mixing across complex components $\varphi_a$ and $\varphi_b$ that occurred in the previous version of the coupled KG equations, the mixing or spin across $\phi_1$ and $\phi_2$ occurs via the electromagnetic field interaction. This time, the vector force fields are now required for the coupling, requiring that we compute them from the potentials, as described earlier (involving the $\vec{\nabla}$ first-order gradient and, for the first time, the $\vec{\nabla} \times$ function, which is very similar in its discrete form to the $\vec{\nabla}$ function).
+Again, it is fundamentally the wave equation, plus three additional terms that characterize the interaction with the electromagnetic field. Note that, as with the mixing across complex components $\phi_a$ and $\phi_b$ that occurred in the previous version of the coupled KG equations, the mixing or spin across $\chi_1$ and $\chi_2$ occurs via the electromagnetic field interaction. This time, the vector force fields are now required for the coupling, requiring that we compute them from the potentials, as described earlier (involving the $\vec{\nabla}$ first-order gradient and, for the first time, the $\vec{\nabla} \times$ function, which is very similar in its discrete form to the $\vec{\nabla}$ function).
 
 <!--- todo: run KG versions of the basic tests and see whether this is true!!! -->
 
-Interestingly, although we need to continue the broken symmetry from the previous coupled-complex KG equation, where we use the current values of $\dot \varphi_{1a}$ and $\dot \varphi_{2a}$ to update the $\varphi_{1b}$ and $\varphi_{2b}$ variables, we apparently do not need to perform a similar symmetry breaking for the new couplings in this Dirac equation.
+Interestingly, although we need to continue the broken symmetry from the previous coupled-complex KG equation, where we use the current values of $\dot \phi_{1a}$ and $\dot \phi_{2a}$ to update the $\phi_{1b}$ and $\phi_{2b}$ variables, we apparently do not need to perform a similar symmetry breaking for the new couplings in this Dirac equation.
 
-So, to answer the question of "what is spin?", we need only look at these equations. Spin, it seems, is this rotation of state values through the two complex variables in the $\psi$ state: $\phi_1$ and $\phi_2$. As is evident, this spinning occurs via interactions with the electromagnetic field vectors oriented along the three different spatial directions. The fact that, in our CA model we actually fix these directions according to the underlying cubic grid may seem strange and arbitrary. However, this does not mean that stuff can only spin along these fixed directions, anymore than it means that waves can only propagate in certain directions. By having different continuous values along these dimensions, any "direction" of spin relative to the underlying grid can occur.
+So, to answer the question of "what is spin?", we need only look at these equations. Spin, it seems, is this rotation of state values through the two complex variables in the $\psi$ state: $\chi_1$ and $\chi_2$. As is evident, this spinning occurs via interactions with the electromagnetic field vectors oriented along the three different spatial directions. The fact that, in our CA model we actually fix these directions according to the underlying cubic grid may seem strange and arbitrary. However, this does not mean that stuff can only spin along these fixed directions, anymore than it means that waves can only propagate in certain directions. By having different continuous values along these dimensions, any "direction" of spin relative to the underlying grid can occur.
 
 Although somewhat complex, these equations should describe the entirety of the complexity of the electron's interaction with the electromagnetic field, which is to say, with other electrons and positive electric charges in the nucleus. Therefore, as we know, a huge proportion of the known complexity of the universe stems from the consequences of these basic equations. So, perhaps they do not look so complex in comparison.
 
 <!--- todo: introduce coupled complex KG (CCKG) equation nomenclature % todo: also introduce covariant derivative term -->
 
-One final thing to note is that the charge and current density equations from the previous version of the coupled complex KG equation still hold for this Dirac version, because these additional terms do not enter into the covariant derivative, and are therefore canceled out in the subtraction, just like the mass term. The actual numerical calculation changes only to accommodate the $\psi$ state value instead of the single complex $\phi$ state. The charge and current equations are:
+One final thing to note is that the charge and current density equations from the previous version of the coupled complex KG equation still hold for this Dirac version, because these additional terms do not enter into the covariant derivative, and are therefore canceled out in the subtraction, just like the mass term. The actual numerical calculation changes only to accommodate the $\psi$ state value instead of the single complex $\chi$ state. The charge and current equations are:
 
 $$
-\rho = \frac{\hbar e}{m_0 c^2} \left((\varphi_{1b} \dot \varphi_{1a} - \varphi_{1a} \dot \varphi_{1b}) + (\varphi_{2b} \dot \varphi_{2a} - \varphi_{2a} \dot \varphi_{2b})\right) - \frac{e^2}{m_0 c^2} A_0 (\varphi_{1a}^2 + \varphi_{1b}^2 + \varphi_{2a}^2 + \varphi_{2b}^2)
+\rho = \frac{\hbar e}{m_0 c^2} \left((\phi_{1b} \dot \phi_{1a} - \phi_{1a} \dot \phi_{1b}) + (\phi_{2b} \dot \phi_{2a} - \phi_{2a} \dot \phi_{2b})\right) - \frac{e^2}{m_0 c^2} A_0 (\phi_{1a}^2 + \phi_{1b}^2 + \phi_{2a}^2 + \phi_{2b}^2)
 $$
 
 $$
-\vec{J} = \frac{\hbar e}{m_0 c^2} \left((\varphi_{1a} \vec{\nabla} \varphi_{1b} - \varphi_{1b} \vec{\nabla} \varphi_{1a}) + (\varphi_{2a} \vec{\nabla} \varphi_{2b} - \varphi_{2b} \vec{\nabla} \varphi_{2a})\right) - \frac{e^2}{m_0 c^2} \vec{A} (\varphi_{1a}^2 + \varphi_{1b}^2 + \varphi_{2a}^2 + \varphi_{2b}^2)
+\vec{J} = \frac{\hbar e}{m_0 c^2} \left((\phi_{1a} \vec{\nabla} \phi_{1b} - \phi_{1b} \vec{\nabla} \phi_{1a}) + (\phi_{2a} \vec{\nabla} \phi_{2b} - \phi_{2b} \vec{\nabla} \phi_{2a})\right) - \frac{e^2}{m_0 c^2} \vec{A} (\phi_{1a}^2 + \phi_{1b}^2 + \phi_{2a}^2 + \phi_{2b}^2)
 $$
 
 ## First-order version

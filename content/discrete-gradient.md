@@ -19,7 +19,7 @@ In three dimensions, the computation can be made more accurate and robust by inc
 
 {id="eq_grad-full" title="3D spatial gradient from 9 rays"}
 $$
-\frac{1}{(2 + \frac{8}{\sqrt{2}} + \frac{8}{\sqrt{3}})} \sum_{j \in N_{9}} k_j (\varphi_{j+} - \varphi_{j-})
+\frac{1}{(2 + \frac{8}{\sqrt{2}} + \frac{8}{\sqrt{3}})} \sum_{j \in N_{9}} k_j (\phi_{j+} - \phi_{j-})
 $$
 
 Where the neighborhood $N_9$ contains pairs of points $j+$ and $j-$ that are opposite ends of the 9 rays through the central point, and the distance weighting factors $k_j$ are:

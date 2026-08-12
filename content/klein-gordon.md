@@ -20,24 +20,24 @@ Recall that the wave equation can be written as a second-order differential equa
 
 {id="eq_wave" title="standard wave equation"}
 $$
-\frac{\partial^2 {\varphi}}{\partial t^2} = c^2 \nabla^2 \varphi
+\frac{\partial^2 {\phi}}{\partial t^2} = c^2 \nabla^2 \phi
 $$
 
 {id="figure_mass" style="height:20em"}
-![The additional mass term $-m_0^2 \varphi$ in the Klein-Gordon (KG) wave equation "drags down" the wave in proportion to the height of the waves (i.e., amplitude away from zero, either positive or negative). This fights against the curvature of the wave, computed by $\nabla^2$. Higher frequency waves have higher curvature, and thus move faster than lower frequency waves.](media/fig_kg_mass_drag.png)
+![The additional mass term $-m_0^2 \phi$ in the Klein-Gordon (KG) wave equation "drags down" the wave in proportion to the height of the waves (i.e., amplitude away from zero, either positive or negative). This fights against the curvature of the wave, computed by $\nabla^2$. Higher frequency waves have higher curvature, and thus move faster than lower frequency waves.](media/fig_kg_mass_drag.png)
 
-What if we add a single new term to this equation, where we subtract away some *mass* ($m_0$, a constant) from the Laplacian ($\nabla^2 \varphi$) curvature driving force term ([[#figure_mass]]):
+What if we add a single new term to this equation, where we subtract away some *mass* ($m_0$, a constant) from the Laplacian ($\nabla^2 \phi$) curvature driving force term ([[#figure_mass]]):
 
 {id="eq_mass" title="mass subtraction"}
 $$
-\frac{\partial^2 {\varphi}}{\partial t^2} = c^2 \left( \nabla^2 \varphi - \frac{m_0^2}{\hbar^2} \varphi \right)
+\frac{\partial^2 {\phi}}{\partial t^2} = c^2 \left( \nabla^2 \phi - \frac{m_0^2}{\hbar^2} \phi \right)
 $$
 
 or, in somewhat simpler notation that we'll use more frequently:
 
 {id="eq_kg" title="Klein-Gordon equation"}
 $$
-\frac{\partial^2 {\varphi}}{\partial t^2} = c^2 \left(\nabla^2 - \frac{m_0^2}{\hbar^2} \right) \varphi
+\frac{\partial^2 {\phi}}{\partial t^2} = c^2 \left(\nabla^2 - \frac{m_0^2}{\hbar^2} \right) \phi
 $$
 
 where "hbar" $\hbar = \frac{h}{2\pi}$ and $h$ is Planck's constant.
@@ -49,13 +49,13 @@ In any case, this new equation ([[#eq_kg]]) is called the **Klein-Gordon (KG)** 
 First, we'll introduce some variations on how to write this equation, which are all obviously identical to the KG equation given above, but highlight different features of it, as we'll see more later. Here's one such variation:
 
 $$
-\frac{\partial^2 {\varphi}}{\partial t^2} - c^2 \nabla^2\varphi = -\frac{c^2 m_0^2}{\hbar^2} \varphi
+\frac{\partial^2 {\phi}}{\partial t^2} - c^2 \nabla^2\phi = -\frac{c^2 m_0^2}{\hbar^2} \phi
 $$
 
 and another:
 
 $$
-\left(\frac{\partial^2 {}}{\partial t^2} - c^2 \nabla^2 + \frac{c^2 m_0^2}{\hbar^2}\right) \varphi = 0
+\left(\frac{\partial^2 {}}{\partial t^2} - c^2 \nabla^2 + \frac{c^2 m_0^2}{\hbar^2}\right) \phi = 0
 $$
 
 These last two forms are useful for relating to the [[four-vector]] version of the wave equation, where we saw that:
@@ -68,20 +68,20 @@ so that the equation can be written:
 
 {id="eq_kg-4vec" title="Klein-Gordon four-vector"}
 $$
-\partial_\mu \partial^\mu \varphi = - \frac{c^2 m_0^2}{\hbar^2} \varphi
+\partial_\mu \partial^\mu \phi = - \frac{c^2 m_0^2}{\hbar^2} \phi
 $$
 
 or:
 
 $$
-\left(\partial_\mu \partial^\mu + \frac{c^2 m_0^2}{\hbar^2}\right) \varphi = 0
+\left(\partial_\mu \partial^\mu + \frac{c^2 m_0^2}{\hbar^2}\right) \phi = 0
 $$
 
 To actually implement this KG equation in our cellular automaton model, we make one modification to the acceleration term, to subtract off the mass:
 
 {id="eq_disc" title="discrete Klein-Gordon equation"}
 $$
-\ddot \varphi_i^{t+1} = c^2 \frac{3}{13}\sum_{j \in N_{26}} k_j (\varphi_j - \varphi_i) - \frac{c^2 m_0^2}{\hbar^2} \varphi_i
+\ddot \phi_i^{t+1} = c^2 \frac{3}{13}\sum_{j \in N_{26}} k_j (\phi_j - \phi_i) - \frac{c^2 m_0^2}{\hbar^2} \phi_i
 $$
 
 ## Variable speeds: momentum from frequency
@@ -89,7 +89,7 @@ $$
 {id="figure_frequency" style="height:20em"}
 ![Relationship between frequency and speed in the Klein-Gordon (KG) wave function, which derives from competition between the "mass drag" and the overall curvature of the wave. Higher frequency waves have more curvature and thus move faster.](media/fig_kg_freq_speed.png)
 
-One of the most important features of this KG equation is that waves now travel at _variable speeds_, instead of always moving at exactly the same speed (the speed of light). This speed now depends on the relationship between the curvature ($\nabla^2 \varphi$) and the squared-mass value $\frac{m_0^2}{\hbar^2} \varphi$. In essence, the mass "drags down" the wave propagation force conveyed by the local curvature, $\nabla^2 \varphi$. Therefore, to get the wave to move faster, you need more curvature, which is to say, a higher frequency wave, because higher frequency waves have more waves per unit length, and this means overall greater "curvature" ([[#figure_frequency]]).
+One of the most important features of this KG equation is that waves now travel at _variable speeds_, instead of always moving at exactly the same speed (the speed of light). This speed now depends on the relationship between the curvature ($\nabla^2 \phi$) and the squared-mass value $\frac{m_0^2}{\hbar^2} \phi$. In essence, the mass "drags down" the wave propagation force conveyed by the local curvature, $\nabla^2 \phi$. Therefore, to get the wave to move faster, you need more curvature, which is to say, a higher frequency wave, because higher frequency waves have more waves per unit length, and this means overall greater "curvature" ([[#figure_frequency]]).
 
 This relationship between frequency $f$ of a wave and the momentum (velocity * mass) of the particle that it describes is captured in one of the most basic equations of quantum physics:
 
@@ -137,7 +137,7 @@ Also, as we will explore in greater detail later, the momentum can be computed d
 
 {id="eq_" title="essence of momentum operator"}
 $$
-\vec{p} \propto \vec{\nabla} \varphi
+\vec{p} \propto \vec{\nabla} \phi
 $$
 
 where this spatial gradient is again going to be greater overall as the wave frequency increases, as suggested by the quantum mechanical relationships above.

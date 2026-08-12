@@ -303,26 +303,26 @@ Next, we extend this wave equation to the full three-dimensional case, which jus
 
 ## Waves in Three Dimensions
 
-The second-order wave equation in three-dimensional space is not too different at an abstract mathematical level from the one dimension case --- you basically just have to add extra terms for each of the additional dimensions. One minor complication is that we conventionally use _x,y,z_ for the spatial dimensions, and we've been previously using _y_ to represent the state value, so now we'll switch over to the notation that is typically used in quantum physics, based on the Greek symbols "psi" $\psi$, "phi" $\phi$, and a variant of phi: $\varphi$.
+The second-order wave equation in three-dimensional space is not too different at an abstract mathematical level from the one dimension case --- you basically just have to add extra terms for each of the additional dimensions. One minor complication is that we conventionally use _x,y,z_ for the spatial dimensions, and we've been previously using _y_ to represent the state value, so now we'll switch over to the notation that is typically used in quantum physics, based on the Greek symbols "psi" $\psi$, "phi" $\phi$, and "chi": $\chi$.
 
 To keep things consistent and clear, we establish the following convention for these state variables:
 
-* $\varphi$ = varphi = simple scalar state value --- one single real-valued number, like we've been considering already.
-* $\phi$ = phi = complex-number state value --- two independent real-valued numbers per state.
-* $\psi$ = psi = full Dirac state value, which has two separate complex numbers, and captures the property of *spin*.
+* $\phi$ = phi = simple scalar state value --- one single real-valued number, like we've been considering already.
+* $\chi$ = chi = complex-number state value --- two independent real-valued numbers per state.
+* $\psi$ = psi = full [[Dirac]] state value, which has two separate complex numbers, and captures the property of [[spin]]. We also use this for the [[Schrodinger]] wave state, as it is conventionally done, even though it is just a single complex number.
 
-Thus, for now, we'll be using the "varphi" value to represent our wave states. The wave equation in abstract differential form is:
+Thus, for now, we'll be using the "phi" value to represent our wave states. The wave equation in abstract differential form is:
 
 {id="eq_3D" title="wave equation in 3D"}
 $$
-\frac{\partial^2 \varphi}{\partial t^2} = c^2 \left( \frac{\partial^2 \varphi}{\partial x^2} + \frac{\partial^2 \varphi}{\partial y^2} + \frac{\partial^2 \varphi}{\partial z^2} \right)
+\frac{\partial^2 \phi}{\partial t^2} = c^2 \left( \frac{\partial^2 \phi}{\partial x^2} + \frac{\partial^2 \phi}{\partial y^2} + \frac{\partial^2 \phi}{\partial z^2} \right)
 $$
 
 The second-order spatial derivatives on the right-hand side of this equation might look like a straightforward 3D generalization of the second-order spatial derivative from our 1D equation, but actually a true second-order spatial derivative in 3D has a bunch of cross-terms involving the slope in one dimension relative to the slope in another dimension --- it is a much more complicated beast. The proper name for the right-hand side of the 3D wave equation is the **Laplacian**, which can be written in various ways:
 
 {id="eq_laplacian" title="Laplacian"}
 $$
-\Delta \varphi = \nabla^2 \varphi = \nabla \cdot \nabla \varphi = \frac{\partial^2 \varphi}{\partial x^2} + \frac{\partial^2 \varphi}{\partial y^2} + \frac{\partial^2 \varphi}{\partial z^2}
+\Delta \phi = \nabla^2 \phi = \nabla \cdot \nabla \phi = \frac{\partial^2 \phi}{\partial x^2} + \frac{\partial^2 \phi}{\partial y^2} + \frac{\partial^2 \phi}{\partial z^2}
 $$
 
 {id="figure_gradient" style="height:20em"}
@@ -332,7 +332,7 @@ The symbol $\nabla$ (called a "nabla"; [wikipedia link](http://http://en.wikiped
 
 {id="eq_grad" title="gradient"}
 $$
-\nabla \varphi = \left( \frac{\partial \varphi}{\partial x}, \frac{\partial \varphi}{\partial y}, \frac{\partial \varphi}{\partial z} \right)
+\nabla \phi = \left( \frac{\partial \phi}{\partial x}, \frac{\partial \phi}{\partial y}, \frac{\partial \phi}{\partial z} \right)
 $$
 
 note that the result of the gradient is a _vector_ with 3 values in it (a _three vector_), one for each dimension, with each value giving the local slope along each of the dimensions.
@@ -350,7 +350,7 @@ The conceptual bottom line for the Laplacian is the same as before: it measures 
 
 {id="eq_wave-2" title="Laplacian wave equation"}
 $$
-\frac{\partial^2 \varphi}{\partial t^2} = c^2 \nabla^2 \varphi
+\frac{\partial^2 \phi}{\partial t^2} = c^2 \nabla^2 \phi
 $$
 
 We prefer the $\nabla^2$ version of the Laplacian because it conveys its essential second-order nature.
@@ -368,17 +368,17 @@ Now we consider how to compute the 3D Laplacian in the discrete space and time C
 
 {id="eq_faces" title="discrete 3D Laplacian, faces only"}
 $$
-\nabla^2 \varphi = \frac{1}{\epsilon^2} \left( \varphi_{(1,0,0)} + \varphi_{(-1,0,0)} + \varphi_{(0,1,0)} + \varphi_{(0,-1,0)} + \varphi_{(0,0,1)} + \varphi_{(0,0,-1)} - 6 \varphi_{(0,0,0)} \right)
+\nabla^2 \phi = \frac{1}{\epsilon^2} \left( \phi_{(1,0,0)} + \phi_{(-1,0,0)} + \phi_{(0,1,0)} + \phi_{(0,-1,0)} + \phi_{(0,0,1)} + \phi_{(0,0,-1)} - 6 \phi_{(0,0,0)} \right)
 $$
 
 where the subscript indicates the relative offset along the _(x,y,z)_ dimensions from the central point, which is then at _(0,0,0)_. We can simplify this expression by just computing a sum of pairwise differences for each face element:
 
 {id="eq_faces-2" title="discrete 3D Laplacian, faces only"}
 $$
-\nabla^2 \varphi = \frac{1}{\epsilon^2} \sum_{j \in N_{faces}} (\varphi_j - \varphi_0)
+\nabla^2 \phi = \frac{1}{\epsilon^2} \sum_{j \in N_{faces}} (\phi_j - \phi_0)
 $$
 
-where _j_ is just an index into the set of 6 different faces and $\varphi_0$ is the central point.
+where _j_ is just an index into the set of 6 different faces and $\phi_0$ is the central point.
 
 The problem with only using the 6 face neighbors is that it misses all the curvature present in the other neighboring points (edges and corners; [[#figure_cubes]]) and as a result, the wave propagation is very **anisotropic** --- it is not the same in every possible direction. Waves flowing along one of the 3 primary dimensions work great, wave disturbances in other directions propagate very differently. If this was how nature worked, then we would easily be able to tell that the rules of physics are different in different directions, which is definitely not the case.
 
@@ -386,7 +386,7 @@ The anisotropy problem can be fixed by including all 26 neighbors, in a relative
 
 {id="eq_all26" title="discrete 3D Laplacian, all 26 neighbors"}
 $$
-\nabla^2 \varphi = \frac{3}{13 \epsilon^2} \sum_{j \in N_{26}} k_j (\varphi_j - \varphi_0)
+\nabla^2 \phi = \frac{3}{13 \epsilon^2} \sum_{j \in N_{26}} k_j (\phi_j - \phi_0)
 $$
 
 The key to making this work is to have different weighting factors $k_j$ for the different neighbors, depending on their Euclidian distance *d* from the central point:
@@ -412,7 +412,7 @@ The equation for the wave energy for the 3D version just requires an update to t
 
 {id="eq_pe" title="potential energy in 3D, all 26 neighbors"}
 $$
-E_p = \frac{3}{13 \epsilon^2} \sum_{j \in N_{26}} k_j (\varphi_j - \varphi_0)^2
+E_p = \frac{3}{13 \epsilon^2} \sum_{j \in N_{26}} k_j (\phi_j - \phi_0)^2
 $$
 
 ## Dealing with Edges

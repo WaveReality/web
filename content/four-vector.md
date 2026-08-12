@@ -3,7 +3,7 @@ Categories = ["Standard Model"]
 bibfile = "mechphys.json"
 +++
 
-The **four-vector** framework provides an especially compact way of representing the mathematics of wave functions and associated quantities, in terms of a single **space-time-vector** with the first element representing time, and the remaining three elements representing 3D space. This notation was initially developed by Minkowski for dealing with Einstein's [[special relativity]] theory, where space and time expand and contract together, and in some sense can be converted into each other.
+The **four-vector** framework provides an especially compact way of representing the mathematics of wave functions and associated quantities, in terms of a single **space-time-vector** with the first element representing time, and the remaining three elements representing 3D space. This notation was initially developed by [[@^Minkowski08]] for dealing with Einstein's [[special relativity]] theory, where space and time expand and contract together, and in some sense can be converted into each other.
 
 The essence of the basic [[wave]] function is indeed this dynamic interrelationship between the curvature of space (i.e., as the **momentum** factor in the [[Hamiltonian]]) and the resulting acceleration in time (i.e., the **energy** factor in the Hamiltonian), which is why special relativity can be seen as a consequence of the wave-like nature of physics:
 
@@ -104,7 +104,7 @@ Although this is equivalent to our basic wave equation, this way of computing th
 
 {id="eq_maxwell" title="Maxwell's equation"}
 $$
-\partial_\mu \partial^\mu A^\mu = - k^\mu J^\mu
+\partial_\mu \partial^\mu A^\mu = k^\mu J^\mu
 $$
 
 Notice that here the second-order derivative has a "source" term (instead of being $=0$), which acts like a driving force on the waves: it represents the charge and currents that drive the electromagnetic field.

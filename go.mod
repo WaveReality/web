@@ -3,7 +3,7 @@ module github.com/WaveReality/web
 go 1.25.6
 
 require (
-	cogentcore.org/core v0.3.39
+	cogentcore.org/core v0.3.41
 	github.com/WaveReality/waves v0.0.6
 )
 
