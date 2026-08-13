@@ -45,9 +45,7 @@ $$
 a \cdot b \equiv {a}^\mu {b}_\mu = {a}_\mu {b}^\mu \equiv a^0 b_0 + a^1 b_1 + a^2 b_2 + a^3 b_3 = a^t b^t - a^x b^x - a^y b^y - a^z b^z = \sum^3_{\mu = 0} {a}_\mu {b}^\mu
 $$
 
-And the derivative of a four-vector can also be defined. Just like four-vectors themselves, there are two versions, a covariant and a contravariant, where, potentially confusingly, the superscript / subscript relationship is _flipped_ for the derivatives!
-
-The _covariant derivative_ doesn't have any minus signs:
+And the derivative of a four-vector can also be defined. In general only one form of the derivative is defined, called the _covariant derivative_, which just takes the derivative of each element of the four-vector, without any minus signs:
 
 {id="eq_cov-deriv" title="covariant derivative"}
 $$
@@ -61,14 +59,14 @@ $$
 \vec{\nabla} \equiv \left(\frac{\partial {}}{\partial {x}}, \frac{\partial {}}{\partial {y}}, \frac{\partial {}}{\partial {z}}\right)
 $$
 
-The _contravariant derivative_ is the same deal, except it now has the minus signs:
+For the specific purpose of defining a second-order derivative, it is possible to define a _contravariant derivative_ which, confusingly, introduces the minus sign metric from the covariant form:
 
 {id="eq_con-deriv" title="contravariant derivative"}
 $$
 \partial^\mu \equiv \frac{\partial {}}{\partial _\mu} \left(\frac{\partial {}}{\partial {a^0}},-\frac{\partial {}}{\partial {a^1}},-\frac{\partial {}}{\partial {a^2}},- \frac{\partial {}}{\partial {a^3}}\right) \equiv \left(\frac{\partial {}}{\partial t}, -\vec{\nabla} \right)
 $$
 
-Now, finally, for the payoff. If you take the second-order derivatives of a four-vector, you combine the vector multiplication rules with the derivative equations to get the following:
+This then allows you to take the second-order derivatives of a four-vector, by combining the vector multiplication rules with the derivative equations to get the following:
 
 $$
 \partial_\mu \partial^\mu = \frac{\partial {}}{\partial t} \frac{\partial {}}{\partial t} - \frac{\partial {}}{\partial {x}} \frac{\partial {}}{\partial {x}} - \frac{\partial {}}{\partial {y}} \frac{\partial {}}{\partial {y}} - \frac{\partial {}}{\partial {z}} \frac{\partial {}}{\partial {z}}

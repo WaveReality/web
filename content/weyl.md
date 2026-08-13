@@ -31,10 +31,10 @@ The fist order, right-hand helicity of the Weyl equation in [[four-vector]] nota
 
 {id="eq_weyl-first" title="first-order right-handed Weyl equation"}
 $$
-\sigma^{\mu} \partial_{\mu} \psi = 0
+\sigma^\mu \partial_\mu \psi = 0
 $$
 
-where $\sigma^{\mu}$ are the Pauli spin matricies, that provide the essential rotation dynamics:
+where $\sigma^\mu$ are the Pauli spin matricies, that provide the essential rotation dynamics:
 
 {id="eq_pauli" title="Pauli matricies"}
 $$

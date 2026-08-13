@@ -172,7 +172,7 @@ $$
 
 {id="eq_dirac-first" title="first-order Dirac equation"}
 $$
-(i \gamma^{\mu} \partial_{\mu} - m)\psi = 0
+(i \gamma^\mu \partial_\mu - m)\psi = 0
 $$
 
 TODO: there is still the important issue of converting back and forth between the 2nd order and 1st order versions of the state. Also, it is important that the 2nd order does not have spin factors operating among the components directly, as the 1st order version does -- they only show up in the coupling to EM. This is weird. The thing doesn't actually spin on its own in 2nd order form.

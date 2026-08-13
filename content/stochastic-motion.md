@@ -33,21 +33,21 @@ The basic behavior of a stochastic particle independent of any waves is describe
 todo: figure out if e should in fact be across all dims -- seems like it should. just run an empirical sim.
 
 $$
-e_{\mu} = \frac{1 + \nu_{\mu}^2}{2} 
+e_\mu = \frac{1 + \nu_\mu^2}{2} 
 $$
 
 The probability of moving in a positive or negative direction, or staying put, along a given dimension is given by:
 
 $$
-P(+1) = \frac{e_{\mu} + \nu_{\mu}}{2}
+P(+1) = \frac{e_\mu + \nu_\mu}{2}
 $$
 
 $$
-P(-1) = \frac{e_{\mu} - \nu_{\mu}}{2}
+P(-1) = \frac{e_\mu - \nu_\mu}{2}
 $$
 
 $$
-P(0) = 1 - e_{\mu}
+P(0) = 1 - e_\mu
 $$
 
 The energy-like factor $e$ is .5 when the momentum $\nu=0$, and thus there is a .25 probability of going in either direction, and a .5 probability of staying in the same location. As momentum increases in say the positive direction, the probability of moving in the positive direction increases in a proportional manner, while the opposite direction decreases. The squaring of the energy factor ensures a division among the staying and move directions works out.
@@ -65,7 +65,7 @@ There is a literature on coupling of a stochastic particle with a "heat bath", s
 One key "no-go" finding from [[@^Dudley65]] is that a purely Markovian position-based system doesn't capture particle motion -- you _need_ an additional momentum / velocity vector as part of the state. This is definitely key.
 
 * wave function trades energy against momentum -- momentum is $\gamma m0 \nu$, $E^2 = p^2 + m0^2$ so the 1 in above eq is like m0^2 -- not clear where the 1/2 comes from but whatever.
-* key idea that m0 is the internal motion of the particle rotating through spin, so need to just have that always going on as an "anchor", and then there are these extra $\nu_{\mu}$ factors where the x^2 + y^2 + z^2 hypotenuse of the momentum-velocity is v^2 relative to c^2 -- i.e., need to constrain total length to c^2.
+* key idea that m0 is the internal motion of the particle rotating through spin, so need to just have that always going on as an "anchor", and then there are these extra $\nu_\mu$ factors where the x^2 + y^2 + z^2 hypotenuse of the momentum-velocity is v^2 relative to c^2 -- i.e., need to constrain total length to c^2.
 
 * probabilistically when it stays still it rotates the internal spin. if it never stays still it never rotates the spin. the nutrino very rarely rotates the spin, but does sometimes. spin coupling couples the two helicies of the Weyl. need to go back to that. are there 2 neutrinos trapped inside one electron??
 

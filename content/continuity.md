@@ -67,20 +67,20 @@ $$
 
 (this is just the sum of the spatial derivatives along each spatial direction). We cover divergence in greater detail in [[Maxwell]] --- it represents the amount of new "stuff" accumulating in a given region of space from the flow in from its neighbors. If the total amount of stuff is to remain constant, then this increment needs to be offset by a change in the amount of stuff in that region itself, which is $\frac{\partial }{\partial t}\rho}$. This is what this equation captures.
 
-This continuity relationship can be expressed in a [[four-vector]] (space-time) derivative notation, in terms of a single four-vector charge / current variable $J^{\mu}$:
+This continuity relationship can be expressed in a [[four-vector]] (space-time) derivative notation, in terms of a single four-vector charge / current variable $J^\mu$:
 
 $$
-\partial_{\mu} J^{\mu} = \frac{\partial J^0}{\partial t} + \frac{\partial{J^1}}{\partial{x}} + \frac{\partial{J^2}}{\partial{y}} + \frac{\partial{J^3}}{\partial{z}}
+\partial_\mu J^\mu = \frac{\partial J^0}{\partial t} + \frac{\partial{J^1}}{\partial{x}} + \frac{\partial{J^2}}{\partial{y}} + \frac{\partial{J^3}}{\partial{z}}
 $$
 
 $$
-\partial_{\mu} J^{\mu} = \frac{\partial J^0}{\partial t} + \vec{\nabla} \cdot  \vec{J}
+\partial_\mu J^\mu = \frac{\partial J^0}{\partial t} + \vec{\nabla} \cdot  \vec{J}
 $$
 
 where $J^0 = c \rho$ (so, charge, like energy, is a _time-like_ quantity, whereas current is a space-like quantity). The continuity relationship in these terms is therefore:
 
 $$
-\partial_{\mu} J^{\mu} = 0
+\partial_\mu J^\mu = 0
 $$
 
 This one expression succinctly captures the key idea that the time-like first element is trading-off against the three space-like elements to produce an overall conservation of current, very much in the same way that the basic wave equations involve a tradeoff between time and space derivatives.
@@ -88,19 +88,19 @@ This one expression succinctly captures the key idea that the time-like first el
 From here, we can go back to [[#eq_conserve-int]] and establish the connection with the continuity equation, in the context of the KG wave function ([[@Greiner00]]; [[@Gingrich04]]), :
 
 $$
-\chi^* (\partial_{\mu} \partial^{\mu} + m_0^2) \chi - \chi (\partial_{\mu} \partial^{\mu} + m_0^2) \chi^* = 0
+\chi^* (\partial_\mu \partial^\mu + m_0^2) \chi - \chi (\partial_\mu \partial^\mu + m_0^2) \chi^* = 0
 $$
 
 where the KG wave equation can be written in four-vector notation as:
 
 $$
-(\partial_{\mu} \partial^{\mu} + m_0^2) \chi = 0
+(\partial_\mu \partial^\mu + m_0^2) \chi = 0
 $$
 
 because two of these four-derivatives gives you:
 
 $$
-\partial_{\mu} \partial^{\mu} = \frac{\partial^2}{\partial t^2} - \nabla^2
+\partial_\mu \partial^\mu = \frac{\partial^2}{\partial t^2} - \nabla^2
 $$
 
 Thus, the starting expression amounts to multiplying the standard KG wave equation by the complex conjugate $\chi^*$, and subtracting the opposite configuration, which is the KG wave equation operating on the conjugate variable $\chi^*$, multiplied by the wave state $\chi$.
@@ -108,46 +108,46 @@ Thus, the starting expression amounts to multiplying the standard KG wave equati
 If we take the first half of this expression, it is:
 
 $$
-\chi^* (\partial_{\mu} \partial^{\mu} + m_0^2) \chi
+\chi^* (\partial_\mu \partial^\mu + m_0^2) \chi
 $$
 
 $$
-\partial_{\mu} (\chi^* \partial_{\mu} \chi) - (\partial_{\mu} \chi^*)(\partial^{\mu} \chi) + m_0^2 \chi^* \chi
+\partial_\mu (\chi^* \partial_\mu \chi) - (\partial_\mu \chi^*)(\partial^\mu \chi) + m_0^2 \chi^* \chi
 $$
 
 and for the opposite configuration:
 
 $$
-\chi (\partial_{\mu} \partial^{\mu} + m_0^2) \chi^*
+\chi (\partial_\mu \partial^\mu + m_0^2) \chi^*
 $$
 
 $$ 
-\partial_{\mu} (\chi \partial_{\mu} \chi^*) - (\partial_{\mu} \chi)(\partial^{\mu} \chi^*) + m_0^2 \chi \chi^*
+\partial_\mu (\chi \partial_\mu \chi^*) - (\partial_\mu \chi)(\partial^\mu \chi^*) + m_0^2 \chi \chi^*
 $$
 
 So when you subtract them, the second and third terms in each expression are the same, and cancel out, leaving only the difference in the first terms:
 
 $$
-(\partial_{\mu} \chi^*)(\partial^{\mu} \chi) - (\partial_{\mu} \chi)(\partial^{\mu} \chi^*) = 0
+(\partial_\mu \chi^*)(\partial^\mu \chi) - (\partial_\mu \chi)(\partial^\mu \chi^*) = 0
 $$
 
 $$
-\partial_{\mu} (\chi^* \partial^{\mu} \chi - \chi \partial^{\mu} \chi^*) = 0
+\partial_\mu (\chi^* \partial^\mu \chi - \chi \partial^\mu \chi^*) = 0
 $$
 
-Now this is exactly what we were looking for, if we recognize that this is an expression where the four-derivative of something equals zero. That something must be the conserved four-current, $J^{\mu}$:
+Now this is exactly what we were looking for, if we recognize that this is an expression where the four-derivative of something equals zero. That something must be the conserved four-current, $J^\mu$:
 
 $$
-\partial_{\mu} J^{\mu} = 0
+\partial_\mu J^\mu = 0
 $$
 
 $$
-\partial_{\mu} (\chi^* \partial^{\mu} \chi - \chi \partial^{\mu} \chi^*) = 0
+\partial_\mu (\chi^* \partial^\mu \chi - \chi \partial^\mu \chi^*) = 0
 $$
 
 {id="eq_charge-current-4vec" title="charge-current four vector"}
 $$ 
-J^{\mu} = \chi^* \partial^{\mu} \chi - \chi \partial^{\mu} \chi^*
+J^\mu = \chi^* \partial^\mu \chi - \chi \partial^\mu \chi^*
 $$
 
 We can then separate this into the charge ($J^0$) and current components, as:

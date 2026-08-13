@@ -16,7 +16,7 @@ The critical step for transforming the KG equation into something that can repre
 
 It is this constant radius value that corresponds to the conserved charge value in the **complex KG** wave equations. This radius is the _hypotenuse_ of the triangle formed by the real and imaginary components of the complex number. According to the _Pythagorean theorem_, it is computed by the sum of the _squared_ values. In the language of complex numbers, this is computed by multiplying by the _complex conjugate_, and we'll see that this is how we compute the conserved charge value.
 
-Once we have the ability to compute charge from the complex KG wave equations, then we can drive the electromagnetic field using that charge as a source. In order to do this, we need to apply the [[gauge theory]] technique of local gauge invariance, which is known as _scalar electrodynamics_ in the case of coupling with a spinless complex charge field, as we are doing here. To make this work, we actually need 2 complex-valued state variables, to align with the four values of the electromagnetic four-potenntial $A^\mu$.
+Once we have the ability to compute charge from the complex KG wave equations, then we can drive the electromagnetic field using that charge as a source. In order to do this, we need to apply the [[gauge theory]] technique of local gauge invariance, which is known as **scalar electrodynamics** in the case of coupling with a spinless complex charge field, as we are doing here (the term _scalar_ can be used to distinguish from  spin, or complex values, depending on the context). To make this work, we actually need 2 complex-valued state variables, to align with the four values of the electromagnetic four-potenntial $A^\mu$.
 
 Interestingly, this is actually a good model of how the [[Higgs]] mechanism works, because it involves precisely such a coupling between a spinless complex field and the gauge vector boson field $B^\mu$ that works just like the electromagnetic four-potential $A^\mu$.
 
@@ -33,7 +33,7 @@ $$
 
 Because differentiation operates independently on the two separate scalar variables in a complex number, this is equivalent to two parallel scalar KG equations, which we can write as:
 
-$$d
+$$
 \frac{\partial^2 \phi_a}{\partial t^2} = \left( \nabla^2 - m_0^2 \right) \phi_a
 $$
 
@@ -189,7 +189,7 @@ Critically, complex numbers are _always_ 90 degrees out of phase with each other
 
 Perhaps the most important feature of this charge equation is that it can be either positive or negative, as a function of the phase relationship. This is not true of the corresponding expression for Schrödinger's equation, which is "definitely positive", or, in mathematical terminology, "positive definite". This is one of the major reasons why standard quantum physics has strongly embraced Schrödinger's equation, and not KG: KG does not fit with the standard probabilistic framework, where the wave describes a probability, and a probability is always positive.
 
-Interestingly, the Dirac equation, which standard physics has adopted as a model of the electron (and we'll cover later), also produces negative "probabilities", but these have been (correctly, in our framework) reinterpreted as representing antiparticles (i.e., particles with an opposite charge). The antiparticle of the electron is the **positron**, and it is just like an electron, except it has the opposite charge. Historically, this antiparticle nature of the Dirac equation was regarded as a major problem, until positrons were subsequently discovered, and then Dirac looked like a genius for having made such a bold prediction. Nevertheless, there seems to be some residual discomfort in all this, and many treatments of quantum electrodynamics marginalize the Dirac equation in favor of a largely particle-based treatment. We return to these issues later.
+Interestingly, the Dirac equation, which is used in the [[Standard Model]] for all [[fermion]] particles such as the [[electron]], also produces negative "probabilities", but these have been (correctly, in our framework) reinterpreted as representing antiparticles (i.e., particles with an opposite charge). The antiparticle of the electron is the **positron**, and it is just like an electron, except it has the opposite charge. Historically, this antiparticle nature of the Dirac equation was regarded as a major problem, until positrons were subsequently discovered, and then Dirac looked like a genius for having made such a bold prediction.
 
 We can also derive an expression for the motion of charge over space, which is the _charge current density_ $\vec{J}$:
 
@@ -204,7 +204,7 @@ $$
 \vec{J} = \frac{e}{m_0} (\phi_a \vec{\nabla} \phi_b - \phi_b \vec{\nabla} \phi_a)
 $$
 
-This value indicates how much charge is moving in each of the three different coordinate directions; the $\vec{}$ symbol on top of $\vec{J}$ indicates that this is a vector, containing a separate real scalar value for each direction: $\vec{J} = (J_x, J_y, J_z)$. As noted earlier the $\vec{\nabla}$ symbol is the vector gradient operator, which computes the rate of change of the values along each dimension:
+This value indicates how much charge is moving in each of the three different coordinate directions; the $\vec{}$ symbol on top of $\vec{J}$ indicates that this is a vector, containing a separate real scalar value for each direction: $\vec{J} = (J_x, J_y, J_z)$. The $\vec{\nabla}$ symbol is the vector gradient operator, which computes the rate of change of the values along each dimension:
 
 $$
 \vec{\nabla} \equiv \left(\frac{\partial}{\partial x}, \frac{\partial}{\partial y}, \frac{\partial }{\partial z}\right)
@@ -213,13 +213,11 @@ $$
 {id="figure_vgrad" style="height:20em"}
 ![The gradient of a scalar field ($\vec{\nabla}$), which produces a vector field describing the slope at each point in space. These gradient vectors point in the direction of maximum "downhill" slope. In this example the scalar field is a circularly-symmetric bump.](media/fig_vgrad.jpg)
 
-This just means that this $\vec{\nabla}$ takes a three-dimensional field, in this case the field of our wave value $\phi_a$ or $\phi_b$ distributed over space, and computes how steeply this field is changing in each of the three different directions [[#figure_vgrad]]. If we assume that this value is actually computed in our model, then we'll need a way of computing the gradient $\vec{\nabla}$ in discrete space-time. This is covered in the next section.
+This just means that this $\vec{\nabla}$ takes a three-dimensional field, in this case the field of our wave value $\phi_a$ or $\phi_b$ distributed over space, and computes how steeply this field is changing in each of the three different directions ([[#figure_vgrad]]). See [[discrete gradient]] for how we compute the gradient $\vec{\nabla}$ in discrete space-time of the [[cellular automaton]] framework.
 
-Before proceeding, we look ahead to the next major development. We have ways of computing the density and current of charge ($\rho$, $\vec{J}$), which drive the electromagnetic field. Thus, we need to think of these variables as physically real values, which can be computed directly from the underlying wave state variables, that give rise to long-range electromagnetic forces, through which our particle-waves interact. The next step is to see how the electromagnetic fields can push our particle waves around.
+Before proceeding, we look ahead to the next major development. We have ways of computing the density and current of charge ($\rho$, $\vec{J}$), which drive the electromagnetic field. Thus, we can think of these as physically real values, which can be computed directly from the underlying wave state variables, that give rise to long-range electromagnetic forces, through which the particle-waves interact. The next step is to see how the electromagnetic fields can push our particle waves around.
 
-See [[discrete gradient]] for how to compute the gradient in the discrete CA framework.
-
-So, in the end, the computation of the current, which is a vector having three separate components ($J_x, J_y, J_z$), looks like this:
+To summarize, the computation of the current, which is a vector having three separate components ($J_x, J_y, J_z$), looks like this:
 
 $$
 J_x = \frac{e}{m_0} \left[ \phi_a \left( \sum_{j \in N_{X}} k_j {(\phi_b}_{j+} - {\phi_b}_{j-}) \right) - \phi_b \left( \sum_{j \in N_{X}} k_j ({\phi_a}_{j+} - {\phi_a}_{j-}) \right) \right]
@@ -237,7 +235,7 @@ Again, it does not look as simple as before, but nevertheless it is necessary to
 
 ## Minimal Coupling of Charge Waves with Electromagnetic Fields
 
-At this point, we have a charged wave that can generate an electromagnetic field according to the charge density $\rho$ and current density $\vec{J}$, and we know how this electromagnetic field propagates according to wave equations. Now, we need to have that electromagnetic field interact with the charge wave to produce actual forces on our model. This occurs by introducing new terms into the complex KG wave equation, which, intuitively speaking, act as external driving forces on this charge wave, in much the same way that the charge and current act as driving forces on the electromagnetic wave equations.
+At this point, we have a charged wave that can generate an electromagnetic field according to the charge density $\rho$ and current density $\vec{J}$, and we know how this electromagnetic field propagates according to the Maxwell wave equations. Now, we need to have that electromagnetic field interact with the charge wave to produce actual forces on a charged particle. This occurs by introducing new terms into the complex KG wave equation, which, intuitively speaking, act as external driving forces on this charge wave, in much the same way that the charge and current act as driving forces on the electromagnetic wave equations.
 
 In the electromagnetic field equations, the driving force from charge $\rho$ adds into the second-order temporal derivative $\frac{\partial^2 {}}{\partial t^2}$ ([[maxwell#eq_scalar-pot-chg]] in [[Maxwell]]):
 
@@ -253,13 +251,15 @@ $$
 
 This makes sense, because force is the derivative of a potential, so potential is a first-order factor, and force is a second-order factor.
 
-Our KG (Klein-Gordon) charge wave equation is a second-order equation, expressed in terms of $\frac{\partial^2 {}}{\partial t^2}$, and therefore we need to include external driving forces, not potentials. However, for various reasons, it is necessary to derive such an equation starting from the potential. To do this, we can re-derive a second-order wave equation by replacing the first-order derivative with the first-order derivative with the external driving potential:
+Our KG (Klein-Gordon) charge wave equation is a second-order equation, expressed in terms of $\frac{\partial^2 {}}{\partial t^2}$, and therefore we need to include external driving forces, not potentials. However, for various reasons, it is necessary to derive such an equation starting from the potential. To do this, we can re-derive a second-order wave equation by replacing the first-order derivative with the following first-order _covariant_ derivative operator $D$, that subtracts the external driving potential:
 
 $$
-\partial^\mu \rightarrow \partial^\mu - \frac{e}{c} {A}^\mu
+D_\mu \def \partial_\mu - i \frac{e}{c} A^\mu
 $$
 
-We can then substitute this first-order four-vector derivative into the four-vector version of the KG wave equation (in natural units), which is ([[klein-gordon#eq_kg-4vec]]):
+This derivative can be derived from the principle of _local gauge invariance_, in [[gauge theory]], as a way to compensate for the introduction of a local phase factor, which is parameterized by the $A^\mu$ potential field. In other words, local gauge invariance means that the EM field potential might be different at every different point in space, and gauge theory shows you how to have the EM field and charge field interact in a way that makes this situation mutually compatible, so that charge and energy end up being conserved over time.
+
+We can then substitute this first-order four-vector derivative, and its contravariant version with the negative space-like factors, into the four-vector version of the KG wave equation (in natural units), which is ([[klein-gordon#eq_kg-4vec]] in [[Klein-Gordon]]):
 
 $$
 \partial_\mu \partial^\mu \chi = - m_0^2 \chi
@@ -271,10 +271,10 @@ $$
 \partial_\mu \partial^\mu = \frac{\partial^2 {}}{\partial t^2} - \nabla^2
 $$
 
-So the compact form of the KG wave equation with minimal coupling is therefore:
+So the compact form of the KG wave equation with minimal coupling (local gauge invariance) is therefore:
 
 $$
-\left( \partial_\mu - e {A}_\mu \right) \left(\partial^\mu - e {A}^\mu \right) \chi = -m_0^2 \chi
+\left( \partial_\mu - i \frac{e}{c} A^\mu \right) \left(\partial^\mu - i \frac{e}{c} A_\mu \right) \chi = -m_0^2 \chi
 $$
 
 To get all the units right, and perhaps add some conceptual clarity, we can do the same thing with the four-momentum version of the wave equation, which is:
@@ -292,25 +292,25 @@ $$
 So now we can say that the electromagnetic potential pushes directly on the momentum of the wave-particle:
 
 $$
-\hat{p}^\mu \rightarrow i \hbar \partial^\mu - \frac{e}{c} {A}^\mu
+\hat{p}^\mu \rightarrow i \hbar \partial^\mu - \frac{e}{c} A^\mu
 $$
 
 and the same goes for the covariant forms:
 
 $$
-\hat{p}_\mu \rightarrow i \hbar \partial_\mu - \frac{e}{c} {A}_\mu
+\hat{p}_\mu \rightarrow i \hbar \partial_\mu - \frac{e}{c} A_\mu
 $$
 
 This notion of the potential pushing directly on the momentum of the particle hopefully makes good intuitive sense, even if all the associated mathematics does not. In any case, the resulting KG wave equation becomes:
 
 $$
-\left({\hat{p}^\mu} - \frac{e}{c}{A}^\mu \right) \left({\hat{p}_\mu} - \frac{e}{c}{A}_\mu \right)\chi = m_0^2 c^2 \chi
+\left({\hat{p}^\mu} - \frac{e}{c}A^\mu \right) \left({\hat{p}_\mu} - \frac{e}{c}A_\mu \right)\chi = m_0^2 c^2 \chi
 $$
 
 which can also just be written more compactly as a squared expression:
 
 $$
-\left(i \hbar \partial_\mu - \frac{e}{c}{A}_\mu \right)^2\chi = m_0^2 c^2 \chi
+\left(i \hbar \partial_\mu - \frac{e}{c}A_\mu \right)^2\chi = m_0^2 c^2 \chi
 $$
 
 When this equation is crunched through to produce separate time and space derivatives (as detailed in a subsequent section), we get a standard second-order wave update equation plus a few extra terms (in natural units):
@@ -391,44 +391,6 @@ However, if you run this equation in a static electromagnetic field, it is clear
 Overall, we have now happened upon a very interesting situation. The breaking of symmetry between the two variables in the complex wave state, forced upon us by implementational considerations, actually fits at least qualitatively with a known and otherwise very puzzling property of physics. The weak force also breaks symmetry in a very similar way: there is a preferred direction of rotation in the weak force. Although it is not yet clear (to me at least) that this preferred rotational direction in the weak force maps identically onto this preferred rotation direction, it is nevertheless a tantalizing possibility. The weak force has been integrated with the electromagnetic force, as the _electroweak_ force --- it is possible that the effects described by the electroweak force correspond in some way to the oscillations in charge value that are observed in our model. We will return to these issues later.
 
 Meanwhile, we nee need to introduce just a bit more complexity into our KG wave equation before we have a fully satisfactory model of a fundamental particle of nature: the electron (and its antiparticle, the positron). This extra bit of complexity extends the phenomenon of rotation that we've just been discussing, to account for the strange quantum mechanical property of **spin**. The resulting equation goes by the name of the second-order Dirac equation. Once we have that, we will have a complete system that, if all the math is correct, should make direct and numerically accurate contact with observable phenomena!
-
-Before moving on to spin, there are two remaining loose ends for the present set of equations. First, there is an interesting interpretation of the way that the electromagnetic potential interacts with our charge wave, called **local gauge invariance**, which provides a template for exploring the other two forces of nature: the weak and strong forces (which we will not cover further in this paper). Second, we have the actual mechanics of deriving the above equations.
-
-## Local Gauge Invariance
-
-If you look at it in the right way, the electromagnetic field can be seen as a way of canceling out an extra degree of freedom present in the complex KG wave field equations. As discussed in [[Maxwell]], the Lorenz gauge is an example of a situation where we introduced some extra constraints on the field variables, and this eliminated a degree of freedom in the electromagnetic equations, and also made them appear a lot simpler than they otherwise would.
-
-This notion of a _gauge_ is very general: it just means that whenever you have some unconstrained values in your equations (i.e., values that can change without changing the observable results that you can measure in physics experiments), then you need to apply some kind of gauge to fix these variables. In the Lorenz gauge example, the extra degree of freedom comes from the fact that the observable variables are the force vectors $\vec{E}$ and $\vec{B}$, which are essentially derivatives of the underlying potentials $A_0$, $\vec{A}$. Thus, the raw values of the potentials can be moved up or down, and it won't change the slope of the fields, and therefore it won't change the observable force vectors.
-
-However, it is not clear exactly how to reconcile such an argument with the fact that the potentials appear directly in our coupling equations, and also are observable in terms of the Arahnov-Bohm effect, as discussed elsewhere.
-
-Nevertheless, here is the argument for the electromagnetic coupling being a form of local gauge invariance. If you just take our basic complex KG wave equation, you can get exactly the same overall behavior if you multiply the thing by a "phase transformation" (it is often said that gauge invariance should really be phase invariance) which is basically just a rotation along the complex axes. This is exactly the kind of rotation discussed above. The generic form of a rotation in complex numbers is to multiply by an exponential term:
-
-$$
-\chi(x) \rightarrow \exp \left(\frac{ie}{\hbar c} \chi \right) \chi(x)
-$$
-
-Where the $\chi$ term is the amount that you're rotating (the rest are just convenient constants for getting $\chi$ into the right units) --- think of it as some number of degrees of rotating the underlying $\phi_a$ value into $\phi_b$ (and vice-versa) for the complex number $\chi$.
-
-If $\chi$ is independent of location ($x$), then it is just a constant and nothing happens. This is a *global* gauge/phase transformation, and it is not very interesting. However, if $\chi$ is now itself a function of location (i.e., $\chi(x)$ ), this is a *local* gauge transformation, and this is where the electromagnetic coupling comes in. If you have such a local variable, and you take the derivative of the resulting overall system that includes this locally-varying thing, you get this extra term for the derivative of $\chi(x)$ with respect to x:
-
-$$
-\partial_\mu \chi(x) \rightarrow \exp \left( \frac{ie}{\hbar c} \chi(x) \right) \left(\partial_\mu + \frac{ie}{\hbar c} \partial_\mu \chi(x) \right) \chi(x)
-$$
-
-So now your nice wave equation is a mess, and it varies from one place to another as a function of this $\partial_\mu \chi(x)$ term. So here is the trick: you basically just add this annoying term into the overall EM potential field (which is OK because such additions do not change the gradients and therefore do not affect observable EM field vectors):
-
-$$
-{A}_\mu(x) \rightarrow {A}_\mu(x) + \partial_\mu \chi(x)
-$$
-
-And then you just subtract this whole thing back out from your messy equation, and this gives you something just slightly less messy:
-
-$$
-\left(i \hbar \partial_\mu - \frac{e}{c} {A}_\mu\right)\chi
-$$
-
-So, this ends up being the same thing as the minimal coupling described earlier. Somehow, this whole process seems like a rather contrived way to end up with something that already made quite a bit of sense before hand. However, as noted earlier, the true payoff of such a procedure appears to come in addressing the weak and strong forces, which we leave for a future refinement of the model.
 
 ## Summary
 
