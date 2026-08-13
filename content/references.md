@@ -148,6 +148,8 @@
 
 <p id="Hobson13">Hobson, A. (2013). There are no particles, there are only fields. <i>American Journal of Physics, 81</i>, 211–223. <a href="http://aapt.scitation.org/doi/full/10.1119/1.4789885">http://aapt.scitation.org/doi/full/10.1119/1.4789885</a><a href="http://doi.org/10.1119/1.4789885"> http://doi.org/10.1119/1.4789885</a></p>
 
+<p id="HobsonEfstathiouLasenby06">Hobson, M.P., Efstathiou, G., & Lasenby, A.N. (2006). <i>General Relativity: An Introduction for Physicists. </i> Cambridge University Press. </p>
+
 <p id="Holland05c">Holland, P. (2005). Quantum back-reaction and the particle law of motion. <i>Journal of Physics A: Mathematical and General, 39</i>, 559. <a href="https://doi.org/10.1088/0305-4470/39/3/008">https://doi.org/10.1088/0305-4470/39/3/008</a><a href="http://doi.org/10.1088/0305-4470/39/3/008"> http://doi.org/10.1088/0305-4470/39/3/008</a></p>
 
 <p id="HongOuMandel87">Hong, C.K., Ou, Z.Y., & Mandel, L. (1987). Measurement of subpicosecond time intervals between two photons by interference. <i>Physical Review Letters, 59</i>, 2044–2046. <a href="https://link.aps.org/doi/10.1103/PhysRevLett.59.2044">https://link.aps.org/doi/10.1103/PhysRevLett.59.2044</a><a href="http://doi.org/10.1103/PhysRevLett.59.2044"> http://doi.org/10.1103/PhysRevLett.59.2044</a></p>
@@ -321,6 +323,8 @@
 <p id="Wolfram97">Wolfram, S. (1997). <i>A new kind of science. </i></p>
 
 <p id="Yukawa35">Yukawa, H. (1935). On the Interaction of Elementary Particles. I. <i>Nippon Sugaku-Buturigakkwai Kizi Dai 3 Ki, 17</i>, 48–57. <a href="http://doi.org/10.11429/ppmsj1919.17.0_48"> http://doi.org/10.11429/ppmsj1919.17.0_48</a></p>
+
+<p id="ZhuRyuNaEtAl24">Zhu, J., Ryu, C.J., Na, D., & Chew, W.C. (2024). The Radiation Gauge: When is it Valid? <a href="http://arxiv.org/abs/2407.08764">http://arxiv.org/abs/2407.08764</a><a href="http://doi.org/10.48550/arXiv.2407.08764"> http://doi.org/10.48550/arXiv.2407.08764</a></p>
 
 <p id="Zuse69">Zuse, K. (1969). Rechnender Raum (Calculating Space) <i>Schriften Zur Dataverarbeitung, 1</i>, </p>
 

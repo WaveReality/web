@@ -17,7 +17,7 @@ $$
 
 ## Global gauge invariance
 
-The integral form of the Lagrangian action essentially involves a subtraction between the ending and starting action values. Therefore, adding or multiplying the wave state by a constant global factor has no effect on the resulting laws of motion. This is known as a **global gauge transformation** and it gives rise to a corresponding symmetry, in the form of a conserved current (see [[conservation]] for the derivation):
+The integral form of the Lagrangian action essentially involves a subtraction between the ending and starting action values. Therefore, adding or multiplying the wave state by a constant global factor has no effect on the resulting laws of motion. This is known as a **global gauge transformation** and it gives rise to a corresponding symmetry, in the form of a conserved current (see [[continuity]] for the derivation):
 
 $$
 j^{\mu} = \text{const.} \chi^* \partial^{\mu} \chi

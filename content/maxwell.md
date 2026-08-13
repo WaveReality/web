@@ -229,7 +229,7 @@ $$
 
 This shows that the wave propagation dynamics in Maxwell's equations are due to interactions between the $\vec{E}$ and $\vec{B}$ fields, whereas interestingly in the potential-based formulation, we have four entirely separate second-order wave equations. It is not immediately obvious how this produces the same thing, but if we do the appropriate math, we can see that it all works out. See [[#maxwell potential derivations]] for all the gory details.
 
-## The Lorenz Gauge and Condition
+## The Lorenz gauge and condition
 
 There is one important wrinkle in the connection between Maxwell's equations and the simple wave equations operating on the potentials, which has to do with the **Lorenz Condition**, which is why the wave equation version is known as the **Lorenz gauge**. The wave equations only correspond to Maxwell's standard four equations if this condition is met:
 
@@ -238,7 +238,7 @@ $$
 \frac{1}{c^2} \frac{\partial A_0}{\partial t} + \vec{\nabla} \cdot \vec{A} = 0
 $$
 
-The question is, what does this expression mean, and what can we do to ensure that it is properly satisfied? This condition is known as the **continuity equation**, and it corresponds to a situation where the total quantity of something (in this case the total scalar and vector potential) is conserved over time. This makes sense intuitively, because the first term is the rate of change in the scalar potential, and the second term is the divergence or source of the vector potential field (recall that we saw this in the first of Maxwell's equations, where the divergence of the electric force is equal to the charge density) --- this says that any source of the vector potential must then translate into corresponding changes in the scalar potential. Thus, the sources are balanced out with temporal changes, producing a net balance of zero --- no change. It is important to appreciate that although there are no sources for the magnetic vector force $\vec{B}$, there *are* sources for the magnetic vector *potential* $\vec{A}$, namely the current density:
+The question is, what does this expression mean, and what can we do to ensure that it is properly satisfied? This condition is known as the **continuity equation**, and it corresponds to a situation where the total quantity of something (in this case the total scalar and vector potential) is conserved over time. This makes sense intuitively, because the first term is the rate of change in the scalar potential, and the second term is the divergence or source of the vector potential field. Recall that we saw this in the first of Maxwell's equations, where the divergence of the electric force is equal to the charge density. Thus, this says that any source of the vector potential must then translate into corresponding changes in the scalar potential. Thus, the sources are balanced out with temporal changes, producing a net balance of zero --- no change. It is important to appreciate that although there are no sources for the magnetic vector force $\vec{B}$, there _are_ sources for the magnetic vector _potential_ $\vec{A}$, namely the current density:
 
 {id="eq_b-source" title="source of magnetic potential"}
 $$
@@ -252,6 +252,10 @@ $$
 $$
 
 We will keep this condition in mind as we consider how the electron wave function generates both the electric and magnetic potential fields. Outside of the region where there are currents, this constraint is not relevant, and the simple second-order wave propagation can take place.
+
+<!--- TODO: the above is not entirely true. The $A^0$ component does _not_ propagate like a wave, but the Lorenz condition makes it do so, and this is incorrect. Furthermore, the EM field has _2_ transverse polarizations, not the 4 that would be supported by the full $A^\mu$ four-vector, and it cannot have any longitudinal polarization. These constraints are managed in QFT by using the [Gupta-Bleuler formalism](https://en.wikipedia.org/wiki/Gupta%E2%80%93Bleuler_formalism). How the heck do we do that!? -->
+
+<!--- TODO: [[@ZhuRyuNaEtAl24]] and all the other papers by Ryu and Chew are very confusing in this regard! doing exactly what I want to do. I will email.. -->
 
 ### Lorentz Invariance of the Wave Equation
 
