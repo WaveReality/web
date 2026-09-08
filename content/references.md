@@ -138,6 +138,8 @@
 
 <p id="GuerraRuggiero78">Guerra, F., & Ruggiero, P. (1978). A note on relativistic Markov processes. <i>Lettere al Nuovo Cimento (1971-1985), 23</i>, 529–534. <a href="https://doi.org/10.1007/BF02770538">https://doi.org/10.1007/BF02770538</a><a href="http://doi.org/10.1007/BF02770538"> http://doi.org/10.1007/BF02770538</a></p>
 
+<p id="Gupta50">Gupta, S.N. (1950). Theory of Longitudinal Photons in Quantum Electrodynamics. <i>Proceedings of the Physical Society. Section A, 63</i>, 681. <a href="https://doi.org/10.1088/0370-1298/63/7/301">https://doi.org/10.1088/0370-1298/63/7/301</a><a href="http://doi.org/10.1088/0370-1298/63/7/301"> http://doi.org/10.1088/0370-1298/63/7/301</a></p>
+
 <p id="GuralnikHagenKibble64">Guralnik, G.S., Hagen, C.R., & Kibble, T.W.B. (1964). Global Conservation Laws and Massless Particles. <i>Physical Review Letters, 13</i>, 585–587. <a href="https://link.aps.org/doi/10.1103/PhysRevLett.13.585">https://link.aps.org/doi/10.1103/PhysRevLett.13.585</a><a href="http://doi.org/10.1103/PhysRevLett.13.585"> http://doi.org/10.1103/PhysRevLett.13.585</a></p>
 
 <p id="Hestenes08">Hestenes, D. (2008). Electron time, mass and zitter. </p>
