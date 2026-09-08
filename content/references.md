@@ -94,9 +94,13 @@
 
 <p id="Everett57">Everett, H. (1957). "Relative State" Formulation of Quantum Mechanics. <i>Reviews of Modern Physics, 29</i>, 454–462. <a href="https://link.aps.org/doi/10.1103/RevModPhys.29.454">https://link.aps.org/doi/10.1103/RevModPhys.29.454</a><a href="http://doi.org/10.1103/RevModPhys.29.454"> http://doi.org/10.1103/RevModPhys.29.454</a></p>
 
+<p id="Feynman48">Feynman, R.P. (1948). Space-Time Approach to Non-Relativistic Quantum Mechanics. <i>Reviews of Modern Physics, 20</i>, 367–387. <a href="https://link.aps.org/doi/10.1103/RevModPhys.20.367">https://link.aps.org/doi/10.1103/RevModPhys.20.367</a><a href="http://doi.org/10.1103/RevModPhys.20.367"> http://doi.org/10.1103/RevModPhys.20.367</a></p>
+
 <p id="Feynman82">Feynman, R.P. (1982). Simulating physics with computers. <i>International Journal of Theoretical Physics, 21</i>, 467–488. <a href="https://doi.org/10.1007/BF02650179">https://doi.org/10.1007/BF02650179</a><a href="http://doi.org/10.1007/BF02650179"> http://doi.org/10.1007/BF02650179</a></p>
 
 <p id="FeynmanGell-Mann58">Feynman, R.P., & Gell-Mann, M. (1958). Theory of the Fermi Interaction. <i>Physical Review, 109</i>, 193–198. <a href="https://link.aps.org/doi/10.1103/PhysRev.109.193">https://link.aps.org/doi/10.1103/PhysRev.109.193</a><a href="http://doi.org/10.1103/PhysRev.109.193"> http://doi.org/10.1103/PhysRev.109.193</a></p>
+
+<p id="FigariTeta13">Figari, R., & Teta, A. (2013). Emergence of classical trajectories in quantum systems: the cloud chamber problem in the analysis of Mott (1929) <i>Archive for History of Exact Sciences, 67</i>, 215–234. <a href="https://www.jstor.org/stable/23479266">https://www.jstor.org/stable/23479266</a></p>
 
 <p id="FinsterSmollerYau99a">Finster, F., Smoller, J., & Yau, S. (1999). Particlelike solutions of the Einstein-Dirac equations. <i>Physical Review D, 59</i>, 104020. <a href="https://link.aps.org/doi/10.1103/PhysRevD.59.104020">https://link.aps.org/doi/10.1103/PhysRevD.59.104020</a><a href="http://doi.org/10.1103/PhysRevD.59.104020"> http://doi.org/10.1103/PhysRevD.59.104020</a></p>
 
@@ -217,6 +221,8 @@
 <p id="Meyer96">Meyer, D.A. (1996). From quantum cellular automata to quantum lattice gases. <i>Journal of Statistical Physics, 85</i>, 551–574. <a href="https://doi.org/10.1007/BF02199356">https://doi.org/10.1007/BF02199356</a><a href="http://doi.org/10.1007/BF02199356"> http://doi.org/10.1007/BF02199356</a></p>
 
 <p id="Minkowski08">Minkowski, H. (1908). Die Grundgleichungen für die elektromagnetischen Vorgänge in bewegten Körpern. <i>Nachrichten von der Gesellschaft der Wissenschaften zu Göttingen, Mathematisch-Physikalische Klasse, 1908</i>, 53–111. <a href="https://eudml.org/doc/58707">https://eudml.org/doc/58707</a></p>
+
+<p id="Mott29">Mott, N.F. (1929). The Wave Mechanics of α -Ray Tracks. <i>Proceedings of the Royal Society of London. Series A, Containing Papers of a Mathematical and Physical Character, 126</i>, 79–84. <a href="https://www.jstor.org/stable/95407">https://www.jstor.org/stable/95407</a></p>
 
 <p id="Nakagomi88">Nakagomi, T. (1988). Relativistic Random Walks Intrinsic to the Walker. <i>Progress of Theoretical Physics, 80</i>, 245–257. <a href="https://doi.org/10.1143/PTP.80.245">https://doi.org/10.1143/PTP.80.245</a><a href="http://doi.org/10.1143/PTP.80.245"> http://doi.org/10.1143/PTP.80.245</a></p>
 

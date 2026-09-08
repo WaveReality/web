@@ -3,7 +3,7 @@ Categories = ["Interpretations"]
 bibfile = "mechphys.json"
 +++
 
-The earliest seeds of quantum physics began right around the new century of 1900, with Planck's solution to the _ultraviolet catastrophe_ in the theory and data on black-body radiation. The classical mathematical treatment (according to the Rayleigh-Jeans law) predicts an infinite amount of energy should be released from an ideal perfectly-absorbent and perfectly re-radiating body (black body) in thermal equilibrium. This divergence arises as the frequency of absorbed and re-emitted light progressively gets higher, because higher-frequency light has more energy, and thus you end up with an infinite positive feedback loop from ever-higher frequencies.
+The earliest seeds of quantum physics began right around the new century of the 1900's, with Planck's solution to the _ultraviolet catastrophe_ in the theory and data on black-body radiation. The classical mathematical treatment (according to the Rayleigh-Jeans law) predicts an infinite amount of energy should be released from an ideal perfectly-absorbent and perfectly re-radiating body (black body) in thermal equilibrium. This divergence arises as the frequency of absorbed and re-emitted light progressively gets higher, because higher-frequency light has more energy, and thus you end up with an infinite positive feedback loop from ever-higher frequencies.
 
 Furthermore the data from experiments consistently showed that these higher frequencies were in fact strongly diminished, and ultimately absent at higher frequencies, relative to the classical predictions. Planck found an empirically-derived equation that explained the data, by introducing a _quantization_ in the process by which light is absorbed and emitted. Specifically, the absorption and emission of energy must occur in multiples of a parameter _h_ (Planck's constant) times the frequency $\nu$:
 
@@ -27,7 +27,7 @@ $$
 
 Although the reason for this restriction was not clear, it immediately made sense of a great deal of data, including the Rydberg formula for hydrogen emission spectra. The justification for Bohr's restriction on atomic orbits came in 1924, when Louis de Broglie proposed that electrons have a wave-like nature, and thus the only frequencies of electron wave vibration that are stable are standing waves. Standing waves must have an integer number of wavelengths, such that within the orbiting electron model, the electron orbits are constrained to have an integer number of such waves per orbit.
 
-Shortly thereafter, in 1926, Erwin Schrödinger developed his famous wave equation, which then gave a complete mathematical description of the behavior of bound electrons in atomic systems, which made sense of even more data than Bohr's original model.
+Shortly thereafter, in 1926, Erwin Schrödinger developed his famous [[Schrodinger|wave equation]], which then gave a complete mathematical description of the behavior of bound electrons in atomic systems, which made sense of even more data than Bohr's original model.
 
 The experimental confirmation of de Broglie's matter wave hypothesis came in 1927 in an experiment by Davisson and Germer, who found that electrons moving through a crystal exhibit a diffraction pattern, consistent with a wave-like property. Calculations showed that the de Broglie wavelength predicted for the electrons fit the observed diffraction pattern quite well:
 

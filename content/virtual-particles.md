@@ -1,4 +1,5 @@
 +++
+Categories = ["Standard Model"]
 bibfile = "mechphys.json"
 +++
 
@@ -7,4 +8,6 @@ bibfile = "mechphys.json"
 In principle these interaction virtual particles are not necessary, and a more physically realistic temporally-evolving interaction among particle and force field states should be able to capture what is otherwise captured using path-integration to sum over all possible virtual particles pathways. This is already done in the lattice approach to quantum field theory, where stochastic sampling methods are used to estimate overall probabilities.
 
 Whether these sampling techniques end up being more computationally efficient for computing the answers to specific problems is not the primary interest here. Rather, we are more interested in the actual dynamic temporally-extended interactions that might take place in Nature, in the physical [[Spinfield Model]] framework.
+
+See [Matt Strassler's blog](https://profmattstrassler.com/articles-and-posts/particle-physics-basics/virtual-particles-what-are-they/) for more discussion on the nature of virtual particles.
 

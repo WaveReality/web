@@ -99,7 +99,7 @@ To summarize the above, the fundamental constraints shaping this model are as fo
 
 * What is the ground, [[zero-point]] state of the spinfield?  consists of CVHO oscillators that are presumably continuously oscillating, while decaying away whatever particle states they last encountered. As a discrete particle moves through, it spins-up these oscillators, entraining them to represent its momentum and charge properties, which then serve as the source of the radiative wave fields.
 
-* This zero-point field can potentially account for the _virtual particles_ that are only transiently extant, within the [[QED]] Standard Model framework, i.e., the "quantum foam" associated with Feynmann diagrams and the path integral framework.
+* This zero-point field can potentially account for the _virtual particles_ that are only transiently extant, within the [[QED]] Standard Model framework, i.e., the "quantum foam" associated with [[Feynman diagram]]s and the path integral framework.
 
 ## Source particle diffusion
 

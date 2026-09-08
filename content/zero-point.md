@@ -15,5 +15,5 @@ The semiclassical theorist Jaynes suggested that instead of imagining that this 
 
 In any case, we will be on the lookout for these issues in developing the WELD models. The interaction between a discrete electron point particle and the Maxwell EM field will undoubtedly produce a lot of "ripples" of EM signals as it moves about, hopefully consistent with the spectrum of blackbody thermal radiation. However, there may be additional sources of noise, and additional elements of stochasticity that may need to be added.
 
-For example, there is a long history of work on the connection between stochastic (brownian) motion and QM wave equations, which was developed by [[@^Nelson66]] building on original ideas from Feynmann (see [[@Sciarretta18]] for a historical overview and recent developments). It may be that we need to make particle movement stochastic, to avoid strong aliasing effects of the cubic lattice.
+For example, there is a long history of work on the connection between stochastic (brownian) motion and QM wave equations, which was developed by [[@^Nelson66]] building on original ideas from Feynman (see [[@Sciarretta18]] for a historical overview and recent developments). It may be that we need to make particle movement stochastic, to avoid strong aliasing effects of the cubic lattice.
 
