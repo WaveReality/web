@@ -20,27 +20,29 @@ Recall that the wave equation can be written as a second-order differential equa
 
 {id="eq_wave" title="standard wave equation"}
 $$
-\frac{\partial^2 {\phi}}{\partial t^2} = c^2 \nabla^2 \phi
+\frac{\partial^2 \phi}{\partial t^2} = c^2 \nabla^2 \phi
 $$
 
 {id="figure_mass" style="height:20em"}
 ![The additional mass term $-m_0^2 \phi$ in the Klein-Gordon (KG) wave equation "drags down" the wave in proportion to the height of the waves (i.e., amplitude away from zero, either positive or negative). This fights against the curvature of the wave, computed by $\nabla^2$. Higher frequency waves have higher curvature, and thus move faster than lower frequency waves.](media/fig_kg_mass_drag.png)
 
-What if we add a single new term to this equation, where we subtract away some *mass* ($m_0$, a constant) from the Laplacian ($\nabla^2 \phi$) curvature driving force term ([[#figure_mass]]):
+What if we add a single new term to this equation, where we subtract away some _mass_ ($m_0$, a constant) from the Laplacian ($\nabla^2 \phi$) curvature driving force term ([[#figure_mass]]):
 
 {id="eq_mass" title="mass subtraction"}
 $$
-\frac{\partial^2 {\phi}}{\partial t^2} = c^2 \left( \nabla^2 \phi - \frac{m_0^2}{\hbar^2} \phi \right)
+\frac{\partial^2 \phi}{\partial t^2} = c^2 \left( \nabla^2 \phi - \frac{m_0^2}{\hbar^2} \phi \right)
 $$
 
 or, in somewhat simpler notation that we'll use more frequently:
 
 {id="eq_kg" title="Klein-Gordon equation"}
 $$
-\frac{\partial^2 {\phi}}{\partial t^2} = c^2 \left(\nabla^2 - \frac{m_0^2}{\hbar^2} \right) \phi
+\frac{\partial^2 \phi}{\partial t^2} = c^2 \left(\nabla^2 - \frac{m_0^2}{\hbar^2} \right) \phi
 $$
 
 where "hbar" $\hbar = \frac{h}{2\pi}$ and $h$ is Planck's constant.
+
+You might recognize this additional mass factor as playing the same role as an [[wave#external potential]] in the basic wave equation, where it drives an additional restorative force that is proportional to the wave $\phi$ value at each point. Interestingly, we'll later see that this proportionality to $\phi$ represents a kind of [[gauge theory|gauge fixing]], because now the dynamics of the system depend explicitly on the actual absolute magnitude of the $\phi$ wave field, whereas without such a term, the values of $\phi$ can be shifted or even multiplied by arbitrary constants, without changing the fundamental behavior of the wave. This means that such waves with mass cannot be used in the usual local gauge transformations that are used to define particle-force interactions in the [[Standard Model]]. This creates challenges for the [[weak]] force, where the putative [[boson]] particle carriers of the force are massive.
 
 The most natural interpretation of Planck's constant here is as a scaling term on the impact of mass on the matter wave dynamics. For this reason, it is puzzling how _h_ could possibly show up in light waves, because they have no mass, and there is no role for this constant in [[Maxwell]]'s EM wave equations. Thus, one could view Einstein's creation of the photon with energy $E = h \nu$ as a calculational [[tools-vs-models|tool]] for representing the interaction between EM waves and matter in atomic systems, and it is the matter waves that impart the _h_ constant, not the EM "photon". See [[semiclassical]] for more discussion.
 
@@ -49,13 +51,13 @@ In any case, this new equation ([[#eq_kg]]) is called the **Klein-Gordon (KG)** 
 First, we'll introduce some variations on how to write this equation, which are all obviously identical to the KG equation given above, but highlight different features of it, as we'll see more later. Here's one such variation:
 
 $$
-\frac{\partial^2 {\phi}}{\partial t^2} - c^2 \nabla^2\phi = -\frac{c^2 m_0^2}{\hbar^2} \phi
+\frac{\partial^2 \phi}{\partial t^2} - c^2 \nabla^2\phi = -\frac{c^2 m_0^2}{\hbar^2} \phi
 $$
 
 and another:
 
 $$
-\left(\frac{\partial^2 {}}{\partial t^2} - c^2 \nabla^2 + \frac{c^2 m_0^2}{\hbar^2}\right) \phi = 0
+\left(\frac{\partial^2}{\partial t^2} - c^2 \nabla^2 + \frac{c^2 m_0^2}{\hbar^2}\right) \phi = 0
 $$
 
 These last two forms are useful for relating to the [[four-vector]] version of the wave equation, where we saw that:

@@ -156,7 +156,7 @@ $$
 E_t = E_k + E_p
 $$
 
-## Discrete Time Adjustment
+### Discrete Time Adjustment
 
 There is a further wrinkle to the energy calculation in the discrete space and time framework, having to do with the exact point at which a given velocity and state values are both valid for capturing the total energy of the system. It turns out that you have to interpolate the velocity value half-way between its current and new values to get a more accurate energy measure:
 
@@ -172,11 +172,9 @@ $$
 
 Intuitively, the current velocity by itself doesn't coincide with the current state values, because it was really driven by the prior state values, so it needs to be updated with some influence of the velocity that was driven by the current state values (i.e., the new velocity) --- but this new velocity by itself goes too far, and thus the half-way point works out best.
 
-## Lack of Strict Conservation
+### Lack of Strict Conservation
 
-When total energy is computed in the above way across all cells, it often does *not* remain strictly constant over time, and instead varies in ways that reflect the wave dynamics operating within the system. Over time, the *average* value converges on a constant value, and it is clear that there is no risk of the system exploding or dying out, but from one time step to the next, there can actually be a fairly substantial variability in the total energy computed. You will observe this first-hand in the following exploration.
-
-todo: potential implications for gravitation, etc?
+When total energy is computed in the above way across all cells, it often does _not_ remain strictly constant over time, and instead varies in ways that reflect the wave dynamics operating within the system. Over time, the _average_ value converges on a constant value, and it is clear that there is no risk of the system exploding or dying out, but from one time step to the next, there can actually be a fairly substantial variability in the total energy computed.
 
 ## Exploration of 1D Waves
 
@@ -419,13 +417,26 @@ $$
 
 One of the trickiest problems in making numerical simulations of wave phenomena is how to manage behavior at the edge of your simulation. This is perhaps one indication that nature has no edges --- great way to avoid this problem. However, we have no such luxury with finite computational resources, and have to wrestle with this problem. There are basically three solutions:
 
-* **Fixed edges:** the edge values are permanently fixed to specific values --- this causes waves to bounce off of them and reflect back into the middle. It is not a good solution for any kind of force field (e.g., EM waves) because these require energy to dissipate over space.
+* **Fixed edges:** the edge values are permanently fixed to specific values, which causes waves to bounce off of them and reflect back into the middle. It is not a good solution for any kind of force field (e.g., EM waves) because these require energy to dissipate across space, and the fixed edges will result in continuously accumulating values.
 
-* **Dissipative edges:** the edges essentially absorb the wave energy, producing the effect of the waves just continuing to propagate outward, without reflecting back etc. This is the best solution for EM waves. It is achieved by just getting rid of the acceleration term in the wave equation, so that the force directly drives the current velocity, without incrementing a prior velocity --- this is also equivalent to the diffusion equation. It is also known as a Sommerfield boundary condition.
+* **Wrap-around edges:** the opposite edges of space wrap back upon each other, creating a weird doughnut-like topology. This is good for exploring the motion of free wave packets, working somewhat like a treadmill where the wave keeps looping around through the same simulation space, without ever apparently hitting any edges. It is particularly useful for examining the spreading of wave packets over time. Computationally it is a bit more challenging to implement the wrap-around, but that is just a coding problem.
 
-* **Wrap-around edges:** you just connect the two ends of your space back upon each other, creating a weird doughnut-like topology --- this is good for exploring the motion of free wave packets, working somewhat like a treadmill where the wave keeps looping around through the same simulation space, without ever apparently hitting any edges. It is particularly useful for examining the spreading of wave packets over time. Computationally it can be a bit more challenging to implement the wrap-around, but that is just a coding problem.
+* **Damping edges:** the edges essentially absorb the wave energy, producing the effect of the waves just continuing to propagate outward, without reflecting back. This is the best solution for EM waves. It is achieved by removing the acceleration term in the wave equation, so that the force directly drives the current velocity, without incrementing a prior velocity, which is also equivalent to the diffusion equation. It is also known as a Sommerfield boundary condition.
 
-There is a further question as to what overall shape the simulated universe is --- the two basic options are a cube and a sphere --- we typically use spheres for things like atomic systems, which are naturally spherical, so that preserves the radial symmetry of the system, whereas a cube is much better for the wrap-around case (doing wrap-around in a sphere is more difficult and not supported in [EmeWave](EmeWave "wikilink")).
+## External potential
+
+A simple and interesting way to alter basic wave propagation is to introduce a fixed external potential field $V(x,y,z)$ that the wave interacts with. This potential field acts just like an additional external force, adding to the force that comes from the curvature of the neighbors in space:
+
+{id="eq_vp" title="external potential"}
+$$
+\frac{\partial^2 \phi}{\partial t^2} = c^2 (\nabla^2 \phi + V(x,y,z) \phi)
+$$
+
+Note that _V_ is multiplied by the current state value $\phi$, and in general it should be either 0 or a negative value, because any positive value would result in additional acceleration of the wave amplitude, which will just accumulate over time and explode. When the value of _V_ is negative, it acts like an additional restorative force that is proportional to the deviation of the $\phi$ value itself: e.g., when $\phi$ is positive, it pushes back down with increasing force as $\phi$ increases.
+
+This additional force from the potential does _not_ function like friction, which would instead be proportional to the absolute value of the _velocity_ (rate of change) of $\phi$, not the position value. Such a frictional force would result in the loss of energy over time, and thus violate core conservation of energy principles. It is essential that the quantum waves remain frictionless!
+
+As you can see in the exploration described below, the presence of a potential generally causes the waves to bounce back away from areas of large-magnitude negative potential. This can for example provide a simple way of simulating the confining effects of the central nucleus charge on an electron.
 
 ## Exploration of 3D Waves
 
