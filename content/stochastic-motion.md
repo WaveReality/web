@@ -3,7 +3,7 @@ Categories = ["Spinfield Model"]
 bibfile = "mechphys.json"
 +++
 
-The [[pilot-wave]] model posits a discrete, localized particle whose motion is influenced by a distributed, physically real [[quantum wave]]. In the [[cellular automaton]] (CA) framework, a discrete localized particle lives entirely within one CA cell.
+The [[pilot-wave]] model posits a discrete, localized particle whose motion is influenced by a distributed, physically real [[quantum wave]]. In the [[cellular automaton]] (CA) framework, a discrete localized particle should live entirely within one CA cell.
 
 An obvious problem with this notion of something being contained entirely within a discrete cell is that it becomes challenging to imagine how it might ever move to another such cell. Such a move would have to happen in a discrete jump, creating a major discontinuity in the overall wave state, and potentially making the particle trajectory seemingly discontinuous and anisotrophic. 
 
@@ -15,7 +15,7 @@ Furthermore, although the continuum limit is mathematically approachable through
 
 The seminal work in analyzing stochastic discrete particle motion within the context of quantum physics was done by [[@^Nelson66]], who showed that a form of stochastic discrete particle motion actually results in the [[Schrodinger]] wave function in the continuous time-average limit. Interestingly, this work builds on the original work by Einstein on Brownian random-walk motion, back in 1905. Subsequent work has developed these ideas in multiple ways ([[@Cufaro-PetroniVigier83]]; [[@CufaroPetroniVigier79]]; [[@Ord96]]; [[@^Sciarretta18]]; [[@^Sciarretta21]] and others reviewed therein).
 
-Critically none of this existing work involves an integrated wave-particle [[duality]]; it focuses exclusively on the time-average distributions of discrete particle motion. Thus, unlike the [[pilot-wave]] framework, the quantum wave function in a purely stochastic particle model is entirely [[epistemic vs ontic|epistemic]]: it just describes the expected value of a discrete particle's random walk trajectories over time. There is no physical reality to such a wave. By contrast, our goal here is to derive an integration of discrete particle motion with quantum wave functions.
+Critically none of this existing work involves an integrated wave-particle [[duality]]; it focuses exclusively on the time-average distributions of discrete particle motion. Thus, unlike the [[pilot-wave]] framework, the quantum wave function in a purely stochastic particle model is entirely [[epistemic vs ontic|epistemic]]: it just describes the expected value of a discrete particle's random walk trajectories over time. There is no physical reality to such a wave. By contrast, the goal of the [[Spinfield Model]] is to derive an integration of discrete particle motion with quantum wave functions.
 
 {id="figure_pf-origin" style="height:20em"}
 ![Stochastic origin of quantum momentum / frequency relationship. The momentum on the left is 0.5c while on the right is 0. The distribution of position is on the vertical axis, while time is on the horizontal axis, with each point centered at the origin in the center (i.e., the temporal autocorrelation function). The variance on the left is half of that on the right.](media/fig_asmom5_0_autoc.png)

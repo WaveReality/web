@@ -32,6 +32,12 @@ A critical conceptual foundation of this approach is to recognize the distinctio
 
 A fundamental assumption here is that Nature must be doing one consistent thing using one set of physical mechanisms, uniformly and consistently across space and time. That thing is what we seek to understand here. See [[interpretations]] for more discussion and links to pages on various interpretations of quantum phenomena and the goal of developing a coherent, sensible physical model of fundamental physics.
 
+> **The single most important implication** of this tools-vs-models distinction is to recognize that the exponentially exploding [[configuration space]] formalism, which is common to all of the interpretations, including the pilot-wave, is a consequence of using a fully **linear** mathematical tool to account for what must actually be a **nonlinear** underlying system. The only way to represent nonlinear interactions in a linear framework is to adopt the exponential configuration space framework.
+
+> While the computational simplicity of the linear framework is nice for doing the math, when faced with the manifest impossibility of an exponentially-explosive construct like configuration space, it seems somehow obvious that the actual underlying physics is instead fundamentally nonlinear, and that nonlinear physical model is what we seek to describe here.
+
+Indeed, we can see that the use of Feynman diagrams to represent the S-matrix interactions in the Standard Model formalism clearly introduces discrete, localized, nonlinear interactions into the overall formalism. This discrepancy between the actual mathematics of the full Standard Model versus the highly simplified and abstracted computational tools used in the [[Hilbert space]] and [[Schrodinger]] wave formalisms is somehow overlooked, where all the interpretations are based on the highly simplified formalisms. 
+
 ## Developing an intuitive, deep understanding of the Standard Model
 
 One major function of the material here is to support the development of an intuitive and deep understanding of the core elements of the [[Standard Model]] of quantum / particle physics. The reader can benefit from this without caring about the mission to develop the [[Spinfield Model]]. The foundation of the Standard Model is a set of wave equations, which can be easily simulated in 3D space within the constraints of the [[cellular automaton]] (CA) framework.

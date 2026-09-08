@@ -5,14 +5,14 @@ bibfile = "mechphys.json"
 
 The differences between the standard Copenhagen interpretation vs. the [[pilot-wave]] model reviewed in [[history]] nicely exemplify the broader distinctions between **calculational tools** vs. **physical models**. A calculational tool is a mathematical framework that makes it easy to compute relevant results, but the underlying processes implied by the nature of the calculations have no direct mapping onto underlying "real" physical properties of the system.
 
-For example, Newton's theory of gravitation (still widely used in practice) is a calculational tool that enables gravitational effects to be conveniently computed in terms of the respective masses ($m_1$, $m_2$) and distance *r* between the centers of mass of two bodies:
+For example, Newton's theory of gravitation (still widely used in practice) is a calculational tool that enables gravitational effects to be conveniently computed in terms of the respective masses ($m_1$, $m_2$) and distance _r_ between the centers of mass of two bodies:
 
 {id="eq_newton" title="Newton's gravitation law"}
 $$
 F = G \frac{m_1 m_2}{r^2}
 $$
 
-But this is not a plausible physical model because the math requires the use of the distances between relevant objects (typically many millions of miles in the usual astronomical applications), and their respective aggregate masses. Not only is this a (highly) non-local computation ("action at a distance"), Nature would presumably have to run this computation for all other bodies within some relevant radius, which could get a bit hairy.
+But this is not a plausible physical model because the math requires the use of the distances between relevant objects (typically many millions of km in the usual astronomical applications), and their respective aggregate masses. Not only is this a (highly) non-local computation ("action at a distance"), Nature would presumably have to run this computation for all other bodies within some relevant radius, which could get a bit hairy.
 
 By contrast, a plausible physical model should compute gravitational forces directly from the collective effects of each individual atom within all the different celestial bodies in the universe, and propagate these forces via local mechanisms at the speed of light.
 
@@ -32,15 +32,17 @@ In this context, a somewhat smaller subset of physicists have continued to pursu
 
 This critical proof-of-concept that a dramatically different, and clearly more physically-plausible, conceptual interpretation is possible, opens the door for recognizing that the standard framework is just a calculational tool that works very well as such, but it need not strongly constrain an alternative pursuit of a physically plausible model.
 
-The pilot-wave model nevertheless does have a number of important remaining issues to be resolved, reviewed below, and several of these issues have likely impeded the broader engagement with this framework. We will see that one of the most pressing issues is that the pilot-wave model is also based on the same high-dimensional configuration space as the standard models, and it is clear that this mathematical construct is at the root of many of the remaining problems that need to be resolved in order to achieve a plausible physical model. Fortunately, some exciting recent progress has been made in moving beyond the configuration space framework, providing a critical window into what needs to be done to move past this mathematical barrier ([[@NorsenMarianOriols15]]; [[@Norsen22]]).
+The pilot-wave model nevertheless does have a number of important remaining issues to be resolved, and several of these issues have likely impeded the broader engagement with this framework. One of the most pressing issues is that the pilot-wave model is also based on the same high-dimensional configuration space as the standard models, and it is clear that this mathematical construct is at the root of many of the remaining problems that need to be resolved in order to achieve a plausible physical model.
+
+Fortunately, some exciting recent progress has been made in moving beyond the configuration space framework, providing a critical window into what needs to be done to move past this mathematical barrier ([[@NorsenMarianOriols15]]; [[@Norsen22]]).
 
 ## Other examples of calculational tools
 
-Before continuing, it is useful to review some of the other clear examples of calculational tools vs. physical models in different domains of physics, which provide further elaboration of the importance of this distinction.
+There are many other clear examples of calculational tools vs. physical models in different domains of physics, which provide further elaboration of the importance of this distinction.
 
-For example, there is a similar case as the gravitational example above, for Coulomb's law for the strength of the electric field as a function of distances between charged particles, compared to the Lorenz gauge formulation of Maxwell's EM equations.
+For example, the same logic of the gravitational example above applies to the difference between Coulomb's law for the strength of the electric field as a function of distances between charged particles, compared to the Lorenz gauge formulation of [[Maxwell]]'s EM equations.
 
-Coulomb's law is of the same form as Newton's gravitational formula (and likewise represents a useful calculational tool), while the Lorenz gauge formulation of Maxwell's equations describes purely local, light-speed wave propagation dynamics. Even within Maxwell's wave equations, there is a Coulomb gauge version that implies immediate action-at-a-distance for the electrical potential, which is clearly incompatible with special relativity. It turns out that some non-localities in this framework actually enable the observed EM fields to propagate at the speed of light, but one can still get into trouble using this gauge incorrectly [[@BrillGoodman67]]; [[@Jackson02]]; [[@Onoochin01]]).
+Coulomb's law is of the same form as Newton's gravitational formula (and likewise represents a useful calculational tool), while the Lorenz gauge formulation of Maxwell's equations describes purely local, light-speed wave propagation dynamics. Even within Maxwell's wave equations, there is a Coulomb gauge version that implies immediate action-at-a-distance for the electrical potential, which is clearly incompatible with special relativity. It turns out that some non-localities in this framework actually constrain the observed EM fields to propagate at the speed of light, but one can still get into trouble using this gauge incorrectly ([[@BrillGoodman67]]; [[@Jackson02]]; [[@Onoochin01]]).
 
 In these and many other cases, people still use Newton's gravitational equation instead of Einstein's equations, and prefer the Coulomb gauge over the Lorenz gauge, because it makes the calculations simpler for relevant practical applications. But rarely do you find people being confused over which best describes the actual underlying physical processes involved in these domains. However, until Einstein came up with his gravitational framework, people did fret about the action-at-a-distance property of Newton's laws, demonstrating that it is difficult to appreciate the calculational status of a given framework until a more plausible alternative is at hand.
 
@@ -50,7 +52,7 @@ In short, here's a useful mantra: **Don't confuse the math for the physics!** Ma
 
 ## The seduction of elegant models
 
-An important corollary of the "don't confuse the math for the physics" mantra is: **don't be seduced by elegant mathematical models**. For example, there is an overarching framework based on _symmetry groups_ for organizing the elements of the standard model. Many people have tried to push this framework in various ways (e.g., "supersymmetry") to make novel predictions, all of which have failed to date. This perhaps suggests that this elegant framework of symmetry is not really what is driving the structure of fundamental physics: it works as far as it goes, but it does not appear to be a truly _generative_ principle that allows one to get deeper insight than the hard-won, empirically-based standard model.
+An important corollary of the "don't confuse the math for the physics" mantra is: **don't be seduced by elegant mathematical models**. For example, there is an overarching framework based on _symmetry groups_ for organizing the elements of the [[Standard Model]]. Many people have tried to push this framework in various ways (e.g., "supersymmetry") to make novel predictions, all of which have failed to date. This perhaps suggests that this elegant framework of symmetry is not really what is driving the structure of fundamental physics: it works as far as it goes, but it does not appear to be a truly _generative_ principle that allows one to get deeper insight than the hard-won, empirically-based standard model.
 
 An earlier iteration of the present attempt here was based on the idea of using only interacting wave equations, in large part because of the amazing ability of very simple and elegant wave equations to capture so many critical properties of particles, as especially evident in the [[Klein-Gordon]] equations, which are then inherited by the [[Dirac]] equations that accurately captures many properties of [[electron]]s. Thus, I was seduced by the elegance of these wave functions, without properly recognizing the fundamental limitations of waves for capturing the conservation and discrete localization properties of particles.
 

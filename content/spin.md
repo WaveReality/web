@@ -5,17 +5,21 @@ bibfile = "mechphys.json"
 
 **Spin** is a uniquely quantum property that lies at the heart of the underlying mechanisms implemented in the current model. There are two known values of spin, 1 and +/- 1/2:
 
-* [[Boson]]s are nominally the particles that carry force fields, and they have a spin of 1, with the [[photon]] being the canonical example. A spin of 1 is effectively like a spin of 0: in a very abstract sense, they complete a full revolution every "step". It is unclear whether a boson is actually a thing or not under the current model, as the [[photon]] may not really exist, and the weak and strong charge carriers may be something else entirely.
+* [[Boson]]s are nominally the particles that carry force fields, and they have a spin of 1, with the [[photon]] being the canonical example. The spin of 1 corresponds entirely to the classically-described interaction between the $\vec{E}$ and $\vec{B}$ vector fields, where E drives B and vice-versa. However, it is unclear whether a boson is actually a real thing or not under the [[Standard Model]], as the [[photon]] may not really exist as such, and the weak and strong charge carriers may be something else entirely.
 
-* [[Fermion]]s are massive particles like [[electron]]s and [[quark]]s, with a spin of +/- 1/2. Interestingly, the mysterious [[neutrino]] can be thought of as a particle that _only_ has spin and nothing else (no charge) -- it also has a spin of 1/2, but the "matter" neutrino is _always_ spinning in the left-hand direction, while the "antimatter" anti-neutrino spins in the left-hand direction. Although they are thought to have mass, it is possible that neutrinos have these fixed spin directions because they move at the speed of light in a kind of fixed helical pattern in relation to their spin, and they don't have a proper mass-like momentum property after all.
+* [[Fermion]]s are massive particles like [[electron]]s and [[quark]]s, with a spin of +/- 1/2. Interestingly, the mysterious [[neutrino]] can be thought of as a particle that _only_ has spin and nothing else (no charge) -- it also has a spin of 1/2, but the "matter" neutrino is _always_ spinning in the left-hand direction, while the "antimatter" anti-neutrino spins in the right-hand direction. Although they are thought to have mass, it is possible that neutrinos have these fixed spin directions because they move at the speed of light in a kind of fixed helical pattern in relation to their spin, and they don't have a proper mass-like momentum property after all.
 
-The [[Dirac]] equation introduced "Dirac spinors" as a mathematical formulation of spin for describing the spin 1/2 property of fermions.
+The [[Dirac]] equation introduced Dirac _spinors_ as a mathematical formulation of spin for describing the spin 1/2 property of fermions. Interestingly, in the second-order version of the Dirac function, these spinors only affect the interaction between the particle wave and the EM wave, with no effect on the particle state values themselves, which update independently.
+
+TODO: figure out how this works for the first-order Dirac equation!
+
+TODO: what does spin up vs. spin down look like in terms of Dirac states? and their superposition? Really have no idea what the direction factor corresponds to -- must be some kind of phase relationship among vars?
 
 In general, the spin of something like an electron is thought to be a strongly [[contextual]] property, meaning that it is easily shaped through interactions with the environment, and is not something that is otherwise strongly constrained by the intrinsic properties of the particle (except for neutrinos).
 
 ## Spin as particle momentum and mass mechanism
 
-Under the current [[stochastic motion]] plans, the phenomenon of spin reflects an internal dynamic process within discrete particles, operating over internal state values (similar to the spinors), that is responsible for the following particle properties:
+Under the current [[Spinfield Model]] plans, the phenomenon of spin reflects an internal dynamic process within discrete particles, operating over internal state values (similar to the spinors), that is responsible for the following particle properties:
 
 * Maintaining the particle's momentum value across time and space.
 * Causing a massive particle to have a resting mass / energy.
@@ -23,7 +27,7 @@ Under the current [[stochastic motion]] plans, the phenomenon of spin reflects a
 
 The [[neutrino]] is a particle that _only_ has spin, indicating that this spin mechanism can dissociate from other particle properties. Thus, modeling this most mysterious of particles is a first-order goal, along with that of the [[electron]].
 
-The neutrino interacts only via the [[weak]] force, which is strongly localized to around $10^−16$m --- on the scale of the charge radius of a proton ($10^-15$m). This length scale is short because the [[boson]]s that carry the weak force are _massive_ (indeed they are much heavier than the mass of a proton).
+The neutrino interacts only via the [[weak]] force, which is strongly localized to around $10^−18$m --- beneath the scale of the charge radius of a proton ($10^-15$m). This length scale is short because the [[boson]]s that carry the weak force are _massive_ (indeed they are much heavier than the mass of a proton).
 
 The weak force is thus the obvious force for understanding dynamics within fermion particles. In particular, the [[lepton]]s (electron, muon, tau) are all different _flavors_ or _generations_ of the same particle, and the muon and tau decay back to the stable electron through the weak force, while emitting neutrinos (and energy in the form of photons??). Thus, it is clear that the weak force is somehow critically involved in these spin dynamics, which in turn are involved in the increased masses of these higher generation particle variants.
 

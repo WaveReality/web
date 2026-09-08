@@ -231,27 +231,35 @@ This shows that the wave propagation dynamics in Maxwell's equations are due to 
 
 ## The Lorenz gauge and condition
 
-There is one important wrinkle in the connection between Maxwell's equations and the simple wave equations operating on the potentials, which has to do with the **Lorenz Condition**, which is why the wave equation version is known as the **Lorenz gauge**. The wave equations only correspond to Maxwell's standard four equations if this condition is met:
+There is one important wrinkle in the connection between Maxwell's equations and the simple wave equations operating on the potentials, which has to do with the **Lorenz Condition** (note: not _Lorentz_!), which is why the wave equation version is known as the **Lorenz gauge**. The wave equations only correspond to Maxwell's standard four equations if this condition is met:
 
 {id="eq_lorenz" title="Lorenz condition"}
 $$
 \frac{1}{c^2} \frac{\partial A_0}{\partial t} + \vec{\nabla} \cdot \vec{A} = 0
 $$
 
-The question is, what does this expression mean, and what can we do to ensure that it is properly satisfied? This condition is known as the **continuity equation**, and it corresponds to a situation where the total quantity of something (in this case the total scalar and vector potential) is conserved over time. This makes sense intuitively, because the first term is the rate of change in the scalar potential, and the second term is the divergence or source of the vector potential field. Recall that we saw this in the first of Maxwell's equations, where the divergence of the electric force is equal to the charge density. Thus, this says that any source of the vector potential must then translate into corresponding changes in the scalar potential. Thus, the sources are balanced out with temporal changes, producing a net balance of zero --- no change. It is important to appreciate that although there are no sources for the magnetic vector force $\vec{B}$, there _are_ sources for the magnetic vector _potential_ $\vec{A}$, namely the current density:
+which is equivalent to:
+
+$$
+\frac{1}{c^2} \frac{\partial A_0}{\partial t} + \frac{\partial A_x}{\partial x} + \frac{\partial A_y}{\partial y} + \frac{\partial A_z}{\partial z} = 0
+$$
+
+This condition is known as the [[continuity]] equation, and it corresponds to a situation where the total quantity of something (in this case the total scalar and vector potential) is conserved over time, because the total change across all of these partial derivatives is zero.
+
+Recall also that we saw the divergence of the electric force is equal to the charge density in the first of Maxwell's equations:
 
 {id="eq_b-source" title="source of magnetic potential"}
 $$
 \vec{\nabla} \cdot \vec{A} = \mu_0 \vec{J}
 $$
 
-Thus, to satisfy the Lorenz condition, we also need to ensure that wherever there are current sources, the electric scalar potential experiences a corresponding negative rate of change:
+Therefore, this says that any source of the vector potential must then translate into corresponding changes in the scalar potential. Thus, the sources are balanced out with temporal changes, producing a net balance of zero --- no change. This is intuitively sensible, and should occur naturally.
 
-$$
-\frac{1}{c^2} \frac{\partial A_0}{\partial t} = -\mu_0 \vec{J}
-$$
+However, the main problem is that there are only 2 physical degrees of freedom that are well-established in classical EM experiments, corresponding to the oscillation between the $\vec{E}$ and $\vec{B}$ vector fields in a way that is orthogonal (transverse) to the direction of wave propagation. The wave propagation of the scalar potential $A_0$, and the propagation of the vector potential components in a _longitudinal_ direction (in the direction of wave propagation), are both non-physical degrees of freedom that are otherwise allowed by the wave equations operating on the four components of the EM potential ($A_0$, $\vec{A}$) ([[@Gupta50]]).
 
-We will keep this condition in mind as we consider how the electron wave function generates both the electric and magnetic potential fields. Outside of the region where there are currents, this constraint is not relevant, and the simple second-order wave propagation can take place.
+Thus, in principle, the wave update equations need to be constrained to prevent these additional degrees of freedom from being arising. However, [[@^Gupta50]] argues that these additional degrees of freedom my be effective at short scales in virtual photons, but that they are not present in long-range macroscopic fields. This may mean that these degrees of freedom are only present in very high-frequency, transient wave dynamics, but that these are washed out over longer time / space timeframes.
+
+One additional simple possibility is that the scalar potential updates directly to the velocity, not the acceleration, which prevents oscillatory wave dynamics.
 
 <!--- TODO: the above is not entirely true. The $A^0$ component does _not_ propagate like a wave, but the Lorenz condition makes it do so, and this is incorrect. Furthermore, the EM field has _2_ transverse polarizations, not the 4 that would be supported by the full $A^\mu$ four-vector, and it cannot have any longitudinal polarization. These constraints are managed in QFT by using the [Gupta-Bleuler formalism](https://en.wikipedia.org/wiki/Gupta%E2%80%93Bleuler_formalism). How the heck do we do that!? -->
 

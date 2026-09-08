@@ -79,15 +79,25 @@ To summarize the above, the fundamental constraints shaping this model are as fo
 
 * Stochastic motion in a discrete grid results in discrete jumps of the particle at a discrete time step, which generally results in a high-frequency perturbation in any wave fields that the particle is the source of.
 
-* Therefore, the discrete particle must continuously distribute is source-generating properties across surrounding cells, thereby creating a smooth distributed source density, where the discrete jumps thus have minimal impact, only shifting the source. This spreading of particle properties should not have wave-like oscillatory dynamics, but instead should be diffusive in nature, and should have an exponential falloff to retain particle localization. These properties apply to the [[weak]] force. This distribution process must take place at a supraliminal update rate, to accommodate particle motion that is close to the speed of light
+* Therefore, the discrete particle must continuously distribute is source-generating properties across surrounding cells, thereby creating a smooth distributed source density, where the discrete jumps thus have minimal impact, only shifting the source. This spreading of particle properties should not have wave-like oscillatory dynamics, but instead should be diffusive in nature, and should have an exponential falloff to retain particle localization. These properties apply to the [[weak]] force. This distribution process must take place at a supraliminal update rate, to accommodate particle motion that is close to the speed of light.
 
 * The discrete particle properties (charge, 3 velocity vector) are represented using the complex phase relationships among multiple CVHO's (see [[harmonic oscillator#charge from phase]]), so the distribution process involves synchronizing these phase relationships to those of the discrete source particle.
 
 * In effect, a particle thus appears as a distributed blob of phase offsets among the spinfield of CVHO's.
 
+* There is one _reference_ source CVHO, that entrains the others: **R0**. The real and imaginary components of R0 can have one of two different directions of rotation around the imaginary plane: clockwise or counterclockwise. This differs for particles vs. antiparticles, especially of relevance to the [[neutrino]], which has no other charge values, and thus this rotation direction represents the only distinction between a neutrino and an antineutrino.
+
+* According to the (second-order) [[Dirac]] equation, the Pauli spinors only affect the interaction with the EM [[Maxwell]] field vectors ($\vec{E}$ and $\vec{B}$). Thus, the particle state variables themselves do not directly spin on their own.
+
+* The frequency of rotation of R0 could be driven by the relativistic total energy of the particle (rest mass + kinetic energy), in accordance with [[Planck relation]] and the Compton wavelength. Thus, R0 drives the fundamental frequency of the corresponding quantum wave. Alternatively, it may be the case that we need to fix this frequency for some reason(s), e.g., to rotate entirely between a to b in one step, which is what the Pauli spinors seem to do.
+
+* The charge CVHO **T0** oscillates in either -90, +90 or 0 phase relation to R0 (for leptons), producing -1, +1, or 0 charge from the resulting charge computation between R0 and T0. For neutrinos, the phase is always 0. For electrons / positrons, there is a redundancy between the direction and phase values, with both being opposite in the antiparticle -- it is theoretically possible that there could be clockwise vs. anticlockwise versions of electrons with the same phase relations, for example. But the neutrino case seems to anchor the need for a fundamental spin direction in R0 itself. Maybe it would be possible for R0 and T0 to spin in opposite directions too?  That would seem to imply graded charge values, except perhaps in the full-step spin (spinor) case? This can be easily tested and resolved. It is a bit awkward that R0 needs to entrain the rate of T0 in the total energy case.
+
+* The momentum CVHOs X, Y, Z oscillate with the corresponding phase relationship to R0 to represent the normalized velocity 0-1 relative to c. With R0 spinning at the relativistic energy frequency, the ability to drive changes in this phase could potentially naturally produce the relevant relativistic momentum effects? And a key principle is that each value is phase-boosted as a function of the local quantum wave function, as the main force conveyance effect.
+
 * This distributed spin-up of phases also has qualitative similarities to the [[Higgs]] field in the [[Standard Model]], which is likewise associated with the [[weak]] dynamics. Therefore, all of these known weak / Higgs properties, which are also where the CP asymmetries arise (consistent with the basic asymmetry in integrating CVHO variables), provide the constraining data that the Spinfield Model must explain.
 
-* Furthermore, the ground, [[zero-point]] state of the spinfield consists of CVHO oscillators that are presumably continuously oscillating, while decaying away whatever particle states they last encountered. As a discrete particle moves through, it spins-up these oscillators, entraining them to represent its momentum and charge properties, which then serve as the source of the radiative wave fields.
+* What is the ground, [[zero-point]] state of the spinfield?  consists of CVHO oscillators that are presumably continuously oscillating, while decaying away whatever particle states they last encountered. As a discrete particle moves through, it spins-up these oscillators, entraining them to represent its momentum and charge properties, which then serve as the source of the radiative wave fields.
 
 * This zero-point field can potentially account for the _virtual particles_ that are only transiently extant, within the [[QED]] Standard Model framework, i.e., the "quantum foam" associated with Feynmann diagrams and the path integral framework.
 
@@ -105,7 +115,6 @@ $$
 $$
 
 where the mass-dependent factor enters without any spatial gradient operator, and directly subtracts away from the energy factor (acceleration) on the left-hand side. This lack of spatial extent is consistent with a discrete particle entity, that somehow consumes energy from the wave field in proportion to its rest mass. This is the qualitative picture for how our discrete particles emerge in the Spinfield Model, with the energy consumption propelling an internal oscillation within the discrete cell in the cubic lattice of the [[cellular automaton]] (CA) framework.
-
 
 ## Pages
 
