@@ -1,11 +1,11 @@
 +++
-Categories = ["Spinfield Model"]
+Categories = ["Interpretations"]
 bibfile = "mechphys.json"
 +++
 
-The **quantum wave** refers to a physically real quantum wave that interacts bidirectionally with the particles in the [[Spinfield Model]]. In the [[Standard Model]], various wave equations including the [[Dirac]] equations have been used to represent the wave aspect of [[fermion]] particles like the [[electron]].
+The **quantum wave** refers to a physically real (_ontological_) quantum wave that interacts bidirectionally with the particles, which is a core part of the [[pilot-wave]] model, and the [[Spinfield Model]]. In the [[Standard Model]], various wave equations including the [[Dirac]] equations have been used to represent the wave aspect of [[fermion]] particles like the [[electron]], but according to the standard [[Copenhagen]] and other [[interpretations]], this wave is thought to be purely [[epistemic-vs-ontic|epistemic]] in nature, reflecting a lack of knowledge about the underlying quantum state until a measurement takes place.
 
-However, even within the [[pilot-wave]] model, these wave equations represent both [[epistemic-vs-ontic|epistemic]] and ontologically real aspects of the time-evolution of a particle. An important goal of the Spinfield Model is to "unscramble this omlette" and develop a quantum wave function that only reflects the ontologically real impact of quantum waves, with the time-evolution of particles under [[stochastic motion]] generating the epistemic aspects.
+Even within the [[pilot-wave]] model, these wave equations represent both epistemic and ontologically real aspects of the time-evolution of a particle. An important goal of the Spinfield Model is to "unscramble this omlette" and develop a quantum wave function that only reflects the ontologically real impact of quantum waves, with the time-evolution of particles under [[stochastic motion]] generating the epistemic aspects.
 
 Given that nobody has yet unscrambled this omlette, determining exactly what belongs in this quantum wave is a difficult process. The general approach will be to first develop a more solid, well-grounded model of stochastic motion and other properties such as [[spin]] that properly belong to the individual particles, and then to effectively subtract this from the [[Dirac]] wave function, with the remainder representing what the quantum wave needs to capture.
 

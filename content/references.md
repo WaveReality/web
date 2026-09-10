@@ -70,6 +70,8 @@
 
 <p id="DAriano17">D’Ariano, G.M. (2017). Physics Without Physics. <i>International Journal of Theoretical Physics, 56</i>, 97–128. <a href="https://doi.org/10.1007/s10773-016-3172-y">https://doi.org/10.1007/s10773-016-3172-y</a><a href="http://doi.org/10.1007/s10773-016-3172-y"> http://doi.org/10.1007/s10773-016-3172-y</a></p>
 
+<p id="DasBhowmikParasharBanik21">Das Bhowmik, A., Parashar, P., & Banik, M. (2021). Bell nonlocality and the reality of the quantum wave function. <i>Physical Review A, 104</i>, 022217. <a href="https://link.aps.org/doi/10.1103/PhysRevA.104.022217">https://link.aps.org/doi/10.1103/PhysRevA.104.022217</a><a href="http://doi.org/10.1103/PhysRevA.104.022217"> http://doi.org/10.1103/PhysRevA.104.022217</a></p>
+
 <p id="DeBroglie26">De Broglie, L. (1926). Remarques sur la nouvelle mécanique ondulatoire. <i>CR Acad. Sci, 183</i>, 272–274. </p>
 
 <p id="DeLaPenaCetto96">De La Peña, L., & Cetto, A.M. (1996). <i>The Quantum Dice. </i> Springer Netherlands. <a href="http://link.springer.com/10.1007/978-94-015-8723-5">http://link.springer.com/10.1007/978-94-015-8723-5</a><a href="http://doi.org/10.1007/978-94-015-8723-5"> http://doi.org/10.1007/978-94-015-8723-5</a></p>
@@ -162,6 +164,8 @@
 
 <p id="Hansson00">Hansson, J. (2000). Nonlinear gauge interactions - A solution to the "measurement problem" in quantum mechanics? <a href="http://arxiv.org/abs/quant-ph/0003083">http://arxiv.org/abs/quant-ph/0003083</a><a href="http://doi.org/10.48550/arXiv.quant-ph/0003083"> http://doi.org/10.48550/arXiv.quant-ph/0003083</a></p>
 
+<p id="HarriganSpekkens10">Harrigan, N., & Spekkens, R.W. (2010). Einstein, Incompleteness, and the Epistemic View of Quantum States. <i>Foundations of Physics, 40</i>, 125–157. <a href="https://doi.org/10.1007/s10701-009-9347-0">https://doi.org/10.1007/s10701-009-9347-0</a><a href="http://doi.org/10.1007/s10701-009-9347-0"> http://doi.org/10.1007/s10701-009-9347-0</a></p>
+
 <p id="Hestenes08">Hestenes, D. (2008). Electron time, mass and zitter. </p>
 
 <p id="Hestenes90">Hestenes, D. (1990). The zitterbewegung interpretation of quantum mechanics. <i>Foundations of Physics, 20</i>, 1213–1232. <a href="https://doi.org/10.1007/BF01889466">https://doi.org/10.1007/BF01889466</a><a href="http://doi.org/10.1007/BF01889466"> http://doi.org/10.1007/BF01889466</a></p>
@@ -210,6 +214,8 @@
 
 <p id="Kragh84">Kragh, H. (1984). Equation with the many fathers. The Klein–Gordon equation in 1926. <i>American Journal of Physics, 52</i>, 1024–1033. <a href="https://doi.org/10.1119/1.13782">https://doi.org/10.1119/1.13782</a><a href="http://doi.org/10.1119/1.13782"> http://doi.org/10.1119/1.13782</a></p>
 
+<p id="Laidlaw26">Laidlaw, A. (2026). Bell’s concept of local causality does not preclude Bell correlations in local realist field ontologies. <i>Academia Quantum, 3</i>, <a href="https://www.academia.edu/3064-979X/3/2/10.20935/AcadQuant8384">https://www.academia.edu/3064-979X/3/2/10.20935/AcadQuant8384</a></p>
+
 <p id="Lamb95">Lamb, W.E. (1995). Anti-photon. <i>Applied Physics B, 60</i>, 77–84. <a href="https://doi.org/10.1007/BF01135846">https://doi.org/10.1007/BF01135846</a><a href="http://doi.org/10.1007/BF01135846"> http://doi.org/10.1007/BF01135846</a></p>
 
 <p id="MallickChandrashekar16">Mallick, A., & Chandrashekar, C.M. (2016). Dirac Cellular Automaton from Split-step Quantum Walk. <i>Scientific Reports, 6</i>(1), 25779. <a href="http://www.nature.com/articles/srep25779">http://www.nature.com/articles/srep25779</a><a href="http://doi.org/10.1038/srep25779"> http://doi.org/10.1038/srep25779</a></p>
@@ -233,8 +239,6 @@
 <p id="Maudlin11">Maudlin, T. (2011). <i>Quantum Non-Locality and Relativity: Metaphysical Intimations of Modern Physics. </i> John Wiley & Sons. </p>
 
 <p id="Mermin18">Mermin, N.D. (2018). Making better sense of quantum mechanics. <i>Reports on Progress in Physics, 82</i>, 012002. <a href="https://dx.doi.org/10.1088/1361-6633/aae2c6">https://dx.doi.org/10.1088/1361-6633/aae2c6</a><a href="http://doi.org/10.1088/1361-6633/aae2c6"> http://doi.org/10.1088/1361-6633/aae2c6</a></p>
-
-<p id="Meyer96">Meyer, D.A. (1996). From quantum cellular automata to quantum lattice gases. <i>Journal of Statistical Physics, 85</i>, 551–574. <a href="https://doi.org/10.1007/BF02199356">https://doi.org/10.1007/BF02199356</a><a href="http://doi.org/10.1007/BF02199356"> http://doi.org/10.1007/BF02199356</a></p>
 
 <p id="Minkowski08">Minkowski, H. (1908). Die Grundgleichungen für die elektromagnetischen Vorgänge in bewegten Körpern. <i>Nachrichten von der Gesellschaft der Wissenschaften zu Göttingen, Mathematisch-Physikalische Klasse, 1908</i>, 53–111. <a href="https://eudml.org/doc/58707">https://eudml.org/doc/58707</a></p>
 
