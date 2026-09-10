@@ -2,6 +2,8 @@
 bibfile = "mechphys.json"
 +++
 
+<!--- TODO: more about configuration space as key isssue!! -->
+
 There are various **interpretations** of the phenomenology of quantum physics, which ultimately represent an attempt to articulate a **physical model** of what is "actually going on" in nature. However, it seems that many people are unclear about the distinctions between calculational [[tools vs models]], resulting in interpretations that try to make sense of something that might otherwise be recognized as just a convenient mathematical tool for computing answers to specific kinds of physics problems.
 
 An example of such a calculational tool is the **Coulomb gauge** representation of electromagnetic fields (i.e., [[Maxwell]]'s equations), which uses an **action-at-a-distance** $1/r^2$ equation for computing the electric force between charged particles. By contrast, the **Lorenz gauge** representation shows how this inverse-square force law can emerge as a consequence of [[wave]] propagation, in a way that is fully compatible with the constraints of [[special relativity]] and local, neighborhood interactions. These two representations are **mathematically equivalent**, but it seems obvious that one would choose the Lorenz gauge as a physical model for how Nature actually works, even as one might frequently use the Coulomb gauge to perform actual calculations.
@@ -21,6 +23,13 @@ Relatively few / none of the respondents in these surveys endorsed the [[pilot-w
 In effect, the other interpretations merely avoid confronting the difficulties of this exponential configuration space by denying its reality in one way or another, while still requiring it to calculate how the physics actually works. Indeed, the entire foundation of the Copenhagen interpretation is willful denial of reality: reality doesn't exist until it is somehow "measured". And there is no explanation for what actually constitutes a measurement, and how instantaneous collapse could possibly be made compatible with special relativity.
 
 From this perspective, the single most important unsolved problem in quantum physics is to eliminate the [[configuration space]] representation, and somehow derive a fully relativistic and local wave-particle [[duality]] where the nonlinear interactions that are otherwise captured in the calculational tool of configuration space naturally emerge. This new framework is likely to be fundamentally nondeterministic (see [[stochastic motion]]) and perhaps requires superliminal, but still finite, wave propagation speeds for the quantum waves. It is increasingly clear that the various existing "no-go" theorems such as Bell's inequalities do not exclude this broader space of possible mechanisms.
+
+TODO:
+
+For example, Einstein famously rejected quantum mechanics because "God does not play dice with the universe" --- that seems just a bit presumptuous. Indeed, a key element of the framework we develop here requires true randomness in the form of [[stochastic motion]], and this one concession of nondeterminism can be traded in to retain several other more important (in my opinion) principles, such as a fundamental **locality** to physical mechanisms.
+
+
+## Pedagogical presentation
 
 Following from the above background (including linked pages above), the following is a suggested sequence of how to proceed through the various interpretational issues:
 

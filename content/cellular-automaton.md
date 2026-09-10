@@ -1,5 +1,5 @@
 +++
-Categories = ["Spinfield Model"]
+Categories = ["Interpretations"]
 bibfile = "mechphys.json"
 +++
 
@@ -23,7 +23,7 @@ The whole point is that, at the most fundamental level, there are just fundament
 
 ## The computabilty constraint
 
-So what kind of principled constraints can we impose on the kind of description we seek? One fundamental constraint is that it should be **computable**. That is, the resulting theory should be able to be implemented on a universal computational device (i.e., a Turning machine), and it should run according to a **fixed program** over some kind of well-defined **state** variables. The fixed program may involve fundamentally stochastic processes, but it should not have any internal loops with a possibility of non-deterministic stopping behavior. There are obvious implications of this for quantum computers, which we return to later, but hold those thoughts for now.
+So what kind of principled constraints can we impose on the kind of description we seek? One fundamental constraint is that it should be **computable**. That is, the resulting theory should be able to be implemented on a universal computational device (i.e., a Turing machine), and it should run according to a **fixed program** over some kind of well-defined **state** variables. The fixed program may involve fundamentally stochastic processes, but it should not have any internal loops with a possibility of non-deterministic stopping behavior. There are obvious implications of this for [[quantum computer]]s.
 
 These kinds of considerations have led to the computational framework known as a **cellular automaton (CA)**, which has been investigated as a basis for fundamental physics modeling since the 1950s. A CA consists of a regular, uniform division of space into **discrete cells**, each of which has one or more _state_ values, and each cell interacts only with its nearest neighbors (i.e., locally) to update its state value over time ([[#figure_ca2d]]; [[#figure_cubes]]).
 
@@ -33,7 +33,7 @@ The discretization of space, as contrasted with a true continuum, is essential f
 
 One still has an infinity to deal with, and this is plenty mind-blowing all by itself: space and time continuing infinitely in all directions, forever. But at least the further difficulty of an infinity of space or time _within_ any given segment, which is required for a truly continuous dimension, can be avoided. One could reasonably argue that the infinity of space and time is more plausible than the notion of an edge, as in the old flat Earth models and the end of the world.
 
-The physical phenomenon of discrete point-like elementary particles also suggests the need for an **ultraviolet cutoff** at some distance scale: infinitely small point-like particles predict infinite field amplitudes in their immediate neighborhood. Instead, a discrete lattice with a given grid spacing distance provides a tractable, non-divergent mechanism for such discrete particles. This potentially resolves deep problems with the Standard Model surrounding [[renormalization]] and the nature of the [[back reaction]].
+The physical phenomenon of discrete point-like elementary particles also suggests the need for an **ultraviolet cutoff** at some distance scale: infinitely small point-like particles predict infinite field amplitudes in their immediate neighborhood. Instead, a discrete lattice with a given grid spacing distance provides a tractable, non-divergent mechanism for such discrete particles. This potentially resolves deep problems with the Standard Model surrounding [[renormalization]] and the nature of the [[back reaction]]. See also [[configuration space]] for computability and other arguments against the use of exponentially-large state spaces.
 
 Time emerges naturally in its unique unidirectionality within the CA framework, simply as a discrete rate of change in the state values. Furthermore, the ratio of discrete spatial cell width to discrete rate of state update provides a natural upper limit to the rate at which anything can propagate within this system: i.e., the **speed of light** in a vacuum. Thus, this principal postulate of special relativity that light has a fixed upper speed limit emerges as a necessary consequence of more fundamental assumptions about the nature of space and time in the CA framework. 
 

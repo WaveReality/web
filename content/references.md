@@ -24,6 +24,8 @@
 
 <p id="BarutVanHuele85">Barut, A.O., & Van Huele, J.F. (1985). Quantum electrodynamics based on self-energy: Lamb shift and spontaneous emission without field quantization. <i>Physical Review A, 32</i>, 3187–3195. <a href="https://link.aps.org/doi/10.1103/PhysRevA.32.3187">https://link.aps.org/doi/10.1103/PhysRevA.32.3187</a><a href="http://doi.org/10.1103/PhysRevA.32.3187"> http://doi.org/10.1103/PhysRevA.32.3187</a></p>
 
+<p id="Bekenstein81">Bekenstein, J.D. (1981). Universal upper bound on the entropy-to-energy ratio for bounded systems. <i>Physical Review D, 23</i>, 287–298. <a href="https://link.aps.org/doi/10.1103/PhysRevD.23.287">https://link.aps.org/doi/10.1103/PhysRevD.23.287</a><a href="http://doi.org/10.1103/PhysRevD.23.287"> http://doi.org/10.1103/PhysRevD.23.287</a></p>
+
 <p id="Bell64">Bell, J.S. (1964). On the Einstein Podolsky Rosen paradox. <i>Physics Physique Fizika, 1</i>, 195–200. </p>
 
 <p id="BezrukovShaposhnikov15">Bezrukov, F., & Shaposhnikov, M. (2015). Why should we care about the top quark Yukawa coupling? <i>Journal of Experimental and Theoretical Physics, 120</i>, 335–343. <a href="http://arxiv.org/abs/1411.1923">http://arxiv.org/abs/1411.1923</a><a href="http://doi.org/10.1134/S1063776115030152"> http://doi.org/10.1134/S1063776115030152</a></p>
@@ -34,6 +36,8 @@
 
 <p id="Bohm52">Bohm, D. (1952). A Suggested Interpretation of the Quantum Theory in Terms of "Hidden" Variables. I. <i>Physical Review, 85</i>, 166–179. <a href="https://link.aps.org/doi/10.1103/PhysRev.85.166">https://link.aps.org/doi/10.1103/PhysRev.85.166</a><a href="http://doi.org/10.1103/PhysRev.85.166"> http://doi.org/10.1103/PhysRev.85.166</a></p>
 
+<p id="BoussoChandrasekaranShahbazi-Moghaddam20">Bousso, R., Chandrasekaran, V., & Shahbazi-Moghaddam, A. (2020). Ignorance is Cheap: From Black Hole Entropy To Energy-Minimizing States In QFT. <i>Physical Review D, 101</i>, 046001. <a href="http://arxiv.org/abs/1906.05299">http://arxiv.org/abs/1906.05299</a><a href="http://doi.org/10.1103/PhysRevD.101.046001"> http://doi.org/10.1103/PhysRevD.101.046001</a></p>
+
 <p id="BrillGoodman67">Brill, O.L., & Goodman, B. (1967). Causality in the Coulomb Gauge. <i>American Journal of Physics, 35</i>, 832–837. <a href="https://doi.org/10.1119/1.1974261">https://doi.org/10.1119/1.1974261</a><a href="http://doi.org/10.1119/1.1974261"> http://doi.org/10.1119/1.1974261</a></p>
 
 <p id="Brown58">Brown, L.M. (1958). Two-Component Fermion Theory. <i>Physical Review, 111</i>, 957–964. <a href="https://link.aps.org/doi/10.1103/PhysRev.111.957">https://link.aps.org/doi/10.1103/PhysRev.111.957</a><a href="http://doi.org/10.1103/PhysRev.111.957"> http://doi.org/10.1103/PhysRev.111.957</a></p>
@@ -42,7 +46,11 @@
 
 <p id="Cardoso93">Cardoso, J.G. (1993). Complexified two-component spinor theory of Dirac-Weyl fields. <i>Physica Scripta, 47</i>, 708. <a href="https://doi.org/10.1088/0031-8949/47/6/002">https://doi.org/10.1088/0031-8949/47/6/002</a><a href="http://doi.org/10.1088/0031-8949/47/6/002"> http://doi.org/10.1088/0031-8949/47/6/002</a></p>
 
+<p id="Carroll21">Carroll, S.M. (2021). Reality as a Vector in Hilbert Space. <a href="http://arxiv.org/abs/2103.09780">http://arxiv.org/abs/2103.09780</a><a href="http://doi.org/10.48550/arXiv.2103.09780"> http://doi.org/10.48550/arXiv.2103.09780</a></p>
+
 <p id="Case57">Case, K.M. (1957). Reformulation of the Majorana Theory of the Neutrino. <i>Physical Review, 107</i>, 307–316. <a href="https://link.aps.org/doi/10.1103/PhysRev.107.307">https://link.aps.org/doi/10.1103/PhysRev.107.307</a><a href="http://doi.org/10.1103/PhysRev.107.307"> http://doi.org/10.1103/PhysRev.107.307</a></p>
+
+<p id="Casini08">Casini, H. (2008). <i>Relative entropy and the Bekenstein bound. </i>arXiv.org, webpage. <a href="https://arxiv.org/abs/0804.2182v3">https://arxiv.org/abs/0804.2182v3</a><a href="http://doi.org/10.1088/0264-9381/25/20/205021"> http://doi.org/10.1088/0264-9381/25/20/205021</a></p>
 
 <p id="CavesFuchsSchack02">Caves, C.M., Fuchs, C.A., & Schack, R. (2002). Quantum probabilities as Bayesian probabilities. <i>Physical Review A, 65</i>, 022305. <a href="https://link.aps.org/doi/10.1103/PhysRevA.65.022305">https://link.aps.org/doi/10.1103/PhysRevA.65.022305</a><a href="http://doi.org/10.1103/PhysRevA.65.022305"> http://doi.org/10.1103/PhysRevA.65.022305</a></p>
 
@@ -112,6 +120,8 @@
 
 <p id="Franklin07">Franklin, J. (2007). The nature of electromagnetic energy. <a href="http://arxiv.org/abs/0707.3421">http://arxiv.org/abs/0707.3421</a><a href="http://doi.org/10.48550/arXiv.0707.3421"> http://doi.org/10.48550/arXiv.0707.3421</a></p>
 
+<p id="FraserRejzner24">Fraser, J.D., & Rejzner, K. (2024). Perturbative expansions and the foundations of quantum field theory. <i>The European Physical Journal H, 49</i>, 10. <a href="https://doi.org/10.1140/epjh/s13129-024-00075-6">https://doi.org/10.1140/epjh/s13129-024-00075-6</a><a href="http://doi.org/10.1140/epjh/s13129-024-00075-6"> http://doi.org/10.1140/epjh/s13129-024-00075-6</a></p>
+
 <p id="Fredkin90">Fredkin, E. (1990). An informational process based on reversible universal cellular automata. <i>Physica D: Nonlinear Phenomena, 45</i>, 254–270. <a href="https://www.sciencedirect.com/science/article/pii/016727899090186S">https://www.sciencedirect.com/science/article/pii/016727899090186S</a><a href="http://doi.org/10.1016/0167-2789(90)90186-S"> http://doi.org/10.1016/0167-2789(90)90186-S</a></p>
 
 <p id="FredkinToffoli82">Fredkin, E., & Toffoli, T. (1982). Conservative logic. <i>International Journal of Theoretical Physics, 21</i>, 219–253. <a href="https://doi.org/10.1007/BF01857727">https://doi.org/10.1007/BF01857727</a><a href="http://doi.org/10.1007/BF01857727"> http://doi.org/10.1007/BF01857727</a></p>
@@ -121,6 +131,8 @@
 <p id="Gardner70">Gardner, M. (1970). Mathematical Games: The fantastic combinations of John Conway’s new solitaire game “life" <i>Scientific American, </i></p>
 
 <p id="GerryKnight05">Gerry, C.C., & Knight, P.L. (2005). <i>Introductory Quantum Optics. </i> Cambridge University Press. </p>
+
+<p id="Giddings15">Giddings, S.B. (2015). Hilbert space structure in quantum gravity: an algebraic perspective. <i>Journal of High Energy Physics, 2015</i>, 1–21. <a href="http://arxiv.org/abs/1503.08207">http://arxiv.org/abs/1503.08207</a><a href="http://doi.org/10.1007/JHEP12(2015)099"> http://doi.org/10.1007/JHEP12(2015)099</a></p>
 
 <p id="Gingrich04">Gingrich, D.M. (2004). <i>Phys 512: Advanced Quantum Mechanics II. </i> University of Alberta, Department of Physics. </p>
 
@@ -138,6 +150,8 @@
 
 <p id="Greiner00">Greiner, W. (2000). <i>Relativistic Quantum Mechanics. Wave Equations. </i> Springer. </p>
 
+<p id="GreinerMuller96">Greiner, W., & Müller, B. (1996). <i>Gauge Theory of Weak Interactions. </i> Springer. <a href="http://link.springer.com/10.1007/978-3-662-03323-4">http://link.springer.com/10.1007/978-3-662-03323-4</a><a href="http://doi.org/10.1007/978-3-662-03323-4"> http://doi.org/10.1007/978-3-662-03323-4</a></p>
+
 <p id="Gudder70">Gudder, S.P. (1970). On Hidden‐Variable Theories. <i>Journal of Mathematical Physics, 11</i>, 431–436. <a href="https://doi.org/10.1063/1.1665156">https://doi.org/10.1063/1.1665156</a><a href="http://doi.org/10.1063/1.1665156"> http://doi.org/10.1063/1.1665156</a></p>
 
 <p id="GuerraRuggiero78">Guerra, F., & Ruggiero, P. (1978). A note on relativistic Markov processes. <i>Lettere al Nuovo Cimento (1971-1985), 23</i>, 529–534. <a href="https://doi.org/10.1007/BF02770538">https://doi.org/10.1007/BF02770538</a><a href="http://doi.org/10.1007/BF02770538"> http://doi.org/10.1007/BF02770538</a></p>
@@ -145,6 +159,8 @@
 <p id="Gupta50">Gupta, S.N. (1950). Theory of Longitudinal Photons in Quantum Electrodynamics. <i>Proceedings of the Physical Society. Section A, 63</i>, 681. <a href="https://doi.org/10.1088/0370-1298/63/7/301">https://doi.org/10.1088/0370-1298/63/7/301</a><a href="http://doi.org/10.1088/0370-1298/63/7/301"> http://doi.org/10.1088/0370-1298/63/7/301</a></p>
 
 <p id="GuralnikHagenKibble64">Guralnik, G.S., Hagen, C.R., & Kibble, T.W.B. (1964). Global Conservation Laws and Massless Particles. <i>Physical Review Letters, 13</i>, 585–587. <a href="https://link.aps.org/doi/10.1103/PhysRevLett.13.585">https://link.aps.org/doi/10.1103/PhysRevLett.13.585</a><a href="http://doi.org/10.1103/PhysRevLett.13.585"> http://doi.org/10.1103/PhysRevLett.13.585</a></p>
+
+<p id="Hansson00">Hansson, J. (2000). Nonlinear gauge interactions - A solution to the "measurement problem" in quantum mechanics? <a href="http://arxiv.org/abs/quant-ph/0003083">http://arxiv.org/abs/quant-ph/0003083</a><a href="http://doi.org/10.48550/arXiv.quant-ph/0003083"> http://doi.org/10.48550/arXiv.quant-ph/0003083</a></p>
 
 <p id="Hestenes08">Hestenes, D. (2008). Electron time, mass and zitter. </p>
 
@@ -222,7 +238,11 @@
 
 <p id="Minkowski08">Minkowski, H. (1908). Die Grundgleichungen für die elektromagnetischen Vorgänge in bewegten Körpern. <i>Nachrichten von der Gesellschaft der Wissenschaften zu Göttingen, Mathematisch-Physikalische Klasse, 1908</i>, 53–111. <a href="https://eudml.org/doc/58707">https://eudml.org/doc/58707</a></p>
 
+<p id="Montina08">Montina, A. (2008). Exponential complexity and ontological theories of quantum mechanics. <i>Physical Review A, 77</i>, 022104. <a href="http://arxiv.org/abs/0711.4770">http://arxiv.org/abs/0711.4770</a><a href="http://doi.org/10.1103/PhysRevA.77.022104"> http://doi.org/10.1103/PhysRevA.77.022104</a></p>
+
 <p id="Mott29">Mott, N.F. (1929). The Wave Mechanics of α -Ray Tracks. <i>Proceedings of the Royal Society of London. Series A, Containing Papers of a Mathematical and Physical Character, 126</i>, 79–84. <a href="https://www.jstor.org/stable/95407">https://www.jstor.org/stable/95407</a></p>
+
+<p id="Myrvold15">Myrvold, W.C. (2015). What is a wavefunction? <i>Synthese, 192</i>, 3247–3274. <a href="https://doi.org/10.1007/s11229-014-0635-7">https://doi.org/10.1007/s11229-014-0635-7</a><a href="http://doi.org/10.1007/s11229-014-0635-7"> http://doi.org/10.1007/s11229-014-0635-7</a></p>
 
 <p id="Nakagomi88">Nakagomi, T. (1988). Relativistic Random Walks Intrinsic to the Walker. <i>Progress of Theoretical Physics, 80</i>, 245–257. <a href="https://doi.org/10.1143/PTP.80.245">https://doi.org/10.1143/PTP.80.245</a><a href="http://doi.org/10.1143/PTP.80.245"> http://doi.org/10.1143/PTP.80.245</a></p>
 
@@ -258,7 +278,13 @@
 
 <p id="ParticleDataGroup24">Group, P.D. (2024). Review of Particle Physics. <i>Physical Review D, 110</i>, <a href="http://doi.org/10.1103/PhysRevD.110.030001"> http://doi.org/10.1103/PhysRevD.110.030001</a></p>
 
+<p id="Pich12">Pich, A. (2012). The Standard Model of Electroweak Interactions. <a href="http://arxiv.org/abs/1201.0537">http://arxiv.org/abs/1201.0537</a><a href="http://doi.org/10.48550/arXiv.1201.0537"> http://doi.org/10.48550/arXiv.1201.0537</a></p>
+
+<p id="Pich98">Pich, A. (1998). Effective Field Theory. <a href="http://arxiv.org/abs/hep-ph/9806303">http://arxiv.org/abs/hep-ph/9806303</a><a href="http://doi.org/10.48550/arXiv.hep-ph/9806303"> http://doi.org/10.48550/arXiv.hep-ph/9806303</a></p>
+
 <p id="Popescu14">Popescu, S. (2014). Nonlocality beyond quantum mechanics. <i>Nature Physics, 10</i>, 264–270. <a href="https://www.nature.com/articles/nphys2916">https://www.nature.com/articles/nphys2916</a><a href="http://doi.org/10.1038/nphys2916"> http://doi.org/10.1038/nphys2916</a></p>
+
+<p id="PoulinQarrySommaEtAl11">Poulin, D., Qarry, A., Somma, R.D., & Verstraete, F. (2011). Quantum simulation of time-dependent Hamiltonians and the convenient illusion of Hilbert space. <i>Physical Review Letters, 106</i>, 170501. <a href="http://arxiv.org/abs/1102.1360">http://arxiv.org/abs/1102.1360</a><a href="http://doi.org/10.1103/PhysRevLett.106.170501"> http://doi.org/10.1103/PhysRevLett.106.170501</a></p>
 
 <p id="PuseyBarrettRudolph12">Pusey, M.F., Barrett, J., & Rudolph, T. (2012). On the reality of the quantum state. <i>Nature Physics, 8</i>, 475–478. <a href="https://www.nature.com/articles/nphys2309">https://www.nature.com/articles/nphys2309</a><a href="http://doi.org/10.1038/nphys2309"> http://doi.org/10.1038/nphys2309</a></p>
 
@@ -320,13 +346,23 @@
 
 <p id="VonNeumannBurks66">Von Neumann, J., & Burks, A.W. (1966). Theory of self-reproducing automata. <a href="http://www.cba.mit.edu/events/03.11.ASE/docs/VonNeumann.pdf">http://www.cba.mit.edu/events/03.11.ASE/docs/VonNeumann.pdf</a></p>
 
-<p id="Wallace20">Wallace, D. (2020). <i>Against Wavefunction Realism. </i>In Current Controversies in Philosophy of Science. Routledge. </p>
+<p id="Wallace11">Wallace, D. (2011). Taking particle physics seriously: A critique of the algebraic approach to quantum field theory. <i>Studies in History and Philosophy of Science Part B: Studies in History and Philosophy of Modern Physics, 42</i>, 116–125. <a href="https://www.sciencedirect.com/science/article/pii/S1355219810000808">https://www.sciencedirect.com/science/article/pii/S1355219810000808</a><a href="http://doi.org/10.1016/j.shpsb.2010.12.001"> http://doi.org/10.1016/j.shpsb.2010.12.001</a></p>
+
+<p id="Wallace21">Wallace, D. (2021). <i>Against Wavefunction Realism. </i>In Current Controversies in Philosophy of Science (pp. 63–74). Routledge. </p>
 
 <p id="WangZhang01">Wang, Z., & Zhang, A. (2001). New interpretation to zitterbewegung. <a href="http://arxiv.org/abs/hep-ph/0110079">http://arxiv.org/abs/hep-ph/0110079</a><a href="http://doi.org/10.48550/arXiv.hep-ph/0110079"> http://doi.org/10.48550/arXiv.hep-ph/0110079</a></p>
 
+<p id="Weinberg16">Weinberg, S. (2016). Effective field theory, past and future. <i>International Journal of Modern Physics A, 31</i>, 1630007. <a href="https://www.worldscientific.com/doi/abs/10.1142/S0217751X16300076">https://www.worldscientific.com/doi/abs/10.1142/S0217751X16300076</a><a href="http://doi.org/10.1142/S0217751X16300076"> http://doi.org/10.1142/S0217751X16300076</a></p>
+
 <p id="Weinberg67">Weinberg, S. (1967). A Model of Leptons. <i>Physical Review Letters, 19</i>, 1264–1266. <a href="https://link.aps.org/doi/10.1103/PhysRevLett.19.1264">https://link.aps.org/doi/10.1103/PhysRevLett.19.1264</a><a href="http://doi.org/10.1103/PhysRevLett.19.1264"> http://doi.org/10.1103/PhysRevLett.19.1264</a></p>
 
+<p id="Weinberg79">Weinberg, S. (1979). Phenomenological Lagrangians. <i>Physica A: Statistical Mechanics and its Applications, 96</i>, 327–340. <a href="https://www.sciencedirect.com/science/article/pii/0378437179902231">https://www.sciencedirect.com/science/article/pii/0378437179902231</a><a href="http://doi.org/10.1016/0378-4371(79)90223-1"> http://doi.org/10.1016/0378-4371(79)90223-1</a></p>
+
 <p id="Whittaker03">Whittaker, E.T. (1903). On the partial differential equations of mathematical physics. <i>Mathematische Annalen, 57</i>, 333–355. <a href="https://doi.org/10.1007/BF01444290">https://doi.org/10.1007/BF01444290</a><a href="http://doi.org/10.1007/BF01444290"> http://doi.org/10.1007/BF01444290</a></p>
+
+<p id="Witten18">Witten, E. (2018). Notes on Some Entanglement Properties of Quantum Field Theory. <i>Reviews of Modern Physics, 90</i>, 045003. <a href="http://arxiv.org/abs/1803.04993">http://arxiv.org/abs/1803.04993</a><a href="http://doi.org/10.1103/RevModPhys.90.045003"> http://doi.org/10.1103/RevModPhys.90.045003</a></p>
+
+<p id="Witten22">Witten, E. (2022). Gravity and the crossed product. <i>Journal of High Energy Physics, 2022</i>, 8. <a href="https://doi.org/10.1007/JHEP10(2022)008">https://doi.org/10.1007/JHEP10(2022)008</a><a href="http://doi.org/10.1007/JHEP10(2022)008"> http://doi.org/10.1007/JHEP10(2022)008</a></p>
 
 <p id="Wolfram97">Wolfram, S. (1997). <i>A new kind of science. </i></p>
 
