@@ -13,6 +13,23 @@ The Higgs field is represented by the [[Klein-Gordon]] equation in the Standard 
 
 The original source inspiration for the Higgs mechanism comes from the phenomenology of magnetism in superconductors, which can sustain electrical currents without any resistance ("friction"). These electrical currents can then give rise to corresponding magnetic fields that cancel out any external magnetic fields inside the superconductor itself. Thus, phenomenologically, this illustrates how a long-range force (magnetism) can become short-ranged, when it interacts with an "absorbing" medium. The Higgs field effectively plays this role as the absorbing medium, as a result of the vacuum obtaining a non-zero value, due to the spontaneous symmetry breaking mechanism.
 
+## Higgs potential
+
+The Higgs mechanism is based on the [[complex KG]] [[Klein-Gordon]] (KG) equation, that is coupled to the electromagnetic field, with a special **Higgs potential** that is responsible for the spontaneous symmetry breaking, which replaces the mass term that is otherwise used in KG:
+
+$$
+\frac{\partial^2 \chi}{\partial t^2} = (\nabla^2 - V(\chi)) \chi
+$$
+
+where:
+
+{id="eq_higgsv" title="Higgs potential"}
+$$
+V(\chi) = \lambda(|\chi|^2 - v^2)^2
+$$
+
+and $|\chi|^2$ is the squared magnitude of the complex state at each point. The form of this potential is such that it will be zero whenever the magnitude is equal to the target constant $v$, and will be positive otherwise. Given that this potential is subtracted from the wave equation, the effective "mass" of the wave function will be positive whenever this magnitude deviates from the target constant $v$. This will have the tendency over time to force the complex magnitude of the state to be at this $v$ value.
+
 ## Fine tuning / hierarchy problem
 
 Because the Higgs field couples with _all_ [[particle]]s according to the Standard Model, the strength of the Higgs field, i.e., the mass of the Higgs boson, should be a function of the masses of all of the different types of massive particles. Now that the mass of the Higgs boson has been measured, it can be used in reverse to compute the expected masses of all particles, _including any that have yet to be discovered!_ The contribution of any given particle to the Higgs mass is (see [Wikipedia](https://en.wikipedia.org/wiki/Hierarchy_problem)):
@@ -34,4 +51,4 @@ The heaviest currently-known fermion is the top [[quark]], which weighs in at ar
 
 This length scale is in the range of the weak force, which operates around the $10^{-18}m$, and is well above the Planck length scale of $10^{-35}m$, where gravitation is as strong as EM. Thus, consistent with the application of the [[renormalization]] procedure, the Higgs mass is consistent with the Standard Model being a _complete_ model, with no room for additional higher-energy (mass) particles, etc.
 
-## 
+

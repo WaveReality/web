@@ -25,6 +25,10 @@ It should be clear that this space is entirely [[non-local]] across particles. E
 
 From a purely computational point of view, the outer-product representation is maximally expensive, and maximally expressive. It is essentially computationally universal, allowing the system to represent any and all interactions in any way that might be necessary. Thus, it is not unreasonable to suggest that this representation is a [[tools vs models|calculational tool]], consistent with various arguments in the literature ([[@Wallace21]]; [[@Myrvold15]]), but not without some debate ([[@Carroll21]]; [[@North12]]; [[@NeyAlbert13]]).
 
+Specifically, there really is no single privileged version of a configuration space, and, as a clear signature of a calculational tool, the specific version of the space that is used depends entirely on the type of problem being solved, and the approach being used. It is not plausible to imagine that there is one single such space for the entire universe, because the basic particle elements of the universe are not persistent. This is the reason that the Fock space is used in [[field theory]], to support the use of creation and annihilation operators, but that space is in Fourier space, not 3D space.
+
+In the end, there is a compelling argument that conventional 3D space provides the only standard reference frame for physics that is universally applicable. 
+
 ## Necessarily exponential?
 
 The exponential size of configuration space represents a _fatal_ barrier to any kind of plausible CA model of physics, in the same way that non-local computation does. Therefore, we are strongly motivated to adopt virtually _any_ other kind of physical mechanism that might avoid the need for such a thing.

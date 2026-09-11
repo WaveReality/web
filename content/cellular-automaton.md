@@ -71,7 +71,7 @@ In this CA (widely available as a screensaver), there is a two-dimensional grid 
 
 One specific implication of the CA framework is that it unambiguously establishes the position basis as primary for representing discrete massive particles, consistent with the [[pilot-wave]] framework. In addition, the [[Pauli exclusion principle]] is strongly suggestive of a discrete CA-like state. This principle posits that only one _fermion_ (electron, quark, etc, with a quantum spin of 1/2) can occupy the same quantum state, including position, at a time.
 
-Thus, the underlying CA state representation only needs to be able to hold one of each particle type, which eliminates the difficult problem of having to represent a variable number of such particles at each location. In other words, the "memory allocation" for each cell is constant.
+Thus, the underlying CA state representation only needs to be able to hold one of each particle type, which eliminates the difficult problem of having to represent a variable number of such particles at each location. In other words, the "memory allocation" for each cell is constant, regardless of what kind of matter or energy might be present. This is not the case for the [[configuration space]] used in standard quantum frameworks, which has the hallmark of a calculational tool in that it is always constructed for each specific problem being solved.
 
 This exclusion principle does not apply to _boson_ particles, and would thus require an indefinite number of memory slots to represent (along with all the other difficulties involved in the particle picture for force fields). Thus, the CA framework, along with a number of other considerations, strongly supports the [[semiclassical]] picture, where quantum particles interact with a classical purely wave-based EM state propagating according to [[Maxwell]]'s equations.
 
@@ -81,6 +81,5 @@ When you look at the examples of plausible physical models ([[tools vs models]])
 
 In summary, the CA framework is simple, elegant, and consistent with the most basic facts of physics. If one could develop a viable physical theory within the general confines of this framework, it would provide a uniquely simple and satisfying model of how nature works.
 
-However, two important objections are typically raised about such a framework: isn't it just like the [[aether]] that was so famously rejected by the Michelson-Morley experiment; and if it has purely local interactions, how could it possibly account for the apparent [[non-locality]] of QM? See those pages for further discussion.
-
+However, two important objections are typically raised about such a framework: Isn't it just like the [[aether]] that was so famously rejected by the Michelson-Morley experiment? If it has purely local interactions, how could it possibly account for the apparent [[non-locality]] of QM? See those pages for further discussion.
 
