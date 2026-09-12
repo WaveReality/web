@@ -3,7 +3,7 @@ Categories = ["Interpretations"]
 bibfile = "mechphys.json"
 +++
 
-The **quantum wave** refers to a physically real (_ontological_) quantum wave that interacts bidirectionally with the particles, which is a core part of the [[pilot-wave]] model, and the [[Spinfield Model]]. In the [[Standard Model]], various wave equations including the [[Dirac]] equations have been used to represent the wave aspect of [[fermion]] particles like the [[electron]], but according to the standard [[Copenhagen]] and other [[interpretations]], this wave is thought to be purely [[epistemic-vs-ontic|epistemic]] in nature, reflecting a lack of knowledge about the underlying quantum state until a measurement takes place.
+The **quantum wave** refers to a physically real ([epistemic-vs-ontic|ontological]]) quantum wave that interacts bidirectionally with the particles, which is a core part of the [[pilot-wave]] model, and the [[Spinfield Model]]. In the [[Standard Model]], various wave equations including the [[Dirac]] equations have been used to represent the wave aspect of [[fermion]] particles like the [[electron]], but according to the standard [[Copenhagen]] and other [[interpretations]], this wave is thought to be purely _epistemic_ in nature, reflecting a lack of knowledge about the underlying quantum state until a measurement takes place.
 
 Even within the [[pilot-wave]] model, these wave equations represent both epistemic and ontologically real aspects of the time-evolution of a particle. An important goal of the Spinfield Model is to "unscramble this omlette" and develop a quantum wave function that only reflects the ontologically real impact of quantum waves, with the time-evolution of particles under [[stochastic motion]] generating the epistemic aspects.
 

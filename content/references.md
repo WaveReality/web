@@ -132,6 +132,8 @@
 
 <p id="Gardner70">Gardner, M. (1970). Mathematical Games: The fantastic combinations of John Conway’s new solitaire game “life" <i>Scientific American, </i></p>
 
+<p id="GeierNazaryanZaklamaEtAl25">Geier, M., Nazaryan, K., Zaklama, T., & Fu, L. (2025). Is attention all you need to solve the correlated electron problem? <i>Physical Review B, 112</i>, 045119. <a href="http://arxiv.org/abs/2502.05383">http://arxiv.org/abs/2502.05383</a><a href="http://doi.org/10.1103/qxc3-bkc7"> http://doi.org/10.1103/qxc3-bkc7</a></p>
+
 <p id="GerryKnight05">Gerry, C.C., & Knight, P.L. (2005). <i>Introductory Quantum Optics. </i> Cambridge University Press. </p>
 
 <p id="Giddings15">Giddings, S.B. (2015). Hilbert space structure in quantum gravity: an algebraic perspective. <i>Journal of High Energy Physics, 2015</i>, 1–21. <a href="http://arxiv.org/abs/1503.08207">http://arxiv.org/abs/1503.08207</a><a href="http://doi.org/10.1007/JHEP12(2015)099"> http://doi.org/10.1007/JHEP12(2015)099</a></p>
@@ -353,6 +355,8 @@
 <p id="Wallace11">Wallace, D. (2011). Taking particle physics seriously: A critique of the algebraic approach to quantum field theory. <i>Studies in History and Philosophy of Science Part B: Studies in History and Philosophy of Modern Physics, 42</i>, 116–125. <a href="https://www.sciencedirect.com/science/article/pii/S1355219810000808">https://www.sciencedirect.com/science/article/pii/S1355219810000808</a><a href="http://doi.org/10.1016/j.shpsb.2010.12.001"> http://doi.org/10.1016/j.shpsb.2010.12.001</a></p>
 
 <p id="Wallace21">Wallace, D. (2021). <i>Against Wavefunction Realism. </i>In Current Controversies in Philosophy of Science (pp. 63–74). Routledge. </p>
+
+<p id="WangKais07">Wang, H., & Kais, S. (2007). Quantum Entanglement and Electron Correlation in Molecular Systems. <i>Israel Journal of Chemistry, 47</i>, 59–65. <a href="https://onlinelibrary.wiley.com/doi/abs/10.1560/IJC.47.1.59">https://onlinelibrary.wiley.com/doi/abs/10.1560/IJC.47.1.59</a><a href="http://doi.org/10.1560/IJC.47.1.59"> http://doi.org/10.1560/IJC.47.1.59</a></p>
 
 <p id="WangZhang01">Wang, Z., & Zhang, A. (2001). New interpretation to zitterbewegung. <a href="http://arxiv.org/abs/hep-ph/0110079">http://arxiv.org/abs/hep-ph/0110079</a><a href="http://doi.org/10.48550/arXiv.hep-ph/0110079"> http://doi.org/10.48550/arXiv.hep-ph/0110079</a></p>
 

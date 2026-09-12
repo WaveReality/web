@@ -25,10 +25,10 @@ where:
 
 {id="eq_higgsv" title="Higgs potential"}
 $$
-V(\chi) = \lambda(|\chi|^2 - v^2)^2
+V(\chi) = \lambda(|\chi|^2 - \mu_H^2)^2
 $$
 
-and $|\chi|^2$ is the squared magnitude of the complex state at each point. The form of this potential is such that it will be zero whenever the magnitude is equal to the target constant $v$, and will be positive otherwise. Given that this potential is subtracted from the wave equation, the effective "mass" of the wave function will be positive whenever this magnitude deviates from the target constant $v$. This will have the tendency over time to force the complex magnitude of the state to be at this $v$ value.
+and $|\chi|^2$ is the squared magnitude of the complex state at each point. The form of this potential is such that it will be zero whenever the magnitude is equal to the target constant $\mu_H$, and will be positive otherwise. Given that this potential is subtracted from the wave equation, the effective "mass" of the wave function will be positive whenever this magnitude deviates from the target constant $\mu_H$. This will have the tendency over time to force the complex magnitude of the state to be at this $\mu_H$ value.
 
 ## Fine tuning / hierarchy problem
 

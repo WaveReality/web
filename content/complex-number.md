@@ -68,6 +68,11 @@ $$
 y^* = a - i b
 $$
 
+This can also be written using a bar:
+$$
+\bar{y} = a - i b
+$$
+
 The primary use of such a thing is to find the magnitude of a complex number (i.e., the length of the vector that it represents), as:
 
 $$
