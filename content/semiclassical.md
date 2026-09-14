@@ -17,5 +17,5 @@ However, we must appreciate that the source of the EM field with sufficient ener
 
 There are other statistical properties of photon emission (e.g., anticorrelations; [[@GrangierRogerAspect86]]; and antibunching; [[@HongOuMandel87]]) that have been proposed to be inconsistent with the semiclassical approach. Nevertheless, semiclassical accounts of these phenomena have been provided, by leveraging an additional stochastic process associated with the hypothesized [[zero point]] field ([[@MarshallSantos07]]; [[@MarshallSantos97]]), but this work has failed to overturn the status quo belief in photons, perhaps in part because of various important outstanding issues associated with this zero point field construct.
 
-Overall, this semiclassical physical model requires much more complex calculations and conceptual frameworks than the simple ideas and math associated with the photon model, so from the [[tools vs models]] perspective, there isn't much reason for people to adopt this more complex model.
+Overall, this semiclassical physical model requires much more complex calculations and conceptual frameworks than the simple ideas and math associated with the photon model, so from the [[calculational tool]] perspective, there isn't much reason for people to adopt this more complex model.
 

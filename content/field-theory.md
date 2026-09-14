@@ -24,7 +24,7 @@ Position information only arises in Fourier space in terms of the constructive a
 
 Representing something with a fully precise spatial position requires an _infinite_ number of such sine waves, in the same way that representing a fully precise momentum (i.e, frequency) requires a continuum infinity of particle positions oscillating according to a specific precise frequency. This is again the Heisenberg uncertainty principle, and it is a basic property of [[wave]]s.
 
-Once one understands these properties of Fourier space, it is clear that QFT is yet another [[tools vs models|calculational tool]] that makes it easier to compute the outcomes of particle accelerator experiments, but it does not represent the actual physical interactions among particles.
+Once one understands these properties of Fourier space, it is clear that QFT is yet another [[calculational tool]] that makes it easier to compute the outcomes of particle accelerator experiments, but it does not represent the actual physical interactions among particles.
 
 <!--- TODO: cloud chamber picture! -->
 

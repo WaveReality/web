@@ -9,13 +9,13 @@ bibfile = "mechphys.json"
 {id="figure_cubes" style="height:40em"}
 ![Neighborhood interactions in regular cubic tiling of space in three-dimensions --- these interactions are used to compute the wave equation locally.](media/fig_space_cubes_fec_lapl.png)
 
-The overall approach taken here is to determine if a specific framework for _implementing physics_ is able to account for all of the known phenomena described by the [[Standard Model]]. At the broadest level, the motivation is that Nature is some kind of fundamental physical _process_ that is _happening everywhere, autonomously_ producing everything in the universe. We seek a description of this process and the "state" that it operates on.
+The overall approach taken here is to determine if a specific framework for _implementing physics_ is able to account for all of the known phenomena described by the [[Standard Model]]. At the broadest level, the motivation is that Nature is some kind of fundamental physical _process_ that is _happening everywhere, autonomously_ producing everything in the universe. We seek a description of this process and the "state" that it operates on, i.e., a [[universal basis]] space for physics.
 
 There is of course no guarantee that we can succeed in this mission, but neither is it clear that such an approach is doomed to fail (despite several issues that would appear to contradict this assertion). The goal is simply to see how far we can get, and what issues we encounter in the process.
 
 Why doesn't the Standard Model itself provide the desired level of description? Because it requires extensive expert knowledge to perform detailed _analytical_ computations, which themselves are ultimately approximate due to the infinite sums resulting from the [[renormalization]] procedure.
 
-By contrast, [[Maxwell]]'s equations for electromagnetic (EM) radiation in the Lorenz gauge provide an entirely local, autonomous, _mechanistic_, model of wave propagation that doesn't require any human intervention or expertise to produce the resulting physics. It can just _happen_ like that autonomously, everywhere in space. See [[tools vs models]] for more on this distinction.
+By contrast, [[Maxwell]]'s equations for electromagnetic (EM) radiation in the Lorenz gauge provide an entirely local, autonomous, _mechanistic_, model of wave propagation that doesn't require any human intervention or expertise to produce the resulting physics. It can just _happen_ like that autonomously, everywhere in space. See [[computational tool]]s for more on this distinction.
 
 This satisfying level of understanding is what led the physicists in the late 1800's to believe that physics was nearly solved. Critically, they hypothesized the presence of the [[aether]] as a kind of physical substrate for these EM waves, which was then invalidated by the Michaelson-Morley experiment. This level of thinking was taking things one step too far, however. We don't need to impose any kind of macroscopic, intuitive mechanism underlying the basic physical mechanisms. 
 
@@ -77,7 +77,7 @@ This exclusion principle does not apply to _boson_ particles, and would thus req
 
 The notion of _autonomy_ in a CA is also particularly important as a physical model: the CA is entirely self-contained and can just plug away forever, running the same exact local laws every time step. By contrast, most calculational tools used in physics require a specific setup and different computational steps depending on exactly what situation is being modeled: they are far from "autonomous" in the sense of a CA.
 
-When you look at the examples of plausible physical models ([[tools vs models]]), they all have this same autonomous character: e.g., general relativity and Maxwell's equations in the Lorenz gauge can just be configured with a starting state and then everything can evolve autonomously from there.
+When you look at the examples of plausible physical models, they all have this same autonomous character: e.g., general relativity and Maxwell's equations in the Lorenz gauge can just be configured with a starting state and then everything can evolve autonomously from there.
 
 In summary, the CA framework is simple, elegant, and consistent with the most basic facts of physics. If one could develop a viable physical theory within the general confines of this framework, it would provide a uniquely simple and satisfying model of how nature works.
 

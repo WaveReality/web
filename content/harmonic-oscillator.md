@@ -66,7 +66,7 @@ $$
 
 {id="eq_potential" title="potential energy"}
 $$
-E_p = \frac{1}{2} \left( \left( y^t \right)^2 \right)
+E_p = \frac{1}{2} y^2
 $$
 
 The following simulation shows the behavior of this harmonic oscillator.
@@ -194,7 +194,7 @@ addSlider(&ipStr, &ip, 0.1, 2.0)
 
 You can see that the overall behavior is independent of the amplitude (given by the starting position), but this amplitude does affect the energy.
 
-## Damping
+### Damping
 
 Damping in the SHO happens via a negative factor applied to the _velocity_ term:
 
@@ -205,9 +205,35 @@ $$
 
 where _r_ is a damping constant applied to the velocity $v^t$.
 
-## Driving
+### Driving
 
 Driving the SHO typically happens via a sine function added to the force. This need for a sine function introduces a significant implausibility for a fundamental physical process. For this reason, the version with complex numbers, described next, is more appropriate for the [[Spinfield Model]] functionality, because it can be driven with a simple linear factor.
+
+### Initial values
+
+To compute position and velocity values at any point in the cycle, we can use the kinetic and potential energy equations.
+
+When the system is initialized at either extreme of position, the velocity is 0, and all of the energy is potential:
+
+$$
+E_p = \frac{1}{2} y^2_0
+$$
+
+All of this potential energy is converted into kinetic energy at position = 0:
+
+$$
+\frac{1}{2 c^2} v^2 = \frac{1}{2} y^2_0
+$$
+
+$$
+v^2 = c^2 y^2_0
+$$
+
+$$
+v = c y_0
+$$
+
+
 
 ## Complex numbers
 

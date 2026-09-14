@@ -334,6 +334,8 @@
 
 <p id="Spekkens05">Spekkens, R.W. (2005). Contextuality for preparations, transformations, and unsharp measurements. <i>Physical Review A, 71</i>, 052108. <a href="https://link.aps.org/doi/10.1103/PhysRevA.71.052108">https://link.aps.org/doi/10.1103/PhysRevA.71.052108</a><a href="http://doi.org/10.1103/PhysRevA.71.052108"> http://doi.org/10.1103/PhysRevA.71.052108</a></p>
 
+<p id="Stoica25">Stoica, O.C. (2025). Born Rule: Quantum Probability as Classical Probability. <i>International Journal of Theoretical Physics, 64</i>, 117. <a href="https://doi.org/10.1007/s10773-025-05979-7">https://doi.org/10.1007/s10773-025-05979-7</a><a href="http://doi.org/10.1007/s10773-025-05979-7"> http://doi.org/10.1007/s10773-025-05979-7</a></p>
+
 <p id="Struyve20">Struyve, W. (2020). Semi-classical approximations based on Bohmian mechanics. <i>International Journal of Modern Physics A, <a href="https://www.worldscientific.com/worldscinet/ijmpa">https://www.worldscientific.com/worldscinet/ijmpa</a></i><a href="http://doi.org/10.1142/S0217751X20500700"> http://doi.org/10.1142/S0217751X20500700</a></p>
 
 <p id="Tegmark10">Tegmark, M. (2010). Many Worlds in Context. <a href="http://arxiv.org/abs/0905.2182">http://arxiv.org/abs/0905.2182</a><a href="http://doi.org/10.48550/arXiv.0905.2182"> http://doi.org/10.48550/arXiv.0905.2182</a></p>

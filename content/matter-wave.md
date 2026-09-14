@@ -24,7 +24,7 @@ It is interesting to note that the Klein-Gordon equation has been almost complet
 
 In contrast, the rest of physics likes Schrödinger's equation because it is more analytically tractable as a first-order equation. It is linear, and it also automatically produces a positive-valued conserved probability density, which fits perfectly with the standard probabilistic interpretation of quantum physics. The fact that it violates [[special relativity]] is often overlooked, and anyway the Dirac equation solves that problem, while staying within a first-order framework (but at the cost of introducing 8 state variables interacting in a fairly complex way).
 
-Thus, the overall difference is one of "mechanism" vs. "analysis," where standard physics is strongly weighted toward analysis (as in [[tools vs models]]).
+Thus, the overall difference is one of "mechanism" vs. "analysis," where standard physics is strongly weighted toward analysis (as a [[calculational tool]]).
 
 
 TODO: [[@DemiralpRabitz97]] -- dispersion-free wave packets!

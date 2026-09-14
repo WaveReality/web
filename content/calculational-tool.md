@@ -3,7 +3,7 @@ Categories = ["Interpretations"]
 bibfile = "mechphys.json"
 +++
 
-The differences between the standard Copenhagen interpretation vs. the [[pilot-wave]] model reviewed in [[history]] nicely exemplify the broader distinctions between **calculational tools** vs. **physical models**. A calculational tool is a mathematical framework that makes it easy to compute relevant results, but the underlying processes implied by the nature of the calculations have no direct mapping onto underlying "real" physical properties of the system.
+The differences between the standard [[Copenhagen]] interpretation vs. the [[pilot-wave]] model nicely exemplify the broader distinctions between **calculational tools** vs. **physical models**. A calculational tool is a mathematical framework that makes it easy to compute relevant results, but the underlying processes implied by the nature of the calculations have no direct mapping onto underlying "real" physical properties of the system.
 
 For example, Newton's theory of gravitation (still widely used in practice) is a calculational tool that enables gravitational effects to be conveniently computed in terms of the respective masses ($m_1$, $m_2$) and distance _r_ between the centers of mass of two bodies:
 
@@ -16,7 +16,7 @@ But this is not a plausible physical model because the math requires the use of 
 
 By contrast, a plausible physical model should compute gravitational forces directly from the collective effects of each individual atom within all the different celestial bodies in the universe, and propagate these forces via local mechanisms at the speed of light.
 
-Indeed, Einstein's _general relativity_ provides exactly this kind of satisfying physical model, and it would be hard to find a serious physicist who did not recognize and appreciate these distinctions between the Newtonian and Einstein versions of gravitation. In particular, nobody would argue that nature actually implements the Newtonian model, while it is very easy to see how general relativity could happen "naturally".
+Indeed, Einstein's _general relativity_ provides exactly this kind of satisfying physical model, and it would be hard to find a serious physicist who did not recognize and appreciate these distinctions between the Newtonian and Einstein versions of gravitation. In particular, nobody would argue that nature actually implements the Newtonian model, while it is very easy to see how general relativity could happen "naturally". The goal of finding a [[universal basis]] space provides an important way of understanding the abstract, computational benefits of the general relativity version of gravitation over the Newtonian one.
 
 In the case of Copenhagen vs. pilot-wave frameworks, both produce the same end results, and more generally, it is almost always the case that there are multiple different ways of framing a problem that end up producing the same results. From a purely pragmatic, "shut up and calculate" perspective, one should just pick the one that is simplest or otherwise most effective to use for a given situation, and be done with it. If all you care about is getting the right answer, why should you care about the particular "aesthetic" details of a given model?  For this reason, the pilot-wave model is generally ignored by most working physicists, because it is more complicated than the standard framework.
 
