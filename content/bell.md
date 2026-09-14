@@ -3,7 +3,7 @@ Categories = ["Interpretations"]
 bibfile = "mechphys.json"
 +++
 
-This is a fully worked-out example of two entangled quantum states can exhibit [[non-locality]], analyzed using the standard [[Hilbert space]] formalism, based on the **Bell inequality** framework pioneered by [[@^Bell64]].
+This is a fully worked-out example of two entangled quantum states can exhibit [[non-locality]], analyzed using the standard [[Hilbert space]] formalism, based on the **Bell inequality** framework pioneered by [[@^Bell64]] (see [[@Bell04]]; [[@Bell66]]; [[@Bell81]] and [[@ClauserHorneShimonyEtAl69]]). The experimental tests of this logic have confirmed the quantum predictions developed here, in ways that have also dealt with a number of possible loopholes in the logic ([[@AspectDalibardRoger82]]; [[@GiustinaVersteeghWengerowskyEtAl15]]; [[@HensenBernienDreauEtAl15]]; [[@ShalmMeyer-ScottChristensenEtAl15]]).
 
 We'll use the modern terminology from [[quantum computing]], in terms of a **qubit**, which has a quantum binary state. In the actual experiments, this is typically either the polarization direction of a [[photon]], or the [[spin]] direction of a [[fermion]].
 
@@ -47,7 +47,9 @@ $$
 \rho_\otimes = |\psi_\otimes\rangle \langle \psi_\otimes | = \begin{pmatrix} 0.5 & 0 & 0 & 0.5 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0.5 & 0 & 0 & 0.5 \end{pmatrix}
 $$
 
-The critical point is that there are off-diagonal elements here, which directly capture the presence of a correlation between the probability of a 00 outcome and a 11 outcome. Specifically, in the first column, the bottom-left cell represents the probability for a 00 and 11 outcome, and the upper-right cell represents the probability of a 11 and 00 outcome.
+The critical point is that there are off-diagonal elements here, which directly capture the presence of a correlation between the probability of a $|00\rangle$ outcome and a $|11\rangle$ outcome. Specifically, in the first column, the bottom-left cell represents the probability for a $|00\rangle$ and $|11\rangle$ outcome, and the upper-right cell represents the probability of a $|11\rangle$ and $|00rangle$ outcome.
+
+These off-diagonal elements are only possible in a state created from a superposition, which happens via the process of entanglement in preparing the initial state of the system.
 
 There are two key contrasting cases which do _not_ produce the uniquely quantum non-locality result. The first one is a **pure product state** where for example the two qubits are both in the pure 0 state:
 
@@ -61,17 +63,37 @@ $$
 C_* = \begin{pmatrix}1 & 0\\0&0\end{pmatrix}, \qquad \det C = 0
 $$
 
+and the density matrix has no off-diagonal elements:
+
+$$
+\rho_* = |\psi_*\rangle \langle \psi_* | = \begin{pmatrix} 0.5 & 0 & 0 & 0.0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0.0 & 0 & 0 & 0.5 \end{pmatrix}
+$$
+
 The more interesting foil corresponds to a local hidden variable case, where half the time a $|00\rangle$ state is prepared, and the other half it is $|11\rangle$, as compared to the _single_ state that is in a state of _superposition_. This contrast highlights precisely what it is about the superposition state that differs from a _standard_ probabilistic situation. This then provides the essential insight about entanglement.
 
 $$
-\rho_{\text{mix}} = \tfrac12 |00\rangle \langle00| + \tfrac12|11\rangle\langle11|
+\rho_+ = \tfrac12 |00\rangle \langle00| + \tfrac12|11\rangle\langle11|
 $$
 
+$$
+\rho_+ = |\psi_+\rangle \langle \psi_+ | = \begin{pmatrix} 0.5 & 0 & 0 & 0.0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0.0 & 0 & 0 & 0.5 \end{pmatrix}
+$$
 
+Critically, this also has no off-diagonal elements, and thus only produces classical-like probability results.
+
+Thus, there is an obvious, absolute conclusion from this comparison:
+
+* **superposition (entanglement) is an essential ingredient** in producing non-local quantum effects.
+
+Any local hidden variable strategy that does not result in a wave state that is in a state of supervision is not going to capture the quantum effects, because, as you can see in the above math, the resulting probabilities for mixing the different states are purely classical, acting as simple weighted-average multipliers on the resulting density operator. 
+
+Interestingly, there is indeed a literature on the effects of superposition in classical waves, i.e., in electromagnetic waves, which reproduce many of the quantum-like effects of superposition ([[@Spreeuw98]]; [[@QianEberly11]]; [[@QianLittleHowellEtAl15]]; [[@KarimiBoyd15]]; [[@Khrennikov06]]). However, these experiments do not capture the non-locality present in the Bell's test experiments, which follows naturally from the tensor-product nature of the configuration space used in the above Hilbert-space formulation.
+
+The main question in this context is thus, how could Nature actually exhibit the corresponding non-locality in terms of a [[universal basis]] space representation that doesn't just build it in as an assumption by using a tensor space.
 
 ## The measurement observables
 
-Alice and Bob each measure a spin component in the $x$–$z$ plane, at angles $\alpha$ and $\beta$. The observable is $\hat n(\theta)\cdot\vec\sigma$ with $\hat n = (\sin\theta, 0, \cos\theta)$:
+Because you cannot directly observe the density matrix values shown above, actual experiments involve two different detectors, A and B (typically called Alice and Bob) that each measure a spin component in the $x$–$z$ plane, at angles $\alpha$ and $\beta$. The observable is $\hat n(\theta)\cdot\vec\sigma$ with $\hat n = (\sin\theta, 0, \cos\theta)$:
 
 $$
 A(\alpha) = \sin\alpha\,\sigma_x + \cos\alpha\,\sigma_z = \begin{pmatrix}\cos\alpha & \sin\alpha \\ \sin\alpha & -\cos\alpha\end{pmatrix}
@@ -124,7 +146,7 @@ $$
 Writing $\delta \equiv \alpha - \beta$, the joint probabilities are
 
 $$
-\boxed{P(\pm,\pm) = \tfrac12\cos^2\tfrac{\delta}{2}, \qquad P(\pm,\mp) = \tfrac12\sin^2\tfrac\delta2}
+P(\pm,\pm) = \tfrac12\cos^2\tfrac{\delta}{2}, \qquad P(\pm,\mp) = \tfrac12\sin^2\tfrac\delta2
 $$
 
 **Normalization:** $\cos^2\frac\delta2 + \sin^2\frac\delta2 = 1$ ✓
@@ -274,8 +296,7 @@ $$
 
 Since $\|A\| = \|A'\| = 1$, $\|[A,A']\| \le 2$, so $\|\hat S^2\| \le 4 + 4 = 8$ and $\|\hat S\| \le 2\sqrt2$. If $A$ and $A'$ commuted — the classical case, where both have simultaneous definite values — the commutator term vanishes and you recover $|S| \le 2$ exactly. **The violation is precisely the non-commutativity of the two measurement settings, amplified through the tensor product structure.**
 
-
-## PRODUCT: The correlation factorizes — symbolically
+## The correlation factorizes — symbolically
 
 This is the whole difference, in one line. Because the state is a product, the expectation of any product observable splits:
 
@@ -316,49 +337,7 @@ $$
 
 Note that Alice's marginal here *does* depend on her own setting ($1.0$ vs $0.5$) — unlike the Bell state, where it was always $0.5$. That's a giveaway that this isn't a fair comparison. Hence:
 
-# Case B: the separable mixture (the sharp foil)
-
-$$
-\rho_{\text{mix}} = \tfrac12|00\rangle\langle00| + \tfrac12|11\rangle\langle11|
-$$
-
-This is the *decohered* Bell state: identical local marginals, identical perfect correlation in the computational basis, but classically correlated rather than entangled. Half the pairs are $|00\rangle$, half are $|11\rangle$, decided by a coin flip at the source. Exactly the "local hidden variable" picture.
-
-## Density matrices side by side
-
-```
-ρ_Bell = |Φ⁺⟩⟨Φ⁺|                  ρ_mix = ½|00⟩⟨00| + ½|11⟩⟨11|
-  [0.5   0    0   0.5]               [0.5   0    0    0 ]
-  [ 0    0    0    0 ]               [ 0    0    0    0 ]
-  [ 0    0    0    0 ]               [ 0    0    0    0 ]
-  [0.5   0    0   0.5]               [ 0    0    0   0.5]
-         ↑            ↑
-    the coherences — the only difference
-```
-
-**The entire distinction is those two off-diagonal $0.5$'s.** Same diagonal, same probabilities in the $z$ basis, same reduced states:
-
-$$
-\operatorname{Tr}_B \rho_{\text{Bell}} = \operatorname{Tr}_B \rho_{\text{mix}} = \begin{pmatrix}0.5 & 0\\0&0.5\end{pmatrix} = \tfrac{I}{2}
-$$
-
 So no local measurement on either qubit alone can tell them apart. Only the *correlations across settings* can.
-
-## Peres–Horodecki (PPT) test
-
-Partial transpose on $B$:
-
-```
-ρ_Bell^{T_B} =                     ρ_mix^{T_B} =
-  [0.5   0    0    0 ]               [0.5   0    0    0 ]
-  [ 0    0   0.5   0 ]               [ 0    0    0    0 ]
-  [ 0   0.5   0    0 ]               [ 0    0    0    0 ]
-  [ 0    0    0   0.5]               [ 0    0    0   0.5]
-eigenvalues: ½, ½, +½, −½            eigenvalues: ½, 0, 0, ½
-       NEGATIVE ⇒ ENTANGLED                 all ≥ 0 ⇒ SEPARABLE
-```
-
-The middle block $\begin{psmallmatrix}0&0.5\\0.5&0\end{psmallmatrix}$ has eigenvalues $\pm\frac12$. That single negative eigenvalue is a certificate of entanglement.
 
 ## The correlation function
 
@@ -385,7 +364,7 @@ $$
 S = 0.707107 - (-0.707107) + 0 + 0 = \mathbf{1.414214} = \sqrt2
 $$
 
-# The diagnostic: where exactly they diverge
+## The diagnostic: where exactly they diverge
 
 Put the two states' correlations side by side:
 
@@ -410,7 +389,7 @@ $$
 
 The Bell state is perfectly correlated in *every* basis. The mixture is perfectly correlated in *one* basis and uncorrelated in the conjugate one. That basis-independence is what has no classical analogue, and CHSH is the device that detects it by querying two incompatible bases at once.
 
-# Why no separable state can ever reach 2
+## Why no separable state can ever reach 2
 
 For $\rho_{\text{mix}}$ the local hidden variable model is not hypothetical — write it down:
 
@@ -432,7 +411,7 @@ $$
 
 The bound $2$ is reachable (e.g. $a = 0°, b = 0°, b' = 180°$) — but only by the degenerate choice $B' = -B$, where Bob isn't really using two independent settings. Saturated, never exceeded.
 
-# Summary
+## Summary
 
 | | $|\psi_\otimes\rangle$ | $|0\rangle|0\rangle$ | $\rho_{\text{mix}}$ |
 |---|---|---|---|

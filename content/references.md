@@ -26,7 +26,13 @@
 
 <p id="Bekenstein81">Bekenstein, J.D. (1981). Universal upper bound on the entropy-to-energy ratio for bounded systems. <i>Physical Review D, 23</i>, 287–298. <a href="https://link.aps.org/doi/10.1103/PhysRevD.23.287">https://link.aps.org/doi/10.1103/PhysRevD.23.287</a><a href="http://doi.org/10.1103/PhysRevD.23.287"> http://doi.org/10.1103/PhysRevD.23.287</a></p>
 
+<p id="Bell04">Bell, J.S. (2004). <i>Speakable and Unspeakable in Quantum Mechanics: Collected Papers on Quantum Philosophy. </i> Cambridge University Press. </p>
+
 <p id="Bell64">Bell, J.S. (1964). On the Einstein Podolsky Rosen paradox. <i>Physics Physique Fizika, 1</i>, 195–200. </p>
+
+<p id="Bell66">Bell, J.S. (1966). On the Problem of Hidden Variables in Quantum Mechanics. <i>Reviews of Modern Physics, 38</i>, 447–452. <a href="https://link.aps.org/doi/10.1103/RevModPhys.38.447">https://link.aps.org/doi/10.1103/RevModPhys.38.447</a><a href="http://doi.org/10.1103/RevModPhys.38.447"> http://doi.org/10.1103/RevModPhys.38.447</a></p>
+
+<p id="Bell81">Bell, J.S. (1981). Bertlmann's Socks and the Nature of Reality. <i>Le Journal de Physique Colloques, 42</i>, C2-62. <a href="http://dx.doi.org/10.1051/jphyscol:1981202">http://dx.doi.org/10.1051/jphyscol:1981202</a><a href="http://doi.org/10.1051/jphyscol:1981202"> http://doi.org/10.1051/jphyscol:1981202</a></p>
 
 <p id="BezrukovShaposhnikov15">Bezrukov, F., & Shaposhnikov, M. (2015). Why should we care about the top quark Yukawa coupling? <i>Journal of Experimental and Theoretical Physics, 120</i>, 335–343. <a href="http://arxiv.org/abs/1411.1923">http://arxiv.org/abs/1411.1923</a><a href="http://doi.org/10.1134/S1063776115030152"> http://doi.org/10.1134/S1063776115030152</a></p>
 
@@ -57,6 +63,8 @@
 <p id="ChildsCleveDeottoEtAl03">Childs, A.M., Cleve, R., Deotto, E., Farhi, E., Gutmann, S., & Spielman, D.A. (2003). <i>Exponential algorithmic speedup by a quantum walk. </i>In Proceedings of the thirty-fifth annual ACM symposium on Theory of computing (pp. 59–68). Association for Computing Machinery. <a href="https://dl.acm.org/doi/10.1145/780542.780552">https://dl.acm.org/doi/10.1145/780542.780552</a><a href="http://doi.org/10.1145/780542.780552"> http://doi.org/10.1145/780542.780552</a></p>
 
 <p id="ChiribellaDArianoPerinotti11">Chiribella, G., D’Ariano, G.M., & Perinotti, P. (2011). Informational derivation of quantum theory. <i>Physical Review A, 84</i>, 012311. <a href="https://link.aps.org/doi/10.1103/PhysRevA.84.012311">https://link.aps.org/doi/10.1103/PhysRevA.84.012311</a><a href="http://doi.org/10.1103/PhysRevA.84.012311"> http://doi.org/10.1103/PhysRevA.84.012311</a></p>
+
+<p id="ClauserHorneShimonyEtAl69">Clauser, J.F., Horne, M.A., Shimony, A., & Holt, R.A. (1969). Proposed Experiment to Test Local Hidden-Variable Theories. <i>Physical Review Letters, 23</i>, 880–884. <a href="https://link.aps.org/doi/10.1103/PhysRevLett.23.880">https://link.aps.org/doi/10.1103/PhysRevLett.23.880</a><a href="http://doi.org/10.1103/PhysRevLett.23.880"> http://doi.org/10.1103/PhysRevLett.23.880</a></p>
 
 <p id="Collaboration26">Collaboration, A. (2026). Measurement of the top-quark Yukawa coupling from $t\overline{t}$ production in the lepton+jets final state using $pp$ collisions at $\sqrt{s} = 13$ TeV with the ATLAS detector. <i>Journal of High Energy Physics, 2026</i>, 117. <a href="http://arxiv.org/abs/2509.16039">http://arxiv.org/abs/2509.16039</a><a href="http://doi.org/10.1007/JHEP01(2026)117"> http://doi.org/10.1007/JHEP01(2026)117</a></p>
 
@@ -140,6 +148,8 @@
 
 <p id="Gingrich04">Gingrich, D.M. (2004). <i>Phys 512: Advanced Quantum Mechanics II. </i> University of Alberta, Department of Physics. </p>
 
+<p id="GiustinaVersteeghWengerowskyEtAl15">Giustina, M., Versteegh, M.A.M., Wengerowsky, S., Handsteiner, J., Hochrainer, A., Phelan, K., Steinlechner, F., Kofler, J., Larsson, J., Abellán, C., Amaya, W., Pruneri, V., Mitchell, M.W., Beyer, J., Gerrits, T., Lita, A.E., Shalm, L.K., Nam, S.W., Scheidl, T., Ursin, R., Wittmann, B., & Zeilinger, A. (2015). Significant-Loophole-Free Test of Bell's Theorem with Entangled Photons. <i>Physical Review Letters, 115</i>, 250401. <a href="https://link.aps.org/doi/10.1103/PhysRevLett.115.250401">https://link.aps.org/doi/10.1103/PhysRevLett.115.250401</a><a href="http://doi.org/10.1103/PhysRevLett.115.250401"> http://doi.org/10.1103/PhysRevLett.115.250401</a></p>
+
 <p id="Gleason75">Gleason, A.M. (1975). Measures on the Closed Subspaces of a Hilbert Space. In C.A. Hooker (Ed.), <i>The Logico-Algebraic Approach to Quantum Mechanics: Volume I: Historical Evolution</i> (pp. 123–133). Springer Netherlands. <a href="https://doi.org/10.1007/978-94-010-1795-4_7">https://doi.org/10.1007/978-94-010-1795-4_7</a><a href="http://doi.org/10.1007/978-94-010-1795-4_7"> http://doi.org/10.1007/978-94-010-1795-4_7</a></p>
 
 <p id="Goldstone61">Goldstone, J. (1961). Field theories with « Superconductor » solutions. <i>Il Nuovo Cimento (1955-1965), 19</i>, 154–164. <a href="https://doi.org/10.1007/BF02812722">https://doi.org/10.1007/BF02812722</a><a href="http://doi.org/10.1007/BF02812722"> http://doi.org/10.1007/BF02812722</a></p>
@@ -167,6 +177,8 @@
 <p id="Hansson00">Hansson, J. (2000). Nonlinear gauge interactions - A solution to the "measurement problem" in quantum mechanics? <a href="http://arxiv.org/abs/quant-ph/0003083">http://arxiv.org/abs/quant-ph/0003083</a><a href="http://doi.org/10.48550/arXiv.quant-ph/0003083"> http://doi.org/10.48550/arXiv.quant-ph/0003083</a></p>
 
 <p id="HarriganSpekkens10">Harrigan, N., & Spekkens, R.W. (2010). Einstein, Incompleteness, and the Epistemic View of Quantum States. <i>Foundations of Physics, 40</i>, 125–157. <a href="https://doi.org/10.1007/s10701-009-9347-0">https://doi.org/10.1007/s10701-009-9347-0</a><a href="http://doi.org/10.1007/s10701-009-9347-0"> http://doi.org/10.1007/s10701-009-9347-0</a></p>
+
+<p id="HensenBernienDreauEtAl15">Hensen, B., Bernien, H., Dréau, A.E., Reiserer, A., Kalb, N., Blok, M.S., Ruitenberg, J., Vermeulen, R.F.L., Schouten, R.N., Abellán, C., Amaya, W., Pruneri, V., Mitchell, M.W., Markham, M., Twitchen, D.J., Elkouss, D., Wehner, S., Taminiau, T.H., & Hanson, R. (2015). Loophole-free Bell inequality violation using electron spins separated by 1.3 kilometres. <i>Nature, 526</i>, 682–686. <a href="https://www.nature.com/articles/nature15759">https://www.nature.com/articles/nature15759</a><a href="http://doi.org/10.1038/nature15759"> http://doi.org/10.1038/nature15759</a></p>
 
 <p id="Hestenes08">Hestenes, D. (2008). Electron time, mass and zitter. </p>
 
@@ -200,9 +212,13 @@
 
 <p id="JaynesCummings63">Jaynes, E., & Cummings, F. (1963). Comparison of quantum and semiclassical radiation theories with application to the beam maser. <i>Proceedings of the IEEE, 51</i>, 89–109. <a href="https://ieeexplore.ieee.org/abstract/document/1443594">https://ieeexplore.ieee.org/abstract/document/1443594</a><a href="http://doi.org/10.1109/PROC.1963.1664"> http://doi.org/10.1109/PROC.1963.1664</a></p>
 
+<p id="KarimiBoyd15">Karimi, E., & Boyd, R.W. (2015). Classical entanglement? <i>Science, 350</i>, 1172–1173. <a href="https://www.science.org/doi/full/10.1126/science.aad7174">https://www.science.org/doi/full/10.1126/science.aad7174</a><a href="http://doi.org/10.1126/science.aad7174"> http://doi.org/10.1126/science.aad7174</a></p>
+
 <p id="Kempe09">Kempe, J. (2009). Quantum random walks: an introductory overview: Contemporary Physics: Vol 50 , No 1 - Get Access. <i>Contemporary Physics, 50</i>, 339–359. <a href="https://www.tandfonline.com/doi/abs/10.1080/00107510902734722">https://www.tandfonline.com/doi/abs/10.1080/00107510902734722</a><a href="http://doi.org/10.1080/00107510902734722"> http://doi.org/10.1080/00107510902734722</a></p>
 
 <p id="Khrennikov01">Khrennikov, A. (2001). Linear representations of probabilistic transformations induced by context transitions. <i>Journal of Physics A: Mathematical and General, 34</i>, 9965. <a href="https://doi.org/10.1088/0305-4470/34/47/304">https://doi.org/10.1088/0305-4470/34/47/304</a><a href="http://doi.org/10.1088/0305-4470/34/47/304"> http://doi.org/10.1088/0305-4470/34/47/304</a></p>
+
+<p id="Khrennikov06">Khrennikov, A. (2006). Prequantum Classical Statistical Field Theory: Complex Representation, Hamilton-Schrödinger Equation, and Interpretation of Stationary States. <i>Foundations of Physics Letters, 19</i>, 299–319. <a href="https://doi.org/10.1007/s10702-006-0796-9">https://doi.org/10.1007/s10702-006-0796-9</a><a href="http://doi.org/10.1007/s10702-006-0796-9"> http://doi.org/10.1007/s10702-006-0796-9</a></p>
 
 <p id="KibblePolkinghorne58">Kibble, T.W.B., & Polkinghorne, J.C. (1958). Higher order spinor Lagrangians. <i>Il Nuovo Cimento (1955-1965), 8</i>, 74–83. <a href="https://doi.org/10.1007/BF02828852">https://doi.org/10.1007/BF02828852</a><a href="http://doi.org/10.1007/BF02828852"> http://doi.org/10.1007/BF02828852</a></p>
 
@@ -294,6 +310,10 @@
 
 <p id="PuseyBarrettRudolph12">Pusey, M.F., Barrett, J., & Rudolph, T. (2012). On the reality of the quantum state. <i>Nature Physics, 8</i>, 475–478. <a href="https://www.nature.com/articles/nphys2309">https://www.nature.com/articles/nphys2309</a><a href="http://doi.org/10.1038/nphys2309"> http://doi.org/10.1038/nphys2309</a></p>
 
+<p id="QianEberly11">Qian, X., & Eberly, J.H. (2011). Entanglement and classical polarization states. <i>Optics Letters, 36</i>, 4110–4112. <a href="https://opg.optica.org/ol/abstract.cfm?uri=ol-36-20-4110">https://opg.optica.org/ol/abstract.cfm?uri=ol-36-20-4110</a><a href="http://doi.org/10.1364/OL.36.004110"> http://doi.org/10.1364/OL.36.004110</a></p>
+
+<p id="QianLittleHowellEtAl15">Qian, X., Little, B., Howell, J.C., & Eberly, J.H. (2015). Shifting the quantum-classical boundary: theory and experiment for statistically classical optical fields. <i>Optica, 2</i>, 611–615. <a href="https://opg.optica.org/optica/abstract.cfm?uri=optica-2-7-611">https://opg.optica.org/optica/abstract.cfm?uri=optica-2-7-611</a><a href="http://doi.org/10.1364/OPTICA.2.000611"> http://doi.org/10.1364/OPTICA.2.000611</a></p>
+
 <p id="Radford03">Radford, C.J. (2003). The stationary Maxwell–Dirac equations. <i>Journal of Physics A: Mathematical and General, 36</i>, 5663. <a href="https://doi.org/10.1088/0305-4470/36/20/321">https://doi.org/10.1088/0305-4470/36/20/321</a><a href="http://doi.org/10.1088/0305-4470/36/20/321"> http://doi.org/10.1088/0305-4470/36/20/321</a></p>
 
 <p id="ReidDrummond26">Reid, M.D., & Drummond, P.D. (2026). Forward-backward stochastic simulations: $Q$-based model for measurement and Bell nonlocality consistent with weak local realistic premises. <i>Physical Review A, 113</i>, 012210. <a href="https://link.aps.org/doi/10.1103/qdyg-2nv4">https://link.aps.org/doi/10.1103/qdyg-2nv4</a><a href="http://doi.org/10.1103/qdyg-2nv4"> http://doi.org/10.1103/qdyg-2nv4</a></p>
@@ -326,6 +346,8 @@
 
 <p id="Sebens22">Sebens, C.T. (2022). The fundamentality of fields. <i>Synthese, 200</i>, 380. <a href="https://doi.org/10.1007/s11229-022-03844-2">https://doi.org/10.1007/s11229-022-03844-2</a><a href="http://doi.org/10.1007/s11229-022-03844-2"> http://doi.org/10.1007/s11229-022-03844-2</a></p>
 
+<p id="ShalmMeyer-ScottChristensenEtAl15">Shalm, L.K., Meyer-Scott, E., Christensen, B.G., Bierhorst, P., Wayne, M.A., Stevens, M.J., Gerrits, T., Glancy, S., Hamel, D.R., Allman, M.S., Coakley, K.J., Dyer, S.D., Hodge, C., Lita, A.E., Verma, V.B., Lambrocco, C., Tortorici, E., Migdall, A.L., Zhang, Y., Kumor, D.R., Farr, W.H., Marsili, F., Shaw, M.D., Stern, J.A., Abellán, C., Amaya, W., Pruneri, V., Jennewein, T., Mitchell, M.W., Kwiat, P.G., Bienfang, J.C., Mirin, R.P., Knill, E., & Nam, S.W. (2015). Strong Loophole-Free Test of Local Realism. <i>Physical Review Letters, 115</i>, 250402. <a href="https://link.aps.org/doi/10.1103/PhysRevLett.115.250402">https://link.aps.org/doi/10.1103/PhysRevLett.115.250402</a><a href="http://doi.org/10.1103/PhysRevLett.115.250402"> http://doi.org/10.1103/PhysRevLett.115.250402</a></p>
+
 <p id="Shimony84">Shimony, A. (1984). Contextual Hidden Variables Theories and Bell's Inequalities. <i>The British Journal for the Philosophy of Science, 35</i>, 25–45. <a href="https://doi.org/10.1093/bjps/35.1.25">https://doi.org/10.1093/bjps/35.1.25</a><a href="http://doi.org/10.1093/bjps/35.1.25"> http://doi.org/10.1093/bjps/35.1.25</a></p>
 
 <p id="Shimony93">Shimony, A. (1993). <i>The Search for a Naturalistic World View: Volume 1. </i> Cambridge University Press. </p>
@@ -333,6 +355,8 @@
 <p id="Sidharth09">Sidharth, B.G. (2009). Revisiting Zitterbewegung. <i>International Journal of Theoretical Physics, 48</i>, 497–506. <a href="https://doi.org/10.1007/s10773-008-9825-8">https://doi.org/10.1007/s10773-008-9825-8</a><a href="http://doi.org/10.1007/s10773-008-9825-8"> http://doi.org/10.1007/s10773-008-9825-8</a></p>
 
 <p id="Spekkens05">Spekkens, R.W. (2005). Contextuality for preparations, transformations, and unsharp measurements. <i>Physical Review A, 71</i>, 052108. <a href="https://link.aps.org/doi/10.1103/PhysRevA.71.052108">https://link.aps.org/doi/10.1103/PhysRevA.71.052108</a><a href="http://doi.org/10.1103/PhysRevA.71.052108"> http://doi.org/10.1103/PhysRevA.71.052108</a></p>
+
+<p id="Spreeuw98">Spreeuw, R.J.C. (1998). A Classical Analogy of Entanglement. <i>Foundations of Physics, 28</i>, 361–374. <a href="https://doi.org/10.1023/A:1018703709245">https://doi.org/10.1023/A:1018703709245</a><a href="http://doi.org/10.1023/A:1018703709245"> http://doi.org/10.1023/A:1018703709245</a></p>
 
 <p id="Stoica25">Stoica, O.C. (2025). Born Rule: Quantum Probability as Classical Probability. <i>International Journal of Theoretical Physics, 64</i>, 117. <a href="https://doi.org/10.1007/s10773-025-05979-7">https://doi.org/10.1007/s10773-025-05979-7</a><a href="http://doi.org/10.1007/s10773-025-05979-7"> http://doi.org/10.1007/s10773-025-05979-7</a></p>
 
