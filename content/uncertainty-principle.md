@@ -21,4 +21,5 @@ $$
 
 Where $\sigma_x$ is the uncertainty (standard deviation) of position, and $\sigma_p$ is the uncertainty in momentum, and the best-case scenario is that the are equal to the reduced Plank constant $\hbar$ over 2. As one goes down, the other must go up to maintain this relationship.
 
+This uncertainty ultimately derives from the [[contextual]] nature of the quantum world: we cannot measure the state of the system without irrevocably altering this state. And this is all because the state is made in part of waves, which are fundamentally "squishy", distributed things that don't sit still and are impossible to measure without disturbing them.
 

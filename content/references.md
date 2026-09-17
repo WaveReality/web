@@ -1,6 +1,10 @@
+<p id="Aaronson04">Aaronson, S. (2004). Multilinear Formulas and Skepticism of Quantum Computing. <a href="http://arxiv.org/abs/quant-ph/0311039">http://arxiv.org/abs/quant-ph/0311039</a><a href="http://doi.org/10.48550/arXiv.quant-ph/0311039"> http://doi.org/10.48550/arXiv.quant-ph/0311039</a></p>
+
 <p id="AharonovDavidovichZagury93">Aharonov, Y., Davidovich, L., & Zagury, N. (1993). Quantum random walks. <i>Physical Review A, 48</i>, 1687–1690. <a href="https://link.aps.org/doi/10.1103/PhysRevA.48.1687">https://link.aps.org/doi/10.1103/PhysRevA.48.1687</a><a href="http://doi.org/10.1103/PhysRevA.48.1687"> http://doi.org/10.1103/PhysRevA.48.1687</a></p>
 
 <p id="AharonovRohrlich08">Aharonov, Y., & Rohrlich, D. (2008). <i>Quantum Paradoxes: Quantum Theory for the Perplexed. </i> John Wiley & Sons. </p>
+
+<p id="AndersenMadsenReicheltEtAl15">Andersen, A., Madsen, J., Reichelt, C., Rosenlund Ahl, S., Lautrup, B., Ellegaard, C., Levinsen, M.T., & Bohr, T. (2015). Double-slit experiment with single wave-driven particles and its relation to quantum mechanics. <i>Physical Review E, 92</i>, 013006. <a href="https://link.aps.org/doi/10.1103/PhysRevE.92.013006">https://link.aps.org/doi/10.1103/PhysRevE.92.013006</a><a href="http://doi.org/10.1103/PhysRevE.92.013006"> http://doi.org/10.1103/PhysRevE.92.013006</a></p>
 
 <p id="Anderson63">Anderson, P.W. (1963). Plasmons, Gauge Invariance, and Mass. <i>Physical Review, 130</i>, 439–442. <a href="https://link.aps.org/doi/10.1103/PhysRev.130.439">https://link.aps.org/doi/10.1103/PhysRev.130.439</a><a href="http://doi.org/10.1103/PhysRev.130.439"> http://doi.org/10.1103/PhysRev.130.439</a></p>
 
@@ -10,11 +14,15 @@
 
 <p id="BabinFigotin14">Babin, A., & Figotin, A. (2014). Neoclassical theory of elementary charges with spin of 1/2. <i>Journal of Mathematical Physics, 55</i>, 082901. <a href="https://doi.org/10.1063/1.4893336">https://doi.org/10.1063/1.4893336</a><a href="http://doi.org/10.1063/1.4893336"> http://doi.org/10.1063/1.4893336</a></p>
 
+<p id="BacciagaluppiValentini09">Bacciagaluppi, G., & Valentini, A. (2009). <i>Quantum Theory at the Crossroads: Reconsidering the 1927 Solvay Conference. </i> Cambridge University Press. </p>
+
 <p id="Baez20">Baez, J.C. (2020). Struggles with the Continuum. <a href="http://arxiv.org/abs/1609.01421">http://arxiv.org/abs/1609.01421</a><a href="http://doi.org/10.48550/arXiv.1609.01421"> http://doi.org/10.48550/arXiv.1609.01421</a></p>
 
 <p id="BallentineJarrett87">Ballentine, L.E., & Jarrett, J.P. (1987). Bell’s theorem: Does quantum mechanics contradict relativity? <i>American Journal of Physics, 55</i>, 696–701. <a href="https://doi.org/10.1119/1.15059">https://doi.org/10.1119/1.15059</a><a href="http://doi.org/10.1119/1.15059"> http://doi.org/10.1119/1.15059</a></p>
 
 <p id="BancalPironioAcinEtAl12">Bancal, J., Pironio, S., Acín, A., Liang, Y., Scarani, V., & Gisin, N. (2012). Quantum non-locality based on finite-speed causal influences leads to superluminal signalling. <i>Nature Physics, 8</i>, 867–870. <a href="https://www.nature.com/articles/nphys2460">https://www.nature.com/articles/nphys2460</a><a href="http://doi.org/10.1038/nphys2460"> http://doi.org/10.1038/nphys2460</a></p>
+
+<p id="Barrett21">Barrett, J.A. (2021). Situated observation in Bohmian mechanics. <i>Studies in History and Philosophy of Science, 88</i>, 345–357. <a href="https://www.sciencedirect.com/science/article/pii/S0039368121000935">https://www.sciencedirect.com/science/article/pii/S0039368121000935</a><a href="http://doi.org/10.1016/j.shpsa.2021.06.009"> http://doi.org/10.1016/j.shpsa.2021.06.009</a></p>
 
 <p id="BarutBracken81">Barut, A.O., & Bracken, A.J. (1981). Zitterbewegung and the internal geometry of the electron. <i>Physical Review D, 23</i>, 2454–2463. <a href="https://link.aps.org/doi/10.1103/PhysRevD.23.2454">https://link.aps.org/doi/10.1103/PhysRevD.23.2454</a><a href="http://doi.org/10.1103/PhysRevD.23.2454"> http://doi.org/10.1103/PhysRevD.23.2454</a></p>
 
@@ -34,6 +42,8 @@
 
 <p id="Bell81">Bell, J.S. (1981). Bertlmann's Socks and the Nature of Reality. <i>Le Journal de Physique Colloques, 42</i>, C2-62. <a href="http://dx.doi.org/10.1051/jphyscol:1981202">http://dx.doi.org/10.1051/jphyscol:1981202</a><a href="http://doi.org/10.1051/jphyscol:1981202"> http://doi.org/10.1051/jphyscol:1981202</a></p>
 
+<p id="Bell82">Bell, J.S. (1982). On the impossible pilot wave. <i>Foundations of Physics, 12</i>, 989–999. <a href="https://doi.org/10.1007/BF01889272">https://doi.org/10.1007/BF01889272</a><a href="http://doi.org/10.1007/BF01889272"> http://doi.org/10.1007/BF01889272</a></p>
+
 <p id="BezrukovShaposhnikov15">Bezrukov, F., & Shaposhnikov, M. (2015). Why should we care about the top quark Yukawa coupling? <i>Journal of Experimental and Theoretical Physics, 120</i>, 335–343. <a href="http://arxiv.org/abs/1411.1923">http://arxiv.org/abs/1411.1923</a><a href="http://doi.org/10.1134/S1063776115030152"> http://doi.org/10.1134/S1063776115030152</a></p>
 
 <p id="Bialynicki-Birula94">Bialynicki-Birula, I. (1994). Weyl, Dirac, and Maxwell equations on a lattice as unitary cellular automata. <i>Physical Review D, 49</i>, 6920–6927. <a href="https://link.aps.org/doi/10.1103/PhysRevD.49.6920">https://link.aps.org/doi/10.1103/PhysRevD.49.6920</a><a href="http://doi.org/10.1103/PhysRevD.49.6920"> http://doi.org/10.1103/PhysRevD.49.6920</a></p>
@@ -42,13 +52,39 @@
 
 <p id="Bohm52">Bohm, D. (1952). A Suggested Interpretation of the Quantum Theory in Terms of "Hidden" Variables. I. <i>Physical Review, 85</i>, 166–179. <a href="https://link.aps.org/doi/10.1103/PhysRev.85.166">https://link.aps.org/doi/10.1103/PhysRev.85.166</a><a href="http://doi.org/10.1103/PhysRev.85.166"> http://doi.org/10.1103/PhysRev.85.166</a></p>
 
+<p id="Bohm52a">Bohm, D. (1952). A Suggested Interpretation of the Quantum Theory in Terms of "Hidden" Variables. II. <i>Physical Review, 85</i>, 180–193. <a href="https://link.aps.org/doi/10.1103/PhysRev.85.180">https://link.aps.org/doi/10.1103/PhysRev.85.180</a><a href="http://doi.org/10.1103/PhysRev.85.180"> http://doi.org/10.1103/PhysRev.85.180</a></p>
+
+<p id="BohmHiley75">Bohm, D.J., & Hiley, B.J. (1975). On the intuitive understanding of nonlocality as implied by quantum theory. <i>Foundations of Physics, 5</i>, 93–109. <a href="https://doi.org/10.1007/BF01100319">https://doi.org/10.1007/BF01100319</a><a href="http://doi.org/10.1007/BF01100319"> http://doi.org/10.1007/BF01100319</a></p>
+
+<p id="BohmVigier54">Bohm, D., & Vigier, J.P. (1954). Model of the Causal Interpretation of Quantum Theory in Terms of a Fluid with Irregular Fluctuations. <i>Physical Review, 96</i>, 208–216. <a href="https://link.aps.org/doi/10.1103/PhysRev.96.208">https://link.aps.org/doi/10.1103/PhysRev.96.208</a><a href="http://doi.org/10.1103/PhysRev.96.208"> http://doi.org/10.1103/PhysRev.96.208</a></p>
+
+<p id="Borghesi17">Borghesi, C. (2017). Equivalent Quantum Equations in a System Inspired by Bouncing Droplets Experiments. <i>Foundations of Physics, 47</i>, 933–958. <a href="https://doi.org/10.1007/s10701-017-0103-6">https://doi.org/10.1007/s10701-017-0103-6</a><a href="http://doi.org/10.1007/s10701-017-0103-6"> http://doi.org/10.1007/s10701-017-0103-6</a></p>
+
 <p id="BoussoChandrasekaranShahbazi-Moghaddam20">Bousso, R., Chandrasekaran, V., & Shahbazi-Moghaddam, A. (2020). Ignorance is Cheap: From Black Hole Entropy To Energy-Minimizing States In QFT. <i>Physical Review D, 101</i>, 046001. <a href="http://arxiv.org/abs/1906.05299">http://arxiv.org/abs/1906.05299</a><a href="http://doi.org/10.1103/PhysRevD.101.046001"> http://doi.org/10.1103/PhysRevD.101.046001</a></p>
 
 <p id="BrillGoodman67">Brill, O.L., & Goodman, B. (1967). Causality in the Coulomb Gauge. <i>American Journal of Physics, 35</i>, 832–837. <a href="https://doi.org/10.1119/1.1974261">https://doi.org/10.1119/1.1974261</a><a href="http://doi.org/10.1119/1.1974261"> http://doi.org/10.1119/1.1974261</a></p>
 
+<p id="Broglie23">Broglie, L. (1923). Ondes et quanta. <i>Comptes Rendus, 177</i>, 507–510. <a href="https://cir.nii.ac.jp/crid/1570009750287239168">https://cir.nii.ac.jp/crid/1570009750287239168</a></p>
+
+<p id="Broglie26">Broglie, L. (1926). Remarques sur la nouvelle mécanique ondulatoire. <i>CR Acad. Sci, 183</i>, 272–274. </p>
+
+<p id="Broglie56">Broglie, L. (1956). <i>Une tentative d'interprétation causale et non linéaire de la mécanique ondulatoire:(la théorie de la double solution). </i> Gauthier-Villars. </p>
+
+<p id="Broglie60">Broglie, L. (1960). <i>Non-linear wave mechanics : a causal interpretation. </i> Elsevier Pub. Co. <a href="https://cir.nii.ac.jp/crid/1970867909811403312/holdings">https://cir.nii.ac.jp/crid/1970867909811403312/holdings</a></p>
+
+<p id="Broglie70">Broglie, L. (1970). The reinterpretation of wave mechanics. <i>Foundations of Physics, 1</i>, 5–15. <a href="https://doi.org/10.1007/BF00708650">https://doi.org/10.1007/BF00708650</a><a href="http://doi.org/10.1007/BF00708650"> http://doi.org/10.1007/BF00708650</a></p>
+
+<p id="Broglie87">Broglie, L. (1987). Interpretation of Quantum Mechanics by the Double Solution Theory. <i>Annales de la Fondation Louis de Broglie, 12</i>, 399–420. <a href="https://doi.org/10.1007/BF00708650">https://doi.org/10.1007/BF00708650</a><a href="http://doi.org/10.1007/BF00708650"> http://doi.org/10.1007/BF00708650</a></p>
+
 <p id="Brown58">Brown, L.M. (1958). Two-Component Fermion Theory. <i>Physical Review, 111</i>, 957–964. <a href="https://link.aps.org/doi/10.1103/PhysRev.111.957">https://link.aps.org/doi/10.1103/PhysRev.111.957</a><a href="http://doi.org/10.1103/PhysRev.111.957"> http://doi.org/10.1103/PhysRev.111.957</a></p>
 
 <p id="BudiyonoRohrlich17">Budiyono, A., & Rohrlich, D. (2017). Quantum mechanics as classical statistical mechanics with an ontic extension and an epistemic restriction. <i>Nature Communications, 8</i>, 1306. <a href="https://www.nature.com/articles/s41467-017-01375-w">https://www.nature.com/articles/s41467-017-01375-w</a><a href="http://doi.org/10.1038/s41467-017-01375-w"> http://doi.org/10.1038/s41467-017-01375-w</a></p>
+
+<p id="BushFrumkinSaenz24">Bush, J.W.M., Frumkin, V., & Sáenz, P.J. (2024). Perspectives on pilot-wave hydrodynamics. <i>Applied Physics Letters, 125</i>, 030503. <a href="https://doi.org/10.1063/5.0210055">https://doi.org/10.1063/5.0210055</a><a href="http://doi.org/10.1063/5.0210055"> http://doi.org/10.1063/5.0210055</a></p>
+
+<p id="BushOza21">Bush, J.W.M., & Oza, A.U. (2021). Hydrodynamic quantum analogs. <i>Reports on Progress in Physics, 84</i>, 017001. <a href="https://doi.org/10.1088/1361-6633/abc22c">https://doi.org/10.1088/1361-6633/abc22c</a><a href="http://doi.org/10.1088/1361-6633/abc22c"> http://doi.org/10.1088/1361-6633/abc22c</a></p>
+
+<p id="BushPapatryfonosFrumkin24">Bush, J.W.M., Papatryfonos, K., & Frumkin, V. (2024). The State of Play in Hydrodynamic Quantum Analogs. In P. Castro, J.W.M. Bush, & J. Croca (Eds.), <i>Advances in Pilot Wave Theory: From Experiments to Foundations</i> (pp. 7–34). Springer International Publishing. <a href="https://doi.org/10.1007/978-3-031-49861-9_2">https://doi.org/10.1007/978-3-031-49861-9_2</a><a href="http://doi.org/10.1007/978-3-031-49861-9_2"> http://doi.org/10.1007/978-3-031-49861-9_2</a></p>
 
 <p id="Cardoso93">Cardoso, J.G. (1993). Complexified two-component spinor theory of Dirac-Weyl fields. <i>Physica Scripta, 47</i>, 708. <a href="https://doi.org/10.1088/0031-8949/47/6/002">https://doi.org/10.1088/0031-8949/47/6/002</a><a href="http://doi.org/10.1088/0031-8949/47/6/002"> http://doi.org/10.1088/0031-8949/47/6/002</a></p>
 
@@ -66,7 +102,11 @@
 
 <p id="ClauserHorneShimonyEtAl69">Clauser, J.F., Horne, M.A., Shimony, A., & Holt, R.A. (1969). Proposed Experiment to Test Local Hidden-Variable Theories. <i>Physical Review Letters, 23</i>, 880–884. <a href="https://link.aps.org/doi/10.1103/PhysRevLett.23.880">https://link.aps.org/doi/10.1103/PhysRevLett.23.880</a><a href="http://doi.org/10.1103/PhysRevLett.23.880"> http://doi.org/10.1103/PhysRevLett.23.880</a></p>
 
+<p id="ColinDurtWillox17">Colin, S., Durt, T., & Willox, R. (2017). L. de Broglie's double solution program 90 years later. <i>Annales de la Fondation Louis de Broglie, 42</i>, 19. <a href="https://hal.science/hal-02437276">https://hal.science/hal-02437276</a></p>
+
 <p id="Collaboration26">Collaboration, A. (2026). Measurement of the top-quark Yukawa coupling from $t\overline{t}$ production in the lepton+jets final state using $pp$ collisions at $\sqrt{s} = 13$ TeV with the ATLAS detector. <i>Journal of High Energy Physics, 2026</i>, 117. <a href="http://arxiv.org/abs/2509.16039">http://arxiv.org/abs/2509.16039</a><a href="http://doi.org/10.1007/JHEP01(2026)117"> http://doi.org/10.1007/JHEP01(2026)117</a></p>
+
+<p id="CouderProtiereFortEtAl05">Couder, Y., Protière, S., Fort, E., & Boudaoud, A. (2005). Walking and orbiting droplets. <i>Nature, 437</i>, 208–208. <a href="https://www.nature.com/articles/437208a">https://www.nature.com/articles/437208a</a><a href="http://doi.org/10.1038/437208a"> http://doi.org/10.1038/437208a</a></p>
 
 <p id="Crisp96">Crisp, M.D. (1996). Relativistic neoclassical radiation theory. <i>Physical Review A, 54</i>, 87–92. <a href="https://link.aps.org/doi/10.1103/PhysRevA.54.87">https://link.aps.org/doi/10.1103/PhysRevA.54.87</a><a href="http://doi.org/10.1103/PhysRevA.54.87"> http://doi.org/10.1103/PhysRevA.54.87</a></p>
 
@@ -76,11 +116,15 @@
 
 <p id="CufaroPetroniVigier79">Cufaro Petroni, N., & Vigier, J.P. (1979). Markov process at the velocity of light: The Klein-Gordon statistic. <i>International Journal of Theoretical Physics, 18</i>, 807–818. <a href="https://ui.adsabs.harvard.edu/abs/1979IJTP...18..807C">https://ui.adsabs.harvard.edu/abs/1979IJTP...18..807C</a><a href="http://doi.org/10.1007/BF00670459"> http://doi.org/10.1007/BF00670459</a></p>
 
+<p id="DaganBush20">Dagan, Y., & Bush, J.W.M. (2020). Hydrodynamic quantum field theory: the free particle. <i>Comptes Rendus. Mécanique, 348</i>, 555–571. <a href="https://comptes-rendus.academie-sciences.fr/mecanique/articles/10.5802/crmeca.34/">https://comptes-rendus.academie-sciences.fr/mecanique/articles/10.5802/crmeca.34/</a><a href="http://doi.org/10.5802/crmeca.34"> http://doi.org/10.5802/crmeca.34</a></p>
+
 <p id="DAriano17">D’Ariano, G.M. (2017). Physics Without Physics. <i>International Journal of Theoretical Physics, 56</i>, 97–128. <a href="https://doi.org/10.1007/s10773-016-3172-y">https://doi.org/10.1007/s10773-016-3172-y</a><a href="http://doi.org/10.1007/s10773-016-3172-y"> http://doi.org/10.1007/s10773-016-3172-y</a></p>
+
+<p id="DarrowBush24">Darrow, D., & Bush, J.W.M. (2024). Revisiting de Broglie’s Double-Solution Pilot-Wave Theory with a Lorentz-Covariant Lagrangian Framework. <i>Symmetry, 16</i>, 149. <a href="https://www.mdpi.com/2073-8994/16/2/149">https://www.mdpi.com/2073-8994/16/2/149</a><a href="http://doi.org/10.3390/sym16020149"> http://doi.org/10.3390/sym16020149</a></p>
 
 <p id="DasBhowmikParasharBanik21">Das Bhowmik, A., Parashar, P., & Banik, M. (2021). Bell nonlocality and the reality of the quantum wave function. <i>Physical Review A, 104</i>, 022217. <a href="https://link.aps.org/doi/10.1103/PhysRevA.104.022217">https://link.aps.org/doi/10.1103/PhysRevA.104.022217</a><a href="http://doi.org/10.1103/PhysRevA.104.022217"> http://doi.org/10.1103/PhysRevA.104.022217</a></p>
 
-<p id="DeBroglie26">De Broglie, L. (1926). Remarques sur la nouvelle mécanique ondulatoire. <i>CR Acad. Sci, 183</i>, 272–274. </p>
+<p id="DaumerDurrGoldsteinEtAl96">Daumer, M., Dürr, D., Goldstein, S., & Zanghì, N. (1996). Naive Realism about Operators. <a href="http://arxiv.org/abs/quant-ph/9601013">http://arxiv.org/abs/quant-ph/9601013</a><a href="http://doi.org/10.48550/arXiv.quant-ph/9601013"> http://doi.org/10.48550/arXiv.quant-ph/9601013</a></p>
 
 <p id="DeLaPenaCetto96">De La Peña, L., & Cetto, A.M. (1996). <i>The Quantum Dice. </i> Springer Netherlands. <a href="http://link.springer.com/10.1007/978-94-015-8723-5">http://link.springer.com/10.1007/978-94-015-8723-5</a><a href="http://doi.org/10.1007/978-94-015-8723-5"> http://doi.org/10.1007/978-94-015-8723-5</a></p>
 
@@ -90,6 +134,10 @@
 
 <p id="DreinerHaberMartin10">Dreiner, H.K., Haber, H.E., & Martin, S.P. (2010). Two-component spinor techniques and Feynman rules for quantum field theory and supersymmetry. <i>Physics Reports, 494</i>, 1–196. <a href="https://www.sciencedirect.com/science/article/pii/S0370157310001171">https://www.sciencedirect.com/science/article/pii/S0370157310001171</a><a href="http://doi.org/10.1016/j.physrep.2010.05.002"> http://doi.org/10.1016/j.physrep.2010.05.002</a></p>
 
+<p id="Drezet21">Drezet, A. (2021). The guidance theorem of de Broglie. <i>Annales de la Fondation Louis de Broglie, 46</i>, 65–86. <a href="https://hal.science/hal-03025694">https://hal.science/hal-03025694</a></p>
+
+<p id="Drezet23">Drezet, A. (2023). Quantum Solitodynamics: Non-linear Wave Mechanics and Pilot-Wave Theory. <i>Foundations of Physics, 53</i>, 31. <a href="https://doi.org/10.1007/s10701-023-00671-4">https://doi.org/10.1007/s10701-023-00671-4</a><a href="http://doi.org/10.1007/s10701-023-00671-4"> http://doi.org/10.1007/s10701-023-00671-4</a></p>
+
 <p id="Dudley65">Dudley, R.M. (1965). Lorentz-invariant Markov processes in relativistic phase space. <i>Arkiv för Matematik, 6</i>, 241–268. <a href="https://doi.org/10.1007/BF02592032">https://doi.org/10.1007/BF02592032</a><a href="http://doi.org/10.1007/BF02592032"> http://doi.org/10.1007/BF02592032</a></p>
 
 <p id="Dudley73">Dudley, R.M. (1973). Asymptotics of Some Relativistic Markov Processes. <i>Proceedings of the National Academy of Sciences, 70</i>, 3551–3555. <a href="https://www.pnas.org/doi/abs/10.1073/pnas.70.12.3551">https://www.pnas.org/doi/abs/10.1073/pnas.70.12.3551</a><a href="http://doi.org/10.1073/pnas.70.12.3551"> http://doi.org/10.1073/pnas.70.12.3551</a></p>
@@ -98,9 +146,15 @@
 
 <p id="DunkelHanggi05a">Dunkel, J., & Hänggi, P. (2005). Theory of relativistic Brownian motion: The (1+1)-dimensional case. <i>Physical Review E, 71</i>, 016124. <a href="https://link.aps.org/doi/10.1103/PhysRevE.71.016124">https://link.aps.org/doi/10.1103/PhysRevE.71.016124</a><a href="http://doi.org/10.1103/PhysRevE.71.016124"> http://doi.org/10.1103/PhysRevE.71.016124</a></p>
 
+<p id="DureyBush20">Durey, M., & Bush, J.W.M. (2020). Hydrodynamic Quantum Field Theory: The Onset of Particle Motion and the Form of the Pilot Wave. <i>Frontiers in Physics, 8</i>, <a href="https://www.frontiersin.org/journals/physics/articles/10.3389/fphy.2020.00300/full">https://www.frontiersin.org/journals/physics/articles/10.3389/fphy.2020.00300/full</a><a href="http://doi.org/10.3389/fphy.2020.00300"> http://doi.org/10.3389/fphy.2020.00300</a></p>
+
 <p id="DurrGoldsteinNorsenEtAl14">Dürr, D., Goldstein, S., Norsen, T., Struyve, W., & Zanghì, N. (2014). Can Bohmian mechanics be made relativistic? <i>Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences, 470</i>, 20130699. <a href="https://royalsocietypublishing.org/doi/full/10.1098/rspa.2013.0699">https://royalsocietypublishing.org/doi/full/10.1098/rspa.2013.0699</a><a href="http://doi.org/10.1098/rspa.2013.0699"> http://doi.org/10.1098/rspa.2013.0699</a></p>
 
+<p id="DurrGoldsteinZanghi04">Dürr, D., Goldstein, S., & Zanghì, N. (2004). Quantum Equilibrium and the Role of Operators as Observables in Quantum Theory. <i>Journal of Statistical Physics, 116</i>, 959–1055. <a href="https://doi.org/10.1023/B:JOSS.0000037234.80916.d0">https://doi.org/10.1023/B:JOSS.0000037234.80916.d0</a><a href="http://doi.org/10.1023/B:JOSS.0000037234.80916.d0"> http://doi.org/10.1023/B:JOSS.0000037234.80916.d0</a></p>
+
 <p id="DurrHeisenbergMitterEtAl59">Dürr, H., Heisenberg, W., Mitter, H., Schlieder, S., & Yamazaki, K. (1959). Zur Theorie der Elementarteilchen. <i>Zeitschrift für Naturforschung A, 14</i>, 441–485. <a href="https://www.degruyterbrill.com/document/doi/10.1515/zna-1959-5-601/html?lang=en">https://www.degruyterbrill.com/document/doi/10.1515/zna-1959-5-601/html?lang=en</a><a href="http://doi.org/10.1515/zna-1959-5-601"> http://doi.org/10.1515/zna-1959-5-601</a></p>
+
+<p id="EddiSultanMoukhtarEtAl11">Eddi, A., Sultan, E., Moukhtar, J., Fort, E., Rossi, M., & Couder, Y. (2011). Information stored in Faraday waves: the origin of a path memory. <i>Journal of Fluid Mechanics, 674</i>, 433–463. <a href="https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/abs/information-stored-in-faraday-waves-the-origin-of-a-path-memory/45202A36EA1A333B658849C11FE1E850">https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/abs/information-stored-in-faraday-waves-the-origin-of-a-path-memory/45202A36EA1A333B658849C11FE1E850</a><a href="http://doi.org/10.1017/S0022112011000176"> http://doi.org/10.1017/S0022112011000176</a></p>
 
 <p id="Einstein05a">Einstein, A. (1905). Über einem die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt. <i>Annalen der physik, 4</i>, <a href="https://sedici.unlp.edu.ar/handle/10915/2784">https://sedici.unlp.edu.ar/handle/10915/2784</a></p>
 
@@ -141,6 +195,8 @@
 <p id="Gardner70">Gardner, M. (1970). Mathematical Games: The fantastic combinations of John Conway’s new solitaire game “life" <i>Scientific American, </i></p>
 
 <p id="GeierNazaryanZaklamaEtAl25">Geier, M., Nazaryan, K., Zaklama, T., & Fu, L. (2025). Is attention all you need to solve the correlated electron problem? <i>Physical Review B, 112</i>, 045119. <a href="http://arxiv.org/abs/2502.05383">http://arxiv.org/abs/2502.05383</a><a href="http://doi.org/10.1103/qxc3-bkc7"> http://doi.org/10.1103/qxc3-bkc7</a></p>
+
+<p id="GerritsmaKirchmairZahringerEtAl10">Gerritsma, R., Kirchmair, G., Zähringer, F., Solano, E., Blatt, R., & Roos, C.F. (2010). Quantum simulation of the Dirac equation. <i>Nature, 463</i>, 68–71. <a href="https://www.nature.com/articles/nature08688">https://www.nature.com/articles/nature08688</a><a href="http://doi.org/10.1038/nature08688"> http://doi.org/10.1038/nature08688</a></p>
 
 <p id="GerryKnight05">Gerry, C.C., & Knight, P.L. (2005). <i>Introductory Quantum Optics. </i> Cambridge University Press. </p>
 
@@ -190,7 +246,11 @@
 
 <p id="HobsonEfstathiouLasenby06">Hobson, M.P., Efstathiou, G., & Lasenby, A.N. (2006). <i>General Relativity: An Introduction for Physicists. </i> Cambridge University Press. </p>
 
-<p id="Holland05c">Holland, P. (2005). Quantum back-reaction and the particle law of motion. <i>Journal of Physics A: Mathematical and General, 39</i>, 559. <a href="https://doi.org/10.1088/0305-4470/39/3/008">https://doi.org/10.1088/0305-4470/39/3/008</a><a href="http://doi.org/10.1088/0305-4470/39/3/008"> http://doi.org/10.1088/0305-4470/39/3/008</a></p>
+<p id="Holland06a">Holland, P. (2006). Quantum back-reaction and the particle law of motion. <i>Journal of Physics A: Mathematical and General, 39</i>, 559. <a href="https://doi.org/10.1088/0305-4470/39/3/008">https://doi.org/10.1088/0305-4470/39/3/008</a><a href="http://doi.org/10.1088/0305-4470/39/3/008"> http://doi.org/10.1088/0305-4470/39/3/008</a></p>
+
+<p id="Holland20">Holland, P. (2020). Uniting the wave and the particle in quantum mechanics. <i>Quantum Studies: Mathematics and Foundations, 7</i>, 155–178. <a href="https://doi.org/10.1007/s40509-019-00207-4">https://doi.org/10.1007/s40509-019-00207-4</a><a href="http://doi.org/10.1007/s40509-019-00207-4"> http://doi.org/10.1007/s40509-019-00207-4</a></p>
+
+<p id="Holland95">Holland, P.R. (1995). <i>The Quantum Theory of Motion: An Account of the de Broglie-Bohm Causal Interpretation of Quantum Mechanics. </i> Cambridge University Press. </p>
 
 <p id="HongOuMandel87">Hong, C.K., Ou, Z.Y., & Mandel, L. (1987). Measurement of subpicosecond time intervals between two photons by interference. <i>Physical Review Letters, 59</i>, 2044–2046. <a href="https://link.aps.org/doi/10.1103/PhysRevLett.59.2044">https://link.aps.org/doi/10.1103/PhysRevLett.59.2044</a><a href="http://doi.org/10.1103/PhysRevLett.59.2044"> http://doi.org/10.1103/PhysRevLett.59.2044</a></p>
 
@@ -298,6 +358,8 @@
 
 <p id="PalmerducaQin25">Palmerduca, E., & Qin, H. (2025). Four no-go theorems on the existence of spin and orbital angular momentum of massless bosons. <i>SciPost Physics, 18</i>, 188. <a href="http://arxiv.org/abs/2407.06276">http://arxiv.org/abs/2407.06276</a><a href="http://doi.org/10.21468/SciPostPhys.18.6.188"> http://doi.org/10.21468/SciPostPhys.18.6.188</a></p>
 
+<p id="PapatryfonosVervoortRuelleEtAl25">Papatryfonos, K., Vervoort, L., Ruelle, M., Bourdiol, C., Nachbin, A., Frumkin, V., Labousse, M., & Bush, J.W.M. (2025). <i>Exploring Quantum Analogies: Superradiance, Bipartite Correlations, and static Bell Tests in Pilot-Wave Hydrodynamics. </i>In Quantum Information and Probability: from Foundations to Engineering (QIP25) Andrei Khrennikov and Linnaeus University. <a href="https://hal.science/hal-05038683">https://hal.science/hal-05038683</a></p>
+
 <p id="ParticleDataGroup24">Group, P.D. (2024). Review of Particle Physics. <i>Physical Review D, 110</i>, <a href="http://doi.org/10.1103/PhysRevD.110.030001"> http://doi.org/10.1103/PhysRevD.110.030001</a></p>
 
 <p id="Pich12">Pich, A. (2012). The Standard Model of Electroweak Interactions. <a href="http://arxiv.org/abs/1201.0537">http://arxiv.org/abs/1201.0537</a><a href="http://doi.org/10.48550/arXiv.1201.0537"> http://doi.org/10.48550/arXiv.1201.0537</a></p>
@@ -313,6 +375,8 @@
 <p id="QianEberly11">Qian, X., & Eberly, J.H. (2011). Entanglement and classical polarization states. <i>Optics Letters, 36</i>, 4110–4112. <a href="https://opg.optica.org/ol/abstract.cfm?uri=ol-36-20-4110">https://opg.optica.org/ol/abstract.cfm?uri=ol-36-20-4110</a><a href="http://doi.org/10.1364/OL.36.004110"> http://doi.org/10.1364/OL.36.004110</a></p>
 
 <p id="QianLittleHowellEtAl15">Qian, X., Little, B., Howell, J.C., & Eberly, J.H. (2015). Shifting the quantum-classical boundary: theory and experiment for statistically classical optical fields. <i>Optica, 2</i>, 611–615. <a href="https://opg.optica.org/optica/abstract.cfm?uri=optica-2-7-611">https://opg.optica.org/optica/abstract.cfm?uri=optica-2-7-611</a><a href="http://doi.org/10.1364/OPTICA.2.000611"> http://doi.org/10.1364/OPTICA.2.000611</a></p>
+
+<p id="QuHamnerGongEtAl13">Qu, C., Hamner, C., Gong, M., Zhang, C., & Engels, P. (2013). Observation of Zitterbewegung in a spin-orbit-coupled Bose-Einstein condensate. <i>Physical Review A, 88</i>, 021604. <a href="https://link.aps.org/doi/10.1103/PhysRevA.88.021604">https://link.aps.org/doi/10.1103/PhysRevA.88.021604</a><a href="http://doi.org/10.1103/PhysRevA.88.021604"> http://doi.org/10.1103/PhysRevA.88.021604</a></p>
 
 <p id="Radford03">Radford, C.J. (2003). The stationary Maxwell–Dirac equations. <i>Journal of Physics A: Mathematical and General, 36</i>, 5663. <a href="https://doi.org/10.1088/0305-4470/36/20/321">https://doi.org/10.1088/0305-4470/36/20/321</a><a href="http://doi.org/10.1088/0305-4470/36/20/321"> http://doi.org/10.1088/0305-4470/36/20/321</a></p>
 
@@ -336,11 +400,15 @@
 
 <p id="Schrodinger26">Schrödinger, E. (1926). An Undulatory Theory of the Mechanics of Atoms and Molecules. <i>Physical Review, 28</i>, 1049–1070. <a href="https://link.aps.org/doi/10.1103/PhysRev.28.1049">https://link.aps.org/doi/10.1103/PhysRev.28.1049</a><a href="http://doi.org/10.1103/PhysRev.28.1049"> http://doi.org/10.1103/PhysRev.28.1049</a></p>
 
+<p id="Schrodinger30">Schrödinger, E. (1930). About the force-free motion in relativistic quantum mechanics. <i>Session Phys. Math, 31</i>, 418. <a href="https://www.neo-classical-physics.info/uploads/3/4/3/6/34363841/schrodinger_-_force-free_motion_of_the_electron.pdf">https://www.neo-classical-physics.info/uploads/3/4/3/6/34363841/schrodinger_-_force-free_motion_of_the_electron.pdf</a></p>
+
 <p id="Schroeren22">Schroeren, D. (2022). Wavefunction realism does not ‘privilege position’. <i>Synthese, 200</i>, 27. <a href="https://doi.org/10.1007/s11229-022-03525-0">https://doi.org/10.1007/s11229-022-03525-0</a><a href="http://doi.org/10.1007/s11229-022-03525-0"> http://doi.org/10.1007/s11229-022-03525-0</a></p>
 
 <p id="Schwinger62">Schwinger, J. (1962). Gauge Invariance and Mass. <i>Physical Review, 125</i>, 397–398. <a href="https://link.aps.org/doi/10.1103/PhysRev.125.397">https://link.aps.org/doi/10.1103/PhysRev.125.397</a><a href="http://doi.org/10.1103/PhysRev.125.397"> http://doi.org/10.1103/PhysRev.125.397</a></p>
 
 <p id="Sciarretta18">Sciarretta, A. (2018). A Local-Realistic Model of Quantum Mechanics Based on a Discrete Spacetime (Extended version) <i>Foundations of Physics, 48</i>, 60–91. <a href="http://arxiv.org/abs/1712.03227">http://arxiv.org/abs/1712.03227</a><a href="http://doi.org/10.1007/s10701-017-0129-9"> http://doi.org/10.1007/s10701-017-0129-9</a></p>
+
+<p id="Sciarretta18a">Sciarretta, A. (2018). A Local-Realistic Model of Quantum Mechanics Based on a Discrete Spacetime. <i>Foundations of Physics, 48</i>, 60–91. <a href="https://doi.org/10.1007/s10701-017-0129-9">https://doi.org/10.1007/s10701-017-0129-9</a><a href="http://doi.org/10.1007/s10701-017-0129-9"> http://doi.org/10.1007/s10701-017-0129-9</a></p>
 
 <p id="Sciarretta21">Sciarretta, A. (2021). A local-realistic quantum mechanical model of spin and spin entanglement. <i>International Journal of Quantum Information, 19</i>, 2150006. <a href="http://www.worldscientific.com/doi/abs/10.1142/S0219749921500064">http://www.worldscientific.com/doi/abs/10.1142/S0219749921500064</a><a href="http://doi.org/10.1142/S0219749921500064"> http://doi.org/10.1142/S0219749921500064</a></p>
 
@@ -352,6 +420,8 @@
 
 <p id="Shimony93">Shimony, A. (1993). <i>The Search for a Naturalistic World View: Volume 1. </i> Cambridge University Press. </p>
 
+<p id="Shinbrot19">Shinbrot, T. (2019). Dynamic pilot wave bound states. <i>Chaos: An Interdisciplinary Journal of Nonlinear Science, 29</i>, 113124. <a href="https://doi.org/10.1063/1.5116695">https://doi.org/10.1063/1.5116695</a><a href="http://doi.org/10.1063/1.5116695"> http://doi.org/10.1063/1.5116695</a></p>
+
 <p id="Sidharth09">Sidharth, B.G. (2009). Revisiting Zitterbewegung. <i>International Journal of Theoretical Physics, 48</i>, 497–506. <a href="https://doi.org/10.1007/s10773-008-9825-8">https://doi.org/10.1007/s10773-008-9825-8</a><a href="http://doi.org/10.1007/s10773-008-9825-8"> http://doi.org/10.1007/s10773-008-9825-8</a></p>
 
 <p id="Spekkens05">Spekkens, R.W. (2005). Contextuality for preparations, transformations, and unsharp measurements. <i>Physical Review A, 71</i>, 052108. <a href="https://link.aps.org/doi/10.1103/PhysRevA.71.052108">https://link.aps.org/doi/10.1103/PhysRevA.71.052108</a><a href="http://doi.org/10.1103/PhysRevA.71.052108"> http://doi.org/10.1103/PhysRevA.71.052108</a></p>
@@ -361,6 +431,12 @@
 <p id="Stoica25">Stoica, O.C. (2025). Born Rule: Quantum Probability as Classical Probability. <i>International Journal of Theoretical Physics, 64</i>, 117. <a href="https://doi.org/10.1007/s10773-025-05979-7">https://doi.org/10.1007/s10773-025-05979-7</a><a href="http://doi.org/10.1007/s10773-025-05979-7"> http://doi.org/10.1007/s10773-025-05979-7</a></p>
 
 <p id="Struyve20">Struyve, W. (2020). Semi-classical approximations based on Bohmian mechanics. <i>International Journal of Modern Physics A, <a href="https://www.worldscientific.com/worldscinet/ijmpa">https://www.worldscientific.com/worldscinet/ijmpa</a></i><a href="http://doi.org/10.1142/S0217751X20500700"> http://doi.org/10.1142/S0217751X20500700</a></p>
+
+<p id="Sutherland15">Sutherland, R.I. (2015). Lagrangian Description for Particle Interpretations of Quantum Mechanics: Single-Particle Case. <i>Foundations of Physics, 45</i>, 1454–1464. <a href="https://doi.org/10.1007/s10701-015-9918-1">https://doi.org/10.1007/s10701-015-9918-1</a><a href="http://doi.org/10.1007/s10701-015-9918-1"> http://doi.org/10.1007/s10701-015-9918-1</a></p>
+
+<p id="Sutherland17">Sutherland, R.I. (2017). Lagrangian Description for Particle Interpretations of Quantum Mechanics: Entangled Many-Particle Case. <i>Foundations of Physics, 47</i>, 174–207. <a href="https://doi.org/10.1007/s10701-016-0043-6">https://doi.org/10.1007/s10701-016-0043-6</a><a href="http://doi.org/10.1007/s10701-016-0043-6"> http://doi.org/10.1007/s10701-016-0043-6</a></p>
+
+<p id="Sutherland19">Sutherland, R. (2019). Incorporating action and reaction into a particle interpretation for quantum mechanics -- Dirac case. <a href="http://arxiv.org/abs/1908.04897">http://arxiv.org/abs/1908.04897</a><a href="http://doi.org/10.48550/arXiv.1908.04897"> http://doi.org/10.48550/arXiv.1908.04897</a></p>
 
 <p id="Tegmark10">Tegmark, M. (2010). Many Worlds in Context. <a href="http://arxiv.org/abs/0905.2182">http://arxiv.org/abs/0905.2182</a><a href="http://doi.org/10.48550/arXiv.0905.2182"> http://doi.org/10.48550/arXiv.0905.2182</a></p>
 

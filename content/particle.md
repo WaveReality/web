@@ -19,7 +19,7 @@ Nevertheless, the actual nature of these hypothesized particles remains rather d
 
 Furthermore, the massive weak force bosons, and the [[Higgs]] boson, are extremely short-lived, further suggesting that they are just transient fluctuations in the underlying field at a specific energy level consistent with the ascribed rest mass, which then gives rise to other longer-lived particles that can actually be directly measured.
 
-A central property of the [[pilot wave]] framework and the [[Spinfield Model]] is that the massive fermion particles actually do exist as distinct from their associated [[quantum wave]] functions, and that they remain localized to a specific, discrete location at all times. This provides a 
+A central property of the [[pilot wave]] framework and the [[Spinfield Model]] is that the massive fermion particles actually do exist as distinct from their associated [[quantum wave]] functions, and that they remain localized to a specific, discrete location at all times. This provides a privileged  status for the position basis within the quantum state.
 
 ## Discrete particle trajectories
 
