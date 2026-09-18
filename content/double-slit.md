@@ -9,11 +9,15 @@ bibfile = "mechphys.json"
 {id="figure_double-slit-elec" style="height:40em"}
 ![Results of a double-slit experiment using electrons, with increasing numbers of electrons recorded (11, 200, 6,000, 40,000, and 140,000). The interference pattern emerges over time, even though only single electrons are detected on each trial. (from [Tonomura/Wikimedia](https://commons.wikimedia.org/wiki/File:Double-slit_experiment_results_Tonomura_2.jpg)).](media/fig_double_slit_expt_electrons.jpg)
 
-The **double-slit** experiment (also known as Young's experiment) ([[#figure_double-slit]]), is said to illustrate the full mystery of quantum mechanics, and nicely demonstrates some puzzling aspects of wave-particle duality. Interestingly, the double slit experiment was around long before quantum mechanics, as a way of generating interference patterns with waves, but it "just got weird" when the intensity of the light, or beam of electrons or other particles, is reduced to the point where there is only a _single particle_ passing through the apparatus at a time.
+The **double-slit** experiment (also known as Young's experiment) ([[#figure_double-slit]]), was described by Richard Feynman as:
+
+> a phenomenon which is impossible to explain in any classical way and which has in it the heart of Quantum Mechanics. In reality, it contains the only mystery of Quantum Mechanics.
+
+Interestingly, the double slit experiment was around long before quantum mechanics, as a way of generating interference patterns with waves, but it "just got weird" when the intensity of the light, or beam of electrons or other particles, is reduced to the point where there is only a _single particle_ passing through the apparatus at a time.
 
 Surprisingly, one still observes the interference effect in this case ([[#figure_double-slit-elec]]). How can a single "hard little particle", all by itself, produce this wave-like interference effect?  There are _many_ other results that all add up to the strong conclusion that, somehow, elementary particles like electrons have _both_ wave and particle properties.
 
-The [[pilot-wave]] framework of de Broglie and Bohm provides the most natural, intuitive explanation of these effects: the wave goes through both slits, and the particle goes through one, but it is influenced by the wave.
+The [[pilot-wave]] framework of de Broglie and Bohm provides the most natural, intuitive explanation of these effects: the wave goes through both slits, and the particle goes through one, but it is influenced by the wave. In a particularly clear and strong contradiction to Feynman, this has been demonstrated in a fully macroscopic physical system, where an oil drop interacts with a water wave in a way that is qualitatively similar to the pilot-wave model ([YouTube video](https://www.youtube.com/watch?v=xqD2iCZS-ik&t=701s)).
 
 {id="figure_double-slit-deb" style="height:20em"}
 ![Trajectories for particles in the double-slit experiment computed according to the de Broglie-Bohm pilot-wave model. The interference effects can be seen as relatively localized bumps in the trajectories, corresponding to steep gradients in the Schrödinger wave equation. Critically, the underlying trajectories are considered to exist at all points even if you don't happen to observe them.](media/fig_double_slit_debroglie_bohm.png)
@@ -23,3 +27,4 @@ The [[pilot-wave]] framework of de Broglie and Bohm provides the most natural, i
 {id="figure_double-slit-kocsis" style="height:20em"}
 ![Reconstructed trajectories of photons in a double-slit experiment using a weak measurement technique that allows aggregate trajectory information to be reconstructed over many repeated samples that are post-sorted according to a weak additional modulation of the system --- these are not individual particle trajectories. There is a striking correspondence to the predictions of the de Broglie-Bohm model. Figure from Kocsis et al, 2011.](media/fig_double_slit_kocsis_et_al_11.png)
 
+Based on all of these considerations, one could reasonably conclude that the double slit phenomenon provides strong support for the pilot wave model of quantum phenomena. Unfortunately, this model can not equally compellingly explain the non-locality demonstrated in the [[Bell]] tests.
