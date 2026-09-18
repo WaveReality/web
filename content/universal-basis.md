@@ -21,11 +21,11 @@ The **complementarity** of variables in quantum physics (e.g., position vs. mome
 
 ## Position as a universal basis
 
-J. S. [[Bell]] persuasively argued that all measurement in quantum physics ultimately boils down to measuring positions of massive particles ([[fermions]]), thereby establishing the privileged status of the position basis ([[@Bell82]], p. 996):
+J. S. [[Bell]] persuasively argued that all measurement in quantum physics ultimately boils down to measuring positions of massive particles ([[fermion]]s), thereby establishing the privileged status of the position basis ([[@Bell82]], p. 996):
 
 > The second moral is that in physics the only observations we must consider are position observations, if only the positions of instrument pointers. It is a great merit of the de Broglie-Bohm picture to force us to consider this fact. If you make axioms, rather than definitions and theorems, about the "measurement" of anything else, then you commit redundancy and risk inconsistency.
 
-This idea was further developed and formalized ([[@DaumerDurrGoldsteinEtAl96]]; [[@DurrGoldsteinZanghi04]]), all of which is based on the [[pilot-wave]] framework, which provides an unambiguous framework for understanding what a measurement is actually doing, as compared to the standard [[Copennhagen]] framework which leaves this entirely underspecified.
+This idea was further developed and formalized ([[@DaumerDurrGoldsteinEtAl96]]; [[@DurrGoldsteinZanghi04]]), all of which is based on the [[pilot-wave]] framework, which provides an unambiguous framework for understanding what a measurement is actually doing, as compared to the standard [[Copenhagen]] framework which leaves this entirely underspecified.
 
 ## Other proposals
 

@@ -39,7 +39,7 @@ The double solution framework resolves this problem in principle, because the wa
 
 ## Bohmian formulation
 
-The Bohmian version of the pilot-wave framework can be expressed very succinctly in terms of the _guidance equation_, which states that the _velocity_ of a particle is a function of the gradient of the local quantum wave function:
+The Bohmian version of the pilot-wave framework can be expressed succinctly in terms of the _guidance equation_, which states that the _velocity_ of a particle is a function of the gradient of the local quantum wave function:
 
 {id="eq_bohm" title="Bohmian guidance formula"}
 $$
@@ -68,7 +68,9 @@ In this respect, one notable feature of the HQA models is that they are both non
 
 ## Soliton solutions
 
-The original, intuitively-appealing idea that Louis de Broglie started with was actually a purely wave-based ontology, where the particle-like aspect emerges naturally as a _soliton_ configuration of a wave field ([[@ColinDurtWillox17]]; [[@Drezet21]]). A soliton is a stable disturbance in the wave field that remains localized over time, and it requires nonlinear dynamics. 
+The original, intuitively-appealing idea that Louis de Broglie started with was actually a purely wave-based ontology, where the particle-like aspect emerges naturally as a _soliton_ configuration of a wave field ([[@ColinDurtWillox17]]; [[@Drezet21]]). A soliton is a stable disturbance in the wave field that remains localized over time, and it requires nonlinear dynamics. At the time when de Broglie was working, little was known about solitons. However, there are still various challenges with such a framework, as reviewed extensively in [[@^ColinDurtWillox17]].
+
+Nevertheless, it does seem likely that some form of nonlinearity is required to create an interacting double solution pilot wave framework, which then represents a major departure from the analytical simplicity of the linear [[Hilbert space]] and Schrödinger equation. But the idea that something as simple as [[#eq_bohm]] could magically provide a novel yet completely accurate theory seems to be a bit of wishful thinking. In this context, the [[Spinfield Model]] approach is to leverage other distinctive features of the [[Standard Model]], such as the nature of the weak force, along with the [[cellular automaton]] framework, as constraints to inform and shape the exploration of the large space of possible nonlinear mechanisms.
 
 ## Relativistic Lagrangian formulations
 
@@ -76,8 +78,11 @@ A growing number of different authors have provided alternative formulations of 
 
 The approach by [[@^Holland20]] maintains the use of the Schrödinger non-relativistic equation, while providing a more integrated mathematical framework that puts the wave and particle into a single overall equation. [[@^Sutherland19]] developed a series of relativistic Lagrangian models ([[@Sutherland15]]; [[@Sutherland17]]) that use a distributed _charge density_ function to define a probabilistic model of particle trajectories. This density function avoids the mathematically difficult singularity associated with discrete particles, but it is unclear exactly what is gained overall in this formulation. 
 
-The most radical departure from the Bohmian style model is given by [[@DarrowBush24]], who provide an explicitly de Broglie-style double-solution model based on a relativistic Lagrangian framework, which is specifically not intended to capture known quantum behavior. To deal with the singularity issue of discrete particle locations, they use an intermediate spherical smoothing function that is then logically integrated down to a radius of 0. They describe numerical simulation results of their model that demonstrates a number of interesting properties in the way that the particle and wave interact. For example, the particle is able to entrain a Compton-wavelength wave packet envelope that follows the particle around, much as in the illustration above ([[#figure_pilot-wave]]). This wave packet thus avoids the dispersion that is characteristic of the [[epistemic]] aspect of wave functions, providing a critical attempt to "unscramble the omelette" baked into the standard wave functions.
+The most radical departure from the Bohmian style model is given by [[@^DarrowBush24]], building on earlier efforts ([[@DaganBush20]]; [[@DureyBush20]]). They provide a de Broglie-style double-solution model based on a relativistic Lagrangian framework, which is specifically characterized as a preliminary attempt, not intended to capture known quantum behavior. To deal with the singularity issue of discrete particle locations, they use an intermediate spherical smoothing function that is then logically integrated down to a radius of 0. They describe numerical simulation results of their model that demonstrates a number of interesting properties in the way that the particle and wave interact.
+
+For example, the particle is able to entrain a Compton-wavelength wave packet envelope that follows the particle around, related to the high-frequency [[zitterbewegung]] phenomenon, much as in the illustration above ([[#figure_pilot-wave]]). This wave packet thus avoids the dispersion that is characteristic of the [[epistemic]] aspect of wave functions, as discussed above. A further development of this model, using a phase-based coupling between particle and wave instead of an amplitude-based coupling, was shown to produce the Bohmian version of the pilot-wave framework ([[@Darrow25]]), thereby providing a key bridge between these frameworks.
 
 Thus, this model provides a starting point for exploring the large space of non-linear, emergent dynamics that can arise when the particle and wave fields are given more interesting dynamical properties. It appears to coincide with many aspects of the [[Spinfield Model]], and a detailed comparison between the two is needed.
+
 
 

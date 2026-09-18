@@ -1,5 +1,7 @@
 <p id="Aaronson04">Aaronson, S. (2004). Multilinear Formulas and Skepticism of Quantum Computing. <a href="http://arxiv.org/abs/quant-ph/0311039">http://arxiv.org/abs/quant-ph/0311039</a><a href="http://doi.org/10.48550/arXiv.quant-ph/0311039"> http://doi.org/10.48550/arXiv.quant-ph/0311039</a></p>
 
+<p id="AharonovAlbert81">Aharonov, Y., & Albert, D.Z. (1981). Can we make sense out of the measurement process in relativistic quantum mechanics? <i>Physical Review D, 24</i>, 359–370. <a href="https://link.aps.org/doi/10.1103/PhysRevD.24.359">https://link.aps.org/doi/10.1103/PhysRevD.24.359</a><a href="http://doi.org/10.1103/PhysRevD.24.359"> http://doi.org/10.1103/PhysRevD.24.359</a></p>
+
 <p id="AharonovDavidovichZagury93">Aharonov, Y., Davidovich, L., & Zagury, N. (1993). Quantum random walks. <i>Physical Review A, 48</i>, 1687–1690. <a href="https://link.aps.org/doi/10.1103/PhysRevA.48.1687">https://link.aps.org/doi/10.1103/PhysRevA.48.1687</a><a href="http://doi.org/10.1103/PhysRevA.48.1687"> http://doi.org/10.1103/PhysRevA.48.1687</a></p>
 
 <p id="AharonovRohrlich08">Aharonov, Y., & Rohrlich, D. (2008). <i>Quantum Paradoxes: Quantum Theory for the Perplexed. </i> John Wiley & Sons. </p>
@@ -39,6 +41,8 @@
 <p id="Bell64">Bell, J.S. (1964). On the Einstein Podolsky Rosen paradox. <i>Physics Physique Fizika, 1</i>, 195–200. </p>
 
 <p id="Bell66">Bell, J.S. (1966). On the Problem of Hidden Variables in Quantum Mechanics. <i>Reviews of Modern Physics, 38</i>, 447–452. <a href="https://link.aps.org/doi/10.1103/RevModPhys.38.447">https://link.aps.org/doi/10.1103/RevModPhys.38.447</a><a href="http://doi.org/10.1103/RevModPhys.38.447"> http://doi.org/10.1103/RevModPhys.38.447</a></p>
+
+<p id="Bell75">Bell, J.S. (1975). <i>The theory of local beables. </i>CERN Document Server, webpage. <a href="https://cds.cern.ch/record/980036">https://cds.cern.ch/record/980036</a></p>
 
 <p id="Bell81">Bell, J.S. (1981). Bertlmann's Socks and the Nature of Reality. <i>Le Journal de Physique Colloques, 42</i>, C2-62. <a href="http://dx.doi.org/10.1051/jphyscol:1981202">http://dx.doi.org/10.1051/jphyscol:1981202</a><a href="http://doi.org/10.1051/jphyscol:1981202"> http://doi.org/10.1051/jphyscol:1981202</a></p>
 
@@ -119,6 +123,8 @@
 <p id="DaganBush20">Dagan, Y., & Bush, J.W.M. (2020). Hydrodynamic quantum field theory: the free particle. <i>Comptes Rendus. Mécanique, 348</i>, 555–571. <a href="https://comptes-rendus.academie-sciences.fr/mecanique/articles/10.5802/crmeca.34/">https://comptes-rendus.academie-sciences.fr/mecanique/articles/10.5802/crmeca.34/</a><a href="http://doi.org/10.5802/crmeca.34"> http://doi.org/10.5802/crmeca.34</a></p>
 
 <p id="DAriano17">D’Ariano, G.M. (2017). Physics Without Physics. <i>International Journal of Theoretical Physics, 56</i>, 97–128. <a href="https://doi.org/10.1007/s10773-016-3172-y">https://doi.org/10.1007/s10773-016-3172-y</a><a href="http://doi.org/10.1007/s10773-016-3172-y"> http://doi.org/10.1007/s10773-016-3172-y</a></p>
+
+<p id="Darrow25">Darrow, D. (2025). Convergence to Bohmian Mechanics in a de Broglie-Like Pilot-Wave System. <i>Foundations of Physics, 55</i>, 13. <a href="https://doi.org/10.1007/s10701-025-00826-5">https://doi.org/10.1007/s10701-025-00826-5</a><a href="http://doi.org/10.1007/s10701-025-00826-5"> http://doi.org/10.1007/s10701-025-00826-5</a></p>
 
 <p id="DarrowBush24">Darrow, D., & Bush, J.W.M. (2024). Revisiting de Broglie’s Double-Solution Pilot-Wave Theory with a Lorentz-Covariant Lagrangian Framework. <i>Symmetry, 16</i>, 149. <a href="https://www.mdpi.com/2073-8994/16/2/149">https://www.mdpi.com/2073-8994/16/2/149</a><a href="http://doi.org/10.3390/sym16020149"> http://doi.org/10.3390/sym16020149</a></p>
 
@@ -342,6 +348,8 @@
 
 <p id="Norsen14">Norsen, T. (2014). The pilot-wave perspective on spin. <i>American Journal of Physics, 82</i>, 337–348. <a href="https://doi.org/10.1119/1.4848217">https://doi.org/10.1119/1.4848217</a><a href="http://doi.org/10.1119/1.4848217"> http://doi.org/10.1119/1.4848217</a></p>
 
+<p id="Norsen15">Norsen, T. (2015). Are there really two different Bell's theorems? <a href="http://arxiv.org/abs/1503.05017">http://arxiv.org/abs/1503.05017</a><a href="http://doi.org/10.48550/arXiv.1503.05017"> http://doi.org/10.48550/arXiv.1503.05017</a></p>
+
 <p id="Norsen17">Norsen, T. (2017). <i>Foundations of Quantum Mechanics: An Exploration of the Physical Meaning of Quantum Theory. <a href="https://ui.adsabs.harvard.edu/abs/2017fqma.book.....N">https://ui.adsabs.harvard.edu/abs/2017fqma.book.....N</a></i><a href="http://doi.org/10.1007/978-3-319-65867-4"> http://doi.org/10.1007/978-3-319-65867-4</a></p>
 
 <p id="Norsen22">Norsen, T. (2022). A Pilot-Wave Approach to the Many-Body Problem: Beyond the Small Entanglement Approximation. <i>Foundations of Physics, 52</i>, 103. <a href="https://doi.org/10.1007/s10701-022-00621-6">https://doi.org/10.1007/s10701-022-00621-6</a><a href="http://doi.org/10.1007/s10701-022-00621-6"> http://doi.org/10.1007/s10701-022-00621-6</a></p>
@@ -361,6 +369,12 @@
 <p id="PapatryfonosVervoortRuelleEtAl25">Papatryfonos, K., Vervoort, L., Ruelle, M., Bourdiol, C., Nachbin, A., Frumkin, V., Labousse, M., & Bush, J.W.M. (2025). <i>Exploring Quantum Analogies: Superradiance, Bipartite Correlations, and static Bell Tests in Pilot-Wave Hydrodynamics. </i>In Quantum Information and Probability: from Foundations to Engineering (QIP25) Andrei Khrennikov and Linnaeus University. <a href="https://hal.science/hal-05038683">https://hal.science/hal-05038683</a></p>
 
 <p id="ParticleDataGroup24">Group, P.D. (2024). Review of Particle Physics. <i>Physical Review D, 110</i>, <a href="http://doi.org/10.1103/PhysRevD.110.030001"> http://doi.org/10.1103/PhysRevD.110.030001</a></p>
+
+<p id="Peierls52">Peierls, R.E. (1952). The commutation laws of relativistic field theory. <i>Proceedings of the Royal Society of London. A. Mathematical and Physical Sciences, 214</i>, 143–157. <a href="https://doi.org/10.1098/rspa.1952.0158">https://doi.org/10.1098/rspa.1952.0158</a><a href="http://doi.org/10.1098/rspa.1952.0158"> http://doi.org/10.1098/rspa.1952.0158</a></p>
+
+<p id="Peres00">Peres, A. (2000). Classical interventions in quantum systems. II. Relativistic invariance. <i>Physical Review A, 61</i>, 022117. <a href="https://link.aps.org/doi/10.1103/PhysRevA.61.022117">https://link.aps.org/doi/10.1103/PhysRevA.61.022117</a><a href="http://doi.org/10.1103/PhysRevA.61.022117"> http://doi.org/10.1103/PhysRevA.61.022117</a></p>
+
+<p id="PeresTerno04">Peres, A., & Terno, D.R. (2004). Quantum information and relativity theory. <i>Reviews of Modern Physics, 76</i>, 93–123. <a href="https://link.aps.org/doi/10.1103/RevModPhys.76.93">https://link.aps.org/doi/10.1103/RevModPhys.76.93</a><a href="http://doi.org/10.1103/RevModPhys.76.93"> http://doi.org/10.1103/RevModPhys.76.93</a></p>
 
 <p id="Pich12">Pich, A. (2012). The Standard Model of Electroweak Interactions. <a href="http://arxiv.org/abs/1201.0537">http://arxiv.org/abs/1201.0537</a><a href="http://doi.org/10.48550/arXiv.1201.0537"> http://doi.org/10.48550/arXiv.1201.0537</a></p>
 

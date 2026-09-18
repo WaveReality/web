@@ -39,7 +39,7 @@ $$
 \left[ \left(i {\nabla}_\mu - {A}_\mu\right)^2 + \vec{\sigma} \cdot \left(\vec{B} + i \vec{E} \right) \right] \psi = m_0^2 \psi
 $$
 
-where $\vec{\sigma}$ are the standard Pauli matricies that we'll describe in a moment. [[@^Hostler85]] describes a similar equation (which has the minus sign reversed in various places, but is otherwise the same):
+where $\vec{\sigma}$ are the standard [[Pauli matricies]] that we'll describe in a moment. [[@^Hostler85]] describes a similar equation (which has the minus sign reversed in various places, but is otherwise the same):
 
 $$
 \left[ \left(-i \partial_\mu - e {A}_\mu\right)^2 + m_0^2 + e i \vec{\sigma} \cdot \left(\vec{E} + i \vec{B}\right) \right] \psi = 0

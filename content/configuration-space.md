@@ -21,7 +21,7 @@ $$
 
 What this means is that you effectively have different discrete CA cells for each possible combination of individual dimensions for each element. For example, there is a unique cell representing the wave function for the specific combination of position 23 on the _X_ axis of particle _A_ _and_ position 12 of the _Z_ axis of particle _B_. This is what an outer product means: all possible combinations are represented with their own distinct state value.
 
-It should be clear that this space is entirely [[non-local]] across particles. Each possible spatial location in one particle is "crossed" with each possible spatial location in the other particle. This is why the standard formalism has no problem dealing with non-local entanglement across spatially-separated particles.
+It should be clear that this space is entirely [[non-locality|non-local]] across particles. Each possible spatial location in one particle is "crossed" with each possible spatial location in the other particle. This is why the standard formalism has no problem dealing with non-local entanglement across spatially-separated particles.
 
 From a purely computational point of view, the outer-product representation is maximally expressive, and maximially expensive. It is essentially computationally universal, allowing the representation of any and all interactions in any way that might be necessary. Thus, it is not unreasonable to suggest that this representation is a [[calculational tool]], consistent with various arguments in the literature ([[@Wallace21]]; [[@Myrvold15]]), but not without some debate ([[@Carroll21]]; [[@North12]]; [[@NeyAlbert13]]).
 
@@ -45,5 +45,5 @@ A further contradiction is that according to general relativity, the entropy ins
 
 Overall, it is difficult to draw strong conclusions from these existing analyses, but it does not seem certain that the exponential size of configuration space is an absolute irrevocable requirement to capture the phenomenology of quantum physics. Therefore, given how toxic such a thing is to the CA-based approach, we can adopt a pragmatic approach to see if indeed we can succeed at this enterprise, as documented in the [[Spinfield Model]].
 
-Ultimately, the most relevant data will come from [[quantum computer]]s, which are pushing the envelope on this issue, as their computational power derives directly from the exponential size of configuration space. See that page for relevant current status.
+Ultimately, the most relevant data will come from [[quantum computing]], which is pushing the envelope on this issue, as the computational power derives directly from the exponential size of configuration space. See that page for relevant current status.
 

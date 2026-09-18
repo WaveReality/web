@@ -1,17 +1,12 @@
-+++
-Categories = ["Standard Model"]
-bibfile = "mechphys.json"
-+++
+This is a recording of a chat with Claude Opus 5 about Hilbert space, bell inequality, pilot wave models, etc. The results were used to inform the writing of bell.md, pilot-wave.md, configuration-space.md and a few others. This took place in the week of Sept 14, 2026.
 
-Key point:
+Some key points:
 
 * configuration space is not about nonlinear interactions, but rather about *correlations*.
 
 * Montina08 is the key paper proving that exponential config space is necessary to represent the correlations, even allowing for nonlinear interactions! The key assumption is Markovian-ness. Need to understand this better!!  But they definitely say that it could be removed.  Stochastic motion + non-local wave influences seems like it would really change things.
 
 * 3N dimensions -> $R^{3N}$ numbers is key about exponential explosion.
-
-## Claude chat
 
 ## Nonlinear SM vs linear Hilbert space
 
@@ -366,7 +361,366 @@ You found a real gap in the *rhetoric* around these two results, not a contradic
 
 **Sources:** Montina quotes extracted from the [arXiv PDF](https://arxiv.org/pdf/0711.4770); Poulin et al. quotes and the absence of any Montina citation verified from the [arXiv PDF](https://arxiv.org/pdf/1102.1360). Aaronson identifiers confirmed via arXiv listings.
 
-## Bell superposition with classical wave
+## Bell example
+
+> take a maximally-entangled bell state (https://en.wikipedia.org/wiki/Bell_state) and, by explicitly writing out the full tensor product space for both qbits, show in full detail, first using symbolic equations and then with specific numbers, how the measurement process produces the CHSH inequality values
+
+Everything below is verified numerically ([chsh.py](/private/tmp/claude-503/-Users-oreilly-Library-Application-Support-Claude-scratch-workspaces-c96e154b-9b88-4167-ac69-883556e884c2-e282c857-eff4-400f-a680-03d505db5460-scratch-2026-09-09-354f52/773531c2-447b-4f3a-a2bc-22d8c080a363/scratchpad/chsh.py)).
+
+### 1. The single-qubit space
+
+Each qubit lives in $\mathcal{H} = \mathbb{C}^2$ with orthonormal basis
+
+$$|0\rangle = \begin{pmatrix}1\\0\end{pmatrix}, \qquad |1\rangle = \begin{pmatrix}0\\1\end{pmatrix}$$
+
+### 2. The full tensor product space, written out
+
+$\mathcal{H}_A \otimes \mathcal{H}_B = \mathbb{C}^2 \otimes \mathbb{C}^2 = \mathbb{C}^4$. Using the Kronecker convention $\binom{a}{b} \otimes \binom{c}{d} = (ac,\ ad,\ bc,\ bd)^T$, the four product basis vectors are:
+
+$$|00\rangle = \begin{pmatrix}1\\0\\0\\0\end{pmatrix}\quad |01\rangle = \begin{pmatrix}0\\1\\0\\0\end{pmatrix}\quad |10\rangle = \begin{pmatrix}0\\0\\1\\0\end{pmatrix}\quad |11\rangle = \begin{pmatrix}0\\0\\0\\1\end{pmatrix}$$
+
+Index ordering: component $k$ corresponds to $|i\rangle_A|j\rangle_B$ with $k = 2i + j$. **This is the crucial structure** — the space is 4-dimensional, not $2+2 = 4$-as-a-direct-sum. A general state $\sum_{ij} c_{ij}|ij\rangle$ needs 4 complex amplitudes, while a product state $(\alpha|0\rangle + \beta|1\rangle)\otimes(\gamma|0\rangle+\delta|1\rangle)$ has only 4 parameters constrained to the rank-1 surface $c_{00}c_{11} = c_{01}c_{10}$.
+
+### 3. The Bell state
+
+$$|\Phi^+\rangle = \frac{1}{\sqrt{2}}\left(|00\rangle + |11\rangle\right) = \frac{1}{\sqrt 2}\begin{pmatrix}1\\0\\0\\1\end{pmatrix}$$
+
+**Verify it is entangled.** Write the amplitudes as a matrix $C_{ij}$:
+
+$$C = \frac{1}{\sqrt 2}\begin{pmatrix}1 & 0\\ 0 & 1\end{pmatrix}, \qquad \det C = \tfrac12 \neq 0$$
+
+A product state has $\det C = 0$ (rank 1). Here the Schmidt rank is 2, so $|\Phi^+\rangle$ cannot be written as $|\psi\rangle_A \otimes |\chi\rangle_B$ for *any* single-qubit states. The extra dimensions of the tensor product are doing real work — this state exists only because the space is a product, not a sum.
+
+### 4. The measurement observables
+
+Alice and Bob each measure a spin component in the $x$–$z$ plane, at angles $\alpha$ and $\beta$. The observable is $\hat n(\theta)\cdot\vec\sigma$ with $\hat n = (\sin\theta, 0, \cos\theta)$:
+
+$$A(\alpha) = \sin\alpha\,\sigma_x + \cos\alpha\,\sigma_z = \begin{pmatrix}\cos\alpha & \sin\alpha \\ \sin\alpha & -\cos\alpha\end{pmatrix}$$
+
+and identically $B(\beta)$. Each has eigenvalues $\pm 1$ (since $A^2 = I$, $\operatorname{tr}A = 0$), with eigenvectors
+
+$$|{+}_\alpha\rangle = \begin{pmatrix}\cos\frac{\alpha}{2}\\[2pt] \sin\frac{\alpha}{2}\end{pmatrix},\qquad |{-}_\alpha\rangle = \begin{pmatrix}-\sin\frac{\alpha}{2}\\[2pt] \cos\frac{\alpha}{2}\end{pmatrix}$$
+
+Check: $A(\alpha)|{+}_\alpha\rangle = \binom{\cos\alpha\cos\frac\alpha2 + \sin\alpha\sin\frac\alpha2}{\sin\alpha\cos\frac\alpha2 - \cos\alpha\sin\frac\alpha2} = \binom{\cos(\alpha/2)}{\sin(\alpha/2)} = +|{+}_\alpha\rangle$ ✓
+
+The spectral projectors are
+
+$$P^A_\pm(\alpha) = |{\pm}_\alpha\rangle\langle{\pm}_\alpha| = \tfrac12\begin{pmatrix}1\pm\cos\alpha & \pm\sin\alpha\\ \pm\sin\alpha & 1\mp\cos\alpha\end{pmatrix}, \qquad A(\alpha) = P^A_+ - P^A_-$$
+
+### 5. The joint measurement on $\mathbb{C}^4$
+
+Alice measuring $\alpha$ **and** Bob measuring $\beta$ is a single four-outcome projective measurement on the joint space, with rank-1 projectors
+
+$$\Pi_{s_A s_B} = P^A_{s_A}(\alpha) \otimes P^B_{s_B}(\beta), \qquad s_A, s_B \in \{+,-\}$$
+
+These are four orthogonal rank-1 projectors summing to $I_4$. Outcome probabilities by the Born rule:
+
+$$P(s_A, s_B \mid \alpha,\beta) = \langle \Phi^+|\,\Pi_{s_A s_B}\,|\Phi^+\rangle = \left|\left(\langle s_A{}_\alpha| \otimes \langle s_B{}_\beta|\right)|\Phi^+\rangle\right|^2$$
+
+### The four amplitudes
+
+Using $\langle {+}_\alpha|0\rangle = \cos\frac\alpha2$, $\langle{+}_\alpha|1\rangle = \sin\frac\alpha2$, $\langle{-}_\alpha|0\rangle = -\sin\frac\alpha2$, $\langle{-}_\alpha|1\rangle = \cos\frac\alpha2$, and $|\Phi^+\rangle = \frac{1}{\sqrt2}(|00\rangle + |11\rangle)$:
+
+$$\langle {+}_\alpha {+}_\beta|\Phi^+\rangle = \tfrac{1}{\sqrt2}\left[\cos\tfrac\alpha2\cos\tfrac\beta2 + \sin\tfrac\alpha2\sin\tfrac\beta2\right] = \tfrac{1}{\sqrt2}\cos\tfrac{\alpha-\beta}{2}$$
+
+$$\langle {+}_\alpha {-}_\beta|\Phi^+\rangle = \tfrac{1}{\sqrt2}\left[-\cos\tfrac\alpha2\sin\tfrac\beta2 + \sin\tfrac\alpha2\cos\tfrac\beta2\right] = \tfrac{1}{\sqrt2}\sin\tfrac{\alpha-\beta}{2}$$
+
+$$\langle {-}_\alpha {+}_\beta|\Phi^+\rangle = \tfrac{1}{\sqrt2}\left[-\sin\tfrac\alpha2\cos\tfrac\beta2 + \cos\tfrac\alpha2\sin\tfrac\beta2\right] = -\tfrac{1}{\sqrt2}\sin\tfrac{\alpha-\beta}{2}$$
+
+$$\langle {-}_\alpha {-}_\beta|\Phi^+\rangle = \tfrac{1}{\sqrt2}\left[\sin\tfrac\alpha2\sin\tfrac\beta2 + \cos\tfrac\alpha2\cos\tfrac\beta2\right] = \tfrac{1}{\sqrt2}\cos\tfrac{\alpha-\beta}{2}$$
+
+Writing $\delta \equiv \alpha - \beta$, the joint probabilities are
+
+$$\boxed{P(\pm,\pm) = \tfrac12\cos^2\tfrac{\delta}{2}, \qquad P(\pm,\mp) = \tfrac12\sin^2\tfrac\delta2}$$
+
+**Normalization:** $\cos^2\frac\delta2 + \sin^2\frac\delta2 = 1$ ✓
+
+**Marginals (no-signalling):**
+$$P(A = +) = P(+,+) + P(+,-) = \tfrac12\cos^2\tfrac\delta2 + \tfrac12\sin^2\tfrac\delta2 = \tfrac12$$
+
+Alice's marginal is $\tfrac12$ *regardless of $\beta$* — Bob's setting choice is invisible to Alice. All the structure is in the correlations, none in the marginals. This is why entanglement doesn't permit signalling.
+
+### The correlation function
+
+$$E(\alpha,\beta) = \langle \Phi^+|A(\alpha)\otimes B(\beta)|\Phi^+\rangle = P(+,+) + P(-,-) - P(+,-) - P(-,+)$$
+
+$$= \cos^2\tfrac\delta2 - \sin^2\tfrac\delta2 = \boxed{\cos(\alpha - \beta)}$$
+
+A cross-check without projectors: for $|\Phi^+\rangle = \frac{1}{\sqrt2}\sum_i|ii\rangle$ one has $\langle\Phi^+|M\otimes N|\Phi^+\rangle = \frac12\operatorname{tr}(MN^T)$, and $\operatorname{tr}\!\big(A(\alpha)B(\beta)\big) = 2\cos(\alpha-\beta)$. ✓
+
+### 6. CHSH and the classical bound
+
+With two settings each ($a, a'$ for Alice; $b, b'$ for Bob):
+
+$$S = E(a,b) - E(a,b') + E(a',b) + E(a',b')$$
+
+**Local hidden variable bound.** If each run carries predetermined values $A_a, A_{a'}, B_b, B_{b'} \in \{-1,+1\}$ fixed by some $\lambda$, then for each $\lambda$:
+
+$$S(\lambda) = A_a(B_b - B_{b'}) + A_{a'}(B_b + B_{b'})$$
+
+Since $B_b, B_{b'} = \pm1$: either $B_b = B_{b'}$, making the first bracket $0$ and the second $\pm2$; or $B_b = -B_{b'}$, making the second $0$ and the first $\pm2$. Either way $|S(\lambda)| \le 2$, and averaging over $\lambda$ preserves it:
+
+$$\boxed{|S_{\text{LHV}}| \le 2}$$
+
+**Quantum prediction.** With $E = \cos(\alpha-\beta)$:
+$$S = \cos(a-b) - \cos(a-b') + \cos(a'-b) + \cos(a'-b')$$
+
+Choosing $a = 0,\ a' = \frac\pi2,\ b = \frac\pi4,\ b' = \frac{3\pi}{4}$ makes all four terms contribute $+\frac{\sqrt2}{2}$:
+$$S = 4\cdot\tfrac{\sqrt2}{2} = 2\sqrt2 \approx 2.8284$$
+
+### 7. Now with explicit numbers
+
+#### The four observables
+
+```
+A  = A(0°)   = σ_z          = [[ 1.000000,  0.000000],
+                               [ 0.000000, -1.000000]]
+
+A' = A(90°)  = σ_x          = [[ 0.000000,  1.000000],
+                               [ 1.000000,  0.000000]]
+
+B  = B(45°)  = (σ_x+σ_z)/√2 = [[ 0.707107,  0.707107],
+                               [ 0.707107, -0.707107]]
+
+B' = B(135°) = (σ_x−σ_z)/√2 = [[-0.707107,  0.707107],
+                               [ 0.707107,  0.707107]]
+```
+
+Each has eigenvalues exactly $\{+1, -1\}$.
+
+#### The four 4×4 tensor products
+
+Shown multiplied by $\sqrt2$ so the entries are integers. Acting on $|\Phi^+\rangle = \frac{1}{\sqrt2}(1,0,0,1)^T$:
+
+```
+√2·(A ⊗ B)                    √2·(A ⊗ B')
+[ 1   1   0   0]              [-1   1   0   0]
+[ 1  -1   0   0]              [ 1   1   0   0]
+[ 0   0  -1  -1]              [ 0   0   1  -1]
+[ 0   0  -1   1]              [ 0   0  -1  -1]
+⟨Φ⁺|·|Φ⁺⟩ = +0.707107         ⟨Φ⁺|·|Φ⁺⟩ = −0.707107
+
+√2·(A' ⊗ B)                   √2·(A' ⊗ B')
+[ 0   0   1   1]              [ 0   0  -1   1]
+[ 0   0   1  -1]              [ 0   0   1   1]
+[ 1   1   0   0]              [-1   1   0   0]
+[ 1  -1   0   0]              [ 1   1   0   0]
+⟨Φ⁺|·|Φ⁺⟩ = +0.707107         ⟨Φ⁺|·|Φ⁺⟩ = +0.707107
+```
+
+Worked example for $A \otimes B$, by hand. Let $M = \frac{1}{\sqrt2}\begin{psmallmatrix}1&1&0&0\\1&-1&0&0\\0&0&-1&-1\\0&0&-1&1\end{psmallmatrix}$ and $v = \frac{1}{\sqrt2}(1,0,0,1)^T$:
+
+$$Mv = \tfrac{1}{\sqrt2}\cdot\tfrac{1}{\sqrt2}\begin{pmatrix}1\cdot1 + 1\cdot 0\\ 1\cdot1 - 1\cdot0 \\ -1\cdot 0 - 1\cdot 1\\ -1\cdot0 + 1\cdot1\end{pmatrix} = \tfrac12\begin{pmatrix}1\\1\\-1\\1\end{pmatrix}$$
+
+$$v^T(Mv) = \tfrac{1}{\sqrt2}(1,0,0,1)\cdot\tfrac12(1,1,-1,1)^T = \tfrac{1}{2\sqrt2}(1 + 1) = \tfrac{1}{\sqrt2} = 0.707107 \;\checkmark$$
+
+#### All joint probabilities
+
+| settings | $\delta = \alpha-\beta$ | $P(+,+)$ | $P(+,-)$ | $P(-,+)$ | $P(-,-)$ | sum | $E$ |
+|---|---|---|---|---|---|---|---|
+| $(a,b) = (0°,45°)$ | $-45°$ | 0.426777 | 0.073223 | 0.073223 | 0.426777 | 1.000000 | $+0.707107$ |
+| $(a,b') = (0°,135°)$ | $-135°$ | 0.073223 | 0.426777 | 0.426777 | 0.073223 | 1.000000 | $-0.707107$ |
+| $(a',b) = (90°,45°)$ | $+45°$ | 0.426777 | 0.073223 | 0.073223 | 0.426777 | 1.000000 | $+0.707107$ |
+| $(a',b') = (90°,135°)$ | $-45°$ | 0.426777 | 0.073223 | 0.073223 | 0.426777 | 1.000000 | $+0.707107$ |
+
+Every marginal is exactly $0.500000$ for both parties in all four rows.
+
+Sample check of row 1: $\frac12\cos^2(-22.5°) = \frac12(0.923880)^2 = \frac12(0.853553) = 0.426777$ ✓, and $\frac12\sin^2(-22.5°) = \frac12(0.382683)^2 = 0.073223$ ✓.
+
+#### Assembling $S$
+
+$$S = (+0.707107) - (-0.707107) + (0.707107) + (0.707107)$$
+$$= 0.707107 \times 4 = \mathbf{2.828427}$$
+
+$$2\sqrt2 = 2.828427\ \checkmark \qquad\text{versus the classical bound } 2$$
+
+Violation ratio: $2\sqrt2 / 2 = \sqrt2 \approx 1.414$.
+
+### 8. Why exactly $2\sqrt2$
+
+Form the CHSH operator on $\mathbb{C}^4$:
+
+$$\hat S = A\otimes B - A\otimes B' + A'\otimes B + A'\otimes B'$$
+
+Applying it to the Bell state numerically gives $\hat S|\Phi^+\rangle = 2\sqrt2\,|\Phi^+\rangle$ — **the Bell state is an exact eigenvector of the CHSH operator at these settings**, with eigenvalue $2\sqrt2$. That's why the violation is maximal: you can't do better than an eigenvalue, and Tsirelson's bound says no eigenvalue is larger. The one-line reason (Landau's identity):
+
+$$\hat S^2 = 4\,I \;+\; [A,A']\otimes[B,B']$$
+
+Since $\|A\| = \|A'\| = 1$, $\|[A,A']\| \le 2$, so $\|\hat S^2\| \le 4 + 4 = 8$ and $\|\hat S\| \le 2\sqrt2$. If $A$ and $A'$ commuted — the classical case, where both have simultaneous definite values — the commutator term vanishes and you recover $|S| \le 2$ exactly. **The violation is precisely the non-commutativity of the two measurement settings, amplified through the tensor product structure.**
+
+---
+
+Want this as a properly typeset page (real matrices, MathJax, the probability derivation laid out side by side)? One line and I'll publish it as an artifact.
+
+## Bell non-entangled case
+
+> thanks! do this same thing now for a non-entangled bell state, to show explicitly the difference.
+
+Small terminology note first: all four Bell states are *maximally* entangled by definition — there's no unentangled one. So I'll use the two natural foils: a **pure product state**, and the **separable mixture with the same marginals as $|\Phi^+\rangle$**, which is the sharper comparison. Let me verify both numerically.
+
+All verified ([chsh2.py](/private/tmp/claude-503/-Users-oreilly-Library-Application-Support-Claude-scratch-workspaces-c96e154b-9b88-4167-ac69-883556e884c2-e282c857-eff4-400f-a680-03d505db5460-scratch-2026-09-09-354f52/773531c2-447b-4f3a-a2bc-22d8c080a363/scratchpad/chsh2.py)). Same machinery as before — same $\mathbb{C}^4$, same observables $A(\alpha)$, same angles $a=0°, a'=90°, b=45°, b'=135°$ — only the state changes.
+
+### Case A: the pure product state $|0\rangle \otimes |0\rangle$
+
+#### The state in the full tensor product space
+
+$$|\psi_{\text{prod}}\rangle = |0\rangle_A \otimes |0\rangle_B = \begin{pmatrix}1\\0\end{pmatrix}\otimes\begin{pmatrix}1\\0\end{pmatrix} = \begin{pmatrix}1\\0\\0\\0\end{pmatrix}$$
+
+**Entanglement test.** The amplitude matrix is
+
+$$C = \begin{pmatrix}1 & 0\\0&0\end{pmatrix}, \qquad \det C = 0$$
+
+Schmidt rank 1 — a genuine product state. Contrast with $|\Phi^+\rangle$, where $\det C = \frac12$.
+
+#### The correlation factorizes — symbolically
+
+This is the whole difference, in one line. Because the state is a product, the expectation of any product observable splits:
+
+$$E(\alpha,\beta) = \langle 0|\otimes\langle 0|\;A(\alpha)\otimes B(\beta)\;|0\rangle\otimes|0\rangle = \underbrace{\langle 0|A(\alpha)|0\rangle}_{\text{Alice alone}}\cdot\underbrace{\langle 0|B(\beta)|0\rangle}_{\text{Bob alone}}$$
+
+With $\langle 0|A(\alpha)|0\rangle = A(\alpha)_{00} = \cos\alpha$:
+
+$$\boxed{E_{\text{prod}}(\alpha,\beta) = \cos\alpha\,\cos\beta} \qquad\text{versus}\qquad E_{\Phi^+}(\alpha,\beta) = \cos(\alpha-\beta)$$
+
+**This is the structural difference.** $\cos\alpha\cos\beta$ is a *separable* function — a product of a function of $\alpha$ alone and a function of $\beta$ alone. $\cos(\alpha-\beta)$ is not; it cannot be factored, because $\cos(\alpha-\beta) = \cos\alpha\cos\beta + \sin\alpha\sin\beta$ has two terms. That second term $\sin\alpha\sin\beta$ is the entire Bell violation.
+
+#### The joint probabilities factorize too
+
+$$P(s_A,s_B) = \left|\langle s_A{}_\alpha|0\rangle\right|^2 \cdot \left|\langle s_B{}_\beta|0\rangle\right|^2 = P(s_A)\cdot P(s_B)$$
+
+with $P(A{=}+) = \cos^2\frac\alpha2$, $P(B{=}+) = \cos^2\frac\beta2$. The outcomes are **statistically independent** — the joint distribution is literally the product of the marginals, for every setting pair. There is nothing to correlate.
+
+#### Numbers at the Bell-optimal angles
+
+| settings | $E$ | $P(+,+)$ | $P(+,-)$ | $P(-,+)$ | $P(-,-)$ | $P(A{=}{+})$ | $P(B{=}{+})$ |
+|---|---|---|---|---|---|---|---|
+| $(a,b)=(0°,45°)$ | $+0.707107$ | 0.853553 | 0.146447 | 0.000000 | 0.000000 | 1.0000 | 0.8536 |
+| $(a,b')=(0°,135°)$ | $-0.707107$ | 0.146447 | 0.853553 | 0.000000 | 0.000000 | 1.0000 | 0.1464 |
+| $(a',b)=(90°,45°)$ | $\;\;0.000000$ | 0.426777 | 0.073223 | 0.426777 | 0.073223 | 0.5000 | 0.8536 |
+| $(a',b')=(90°,135°)$ | $\;\;0.000000$ | 0.073223 | 0.426777 | 0.073223 | 0.426777 | 0.5000 | 0.1464 |
+
+Factorization check on row 3: $P(+,+) = 0.5 \times 0.853553 = 0.426777$ ✓ exactly.
+
+$$S = 0.707107 - (-0.707107) + 0 + 0 = \mathbf{1.414214} = \sqrt2$$
+
+Note that Alice's marginal here *does* depend on her own setting ($1.0$ vs $0.5$) — unlike the Bell state, where it was always $0.5$. That's a giveaway that this isn't a fair comparison. Hence:
+
+### Case B: the separable mixture (the sharp foil)
+
+$$\rho_{\text{mix}} = \tfrac12|00\rangle\langle00| + \tfrac12|11\rangle\langle11|$$
+
+This is the *decohered* Bell state: identical local marginals, identical perfect correlation in the computational basis, but classically correlated rather than entangled. Half the pairs are $|00\rangle$, half are $|11\rangle$, decided by a coin flip at the source. Exactly the "local hidden variable" picture.
+
+#### Density matrices side by side
+
+```
+ρ_Bell = |Φ⁺⟩⟨Φ⁺|                  ρ_mix = ½|00⟩⟨00| + ½|11⟩⟨11|
+  [0.5   0    0   0.5]               [0.5   0    0    0 ]
+  [ 0    0    0    0 ]               [ 0    0    0    0 ]
+  [ 0    0    0    0 ]               [ 0    0    0    0 ]
+  [0.5   0    0   0.5]               [ 0    0    0   0.5]
+         ↑            ↑
+    the coherences — the only difference
+```
+
+**The entire distinction is those two off-diagonal $0.5$'s.** Same diagonal, same probabilities in the $z$ basis, same reduced states:
+
+$$\operatorname{Tr}_B \rho_{\text{Bell}} = \operatorname{Tr}_B \rho_{\text{mix}} = \begin{pmatrix}0.5 & 0\\0&0.5\end{pmatrix} = \tfrac{I}{2}$$
+
+So no local measurement on either qubit alone can tell them apart. Only the *correlations across settings* can.
+
+#### Peres–Horodecki (PPT) test
+
+Partial transpose on $B$:
+
+```
+ρ_Bell^{T_B} =                     ρ_mix^{T_B} =
+  [0.5   0    0    0 ]               [0.5   0    0    0 ]
+  [ 0    0   0.5   0 ]               [ 0    0    0    0 ]
+  [ 0   0.5   0    0 ]               [ 0    0    0    0 ]
+  [ 0    0    0   0.5]               [ 0    0    0   0.5]
+eigenvalues: ½, ½, +½, −½            eigenvalues: ½, 0, 0, ½
+       NEGATIVE ⇒ ENTANGLED                 all ≥ 0 ⇒ SEPARABLE
+```
+
+The middle block $\begin{psmallmatrix}0&0.5\\0.5&0\end{psmallmatrix}$ has eigenvalues $\pm\frac12$. That single negative eigenvalue is a certificate of entanglement.
+
+#### The correlation function
+
+$$E_{\text{mix}}(\alpha,\beta) = \operatorname{Tr}\!\left[\rho_{\text{mix}}\,A(\alpha)\otimes B(\beta)\right] = \tfrac12\langle00|A\otimes B|00\rangle + \tfrac12\langle11|A\otimes B|11\rangle$$
+
+$$= \tfrac12\big[\cos\alpha\cos\beta\big] + \tfrac12\big[(-\cos\alpha)(-\cos\beta)\big] = \boxed{\cos\alpha\,\cos\beta}$$
+
+Same separable form as the pure product state.
+
+#### Numbers
+
+| settings | $E_{\text{mix}}$ | $P(+,+)$ | $P(+,-)$ | $P(-,+)$ | $P(-,-)$ | $P(A{=}{+})$ |
+|---|---|---|---|---|---|---|
+| $(a,b)=(0°,45°)$ | $+0.707107$ | 0.426777 | 0.073223 | 0.073223 | 0.426777 | 0.5000 |
+| $(a,b')=(0°,135°)$ | $-0.707107$ | 0.073223 | 0.426777 | 0.426777 | 0.073223 | 0.5000 |
+| $(a',b)=(90°,45°)$ | $\;\;0.000000$ | 0.250000 | 0.250000 | 0.250000 | 0.250000 | 0.5000 |
+| $(a',b')=(90°,135°)$ | $\;\;0.000000$ | 0.250000 | 0.250000 | 0.250000 | 0.250000 | 0.5000 |
+
+$$S = 0.707107 - (-0.707107) + 0 + 0 = \mathbf{1.414214} = \sqrt2$$
+
+### The diagnostic: where exactly they diverge
+
+Put the two states' correlations side by side:
+
+| settings | $E$ for $|\Phi^+\rangle$ | $E$ for $\rho_{\text{mix}}$ | same? |
+|---|---|---|---|
+| $(a,b) = (0°,45°)$ | $+0.707107$ | $+0.707107$ | ✅ **identical** |
+| $(a,b') = (0°,135°)$ | $-0.707107$ | $-0.707107$ | ✅ **identical** |
+| $(a',b) = (90°,45°)$ | $+0.707107$ | $\;\;0.000000$ | ❌ |
+| $(a',b') = (90°,135°)$ | $+0.707107$ | $\;\;0.000000$ | ❌ |
+| | $S = 2.828427$ | $S = 1.414214$ | |
+
+Look at the first two rows: for Alice's setting $a = 0°$ (i.e. $A = \sigma_z$), the mixture reproduces the Bell state's joint probabilities **exactly, to every decimal place** — not just the correlation but all four $P(s_A,s_B)$. The classical mixture is a perfect impostor as long as Alice measures $\sigma_z$.
+
+It fails the moment Alice switches to $a' = 90°$, where $A' = \sigma_x$. $\sigma_x$ is off-diagonal, so its expectation reads the *coherences* — precisely the matrix elements that $\rho_{\text{mix}}$ lacks. Both of those rows collapse to $E = 0$, killing half the CHSH sum.
+
+**The single cleanest statement of the difference.** Measure both parties along the *same* in-plane angle $\theta$:
+
+$$E_{\Phi^+}(\theta,\theta) = \cos(\theta-\theta) = 1 \quad\text{for every }\theta$$
+$$E_{\text{mix}}(\theta,\theta) = \cos^2\theta \quad\Rightarrow\quad 1 \text{ at } 0°,\; 0.5 \text{ at } 45°,\; 0 \text{ at } 90°$$
+
+The Bell state is perfectly correlated in *every* basis. The mixture is perfectly correlated in *one* basis and uncorrelated in the conjugate one. That basis-independence is what has no classical analogue, and CHSH is the device that detects it by querying two incompatible bases at once.
+
+### Why no separable state can ever reach 2
+
+For $\rho_{\text{mix}}$ the local hidden variable model is not hypothetical — write it down:
+
+- $\lambda \in \{0, 1\}$, each with probability $\tfrac12$ (which pair was emitted).
+- Given $\lambda$, Alice outputs $+1$ with probability $|\langle{+}_\alpha|\lambda\rangle|^2$, using only $\alpha$ and $\lambda$.
+- Given $\lambda$, Bob independently outputs $+1$ with probability $|\langle{+}_\beta|\lambda\rangle|^2$, using only $\beta$ and $\lambda$.
+
+Then $E(\alpha,\beta) = \frac12[\cos\alpha\cos\beta] + \frac12[(-\cos\alpha)(-\cos\beta)] = \cos\alpha\cos\beta$ ✓ — reproduced exactly, with no communication. Since an LHV model exists, the $|S| \le 2$ proof from before applies verbatim.
+
+Maximizing over *all* settings for $E = \cos\alpha\cos\beta$:
+
+$$S = \cos a\,(\cos b - \cos b') + \cos a'\,(\cos b + \cos b')$$
+$$\max S = |\cos b - \cos b'| + |\cos b + \cos b'| = 2\max(|\cos b|, |\cos b'|) \le 2$$
+
+The bound $2$ is reachable (e.g. $a = 0°, b = 0°, b' = 180°$) — but only by the degenerate choice $B' = -B$, where Bob isn't really using two independent settings. Saturated, never exceeded.
+
+### Summary
+
+| | $|\Phi^+\rangle$ | $|0\rangle|0\rangle$ | $\rho_{\text{mix}}$ |
+|---|---|---|---|
+| Schmidt rank / separable? | 2, **entangled** | 1, product | separable (mixed) |
+| $\det C$ or PPT | $-\tfrac12$ eigenvalue | — | PPT, all $\ge 0$ |
+| local marginals | $I/2$ | $|0\rangle\langle0|$ | $I/2$ |
+| $E(\alpha,\beta)$ | $\cos(\alpha-\beta)$ | $\cos\alpha\cos\beta$ | $\cos\alpha\cos\beta$ |
+| factorizes? | **no** | yes | yes |
+| $E(\theta,\theta)$ | $1$ for all $\theta$ | $\cos^2\theta$ | $\cos^2\theta$ |
+| $S$ at Bell angles | $2\sqrt2 = 2.828$ | $\sqrt2 = 1.414$ | $\sqrt2 = 1.414$ |
+| $S$ maximized | $2\sqrt2$ | $2$ | $2$ |
+| LHV model exists? | **no** | yes | yes |
+
+The one-sentence version: entanglement shows up as a correlation function that **cannot be factored into a function of Alice's setting times a function of Bob's**, and CHSH is exactly the linear combination that is bounded by 2 for every factorizable correlation and reaches $2\sqrt2$ for the non-factorizable one.
+
+### Bell superposition with classical wave
 
 > Isn't it pretty obvious then that the entire key to the bell inequality effects is superposition? how could you possibly expect to reproduce the effects without superposition? but can't you have superposition in a classical wave? has anyone tried to capture the bell inequality effects with some kind of local realist wave that supports superposition?
 
@@ -999,4 +1353,228 @@ Three things you should weigh before investing:
 - **Harris et al. (2013)** — the emergent-statistics half.
 
 If you read two: **Colin–Durt–Willox** for whether the ontic/epistemic split is coherent, and **Dagan–Bush** for the HQA implementation of it.
+
+## Darrow 2024
+
+> does HQFT reproduce the Schrödinger equation in any limit?
+
+Good question to press on — I told you last turn it doesn't, and that's right for HQFT as published but wrong as of 2024. There's a precise result I should have flagged.
+
+### Dagan & Bush's HQFT (2020): no, and they say so
+
+From their own conclusions:
+
+> "Particular attention will be given to coupling this dynamical picture to the Ensemble Interpretation of quantum mechanics, and **assessing whether the statistical behavior of an ensemble of particles evolving according to the dynamics defined herein will be consistent with the standard formulation of quantum mechanics.**"
+
+That's stated as future work. What they actually *derive* is narrower: the vibrating particle destabilizes into translation with $\bar p = \hbar k$ — the de Broglie relation emerges rather than being assumed. Everything about quantum statistics is explicitly conjectural in that paper ("one can envisage how the former may give rise to statistical behavior consistent with...").
+
+And Durey & Bush's "non-relativistic limit" is not a Schrödinger limit — it means $|v| \ll c$, yielding a reduced *trajectory* equation. Different thing.
+
+### But the successor framework does — exactly, and recently
+
+**Darrow & Bush** ([*Symmetry* **16**, 149 (2024)](https://www.mdpi.com/2073-8994/16/2/149), [arXiv:2408.06972](https://arxiv.org/abs/2408.06972)) reformulated the whole thing as a Lorentz-covariant Lagrangian family coupling a Klein–Gordon field to a relativistic point particle — local, variational, two-way coupled. Then:
+
+**D. Darrow, "Convergence to Bohmian mechanics in a de Broglie-like pilot-wave system,"** [arXiv:2408.05396](https://arxiv.org/pdf/2408.05396) (2024), proves a theorem. Writing the field as $\phi = \psi e^{-i\omega_c t}$ (factoring out the Compton oscillation):
+
+> **Claim.** … In the non-relativistic limit $u \ll c$, $|\dot\psi| \ll \omega_c|\psi|$, the quantities $\psi$ and $q_p$ converge to $\psi^B$ and $q_p^B$ [the free Bohmian wavefunction and trajectory], respectively.
+
+And he emphasizes: *"This result holds in a highly general setting of the pilot-wave framework, with arbitrary domain, initial conditions, and potential."*
+
+So yes — a local, classical, relativistic field theory in ordinary 3-space converges **exactly** to single-particle Bohmian mechanics, with $\psi$ obeying the Schrödinger equation, in the non-relativistic limit.
+
+### And the decomposition is precisely your unscrambling
+
+This is the part you'll want. Darrow's own description of the limit:
+
+> "the system converges exactly to single-particle Bohmian mechanics, where **the guiding wave (less a particle-centred wavepacket) plays the role of the Schrödinger wavefunction.**"
+
+The field splits into exactly the two pieces you proposed:
+
+| piece | role |
+|---|---|
+| a **particle-centred wavepacket** at the Compton scale, carried along with the particle, non-dispersing | de Broglie's **$u$** — ontological |
+| the **remainder**, which converges to $\psi^B$ obeying Schrödinger | de Broglie's **$\psi$** — statistical/guiding |
+
+And the mechanism that makes the limit work is exactly the decoupling you'd want: in this limit *"the particle continues to carry a Compton-scale wavepacket… but this wavepacket no longer radiates energy into the rest of the field."* The ontic wave stops feeding back into the statistical one, and the statistical one then obeys Schrödinger cleanly.
+
+So the "omelette" does get unscrambled, and the theorem tells you the exact condition under which the two components separate.
+
+### Three caveats that matter
+
+**1. It's a *different coupling* from the HQFT/double-solution one.** Within the Darrow–Bush family, one coupling choice reproduces de Broglie's double-solution behaviours (the HQFT branch), and a *different* one gives the Bohmian limit. For the HQFT coupling itself, Darrow only conjectures: *"We conjecture that $\psi$ still converges to the Schrödinger wavefunction with such a coupling, and that the particle oscillates rapidly about a mean Bohmian trajectory."* So: **proven for the Bohmian coupling, conjectured for the HQFT coupling.**
+
+**2. Single particle only.** The theorem says "single-particle Bohmian mechanics." No multiparticle sector, no entanglement, no configuration space.
+
+**3. It recovers Bohmian mechanics, which for one particle is empirically identical to QM** — so this is a genuine recovery of single-particle quantum dynamics, not a weaker analogy. But it inherits Bohm's scope, not more.
+
+### Where this leaves the program — and the through-line of this whole conversation
+
+The ceiling is now located precisely, which is the valuable thing:
+
+- **One particle, 3-space, local classical field theory:** fully recovers Schrödinger + Bohmian trajectories. Exactly. No configuration space needed.
+- **Two entangled particles:** blocked, and not by a technical gap. A local classical field theory in 3-space caps at $S = 2$; nature gives $2\sqrt2$.
+
+That's the sharpest available test of the thesis you opened with — that the exponential configuration space might be dispensable scaffolding. A serious research program has now shown it *is* dispensable for one particle, in full rigour, and the wall it hits at two particles is the Bell wall. Which locates the necessity of configuration space exactly where the earlier analysis said it lives: not in nonlinearity, not in single-particle dynamics, but in the tensor product.
+
+**References**
+- **Dagan & Bush**, [*C. R. Mécanique* **348**, 555 (2020)](https://thales.mit.edu/bush/wp-content/uploads/2021/04/Dagan2020.pdf) — HQFT; no Schrödinger derivation, question left open.
+- **Darrow & Bush**, [*Symmetry* **16**, 149 (2024)](https://www.mdpi.com/2073-8994/16/2/149) — the Lorentz-covariant Lagrangian family.
+- **Darrow**, [arXiv:2408.05396](https://arxiv.org/abs/2408.05396) (2024) — **the convergence theorem. This is your answer.**
+- Prior related: **Sutherland** showed a certain coupling could be gauged away to match Bohmian mechanics; Darrow notes his mechanism is different and not gauge-removable.
+
+## Separate collapse of A and B?
+
+> going back to the Bell measurement ordering issue, the way I understand your answer is that it is assumed that the entire joint $A \otimes B$ quantum state does NOT collapse during the measurement -- only the A and B parts separately collapse, and that is why the order doesn't matter. Is this correct?
+
+No — that's the one reading to discard. The joint state collapses **completely**, including Bob's half. Here it is numerically:
+
+### Alice's measurement alone destroys the entanglement of the whole state
+
+| | state vector | $\vert\det C\vert$ |
+|---|---|---|
+| initial $\vert\Phi^+\rangle$ | $(0.707107,\ 0,\ 0,\ 0.707107)$ | **0.5** — entangled |
+| after **Alice only** ($\sigma_z$, got $+$) | $(1,\ 0,\ 0,\ 0)$ | **0.0** — product |
+
+Alice measures her qubit, and the *joint* state goes from maximally entangled to $|00\rangle$. Bob's qubit goes from maximally mixed ($\rho_B = I/2$) to the definite pure state $|0\rangle$. That's about as global and as nonlocal as collapse gets. Nothing is confined to Alice's factor.
+
+### The actual reason order doesn't matter
+
+It's commutativity of the projectors, full stop:
+
+$$(I\otimes P^B_b)(P^A_a\otimes I) \;=\; (P^A_a\otimes I)(I\otimes P^B_b) \;=\; P^A_a \otimes P^B_b$$
+
+Both operators act on the **entire** joint space. Both collapse the **entire** joint state. They just happen to commute, so composing them in either order lands in the same place.
+
+### And your original intuition was right about one thing — the intermediate states genuinely differ
+
+| | state |
+|---|---|
+| after **Alice only** | $(1,\ 0,\ 0,\ 0)$ |
+| after **Bob only** | $(0.853553,\ 0.353553,\ 0.353553,\ 0.146447)$ |
+| **identical?** | **No** |
+
+| | state |
+|---|---|
+| **Alice then Bob** | $(0.92388,\ 0.382683,\ 0,\ 0)$ |
+| **Bob then Alice** | $(0.92388,\ 0.382683,\ 0,\ 0)$ |
+| **identical?** | **Yes** |
+
+Both orders end at $|0\rangle_A \otimes |{+}_{45°}\rangle_B$, but they pass through *different* intermediate states. So there **is** an order-dependent fact — it lives entirely in the state history, and nothing observable depends on it.
+
+### The three levels, which is what your question was really probing
+
+| quantity | changes when Alice measures? |
+|---|---|
+| global state vector | **yes** — entangled → product, instantly, across the whole system |
+| Bob's **conditional** $\rho_B$ (given Alice's outcome) | **yes** — $I/2 \to \vert0\rangle\langle0\vert$ |
+| Bob's **unconditional** $\rho_B$ (averaged over Alice's outcomes) | **no** — stays exactly $I/2$ |
+| joint statistics | **order-independent** |
+
+Verified: conditional $\rho_B = \begin{psmallmatrix}1&0\\0&0\end{psmallmatrix}$, unconditional $\rho_B = \begin{psmallmatrix}0.5&0\\0&0.5\end{psmallmatrix}$.
+
+**That third row is the one doing the work.** What's confined to Alice's side isn't the collapse — it's the *accessibility* of the collapse. Bob's description changed the instant Alice measured, but to notice it he'd need Alice's outcome, and that bit travels at $\le c$. Without it, he averages over her outcomes and sees $I/2$ forever.
+
+So the correct summary is the inverse of your reading:
+
+> The collapse is global and nonlocal. What is local is only what anyone can *detect* of it.
+
+### Which brings back the Aharonov–Albert point with more force
+
+Since the intermediate states differ between the two orders, and since for spacelike separation there is no frame-invariant fact about which order occurred, there are **two genuinely different state histories**, each correct in its own frame, converging on the same endpoint and the same statistics.
+
+That's the real residue of your original question, and it's exactly why Aharonov and Albert concluded that the covariance of relativistic quantum theory resides in the experimental probabilities and not in the underlying states. Your instinct that "there should be cases where the order matters" was correct — it matters for the narrative, and the narrative turns out not to be frame-invariant, which is a decent argument that it isn't physical.
+
+## Projector ordering is due to tensor product separation of A and B
+
+> Ok, so is the underlying mathematical reason that the projector operators commute is that the A and B elements live in different cells in the outer product tensor space? so, mathematically, when A rotates the entire space, the rotation on B is somehow "information preserving", whereas A has itself rotated into the eigenvector of the outcome? Can you show explicitly what happens to the full tensor product space after each order of measurement (A then B, B then A). Also, Aharonov & Albert don't specifically talk about the Bell test situation -- what paper(s) have specifically applied this order-dependent logic to the Bell test situation?
+
+### 1. Yes — and the precise statement is one line
+
+The tensor product multiplies slot-wise: $(M\otimes N)(M'\otimes N') = (MM')\otimes(NN')$. So
+
+$$(P^A_a\otimes I)(I\otimes P^B_b) = (P^A_a\cdot I)\otimes(I\cdot P^B_b) = P^A_a\otimes P^B_b$$
+$$(I\otimes P^B_b)(P^A_a\otimes I) = (I\cdot P^A_a)\otimes(P^B_b\cdot I) = P^A_a\otimes P^B_b$$
+
+In indices: $(P^A\otimes I)_{(ij),(kl)} = P^A_{ik}\,\delta_{jl}$ and $(I\otimes P^B)_{(ij),(kl)} = \delta_{ik}\,P^B_{jl}$. Composing sums over the middle index pair and gives $P^A_{ik}P^B_{jl}$ either way. Each operator writes only on *its own* index slot and leaves a Kronecker delta on the other, so they can't collide.
+
+Note what this does **not** depend on: the state, the entanglement, or the angles. It's purely kinematic — a property of the tensor product, true for every state and every pair of settings.
+
+### 2. Two corrections to the "rotation" picture
+
+**(a) A projector is not a rotation.** $P^A_+\otimes I$ is not unitary and not invertible — it's a rank-2 projector on $\mathbb{C}^4$. It *destroys* information; that's what collapse is.
+
+**(b) Nothing at all happens to Bob's slot.** It's not an "information-preserving rotation" — the operator's B-factor is literally $I$. No operation.
+
+And yet Bob's state changes. That's worth stating flatly, because it's the whole content of entanglement:
+
+> The operator acts as the **identity** on Bob's factor. Bob's state changes **anyway** — because the projection on Alice's side selects which term of the entangled superposition survives, and that surviving term carries a definite B-part with it.
+
+### 3. The explicit walkthrough
+
+Basis order $\{|00\rangle, |01\rangle, |10\rangle, |11\rangle\}$. Alice measures $\sigma_z$ (0°), Bob at 45°, both get $+$.
+
+```
+P^A_+ ⊗ I                          I ⊗ P^B_+
+[1.000  0      0      0    ]       [0.853553  0.353553  0         0       ]
+[0      1.000  0      0    ]       [0.353553  0.146447  0         0       ]
+[0      0      0      0    ]       [0         0         0.853553  0.353553]
+[0      0      0      0    ]       [0         0         0.353553  0.146447]
+
+keeps the |0⟩_A BLOCK entirely,     BLOCK-DIAGONAL: the identical 2×2
+identity within each block           operation inside every block
+```
+
+**This is the geometric reason they commute.** One operator chooses *which block survives* and is blind to what's inside a block. The other acts *identically inside every block* and is blind to which block it's in. Block-selection and within-block-action can't interfere.
+
+Commutator: $\max|\,[\cdot,\cdot]\,| = 0.0$ exactly.
+
+#### Order 1: Alice then Bob
+
+| step | $\vert00\rangle$ | $\vert01\rangle$ | $\vert10\rangle$ | $\vert11\rangle$ | prob |
+|---|---|---|---|---|---|
+| start $\vert\Phi^+\rangle$ | 0.707107 | 0 | 0 | 0.707107 | |
+| $P^A_+\otimes I$ applied | 0.707107 | 0 | 0 | **0** | 0.500000 |
+| *renormalized* → $\vert00\rangle$ | 1.000000 | 0 | 0 | 0 | |
+| $I\otimes P^B_+$ applied | 0.853553 | 0.353553 | 0 | 0 | 0.853553 |
+| *renormalized* | **0.923880** | **0.382683** | **0** | **0** | |
+
+#### Order 2: Bob then Alice
+
+| step | $\vert00\rangle$ | $\vert01\rangle$ | $\vert10\rangle$ | $\vert11\rangle$ | prob |
+|---|---|---|---|---|---|
+| start $\vert\Phi^+\rangle$ | 0.707107 | 0 | 0 | 0.707107 | |
+| $I\otimes P^B_+$ applied | 0.603553 | 0.250000 | 0.250000 | 0.103553 | 0.500000 |
+| *renormalized* | 0.853553 | 0.353553 | 0.353553 | 0.146447 | |
+| $P^A_+\otimes I$ applied | 0.853553 | 0.353553 | **0** | **0** | 0.853553 |
+| *renormalized* | **0.923880** | **0.382683** | **0** | **0** | |
+
+**The detail worth noticing:** the *unnormalized* vector after both steps is byte-identical in the two orders — $(0.853553,\,0.353553,\,0,\,0)$. That's just $(P^A_+\otimes P^B_+)|\Phi^+\rangle$, the single operator both paths are secretly computing. The intermediate states differ ($|00\rangle$ versus $(0.853553, 0.353553, 0.353553, 0.146447)$); the composite doesn't.
+
+Joint probability $0.5 \times 0.853553 = 0.426777$ both ways, matching the one-shot $\langle\Phi^+|P^A_+\otimes P^B_+|\Phi^+\rangle = 0.426777$.
+
+### 4. Papers applying this specifically to Bell tests
+
+You're right that Aharonov–Albert is general relativistic measurement theory. Here's the Bell-specific literature.
+
+**Theory**
+
+- **Tim Maudlin, *Quantum Non-Locality and Relativity: Metaphysical Intimations of Modern Physics*** (Blackwell 1994; 3rd ed. Wiley-Blackwell 2011). **The book-length treatment of exactly your question.** Develops *hyperplane dependence* — the result that with three mutually spacelike measurements on an entangled state, the quantum predictions depend on the hyperplane, so you cannot consistently conjoin predictions from distinct measurements. This is your ordering problem taken to its sharpest form.
+- **Asher Peres, "Classical interventions in quantum systems. II. Relativistic invariance,"** [*Phys. Rev. A* **61**, 022117 (2000)](https://arxiv.org/abs/quant-ph/9906034). The technical version: spacelike interventions appear as *different sequences of quantum jumps* in different Lorentz frames, and he derives the conditions on the operators that force both sequences to yield identical observables. This is precisely the calculation above, generalized.
+- **Wayne Myrvold, "On peaceful coexistence: is the collapse postulate incompatible with relativity?"** *Stud. Hist. Phil. Mod. Phys.* **33**, 435 (2002) — [free PDF](https://publish.uwo.ca/~wmyrvold/PeacefulCoexistence.pdf). Argues the conflict is only apparent, via the transformation properties of states.
+
+**Experiment — and this is the part you'll enjoy**
+
+Somebody built a theory in which the order *does* matter, and then tested it.
+
+- **Suarez & Scarani (1997)** proposed **multisimultaneity**: a causal model assigning a real time-ordering to every pair of events. Its distinctive prediction is that the correlations should **disappear** in the "**before–before**" configuration — where both analyzers are in relative motion such that *each one, in its own rest frame, selects its output first*.
+- **Zbinden, Brendel, Gisin & Tittel**, "Experimental test of nonlocal quantum correlation in relativistic configurations," *Phys. Rev. A* **63**, 022111 (2001).
+- **Stefanov, Zbinden, Gisin & Suarez**, "Quantum correlations with spacelike separated beam splitters in motion: experimental test of multisimultaneity," *Phys. Rev. Lett.* **88**, 120404 (2002). Acousto-optic modulators as *moving* beam-splitters — the Doppler shift of the reflected photons defines an unambiguous rest frame in which "before or after" is well posed — with interferometers separated by 55 m.
+
+**Result: the correlations persist, exactly as standard QM predicts. Multisimultaneity is falsified.** The before-before experiments rule out nonlocal models with a deterministic, time-ordered nonlocal part.
+
+So the empirical answer to "does the order matter in a Bell test" is not merely "the formalism says no" — it's "a rival model said yes, it was built and run, and the answer came back no."
+
+**Sources:** Maudlin, Myrvold, Peres, and Stefanov et al. (PRL **88**, 120404) verified against listings just now. The Suarez–Scarani (*Phys. Lett. A* **232**, 9) and Zbinden et al. (*PRA* **63**, 022111) volume/page numbers are from memory — the papers, dates and content are confirmed.
+
+
 

@@ -12,20 +12,22 @@ The Bell's inequality framework involves computing the statistics of measurement
 
 As illustrated in [[#figure_bert]] from [[@^Bell81]], this epistemic interpretation corresponds to a **local hidden variable** theory, which was the point of the original thought experiment by [[@^EinsteinPodolskyRosen35]] (EPR) that stimulated Bell's work. Specifically, under the epistemic interpretation, the measurement process merely _reveals_ what the unknown underlying state of the system was, thereby removing our lack of knowledge. The point of Bell's framework is to show that _if_ this was actually the case, then certain experimental results should follow. By contrast, the standard quantum math actually shows qualitatively different results.
 
-As described in [[#figure_bert]], the [[contextual]] property of quantum mechanics predicts that the process of measurement is actually changing the underlying quantum state, effectively _creating_ the resulting measurement outcome on the fly in the process of the measurement itself, rather than revealing some kind of unknown but fully pre-existing state. And because of the entangled nature of the two particles, the further prediction is that this creation process operating on one measurement of the overall quantum state should also affect the other measurement! In effect, measuring the color "pink" on one of Bertlemann's feet actually _creates_ on the fly the color of the other sock!
+As described in [[#figure_bert]], the [[contextual]] property of quantum mechanics predicts that the process of measurement is actually changing the underlying quantum state, effectively _creating_ the resulting measurement outcome on the fly in the process of the measurement itself, rather than _revealing_ some kind of unknown but fully pre-existing state. And because of the entangled nature of the two particles, the further prediction is that this creation process operating on one measurement of the overall quantum state should also affect the other measurement! In effect, measuring the color "pink" on one of Bertlemann's feet actually _creates_, on the fly, the color of the other sock!
 
 {id="figure_bell-packets" style="height:15em"}
 ![Illustration of the standard Bell test setup from the pilot-wave perspective of particles interacting with wave packets. Somehow, the waves are in a state of superposition as a result of entanglement, and this causes the results of measurement at A to influence the outcome at B. Or is it the other way around? This is a fundamental ambiguity in the framework.](media/fig_bell_packets.png)
 
-The standard language for describing this logic is that Alice (A) and Bob (B), who are situated in labs that could be rather far apart, each make their own separate measurements on the entangled quantum state. When they later compare their results, they find that their results for events at the same point in time exhibit significant _correlations_, which reflect the influence of the measurement at A affecting the result at B (or is it vice-versa? This is a fundamental ambiguity in the framework!).
+The standard language for describing the Bell test logic is that Alice (A) and Bob (B), who are situated in labs that could be rather far apart (i.e., _spacelike_ separated in [[special relativity]] terms -- further apart than light can travel within the relevant time frame of measurements), each make their own separate measurements on the entangled quantum state ([[#figure_bell-packets]]). When they later compare their data, they find that their results for events at the same point in time exhibit significant _correlations_, which reflect the influence of the measurement at A affecting the result at B. Or is it vice-versa?
 
-Somewhat unfortunately, the existing literature on this topic somehow seems to be missing a critical point, because it has been so focused on the local hidden variable alternative. Specifically, it seems clear that nobody really has any idea _how_ (in a physical model sense) the measurement process actually creates a measurement outcome from a superposition state (presumably because everyone pictures it in the epistemic sense). Mathematically, the key point is that the **measurement rotates the entire state space** so that it then becomes aligned with the measurement outcome. Because this rotation affects the entire space, it means that the measurement at B ends up being correlated with what happened at A.
+From a standard [[Copenhagen]] perspective, the process of measurement involves instantaneously collapsing (projecting) the entire quantum wave state onto the basis vector (eigenvector) associated with the measurement. If you would then make an additional, subsequent measurement on the resulting post-collapse quantum state, it would just repeat the previous measurement outcome, because the underlying quantum state has been collapsed by the measurement process (this is contextuality).
 
-But how does this actually work? And which side causes the rotation -- A or B? What if they each make conflicting rotations -- who goes first? How is there not an obvious violation of the speed of light as required by [[special relativity]] if this rotation can affect the entire state instantaneously, no matter how widely spread it is?
+Based on this general logic, it would seem that the precise order in which the measurements are made should matter somehow. If the A measurement happens first, and then B, the state should have collapsed to the A eigenvector, and then B operates on that collapsed state, and vice-versa for the opposite order. Furthermore, one could consider some kind of simultaneous collapse due to A and B happening at precisely the same time. As we'll see below, each of these different scenarios indeed has a very different implication for the underlying quantum state in [[configuration space]], but, because of the way that this space is constructed as a tensor product, the end measurement results all end up being identical!
 
-These are precisely the difficulties associated with the measurement process in the [[Copenhagen]] interpretation itself: how can it take a spatially-distributed wave function, and instantaneously collapse it down into a single particle-like point at the moment of measurement? The same non-local, instantaneous kind of assumptions are impossibly present for any kind of measurement in that framework.
+This situation reflects the deeper problem that _the quantum state is fundamentally incompatible with special relativity_, even though the overall resulting phenomena (i.e., the measurements) are not ([[@Bell75]]; [[@AharonovAlbert81]]; [[@Peres00]]; [[@PeresTerno04]]; [[@Norsen11]]). This incompatibility is intuitively obvious, similar to the Coulomb gauge for the electric field, given that the quantum configuration space is manifestly non-local, and yet the theory says it must collapse instantaneously everywhere.
 
-Thus, to provide a more intuitive understanding of what might be happening at a physical level in the context of measurement, we need to examine how the [[pilot wave]] account explains the Bell's experiment results. In this framework, the particles retain a concrete hidden-variable like 3D position at all times, and all of the quantum effects arise from interactions with the wave field. How can that produce the observed correlations? Unfortunately, it turns out that the standard pilot wave framework _only_ tracks position in the discrete particles, while spin, which is the prime variable of interest in the Bell inequality paradigm, is purely in the wave state. So it doesn't really tell us anything. Except maybe that we really don't know what [[spin]] actually is.
+At the phenomenological level, it has been shown that the non-local quantum correlations cannot be used to actually send signals in a way that would violate special relativity ([[@Bell75]]), but this does not mean that the underlying mathematical framework that is used to explain these results is not fundamentally incompatible. Indeed, the authors discussing this conflict invoke the idea that the quantum state is just a [[calculational tool]], not a "beable" (a physically real thing), so we shouldn't be too disturbed by this situation ([[@Bell75]]; [[@PeresTerno04]]). But the obvious problem with such an approach is that there is at this point no viable alternative framework that can otherwise explain how these non-local correlations in the measurements might arise in a physical system whose mechanisms obey the constraints of special relativity. Thus, we appear to have a physically real, replicable phenomenon that is otherwise inexplicable, except by using a calculational tool that is manifestly non-local.
+
+The non-locality of the configuration space does create very "real" problems for the Bohmian version of the [[pilot wave]] framework, because it postulates that the particle positions are continuously well-defined in 3D space, and yet they are being guided around by a non-local, exponentially-large configuration space wave state. Thus, it is not possible to dodge the conflict with special relativity in this framework by hiding behind the calculational tool argument, and this conflict thus remains one of the most significant difficulties with the pilot wave framework ([[@Norsen15]]; [[@Norsen11]]).
 
 Here are a few other relevant high-level points.
 
@@ -33,7 +35,7 @@ Here are a few other relevant high-level points.
 
 * Extensive work has shown that classical waves, and corresponding optical wave phenomena, exhibit entanglement-like phenomena when put into a state of superposition ([[@Spreeuw98]]; [[@QianEberly11]]; [[@QianLittleHowellEtAl15]]; [[@KarimiBoyd15]]; [[@Khrennikov06]]).
 
-* However, superposition alone is insufficient. You also need the outer-product nature of [[configuration space]], which keeps the wave state of the two different particles _separated_, even as they are in a state of superposition. So the superposition is fundamentally about the possible state of _each_ particle separately, not about both particles being somehow superposed directly on top of each other.
+* However, superposition alone is insufficient. You also need the outer-product nature of [[configuration space]], which keeps the wave state of the two different particles _separated_, even as they are in a state of superposition. So the superposition is fundamentally about the possible state of _each_ particle separately, not about both particles being somehow superposed directly on top of each other. The space-like separation of A and B is indeed built into the tensor-product state representation, based on the requirement that such separated entities should be in different _non-commuting_ parts of the state space ([[@Peierls52]]).
 
 We return to these issues after exploring a fully worked-out example using the standard [[Hilbert space]] formalism, to get a better sense of what is happening at a mathematical level.
 
@@ -59,6 +61,8 @@ $$
 |00\rangle = \begin{pmatrix}1\\0\\0\\0\end{pmatrix}\quad |01\rangle = \begin{pmatrix}0\\1\\0\\0\end{pmatrix}\quad |10\rangle = \begin{pmatrix}0\\0\\1\\0\end{pmatrix}\quad |11\rangle = \begin{pmatrix}0\\0\\0\\1\end{pmatrix}
 $$
 
+This innocent-looking configuration space organization already contains critical properties that determine several features of the resulting calculations. First, note that there is no position space represented, and a given state instance contains the full potentially non-local information about each particle, even if they might be spacelike separated. Furthermore, each particle that will end up going to the A or B detector has its own separate set of states (which then get integrated in the tensor product), which automatically makes any measurement operating on each such particle a _commuting_ operator, which is thus _not_ subject to the collapse effects of a measurement on the other particle. This is what allows the measurements at A and B to happen in any order and still produce the same overall result, even though the effects of each such measurement on the underlying state does depend on the order.
+
 The maximally entangled state of this system $\psi_\otimes$ is a **superposition** of the case where either qubit is either on or off:
 
 $$
@@ -68,22 +72,22 @@ $$
 You can verify it is entangled by computing the determinant of the 2x2 matrix version of the state -- if this is non-zero, then it is entangled. The determinant $\det$ is the product of the diagonal elements minus the off-diagonal ones:
 
 $$
-C = \begin{pmatrix}a & b\\ c & d\end{pmatrix}$, \qquad det C = ad - bc
+C = \begin{pmatrix}a & b\\ c & d\end{pmatrix}, \qquad \det C = ad - bc
 $$
 
 $$
 C_\otimes = \begin{pmatrix}1 & 0\\ 0 & 1\end{pmatrix}, \qquad \det C = 1 \neq 0
 $$
 
-As explained in [[hilbert-space#measurement]], the **density operator** $\rho$ contains all the information about all possible measurements on the given quantum state. For this entangled case, it is:
+As explained in [[hilbert-space#measurement]], the **density operator** $\rho$ contains all the information about all possible measurements on the given quantum state, providing the correlation matrix for different possible outcomes. For this entangled case, it is:
 
 $$
 \rho_\otimes = |\psi_\otimes\rangle \langle \psi_\otimes | = \begin{pmatrix} 0.5 & 0 & 0 & 0.5 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0.5 & 0 & 0 & 0.5 \end{pmatrix}
 $$
 
-The critical point is that there are off-diagonal elements here, which directly capture the presence of a correlation between the probability of a $|00\rangle$ outcome and a $|11\rangle$ outcome. Specifically, in the first column, the bottom-left cell represents the probability for a $|00\rangle$ and $|11\rangle$ outcome, and the upper-right cell represents the probability of a $|11\rangle$ and $|00rangle$ outcome.
+The critical point is that there are off-diagonal elements here, which directly capture the presence of a correlation between the probability of a $|00\rangle$ outcome and a $|11\rangle$ outcome. Specifically, in the first column, the bottom-left cell represents the probability for a $|00\rangle$ and $|11\rangle$ outcome, and the upper-right cell represents the probability of a $|11\rangle$ and $|00\rangle$ outcome. You can see how this turns into the measured correlations by applying the projection operators, as described below. 
 
-These off-diagonal elements are only possible in a state created from a superposition, which happens via the process of entanglement in preparing the initial state of the system.
+The essential point is that these off-diagonal elements are only possible in a state created from a superposition, which happens via the process of entanglement in preparing the initial state of the system.
 
 There are two key contrasting cases which do _not_ produce the uniquely quantum non-locality result. The first one is a **pure product state** where for example the two qubits are both in the pure 0 state:
 
@@ -100,17 +104,17 @@ $$
 and the density matrix has no off-diagonal elements:
 
 $$
-\rho_* = |\psi_*\rangle \langle \psi_* | = \begin{pmatrix} 0.5 & 0 & 0 & 0.0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0.0 & 0 & 0 & 0.5 \end{pmatrix}
+\rho_* = |\psi_*\rangle \langle \psi_* | = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{pmatrix}
 $$
 
-The more interesting foil corresponds to a local hidden variable case, where half the time a $|00\rangle$ state is prepared, and the other half it is $|11\rangle$, as compared to the _single_ state that is in a state of _superposition_. This contrast highlights precisely what it is about the superposition state that differs from a _standard_ probabilistic situation. This then provides the essential insight about entanglement.
+The more interesting contrast corresponds to a local hidden variable case, where half the time a $|00\rangle$ state is prepared, and the other half it is $|11\rangle$, as compared to the _single_ state that is in a state of _superposition_. This contrast highlights precisely what it is about the superposition state that differs from a _standard_ probabilistic situation. This then provides the essential insight about entanglement.
 
 $$
 \rho_+ = \tfrac12 |00\rangle \langle00| + \tfrac12|11\rangle\langle11|
 $$
 
 $$
-\rho_+ = |\psi_+\rangle \langle \psi_+ | = \begin{pmatrix} 0.5 & 0 & 0 & 0.0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0.0 & 0 & 0 & 0.5 \end{pmatrix}
+\rho_+ = |\psi_+\rangle \langle \psi_+ | = \begin{pmatrix} 0.5 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0.5 \end{pmatrix}
 $$
 
 Critically, this also has no off-diagonal elements, and thus only produces classical-like probability results.
@@ -119,29 +123,29 @@ Thus, there is an obvious, absolute conclusion from this comparison:
 
 * **superposition (entanglement) is an essential ingredient** in producing non-local quantum effects.
 
-Any local hidden variable strategy that does not result in a wave state that is in a state of supervision is not going to capture the quantum effects, because, as you can see in the above math, the resulting probabilities for mixing the different states are purely classical, acting as simple weighted-average multipliers on the resulting density operator. 
+Any local hidden variable strategy that does not result in a wave state that is in a state of superposition is not going to capture the quantum effects, because, as you can see in the above math, the resulting probabilities for mixing the different states are purely classical, acting as simple weighted-average multipliers on the resulting density operator. 
 
 Interestingly, there is indeed a literature on the effects of superposition in classical waves, i.e., in electromagnetic waves, which reproduce many of the quantum-like effects of superposition ([[@Spreeuw98]]; [[@QianEberly11]]; [[@QianLittleHowellEtAl15]]; [[@KarimiBoyd15]]; [[@Khrennikov06]]). However, these experiments do not capture the non-locality present in the Bell's test experiments, which follows naturally from the tensor-product nature of the configuration space used in the above Hilbert-space formulation.
 
-The main question in this context is thus, how could Nature actually exhibit the corresponding non-locality in terms of a [[universal basis]] space representation that doesn't just build it in as an assumption by using a tensor space.
+The main question in this context is thus, how could Nature actually exhibit the corresponding non-locality in terms of a [[universal basis]] space representation that doesn't just build it in as an assumption by using a tensor space?
 
 ## The measurement observables
 
-Because you cannot directly observe the density matrix values shown above, actual experiments involve two different detectors, A and B (typically called Alice and Bob) that each measure a spin component in the $x$–$z$ plane, at angles $\alpha$ and $\beta$. The observable is $\hat n(\theta)\cdot\vec\sigma$ with $\hat n = (\sin\theta, 0, \cos\theta)$:
+TODO: this section needs further work to cleanup output from Claude!
+
+Because you cannot directly observe the density matrix values shown above, actual experiments involve setting the parameters on the A and B detectors that each measure a spin component in the $x$–$z$ plane, at angles $\alpha$ and $\beta$. The outcome for A when set at an angle of $\alpha$ is:
 
 $$
 A(\alpha) = \sin\alpha\,\sigma_x + \cos\alpha\,\sigma_z = \begin{pmatrix}\cos\alpha & \sin\alpha \\ \sin\alpha & -\cos\alpha\end{pmatrix}
 $$
 
-and identically $B(\beta)$. Each has eigenvalues $\pm 1$ (since $A^2 = I$, $\operatorname{tr}A = 0$), with eigenvectors
+and likewise for $B(\beta)$. The $\sigma_x$ and $\sigma_z$ are the [[Pauli matricies]]. Each has eigenvalues $\pm 1$, with eigenvectors
 
 $$
 |{+}_\alpha\rangle = \begin{pmatrix}\cos\frac{\alpha}{2}\\[2pt] \sin\frac{\alpha}{2}\end{pmatrix},\qquad |{-}_\alpha\rangle = \begin{pmatrix}-\sin\frac{\alpha}{2}\\[2pt] \cos\frac{\alpha}{2}\end{pmatrix}
 $$
 
-Check: $A(\alpha)|{+}_\alpha\rangle = \binom{\cos\alpha\cos\frac\alpha2 + \sin\alpha\sin\frac\alpha2}{\sin\alpha\cos\frac\alpha2 - \cos\alpha\sin\frac\alpha2} = \binom{\cos(\alpha/2)}{\sin(\alpha/2)} = +|{+}_\alpha\rangle$ ✓
-
-The spectral projectors are
+The spectral projectors are:
 
 $$
 P^A_\pm(\alpha) = |{\pm}_\alpha\rangle\langle{\pm}_\alpha| = \tfrac12\begin{pmatrix}1\pm\cos\alpha & \pm\sin\alpha\\ \pm\sin\alpha & 1\mp\cos\alpha\end{pmatrix}, \qquad A(\alpha) = P^A_+ - P^A_-
