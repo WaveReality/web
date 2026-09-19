@@ -36,7 +36,7 @@ $$
 S = \int_{q_1}^{q_2} L(\dot{q}, q) dt
 $$
 
-Where the latter expression provides the concrete parameterization of the two points $q_1$ and $q_2$, and the Laplacian being a function of the individual points along the way between these two points, and the velocities along these paths.
+Where the latter expression provides the concrete parameterization of the two points $q_1$ and $q_2$, and the Laplacian being a function of the individual points along the way between these two points (i.e., the **path**), and the velocities along these paths.
 
 The _q_ points are coordinates in the [[configuration space]] of the system, which are typically strategically chosen to simplify the computation, and in general expand exponentially in the number of dynamic elements in the system.
 
@@ -102,4 +102,6 @@ which results in the Newtonian equations for the SHO using the potential energy 
 $$
 m \ddot{x} = -k x
 $$
+
+<!--- TODO: show case for a wave with a potential, which we use in higgs.md  -->
 

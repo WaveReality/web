@@ -322,6 +322,8 @@
 
 <p id="Maudlin11">Maudlin, T. (2011). <i>Quantum Non-Locality and Relativity: Metaphysical Intimations of Modern Physics. </i> John Wiley & Sons. </p>
 
+<p id="Melo17">Melo, I. (2017). Higgs potential and fundamental physics. <i>European Journal of Physics, 38</i>, 065404. <a href="http://arxiv.org/abs/1911.08893">http://arxiv.org/abs/1911.08893</a><a href="http://doi.org/10.1088/1361-6404/aa8c3d"> http://doi.org/10.1088/1361-6404/aa8c3d</a></p>
+
 <p id="Mermin18">Mermin, N.D. (2018). Making better sense of quantum mechanics. <i>Reports on Progress in Physics, 82</i>, 012002. <a href="https://dx.doi.org/10.1088/1361-6633/aae2c6">https://dx.doi.org/10.1088/1361-6633/aae2c6</a><a href="http://doi.org/10.1088/1361-6633/aae2c6"> http://doi.org/10.1088/1361-6633/aae2c6</a></p>
 
 <p id="Minkowski08">Minkowski, H. (1908). Die Grundgleichungen für die elektromagnetischen Vorgänge in bewegten Körpern. <i>Nachrichten von der Gesellschaft der Wissenschaften zu Göttingen, Mathematisch-Physikalische Klasse, 1908</i>, 53–111. <a href="https://eudml.org/doc/58707">https://eudml.org/doc/58707</a></p>

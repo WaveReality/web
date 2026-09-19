@@ -9,11 +9,11 @@ bibfile = "mechphys.json"
 The symbol $\chi$ is used to represent a complex-valued state variable:
 
 $$
-\chi = a + i b
+\chi \def a + i b
 $$
 
 $$
-= \phi_a + i \phi_b
+\def \phi_a + i \phi_b
 $$
 
 So, $\chi$ is composed of two separate real-valued numbers, designated $a$ and $b$ (or $\phi_a$ and $\phi_b$, to indicate that they are scalar state variables). A complex number is really just a way of representing two separate real valued numbers, aligned along orthogonal dimensions, in an efficient and compact manner ([[#figure_complex]]). It is essential to appreciate that, despite the presence of the imaginary number $i$ (where $i^2 = -1$ or $i = \sqrt{-1}$), _all you ever really have is two real-valued numbers._ There is nothing "imaginary" or mysterious or spooky about the second number in a complex number: all the $i$ does is keep these two values separate from each other.

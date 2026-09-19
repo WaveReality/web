@@ -429,7 +429,7 @@ A simple and interesting way to alter basic wave propagation is to introduce a f
 
 {id="eq_vp" title="external potential"}
 $$
-\frac{\partial^2 \phi}{\partial t^2} = c^2 (\nabla^2 \phi + V(x,y,z) \phi)
+\frac{\partial^2 \phi}{\partial t^2} = c^2 (\nabla^2 + V(x,y,z)) \phi 
 $$
 
 Note that _V_ is multiplied by the current state value $\phi$, and in general it should be either 0 or a negative value, because any positive value would result in additional acceleration of the wave amplitude, which will just accumulate over time and explode. When the value of _V_ is negative, it acts like an additional restorative force that is proportional to the deviation of the $\phi$ value itself: e.g., when $\phi$ is positive, it pushes back down with increasing force as $\phi$ increases.

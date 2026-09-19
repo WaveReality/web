@@ -3,32 +3,96 @@ Categories = ["Standard Model"]
 bibfile = "mechphys.json"
 +++
 
-The **Higgs** field plays a central role in the [[weak]] interaction in the [[Standard Model]], providing a mechanism for converting mathematically _massless_ weak force [[boson]]s (which are represented as an expanded set of electromagnetic force field bosons, as described by [[Maxwell]]-like equations) into the actual $W^{\pm}$ and $Z^0$ vector bosons that have (large) masses. This occurs due to **spontaneous symmetry breaking** due to the Higgs field having a non-zero [[vacuum]] energy level: if it instead had a zero vacuum energy level, then these weak bosons would be massless.
+The **Higgs** field plays a central role in the [[weak]] interaction in the [[Standard Model]], providing a mechanism for converting mathematically _massless_ weak force [[boson]]s into the actual $W^{\pm}$ and $Z^0$ vector bosons that have (large) masses. Furthermore, the Higgs field also gives mass to the [[fermion]]s through _Yukawa_ coupling factors ([[@Yukawa35]]; [wikipedia](https://en.wikipedia.org/wiki/Yukawa_coupling)). Thus, the Higgs is unique in bidirectionally coupling with every other field, and filling the decidedly non-empty vacuum with four values per point that end up giving rise to the mass terms present in all the other fields. This mass term functions like the mass factor in the [[Klein-Gordon]] wave function, both for the Higgs field itself and for the other fields that it couples with, but instead of being a fixed parameter in an equation, it derives from the dynamics of the the Higgs field itself.
 
-This Standard Model Higgs mechanism is central to the **electroweak** integration of electromagnetic and weak forces, developed in the 1960's and 70's ([[@Weinberg67]]; [[@Higgs64]]; [[@EnglertBrout64]]; [[@GuralnikHagenKibble64]]), based on mechanisms originally inspired by superconductivity ([[@Goldstone61]]; [[@GoldstoneSalamWeinberg62]]; [[@Nambu60]]; [[@NambuJona-Lasinio61]]; [[@DurrHeisenbergMitterEtAl59]]; [[@Schwinger62]]; [[@Anderson63]]). Furthermore, this same mechanism was extended so that the Higgs field also gives mass to the [[fermion]]s as well, through the Yukawa coupling factors ([[@Yukawa35]]; [wikipedia](https://en.wikipedia.org/wiki/Yukawa_coupling)).
+At a metaphorical level, the Higgs field sounds sort of like a modern-day version of the [[aether]], in its all-pervasive effects. These effects go well beyond just providing a single scalar mass value, due to the nature of the [[weak#electroweak]] theory that integrates the weak force with the electromagnetic force, where the Higgs field plays a central (and very complex) role ([[@Weinberg67]]; [[@Higgs64]]; [[@EnglertBrout64]]; [[@GuralnikHagenKibble64]]).
 
-The Higgs field is represented by the [[Klein-Gordon]] equation in the Standard Model, which describes a _scalar_ field with a rest mass. The presence of the rest mass corresponds to the mass of the Higgs boson. The empirically-measured Higgs boson mass is around $125 GeV/c^2$ ([[@ParticleDataGroup24]]).
+The historical development of this whole framework originated because there is no way to accomplish the critical [[conservation]] trick performed by [[gauge theory]] using force-field bosons that have mass ([[@Goldstone61]]; [[@GoldstoneSalamWeinberg62]]). That proved to be a major barrier in trying to understand the weak force, which was known to have a very short range of action, which strongly suggested that it is mediated by massive bosons. Surprisingly, it turns out that by doing all the math with massless bosons, and then adding the mass back in "at the end" in a very particular way, you end up with a sensible mathematical framework. And although this sounds suspiciously like a "hack", it amazingly seems to accurately describe how the electroweak system actually works.
 
-## Superconductivity analogy
+The key mechanism for being able to do the math with massless bosons, and then turning on the mass "at the end", is though the **spontaneous symmetry breaking** in the Higgs field. The Higgs field is driven by the energy of all the other particles in a given region of space, and it also has a separate _self coupling_ factor of a special form known as the **Higgs potential**. If the energy from all the other particles is sufficiently high, it effectively prevents the Higgs potential factor from having an effect, with the consequence that the average (expected) value of the Higgs field amplitudes is zero (as is the case for all the other fields, based on the basic nature of the wave equations).
 
-The original source inspiration for the Higgs mechanism comes from the phenomenology of magnetism in superconductors, which can sustain electrical currents without any resistance ("friction"). These electrical currents can then give rise to corresponding magnetic fields that cancel out any external magnetic fields inside the superconductor itself. Thus, phenomenologically, this illustrates how a long-range force (magnetism) can become short-ranged, when it interacts with an "absorbing" medium. The Higgs field effectively plays this role as the absorbing medium, as a result of the vacuum obtaining a non-zero value, due to the spontaneous symmetry breaking mechanism.
+However, once this background energy level goes below a critical threshold, the effective symmetry of the potential is broken, and the Higgs field takes on a **vacuum expectation value** determined by the Higgs potential, meaning that it now has a consistent effective mass. This threshold energy level is so high that the symmetry was effectively broken within the first 10 picoseconds after the big bang, so the symmetric case is effectively hypothetical for nearly the entire duration of the known universe. But, critically, this symmetric case is where the math all works, and, even though it really doesn't look like it, the exact same math is operating in the post-symmetry breaking era as well.
+
+Specifically, as shown in [[weak#electroweak]], the equations for the pre-symmetry-breaking version are relatively simple and elegant, but the post-symmetry-breaking case introduces significant complexity that only emerges once the Higgs field takes on a consistent expected mass value. It really is the same underlying math, but because the field couplings represent nonlinear interactions, extra terms emerge once the field stabilizes with a consistent mass. Mathematically, the same pre-symmetry-breaking equations are solved with a specific parameterization of this stable mass, which ends up being concentrated entirely in one of the four Higgs field values, as determined by the way these values interact in the electroweak system.
+
+There are two related sources of inspiration for the Higgs mechanism, one from the Landau theory of phase transitions, for example based on the relationship between temperature and ferromagnetism, where at a sufficiently high temperature, the magnetic pole orientations in iron are bouncing around too much to stably align ([[@Melo17]]).
+
+The other major inspiration comes from superconductivity ([[@Goldstone61]]; [[@GoldstoneSalamWeinberg62]]; [[@Nambu60]]; [[@NambuJona-Lasinio61]]; [[@DurrHeisenbergMitterEtAl59]]; [[@Schwinger62]]; [[@Anderson63]]). Superconductors can sustain electrical currents without any resistance ("friction"), and these electrical currents can then give rise to corresponding magnetic fields that cancel out any external magnetic fields inside the superconductor itself. Thus, phenomenologically, this illustrates how a long-range force (magnetism) can become short-ranged like the weak force, when it interacts with an "absorbing" medium. The Higgs field effectively plays this role as the absorbing medium, as a result of obtaining a non-zero mass value.
 
 ## Higgs potential
 
-The Higgs mechanism is based on the [[complex KG]] [[Klein-Gordon]] (KG) equation, that is coupled to the electromagnetic field, with a special **Higgs potential** that is responsible for the spontaneous symmetry breaking, which replaces the mass term that is otherwise used in KG:
+The Higgs mechanism is based on the [[complex KG]] [[Klein-Gordon]] (KG) equation, where the complex values are necessary to have a conserved total magnitude of the state. Although the full version of the Higgs is deeply intertwined with the [[weak]] force, in the full [[weak#electroweak]] system, we can describe a simple version of it here just to illustrate the basic idea of the Higgs symmetry breaking phenomenon.
 
-$$
-\frac{\partial^2 \chi}{\partial t^2} = (\nabla^2 - V(\chi)) \chi
-$$
+In this simple case, we can even dispense with the complex state and just use a scalar wave state -- in fact, the electroweak version ends up doing effectively the same thing in order to concentrate all of the mass into one component of the field, while keeping all the rest of the components at zero mass (but the complex version is needed for the [[gauge theory]] logic in coupling with the electromagnetic and weak boson fields).
 
-where:
+First, we adopt a standard convention that the effective Higgs field values have a normalization factor applied to them, which is $\frac{1}{\sqrt2}$ for the complex field values, and 1/2 for the scalar $\phi$ values that we're using here.
+
+{id="figure_potential" style="height:25em"}
+![Higgs potential on a simple scalar value, and what that would looks like in the complex plane, where there is a ring of equivalent mass magnitude at the minimum.](media/fig_higgs_potential.png)
+
+The general formula for the Higgs potential that shows up in the [[Lagrangian]] as a potential energy factor is written in this form:
 
 {id="eq_higgsv" title="Higgs potential"}
 $$
-V(\chi) = \lambda(|\chi|^2 - \mu_H^2)^2
+V(\psi) = -\mu^2 \psi^\dagger \psi + \lambda (\psi^\dagger \psi)^2
 $$
 
-and $|\chi|^2$ is the squared magnitude of the complex state at each point. The form of this potential is such that it will be zero whenever the magnitude is equal to the target constant $\mu_H$, and will be positive otherwise. Given that this potential is subtracted from the wave equation, the effective "mass" of the wave function will be positive whenever this magnitude deviates from the target constant $\mu_H$. This will have the tendency over time to force the complex magnitude of the state to be at this $\mu_H$ value.
+For our simple scalar example, we define:
+
+$$
+\psi = \frac{1}{2} \phi
+$$
+
+Such that:
+
+$$
+V(\psi) = -\frac{1}{2}\mu^2 \phi^2+ \frac{1}{4}\lambda (\phi^2)^2
+$$
+
+The form of this potential is a **mexican hat** shape (cross section in the scalar case) ([[#figure_potential]]), and we can solve for the minima / maxima of it by setting the first derivative of it to 0, to find the points where it is not changing:
+
+$$
+\frac{dV(\phi)}{d\phi} = -\mu^2 \phi + \lambda \phi^3
+$$
+
+This is 0 when $\phi$ is 0, which ends up being a maximum in the resulting potential, and it also has another 0 point here:
+
+{id="eq_min" title="Minimum point"}
+$$
+\phi^2 = \frac{\mu^2}{\lambda}
+$$
+
+$$
+\phi = \frac{\mu}{\sqrt{\lambda}}
+$$
+
+This turns out to be the minimum point in the potential, and is where the wave equations will stabilize over time, if nothing else is going on to excite them. In other words, this value defines the _vacuum expectation value_ of the Higgs field.
+
+To incorporate this potential properly into the KG equation, we have to use the [[Lagrangian]] formulation, with the _Euler-Lagrange_ equations that result in the equations of motion for the system. For a field-based system this results in the standard wave equation with an additional term based on the _derivative_ of the potential:
+
+$$
+\partial^2 \phi = (\nabla^2 - \frac{dV(\phi)}{d\phi}) \phi 
+$$
+
+in effect, the Lagrangian is sensitive to how the potential changes as a function of changes in the wave state, which is intuitively why it shows up as a derivative.
+
+$$
+\partial^2 \phi = (\nabla^2 -\mu^2 + \lambda \phi^3) \phi 
+$$
+
+As we already showed in [[#eq_min]], these extra terms will be zero when $\phi$ is non-zero, and the wave dynamics will naturally settle into that state over time as a stable equilibrium point, creating the non-zero vacuum expectation value that corresponds to a broken symmetry.
+
+{id="table_params" title="Higgs parameter values"}
+| parameter | value |
+|---|---|
+| $\mu = m_h/\sqrt2$ | 88.47 GeV |
+| $\lambda = m_h^2/(2v^2)$ | 0.1291 |
+| $\phi_{\min} = \mu/\sqrt\lambda$ | 246.22 GeV $= v$ |
+| $m_h = \sqrt2\,\mu = \sqrt{2\lambda}\,v$ | 125.11 GeV |
+| $V_{\min} = -\lambda v^4/4$ | $-1.186\times10^8$ GeV⁴ |
+| $V = 0$ at $\sqrt2\,v$ | 348.21 GeV |
+
+The actual empirical values for these parameters based on the current data are shown in [[#table_params]] based on the current experimental data ([[@ParticleDataGroup24]]).
 
 ## Fine tuning / hierarchy problem
 
