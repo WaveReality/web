@@ -94,6 +94,10 @@ As we already showed in [[#eq_min]], these extra terms will be zero when $\phi$ 
 
 The actual empirical values for these parameters based on the current data are shown in [[#table_params]] based on the current experimental data ([[@ParticleDataGroup24]]).
 
+## The phase transition
+
+<!--- TODO: add in the T-dependency -->
+
 ## Fine tuning / hierarchy problem
 
 Because the Higgs field couples with _all_ [[particle]]s according to the Standard Model, the strength of the Higgs field, i.e., the mass of the Higgs boson, should be a function of the masses of all of the different types of massive particles. Now that the mass of the Higgs boson has been measured, it can be used in reverse to compute the expected masses of all particles, _including any that have yet to be discovered!_ The contribution of any given particle to the Higgs mass is (see [Wikipedia](https://en.wikipedia.org/wiki/Hierarchy_problem)):
