@@ -233,8 +233,6 @@ $$
 v = c y_0
 $$
 
-
-
 ## Complex numbers
 
 {id="figure_cvho" style="height:30em"}

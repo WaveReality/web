@@ -10,6 +10,8 @@
 
 <p id="Anderson63">Anderson, P.W. (1963). Plasmons, Gauge Invariance, and Mass. <i>Physical Review, 130</i>, 439–442. <a href="https://link.aps.org/doi/10.1103/PhysRev.130.439">https://link.aps.org/doi/10.1103/PhysRev.130.439</a><a href="http://doi.org/10.1103/PhysRev.130.439"> http://doi.org/10.1103/PhysRev.130.439</a></p>
 
+<p id="AskarCakmak78">Askar, A., & Cakmak, A.S. (1978). Explicit integration method for the time‐dependent Schrodinger equation for collision problems. <i>The Journal of Chemical Physics, 68</i>, 2794–2798. <a href="https://doi.org/10.1063/1.436072">https://doi.org/10.1063/1.436072</a><a href="http://doi.org/10.1063/1.436072"> http://doi.org/10.1063/1.436072</a></p>
+
 <p id="AspectDalibardRoger82">Aspect, A., Dalibard, J., & Roger, G. (1982). Experimental Test of Bell's Inequalities Using Time-Varying Analyzers. <i>Physical Review Letters, 49</i>, 1804–1807. <a href="https://link.aps.org/doi/10.1103/PhysRevLett.49.1804">https://link.aps.org/doi/10.1103/PhysRevLett.49.1804</a><a href="http://doi.org/10.1103/PhysRevLett.49.1804"> http://doi.org/10.1103/PhysRevLett.49.1804</a></p>
 
 <p id="AspectGrangierRoger82">Aspect, A., Grangier, P., & Roger, G. (1982). Experimental Realization of Einstein-Podolsky-Rosen-Bohm Gedankenexperiment: A New Violation of Bell's Inequalities. <i>Physical Review Letters, 49</i>, 91–94. <a href="https://link.aps.org/doi/10.1103/PhysRevLett.49.91">https://link.aps.org/doi/10.1103/PhysRevLett.49.91</a><a href="http://doi.org/10.1103/PhysRevLett.49.91"> http://doi.org/10.1103/PhysRevLett.49.91</a></p>
@@ -63,6 +65,8 @@
 <p id="BohmVigier54">Bohm, D., & Vigier, J.P. (1954). Model of the Causal Interpretation of Quantum Theory in Terms of a Fluid with Irregular Fluctuations. <i>Physical Review, 96</i>, 208–216. <a href="https://link.aps.org/doi/10.1103/PhysRev.96.208">https://link.aps.org/doi/10.1103/PhysRev.96.208</a><a href="http://doi.org/10.1103/PhysRev.96.208"> http://doi.org/10.1103/PhysRev.96.208</a></p>
 
 <p id="Borghesi17">Borghesi, C. (2017). Equivalent Quantum Equations in a System Inspired by Bouncing Droplets Experiments. <i>Foundations of Physics, 47</i>, 933–958. <a href="https://doi.org/10.1007/s10701-017-0103-6">https://doi.org/10.1007/s10701-017-0103-6</a><a href="http://doi.org/10.1007/s10701-017-0103-6"> http://doi.org/10.1007/s10701-017-0103-6</a></p>
+
+<p id="Boris70">Boris, J.P. (1970). Relativistic plasma simulation-optimization of a hybrid code. <i>Proc. 4th Conf. Num. Sim. Plasmas, </i>3–67. <a href="https://cir.nii.ac.jp/crid/1571417124694148608">https://cir.nii.ac.jp/crid/1571417124694148608</a></p>
 
 <p id="BoussoChandrasekaranShahbazi-Moghaddam20">Bousso, R., Chandrasekaran, V., & Shahbazi-Moghaddam, A. (2020). Ignorance is Cheap: From Black Hole Entropy To Energy-Minimizing States In QFT. <i>Physical Review D, 101</i>, 046001. <a href="http://arxiv.org/abs/1906.05299">http://arxiv.org/abs/1906.05299</a><a href="http://doi.org/10.1103/PhysRevD.101.046001"> http://doi.org/10.1103/PhysRevD.101.046001</a></p>
 
@@ -392,6 +396,8 @@
 
 <p id="QianLittleHowellEtAl15">Qian, X., Little, B., Howell, J.C., & Eberly, J.H. (2015). Shifting the quantum-classical boundary: theory and experiment for statistically classical optical fields. <i>Optica, 2</i>, 611–615. <a href="https://opg.optica.org/optica/abstract.cfm?uri=optica-2-7-611">https://opg.optica.org/optica/abstract.cfm?uri=optica-2-7-611</a><a href="http://doi.org/10.1364/OPTICA.2.000611"> http://doi.org/10.1364/OPTICA.2.000611</a></p>
 
+<p id="QinZhangXiaoEtAl13">Qin, H., Zhang, S., Xiao, J., Liu, J., Sun, Y., & Tang, W.M. (2013). Why is Boris algorithm so good? <i>Physics of Plasmas, 20</i>, 084503. <a href="https://doi.org/10.1063/1.4818428">https://doi.org/10.1063/1.4818428</a><a href="http://doi.org/10.1063/1.4818428"> http://doi.org/10.1063/1.4818428</a></p>
+
 <p id="QuHamnerGongEtAl13">Qu, C., Hamner, C., Gong, M., Zhang, C., & Engels, P. (2013). Observation of Zitterbewegung in a spin-orbit-coupled Bose-Einstein condensate. <i>Physical Review A, 88</i>, 021604. <a href="https://link.aps.org/doi/10.1103/PhysRevA.88.021604">https://link.aps.org/doi/10.1103/PhysRevA.88.021604</a><a href="http://doi.org/10.1103/PhysRevA.88.021604"> http://doi.org/10.1103/PhysRevA.88.021604</a></p>
 
 <p id="Radford03">Radford, C.J. (2003). The stationary Maxwell–Dirac equations. <i>Journal of Physics A: Mathematical and General, 36</i>, 5663. <a href="https://doi.org/10.1088/0305-4470/36/20/321">https://doi.org/10.1088/0305-4470/36/20/321</a><a href="http://doi.org/10.1088/0305-4470/36/20/321"> http://doi.org/10.1088/0305-4470/36/20/321</a></p>
@@ -409,6 +415,8 @@
 <p id="RomanRosoPlaja03">Roman, J.S., Roso, L., & Plaja, L. (2003). The Zitterbewegung for a Dirac electron driven by an intense laser field. <i>Journal of Physics B: Atomic, Molecular and Optical Physics, 36</i>, 2253. <a href="https://doi.org/10.1088/0953-4075/36/11/310">https://doi.org/10.1088/0953-4075/36/11/310</a><a href="http://doi.org/10.1088/0953-4075/36/11/310"> http://doi.org/10.1088/0953-4075/36/11/310</a></p>
 
 <p id="Rovelli96">Rovelli, C. (1996). Relational quantum mechanics. <i>International Journal of Theoretical Physics, 35</i>, 1637–1678. <a href="https://doi.org/10.1007/BF02302261">https://doi.org/10.1007/BF02302261</a><a href="http://doi.org/10.1007/BF02302261"> http://doi.org/10.1007/BF02302261</a></p>
+
+<p id="Rubakov09a">Rubakov, V. (2009). Classical Theory of Gauge Fields. 1–456. <a href="https://www.torrossa.com/en/resources/an/5573343">https://www.torrossa.com/en/resources/an/5573343</a></p>
 
 <p id="Santos15">Santos, E. (2015). Towards a Realistic Interpretation of Quantum Mechanics Providing a Model of the Physical World. <i>Foundations of Science, 20</i>, 357–386. <a href="https://doi.org/10.1007/s10699-014-9366-y">https://doi.org/10.1007/s10699-014-9366-y</a><a href="http://doi.org/10.1007/s10699-014-9366-y"> http://doi.org/10.1007/s10699-014-9366-y</a></p>
 
@@ -458,15 +466,13 @@
 
 <p id="Tegmark98">Tegmark, M. (1998). The Interpretation of Quantum Mechanics: Many Worlds or Many Words? <i>Fortschritte der Physik, 46</i>, 855–862. <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291521-3978%28199811%2946%3A6/8%3C855%3A%3AAID-PROP855%3E3.0.CO%3B2-Q">https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291521-3978%28199811%2946%3A6/8%3C855%3A%3AAID-PROP855%3E3.0.CO%3B2-Q</a><a href="http://doi.org/10.1002/(SICI)1521-3978(199811)46:6/8<855::AID-PROP855>3.0.CO;2-Q"> http://doi.org/10.1002/(SICI)1521-3978(199811)46:6/8<855::AID-PROP855>3.0.CO;2-Q</a></p>
 
-<p id="tHooft05">Hooft, G. (2005). <i>Determinism Beneath Quantum Mechanics. </i>In Quo Vadis Quantum Mechanics (pp. 99–111)? <a href="https://ui.adsabs.harvard.edu/abs/2005qvqm.book...99T">https://ui.adsabs.harvard.edu/abs/2005qvqm.book...99T</a></p>
-
-<p id="tHooft16">Hooft, G. (2016). <i>The Cellular Automaton Interpretation of Quantum Mechanics. </i> Springer. </p>
-
 <p id="TittelBrendelGisinEtAl98">Tittel, W., Brendel, J., Gisin, B., Herzog, T., Zbinden, H., & Gisin, N. (1998). Experimental demonstration of quantum correlations over more than 10 km. <i>Physical Review A, 57</i>, 3229–3232. <a href="https://link.aps.org/doi/10.1103/PhysRevA.57.3229">https://link.aps.org/doi/10.1103/PhysRevA.57.3229</a><a href="http://doi.org/10.1103/PhysRevA.57.3229"> http://doi.org/10.1103/PhysRevA.57.3229</a></p>
 
 <p id="Tonin59">Tonin, M. (1959). Quantization of the two-component fermion theory. <i>Il Nuovo Cimento (1955-1965), 14</i>, 1108–1119. <a href="https://doi.org/10.1007/BF02728186">https://doi.org/10.1007/BF02728186</a><a href="http://doi.org/10.1007/BF02728186"> http://doi.org/10.1007/BF02728186</a></p>
 
 <p id="Veblen33">Veblen, O. (1933). Geometry of Two-Component Spinors. <i>Proceedings of the National Academy of Sciences, 19</i>, 462–474. <a href="https://www.pnas.org/doi/abs/10.1073/pnas.19.4.462">https://www.pnas.org/doi/abs/10.1073/pnas.19.4.462</a><a href="http://doi.org/10.1073/pnas.19.4.462"> http://doi.org/10.1073/pnas.19.4.462</a></p>
+
+<p id="Visscher91">Visscher, P.B. (1991). A fast explicit algorithm for the time‐dependent Schrödinger equation. <i>Computer in Physics, 5</i>, 596–598. <a href="https://doi.org/10.1063/1.168415">https://doi.org/10.1063/1.168415</a><a href="http://doi.org/10.1063/1.168415"> http://doi.org/10.1063/1.168415</a></p>
 
 <p id="VonNeumannBurks66">Von Neumann, J., & Burks, A.W. (1966). Theory of self-reproducing automata. <a href="http://www.cba.mit.edu/events/03.11.ASE/docs/VonNeumann.pdf">http://www.cba.mit.edu/events/03.11.ASE/docs/VonNeumann.pdf</a></p>
 
@@ -482,6 +488,8 @@
 
 <p id="Weinberg67">Weinberg, S. (1967). A Model of Leptons. <i>Physical Review Letters, 19</i>, 1264–1266. <a href="https://link.aps.org/doi/10.1103/PhysRevLett.19.1264">https://link.aps.org/doi/10.1103/PhysRevLett.19.1264</a><a href="http://doi.org/10.1103/PhysRevLett.19.1264"> http://doi.org/10.1103/PhysRevLett.19.1264</a></p>
 
+<p id="Weinberg74">Weinberg, S. (1974). Gauge and global symmetries at high temperature. <i>Physical Review D, 9</i>, 3357–3378. <a href="https://link.aps.org/doi/10.1103/PhysRevD.9.3357">https://link.aps.org/doi/10.1103/PhysRevD.9.3357</a><a href="http://doi.org/10.1103/PhysRevD.9.3357"> http://doi.org/10.1103/PhysRevD.9.3357</a></p>
+
 <p id="Weinberg79">Weinberg, S. (1979). Phenomenological Lagrangians. <i>Physica A: Statistical Mechanics and its Applications, 96</i>, 327–340. <a href="https://www.sciencedirect.com/science/article/pii/0378437179902231">https://www.sciencedirect.com/science/article/pii/0378437179902231</a><a href="http://doi.org/10.1016/0378-4371(79)90223-1"> http://doi.org/10.1016/0378-4371(79)90223-1</a></p>
 
 <p id="Whittaker03">Whittaker, E.T. (1903). On the partial differential equations of mathematical physics. <i>Mathematische Annalen, 57</i>, 333–355. <a href="https://doi.org/10.1007/BF01444290">https://doi.org/10.1007/BF01444290</a><a href="http://doi.org/10.1007/BF01444290"> http://doi.org/10.1007/BF01444290</a></p>
@@ -490,13 +498,9 @@
 
 <p id="Witten22">Witten, E. (2022). Gravity and the crossed product. <i>Journal of High Energy Physics, 2022</i>, 8. <a href="https://doi.org/10.1007/JHEP10(2022)008">https://doi.org/10.1007/JHEP10(2022)008</a><a href="http://doi.org/10.1007/JHEP10(2022)008"> http://doi.org/10.1007/JHEP10(2022)008</a></p>
 
-<p id="Wolfram97">Wolfram, S. (1997). <i>A new kind of science. </i></p>
-
 <p id="Yukawa35">Yukawa, H. (1935). On the Interaction of Elementary Particles. I. <i>Nippon Sugaku-Buturigakkwai Kizi Dai 3 Ki, 17</i>, 48–57. <a href="http://doi.org/10.11429/ppmsj1919.17.0_48"> http://doi.org/10.11429/ppmsj1919.17.0_48</a></p>
 
 <p id="ZhuRyuNaEtAl24">Zhu, J., Ryu, C.J., Na, D., & Chew, W.C. (2024). The Radiation Gauge: When is it Valid? <a href="http://arxiv.org/abs/2407.08764">http://arxiv.org/abs/2407.08764</a><a href="http://doi.org/10.48550/arXiv.2407.08764"> http://doi.org/10.48550/arXiv.2407.08764</a></p>
-
-<p id="Zuse69">Zuse, K. (1969). Rechnender Raum (Calculating Space) <i>Schriften Zur Dataverarbeitung, 1</i>, </p>
 
 <p id="Zuse70">Zuse, K. (1970). Calculating Space (Rechnender Raum) <i>Massachusetts Institute of Technology Technical Translation AZT-70-164-GEMIT., <a href="https://www.worldscientific.com/doi/abs/10.1142/9789814374309_0036">https://www.worldscientific.com/doi/abs/10.1142/9789814374309_0036</a></i></p>
 

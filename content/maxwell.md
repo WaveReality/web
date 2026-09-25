@@ -12,7 +12,7 @@ Although many people regard the vector fields as the primary physical reality un
 
 There are two electromagnetic potentials, the **electrical scalar potential**, which is variously written as $\Phi$ (capital Greek "Phi") or $V$ or $A_0$, and the **magnetic vector potential**, typically written as: $\vec{A} = (A_x, A_y, A_z)$. Most readers should be familiar with the notion of the electrical potential $V$, in terms of the voltage of a battery or an electrical outlet --- therefore, we'll focus on it first. Then we'll cover the more difficult vector potential, which underlies the magnetic field. After exploring each of these and obtaining a solid understanding of their behavior, we relate these potential wave equations back to the original Maxwell equations, and cover various important issues with our potential-based formulation of EM.
 
-What should not get lost in all this discussion is the bare amazing fact that all of EM can be captured in the simple second-order wave equation (with appropriate source terms from electrical charge and current): this is the only equation we need to simulate the propagation of the EM fields over space and time. This wave equation naturally produces the **inverse square law** of the electrical force, and it does so through strictly local wave propagation mechanisms, avoiding the apparent action-at-a-distance that the calculational tool of the usual Coulomb version of this force law, where you literally compute the force as a function of the distance between two charges.
+What should not get lost in all this discussion is the bare amazing fact that all of EM can be captured in the simple second-order wave equation (with appropriate source terms from electrical charge and current): this is the _only_ equation we need to simulate the propagation of the EM fields over space and time. This wave equation naturally produces the **inverse square law** of the electrical force, and it does so through strictly local wave propagation mechanisms, avoiding the apparent action-at-a-distance that the calculational tool of the usual Coulomb version of this force law, where you literally compute the force as a function of the distance between two charges.
 
 Furthermore, the wave equation provides the framework for many aspects of [[special relativity]], such as the constant speed of light in a [[vacuum]]. The [[four-vector]] space-time notation establishes a deep connection between the way that space and time are interconnected in the wave equation, and in special relativity. This notation enables us to know immediately whether something is **manifestly covariant**, which means it is obviously compatible with the principles of special relativity (i.e., invariant with respect to the Lorentz transformation). See [[conservation]] for a broad overview.
 
@@ -23,17 +23,17 @@ $$
 \partial_\mu \partial^\mu A^\mu = k^\mu J^\mu
 $$
 
-where $k^\mu$ are constant factors representing the properties of "free space" (i.e., the vacuum, or aether in Maxwell's conception), and $J^\mu$ is the four-current that includes charge and magnetic field components. The expression on the left-hand side is a very compact way of writing the standard wave equation, and the right-hand side represents the driving sources of the wave.
+where $k^\mu$ are constant factors representing the properties of "free space" (i.e., the vacuum, or [[aether]] in Maxwell's conception), and $J^\mu$ is the four-current that includes charge and magnetic field components. The expression on the left-hand side is a very compact way of writing the standard wave equation, and the right-hand side represents the driving sources of the wave.
 
-The purely electrical component is the first component in the four-vector, while the magnetic components are the remaining three. This is a profound feature of all of physics, central to special relativity (i.e., the Minkowski time-space coordinates), where there is a single time-like factor and three space-like factors. In the wave equation in 3D, this time-like factor represents the kinetic energy, while the space-like factors represent the potential energy. The [[Lagrangian]] and [[Hamiltonian]] frameworks upon which the [[Standard Model]] is built characterize how these two forms of energy are constantly shifting into each other, which is exactly what happens in a wave.
+The purely electrical component is the first component in the four-vector, while the magnetic components are the remaining three. This is a profound feature of all of physics, central to special relativity (i.e., the Minkowski time-space coordinates), where there is a single time-like factor and three space-like factors. In the wave equation in 3D, this time-like factor represents the _kinetic energy_ (velocity = rate of change over _time_), while the space-like factors represent the potential energy (very much like a compressed spring, full of potential). The [[Lagrangian]] and [[Hamiltonian]] frameworks upon which the [[Standard Model]] is built characterize how these two forms of energy are constantly shifting into each other, which is exactly what happens in a wave.
 
 Thus, we see that a huge swath of fundamental physics falls right out of the basic wave equation, which in turn reflects the simplest form of [[cellular automaton]] neighborhood interaction that does anything interesting.
 
-## The Electrical Scalar Potential
+## The electrical scalar potential
 
 An important issue with the electrical scalar potential is that it is always just a relative quantity --- the potential is a measure of the voltage difference between two locations, and it varies depending on which two locations you happen to choose. Thus, people feel uncomfortable thinking of it as a physically real entity, because that would seem to imply that there is some kind of objective physical value for the potential at all locations in space, transforming it from a purely relative thing into something that must live in an absolute scale.
 
-But there doesn't seem to be any objective way to fix this scale, because all that we can measure are these relative values, and the corresponding electric field, neither of which determine what the absolute potential values should be. This situation is known as **gauge freedom**, and we'll see that it becomes an increasingly important concept as we proceed further. We'll see that it is actually not a problem in our simulation models, because the electric charges directly determine the resulting potential values. This is another example of an important discrepancy between a mathematical problem that really doesn't seem to correspond to an actual physical problem. The gauge freedom is more apparent than real in this case, all things considered.
+But there doesn't seem to be any objective way to fix this scale, because all that we can measure are these relative values, and the corresponding electric field, neither of which determine what the absolute potential values should be. This situation is known as **gauge freedom**, and we'll see that it becomes an increasingly important concept as we proceed further (see [[gauge theory]] for the full story). We'll see that it is actually not a problem in our simulation models, because the electric charges directly determine the resulting potential values. This is another example of an important discrepancy between a mathematical problem that really doesn't seem to correspond to an actual physical problem. The gauge freedom is more apparent than real in this case, all things considered.
 
 In the absence of any charges (i.e., in empty space), the electrical scalar potential (we use the $A_0$ symbol, to be consistent with the $\vec{A}$ vector potential) obeys the standard second-order wave equation:
 
@@ -42,7 +42,7 @@ $$
 \frac{\partial^2 {A_0}}{\partial t^2} = c^2 \nabla^2 A_0
 $$
 
-This means that you already understand exactly how this potential will behave, based on the explorations in [[wave]]s. It will propagate at the speed of light (*c*), exhibit spreading over time due to the nature of the 3D Laplacian, etc.
+This means that you already understand exactly how this potential will behave, based on the explorations in [[wave]]s. It will propagate at the speed of light (_c_), exhibit spreading over time due to the nature of the 3D Laplacian, etc.
 
 To include the effects of **electrical charge**, we can extend the equation to include a simple additive factor that is proportional to the local charge density, written by convention as the Greek letter "rho" $\rho$:
 
@@ -88,7 +88,7 @@ In words, the electrical field is the spatial gradient of the scalar potential (
 
 To actually compute this vector quantity in our discrete 3D framework, we need a discrete gradient operator that is basically just the first-order version of the discrete Laplacian operator that we introduced in [[wave]]s. It is described in detail in this page [[discrete gradient]].
 
-### 1/r Potential Dropoff = 1/r^2 Force Field
+### 1/r potential dropoff = 1/r^2 force field
 
 One of the first things people learn about the electric field is the **Coulomb force law**, which states that the electrical force between two charged entities is an **inverse square law** as a function of the distance between the two:
 
@@ -101,11 +101,11 @@ How does this derive from the second order wave equation and the charge accelera
 
 The fact that this critical inverse-square behavior emerges naturally from the wave equation is just another in a long series of amazing features of this equation.
 
-### Exploration of the Electrical Potential
+### Exploration of the electrical potential
 
-You can now explore how charge drives the electrical potential, the 1/r falloff of the scalar potential, and how the electrical force field is computed from the gradient of the scalar potential field. Open the [EM](WELDBook/Sims/EM/EM "wikilink") simulation and follow the directions under the scalar electrical field section.
+You can now explore how charge drives the electrical potential, the 1/r falloff of the scalar potential, and how the electrical force field is computed from the gradient of the scalar potential field. Run the [[Maxwell simulation]] and follow the directions under the scalar electrical field section.
 
-## The Magnetic Vector Potential
+## The magnetic vector potential
 
 Magnetism is a bit more complex than the electrical field. Instead of a single scalar potential field, it requires a vector potential field, and each of the three components of this vector potential field propagates according to the basic second-order wave equation, with the driving source being the **current** vector $\vec{J}$:
 
@@ -152,7 +152,7 @@ Here is how to compute the curl in the discrete space-time cellular-automaton fr
 
 <!--- Open the [EM](em_sim.md) simulation and follow the directions under the vector magnetic field section. -->
 
-## Maxwell's Equations
+## Maxwell's equations
 
 Now that you understand how the electromagnetic potential fields propagate over time, and are driven by charge and the motion of charge (current), in terms of the familiar second-order wave equation, we relate these equations to the four Maxwell's equations that are covered in most standard electromagnetism courses, and frankly are much more complicated and difficult to understand than the potential formulation.
 
@@ -227,7 +227,9 @@ $$
 \vec{\nabla} \times \vec{B} = \frac{1}{c^2} \frac{\partial \vec{E}}{\partial t}
 $$
 
-This shows that the wave propagation dynamics in Maxwell's equations are due to interactions between the $\vec{E}$ and $\vec{B}$ fields, whereas interestingly in the potential-based formulation, we have four entirely separate second-order wave equations. It is not immediately obvious how this produces the same thing, but if we do the appropriate math, we can see that it all works out. See [[#maxwell potential derivations]] for all the gory details.
+This shows that the wave propagation dynamics in Maxwell's equations are due to interactions between the $\vec{E}$ and $\vec{B}$ fields, whereas interestingly in the potential-based formulation, we have four _entirely separate_ second-order wave equations. It is perhaps not immediately obvious how this produces the same thing, but if we do the appropriate math, we can see that it all works out. See [[#maxwell potential derivations]] for all the gory details.
+
+One key intuition is that these four separate equations (which we will compactly write in terms of four-vector notation shortly) provide the necessary basis space for representing the two different _polarization_ directions of EM waves traveling _along any arbitrary direction_. Thus, while at some basic level there are only two underlying degrees of freedom in the "photon" (as is often noted in the literature), that perspective neglects the direction in which the light wave is traveling as important additional degrees of freedom. In this respect, the four variables thus represent a very efficient representation of all the relevant degrees of freedom. There are further complications for the electric potential degrees of freedom, however, which we turn to next.
 
 ## The Lorenz gauge and condition
 
@@ -265,7 +267,7 @@ One additional simple possibility is that the scalar potential updates directly 
 
 <!--- TODO: [[@ZhuRyuNaEtAl24]] and all the other papers by Ryu and Chew are very confusing in this regard! doing exactly what I want to do. I will email.. -->
 
-### Lorentz Invariance of the Wave Equation
+### Lorentz invariance of the wave equation
 
 The [[four-vector]] notation provides a powerful and compact way of understanding the relationship between [[special relativity]] and wave equations. Now is a good time to read that page, so the following analysis of the EM wave functions will make sense.
 
@@ -307,7 +309,7 @@ As explored in [[special relativity]], this covariant form means that **the wave
 
 In other words, just because our CA model happened to produce the wave equation (based on more "bottom up" considerations of simplicity of underlying mechanisms) we also get special relativity for free in the bargain!
 
-### The Lorenz Condition in Four-Vector Notation
+### The Lorenz condition in four-vector notation
 
 Finally, it is useful to express the Lorenz condition in four-vector terminology:
 
@@ -331,7 +333,7 @@ $$
 
 As noted above, this represents a continuity equation, and when this continuity equation holds, the total amount of the four-vector quantity $A^\mu$ is conserved over time: it can move around to different locations, but the total amount of it integrated across all of space never changes over time. The four-vector notation provides a single unified quantity that is conserved. Therefore, the Lorenz condition is effectively just saying that the system must conserve the potential values, which is true of the wave equations, except where there are source terms, so that is where we need to focus on the Lorenz condition.
 
-## Maxwell Potential Derivations
+## Maxwell potential derivations
 
 In this subsection, we derive the second-order wave equations operating on the electrical scalar potential and the magnetic vector potential.
 

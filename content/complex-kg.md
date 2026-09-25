@@ -74,7 +74,7 @@ hbar := 0.5
 e := 1.0
 csq := c * c
 mcOverHSq := (mass * mass * csq) / (hbar * hbar)
-heOver2mCSq := (hbar * e) / (2.0 * mass * csq)
+heOverMCSq := (hbar * e) / (mass * csq)
 
 var bphaseStr, massStr, hbarStr, msgStr string
 
@@ -89,15 +89,15 @@ chg := zeros(totalTime)
 
 func valUpdate() {
     mcOverHSq = (mass * mass * csq) / (hbar * hbar)
-    heOver2mCSq = (hbar * e) / (2.0 * mass * csq)
+    heOverMCSq = (hbar * e) / (mass * csq)
     bphaseStr = fmt.Sprintf("b phase: %4.0f", bphase)
     massStr = fmt.Sprintf("mass: %4.1f", mass)
     hbarStr = fmt.Sprintf("hbar: %4.1f", hbar)
     bi := ai * float64(math32.Cos(math32.DegToRad(float32(-bphase))))
-    bvi := math.Sqrt(mcOverHSq) * ai * float64(math32.Sin(math32.DegToRad(float32(-bphase))))
+    bvi := c * math.Sqrt(mcOverHSq) * ai * float64(math32.Sin(math32.DegToRad(float32(-bphase))))
     ##
     mf := array(mcOverHSq)
-    cf := array(heOver2mCSq)
+    cf := array(heOverMCSq)
     ap := array(ai)
     bp := array(bi)
     av := array(0.0)
@@ -111,10 +111,10 @@ func valUpdate() {
         db[t] = bv
         chg[t] = cf * (bp * av - ap * bv)
         
-        av -= mf * ap
+        av -= csq * mf * ap
         ap += av
         
-        bv -= mf * bp
+        bv -= csq * mf * bp
         bp += bv
         ##
     }
@@ -183,7 +183,7 @@ addSlider(&massStr, &mass, 0.1, 1.0)
 addSlider(&hbarStr, &hbar, 0.1, 1.0)
 ```
 
-[[#sim_cc]] demonstrates how this works, in terms of two simple [[harmonic oscillator]] variables _a_ and _b_, which are set to be a specific phase apart from each other (+90 degrees shifts _b_ to the _left_ (earlier) relative to _a_, while -90 shifts to the right, due to the trigonometric convention of 0 degrees being at 1,0 and proceeding counter-clockwise from there). Regardless of the phase relationship, the computed charge value remains constant across the cycles of oscillation. However, critically, the value of the charge is directly a function of this phase relationship, with a maximum of 0.5 when the _b_ value is +90 degrees in relation to the _a_ value, and a minimum of -0.5 for -90 degrees, and zero for 0 or 180 degrees. These relationships are fairly obvious once you appreciate the relationship between velocity and position for each of the variables (which are 90 degrees out of phase with each other, always), and how they enter into the charge equation.
+[[#sim_cc]] demonstrates how this works, in terms of two simple [[harmonic oscillator]] variables _a_ and _b_, which are set to be a specific phase apart from each other (+90 degrees shifts _b_ to the _left_ (earlier) relative to _a_, while -90 shifts to the right, due to the trigonometric convention of 0 degrees being at 1,0 and proceeding counter-clockwise from there). Regardless of the phase relationship, the computed charge value remains constant across the cycles of oscillation. However, critically, the value of the charge is directly a function of this phase relationship, with a maximum of 1 (in units of _e_, for a unit amplitude wave) when the _b_ value is +90 degrees in relation to the _a_ value, and a minimum of -1 for -90 degrees, and zero for 0 or 180 degrees. That maximum is not a coincidence: a wave at rest has $\rho = -e |\chi|^2$ exactly, which is what makes the charge of a lump of this stuff just its squared magnitude. These relationships are fairly obvious once you appreciate the relationship between velocity and position for each of the variables (which are 90 degrees out of phase with each other, always), and how they enter into the charge equation.
 
 Critically, complex numbers are _always_ 90 degrees out of phase with each other by the very nature of the complex plane. Thus, even though the separate real-valued wave functions are independently updated, it is critical that these two wave states are _initialized_ with the 90 degree phase relationship appropriate for complex numbers, which will then determine the sign of the charge value represented.
 
@@ -246,7 +246,7 @@ $$
 However, in Schrödinger's equation, external forces enter as a potential ($V$), in the first-order derivative  $\frac{\partial {}}{\partial t}$:
 
 $$
-i \hbar \frac{\partial {\chi}}{\partial t} = \frac{\hbar^2}{2m} \nabla^2 \chi + V \chi
+i \hbar \frac{\partial {\chi}}{\partial t} = -\frac{\hbar^2}{2m} \nabla^2 \chi + V \chi
 $$
 
 This makes sense, because force is the derivative of a potential, so potential is a first-order factor, and force is a second-order factor.
@@ -254,7 +254,7 @@ This makes sense, because force is the derivative of a potential, so potential i
 Our KG (Klein-Gordon) charge wave equation is a second-order equation, expressed in terms of $\frac{\partial^2 {}}{\partial t^2}$, and therefore we need to include external driving forces, not potentials. However, for various reasons, it is necessary to derive such an equation starting from the potential. To do this, we can re-derive a second-order wave equation by replacing the first-order derivative with the following first-order _covariant_ derivative operator $D$, that subtracts the external driving potential:
 
 $$
-D_\mu \def \partial_\mu - i \frac{e}{c} A^\mu
+D_\mu \def \partial_\mu - i \frac{e}{\hbar c} A_\mu
 $$
 
 This derivative can be derived from the principle of _local gauge invariance_, in [[gauge theory]], as a way to compensate for the introduction of a local phase factor, which is parameterized by the $A^\mu$ potential field. In other words, local gauge invariance means that the EM field potential might be different at every different point in space, and gauge theory shows you how to have the EM field and charge field interact in a way that makes this situation mutually compatible, so that charge and energy end up being conserved over time.
@@ -371,26 +371,11 @@ $$
 
 At this point, we have reached an important milestone --- if you take the equations just presented above, this describes a particle as a distributed wave of charge that gets pushed around by the electromagnetic field potentials ($A_0$ and $\vec{A}$). Furthermore, this wave of charge produces electromagnetic fields, in terms of charge and current densities $\rho$ and $\vec{J}$. Thus, we finally have a complete system of equations that can potentially simulate charged particles whizzing around and interacting with each other. In other words, we finally have the potential to make direct contact with observable physics! Indeed, you can explore the behavior of this system in the model, by using the Complex Coupled KG wave equations setting.
 
-## Numerical Issues with Coupling: Symmetry Breaking
+## Self-field interactions
 
-When you actually simulate these equations on the computer, something very interesting (and initially distressing) happens --- they blow up! As you run the equations over time in the presence of a fixed electromagnetic field, the total charge value, far from being a constant, increases steadily, and eventually you end up with numbers approaching infinity. This is not because the math is wrong (after very thorough checking!), but because of the coupling between the two elements of the complex variable that occurs in the update equation. Specifically, the update of $\phi_a$ depends on $\dot \phi_b$ and $\vec{\nabla} \phi_b$, and vice-versa. This interdependency creates numerical instabilities when we simply substitute in the discrete computed values at each time step. In particular, because the change in $\phi_a$ depends on the change in $\phi_b$, this cycle of dependency can get out of whack.
+When you actually simulate these equations on the computer, the self-coupling interactions between these two fields has a tendency to result in positive feedback loops that quickly go to infinity. There is an important numerical integration fix, known as the _Boris push_, which deals with the fact that the electromagnetic potentials drive a rotation through the $\phi_a$ and $\phi_b$ variables, which is evident in the fact that they subtract from $\phi_b$ but add to $\phi_a$ --- these opposite signs are the signature of a rotation (and are caused by the presence of the imaginary $i$ numbers in the equations). The Boris push implements this rotation explicitly, instead of using discrete integration steps, and helps manage the numerical issues ([[@Boris70]]; [[@QinZhangXiaoEtAl13]]). It is also important to ensure that the numerical values do not exceed critical thresholds, which are within the constraints of the known physical parameters. 
 
-Intuitively, the electromagnetic potentials drive a rotation through the $\phi_a$ and $\phi_b$ variables, which is evident in the fact that they subtract from $\phi_b$ but add to $\phi_a$ --- these opposite signs are the signature of a rotation (and incidentally are caused by the presence of the imaginary $i$ numbers in the equations). To the extent that the potentials are pushing the $\phi_a$ variable up, there should be an equal and opposite pushing of the $\phi_b$ variable down, causing the rotation. However, if the $\phi_b$ variable only has the "old" data from the previous time step about how much $\phi_a$ got pushed up, then it doesn't compensate correctly in how much it gets pushed down. Thus, you end up with a "leak" in the system, where instead of rotating nicely in place, the system starts to fly out of control, spinning wider and wider circles each time.
-
-The solution to this problem is to _break the symmetry_ between $\phi_a$ and $\phi_b$ in these update equations. Instead of updating each of them at the same time, based on the prior values of the other, we choose one variable ($\phi_a$, arbitrarily) and update its values first. Then, when we compute $\phi_b$, we use the _current value_ of $\dot \phi_a$ in the update equation for $\phi_b$. This prevents the rotation between these variables from getting out of whack, and restores numerical stability to the system.
-
-<!--- todo: run KG invr5 case, plot figure! -->
-
-`\begin{figure}`
-` \centering\includegraphics[height=2in]{fig.dirac_invr5_50.eps}   \caption{\small Total charge for updating of the charge wave     equation over 100,000 time steps in the presence of a fixed $1/r$ potential with magnitude .5, in a universe of $50^3$ cubes.  The`  
-`   instantaneous total charge varies considerably over time, but the average     across time is constant, demonstrating that total charge is conserved on     average, but not at each moment.  If no potential is present, then charge     is identically conserved from one time step to the next.}`  
-` \label{fig.kg_invr5_50} \end{figure}`
-
-However, if you run this equation in a static electromagnetic field, it is clear that the total amount of charge in the model at any one time changes over time (Figure~\ref{fig.kg_invr5_50}). This flies in the face of the fancy math that says that these equations conserve charge! Somewhat amazingly, however, if you run the system long enough, it becomes clear that the _average_ amount of charge never changes.
-
-Overall, we have now happened upon a very interesting situation. The breaking of symmetry between the two variables in the complex wave state, forced upon us by implementational considerations, actually fits at least qualitatively with a known and otherwise very puzzling property of physics. The weak force also breaks symmetry in a very similar way: there is a preferred direction of rotation in the weak force. Although it is not yet clear (to me at least) that this preferred rotational direction in the weak force maps identically onto this preferred rotation direction, it is nevertheless a tantalizing possibility. The weak force has been integrated with the electromagnetic force, as the _electroweak_ force --- it is possible that the effects described by the electroweak force correspond in some way to the oscillations in charge value that are observed in our model. We will return to these issues later.
-
-Meanwhile, we nee need to introduce just a bit more complexity into our KG wave equation before we have a fully satisfactory model of a fundamental particle of nature: the electron (and its antiparticle, the positron). This extra bit of complexity extends the phenomenon of rotation that we've just been discussing, to account for the strange quantum mechanical property of **spin**. The resulting equation goes by the name of the second-order Dirac equation. Once we have that, we will have a complete system that, if all the math is correct, should make direct and numerically accurate contact with observable phenomena!
+Meanwhile, we nee need to introduce just a bit more complexity into our KG wave equation before we have a fully satisfactory model of a fundamental particle of nature: the electron (and its antiparticle, the positron). This extra bit of complexity extends the phenomenon of rotation that we've just been discussing, to account for the strange quantum mechanical property of [[spin]]. The resulting equation goes by the name of the second-order Dirac equation. Once we have that, we will have a complete system that, if all the math is correct, should make direct and numerically accurate contact with observable phenomena!
 
 ## Summary
 

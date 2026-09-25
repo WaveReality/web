@@ -28,25 +28,29 @@ In this simple case, we can even dispense with the complex state and just use a 
 First, we adopt a standard convention that the effective Higgs field values have a normalization factor applied to them, which is $\frac{1}{\sqrt2}$ for the complex field values, and 1/2 for the scalar $\phi$ values that we're using here.
 
 {id="figure_potential" style="height:25em"}
-![Higgs potential on a simple scalar value, and what that would looks like in the complex plane, where there is a ring of equivalent mass magnitude at the minimum.](media/fig_higgs_potential.png)
+![Higgs potential on a simple scalar value, and what that would look like in the complex plane, where there is a ring of equivalent mass magnitude at the minimum. The dashed-blue line shows what a positive $\mu$ factor would look like, which is what happens when there is a very high temperature.](media/fig_higgs_potential.png)
 
 The general formula for the Higgs potential that shows up in the [[Lagrangian]] as a potential energy factor is written in this form:
 
 {id="eq_higgsv" title="Higgs potential"}
 $$
-V(\psi) = -\mu^2 \psi^\dagger \psi + \lambda (\psi^\dagger \psi)^2
+V(\Psi) = -\mu^2 \Psi^\dagger \Psi + \lambda (\Psi^\dagger \Psi)^2
 $$
+
+where the $\Psi^\dagger \Psi$ expression represents the squared magnitude of the state value, by multiplying by the complex conjugate (see [[complex number]]s; actually it is the Hermitian conjugate given the vector nature of the state -- need to multiply by the transpose to just get the individual factors as essentially a dot product).
+
+The $\mu^2$ term is a mass-like parameter, like in the KG equation, except that it is _negative_ (as asserted by the minus sign at the start). Anything with negative mass is like having a positive potential overall, which makes it unstable, by adding a consistent positive accelleration. The $\lambda$ factor balances this out, but as a function of the squared magnitude. The full implications of this potential will become clearer as we proceed.
 
 For our simple scalar example, we define:
 
 $$
-\psi = \frac{1}{2} \phi
+\Psi = \frac{1}{2} \phi
 $$
 
 Such that:
 
 $$
-V(\psi) = -\frac{1}{2}\mu^2 \phi^2+ \frac{1}{4}\lambda (\phi^2)^2
+V(\Psi) = -\frac{1}{2}\mu^2 \phi^2+ \frac{1}{4}\lambda (\phi^2)^2
 $$
 
 The form of this potential is a **mexican hat** shape (cross section in the scalar case) ([[#figure_potential]]), and we can solve for the minima / maxima of it by setting the first derivative of it to 0, to find the points where it is not changing:
@@ -66,21 +70,25 @@ $$
 \phi = \frac{\mu}{\sqrt{\lambda}}
 $$
 
-This turns out to be the minimum point in the potential, and is where the wave equations will stabilize over time, if nothing else is going on to excite them. In other words, this value defines the _vacuum expectation value_ of the Higgs field.
+This turns out to be the minimum point in the potential, and is where the wave equations will stabilize over time, if nothing else is going on to excite them. In other words, this value defines the _vacuum expectation value_ of the Higgs field, which we denote as $v_h$:
+
+$$
+v_h = \phi_{\min} = \frac{\mu}{\sqrt{\lambda}}
+$$
 
 To incorporate this potential properly into the KG equation, we have to use the [[Lagrangian]] formulation, with the _Euler-Lagrange_ equations that result in the equations of motion for the system. For a field-based system this results in the standard wave equation with an additional term based on the _derivative_ of the potential:
 
 $$
-\partial^2 \phi = (\nabla^2 - \frac{dV(\phi)}{d\phi}) \phi 
+\partial^2 \phi = \left( \nabla^2 - \frac{dV(\phi)}{d\phi} \right) \phi 
 $$
 
-in effect, the Lagrangian is sensitive to how the potential changes as a function of changes in the wave state, which is intuitively why it shows up as a derivative.
+in effect, the Lagrangian is sensitive to how the potential changes as a function of changes in the wave state, which is intuitively why it shows up as a derivative. The resulting concrete wave equation is thus:
 
 $$
 \partial^2 \phi = (\nabla^2 -\mu^2 + \lambda \phi^3) \phi 
 $$
 
-As we already showed in [[#eq_min]], these extra terms will be zero when $\phi$ is non-zero, and the wave dynamics will naturally settle into that state over time as a stable equilibrium point, creating the non-zero vacuum expectation value that corresponds to a broken symmetry.
+As we already showed in [[#eq_min]], these extra terms will be zero when $\phi = v_h$, and the wave dynamics will naturally settle into that state over time as a stable equilibrium point, creating the non-zero vacuum expectation value that corresponds to a broken symmetry.
 
 {id="table_params" title="Higgs parameter values"}
 | parameter | value |
@@ -96,7 +104,30 @@ The actual empirical values for these parameters based on the current data are s
 
 ## The phase transition
 
-<!--- TODO: add in the T-dependency -->
+Although everyone (e.g., Wikipedia sources) describes the Higgs mechanism in terms of spontaneous symmetry breaking as a function of the energy or temperature of the universe, the actual equations do not _directly_ include anything that looks like a temperature or energy factor. This is because the actual impact of the kinetic energy (temperature) of particles enters via the coupling of fermions with the Higgs, in a way that is not evident directly in the basic equations as a temperature-like factor. So, when you stare at those equations, it looks like the symmetry is _always_ going to be broken as long as there is any kind of activity present to knock the system off the peak of the Mexican hat.
+
+However, temperature can be added directly into the potential equation by way of approximation based on what happens in the complete system (e.g., [[@Weinberg74]]), which in its simplest form looks like this:
+
+{id="eq_higgsvt" title="Higgs potential with temperature"}
+$$
+V(\Psi) = -(\mu^2 - T_c T^2) \Psi^\dagger \Psi + \lambda (\Psi^\dagger \Psi)^2
+$$
+
+Where $T$ is the temperature and $T_c$ is a coefficient based on the types of particles that are assumed to be around, which can be computed as:
+
+$$
+T_c = \frac{3 g^2 + g'^2 + 4 y_t^2 + 8 \lambda}{16} = 0.3973
+$$
+
+where these factors are explained in the [[weak]] equations, and are dominated by the heaviest particle which is the top quark, parameterized by its Yukawa coupling factor $y_t$.
+
+The simple algebraic point is that once $T$ goes above a critical level, it cancels out the $\mu^2$ factor, so that the overall mass-like factor is 0 or actually positive, and then the zero level of the field turns back into a minimum instead of an unstable maximum (as shown in [[#figure_potential]], in the dashed blue line). Thus, with this augmented form of the potential equation (which is purely for analysis purposes and doesn't exist at the level of fundamental physics), it is hopefully clearer how the system can transition between the situation where the Higgs field has a 0 expected value (high temperature) versus one where it has a non-zero (massive) expected value (temperature below the critical level).
+
+The critical value of the temperature is when it crosses the $\mu^2$ value:
+
+$$
+T_{\text{critical}} = \frac{\mu}{T_c}
+$$
 
 ## Fine tuning / hierarchy problem
 
@@ -110,10 +141,10 @@ $$
 Where $\lambda_f$ is the Yukawa coupling factor, and $\Lambda_{\text{UV}}^2$ is the _ultraviolet cutoff_ energy. Thus, we can use the actual Higgs mass to determine the associated ultraviolet cutoff energy ([[@BezrukovShaposhnikov15]]). The value of $\lambda_f$ can be computed from the Higgs field energy:
 
 $$
-\lambda_f = \sqrt{2} m_f / \nu
+\lambda_f = \sqrt{2} m_f / v_h
 $$
 
-where $\nu$ is the vacuum expectation of the Higgs field (which depends on the Higgs boson mass), and is equal to 246.22 GeV.
+where $v_h$ is the vacuum expectation of the Higgs field, per above (246.22 GeV).
 
 The heaviest currently-known fermion is the top [[quark]], which weighs in at around 172 GeV, which means that its $\lambda_f$ is 1, which is consistent with existing measurements ([[@Collaboration26]]). Thus, using [[#eq_mass-delta]], we can compute that the ultraviolet cutoff implied by this mass is less than $8 \pi$ times the Higgs boson mass, which is 25.12 times 125 GeV = 3,140 GeV. This suggests that the UV cutoff length scale is roughly in the $10^{-20}m$ range, applying this GeV energy to the [[Planck relation]].
 

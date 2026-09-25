@@ -48,7 +48,7 @@ $$
 It should be clear that the first squared term is just the complex KG equation coupled to the EM field. Therefore, we can write this equation in our current notation as:
 
 $$
-\left[\left(i \hbar \partial_\mu - \frac{e}{c}{A}_\mu \right)^2 + \frac{e}{c} \vec{\sigma} \cdot \left(\vec{B} + i \vec{E} \right) \right] \psi = m_0^2 c^2 \psi
+\left[\left(i \hbar \partial_\mu - \frac{e}{c}{A}_\mu \right)^2 + \frac{e \hbar}{c} \vec{\sigma} \cdot \left(\vec{B} + i \vec{E} \right) \right] \psi = m_0^2 c^2 \psi
 $$
 
 Now for the Pauli matricies $\vec{\sigma}$. This is a vector of values $(\sigma_x, \sigma_y, \sigma_z)$ that enter into a dot product with the complex-valued vector composed of the magnetic and electric field values $\vec{B}$ and $\vec{E}$:
@@ -141,18 +141,28 @@ $$
 \ddot \phi_{2a} & = & \nabla^2 \phi_{2a} - m_0^2 \phi_{2a} + 2 e \left(A_0 \dot \phi_{2b} + \vec{A} \cdot \vec{\nabla} \phi_{2b} \right) +\\
 & & e^2 \phi_{2a} \left(A_0^2 - \vec{A}^2 \right) + e \left( -\phi_{2a} B_z + \phi_{2b} E_z + \phi_{1a} (B_x - E_y) - \phi_{1b} (E_x + B_y) \right)\\
 
-\ddot \phi_{2b} & = & \nabla^2 \phi_{2b} - m_0^2 \phi_{2b} - 2 e \phi_{2a} \left(A_0 \dot \phi_{2a} + \vec{A} \cdot \vec{\nabla} \phi_{2a} \right) +\\
+\ddot \phi_{2b} & = & \nabla^2 \phi_{2b} - m_0^2 \phi_{2b} - 2 e \left(A_0 \dot \phi_{2a} + \vec{A} \cdot \vec{\nabla} \phi_{2a} \right) +\\
 & & e^2 \phi_{2b} \left(A_0^2 - \vec{A}^2 \right) + e \left( -\phi_{2b} B_z - \phi_{2a} E_z + \phi_{1b} (B_x - E_y) + \phi_{1a} (E_x + B_y) \right)\\
 \end{array}
 $$
 
+### A note on units: $\vec{B} + i \vec{E}$ or $c\vec{B} + i\vec{E}$?
+
+The combination $\vec{B} + i \vec{E}$ only makes sense where $\vec{E}$ and $\vec{B}$ share dimensions, which is true in the Gaussian units the original papers use, and in the natural units ($\hbar = c = 1$) the component equations above are written in. It is **not** true in the simulation. There $\vec{E} = -\vec{\nabla} A_0 - \partial \vec{A} / \partial t$ is a rate per time step while $\vec{B} = \vec{\nabla} \times \vec{A}$ is a rate per cube, so the two differ by exactly one factor of $c$ --- which you can watch directly, since $|\vec{E}| / |\vec{B}| \rightarrow c$ for a plane wave. So in implementation units the spin term is
+
+$$
+\frac{e}{\hbar} \vec{\sigma} \cdot \left(c\vec{B} + i \vec{E} \right)
+$$
+
+with $c\vec{B}$ in place of $\vec{B}$ everywhere in the component equations above. Written this way the units are obvious: $c\vec{B}$ and $\vec{E}$ are the same kind of thing, and the coefficient $e / \hbar$ sits alongside the $2e/\hbar$ of the $A_0$ term. Getting this wrong weights the electric and magnetic parts differently by a factor of $c$, which at $c = 0.5$ is a factor of two.
+
+The coefficient is not free to choose. It is the value that makes the magnetic moment come out at $g = 2$, which is this equation's best-known prediction: put a spin along $x$ in a uniform $B$ along $z$ and it must precess at the Larmor rate $\omega = g e B / (2 m c)$. Measured in the simulation at small field, $g = 2.0013$; the drift at larger field is the expected second-order correction, since the two spin eigenfrequencies go as $\sqrt{\Omega_0^2 \mp \sigma_F c B}$ rather than linearly.
+
 Again, it is fundamentally the wave equation, plus three additional terms that characterize the interaction with the electromagnetic field. Note that, as with the mixing across complex components $\phi_a$ and $\phi_b$ that occurred in the previous version of the coupled KG equations, the mixing or spin across $\chi_1$ and $\chi_2$ occurs via the electromagnetic field interaction. This time, the vector force fields are now required for the coupling, requiring that we compute them from the potentials, as described earlier (involving the $\vec{\nabla}$ first-order gradient and, for the first time, the $\vec{\nabla} \times$ function, which is very similar in its discrete form to the $\vec{\nabla}$ function).
 
-<!--- todo: run KG versions of the basic tests and see whether this is true!!! -->
-
-Interestingly, although we need to continue the broken symmetry from the previous coupled-complex KG equation, where we use the current values of $\dot \phi_{1a}$ and $\dot \phi_{2a}$ to update the $\phi_{1b}$ and $\phi_{2b}$ variables, we apparently do not need to perform a similar symmetry breaking for the new couplings in this Dirac equation.
-
 So, to answer the question of "what is spin?", we need only look at these equations. Spin, it seems, is this rotation of state values through the two complex variables in the $\psi$ state: $\chi_1$ and $\chi_2$. As is evident, this spinning occurs via interactions with the electromagnetic field vectors oriented along the three different spatial directions. The fact that, in our CA model we actually fix these directions according to the underlying cubic grid may seem strange and arbitrary. However, this does not mean that stuff can only spin along these fixed directions, anymore than it means that waves can only propagate in certain directions. By having different continuous values along these dimensions, any "direction" of spin relative to the underlying grid can occur.
+
+Interestingly, the second-order nature of this version of the Dirac equation makes it very clear that spin only operates through the EM field, because in the absence of those fields, it is really just four separate KG-style waves updating in parallel!
 
 Although somewhat complex, these equations should describe the entirety of the complexity of the electron's interaction with the electromagnetic field, which is to say, with other electrons and positive electric charges in the nucleus. Therefore, as we know, a huge proportion of the known complexity of the universe stems from the consequences of these basic equations. So, perhaps they do not look so complex in comparison.
 
@@ -165,7 +175,7 @@ $$
 $$
 
 $$
-\vec{J} = \frac{\hbar e}{m_0 c^2} \left((\phi_{1a} \vec{\nabla} \phi_{1b} - \phi_{1b} \vec{\nabla} \phi_{1a}) + (\phi_{2a} \vec{\nabla} \phi_{2b} - \phi_{2b} \vec{\nabla} \phi_{2a})\right) - \frac{e^2}{m_0 c^2} \vec{A} (\phi_{1a}^2 + \phi_{1b}^2 + \phi_{2a}^2 + \phi_{2b}^2)
+\vec{J} = \frac{\hbar e}{m_0} \left((\phi_{1a} \vec{\nabla} \phi_{1b} - \phi_{1b} \vec{\nabla} \phi_{1a}) + (\phi_{2a} \vec{\nabla} \phi_{2b} - \phi_{2b} \vec{\nabla} \phi_{2a})\right) - \frac{e^2}{m_0 c} \vec{A} (\phi_{1a}^2 + \phi_{1b}^2 + \phi_{2a}^2 + \phi_{2b}^2)
 $$
 
 ## First-order version
@@ -175,7 +185,7 @@ $$
 (i \gamma^\mu \partial_\mu - m)\psi = 0
 $$
 
-TODO: there is still the important issue of converting back and forth between the 2nd order and 1st order versions of the state. Also, it is important that the 2nd order does not have spin factors operating among the components directly, as the 1st order version does -- they only show up in the coupling to EM. This is weird. The thing doesn't actually spin on its own in 2nd order form.
+TODO: there is still the important issue of converting back and forth between the 2nd order and 1st order versions of the state. 
 
 more refs: [[@Brown58]], [[@Tonin59]], [[@Marx67]], [[@Marx70]], [[@Case57]] <- weyl!!, [[@Diaz-CruzLopezMeza-AldamaEtAl15]], [[@KibblePolkinghorne58]], [[@BarutMullen62]], [[@BabinFigotin14]], [[@Cardoso93]], [[@Veblen33]], [[@DreinerHaberMartin10]]
 
