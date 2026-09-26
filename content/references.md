@@ -306,6 +306,8 @@
 
 <p id="Lamb95">Lamb, W.E. (1995). Anti-photon. <i>Applied Physics B, 60</i>, 77–84. <a href="https://doi.org/10.1007/BF01135846">https://doi.org/10.1007/BF01135846</a><a href="http://doi.org/10.1007/BF01135846"> http://doi.org/10.1007/BF01135846</a></p>
 
+<p id="London35">London, H. (1935). Phase-Equilibrium of Supraconductors in a Magnetic Field. <i>Proceedings of the Royal Society of London Series A, 152</i>, 650–663. <a href="https://ui.adsabs.harvard.edu/abs/1935RSPSA.152..650L">https://ui.adsabs.harvard.edu/abs/1935RSPSA.152..650L</a><a href="http://doi.org/10.1098/rspa.1935.0212"> http://doi.org/10.1098/rspa.1935.0212</a></p>
+
 <p id="MallickChandrashekar16">Mallick, A., & Chandrashekar, C.M. (2016). Dirac Cellular Automaton from Split-step Quantum Walk. <i>Scientific Reports, 6</i>(1), 25779. <a href="http://www.nature.com/articles/srep25779">http://www.nature.com/articles/srep25779</a><a href="http://doi.org/10.1038/srep25779"> http://doi.org/10.1038/srep25779</a></p>
 
 <p id="Mandel76">Mandel, L. (1976). <i>II The Case for and Against Semiclassical Radiation Theory. </i>In Progress in Optics (pp. 27–68). Elsevier. <a href="https://www.sciencedirect.com/science/chapter/bookseries/abs/pii/S0079663808700180">https://www.sciencedirect.com/science/chapter/bookseries/abs/pii/S0079663808700180</a><a href="http://doi.org/10.1016/S0079-6638(08)70018-0"> http://doi.org/10.1016/S0079-6638(08)70018-0</a></p>
@@ -385,6 +387,8 @@
 <p id="Pich12">Pich, A. (2012). The Standard Model of Electroweak Interactions. <a href="http://arxiv.org/abs/1201.0537">http://arxiv.org/abs/1201.0537</a><a href="http://doi.org/10.48550/arXiv.1201.0537"> http://doi.org/10.48550/arXiv.1201.0537</a></p>
 
 <p id="Pich98">Pich, A. (1998). Effective Field Theory. <a href="http://arxiv.org/abs/hep-ph/9806303">http://arxiv.org/abs/hep-ph/9806303</a><a href="http://doi.org/10.48550/arXiv.hep-ph/9806303"> http://doi.org/10.48550/arXiv.hep-ph/9806303</a></p>
+
+<p id="Poniatowski19">Poniatowski, N.R. (2019). Superconductivity, Broken Gauge Symmetry, and the Higgs Mechanism. <i>American Journal of Physics, 87</i>, 436–443. <a href="http://arxiv.org/abs/1905.07786">http://arxiv.org/abs/1905.07786</a><a href="http://doi.org/10.1119/1.5093291"> http://doi.org/10.1119/1.5093291</a></p>
 
 <p id="Popescu14">Popescu, S. (2014). Nonlocality beyond quantum mechanics. <i>Nature Physics, 10</i>, 264–270. <a href="https://www.nature.com/articles/nphys2916">https://www.nature.com/articles/nphys2916</a><a href="http://doi.org/10.1038/nphys2916"> http://doi.org/10.1038/nphys2916</a></p>
 

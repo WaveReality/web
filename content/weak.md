@@ -292,6 +292,30 @@ so the $Z$ part of an electron's field is gone beyond $r \sim 1/M_Z$, about $2\t
 
 This closes the loop with the earlier section. A random excitation of $W^3$ and $B$ splits into both modes, and so does the field around an electron. What makes electromagnetism look like the only long-range neutral force is not that anything is emitted selectively, but that one of the two modes has a mass and the other does not.
 
+### Where does the mass come from?
+
+<!--- NOTE: this was in gauge-theory -- need to integrate here: -->
+
+This is exactly why a condensate is what turns it into a real mass. Write the field in polar form:
+
+$$
+\chi = |\chi| \, e^{i\vartheta}
+$$
+
+The phase $\vartheta$ is precisely the would-be Goldstone mode from the introduction. Because the gauge shift is free to add any gradient to $A_\mu$, we can choose it to set $\vartheta = 0$ everywhere --- the **unitary gauge** --- absorbing the phase into the force field. If $|\chi|$ then sits at a constant non-zero value $v$, what remains is:
+
+$$
+g^2 v^2 A_\mu A^\mu
+$$
+
+Nothing was created or destroyed in this accounting. A massless force field has 2 polarizations; a massive one has 3. The missing third polarization is the scalar phase that got eaten. This is what is meant by the slogan that the gauge boson "eats" the Goldstone boson, and it is how the two walls described in the introduction knock each other down.
+
+For an ordinary localized [[electron]], by contrast, $|\chi|$ is not constant --- it falls off to zero away from the particle --- so there is no uniform mass to be had, and the effect remains a local, medium-like screening.
+
+This is also visible directly in the simulation: `KleinGordonCKernel` computes the current as the convection terms minus a term proportional to $|\chi|^2$ times $A$, exactly as in [[#eq_kgc_split]], and you can watch the EM field slow down inside the charge lump as a result.
+
+
+
 ### The weak force bosons W are very hard to activate
 
 * heavy
