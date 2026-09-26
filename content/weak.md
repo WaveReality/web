@@ -111,6 +111,187 @@ The weak mixing angle ensures that the EM field $A_\mu$ has _precisely_ cancelin
 
 But if these other wave fields are really what is there, then how exactly does this specific mixture manage to somehow emerge as a linear mixture _after the fact_?  todo: ask claude about this
 
+Everything below concerns only the two neutral gauge fields $W^3_\mu$ and $B_\mu$. The charged $W^{1,2}$ and the Higgs fluctuations play no part.
+
+### Where we start: the equations of motion
+
+Each gauge field obeys a wave equation driven by a current, and the Higgs doublet is what supplies that current:
+
+{id="eq_eom_gen" title="equations of motion for the neutral gauge fields"}
+$$
+\square\, W^3_\mu = j^3_\mu, \qquad \square\, B_\mu = j^Y_\mu
+$$
+
+{id="eq_currents" title="the currents the Higgs doublet supplies"}
+$$
+j^3_\mu = 2 g\, \mathrm{Im}\!\left[\Phi^\dagger T^3 D_\mu \Phi\right], \qquad
+j^Y_\mu = 2 g' Y\, \mathrm{Im}\!\left[\Phi^\dagger D_\mu \Phi\right]
+$$
+
+There is no mass anywhere in these. A mass can only appear if $j$ turns out to be proportional to the field that produced it — and whether it does is decided entirely by $D_\mu \Phi$.
+
+### The covariant derivative, and the one combination it leaves
+
+{id="eq_covd" title="covariant derivative, neutral sector"}
+$$
+D_\mu \Phi = \left(\partial_\mu - i G_\mu\right)\Phi, \qquad
+G_\mu = g W^3_\mu T^3 + g' Y B_\mu
+$$
+
+With $T^3 = \mathrm{diag}(+\tfrac12, -\tfrac12)$ and $Y = \tfrac12$, which is a multiple of the identity, $G_\mu$ is diagonal:
+
+{id="eq_gmat" title="the neutral gauge matrix"}
+$$
+G_\mu = \frac{1}{2}
+\begin{pmatrix} g W^3_\mu + g' B_\mu & 0 \\[2pt] 0 & -g W^3_\mu + g' B_\mu \end{pmatrix}
+$$
+
+$W^3$ enters with **opposite signs** in the two entries, because $T^3$ distinguishes the components. $B$ enters with the **same** sign in both, because hypercharge does not. That asymmetry is the origin of everything that follows.
+
+Now use the actual state of the Higgs doublet. It is uniform, so $\partial_\mu \Phi = 0$ and the covariant derivative is *entirely* the gauge term. And it is $\Phi = (0,\ v/\sqrt2)$ — the upper component is exactly zero, so the upper entry of $G_\mu$ acts on nothing:
+
+{id="eq_dphi" title="the covariant derivative at the broken Higgs doublet"}
+$$
+D_\mu \Phi = -i\, G_\mu \Phi
+= \left(0,\; \tfrac{i}{2}\left(g W^3_\mu - g' B_\mu\right) \tfrac{v}{\sqrt2}\right)
+$$
+
+Only one scalar survives. Give it a name:
+
+{id="eq_sdef" title="the one combination the Higgs doublet responds to"}
+$$
+S_\mu \;\equiv\; g W^3_\mu - g' B_\mu
+$$
+
+Two neutral fields, but the Higgs doublet presents only **one handle** for them to couple through.
+
+### Substituting back gives the mass
+
+Put that $D_\mu\Phi$ into the currents. Both reduce to the same scalar $S_\mu$, with different prefactors:
+
+{id="eq_eom_mass" title="the currents become mass terms"}
+$$
+\square\, W^3_\mu = -\frac{v^2}{4}\, g\, S_\mu, \qquad
+\square\, B_\mu = +\frac{v^2}{4}\, g'\, S_\mu
+$$
+
+This is the mass term — a right-hand side proportional to the fields themselves. It was never written down; it appeared because $D_\mu\Phi$ contains the gauge fields, and the current multiplies that by a coupling a second time.
+
+### Is it component-wise or a magnitude?
+
+**Component-wise, and pointwise.** There is no sum over $\mu$ and no magnitude anywhere. Each spacetime index $\mu$ — the scalar potential and the three vector components — has its own $S_\mu$ and its own mass term, computed from the field values at that one lattice site. What the term *does* mix is the two fields $W^3$ and $B$ at the same $\mu$.
+
+In the code this is four separate calls, one per $\mu$, each with its own current.
+
+### The two combinations that evolve independently
+
+Because both equations are driven by the same $S_\mu$, two particular combinations decouple. Take $g$ times the first plus $g'$ times... more simply, form:
+
+{id="eq_pz" title="the massless and massive combinations"}
+$$
+\begin{aligned}
+P_\mu &\equiv g' W^3_\mu + g B_\mu
+& \square P_\mu &= -\tfrac{v^2}{4} g g' S_\mu + \tfrac{v^2}{4} g g' S_\mu = 0 \\[4pt]
+S_\mu &\equiv g W^3_\mu - g' B_\mu
+& \square S_\mu &= -\tfrac{v^2}{4}\left(g^2 + g'^2\right) S_\mu
+\end{aligned}
+$$
+
+$P_\mu$ is the photon, up to normalization: dividing by $\sqrt{g^2+g'^2}$ turns $(g', g)$ into $(\sin\theta_W, \cos\theta_W)$, which is exactly the combination the code writes into `A0s`. Its two source contributions cancel term by term, so it is massless identically.
+
+$S_\mu$ is the $Z$, likewise up to normalization, and it obeys a massive wave equation with $M_Z^2 = \tfrac{v^2}{4}(g^2+g'^2)$.
+
+### How the fields "know" which they are
+
+They do not. The equations compute $S_\mu$ from the local values of $W^3$ and $B$, and $S_\mu$ is a number.
+
+Your reading is right: **the photon has $W^3$ and $B$ of the same sign, the $Z$ has them opposite.** Precisely, the condition for masslessness is $g W^3 = g' B$ — same sign, in the ratio $g' : g$. Same sign with the wrong ratio is a mixture, and feels part of the mass.
+
+{id="eq_configs" title="the two pulse configurations"}
+$$
+\begin{aligned}
+\text{photon:}\quad (W^3, B) &\propto (g',\, g)
+& S &= g g' - g' g = 0 \\[2pt]
+\text{Z:}\quad (W^3, B) &\propto (g,\, -g')
+& S &= g^2 + g'^2 \neq 0
+\end{aligned}
+$$
+
+When $S_\mu = 0$ the right-hand sides vanish and $W^3$ and $B$ each obey $\square X = 0$ **separately**, travelling at exactly $c$. That is why `BYs`, `W3Ys` and `AYs` all move at $c$ together in a photon pulse — they are not three things, they are one configuration in which the source happens to cancel.
+
+### Isn't the exact ratio a bit magical?
+
+No, and the simulator shows why directly. Excite **only** $W^3$, which is neither a photon nor a $Z$, and watch:
+
+```
+photon (g', g)   A +0.9891 c   Z +0.0000 c
+Z (g, -g')       A +0.0000 c   Z +0.8462 c
+W^3 alone        A +0.9891 c   Z +0.7523 c
+```
+
+A pure $W^3$ pulse produces **both**, moving at different speeds. Nothing had to be prepared in the right ratio. Any configuration decomposes into a $P$ part and an $S$ part, those two evolve independently, and because they travel at different speeds they physically separate as the run proceeds.
+
+So the honest answer to "how do photons end up in exactly that ratio" is that they don't have to. "Photon" is the *name* for the direction in the $(W^3, B)$ plane that the Higgs doublet cannot see. Any excitation you make has some component along it, and that component is what still arrives at light speed far away. Preparing a pure mode, as `PhotonPulse` does, is like plucking a string at a node to excite one harmonic — a convenience, not a requirement.
+
+The reason a null direction exists at all is that the Higgs doublet has a zero in it. One component untouched means exactly one generator, $Q = T^3 + Y$, that annihilates it — and a gauge field coupled to a generator that annihilates the Higgs doublet has nothing to take mass from.
+
+### The essential insight
+
+Two neutral gauge fields, one handle. The mass term is therefore a perfect square in a single combination, which is a rank-one form, which has exactly one flat direction. No tuning, and true for any $g$ and $g'$.
+
+The photon is not a field that escaped getting a mass. It is the direction along which the Higgs doublet is blind.
+
+Confirmed. The electron's Z field (0.0839) is comparable to its photon field (0.126) — it sources both. Here's the section:
+
+---
+
+### Does the electron make only photons?
+
+It does not — and it is worth being clear that this is the gauge coupling's business, not the Yukawa's. The Yukawa term gives the electron a mass; what it couples to is fixed entirely by $T^3$ and $Y$.
+
+Rewrite the fermion's gauge matrix in the photon and $Z$ directions, using $W^3 = \sin\theta_W A + \cos\theta_W Z$ and $B = \cos\theta_W A - \sin\theta_W Z$:
+
+{id="eq_ncoup" title="the neutral couplings of a fermion"}
+$$
+g W^3 T^3 + g' Y B
+\;=\; \underbrace{e\,Q}_{\text{to } A}\, A
+\;+\; \underbrace{\sqrt{g^2+g'^2}\left(T^3 - \sin^2\!\theta_W\, Q\right)}_{\text{to } Z}\, Z
+$$
+
+with $Q = T^3 + Y$ and $e = g g'/\sqrt{g^2+g'^2}$.
+
+The photon coupling collapses to $e Q$ — that is what $Q = T^3 + Y$ buys, and it is zero for the neutrino. The $Z$ coupling is a *different* combination, and it vanishes for nothing here:
+
+| | $T^3$ | $Q$ | photon, $Q$ | $Z$, $T^3 - \sin^2\!\theta_W Q$ |
+|---|---|---|---|---|
+| $\nu_L$ | $+\tfrac12$ | $0$ | $0$ | $+0.500$ |
+| $e_L$ | $-\tfrac12$ | $-1$ | $-1$ | $-0.277$ |
+| $e_R$ | $0$ | $-1$ | $-1$ | $+0.223$ |
+
+So an electron sources both fields at once. Putting a lump of each in an empty box and reading off the fields it creates:
+
+```
+electron   max |A0| 1.260e-01    max |Z0| 8.386e-02
+neutrino   max |A0| 1.124e-08    max |Z0| 1.514e-01
+```
+
+The neutrino makes no photon field and a large $Z$ field; the electron makes both. Their $Z$ fields stand in the ratio $1.805$, against the $0.500 / 0.277 = 1.805$ the couplings predict.
+
+Note also that $e_L$ and $e_R$ have $Z$ couplings of **opposite sign** while their photon couplings are identical. That difference is parity violation, and it is why the weak interaction distinguishes handedness while electromagnetism does not.
+
+### Then why does only electromagnetism reach us?
+
+Because of the mass, not the coupling. A massless field around a static source falls off as $1/r$; a massive one is screened,
+
+{id="eq_yukawa_range" title="range of a massive field"}
+$$
+\frac{1}{r} \;\longrightarrow\; \frac{e^{-M_Z r}}{r}
+$$
+
+so the $Z$ part of an electron's field is gone beyond $r \sim 1/M_Z$, about $2\times10^{-3}$ fm. Every electron is radiating $Z$ field as vigorously as photon field; it simply does not get anywhere.
+
+This closes the loop with the earlier section. A random excitation of $W^3$ and $B$ splits into both modes, and so does the field around an electron. What makes electromagnetism look like the only long-range neutral force is not that anything is emitted selectively, but that one of the two modes has a mass and the other does not.
+
 ### The weak force bosons W are very hard to activate
 
 * heavy

@@ -128,15 +128,15 @@ $$
 a_\mu = g^{\mu\nu} a^\mu
 $$
 
-Finally, as if we needed an even simpler version of the wave equation (and one more symbol to memorize), the **d'Alembertian** $\sqcap$ (note: $\sqcap$ should actually just be a square box, but we don't have that available for technical reasons):
+Finally, as if we needed an even simpler version of the wave equation (and one more symbol to memorize), the **d'Alembertian** $\Box$:
 
 $$
-\sqcap \equiv \frac{\partial^2 {}}{\partial t^2} - \nabla^2 = \partial_\mu \partial^\mu
+\Box \equiv \frac{\partial^2 {}}{\partial t^2} - \nabla^2 = \partial_\mu \partial^\mu
 $$
 
 allows you to write the wave equation in the simplest possible way, as:
 
 $$
-\sqcap s = 0
+\Box s = 0
 $$
 

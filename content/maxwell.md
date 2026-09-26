@@ -422,13 +422,13 @@ $$
 $$
 
 $$
-\sqcap \vec{A} - \vec{\nabla} \left( \vec{\nabla} \cdot \vec{A} + \frac{1}{c^2} \frac{\partial {A_0}}{\partial t} \right) = -\mu_0 \vec{J}
+\Box \vec{A} - \vec{\nabla} \left( \vec{\nabla} \cdot \vec{A} + \frac{1}{c^2} \frac{\partial {A_0}}{\partial t} \right) = -\mu_0 \vec{J}
 $$
 
-So, perhaps you can see that now we are getting somewhat closer to a wave equation. We now have the $\nabla^2$ terms showing up in both equations, and in the latter we have a $\frac{\partial^2 {}}{\partial t^2}$ term, such that we get the classic wave equation signature, as indicated by the last line where we substituted in the d'Alembertian operator (note: $\sqcap$ should actually just be a square box, but we don't have that available for technical reasons):
+So, perhaps you can see that now we are getting somewhat closer to a wave equation. We now have the $\nabla^2$ terms showing up in both equations, and in the latter we have a $\frac{\partial^2 {}}{\partial t^2}$ term, such that we get the classic wave equation signature, as indicated by the last line where we substituted in the d'Alembertian operator ($\Box$):
 
 $$
-\sqcap = \frac{\partial^2}{\partial t^2} - \nabla^2
+\Box = \frac{\partial^2}{\partial t^2} - \nabla^2
 $$
 
 which encapsulates the wave equation dynamics of second-order time minus second-order space differentials.

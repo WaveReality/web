@@ -494,6 +494,8 @@
 
 <p id="Whittaker03">Whittaker, E.T. (1903). On the partial differential equations of mathematical physics. <i>Mathematische Annalen, 57</i>, 333–355. <a href="https://doi.org/10.1007/BF01444290">https://doi.org/10.1007/BF01444290</a><a href="http://doi.org/10.1007/BF01444290"> http://doi.org/10.1007/BF01444290</a></p>
 
+<p id="Witten16">Witten, E. (2016). <i>Phil Anderson and Gauge Symmetry Breaking. </i>In PWA90: A Lifetime of Emergence (pp. 73–89). <a href="https://ui.adsabs.harvard.edu/abs/2016pwa..book...73W">https://ui.adsabs.harvard.edu/abs/2016pwa..book...73W</a><a href="http://doi.org/10.1142/9789814733632_0007"> http://doi.org/10.1142/9789814733632_0007</a></p>
+
 <p id="Witten18">Witten, E. (2018). Notes on Some Entanglement Properties of Quantum Field Theory. <i>Reviews of Modern Physics, 90</i>, 045003. <a href="http://arxiv.org/abs/1803.04993">http://arxiv.org/abs/1803.04993</a><a href="http://doi.org/10.1103/RevModPhys.90.045003"> http://doi.org/10.1103/RevModPhys.90.045003</a></p>
 
 <p id="Witten22">Witten, E. (2022). Gravity and the crossed product. <i>Journal of High Energy Physics, 2022</i>, 8. <a href="https://doi.org/10.1007/JHEP10(2022)008">https://doi.org/10.1007/JHEP10(2022)008</a><a href="http://doi.org/10.1007/JHEP10(2022)008"> http://doi.org/10.1007/JHEP10(2022)008</a></p>

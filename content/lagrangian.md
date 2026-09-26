@@ -9,7 +9,7 @@ The Lagrangian (not to be confused with the _Laplacian_ that computes the spatia
 
 {eq="eq_lagrangian-general" title="Lagrangian in general form"}
 $$
-L = T - V
+\mathcal{L} = T - V
 $$
 
 By comparison, the [[Hamiltonian]] formulation (proposed in 1833) defines the total energy as the sum of kinetic and potential energy:
@@ -29,11 +29,11 @@ The Lagrangian is used to evaluate the **action** $S$, which is a **path integra
 
 {eq="eq_action" title="action"}
 $$
-S = \int L dt
+S = \int \mathcal{L} dt
 $$
 
 $$
-S = \int_{q_1}^{q_2} L(\dot{q}, q) dt
+S = \int_{q_1}^{q_2} \mathcal{L}(\dot{q}, q) dt
 $$
 
 Where the latter expression provides the concrete parameterization of the two points $q_1$ and $q_2$, and the Laplacian being a function of the individual points along the way between these two points (i.e., the **path**), and the velocities along these paths.
@@ -54,7 +54,7 @@ The action effectively defines the **Euler-Lagrange** equation which can be used
 
 {eq="eq_euler-lagrange" title="Euler-Lagrange equations"}
 $$
-\frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q}_j} \right) = \frac{\partial L}{\partial q_j}
+\frac{d}{dt} \left( \frac{\partial \mathcal{L}}{\partial \dot{q}_j} \right) = \frac{\partial \mathcal{L}}{\partial q_j}
 $$
 
 By substituting the Lagrangian into this equation, the equations of motion for the elements of the system can be derived.
@@ -68,7 +68,7 @@ The simple harmonic oscillator (SHO) case provides a simple illustration of the 
 The Lagrangian as kinetic -- potential energy is:
 
 $$
-L(x,\dot{x}) = \frac{1}{2} m \dot{x}^2 - V(x)
+\mathcal{L}(x,\dot{x}) = \frac{1}{2} m \dot{x}^2 - V(x)
 $$
 
 where the potential energy function is:
@@ -80,15 +80,15 @@ $$
 To apply the Euler-Lagrange equation, we have the following derivatives:
 
 $$
-\frac{\partial L}{\partial x} = - \frac{\partial V}{\partial x}
+\frac{\partial \mathcal{L}}{\partial x} = - \frac{\partial V}{\partial x}
 $$
 
 $$
-\frac{\partial L}{\partial \dot{x}} = m \dot{x}
+\frac{\partial \mathcal{L}}{\partial \dot{x}} = m \dot{x}
 $$
 
 $$
-\frac{d}{dt} \left( \frac{\partial L}{\partial \dot{x}} \right) = m \ddot{x}
+\frac{d}{dt} \left( \frac{\partial \mathcal{L}}{\partial \dot{x}} \right) = m \ddot{x}
 $$
 
 Therefore:
