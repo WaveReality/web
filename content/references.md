@@ -164,6 +164,10 @@
 
 <p id="DurrHeisenbergMitterEtAl59">Dürr, H., Heisenberg, W., Mitter, H., Schlieder, S., & Yamazaki, K. (1959). Zur Theorie der Elementarteilchen. <i>Zeitschrift für Naturforschung A, 14</i>, 441–485. <a href="https://www.degruyterbrill.com/document/doi/10.1515/zna-1959-5-601/html?lang=en">https://www.degruyterbrill.com/document/doi/10.1515/zna-1959-5-601/html?lang=en</a><a href="http://doi.org/10.1515/zna-1959-5-601"> http://doi.org/10.1515/zna-1959-5-601</a></p>
 
+<p id="Dyson49">Dyson, F.J. (1949). The Radiation Theories of Tomonaga, Schwinger, and Feynman. <i>Physical Review, 75</i>, 486–502. <a href="https://link.aps.org/doi/10.1103/PhysRev.75.486">https://link.aps.org/doi/10.1103/PhysRev.75.486</a><a href="http://doi.org/10.1103/PhysRev.75.486"> http://doi.org/10.1103/PhysRev.75.486</a></p>
+
+<p id="Dyson49a">Dyson, F.J. (1949). The $S$ Matrix in Quantum Electrodynamics. <i>Physical Review, 75</i>, 1736–1755. <a href="https://link.aps.org/doi/10.1103/PhysRev.75.1736">https://link.aps.org/doi/10.1103/PhysRev.75.1736</a><a href="http://doi.org/10.1103/PhysRev.75.1736"> http://doi.org/10.1103/PhysRev.75.1736</a></p>
+
 <p id="EddiSultanMoukhtarEtAl11">Eddi, A., Sultan, E., Moukhtar, J., Fort, E., Rossi, M., & Couder, Y. (2011). Information stored in Faraday waves: the origin of a path memory. <i>Journal of Fluid Mechanics, 674</i>, 433–463. <a href="https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/abs/information-stored-in-faraday-waves-the-origin-of-a-path-memory/45202A36EA1A333B658849C11FE1E850">https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/abs/information-stored-in-faraday-waves-the-origin-of-a-path-memory/45202A36EA1A333B658849C11FE1E850</a><a href="http://doi.org/10.1017/S0022112011000176"> http://doi.org/10.1017/S0022112011000176</a></p>
 
 <p id="Einstein05a">Einstein, A. (1905). Über einem die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt. <i>Annalen der physik, 4</i>, <a href="https://sedici.unlp.edu.ar/handle/10915/2784">https://sedici.unlp.edu.ar/handle/10915/2784</a></p>
@@ -178,11 +182,17 @@
 
 <p id="Feynman48">Feynman, R.P. (1948). Space-Time Approach to Non-Relativistic Quantum Mechanics. <i>Reviews of Modern Physics, 20</i>, 367–387. <a href="https://link.aps.org/doi/10.1103/RevModPhys.20.367">https://link.aps.org/doi/10.1103/RevModPhys.20.367</a><a href="http://doi.org/10.1103/RevModPhys.20.367"> http://doi.org/10.1103/RevModPhys.20.367</a></p>
 
+<p id="Feynman49">Feynman, R. (1949). The theory of positrons. <i>Phys. Rev, 76</i>, 749–759. </p>
+
+<p id="Feynman49a">Feynman, R.P. (1949). Space-Time Approach to Quantum Electrodynamics. <i>Physical Review, 76</i>, 769–789. <a href="https://link.aps.org/doi/10.1103/PhysRev.76.769">https://link.aps.org/doi/10.1103/PhysRev.76.769</a><a href="http://doi.org/10.1103/PhysRev.76.769"> http://doi.org/10.1103/PhysRev.76.769</a></p>
+
 <p id="Feynman82">Feynman, R.P. (1982). Simulating physics with computers. <i>International Journal of Theoretical Physics, 21</i>, 467–488. <a href="https://doi.org/10.1007/BF02650179">https://doi.org/10.1007/BF02650179</a><a href="http://doi.org/10.1007/BF02650179"> http://doi.org/10.1007/BF02650179</a></p>
 
 <p id="FeynmanGell-Mann58">Feynman, R.P., & Gell-Mann, M. (1958). Theory of the Fermi Interaction. <i>Physical Review, 109</i>, 193–198. <a href="https://link.aps.org/doi/10.1103/PhysRev.109.193">https://link.aps.org/doi/10.1103/PhysRev.109.193</a><a href="http://doi.org/10.1103/PhysRev.109.193"> http://doi.org/10.1103/PhysRev.109.193</a></p>
 
 <p id="FigariTeta13">Figari, R., & Teta, A. (2013). Emergence of classical trajectories in quantum systems: the cloud chamber problem in the analysis of Mott (1929) <i>Archive for History of Exact Sciences, 67</i>, 215–234. <a href="https://www.jstor.org/stable/23479266">https://www.jstor.org/stable/23479266</a></p>
+
+<p id="FigueiredoAguilar16">Figueiredo, C.T., & Aguilar, A.C. (2016). Mass generation and the problem of seagull divergences. <i>Journal of Physics: Conference Series, 706</i>, 052007. <a href="https://doi.org/10.1088/1742-6596/706/5/052007">https://doi.org/10.1088/1742-6596/706/5/052007</a><a href="http://doi.org/10.1088/1742-6596/706/5/052007"> http://doi.org/10.1088/1742-6596/706/5/052007</a></p>
 
 <p id="FinsterSmollerYau99a">Finster, F., Smoller, J., & Yau, S. (1999). Particlelike solutions of the Einstein-Dirac equations. <i>Physical Review D, 59</i>, 104020. <a href="https://link.aps.org/doi/10.1103/PhysRevD.59.104020">https://link.aps.org/doi/10.1103/PhysRevD.59.104020</a><a href="http://doi.org/10.1103/PhysRevD.59.104020"> http://doi.org/10.1103/PhysRevD.59.104020</a></p>
 
@@ -334,6 +344,8 @@
 
 <p id="Minkowski08">Minkowski, H. (1908). Die Grundgleichungen für die elektromagnetischen Vorgänge in bewegten Körpern. <i>Nachrichten von der Gesellschaft der Wissenschaften zu Göttingen, Mathematisch-Physikalische Klasse, 1908</i>, 53–111. <a href="https://eudml.org/doc/58707">https://eudml.org/doc/58707</a></p>
 
+<p id="MinottiModanese26">Minotti, F., & Modanese, G. (2026). Beyond minimal coupling for charged scalars? Modified electrodynamics and London-penetration tests. <a href="http://arxiv.org/abs/2605.20499">http://arxiv.org/abs/2605.20499</a><a href="http://doi.org/10.48550/arXiv.2605.20499"> http://doi.org/10.48550/arXiv.2605.20499</a></p>
+
 <p id="Montina08">Montina, A. (2008). Exponential complexity and ontological theories of quantum mechanics. <i>Physical Review A, 77</i>, 022104. <a href="http://arxiv.org/abs/0711.4770">http://arxiv.org/abs/0711.4770</a><a href="http://doi.org/10.1103/PhysRevA.77.022104"> http://doi.org/10.1103/PhysRevA.77.022104</a></p>
 
 <p id="Mott29">Mott, N.F. (1929). The Wave Mechanics of α -Ray Tracks. <i>Proceedings of the Royal Society of London. Series A, Containing Papers of a Mathematical and Physical Character, 126</i>, 79–84. <a href="https://www.jstor.org/stable/95407">https://www.jstor.org/stable/95407</a></p>
@@ -432,6 +444,10 @@
 
 <p id="Schroeren22">Schroeren, D. (2022). Wavefunction realism does not ‘privilege position’. <i>Synthese, 200</i>, 27. <a href="https://doi.org/10.1007/s11229-022-03525-0">https://doi.org/10.1007/s11229-022-03525-0</a><a href="http://doi.org/10.1007/s11229-022-03525-0"> http://doi.org/10.1007/s11229-022-03525-0</a></p>
 
+<p id="Schwinger48">Schwinger, J. (1948). On Quantum-Electrodynamics and the Magnetic Moment of the Electron. <i>Physical Review, 73</i>, 416–417. <a href="https://link.aps.org/doi/10.1103/PhysRev.73.416">https://link.aps.org/doi/10.1103/PhysRev.73.416</a><a href="http://doi.org/10.1103/PhysRev.73.416"> http://doi.org/10.1103/PhysRev.73.416</a></p>
+
+<p id="Schwinger48a">Schwinger, J. (1948). Quantum Electrodynamics. I. A Covariant Formulation. <i>Physical Review, 74</i>, 1439–1461. <a href="https://link.aps.org/doi/10.1103/PhysRev.74.1439">https://link.aps.org/doi/10.1103/PhysRev.74.1439</a><a href="http://doi.org/10.1103/PhysRev.74.1439"> http://doi.org/10.1103/PhysRev.74.1439</a></p>
+
 <p id="Schwinger62">Schwinger, J. (1962). Gauge Invariance and Mass. <i>Physical Review, 125</i>, 397–398. <a href="https://link.aps.org/doi/10.1103/PhysRev.125.397">https://link.aps.org/doi/10.1103/PhysRev.125.397</a><a href="http://doi.org/10.1103/PhysRev.125.397"> http://doi.org/10.1103/PhysRev.125.397</a></p>
 
 <p id="Sciarretta18">Sciarretta, A. (2018). A Local-Realistic Model of Quantum Mechanics Based on a Discrete Spacetime (Extended version) <i>Foundations of Physics, 48</i>, 60–91. <a href="http://arxiv.org/abs/1712.03227">http://arxiv.org/abs/1712.03227</a><a href="http://doi.org/10.1007/s10701-017-0129-9"> http://doi.org/10.1007/s10701-017-0129-9</a></p>
@@ -471,6 +487,8 @@
 <p id="Tegmark98">Tegmark, M. (1998). The Interpretation of Quantum Mechanics: Many Worlds or Many Words? <i>Fortschritte der Physik, 46</i>, 855–862. <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291521-3978%28199811%2946%3A6/8%3C855%3A%3AAID-PROP855%3E3.0.CO%3B2-Q">https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291521-3978%28199811%2946%3A6/8%3C855%3A%3AAID-PROP855%3E3.0.CO%3B2-Q</a><a href="http://doi.org/10.1002/(SICI)1521-3978(199811)46:6/8<855::AID-PROP855>3.0.CO;2-Q"> http://doi.org/10.1002/(SICI)1521-3978(199811)46:6/8<855::AID-PROP855>3.0.CO;2-Q</a></p>
 
 <p id="TittelBrendelGisinEtAl98">Tittel, W., Brendel, J., Gisin, B., Herzog, T., Zbinden, H., & Gisin, N. (1998). Experimental demonstration of quantum correlations over more than 10 km. <i>Physical Review A, 57</i>, 3229–3232. <a href="https://link.aps.org/doi/10.1103/PhysRevA.57.3229">https://link.aps.org/doi/10.1103/PhysRevA.57.3229</a><a href="http://doi.org/10.1103/PhysRevA.57.3229"> http://doi.org/10.1103/PhysRevA.57.3229</a></p>
+
+<p id="Tomonaga46">Tomonaga, S. (1946). On a Relativistically Invariant Formulation of the Quantum Theory of Wave Fields. <i>Progress of Theoretical Physics, 1</i>, 27–42. <a href="https://doi.org/10.1143/PTP.1.27">https://doi.org/10.1143/PTP.1.27</a><a href="http://doi.org/10.1143/PTP.1.27"> http://doi.org/10.1143/PTP.1.27</a></p>
 
 <p id="Tonin59">Tonin, M. (1959). Quantization of the two-component fermion theory. <i>Il Nuovo Cimento (1955-1965), 14</i>, 1108–1119. <a href="https://doi.org/10.1007/BF02728186">https://doi.org/10.1007/BF02728186</a><a href="http://doi.org/10.1007/BF02728186"> http://doi.org/10.1007/BF02728186</a></p>
 

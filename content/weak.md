@@ -5,19 +5,23 @@ bibfile = "mechphys.json"
 
 The **weak** force on its own is responsible for various forms of _decay_ or _transmutation_ from one type of particle to another, most notably in the case of _beta decay_ where for example a proton decays into a neutron within the nucleus. This is a relatively rare event, and the weak force is, after all, "weak", so in general it perhaps doesn't get as much attention as it otherwise might.
 
-However, the **electroweak** unification of the electromagnetic force (i.e., [[Maxwell]]s equations) together with the weak force, along with the central role of the [[Higgs]] field in this framework, provides a profoundly different picture of the fundamental nature of an [[electron]] and its interaction with the electromagnetic field. This electroweak picture also integrates the [[neutrino]]s with their charged [[lepton]] partners like the electron, and is intimately connected with the _flavors_ or [[generation]]s of particles, e.g., muon and tau.
+However, the **electroweak** unification of the electromagnetic force (i.e., [[Maxwell]]'s equations) together with the weak force, along with the central role of the [[Higgs]] field in this framework, provides a profoundly different picture of the fundamental nature of an [[electron]] and its interaction with the electromagnetic field. This electroweak picture also integrates the [[neutrino]]s with their charged [[lepton]] partners like the electron, and is intimately connected with the _flavors_ or [[generation]]s of particles, e.g., muon and tau.
 
-Thus, it is not an exaggeration to say that the electroweak framework is as revolutionary for understanding the nature of leptons as the [[quark]] framework is for understanding the hadrons: it provides an entirely different fundamental basis space, that parsimoniously integrates a wide range of disparate phenomena into a more coherent framework. It is simply not sensible to try to understand the most basic nature of the electron and electromagnetic interactions without understanding the electroweak model.
+Thus, it is perhaps not an exaggeration to say that the electroweak framework is as revolutionary for understanding the nature of leptons as the [[quark]] framework is for understanding the hadrons: it provides an entirely different fundamental basis space, that parsimoniously integrates a wide range of disparate phenomena into a more coherent framework. To understand the most basic nature of the electron and electromagnetic interactions, understanding the electroweak model seems essential.
 
-However, the counter-argument is that the actual physical implications of this revolutionary rearrangement of the quantum furniture are somewhat difficult to detect, which presumably why this part of the story gets less attention than it otherwise might.
+However, the counter-argument is that the actual physical implications of this revolutionary rearrangement of the quantum furniture are somewhat difficult to detect, which presumably why this part of the story gets less attention than it otherwise might. The famously successful [[QED]] model, which preceded the electroweak model by more than a decade, persists unchanged!
 
-Interestingly, there are many features of this electroweak framework that align with aspects of the [[Spinfield Model]], which thus can provide essential guidance on how that model should be configured. Therefore, it is of central importance to the current effort.
+This fact says a lot about how different [[calculational tool]]s can be used to describe the same phenomena, but if the goal is to understand something about the underlying physical mechanisms, then it seems that there is much to learn from the electroweak framework. In that respect, there are many features of the electroweak framework that align with aspects of the [[Spinfield Model]], so it can thus can provide essential guidance on how that model should be configured.
+
+It is strongly recommended to read [[gauge theory]] and [[Higgs]] before proceeding, as these contain essential background information necessary for understanding what follows. You should understand how gauge theory describes the interaction between particle and force fields, and how this interaction can give rise to a dynamic mass-like factor, which shows up in the conserved current density expression. This is precisely where the mass of the weak bosons will arise in the electroweak framework, for precisely the same reason. 
+
+The role of the Higgs field is, first and foremost, to provide the source of a non-zero "fuel" for the current density, through the mechanism of spontaneous symmetry breaking as a result of the specific shape of the Higgs potential. The specific structure of this field, as a scalar complex field (spin 0, i.e., [[complex KG]]) with two elements, is also critical for how it interacts with the four different force fields present in the electroweak system, to deal with the otherwise problematic Goldstone boson problem and to allow one effective force field to remain massless (which then represents the Maxwell EM field), while three others take on mass terms, which turn out to be consistent with the measured masses of the weak bosons.
 
 ## Electroweak
 
 The electroweak framework is based on three fields, which together comprise a total of 4 four-vector potential-like fields, and the Higgs doublet, which has 4 real-valued numbers, organized into two complex values.
 
-* The **Higgs doublet** $\Psi$, which has 2 complex field elements (4 real numbers), one of which interacts with electric charge ($\phi^+$) and another that is electrically neutral ($\phi^0$). As a result of the spontaneous symmetry breaking property of the Higgs potential, the neutral component acquires a stable expected value of $v_h = 246 GeV$, which is what then provides the mass term for all other wave fields.
+* The **Higgs doublet** $\Psi$, which has 2 complex field elements (4 real numbers), one of which interacts with electric charge ($\chi^+$) and another that is electrically neutral ($\chi^0$). As a result of the spontaneous symmetry breaking property of the Higgs potential, the neutral component acquires a stable expected value of $v_h = 246 GeV$, which is what then provides the mass term for all other wave fields.
 
 * The **weak hypercharge** four-potential $B_\mu$, which is essentially just like the EM four-potential $A_\mu$, with four real-valued numbers, $B_0$ is the scalar electric potential, and the remaining three terms ($B_{(x,y,z)}$) are the vector potential. The source of this potential is the weak hypercharge value $Y_W$ which acts like the $Q$ charge for the EM potential. It interacts with the Higgs doublet through the same local gauge invariance mechanism (see [[gauge theory]]) that describes minimal coupling with the EM field, exactly as done in the case of the [[complex KG]] equation.
 
@@ -40,11 +44,11 @@ $$
 And the four-potentials associated with the two charged weak bosons $W^\pm$:
 
 $$
-W^+ = \frac{1}{\sqrt2} \left( W^1_\mu - W^2_\mu)
+W^+ = \frac{1}{\sqrt2} \left( W^1_\mu - W^2_\mu \right)
 $$
 
 $$
-W^- = \frac{1}{\sqrt2} \left( W^1_\mu + W^2_\mu)
+W^- = \frac{1}{\sqrt2} \left( W^1_\mu + W^2_\mu \right)
 $$
 
 Furthermore, the electric charge $Q$ is also a mixture of two quantum numbers that are associated with different types of particles, _weak hypercharge_ ($Y$) and _weak isospin_ (third component: $T^3$):
@@ -59,14 +63,14 @@ $$
 | neutrino (left chiral) | -1/2 | 1/2     | 1/2  | 0  |
 | electron, left chiral  | -1/2 | 1/2     | -1/2 | -1 |
 | electron, right chiral | -1   | 0       | 0    | -1 |
-| Higgs $\phi^+$         | 1/2  | 1/2     | 1/2  | 1  |
-| Higgs $\phi^0$         | 1/2  | 1/2     | -1/2 | 0  |
+| Higgs $\chi^+$         | 1/2  | 1/2     | 1/2  | 1  |
+| Higgs $\chi^0$         | 1/2  | 1/2     | -1/2 | 0  |
 
 [[#table_weak-qs]] shows these quantum numbers for neutrinos and electrons (the leptons). This table, plus the mixing factors shown above, clearly show that the electroweak framework provides an entirely different factorization of the theoretically fundamental lepton particles. There are two fundamentally different versions of the electron, and the left-chiral electron and the neutrino share most of their quantum numbers, so they would seem to be much more similar at the electroweak level than we would otherwise expect given their overall properties.
 
-Thus, it seems that one's understanding of what an electron really is changes dramatically under this electroweak framework. Furthermore, every one of these electroweak fields, including is coupling to the very same Higgs doublet field: what are the implications of this mutual interaction through this shared field?
+Thus, it seems that one's understanding of what an electron really is changes dramatically under this electroweak framework. Furthermore, every one of these electroweak fields, including in addition the particle fields associated with the leptons, is coupling to the very same Higgs doublet field: what are the implications of this mutual interaction through this shared field?
 
-A fundamental question raised by all of this, is are the observable fields a mixture and not just equivalent to the corresponding weak hypercharge and weak isospin fields that we started with? This is described as being a consequence of the spontaneous symmetry breaking dynamic in the Higgs field, but the story is quite a bit more complicated than that. The symmetry breaking is _necessary_ for these mixture factors to actually matter, because prior to this symmetry breaking, all of the four-potentials are essentially equivalent, acting like the EM massless four-potential. Once the symmetry is broken and the Higgs field has a vacuum expectation value, then all of the differences that were actually built into the system start to matter.
+A fundamental question raised by all of this, is _why_ are the observable fields a mixture and not just equivalent to the corresponding weak hypercharge or weak isospin fields that we started with? This is described as being a consequence of the spontaneous symmetry breaking dynamic in the Higgs field, but the story is quite a bit more complicated than that. The symmetry breaking is _necessary_ for these mixture factors to actually matter, because prior to this symmetry breaking, all of the four-potentials are essentially equivalent, acting like the EM massless four-potential. Once the symmetry is broken and the Higgs field has a vacuum expectation value, then all of the differences that were actually built into the system start to matter.
 
 In particular, the gauge theory derivation of how the Higgs field couples to the weak hypercharge and weak isospin fields results in a **covariant derivative** that cancels out the local gauge factors arising from the gauge fields, of the form:
 
@@ -76,9 +80,11 @@ $$
 
 Where $g'$ and $g$ are arbitrary real-valued coupling parameters for each of the respective fields ($B_\mu$ and $W^a_\mu$), and $Y$ is the weak hypercharge quantum number value for the Higgs field (a real number), which is set to 1/2 by convention. The $T^a$ is a set of 3 different coupling matricies, one for each of the three $W^a_\mu$ four-vector components, that are defined by the SU(2) unitary rotation group -- i.e., a set of basis vectors that perform unitary rotations of a 2x2 matrix, which is what the Higgs field is (2 complex values for each of 2 doublets).
 
-These are none other than the [[Pauli matricies]], which are also used in the [[Dirac]] equation, and define the property of [[spin]] in the quantum world. This is why the $W$ field is called _isospin_, because it causes spinning. Each of these are also multiplied by the conventional 1/2 factor, but it turns out that the third Pauli matrix has a -1 on the bottom-right diagonal, which therefore gives the neutral Higgs doublet component $\phi^0$ a -1/2 effective $T^3$ quantum number.
+These are none other than the [[Pauli matricies]], which are also used in the [[Dirac]] equation, and define the property of [[spin]] in the quantum world. This is why the $W$ field is called _isospin_, because it causes spinning. Each of these are also multiplied by the conventional 1/2 factor, but it turns out that the third Pauli matrix has a -1 on the bottom-right diagonal, which therefore gives the neutral Higgs doublet component $\chi^0$ a -1/2 effective $T^3$ quantum number.
 
-This covariant derivative is used in the [[Lagrangian]] for the Higgs field:
+This negative quantum number means that the $W^3$ component force field has a negative contribution, while the $B_\mu$ field has a positive contribution, and any field configuration that has positive values in each of these fields, in the correct ratio as defined below, will end up with no mass, due to the cancellation of these positive and negative contributions.
+
+The covariant derivative is used in the [[Lagrangian]] for the Higgs field (see [[gauge theory]] for details on how this is all computed, using a simpler single-valued complex KG particle field):
 
 $$
 \mathcal{L}_h = |D_\mu \Psi|^2 + V(\Psi)
@@ -88,10 +94,12 @@ where $V(\Psi)$ is the Higgs potential that leads to symmetry breaking, as descr
 
 {id="eq_state" title="Higgs complex doublet"}
 $$
-\Psi \def \frac{1}{\sqrt2} \binom{\phi^+}{\phi^0}
+\Psi \equiv \frac{1}{\sqrt2} \binom{\chi^+}{\chi^0}
 $$
 
-From all of this, we can now see that the _reason_ that electric charge and the electromagnetic field are a mixture of the $B_\mu$ and $W^3$ fields is because of the way that these gauge coupling factors work. In particular, the only way for the EM field to remain fully massless (and thus have long-range effects) is for it to have opposite effects on the underlying Higgs field, so that these effects _perfectly_ cancel out. This cancellation is captured qualitatively by the definition of electric charge in terms of the sum of the factors for each field, and quantitatively it is given by the ratio of the coupling parameters $g'$ and $g$, which determines the weak mixing angle:
+From all of this, we can now see that the _reason_ that electric charge and the electromagnetic field are a mixture of the $B_\mu$ and $W^3$ fields is because of the way that these gauge coupling factors work. In particular, the only way for the EM field to remain fully massless (and thus have long-range effects) is for it to have opposite effects on the current density computed by the gauge theory analysis of the electroweak system, so that these effects _perfectly_ cancel out, leaving zero current, and thus, zero mass. We will see this in detail below.
+
+This cancellation is captured qualitatively by the definition of electric charge in terms of the sum of the factors for each field, and quantitatively it is given by the ratio of the coupling parameters $g'$ and $g$, which determines the weak mixing angle:
 
 $$
 \sin \theta_w = \frac{g'}{\sqrt{g^2 + g'^2}}
@@ -103,19 +111,13 @@ Furthermore, the gauge theory framework that drives so much of the phenomenology
 
 Thus, even though this seems like a very complicated way of going about everything, in the end each step is strongly constrained, and it is difficult to see how a different kind of system could be derived.
 
-## Phenomenology of the weak force
+## Phenomenology of the electroweak system
 
-### EM does _not_ couple to the Higgs field in the end
+### The EM field is _defined_ by the ratio of local field strengths
 
-The weak mixing angle ensures that the EM field $A_\mu$ has _precisely_ canceling effects on the Higgs field, meaning that it has no net effect. This seems like a bit of a strong coincidence. Or is it definitional: given that a zero exists, that specific mixture is _selected_ empirically as the one that has long-range propagation. So it doesn't have to have been done "a priori" or magically.
+In the following analysis, we see precisely how the current density that is computed for the coupled electroweak system will turn out to be zero whenever the local field values for $B_\mu$ and $W^3$ are in a specific positive-valued ratio. The result is that any waves that have this particular configuration will propagate over a long range, because they are effectively massless, while all the massive configurations will end up decaying over a relatively short range. Thus, the Higgs field acts much like a filter: the only thing that gets through is light itself (EM radiation over the effectively massless field configuration), while everything else is effectively the massive weak bosonic fields $W^\pm$ and $Z^0$.
 
-But if these other wave fields are really what is there, then how exactly does this specific mixture manage to somehow emerge as a linear mixture _after the fact_?  todo: ask claude about this
-
-Everything below concerns only the two neutral gauge fields $W^3_\mu$ and $B_\mu$. The charged $W^{1,2}$ and the Higgs fluctuations play no part.
-
-### Where we start: the equations of motion
-
-Each gauge field obeys a wave equation driven by a current, and the Higgs doublet is what supplies that current:
+Everything below concerns only the two neutral gauge fields $W^3_\mu$ and $B_\mu$. The charged $W^{1,2}$ and the Higgs fluctuations play no part. Each gauge field obeys a wave equation driven by a current, and the Higgs doublet is what supplies that current:
 
 {id="eq_eom_gen" title="equations of motion for the neutral gauge fields"}
 $$
@@ -128,9 +130,7 @@ j^3_\mu = 2 g\, \mathrm{Im}\!\left[\Phi^\dagger T^3 D_\mu \Phi\right], \qquad
 j^Y_\mu = 2 g' Y\, \mathrm{Im}\!\left[\Phi^\dagger D_\mu \Phi\right]
 $$
 
-There is no mass anywhere in these. A mass can only appear if $j$ turns out to be proportional to the field that produced it — and whether it does is decided entirely by $D_\mu \Phi$.
-
-### The covariant derivative, and the one combination it leaves
+The key factor in these current equations is the nature of the covariant derivative, which will end up bringing the force fields into the overall current expression, via the _seagull_ term that we saw in the gauge theory derivation.
 
 {id="eq_covd" title="covariant derivative, neutral sector"}
 $$
@@ -146,9 +146,9 @@ G_\mu = \frac{1}{2}
 \begin{pmatrix} g W^3_\mu + g' B_\mu & 0 \\[2pt] 0 & -g W^3_\mu + g' B_\mu \end{pmatrix}
 $$
 
-$W^3$ enters with **opposite signs** in the two entries, because $T^3$ distinguishes the components. $B$ enters with the **same** sign in both, because hypercharge does not. That asymmetry is the origin of everything that follows.
+$W^3$ enters with **opposite signs** in the two entries, because $T^3$ distinguishes the components. $B$ enters with the **same** sign in both, because hypercharge does not. That asymmetry is the origin of everything that follows: positive values of $W^3$ will end up canceling out positive values of $B$.
 
-Now use the actual state of the Higgs doublet. It is uniform, so $\partial_\mu \Phi = 0$ and the covariant derivative is *entirely* the gauge term. And it is $\Phi = (0,\ v/\sqrt2)$ — the upper component is exactly zero, so the upper entry of $G_\mu$ acts on nothing:
+Now use the actual state of the Higgs doublet. It is uniform, so $\partial_\mu \Phi = 0$ and the covariant derivative is *entirely* the gauge term. And it is $\Phi = (0,\ v/\sqrt2)$ -- the upper charged component is exactly zero, while the vacuum expectation value is concentrated in the lower neutral component. Note that this specific configuration is _essential_ for all of the mixing logic described here to actually work: the 0 cancels out possible contributions from the other W components. Thus, the upper entry of $G_\mu$ acts on nothing, due to the 0:
 
 {id="eq_dphi" title="the covariant derivative at the broken Higgs doublet"}
 $$
@@ -163,9 +163,7 @@ $$
 S_\mu \;\equiv\; g W^3_\mu - g' B_\mu
 $$
 
-Two neutral fields, but the Higgs doublet presents only **one handle** for them to couple through.
-
-### Substituting back gives the mass
+Two neutral fields, but the Higgs doublet presents only _one non-zero component_ for them to couple through.
 
 Put that $D_\mu\Phi$ into the currents. Both reduce to the same scalar $S_\mu$, with different prefactors:
 
@@ -175,15 +173,7 @@ $$
 \square\, B_\mu = +\frac{v^2}{4}\, g'\, S_\mu
 $$
 
-This is the mass term — a right-hand side proportional to the fields themselves. It was never written down; it appeared because $D_\mu\Phi$ contains the gauge fields, and the current multiplies that by a coupling a second time.
-
-### Is it component-wise or a magnitude?
-
-**Component-wise, and pointwise.** There is no sum over $\mu$ and no magnitude anywhere. Each spacetime index $\mu$ — the scalar potential and the three vector components — has its own $S_\mu$ and its own mass term, computed from the field values at that one lattice site. What the term *does* mix is the two fields $W^3$ and $B$ at the same $\mu$.
-
-In the code this is four separate calls, one per $\mu$, each with its own current.
-
-### The two combinations that evolve independently
+The resulting current factors act like a mass, and note that the $S_\mu$ term contains both the $W^3$ and $B$ field values, with opposite signs, so this is why the specific field levels in each field determine the resulting effective mass value at each point. There is no sum over $\mu$ and no magnitude anywhere, which is why it is local to each field component at each point. Each spacetime index $\mu$ -- the scalar potential and the three vector components -- has its own $S_\mu$ and thus its own mass term, computed from the field values at that one lattice site.
 
 Because both equations are driven by the same $S_\mu$, two particular combinations decouple. Take $g$ times the first plus $g'$ times... more simply, form:
 
@@ -192,20 +182,14 @@ $$
 \begin{aligned}
 P_\mu &\equiv g' W^3_\mu + g B_\mu
 & \square P_\mu &= -\tfrac{v^2}{4} g g' S_\mu + \tfrac{v^2}{4} g g' S_\mu = 0 \\[4pt]
-S_\mu &\equiv g W^3_\mu - g' B_\mu
-& \square S_\mu &= -\tfrac{v^2}{4}\left(g^2 + g'^2\right) S_\mu
+Z_\mu &\equiv g W^3_\mu - g' B_\mu
+& \square Z_\mu &= -\tfrac{v^2}{4}\left(g^2 + g'^2\right) S_\mu
 \end{aligned}
 $$
 
-$P_\mu$ is the photon, up to normalization: dividing by $\sqrt{g^2+g'^2}$ turns $(g', g)$ into $(\sin\theta_W, \cos\theta_W)$, which is exactly the combination the code writes into `A0s`. Its two source contributions cancel term by term, so it is massless identically.
+$P_\mu$ is the photon (EM field), up to normalization: dividing by $\sqrt{g^2+g'^2}$ turns $(g', g)$ into $(\sin\theta_W, \cos\theta_W). $Z_\mu$ is the $Z$, likewise up to normalization, and it obeys a massive wave equation with $M_Z^2 = \tfrac{v^2}{4}(g^2+g'^2)$.
 
-$S_\mu$ is the $Z$, likewise up to normalization, and it obeys a massive wave equation with $M_Z^2 = \tfrac{v^2}{4}(g^2+g'^2)$.
-
-### How the fields "know" which they are
-
-They do not. The equations compute $S_\mu$ from the local values of $W^3$ and $B$, and $S_\mu$ is a number.
-
-Your reading is right: **the photon has $W^3$ and $B$ of the same sign, the $Z$ has them opposite.** Precisely, the condition for masslessness is $g W^3 = g' B$ — same sign, in the ratio $g' : g$. Same sign with the wrong ratio is a mixture, and feels part of the mass.
+In summary, when you work through the final bit of math, there are two specific combinations of wave state magnitudes, one that results in zero effective mass (the photon) and one that has mass (the Z boson).
 
 {id="eq_configs" title="the two pulse configurations"}
 $$
@@ -217,35 +201,9 @@ $$
 \end{aligned}
 $$
 
-When $S_\mu = 0$ the right-hand sides vanish and $W^3$ and $B$ each obey $\square X = 0$ **separately**, travelling at exactly $c$. That is why `BYs`, `W3Ys` and `AYs` all move at $c$ together in a photon pulse — they are not three things, they are one configuration in which the source happens to cancel.
+By virtue of the filtering argument given above, nothing specifically requires that precisely the right ratio of field values must be present, because anything that is not well-aligned will be filtered out! For example, a pure $W^3$ pulse produces _both_ photon and Z fields, moving at different speeds.
 
-### Isn't the exact ratio a bit magical?
-
-No, and the simulator shows why directly. Excite **only** $W^3$, which is neither a photon nor a $Z$, and watch:
-
-```
-photon (g', g)   A +0.9891 c   Z +0.0000 c
-Z (g, -g')       A +0.0000 c   Z +0.8462 c
-W^3 alone        A +0.9891 c   Z +0.7523 c
-```
-
-A pure $W^3$ pulse produces **both**, moving at different speeds. Nothing had to be prepared in the right ratio. Any configuration decomposes into a $P$ part and an $S$ part, those two evolve independently, and because they travel at different speeds they physically separate as the run proceeds.
-
-So the honest answer to "how do photons end up in exactly that ratio" is that they don't have to. "Photon" is the *name* for the direction in the $(W^3, B)$ plane that the Higgs doublet cannot see. Any excitation you make has some component along it, and that component is what still arrives at light speed far away. Preparing a pure mode, as `PhotonPulse` does, is like plucking a string at a node to excite one harmonic — a convenience, not a requirement.
-
-The reason a null direction exists at all is that the Higgs doublet has a zero in it. One component untouched means exactly one generator, $Q = T^3 + Y$, that annihilates it — and a gauge field coupled to a generator that annihilates the Higgs doublet has nothing to take mass from.
-
-### The essential insight
-
-Two neutral gauge fields, one handle. The mass term is therefore a perfect square in a single combination, which is a rank-one form, which has exactly one flat direction. No tuning, and true for any $g$ and $g'$.
-
-The photon is not a field that escaped getting a mass. It is the direction along which the Higgs doublet is blind.
-
-Confirmed. The electron's Z field (0.0839) is comparable to its photon field (0.126) — it sources both. Here's the section:
-
----
-
-### Does the electron make only photons?
+### Does the electron make only EM field waves?
 
 It does not — and it is worth being clear that this is the gauge coupling's business, not the Yukawa's. The Yukawa term gives the electron a mass; what it couples to is fixed entirely by $T^3$ and $Y$.
 
@@ -292,29 +250,6 @@ so the $Z$ part of an electron's field is gone beyond $r \sim 1/M_Z$, about $2\t
 
 This closes the loop with the earlier section. A random excitation of $W^3$ and $B$ splits into both modes, and so does the field around an electron. What makes electromagnetism look like the only long-range neutral force is not that anything is emitted selectively, but that one of the two modes has a mass and the other does not.
 
-### Where does the mass come from?
-
-<!--- NOTE: this was in gauge-theory -- need to integrate here: -->
-
-This is exactly why a condensate is what turns it into a real mass. Write the field in polar form:
-
-$$
-\chi = |\chi| \, e^{i\vartheta}
-$$
-
-The phase $\vartheta$ is precisely the would-be Goldstone mode from the introduction. Because the gauge shift is free to add any gradient to $A_\mu$, we can choose it to set $\vartheta = 0$ everywhere --- the **unitary gauge** --- absorbing the phase into the force field. If $|\chi|$ then sits at a constant non-zero value $v$, what remains is:
-
-$$
-g^2 v^2 A_\mu A^\mu
-$$
-
-Nothing was created or destroyed in this accounting. A massless force field has 2 polarizations; a massive one has 3. The missing third polarization is the scalar phase that got eaten. This is what is meant by the slogan that the gauge boson "eats" the Goldstone boson, and it is how the two walls described in the introduction knock each other down.
-
-For an ordinary localized [[electron]], by contrast, $|\chi|$ is not constant --- it falls off to zero away from the particle --- so there is no uniform mass to be had, and the effect remains a local, medium-like screening.
-
-This is also visible directly in the simulation: `KleinGordonCKernel` computes the current as the convection terms minus a term proportional to $|\chi|^2$ times $A$, exactly as in [[#eq_kgc_split]], and you can watch the EM field slow down inside the charge lump as a result.
-
-
 
 ### The weak force bosons W are very hard to activate
 
@@ -329,7 +264,7 @@ This is also visible directly in the simulation: `KleinGordonCKernel` computes t
 ## Derivation of gauge coupling
 
 $$
-\Phi = \begin{pmatrix}\phi^+\\ \phi^0\end{pmatrix}
+\Phi = \begin{pmatrix}\chi^+\\ \chi^0\end{pmatrix}
 $$
 
 $$
