@@ -16,7 +16,7 @@ Thus, if we can find wave equations that differ in their tendency to spread out,
 
 Before proceeding, it is particularly useful to first read the [[harmonic oscillator]] page, which provides a simple and direct comparison between a second-order kinetic version of an oscillator, and a first-order complex-number version of the same oscillator dynamics. This harmonic oscillator has a single spatial value (i.e., within a single isolated [[cellular automaton]] cell), so its spatial dimensionality is much simpler than the wave, especially when it spreads over 3D space. That makes it easier to see the fundamental difference in the way the time dimension works, which is the key difference between the first and second-order wave equations.
 
-The natural starting point with respect to dispersion is with a second-order wave equation configured instead to implement the **diffusion equation**. This is a very simple change in the equation, which also reveals the essential role of the second-order acceleration in driving the oscillatory behavior of the wave equation. You simply directly couple the spatial curvature (potential energy) directly to the _velocity_ (first order), without going through the acceleration (second order).
+The natural starting point with respect to dispersion is with a second-order wave equation configured instead to implement the **diffusion equation**. This is a very simple change in the equation, which also reveals the essential role of the second-order acceleration in driving the oscillatory behavior of the wave equation. The change is to couple the spatial curvature (potential energy) directly to the _velocity_ (first order), without going through the acceleration (second order).
 
 {id="eq_wave" title="wave equation"}
 $$
@@ -41,7 +41,7 @@ where $\chi = \phi_a + i \phi_b$ is a complex-valued wave state with the two und
 
 Is the velocity in a second-order equation "imaginary"? No. It is just another degree of freedom -- a different value that you can use to make things oscillate. The connection between rotation and oscillation is basic trigonometry: the sine and cosine are waves that arise in any orthogonal basis coordinates as you rotate around a circle, and the complex plane just provides a 2D space for this rotation to occur.
 
-To understand exactly what is happening in [[#eq_schrod], we can write it in terms of the two ordinary numbers. The key algebraic step is that you only keep the factors _without_ an $i$ for the $\phi_a$ factor, and those _with_ an $i$ for the $\phi_b$ factor. Furthermore, the convenient fact that $i^2 = -1$ makes the signs work out correctly for the rotation. The net result is that the $-i$ factor makes $\phi_a$ depend on $\phi_b$ and vice-versa -- it causes the two values to rotate into each other:
+To understand exactly what is happening in [[#eq_schrod]], we can write it in terms of the two ordinary numbers. The key algebraic step is that you only keep the factors _without_ an $i$ for the $\phi_a$ factor, and those _with_ an $i$ for the $\phi_b$ factor. Furthermore, the convenient fact that $i^2 = -1$ makes the signs work out correctly for the rotation. The net result is that the $-i$ factor makes $\phi_a$ depend on $\phi_b$ and vice-versa -- it causes the two values to rotate into each other:
 
 $$
 \frac{\partial \phi_a}{\partial t} = - \frac{\partial^2 \phi_b}{\partial x^2}

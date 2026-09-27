@@ -89,3 +89,14 @@ $$
 
 This should be recognizable as simply the pythagorean theorem for the squared length of the hypotenuse of a right triangle ($a^2 + b^2 = c^2$). Again, complex numbers have no mystery: they just represent a two-valued vector.
 
+## Rotation by the exponential (Euler's formula)
+
+One of the most useful tricks with complex numbers is that you can rotate them around the unit circle by multiplying by $e^{i\theta}$, where $\theta$ is the angle that it is rotated by (in radians). This is a result of Euler's formula:
+
+$$
+e^{i\theta} = \cos \theta + i \sin \theta
+$$
+
+Which is directly a rotation around the the complex plane: the real component is multiplied by the x-axis-like rotational factor, while the imaginary component gets the y-axis-like rotational factor. If $\theta$ is small, then cosine is close to 1 and sine is close to 0, and there isn't much rotation, etc.
+
+

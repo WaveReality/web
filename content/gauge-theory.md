@@ -61,7 +61,7 @@ $$
 
 ### Global gauge invariance
 
-Notice that $\chi$ only ever enters this Lagrangian paired with its own complex conjugate. Therefore, multiplying the whole field by a constant _phase_ $G$ --- a complex number of magnitude 1, the same everywhere --- changes nothing at all, because the phase in $\chi$ is exactly undone by the opposite phase in $\chi^*$.
+Notice that $\chi$ only ever enters this Lagrangian paired with its own complex conjugate (i.e., as the magnitude). Therefore, multiplying the whole field by a constant _phase_ $G$ --- a complex number of magnitude 1, the same everywhere --- changes nothing at all, because the phase in $\chi$ is exactly undone by the opposite phase in $\chi^*$. If unfamiliar, see [[complex number]] for a review of how multiplication by $e^{i\theta}$ can accomplish rotation in the complex plane, and rotation changes the phase of the field, which is the relative magnitudes of the two complex values.
 
 {id="eq_const" title="global (constant) gauge transformation"}
 $$
