@@ -52,7 +52,7 @@ func main() {
 			ct.MakeToolbar(p)
 			ct.MakeToolbarPDF(p)
 			tree.Add(p, func(w *core.Button) {
-				ctx.LinkButton(w, "https://github.com/WaveReality/web")
+				ctx.LinkButton(w, "https://github.com/WaveReality")
 				w.SetText("GitHub").SetIcon(icons.GitHub)
 			})
 		})

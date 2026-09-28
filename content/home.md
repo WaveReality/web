@@ -5,11 +5,8 @@ bibfile = "mechphys.json"
 +++
 
 <!--- TODO: -->
-<!--- * mechanism: particle generates its field, also update Spinfield plan -->
 <!--- * complex-waves: finish -->
-<!--- better picture of what's missing from standard field theory vs. lattice approach -->
-<!--- aside from the stats etc. -->
-
+<!--- quantum optics details for bell's tests on photons -- all the things you need to do to massage the thing into an actual superposition -->
 
 <img src="media/icon.png" style="width:128px;height:128px;align-self:center">
 
@@ -21,7 +18,15 @@ However, this idea doesn't take into account the way that [[Feynman diagram]]s i
 
 Thus, even though the raw ingredients of quantum theory are wave equations, they are actually _used_ in a way that ultimately describes the behavior of particles. The opposite view, that there are only particles, is even less tenable: as argued above, there are many strong indications that wave phenomena are required (see also [[@Hobson13]]).
 
-The [[pilot-wave]] framework of de Broglie and Bohm ([[@Bohm52]]; [[@Norsen22a]]) instead embraces the **wave-particle** [[duality]] fully, by positing physically real [[quantum wave]]s that influence the motion of discrete particles, which always have a well-defined location in 3D space. This framework naturally and intuitively explains many of the otherwise paradoxical phenomena in quantum physics, and it thus provides the foundation for the work here. See [[mechanisms]] for a more detailed overview of how waves and particles can work together to provide a mostly sensible quantum picture.
+The [[pilot-wave]] framework of de Broglie and Bohm ([[@Broglie26]]; [[@Broglie56]]; [[@Bohm52]]; [[@Holland95]]; [[@Norsen22a]]) instead embraces the **wave-particle** [[duality]] fully, by positing physically real [[quantum wave]]s that influence the motion of discrete particles, which always have a well-defined location in 3D space. This framework naturally and intuitively explains many of the otherwise paradoxical phenomena in quantum physics, and it thus provides the foundation for the work here. See [[mechanisms]] for a more detailed overview of how waves and particles can work together to provide a _mostly_ sensible quantum picture.
+
+The overall conclusion from everything that has been learned in generating the content here on this website, is that, contrary to the admonitions of many prominent figures in quantum physics over the years, a truly surprising amount of quantum physics actually does make sense. This motivates the attempt to keep going, and see how far we can get! See [[challenges]] for a summary of what remains.
+
+The primary motivation in writing all of this is for the [[author]] to learn by teaching: if I can explain everything clearly to a notional, naive reader, then I feel like I truly understand it myself. You as the reader can thus benefit from all my hard work trying to understand all the complexities of this domain. Furthermore, there are nice graphical [[Simulations]] of many fundamental quantum phenomena, which are also an essential part of my learning process: if I can simulate and see what is going on, then I can better understand it. I don't know how everyone else gets by without this kind of aid! You can get by here by just running these simulations and seeing the phenomenology, but of course, to fully understand it, you will need to engage with all the math, which is fully presented and explained in a way that at least helped me to understand it.
+
+Finally, the last part of this effort represents my attempt to come up with a new framework that might make even more sense, based directly on the summary analysis in [[mechanisms]], which provides a high-level integration of the core insights that are explained in detail across the content here. This is very much a work-in-progress, and is continuously updated (you have been warned).
+
+See the [github](https://github.com/WaveReality) repositories for the revision history and released versions of these documents and the associated wave simulation software. This is also the best place to contribute, by filing issues or starting discussions (all such input is welcome!).
 
 ## Organization
 
@@ -63,7 +68,7 @@ Have these levers, within the broader context of the pilot-wave framework where 
 
 ### Spinfield Model
 
-The [[Spinfield Model]] is the work-in-progress attempt to develop a fully explicit functional computational-level model of the phenomenology of the Standard Model, within the CA and pilot-wave framework, and motivated by an attempt to understand the qualitative nature of the wave and particle [[mechanisms]] in the quantum world. This model captures particle-like properties using a field of complex-valued [[harmonic oscillator]]s (CVHOs) that [[spin]], which interact bidirectionally with [[quantum wave]]s, such as the [[Dirac]] wave equations for an [[electron]], and via the electromagnetic field as described by the [[Maxwell]] wave functions. The particles move via [[stochastic motion]] driven by velocity values encoded in the phase relationships among the CVHOs.
+The [[Spinfield Model]] is the work-in-progress attempt to develop a fully explicit functional computational-level model of the phenomenology of the Standard Model, within the CA and pilot-wave framework, motivated by an attempt to understand the qualitative nature of the wave and particle [[mechanisms]] in the quantum world. This model captures particle-like properties using a field of complex-valued [[harmonic oscillator]]s (CVHOs) that [[spin]], which interact bidirectionally with [[quantum wave]]s, such as the [[Weyl]] wave equations for an [[electron]], and via the electromagnetic field as described by the [[Maxwell]] wave functions. The particles move via [[stochastic motion]] driven by velocity values encoded in the phase relationships among the CVHOs.
 
 Beyond all the basic quantum phenomena, the nature of [[neutrino]]s and the [[weak]] interactions provide strong constraints and inspiration for the Spinfield Model. For example, the _muon_ is a heavy [[generation]] of an electron, which decays into an electron and two neutrinos, via the weak force. This suggests that the extra mass / energy of the muon is some kind of excited state relative to an electron, and that it can be released in the form of these neutrinos.
 

@@ -4,7 +4,7 @@ bibfile = "mechphys.json"
 +++
 
 {id="figure_complex" style="height:30em"}
-![Complex numbers are just a way of representing two real values with one number, where these two values are aligned along two separate orthogonal dimensions. The imaginary number $i$, where $i^2 = -1$, is what keeps these two values orthogonal --- the first value $a$ is along the real axis, and the second value $b$ is along the imaginary axis. The complex conjugate, $c^*$, is simply subtracting the imaginary part instead of adding it (i.e., it represents a reflection along the imaginary dimension). Multiplying $c c^*$ gives the squared magnitude of the vector, which is a single real-valued scalar number. It is the (squared) length of the hypotenuse of the vector. In the typical oscillatory use of complex numbers, they represent rotation around the complex plane, constrained to the (unit) circle as shown.](media/fig_complex_numbers.png)
+![Complex numbers are just a way of representing two real values with one expression, which is essentially a vector of two numbers. These two values are aligned along two separate orthogonal dimensions. The imaginary number $i$, where $i^2 = -1$, is what keeps these two values orthogonal --- the first value $a$ is along the real axis, and the second value $b$ is along the imaginary axis. The complex conjugate, $c^*$, is simply subtracting the imaginary part instead of adding it (i.e., it represents a reflection along the imaginary dimension). Multiplying $c c^*$ gives the squared magnitude of the vector, which is a single real-valued scalar number. It is the (squared) length of the hypotenuse of the vector. In the typical oscillatory use of complex numbers, they represent rotation around the complex plane, constrained to the (unit) circle as shown.](media/fig_complex_numbers.png)
 
 The symbol $\chi$ is used to represent a complex-valued state variable:
 
@@ -16,7 +16,7 @@ $$
 \def \phi_a + i \phi_b
 $$
 
-So, $\chi$ is composed of two separate real-valued numbers, designated $a$ and $b$ (or $\phi_a$ and $\phi_b$, to indicate that they are scalar state variables). A complex number is really just a way of representing two separate real valued numbers, aligned along orthogonal dimensions, in an efficient and compact manner ([[#figure_complex]]). It is essential to appreciate that, despite the presence of the imaginary number $i$ (where $i^2 = -1$ or $i = \sqrt{-1}$), _all you ever really have is two real-valued numbers._ There is nothing "imaginary" or mysterious or spooky about the second number in a complex number: all the $i$ does is keep these two values separate from each other.
+So, $\chi$ is composed of two separate real-valued numbers, designated $a$ and $b$ (or $\phi_a$ and $\phi_b$, to indicate that they are scalar state variables). A complex number is really just a way of representing a _vector_ of two separate real valued numbers, aligned along orthogonal dimensions, in an efficient and compact manner ([[#figure_complex]]). It is essential to appreciate that, despite the presence of the imaginary number $i$ (where $i^2 = -1$ or $i = \sqrt{-1}$), _all you ever really have is two real-valued numbers._ There is nothing "imaginary" or mysterious or spooky about the second number in a complex number: all the $i$ does is keep these two values separate from each other.
 
 In the end, we will deconstruct all of our complex numbers into their real-valued components, and write purely real-valued expressions that determine their update rules. These expressions will be more complicated than the ones using complex numbers, but they are required for actually implementing the equations on the computer, and they also provide a more explicit and obvious indication of exactly what drives each value.
 
@@ -99,4 +99,25 @@ $$
 
 Which is directly a rotation around the the complex plane: the real component is multiplied by the x-axis-like rotational factor, while the imaginary component gets the y-axis-like rotational factor. If $\theta$ is small, then cosine is close to 1 and sine is close to 0, and there isn't much rotation, etc.
 
+The essential insight for _why_ Euler's formula is true, is that the derivative of the sine function is cosine, and vice-versa:
+
+$$
+\frac{d}{dx} \sin x = \cos x; \qquad \frac{d}{dx} \cos x = -\sin x
+$$
+
+and the natural exponential function $e^x$ is defined as the function whose derivative is itself!
+
+$$
+\frac{d}{dx} e^{x} = e^{x}
+$$
+
+So by putting the $i$ into this expression, Euler's formula emerges because the $i$ switches the real component into the imaginary one, and vice-versa:
+
+$$
+\frac{d}{dx} e^{i\theta} = \cos \theta + i \sin \theta = e^{i\theta}
+$$
+
+low and behold, the derivative is the same as the function itself!
+
+Fundamentally, this deep connection between trigonometry and the natural exponential arises because the circle has this property, captured in the derivatives, that as you move along it, the _x_ and _y_ components are constantly accelerating and decelerating in just such a way as to keep the total radius constant. Thus, the slope (derivative) of one is equal to the value of the other, and vice-versa.
 

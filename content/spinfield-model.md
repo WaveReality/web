@@ -3,6 +3,8 @@ Name = "Spinfield Model"
 bibfile = "mechphys.json"
 +++
 
+**NOTE: this is an early-stage work-in-progress, and assertions are made here that are about plans and speculations, without being properly contextualized as such (otherwise it would all be impossible to read).**
+
 The **Spinfield Model** represents an attempt to understand the same phenomenology as the [[Standard Model]] from a mechanistic perspective, in terms of the [[cellular automaton]] (CA) and [[pilot-wave]] frameworks (specifically the de Broglie _double solution_ models; [[@DarrowBush24]]; [[@Darrow25]]). As in many other cases, this alternative model could provide a more satisfying physical model of the same phenomena described by the [[calculational tool]] of the Standard Model. The CA framework introduces a natural ultraviolet cutoff scale, which can potentially explain the success of the [[renormalization]] procedure, and the mass hierarchy issues with the [[Higgs]] mechanism.
 
 Based on the considerations discussed in [[mechanisms]], the Spinfield Model has discrete massive particles that interact dynamically with distributed [[quantum wave]] fields, which in turn interact with distributed force fields like the electromagnetic force. Given that these mechanisms obey all the same [[conservation]] laws as the Standard Model, there is some basis for optimism.
