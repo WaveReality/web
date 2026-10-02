@@ -156,8 +156,8 @@ Expanding the covariant derivative splits the current into two pieces:
 
 {id="eq_kgc_split" title="the two halves of the current"}
 $$
-* Proca is the 4-vector (vector boson) version of KG: it is what you get when you write a mass in by hand, a
-\;-\; \underbrace{2 g^2 |\chi|^2 A_\mu}_{\text{proportional to } A}
+j_\mu = \underbrace{-i\tfrac{e}{\hbar}\left[\chi^*\partial_\mu\chi - (\partial_\mu\chi^*)\chi\right]}_{\text{convection}}
+\;-\; \underbrace{\tfrac{2e^2}{\hbar^2 c}\,|\chi|^2 A_\mu}_{\text{proportional to } A}
 $$
 
 The first term is conventionally described as a _convection_ factor (or the _paramagnetic_ current), and it corresponds to the original charge density that we started out with before introducing the covariant derivative. It depends on how $\chi$'s phase varies.
