@@ -3,12 +3,12 @@ module github.com/WaveReality/web
 go 1.25.6
 
 require (
-	cogentcore.org/core v0.3.41
-	github.com/WaveReality/waves v0.0.6
+	cogentcore.org/core v0.3.43
+	github.com/WaveReality/waves v0.0.7
 )
 
 require (
-	cogentcore.org/lab v0.1.18 // indirect
+	cogentcore.org/lab v0.1.19 // indirect
 	github.com/Bios-Marcel/wastebasket/v2 v2.0.3 // indirect
 	github.com/Masterminds/vcs v1.13.3 // indirect
 	github.com/adrg/strutil v0.3.1 // indirect
