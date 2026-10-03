@@ -28,7 +28,7 @@ $$
 \frac{\partial \phi}{\partial t} = c^2 \frac{\partial^2 \phi}{\partial x^2}
 $$
 
-When you run this equation (you can do it in the [[waves simulation]]) you see any disturbance melt away over time -- any "concentration" of wave "stuff" simply diffuses down into a uniform splat.
+When you run this equation (you can do it in the [[wave simulation]]) you see any disturbance melt away over time -- any "concentration" of wave "stuff" simply diffuses down into a uniform splat.
 
 This is an interesting starting point, because the first-order Schrödinger equation is effectively the same as the diffusion equation, except it operates on complex state variables, and it sticks an $i$ in there to drive the rotation.
 

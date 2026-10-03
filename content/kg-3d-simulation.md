@@ -23,4 +23,6 @@ wavesim.Embed(b,
 
 This simulation runs the [[Klein-Gordon]] equation in 3D. See also [[KG 1D Simulation]] for the 1D version.
 
+As with the 1D version, the goal here is to explore the effects of the `Mass` parameter on wave propagation, this time in 3D. The `Oscillator` configuration is interesting to watch in this case.
+
 </div>

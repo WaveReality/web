@@ -103,7 +103,7 @@ The fact that this critical inverse-square behavior emerges naturally from the w
 
 ### Exploration of the electrical potential
 
-You can now explore how charge drives the electrical potential, the 1/r falloff of the scalar potential, and how the electrical force field is computed from the gradient of the scalar potential field. Run the [[Maxwell simulation]] and follow the directions under the scalar electrical field section.
+You can now explore how charge drives the electrical potential, the $1/r$ falloff of the scalar potential, and how the electrical force field is computed from the gradient of the scalar potential field. Run the [[Maxwell simulation]] and follow the directions under the electrical potential section.
 
 ## The magnetic vector potential
 
@@ -495,7 +495,6 @@ $$
 
 Again, somewhat miraculously, a wave equation emerges, again with a driving term.
 
-## TODO
-
-* [[@Franklin07]] shows that energy is all in the charge, and none in the field.
+<!--- ## TODO -->
+<!--- * [[@Franklin07]] shows that energy is all in the charge, and none in the field. -->
 
