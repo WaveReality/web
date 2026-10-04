@@ -9,11 +9,11 @@ bibfile = "mechphys.json"
 The symbol $\chi$ is used to represent a complex-valued state variable:
 
 $$
-\chi \def a + i b
+\chi \equiv a + i b
 $$
 
 $$
-\def \phi_a + i \phi_b
+\equiv \phi_a + i \phi_b
 $$
 
 So, $\chi$ is composed of two separate real-valued numbers, designated $a$ and $b$ (or $\phi_a$ and $\phi_b$, to indicate that they are scalar state variables). A complex number is really just a way of representing a _vector_ of two separate real valued numbers, aligned along orthogonal dimensions, in an efficient and compact manner ([[#figure_complex]]). It is essential to appreciate that, despite the presence of the imaginary number $i$ (where $i^2 = -1$ or $i = \sqrt{-1}$), _all you ever really have is two real-valued numbers._ There is nothing "imaginary" or mysterious or spooky about the second number in a complex number: all the $i$ does is keep these two values separate from each other.
@@ -89,10 +89,11 @@ $$
 
 This should be recognizable as simply the pythagorean theorem for the squared length of the hypotenuse of a right triangle ($a^2 + b^2 = c^2$). Again, complex numbers have no mystery: they just represent a two-valued vector.
 
-## Rotation by the exponential (Euler's formula)
+## Rotation by the exponential
 
-One of the most useful tricks with complex numbers is that you can rotate them around the unit circle by multiplying by $e^{i\theta}$, where $\theta$ is the angle that it is rotated by (in radians). This is a result of Euler's formula:
+One of the most useful tricks with complex numbers is that you can rotate them around the unit circle by multiplying by $e^{i\theta}$, where $\theta$ is the angle that it is rotated by (in radians). This is a result of **Euler's formula**:
 
+{id="eq_eulers" title="Euler's formula"}
 $$
 e^{i\theta} = \cos \theta + i \sin \theta
 $$

@@ -128,5 +128,25 @@ The critical point here is that _the density matrix $\rho$ contains all the rele
 
 ## Time evolution
 
-TODO:
+The time evolution of a Hilbert space is typically computed using a _unitary operator_ $U(t)$, which means that it automatically conserves the total vector length of the complex state variables when it is applied. This means that it is effectively a rotation matrix, which in turn means that it can be defined using the natural exponent operator as discussed in [[complex number#rotation by the exponential]]. Conveniently, the time-independent [[Schrodinger]] equation takes the form of this exponential function:
+
+{id="eq_time-indep" title="time independent Schrödinger unitary operator"}
+$$
+U(t) = e^{-iHt/\hbar}
+$$
+
+where $H$ is the [[Hamiltonian]] or _total energy_ of the system, which determines the rate of rotation per unit time in the above equation.
+
+As noted above, this is typically used in the following kind of expression:
+
+{id="eq_time-ev" title="time evolution of the state"}
+$$ 
+U(t) | \psi \rangle
+$$
+
+$$ 
+e^{-iHt/\hbar} | \psi \rangle
+$$
+
+Thus, the effect of time on the quantum state is to rotate it through the complex plane. This is much simpler than the dynamics of the time-dependent, spatial wave equation version of Schrödinger's equation.
 

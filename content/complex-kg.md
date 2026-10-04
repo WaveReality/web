@@ -24,7 +24,7 @@ However, to model the behavior of [[fermion]] particles, the wave function needs
 
 ## Complex state and conserved charge
 
-The first step is to introduce a wave state with [[complex number]]s ($\chi$) instead of scalars ($\phi$), which then supports the computation of a conserved quantity across the two complex state values. When we translate this complex wave function into two separate second-order wave equations without an $i$ imaginary number factor, the KG equation is identical to computing two separate KG equations on each of the two scalar values represented by the complex state variable (i.e., $\phi_a$ and $\phi_b$). This is different from Schrödinger's wave equation, which is first order and has an $i$ term that causes the $a$ and $b$ terms to intermix as the wave unfolds.
+The first step is to introduce a wave state with [[complex number]]s ($\chi$) instead of scalars ($\phi$), which then supports the computation of a conserved quantity across the two complex state values. When we translate this complex wave function into two separate second-order wave equations without an $i$ imaginary number factor, the KG equation is identical to computing two separate KG equations on each of the two scalar values represented by the complex state variable (i.e., $\phi_a$ and $\phi_b$). This is different from Schrödinger's wave equation, which is first order and has an $i$ term that causes the $a$ and $b$ terms to intermix as the wave unfolds. See [[complex waves]] for more discussion of these differences.
 
 {id="eq_kg-complex" title="Klein-Gordon on complex state"}
 $$
@@ -96,6 +96,7 @@ func valUpdate() {
     bi := ai * float64(math32.Cos(math32.DegToRad(float32(-bphase))))
     bvi := c * math.Sqrt(mcOverHSq) * ai * float64(math32.Sin(math32.DegToRad(float32(-bphase))))
     ##
+    cs := array(csq)
     mf := array(mcOverHSq)
     cf := array(heOverMCSq)
     ap := array(ai)
@@ -111,10 +112,10 @@ func valUpdate() {
         db[t] = bv
         chg[t] = cf * (bp * av - ap * bv)
         
-        av -= csq * mf * ap
+        av -= cs * mf * ap
         ap += av
         
-        bv -= csq * mf * bp
+        bv -= cs * mf * bp
         bp += bv
         ##
     }
@@ -183,7 +184,7 @@ addSlider(&massStr, &mass, 0.1, 1.0)
 addSlider(&hbarStr, &hbar, 0.1, 1.0)
 ```
 
-[[#sim_cc]] demonstrates how this works, in terms of two simple [[harmonic oscillator]] variables _a_ and _b_, which are set to be a specific phase apart from each other (+90 degrees shifts _b_ to the _left_ (earlier) relative to _a_, while -90 shifts to the right, due to the trigonometric convention of 0 degrees being at 1,0 and proceeding counter-clockwise from there). Regardless of the phase relationship, the computed charge value remains constant across the cycles of oscillation. However, critically, the value of the charge is directly a function of this phase relationship, with a maximum of 1 (in units of _e_, for a unit amplitude wave) when the _b_ value is +90 degrees in relation to the _a_ value, and a minimum of -1 for -90 degrees, and zero for 0 or 180 degrees. That maximum is not a coincidence: a wave at rest has $\rho = -e |\chi|^2$ exactly, which is what makes the charge of a lump of this stuff just its squared magnitude. These relationships are fairly obvious once you appreciate the relationship between velocity and position for each of the variables (which are 90 degrees out of phase with each other, always), and how they enter into the charge equation.
+[[#sim_cc]] demonstrates how this works, in terms of two simple [[harmonic oscillator]] variables _a_ and _b_, which are set to be a specific phase apart from each other (+90 degrees shifts _b_ to the _left_ (earlier) relative to _a_, while -90 shifts to the right, due to the trigonometric convention of 0 degrees being at 1,0 and proceeding counter-clockwise from there). Regardless of the phase relationship, the computed charge value remains constant across the cycles of oscillation. However, critically, the value of the charge is directly a function of this phase relationship, with a maximum of 1 (in units of _e_, for a unit amplitude wave) when the _b_ value is +90 degrees in relation to the _a_ value, and a minimum of -1 for -90 degrees, and zero for 0 or 180 degrees. These relationships are fairly obvious once you appreciate the relationship between velocity and position for each of the variables (which are 90 degrees out of phase with each other, always), and how they enter into the charge equation.
 
 Critically, complex numbers are _always_ 90 degrees out of phase with each other by the very nature of the complex plane. Thus, even though the separate real-valued wave functions are independently updated, it is critical that these two wave states are _initialized_ with the 90 degree phase relationship appropriate for complex numbers, which will then determine the sign of the charge value represented.
 
@@ -237,13 +238,13 @@ Again, it does not look as simple as before, but nevertheless it is necessary to
 
 At this point, we have a charged wave that can generate an electromagnetic field according to the charge density $\rho$ and current density $\vec{J}$, and we know how this electromagnetic field propagates according to the Maxwell wave equations. Now, we need to have that electromagnetic field interact with the charge wave to produce actual forces on a charged particle. This occurs by introducing new terms into the complex KG wave equation, which, intuitively speaking, act as external driving forces on this charge wave, in much the same way that the charge and current act as driving forces on the electromagnetic wave equations.
 
-In the electromagnetic field equations, the driving force from charge $\rho$ adds into the second-order temporal derivative $\frac{\partial^2 {}}{\partial t^2}$ ([[maxwell#eq_scalar-pot-chg]] in [[Maxwell]]):
+In the electromagnetic field equations, the driving force from charge $\rho$ adds into the second-order temporal derivative $\frac{\partial^2}{\partial t^2}$ ([[maxwell#eq_scalar-pot-chg]] in [[Maxwell]]):
 
 $$
 \frac{\partial^2 {A_0}}{\partial t^2} = \nabla^2 A_0 + \frac{1}{\epsilon_0} \rho
 $$
 
-However, in Schrödinger's equation, external forces enter as a potential ($V$), in the first-order derivative  $\frac{\partial {}}{\partial t}$:
+However, in Schrödinger's equation, external forces enter as a potential ($V$), in the first-order derivative  $\frac{\partial}{\partial t}$:
 
 $$
 i \hbar \frac{\partial {\chi}}{\partial t} = -\frac{\hbar^2}{2m} \nabla^2 \chi + V \chi
@@ -251,10 +252,10 @@ $$
 
 This makes sense, because force is the derivative of a potential, so potential is a first-order factor, and force is a second-order factor.
 
-Our KG (Klein-Gordon) charge wave equation is a second-order equation, expressed in terms of $\frac{\partial^2 {}}{\partial t^2}$, and therefore we need to include external driving forces, not potentials. However, for various reasons, it is necessary to derive such an equation starting from the potential. To do this, we can re-derive a second-order wave equation by replacing the first-order derivative with the following first-order _covariant_ derivative operator $D$, that subtracts the external driving potential:
+Our KG (Klein-Gordon) charge wave equation is a second-order equation, expressed in terms of $\frac{\partial^2}{\partial t^2}$, and therefore we need to include external driving forces, not potentials. However, for various reasons, it is necessary to derive such an equation starting from the potential. To do this, we can re-derive a second-order wave equation by replacing the first-order derivative with the following first-order _covariant_ derivative operator $D$, that subtracts the external driving potential:
 
 $$
-D_\mu \def \partial_\mu - i \frac{e}{\hbar c} A_\mu
+D_\mu \equiv \partial_\mu - i \frac{e}{\hbar c} A_\mu
 $$
 
 This derivative can be derived from the principle of _local gauge invariance_, in [[gauge theory]], as a way to compensate for the introduction of a local phase factor, which is parameterized by the $A^\mu$ potential field. In other words, local gauge invariance means that the EM field potential might be different at every different point in space, and gauge theory shows you how to have the EM field and charge field interact in a way that makes this situation mutually compatible, so that charge and energy end up being conserved over time.
@@ -268,7 +269,7 @@ $$
 because, as we've noted before:
 
 $$
-\partial_\mu \partial^\mu = \frac{\partial^2 {}}{\partial t^2} - \nabla^2
+\partial_\mu \partial^\mu = \frac{\partial^2}{\partial t^2} - \nabla^2
 $$
 
 So the compact form of the KG wave equation with minimal coupling (local gauge invariance) is therefore:
@@ -388,4 +389,8 @@ Perhaps the most surprising development here is that we had to break the symmetr
 Our overall model at this point consists of a small handful of locally computable equations, which can be readily simulated on a computer. As these equations play out, they deterministically, locally, and automatically generate physics that should be largely consistent with what we know about the world. However, as we noted before, our equations are missing one critical piece, which is _spin_.
 
 Interestingly, the introduction of spin in the [[Dirac]] function creates a parity in the number of variables participating in the electromagnetic field equations (four) with those in the particle charge wave, which is currently two, but will now double to four. Overall, the elegance of having four variables each in two systems of interacting wave equations, which unfold in a four-dimensional space-time, seems suspiciously neat.
+
+## Exploration
+
+See the [[complex KG simulation]] for an interactive exploration of the complex KG waves interacting with EM waves.
 

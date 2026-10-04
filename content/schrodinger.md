@@ -4,17 +4,20 @@ Categories = ["Standard Model"]
 ibfile = "mechphys.json"
 +++
 
-Compared to the [[Hilbert space]] approach, the explicit use of the **Schrödinger wave equation** represents an increased level of commitment to the details involved in the dynamics of the wave updating, its frequency and phase characteristics, and how it spreads out over time. Schrödinger's wave equation captures basic non-relativistic Newtonian physics in a simple linear, first-order framework, and can be derived from a [[Hamiltonian]] representing the total energy of the system, which is strictly conserved over time. It captures the fundamental relationships between momentum and wave frequency at the heart of quantum physics, as discussed in [[Klein-Gordon]].
+The **Schrödinger wave equation** captures non-relativistic Newtonian physics in a simple linear, first-order framework, and can be derived from a [[Hamiltonian]] representing the total energy of the system, which is strictly conserved over time. It captures the fundamental relationships between momentum and wave frequency at the heart of quantum physics, as discussed in [[Klein-Gordon]].
 
-However, it has a rather simplistic treatment for how forces affect charged particles in terms of overall scalar potentials, and says nothing in detail about how electric charge generates the EM wave field (or photons for that matter), or the detailed way in which different particles might interact with each other. Indeed, because the Schrödinger wave equation is linear, it is incapable of capturing particle interactions, because the waves simply superpose (additively combine) past each other, without impacting each other at all.
+As shown in [[complex waves]] (which is recommended to be read prior to continuing), the Schrödinger equation is the simplest omnidirectional first-order complex wave equation, and at its core, it is essentially just a rotation in the [[complex number]] plane. Indeed, the use of this equation in the [[Hilbert space]] framework is typically as a simple complex-plane rotation through the [[configuration space]] variables, using a more abstract, non-spatial definition of the time-invariant Hamiltonian, which reduces to specifying the energy that determines the rate of rotation:
 
-Thus, in order to capture relevant interactions, the Schrödinger wave equation is applied to a multi-dimensional  [[configuration space]] representation that is essentially equivalent to the state space representation in matrix mechanics. For example, if there are two interacting particles, then they each get their own set of 3D dimensional coordinates within this configuration space, and the entire wave function evolves over time so as to conserve the overall energy / probability represented in the configuration space.
+{id="eq_time-indep" title="time independent Schrödinger unitary operator"}
+$$
+U(t) = e^{-iHt/\hbar}
+$$
 
-The configuration space is entirely [[non-locality|non-local]] by its very construction, representing at each instant of time the entire configuration of the system, regardless of how far apart any of the particles might be. Interestingly, exactly such a configuration space model is used in _classical_ applications of the Hamiltonian framework, and yet somehow its use there is widely recognized as just being a calculational tool.
+(see [[complex number#rotation by the exponential]] for why this is a unitary rotation operator).
 
-In summary, the high-dimensional non-local configuration space is very different from anything anyone would recognize as actual 3D physical space. Nevertheless, one of the most striking and challenging results from these standard QM models is that the non-local effects that they predict actually do appear to be empirically validated. Thus, a significant challenge remains to understand the underlying physical nature of these effects, and how they can occur without violating everything else we have come to regard as strict physical laws, specifically the speed-of-light constraints of special relativity ([[@DurrGoldsteinNorsenEtAl14]]).
+Compared to the full complexity of the [[gauge theory]] framework used in coupling the EM ([[Maxwell]]) field with a charged particle field like the [[Dirac]] equation, which is the basis for the [[Standard Model]], this Schrödinger framework represents a significant simplification. Indeed, because the Schrödinger wave equation is linear, it is incapable of capturing particle interactions, because the waves simply superpose (additively combine) past each other, without impacting each other at all.
 
-Also, while the dimensionality of configuration space increases linearly in the number of particles involved, this implies exponential growth because the dimensionality shows up in the exponent of the number of discrete values used for each dimension of the space. This quickly becomes computationally intractable for even relatively moderately-sized such spaces. This is precisely what makes quantum computers so attractive. Nevertheless, it remains unclear how Nature might get around such prohibitive exponential scaling problems, in whatever computation it is performing.
+Thus, in order to capture relevant interactions, the Schrödinger wave equation requires the tensor-product, exponentially-large configuration space representation. For example, if there are two interacting particles in position space, then they each get their own set of 3D dimensional coordinates within this configuration space, and the entire wave function evolves over time so as to conserve the overall energy / probability represented in the configuration space. As such, configuration space is entirely [[non-locality|non-local]] by construction, representing at each instant of time the entire configuration of the system, regardless of how far apart any of the particles might be.
 
 ## Schrodinger's equation
 
@@ -59,7 +62,7 @@ We can now just apply our momentum and energy operators to these expressions, an
 
 {id="eq_schrodinger" title="Schrödinger's equation"}
 $$
-i \hbar \frac{\partial {\chi}}{\partial t} = -\frac{\hbar^2}{2 m_0} \nabla^2 \chi + V \chi
+i \hbar \frac{\partial \chi}{\partial t} = -\frac{\hbar^2}{2 m_0} \nabla^2 \chi + V \chi
 $$
 
 The net result is that we can conclude that Schrödinger's equation provides an accurate description of the flow of energy and momentum over time of a "particle" described by a wave, such that it obeys classical Newtonian physical laws. Note that in comparison with the KG equation, there is no speed-of-light factor $c$ in this equation, consistent with its non-relativistic nature.
@@ -68,14 +71,14 @@ Omitting various constants (factors of $h$) and any external force potential, Sc
 
 {id="eq_schrodinger" title="Schrödinger's equation, essence"}
 $$
-i \frac{\partial {\chi}}{\partial t} = - \frac{1}{2m_0} \nabla^2 \chi
+i \frac{\partial \chi}{\partial t} = - \frac{1}{2m_0} \nabla^2 \chi
 $$
 
 where $m_0$ is again the rest mass of the particle in question. This is clearly very similar to the basic second-order KG wave equation:
 
 {id="eq_KG" title="Klein-Gordon equation"}
 $$
-\frac{\partial^2 {\phi}}{\partial t^2} = c^2 \nabla^2 \phi - \frac{m_0^2}{\hbar^2} \phi
+\frac{\partial^2 \phi}{\partial t^2} = c^2 \nabla^2 \phi - \frac{m_0^2}{\hbar^2} \phi
 $$
 
 except that the temporal derivative is first-order, and mass enters in a different way. Nevertheless, the driving force is still the overall curvature of the wave, computed by $\nabla^2 \phi$. As we noted above, the multiplication by the $i$ term causes things to rotate --- this rotation is key for making the first-order equation behave like a wave.
@@ -126,7 +129,7 @@ $$
 {\phi_b}_i^{t+1} = {\phi_b}_i^t + \dot {\phi_b}_i^{t+1}
 $$
 
-So, in the end, Schrödinger's equation really just boils down to two very simple differential equations. Interestingly, these equations are *coupled*, in the sense that it is the curvature of $\phi_a$ that drives the change in $\phi_b$, and vice-versa. This is the rotational aspect of the equation mentioned earlier, which is caused by the presence of the $i$ in the equation.
+So, in the end, Schrödinger's equation really just boils down to two very simple differential equations. Interestingly, these equations are _coupled,_ in the sense that it is the curvature of $\phi_a$ that drives the change in $\phi_b$, and vice-versa. This is the rotational aspect of the equation mentioned earlier, which is caused by the presence of the $i$ in the equation.
 
 When you actually implement Schrödinger's equation on a computer using the update rules given above, the resulting system is numerically unstable. In other words, the resulting numbers quickly blow up to infinity. This is not due to any kind of numerical roundoff error from limited precision floating point numbers on the computer, but rather due to the way that changes in state values reverberate back and forth across the two scalar values: it is a rotation being integrated by a method that does not rotate. The fix is to alternate the update: advance $\phi_a$ using the old $\phi_b$, then advance $\phi_b$ using the _new_ $\phi_a$ ([[@Visscher91]]; [[@AskarCakmak78]]). This method is explicitly stable and second-order accurate, and is the only viable solution for a [[cellular automaton]], because $\phi_b$ depends on the _neighboring_ cells'  $\phi_a$.
 
@@ -140,5 +143,5 @@ In other words, the wave packet defines a kind of "cloud of probability" for fin
 
 ## Explorations
 
-See [[Schrodinger 1D Simulation]] and [[Schrodinger 3D Simulation]].
+See [[Schrodinger 1D Simulation]] and [[Schrodinger 3D Simulation]] for hands-on simulations.
 
