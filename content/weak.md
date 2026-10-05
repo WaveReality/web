@@ -113,6 +113,8 @@ Thus, even though this seems like a very complicated way of going about everythi
 
 ## Phenomenology of the electroweak system
 
+Go to the [[electroweak simulation]] to explore the full electroweak system of coupled fields, with several important demonstrations of its phenomenology.
+
 ### The EM field is _defined_ by the ratio of local field strengths
 
 In the following analysis, we see precisely how the current density that is computed for the coupled electroweak system will turn out to be zero whenever the local field values for $B_\mu$ and $W^3$ are in a specific positive-valued ratio. The result is that any waves that have this particular configuration will propagate over a long range, because they are effectively massless, while all the massive configurations will end up decaying over a relatively short range. Thus, the Higgs field acts much like a filter: the only thing that gets through is light itself (EM radiation over the effectively massless field configuration), while everything else is effectively the massive weak bosonic fields $W^\pm$ and $Z^0$.

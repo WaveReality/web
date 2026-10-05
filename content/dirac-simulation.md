@@ -23,24 +23,24 @@ wavesim.Embed(b,
 
 This simulation runs the [[Dirac]] equation in 3D.
 
-This builds on the [[complex KG simulation]], with more complete spin-based coupling with the [[Maxwell]] EM field. Use the [[#sim_dirac:Root Stats Plot]] to view the `Charge` value.
+This builds on the [[complex KG simulation]], with more complete spin-based coupling with the [[Maxwell]] EM field. Use the [[#sim_dirac:Root Stats Plot]] to view the `Charge` value and other key stats.
+
+The single most important qualitative phenomenon to observe is how spin in this set of four second-order wave equations emerges only through the coupling with the EM field, and is otherwise not present in the free electron. You can observe this by comparing `Spin at Rest` with `Spin Precession` as described below: in the first case, there is no EM field, and the `A2s` wave remains inactive (it is initialized to 0). In the latter case, there is an EM field, and the `A2s` spins relative to the `A1s` etc.
 
 The [[#sim_dirac:Config]] initial configurations are as follows:
 
-TODO: set Mu0 lower! also in KGC
+* `Spin at Rest:` A lump of charge at rest with spin along Z; nothing happens to the spin, because a free particle has no effective spin, which only emerges through coupling with EM field.
 
-* `Spin at Rest:` shows the conservation of charge (view the plot), as Gaussian wave blob oscillates and disperses over time. 
+* `Spin Packet:` A travelling spin-1/2 packet along X (as in other wave packet cases), showing the effects of spin and mass relative to basic wave.
 
-* `Spin Packet:` shows charge generated from a moving wave packet. Run after Charge Self Field to get the self-field effects as well.
+* `Spin in Potential:` An electron lump offset from a fixed 1/r well, pulled in by it: the external-field case, with SelfField off so A0 stays as set.
 
-* `Charge at Rest Anti:` has the opposite charge value.
+* `Spin Precession:` Spin along X in a uniform B magnetic field along Z: it precesses at the Larmor rate with g = 2; look at the `SigX` and `SigY` values in the stats plot.
 
-* `Charge Uniform:` has a uniform charge distribution.
+* `Dirac Hydrogen...` simulates an electron in an `S` or `P` orbital configuration within the hydrogen atom, where the positive charge provides the attractive force.
 
-* `Charge Self Field:` turns on the `EM` and `SelfField` flags, and sets `Mu0` to a small value, so you can see the Charge value computed from the KG wave actually drive the EM `A` four-potential, which in turn then feeds back and couples with the KG field. You can select these variables to view (use the `Vectors` view for `AXs` for example, and use the [[#sim_dirac:Rescale]] button to auto-scale the range).
+* `Dirac Oscillator:` simulates the quantum harmonic oscillator using Dirac waves.
 
-* `Scalar Hydrogen...` simulates an electron in an `S` or `P` orbital configuration within the hydrogen atom.
-
-* `Scalar Oscillator:` simulates the quantum harmonic oscillator using KG complex waves.
+* `Chiral Oscillation:` A lump started purely right-chiral: the mass turns it into the left one and back at m c^2 / hbar, which relates to the Weyl version where mass mediates conversion back and forth.
 
 </div>

@@ -129,6 +129,10 @@ $$
 T_{\text{critical}} = \frac{\mu}{T_c}
 $$
 
+## Exploration
+
+See the [[electroweak simulation]] for a hands-on exploration of the Higgs potential, in the context of the full [[weak#electroweak]] system.
+
 ## Fine tuning / hierarchy problem
 
 Because the Higgs field couples with _all_ [[particle]]s according to the Standard Model, the strength of the Higgs field, i.e., the mass of the Higgs boson, should be a function of the masses of all of the different types of massive particles. Now that the mass of the Higgs boson has been measured, it can be used in reverse to compute the expected masses of all particles, _including any that have yet to be discovered!_ The contribution of any given particle to the Higgs mass is (see [Wikipedia](https://en.wikipedia.org/wiki/Hierarchy_problem)):

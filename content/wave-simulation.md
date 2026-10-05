@@ -58,4 +58,8 @@ The `Oscillator` configuration creates a potential "well" that traps the wave st
 
 Click on the `V` variable to see the resulting potential well: this is strongly negative in the surrounding region, and goes up to 0 in the middle. Go ahead and `Step` / `Run` the model and see that the wave is now trapped in this little well, and it just oscillates back and forth. This is the basis of the _quantum harmonic oscillator_ that we'll see in other configurations where it behaves a bit more cleanly.
 
+## Source code
+
+It can also be helpful to read the source code that runs these simulations, to see exactly what is happening under the hood. See the `WaveKernel` function in https://github.com/WaveReality/waves/blob/main/wavesim/wave.goal
+
 </div>

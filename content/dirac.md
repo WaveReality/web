@@ -146,18 +146,6 @@ $$
 \end{array}
 $$
 
-### A note on units: $\vec{B} + i \vec{E}$ or $c\vec{B} + i\vec{E}$?
-
-The combination $\vec{B} + i \vec{E}$ only makes sense where $\vec{E}$ and $\vec{B}$ share dimensions, which is true in the Gaussian units the original papers use, and in the natural units ($\hbar = c = 1$) the component equations above are written in. It is **not** true in the simulation. There $\vec{E} = -\vec{\nabla} A_0 - \partial \vec{A} / \partial t$ is a rate per time step while $\vec{B} = \vec{\nabla} \times \vec{A}$ is a rate per cube, so the two differ by exactly one factor of $c$ --- which you can watch directly, since $|\vec{E}| / |\vec{B}| \rightarrow c$ for a plane wave. So in implementation units the spin term is
-
-$$
-\frac{e}{\hbar} \vec{\sigma} \cdot \left(c\vec{B} + i \vec{E} \right)
-$$
-
-with $c\vec{B}$ in place of $\vec{B}$ everywhere in the component equations above. Written this way the units are obvious: $c\vec{B}$ and $\vec{E}$ are the same kind of thing, and the coefficient $e / \hbar$ sits alongside the $2e/\hbar$ of the $A_0$ term. Getting this wrong weights the electric and magnetic parts differently by a factor of $c$, which at $c = 0.5$ is a factor of two.
-
-The coefficient is not free to choose. It is the value that makes the magnetic moment come out at $g = 2$, which is this equation's best-known prediction: put a spin along $x$ in a uniform $B$ along $z$ and it must precess at the Larmor rate $\omega = g e B / (2 m c)$. Measured in the simulation at small field, $g = 2.0013$; the drift at larger field is the expected second-order correction, since the two spin eigenfrequencies go as $\sqrt{\Omega_0^2 \mp \sigma_F c B}$ rather than linearly.
-
 Again, it is fundamentally the wave equation, plus three additional terms that characterize the interaction with the electromagnetic field. Note that, as with the mixing across complex components $\phi_a$ and $\phi_b$ that occurred in the previous version of the coupled KG equations, the mixing or spin across $\chi_1$ and $\chi_2$ occurs via the electromagnetic field interaction. This time, the vector force fields are now required for the coupling, requiring that we compute them from the potentials, as described earlier (involving the $\vec{\nabla}$ first-order gradient and, for the first time, the $\vec{\nabla} \times$ function, which is very similar in its discrete form to the $\vec{\nabla}$ function).
 
 So, to answer the question of "what is spin?", we need only look at these equations. Spin, it seems, is this rotation of state values through the two complex variables in the $\psi$ state: $\chi_1$ and $\chi_2$. As is evident, this spinning occurs via interactions with the electromagnetic field vectors oriented along the three different spatial directions. The fact that, in our CA model we actually fix these directions according to the underlying cubic grid may seem strange and arbitrary. However, this does not mean that stuff can only spin along these fixed directions, anymore than it means that waves can only propagate in certain directions. By having different continuous values along these dimensions, any "direction" of spin relative to the underlying grid can occur.
@@ -178,16 +166,20 @@ $$
 \vec{J} = \frac{\hbar e}{m_0} \left((\phi_{1a} \vec{\nabla} \phi_{1b} - \phi_{1b} \vec{\nabla} \phi_{1a}) + (\phi_{2a} \vec{\nabla} \phi_{2b} - \phi_{2b} \vec{\nabla} \phi_{2a})\right) - \frac{e^2}{m_0 c} \vec{A} (\phi_{1a}^2 + \phi_{1b}^2 + \phi_{2a}^2 + \phi_{2b}^2)
 $$
 
-## First-order version
+## Exploration
 
-{id="eq_dirac-first" title="first-order Dirac equation"}
-$$
-(i \gamma^\mu \partial_\mu - m)\psi = 0
-$$
+Go to the [[Dirac simulation]] to get a hands-on visualization of how the four second-order wave functions listed above interact with the EM field to produce spin.
 
-TODO: there is still the important issue of converting back and forth between the 2nd order and 1st order versions of the state. 
-
-more refs: [[@Brown58]], [[@Tonin59]], [[@Marx67]], [[@Marx70]], [[@Case57]] <- weyl!!, [[@Diaz-CruzLopezMeza-AldamaEtAl15]], [[@KibblePolkinghorne58]], [[@BarutMullen62]], [[@BabinFigotin14]], [[@Cardoso93]], [[@Veblen33]], [[@DreinerHaberMartin10]]
-
-[[@BilenkyPetcov87]] <- neutrinos
+<!--- ## First-order version -->
+<!---  -->
+<!--- {id="eq_dirac-first" title="first-order Dirac equation"} -->
+<!--- $$ -->
+<!--- (i \gamma^\mu \partial_\mu - m)\psi = 0 -->
+<!--- $$ -->
+<!---  -->
+<!--- TODO: there is still the important issue of converting back and forth between the 2nd order and 1st order versions of the state.  -->
+<!---  -->
+<!--- more refs: [[@Brown58]], [[@Tonin59]], [[@Marx67]], [[@Marx70]], [[@Case57]] <- weyl!!, [[@Diaz-CruzLopezMeza-AldamaEtAl15]], [[@KibblePolkinghorne58]], [[@BarutMullen62]], [[@BabinFigotin14]], [[@Cardoso93]], [[@Veblen33]], [[@DreinerHaberMartin10]] -->
+<!---  -->
+<!--- [[@BilenkyPetcov87]] <- neutrinos -->
 
