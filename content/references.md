@@ -6,6 +6,8 @@
 
 <p id="AharonovRohrlich08">Aharonov, Y., & Rohrlich, D. (2008). <i>Quantum Paradoxes: Quantum Theory for the Perplexed. </i> John Wiley & Sons. </p>
 
+<p id="Amrien69">Amrien, W.O. (1969). Localizability for Particles of Mass Zero. <i>Helvetia Physica Acta, 42</i>, 149–190. </p>
+
 <p id="AndersenMadsenReicheltEtAl15">Andersen, A., Madsen, J., Reichelt, C., Rosenlund Ahl, S., Lautrup, B., Ellegaard, C., Levinsen, M.T., & Bohr, T. (2015). Double-slit experiment with single wave-driven particles and its relation to quantum mechanics. <i>Physical Review E, 92</i>, 013006. <a href="https://link.aps.org/doi/10.1103/PhysRevE.92.013006">https://link.aps.org/doi/10.1103/PhysRevE.92.013006</a><a href="http://doi.org/10.1103/PhysRevE.92.013006"> http://doi.org/10.1103/PhysRevE.92.013006</a></p>
 
 <p id="Anderson63">Anderson, P.W. (1963). Plasmons, Gauge Invariance, and Mass. <i>Physical Review, 130</i>, 439–442. <a href="https://link.aps.org/doi/10.1103/PhysRev.130.439">https://link.aps.org/doi/10.1103/PhysRev.130.439</a><a href="http://doi.org/10.1103/PhysRev.130.439"> http://doi.org/10.1103/PhysRev.130.439</a></p>
@@ -50,9 +52,19 @@
 
 <p id="Bell82">Bell, J.S. (1982). On the impossible pilot wave. <i>Foundations of Physics, 12</i>, 989–999. <a href="https://doi.org/10.1007/BF01889272">https://doi.org/10.1007/BF01889272</a><a href="http://doi.org/10.1007/BF01889272"> http://doi.org/10.1007/BF01889272</a></p>
 
+<p id="BernardisMercurioLiberato24">Bernardis, D.D., Mercurio, A., & Liberato, S.D. (2024). Tutorial on nonperturbative cavity quantum electrodynamics: is the Jaynes–Cummings model still relevant? <i>JOSA B, 41</i>, C206-C221. <a href="https://opg.optica.org/josab/abstract.cfm?uri=josab-41-8-C206">https://opg.optica.org/josab/abstract.cfm?uri=josab-41-8-C206</a><a href="http://doi.org/10.1364/JOSAB.522786"> http://doi.org/10.1364/JOSAB.522786</a></p>
+
 <p id="BezrukovShaposhnikov15">Bezrukov, F., & Shaposhnikov, M. (2015). Why should we care about the top quark Yukawa coupling? <i>Journal of Experimental and Theoretical Physics, 120</i>, 335–343. <a href="http://arxiv.org/abs/1411.1923">http://arxiv.org/abs/1411.1923</a><a href="http://doi.org/10.1134/S1063776115030152"> http://doi.org/10.1134/S1063776115030152</a></p>
 
 <p id="Bialynicki-Birula94">Bialynicki-Birula, I. (1994). Weyl, Dirac, and Maxwell equations on a lattice as unitary cellular automata. <i>Physical Review D, 49</i>, 6920–6927. <a href="https://link.aps.org/doi/10.1103/PhysRevD.49.6920">https://link.aps.org/doi/10.1103/PhysRevD.49.6920</a><a href="http://doi.org/10.1103/PhysRevD.49.6920"> http://doi.org/10.1103/PhysRevD.49.6920</a></p>
+
+<p id="Bialynicki-Birula94a">Białynicki-Birula, I. (1994). On the Wave Function of the Photon. <i>Acta Physica Polonica A, 1</i>, 97–116. <a href="https://www.infona.pl//resource/bwmeta1.element.bwnjournal-article-appv86z108kz">https://www.infona.pl//resource/bwmeta1.element.bwnjournal-article-appv86z108kz</a></p>
+
+<p id="Bialynicki-Birula96">Bialynicki-Birula, I. (1996). V Photon Wave Function. In E. Wolf (Ed.), <i>Progress in Optics</i> (pp. 245–294). Elsevier. <a href="https://www.sciencedirect.com/science/article/pii/S0079663808703160">https://www.sciencedirect.com/science/article/pii/S0079663808703160</a><a href="http://doi.org/10.1016/S0079-6638(08)70316-0"> http://doi.org/10.1016/S0079-6638(08)70316-0</a></p>
+
+<p id="Bialynicki-BirulaBialynicka-Birula09">Bialynicki-Birula, I., & Bialynicka-Birula, Z. (2009). Why photons cannot be sharply localized. <i>Physical Review A, 79</i>, 032112. <a href="https://link.aps.org/doi/10.1103/PhysRevA.79.032112">https://link.aps.org/doi/10.1103/PhysRevA.79.032112</a><a href="http://doi.org/10.1103/PhysRevA.79.032112"> http://doi.org/10.1103/PhysRevA.79.032112</a></p>
+
+<p id="Bialynicki-BirulaBialynicka-Birula12">Bialynicki-Birula, I., & Bialynicka-Birula, Z. (2012). Heisenberg uncertainty relations for photons. <i>Physical Review A, 86</i>, 022118. <a href="https://link.aps.org/doi/10.1103/PhysRevA.86.022118">https://link.aps.org/doi/10.1103/PhysRevA.86.022118</a><a href="http://doi.org/10.1103/PhysRevA.86.022118"> http://doi.org/10.1103/PhysRevA.86.022118</a></p>
 
 <p id="BilenkyPetcov87">Bilenky, S.M., & Petcov, S.T. (1987). Massive neutrinos and neutrino oscillations. <i>Reviews of Modern Physics, 59</i>, 671–754. <a href="https://link.aps.org/doi/10.1103/RevModPhys.59.671">https://link.aps.org/doi/10.1103/RevModPhys.59.671</a><a href="http://doi.org/10.1103/RevModPhys.59.671"> http://doi.org/10.1103/RevModPhys.59.671</a></p>
 
@@ -172,6 +184,8 @@
 
 <p id="Einstein05a">Einstein, A. (1905). Über einem die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt. <i>Annalen der physik, 4</i>, <a href="https://sedici.unlp.edu.ar/handle/10915/2784">https://sedici.unlp.edu.ar/handle/10915/2784</a></p>
 
+<p id="Einstein05b">Einstein, A. (1905). On a heuristic point of view concerning the production and transformation of light. <i>Annalen der Physik, 17</i>, 132–148. <a href="https://cir.nii.ac.jp/crid/1571135650150373888">https://cir.nii.ac.jp/crid/1571135650150373888</a></p>
+
 <p id="EinsteinPodolskyRosen35">Einstein, A., Podolsky, B., & Rosen, N. (1935). Can Quantum-Mechanical Description of Physical Reality Be Considered Complete? <i>Physical Review, 47</i>, 777–780. <a href="https://link.aps.org/doi/10.1103/PhysRev.47.777">https://link.aps.org/doi/10.1103/PhysRev.47.777</a><a href="http://doi.org/10.1103/PhysRev.47.777"> http://doi.org/10.1103/PhysRev.47.777</a></p>
 
 <p id="ElvangHuang14">Elvang, H., & Huang, Y. (2014). Scattering Amplitudes. <a href="http://arxiv.org/abs/1308.1697">http://arxiv.org/abs/1308.1697</a><a href="http://doi.org/10.48550/arXiv.1308.1697"> http://doi.org/10.48550/arXiv.1308.1697</a></p>
@@ -197,6 +211,8 @@
 <p id="FinsterSmollerYau99a">Finster, F., Smoller, J., & Yau, S. (1999). Particlelike solutions of the Einstein-Dirac equations. <i>Physical Review D, 59</i>, 104020. <a href="https://link.aps.org/doi/10.1103/PhysRevD.59.104020">https://link.aps.org/doi/10.1103/PhysRevD.59.104020</a><a href="http://doi.org/10.1103/PhysRevD.59.104020"> http://doi.org/10.1103/PhysRevD.59.104020</a></p>
 
 <p id="Fock26">Fock, V. (1926). Zur Schrödingerschen Wellenmechanik. <i>Zeitschrift für Physik, 38</i>, 242–250. <a href="https://doi.org/10.1007/BF01399113">https://doi.org/10.1007/BF01399113</a><a href="http://doi.org/10.1007/BF01399113"> http://doi.org/10.1007/BF01399113</a></p>
+
+<p id="ForbesdeOliveiraDennis21">Forbes, A., Oliveira, M., & Dennis, M.R. (2021). Structured light. <i>Nature Photonics, 15</i>, 253–262. <a href="https://www.nature.com/articles/s41566-021-00780-4">https://www.nature.com/articles/s41566-021-00780-4</a><a href="http://doi.org/10.1038/s41566-021-00780-4"> http://doi.org/10.1038/s41566-021-00780-4</a></p>
 
 <p id="FordOConnell91">Ford, G.W., & O'Connell, R.F. (1991). Radiation reaction in electrodynamics and the elimination of runaway solutions. <i>Physics Letters A, 157</i>, 217–220. <a href="https://www.sciencedirect.com/science/article/pii/037596019190054C">https://www.sciencedirect.com/science/article/pii/037596019190054C</a><a href="http://doi.org/10.1016/0375-9601(91)90054-C"> http://doi.org/10.1016/0375-9601(91)90054-C</a></p>
 
@@ -246,6 +262,8 @@
 
 <p id="GuerraRuggiero78">Guerra, F., & Ruggiero, P. (1978). A note on relativistic Markov processes. <i>Lettere al Nuovo Cimento (1971-1985), 23</i>, 529–534. <a href="https://doi.org/10.1007/BF02770538">https://doi.org/10.1007/BF02770538</a><a href="http://doi.org/10.1007/BF02770538"> http://doi.org/10.1007/BF02770538</a></p>
 
+<p id="GullaRyenSkaar23">Gulla, J., Ryen, K., & Skaar, J. (2023). Limits for realizing single photons. <i>Physical Review A, 108</i>, 063708. <a href="https://link.aps.org/doi/10.1103/PhysRevA.108.063708">https://link.aps.org/doi/10.1103/PhysRevA.108.063708</a><a href="http://doi.org/10.1103/PhysRevA.108.063708"> http://doi.org/10.1103/PhysRevA.108.063708</a></p>
+
 <p id="Gupta50">Gupta, S.N. (1950). Theory of Longitudinal Photons in Quantum Electrodynamics. <i>Proceedings of the Physical Society. Section A, 63</i>, 681. <a href="https://doi.org/10.1088/0370-1298/63/7/301">https://doi.org/10.1088/0370-1298/63/7/301</a><a href="http://doi.org/10.1088/0370-1298/63/7/301"> http://doi.org/10.1088/0370-1298/63/7/301</a></p>
 
 <p id="GuralnikHagenKibble64">Guralnik, G.S., Hagen, C.R., & Kibble, T.W.B. (1964). Global Conservation Laws and Massless Particles. <i>Physical Review Letters, 13</i>, 585–587. <a href="https://link.aps.org/doi/10.1103/PhysRevLett.13.585">https://link.aps.org/doi/10.1103/PhysRevLett.13.585</a><a href="http://doi.org/10.1103/PhysRevLett.13.585"> http://doi.org/10.1103/PhysRevLett.13.585</a></p>
@@ -253,6 +271,8 @@
 <p id="Hansson00">Hansson, J. (2000). Nonlinear gauge interactions - A solution to the "measurement problem" in quantum mechanics? <a href="http://arxiv.org/abs/quant-ph/0003083">http://arxiv.org/abs/quant-ph/0003083</a><a href="http://doi.org/10.48550/arXiv.quant-ph/0003083"> http://doi.org/10.48550/arXiv.quant-ph/0003083</a></p>
 
 <p id="HarriganSpekkens10">Harrigan, N., & Spekkens, R.W. (2010). Einstein, Incompleteness, and the Epistemic View of Quantum States. <i>Foundations of Physics, 40</i>, 125–157. <a href="https://doi.org/10.1007/s10701-009-9347-0">https://doi.org/10.1007/s10701-009-9347-0</a><a href="http://doi.org/10.1007/s10701-009-9347-0"> http://doi.org/10.1007/s10701-009-9347-0</a></p>
+
+<p id="Hegerfeldt98">Hegerfeldt, G. (1998). Instantaneous spreading and Einstein causality in quantum theory. <i>Annalen der Physik, 510</i>, 716–725. <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.199851007-817">https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.199851007-817</a><a href="http://doi.org/10.1002/andp.199851007-817"> http://doi.org/10.1002/andp.199851007-817</a></p>
 
 <p id="HensenBernienDreauEtAl15">Hensen, B., Bernien, H., Dréau, A.E., Reiserer, A., Kalb, N., Blok, M.S., Ruitenberg, J., Vermeulen, R.F.L., Schouten, R.N., Abellán, C., Amaya, W., Pruneri, V., Mitchell, M.W., Markham, M., Twitchen, D.J., Elkouss, D., Wehner, S., Taminiau, T.H., & Hanson, R. (2015). Loophole-free Bell inequality violation using electron spins separated by 1.3 kilometres. <i>Nature, 526</i>, 682–686. <a href="https://www.nature.com/articles/nature15759">https://www.nature.com/articles/nature15759</a><a href="http://doi.org/10.1038/nature15759"> http://doi.org/10.1038/nature15759</a></p>
 
@@ -265,6 +285,8 @@
 <p id="Hobson13">Hobson, A. (2013). There are no particles, there are only fields. <i>American Journal of Physics, 81</i>, 211–223. <a href="http://aapt.scitation.org/doi/full/10.1119/1.4789885">http://aapt.scitation.org/doi/full/10.1119/1.4789885</a><a href="http://doi.org/10.1119/1.4789885"> http://doi.org/10.1119/1.4789885</a></p>
 
 <p id="HobsonEfstathiouLasenby06">Hobson, M.P., Efstathiou, G., & Lasenby, A.N. (2006). <i>General Relativity: An Introduction for Physicists. </i> Cambridge University Press. </p>
+
+<p id="HodgsonSouthallPurdyEtAl22">Hodgson, D., Southall, J., Purdy, R., & Beige, A. (2022). Local photons. <i>Frontiers in Photonics, 3</i>, <a href="https://www.frontiersin.org/journals/photonics/articles/10.3389/fphot.2022.978855/full">https://www.frontiersin.org/journals/photonics/articles/10.3389/fphot.2022.978855/full</a><a href="http://doi.org/10.3389/fphot.2022.978855"> http://doi.org/10.3389/fphot.2022.978855</a></p>
 
 <p id="Holland06a">Holland, P. (2006). Quantum back-reaction and the particle law of motion. <i>Journal of Physics A: Mathematical and General, 39</i>, 559. <a href="https://doi.org/10.1088/0305-4470/39/3/008">https://doi.org/10.1088/0305-4470/39/3/008</a><a href="http://doi.org/10.1088/0305-4470/39/3/008"> http://doi.org/10.1088/0305-4470/39/3/008</a></p>
 
@@ -294,17 +316,25 @@
 
 <p id="KarimiBoyd15">Karimi, E., & Boyd, R.W. (2015). Classical entanglement? <i>Science, 350</i>, 1172–1173. <a href="https://www.science.org/doi/full/10.1126/science.aad7174">https://www.science.org/doi/full/10.1126/science.aad7174</a><a href="http://doi.org/10.1126/science.aad7174"> http://doi.org/10.1126/science.aad7174</a></p>
 
+<p id="Keller05">Keller, O. (2005). On the theory of spatial localization of photons. <i>Physics Reports, 411</i>, 1–232. <a href="https://www.sciencedirect.com/science/article/pii/S0370157305000438">https://www.sciencedirect.com/science/article/pii/S0370157305000438</a><a href="http://doi.org/10.1016/j.physrep.2005.01.002"> http://doi.org/10.1016/j.physrep.2005.01.002</a></p>
+
 <p id="Kempe09">Kempe, J. (2009). Quantum random walks: an introductory overview: Contemporary Physics: Vol 50 , No 1 - Get Access. <i>Contemporary Physics, 50</i>, 339–359. <a href="https://www.tandfonline.com/doi/abs/10.1080/00107510902734722">https://www.tandfonline.com/doi/abs/10.1080/00107510902734722</a><a href="http://doi.org/10.1080/00107510902734722"> http://doi.org/10.1080/00107510902734722</a></p>
 
 <p id="Khrennikov01">Khrennikov, A. (2001). Linear representations of probabilistic transformations induced by context transitions. <i>Journal of Physics A: Mathematical and General, 34</i>, 9965. <a href="https://doi.org/10.1088/0305-4470/34/47/304">https://doi.org/10.1088/0305-4470/34/47/304</a><a href="http://doi.org/10.1088/0305-4470/34/47/304"> http://doi.org/10.1088/0305-4470/34/47/304</a></p>
 
 <p id="Khrennikov06">Khrennikov, A. (2006). Prequantum Classical Statistical Field Theory: Complex Representation, Hamilton-Schrödinger Equation, and Interpretation of Stationary States. <i>Foundations of Physics Letters, 19</i>, 299–319. <a href="https://doi.org/10.1007/s10702-006-0796-9">https://doi.org/10.1007/s10702-006-0796-9</a><a href="http://doi.org/10.1007/s10702-006-0796-9"> http://doi.org/10.1007/s10702-006-0796-9</a></p>
 
+<p id="Khrennikov11a">Khrennikov, A. (2011). Classical signal viewpoint to bunching and anti-bunching. <a href="http://arxiv.org/abs/1105.4268">http://arxiv.org/abs/1105.4268</a><a href="http://doi.org/10.48550/arXiv.1105.4268"> http://doi.org/10.48550/arXiv.1105.4268</a></p>
+
 <p id="KibblePolkinghorne58">Kibble, T.W.B., & Polkinghorne, J.C. (1958). Higher order spinor Lagrangians. <i>Il Nuovo Cimento (1955-1965), 8</i>, 74–83. <a href="https://doi.org/10.1007/BF02828852">https://doi.org/10.1007/BF02828852</a><a href="http://doi.org/10.1007/BF02828852"> http://doi.org/10.1007/BF02828852</a></p>
+
+<p id="KimbleDagenaisMandel77">Kimble, H.J., Dagenais, M., & Mandel, L. (1977). Photon Antibunching in Resonance Fluorescence. <i>Physical Review Letters, 39</i>, 691–695. <a href="https://link.aps.org/doi/10.1103/PhysRevLett.39.691">https://link.aps.org/doi/10.1103/PhysRevLett.39.691</a><a href="http://doi.org/10.1103/PhysRevLett.39.691"> http://doi.org/10.1103/PhysRevLett.39.691</a></p>
 
 <p id="Klassen11">Klassen, S. (2011). The Photoelectric Effect: Reconstructing the Story for the Physics Classroom. <i>Science & Education, 20</i>, 719–731. <a href="https://doi.org/10.1007/s11191-009-9214-6">https://doi.org/10.1007/s11191-009-9214-6</a><a href="http://doi.org/10.1007/s11191-009-9214-6"> http://doi.org/10.1007/s11191-009-9214-6</a></p>
 
 <p id="Klein26">Klein, O. (1926). Quantentheorie und fünfdimensionale Relativitätstheorie. <i>Zeitschrift für Physik, 37</i>, 895–906. <a href="https://doi.org/10.1007/BF01397481">https://doi.org/10.1007/BF01397481</a><a href="http://doi.org/10.1007/BF01397481"> http://doi.org/10.1007/BF01397481</a></p>
+
+<p id="Knight61">Knight, J.M. (1961). Strict Localization in Quantum Field Theory. <i>Journal of Mathematical Physics, 2</i>, 459–471. <a href="https://doi.org/10.1063/1.1703731">https://doi.org/10.1063/1.1703731</a><a href="http://doi.org/10.1063/1.1703731"> http://doi.org/10.1063/1.1703731</a></p>
 
 <p id="KochenSpecker90">Kochen, S., & Specker, E.P. (1990). The Problem of Hidden Variables in Quantum Mechanics. In G. Jäger, H. Läuchli, B. Scarpellini, & V. Strassen (Eds.), <i>Ernst Specker Selecta</i> (pp. 235–263). Birkhäuser. <a href="https://doi.org/10.1007/978-3-0348-9259-9_21">https://doi.org/10.1007/978-3-0348-9259-9_21</a><a href="http://doi.org/10.1007/978-3-0348-9259-9_21"> http://doi.org/10.1007/978-3-0348-9259-9_21</a></p>
 
@@ -359,6 +389,8 @@
 <p id="NambuJona-Lasinio61">Nambu, Y., & Jona-Lasinio, G. (1961). Dynamical Model of Elementary Particles Based on an Analogy with Superconductivity. I. <i>Physical Review, 122</i>, 345–358. <a href="http://doi.org/10.1103/PhysRev.122.345"> http://doi.org/10.1103/PhysRev.122.345</a></p>
 
 <p id="Nelson66">Nelson, E. (1966). Derivation of the Schr\"odinger Equation from Newtonian Mechanics. <i>Physical Review, 150</i>, 1079–1085. <a href="https://link.aps.org/doi/10.1103/PhysRev.150.1079">https://link.aps.org/doi/10.1103/PhysRev.150.1079</a><a href="http://doi.org/10.1103/PhysRev.150.1079"> http://doi.org/10.1103/PhysRev.150.1079</a></p>
+
+<p id="NewtonWigner49">Newton, T.D., & Wigner, E.P. (1949). Localized States for Elementary Systems. <i>Reviews of Modern Physics, 21</i>, 400–406. <a href="https://link.aps.org/doi/10.1103/RevModPhys.21.400">https://link.aps.org/doi/10.1103/RevModPhys.21.400</a><a href="http://doi.org/10.1103/RevModPhys.21.400"> http://doi.org/10.1103/RevModPhys.21.400</a></p>
 
 <p id="NeyAlbert13">Ney, A., & Albert, D. (2013). <i>The Wave Function: Essays on the Metaphysics of Quantum Mechanics. </i> Oxford University Press. </p>
 
@@ -418,6 +450,8 @@
 
 <p id="Radford03">Radford, C.J. (2003). The stationary Maxwell–Dirac equations. <i>Journal of Physics A: Mathematical and General, 36</i>, 5663. <a href="https://doi.org/10.1088/0305-4470/36/20/321">https://doi.org/10.1088/0305-4470/36/20/321</a><a href="http://doi.org/10.1088/0305-4470/36/20/321"> http://doi.org/10.1088/0305-4470/36/20/321</a></p>
 
+<p id="RaymerLandesMarcus21">Raymer, M.G., Landes, T., & Marcus, A.H. (2021). Entangled two-photon absorption by atoms and molecules: A quantum optics tutorial. <i>The Journal of Chemical Physics, 155</i>, 081501. <a href="https://doi.org/10.1063/5.0049338">https://doi.org/10.1063/5.0049338</a><a href="http://doi.org/10.1063/5.0049338"> http://doi.org/10.1063/5.0049338</a></p>
+
 <p id="ReidDrummond26">Reid, M.D., & Drummond, P.D. (2026). Forward-backward stochastic simulations: $Q$-based model for measurement and Bell nonlocality consistent with weak local realistic premises. <i>Physical Review A, 113</i>, 012210. <a href="https://link.aps.org/doi/10.1103/qdyg-2nv4">https://link.aps.org/doi/10.1103/qdyg-2nv4</a><a href="http://doi.org/10.1103/qdyg-2nv4"> http://doi.org/10.1103/qdyg-2nv4</a></p>
 
 <p id="RingbauerDuffusBranciardEtAl15">Ringbauer, M., Duffus, B., Branciard, C., Cavalcanti, E.G., White, A.G., & Fedrizzi, A. (2015). Measurements on the reality of the wavefunction. <i>Nature Physics, 11</i>, 249–254. <a href="https://www.nature.com/articles/nphys3233">https://www.nature.com/articles/nphys3233</a><a href="http://doi.org/10.1038/nphys3233"> http://doi.org/10.1038/nphys3233</a></p>
@@ -468,6 +502,8 @@
 
 <p id="Sidharth09">Sidharth, B.G. (2009). Revisiting Zitterbewegung. <i>International Journal of Theoretical Physics, 48</i>, 497–506. <a href="https://doi.org/10.1007/s10773-008-9825-8">https://doi.org/10.1007/s10773-008-9825-8</a><a href="http://doi.org/10.1007/s10773-008-9825-8"> http://doi.org/10.1007/s10773-008-9825-8</a></p>
 
+<p id="Sipe95">Sipe, J.E. (1995). Photon wave functions. <i>Physical Review A, 52</i>, 1875–1883. <a href="https://link.aps.org/doi/10.1103/PhysRevA.52.1875">https://link.aps.org/doi/10.1103/PhysRevA.52.1875</a><a href="http://doi.org/10.1103/PhysRevA.52.1875"> http://doi.org/10.1103/PhysRevA.52.1875</a></p>
+
 <p id="Spekkens05">Spekkens, R.W. (2005). Contextuality for preparations, transformations, and unsharp measurements. <i>Physical Review A, 71</i>, 052108. <a href="https://link.aps.org/doi/10.1103/PhysRevA.71.052108">https://link.aps.org/doi/10.1103/PhysRevA.71.052108</a><a href="http://doi.org/10.1103/PhysRevA.71.052108"> http://doi.org/10.1103/PhysRevA.71.052108</a></p>
 
 <p id="Spreeuw98">Spreeuw, R.J.C. (1998). A Classical Analogy of Entanglement. <i>Foundations of Physics, 28</i>, 361–374. <a href="https://doi.org/10.1023/A:1018703709245">https://doi.org/10.1023/A:1018703709245</a><a href="http://doi.org/10.1023/A:1018703709245"> http://doi.org/10.1023/A:1018703709245</a></p>
@@ -485,6 +521,8 @@
 <p id="Tegmark10">Tegmark, M. (2010). Many Worlds in Context. <a href="http://arxiv.org/abs/0905.2182">http://arxiv.org/abs/0905.2182</a><a href="http://doi.org/10.48550/arXiv.0905.2182"> http://doi.org/10.48550/arXiv.0905.2182</a></p>
 
 <p id="Tegmark98">Tegmark, M. (1998). The Interpretation of Quantum Mechanics: Many Worlds or Many Words? <i>Fortschritte der Physik, 46</i>, 855–862. <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291521-3978%28199811%2946%3A6/8%3C855%3A%3AAID-PROP855%3E3.0.CO%3B2-Q">https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291521-3978%28199811%2946%3A6/8%3C855%3A%3AAID-PROP855%3E3.0.CO%3B2-Q</a><a href="http://doi.org/10.1002/(SICI)1521-3978(199811)46:6/8<855::AID-PROP855>3.0.CO;2-Q"> http://doi.org/10.1002/(SICI)1521-3978(199811)46:6/8<855::AID-PROP855>3.0.CO;2-Q</a></p>
+
+<p id="TeichSaleh88">Teich, M.C., & Saleh, B.E.A. (1988). I Photon Bunching and Antibunching* In E. Wolf (Ed.), <i>Progress in Optics</i> (pp. 1–104). Elsevier. <a href="https://www.sciencedirect.com/science/article/pii/S0079663808701744">https://www.sciencedirect.com/science/article/pii/S0079663808701744</a><a href="http://doi.org/10.1016/S0079-6638(08)70174-4"> http://doi.org/10.1016/S0079-6638(08)70174-4</a></p>
 
 <p id="TittelBrendelGisinEtAl98">Tittel, W., Brendel, J., Gisin, B., Herzog, T., Zbinden, H., & Gisin, N. (1998). Experimental demonstration of quantum correlations over more than 10 km. <i>Physical Review A, 57</i>, 3229–3232. <a href="https://link.aps.org/doi/10.1103/PhysRevA.57.3229">https://link.aps.org/doi/10.1103/PhysRevA.57.3229</a><a href="http://doi.org/10.1103/PhysRevA.57.3229"> http://doi.org/10.1103/PhysRevA.57.3229</a></p>
 
@@ -515,6 +553,8 @@
 <p id="Weinberg79">Weinberg, S. (1979). Phenomenological Lagrangians. <i>Physica A: Statistical Mechanics and its Applications, 96</i>, 327–340. <a href="https://www.sciencedirect.com/science/article/pii/0378437179902231">https://www.sciencedirect.com/science/article/pii/0378437179902231</a><a href="http://doi.org/10.1016/0378-4371(79)90223-1"> http://doi.org/10.1016/0378-4371(79)90223-1</a></p>
 
 <p id="Whittaker03">Whittaker, E.T. (1903). On the partial differential equations of mathematical physics. <i>Mathematische Annalen, 57</i>, 333–355. <a href="https://doi.org/10.1007/BF01444290">https://doi.org/10.1007/BF01444290</a><a href="http://doi.org/10.1007/BF01444290"> http://doi.org/10.1007/BF01444290</a></p>
+
+<p id="Wightman62">Wightman, A.S. (1962). On the Localizability of Quantum Mechanical Systems. <i>Reviews of Modern Physics, 34</i>, 845–872. <a href="https://link.aps.org/doi/10.1103/RevModPhys.34.845">https://link.aps.org/doi/10.1103/RevModPhys.34.845</a><a href="http://doi.org/10.1103/RevModPhys.34.845"> http://doi.org/10.1103/RevModPhys.34.845</a></p>
 
 <p id="Witten16">Witten, E. (2016). <i>Phil Anderson and Gauge Symmetry Breaking. </i>In PWA90: A Lifetime of Emergence (pp. 73–89). <a href="https://ui.adsabs.harvard.edu/abs/2016pwa..book...73W">https://ui.adsabs.harvard.edu/abs/2016pwa..book...73W</a><a href="http://doi.org/10.1142/9789814733632_0007"> http://doi.org/10.1142/9789814733632_0007</a></p>
 
