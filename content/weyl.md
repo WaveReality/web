@@ -84,3 +84,8 @@ Thus, the conclusion from all these considerations is that:
 
 Furthermore, the [[weak#electroweak]] system requires Weyl equations to capture the SU(2) symmetry structure interacting with the four gauge fields, representing the neutrino and electron lepton variants with the proper helicity asymmetry that results in the well-established CP violation properties of the weak force.
 
+## Exploration
+
+See [[Weyl simulation]] for a hands-on exploration of neutrinos and electrons under the Weyl framework.
+
+
