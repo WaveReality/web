@@ -16,6 +16,8 @@ At a basic mathematical level, the standard second-order [[wave]] equation invol
 
 This situation is essentially the same as the relationship between the second-order [[Klein-Gordon]] (KG) equation versus the first-order [[Schrodinger]] equation. KG operates on a single real value, but requires maintaining the velocity in addition to the wave value, while Schrödinger's equation operates on a complex value. The two degrees of freedom in the complex number essentially map onto the position and velocity variables in the second-order equation.
 
+See [[complex waves]] for this and further important analyses of the implications of these differences across the wave functions.
+
 Interestingly, Dirac derived his first-order wave equation directly from the second-order KG equation, by effectively taking the square root. Any time you take a square root, there are 2 solutions of different signs, and this is where the doubling of wave state variables comes from.
 
 In effect, the spinning that happens in the Weyl equations represents a rotation through the two coupled complex wave components:
@@ -44,11 +46,31 @@ i & 0 \end{bmatrix},  \begin{bmatrix} 1 & 0 \\
 0 & -1 \end{bmatrix} \right)
 $$
 
-You can see how these basically map one variable onto another in the first two cases, where everything is off-diagonal. The third, _z_ case does a flip due to the minus sign -- this is the direction of motion axis.
+With these, [[#eq_weyl-first]] expands to the following:
+
+$$
+\frac{\partial \psi}{\partial t} = c \left( \sigma_x \frac{\partial \psi}{\partial x} + \sigma_y \frac{\partial \psi}{\partial y} + \sigma_z \frac{\partial \psi}{\partial z} \right)
+$$
+
+so each Pauli spin matrix operates on a corresponding first-order gradient term. When we write it all out, you end up with the following four coupled first-order equations:
+
+$$
+\frac{\partial \phi_{1a}}{\partial t} = 2 c \left( \frac{\partial \phi_{1a}}{\partial z} + \frac{\partial \phi_{2a}}{\partial x} + \frac{\partial \phi_{2b}}{\partial y} \right)
+$$
+
+$$
+\frac{\partial \phi_{1b}}{\partial t} = 2 c \left( \frac{\partial \phi_{1b}}{\partial z} + \frac{\partial \phi_{2b}}{\partial x} - \frac{\partial \phi_{2a}}{\partial y} \right)
+$$
+
+$$
+\frac{\partial \phi_{2a}}{\partial t} = 2 c \left( \frac{\partial \phi_{1a}}{\partial x} - \frac{\partial \phi_{1b}}{\partial y} - \frac{\partial \phi_{2a}}{\partial z} \right)
+$$
+
+$$
+\frac{\partial \phi_{2b}}{\partial t} = 2 c \left( \frac{\partial \phi_{1b}}{\partial x} + \frac{\partial \phi_{1a}}{\partial y} - \frac{\partial \phi_{2b}}{\partial z} \right)
+$$
 
 These spin matricies are in fact defined by the fact that applying them twice gets you back to where you started, which is what creates the alignment between the spinless second-order KG equation and the spinning first-order Dirac or Weyl equations ([[@Brown58]]; [[@Tonin59]]; [[@Marx67]]; [[@Marx70]]; [[@Case57]]; [[@Diaz-CruzLopezMeza-AldamaEtAl15]]; [[@KibblePolkinghorne58]]; [[@BarutMullen62]]; [[@BabinFigotin14]]; [[@Cardoso93]]; [[@Veblen33]]; [[@DreinerHaberMartin10]])
-
-We are left with a fundamental challenge here: if spin is fundamentally a first-order phenomenon, we cannot capture first-order waves in an isomorphic manner within the [[cellular automaton]] framework. If it is just standard second-order wave propagation as in the KG equation, then what's the big deal?
 
 Interestingly, the second-order version of the Dirac equation only involves spin in the context of the coupling with the [[Maxwell]] EM field. The components themselves are not spinning into each other.
 
@@ -60,5 +82,5 @@ Thus, the conclusion from all these considerations is that:
 
 > **spin 1/2 is fundamentally a particle-level phenomenon** 
 
-which must be captured by the [[stochastic motion]] model.
+Furthermore, the [[weak#electroweak]] system requires Weyl equations to capture the SU(2) symmetry structure interacting with the four gauge fields, representing the neutrino and electron lepton variants with the proper helicity asymmetry that results in the well-established CP violation properties of the weak force.
 

@@ -34,4 +34,8 @@ The `PacketSlab` option in `Config` determines whether the wave packets are gene
 
 For the `SymmetricPacket` case showing superposition, this is best with `PacketSlab = true`, and occurs at Step 271 with the default C = 0.25 and 64 cube size.
 
+## Complex waves
+
+You can also explore the [[complex waves]] cases by setting the `Equation` to `Wave C dir` or `Weyl`.
+
 </div>
