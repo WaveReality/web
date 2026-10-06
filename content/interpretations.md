@@ -40,7 +40,7 @@ Following from the above background (including linked pages above), the followin
 
 * The issues and debate surrounding the [[configuration space]] framework, which automatically builds in non-locality, but at the intractable cost of an exponentially large space.
 
-* [[Semiclassical]] models, that combine a classical treatment of the EM field according to [[Maxwell]]'s equations, with a quantum treatment of the [[electron]]. This is the approach used in the [[Spinfield Model]].
+* [[Semiclassical]] models, that combine a classical treatment of the EM field according to [[Maxwell]]'s equations, with a quantum treatment of the [[electron]].
 
 * [[QED]] provides an overview of _quantum electrodynamics_ which provides a highly accurate _description_ of the relevant phenomenology of interest. However, we argue that QED is a calculational tool, not a plausible physical model.
 

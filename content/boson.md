@@ -3,10 +3,7 @@ Categories = ["Standard Model"]
 bibfile = "mechphys.json"
 +++
 
-A **boson** is a type of particle in the [[Standard Model]] that is thought to mediate forces among [[particle]]s. The [[photon]] is the prototypical example of such a boson, all of which have [[spin]] 1.
+A **boson** is a force-field "particle" in the [[Standard Model]] that is thought to mediate forces among massive [[fermion]] particles, as described by the [[gauge theory]] minimal coupling framework, that achieves critical [[conservation]] laws. The **photon** is the prototypical example of such a boson, all of which have [[spin]] 1.
 
-This aspect of the standard model is not included in the present [[Spinfield Model]], which instead adopts a [[semiclassical]] approach where forces are continuous-valued waves, with no corresponding particle-like properties. In this model, all particle-like effects attributed to e.g., electromagnetic forces instead result from the ways that these forces interact with fermion particles.
-
-This approach is consistent with the lack of any kind of conservation laws or other constraints on boson numbers, and the lack of a proper quantum wave function describing a [[photon]]. See also [[particle]] for more discussion.
-
+The term "particle" is in quotes here because the use of that term to describe the actual mathematical description of the bosons in the Standard Model is not well-aligned with the intuitive description of a particle as a strongly-localized point-like entity. By contrast, the fermions do appear to have such a point-like nature, as discussed in [[particle]]. See [[photon]] for a detailed discussion of these issues.
 

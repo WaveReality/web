@@ -11,7 +11,7 @@ Thus, it is perhaps not an exaggeration to say that the electroweak framework is
 
 However, the counter-argument is that the actual physical implications of this revolutionary rearrangement of the quantum furniture are somewhat difficult to detect, which presumably why this part of the story gets less attention than it otherwise might. The famously successful [[QED]] model, which preceded the electroweak model by more than a decade, persists unchanged!
 
-This fact says a lot about how different [[calculational tool]]s can be used to describe the same phenomena, but if the goal is to understand something about the underlying physical mechanisms, then it seems that there is much to learn from the electroweak framework. In that respect, there are many features of the electroweak framework that align with aspects of the [[Spinfield Model]], so it can thus can provide essential guidance on how that model should be configured.
+This fact says a lot about how different [[calculational tool]]s can be used to describe the same phenomena, but if the goal is to understand something about the underlying physical mechanisms, then it seems that there is much to learn from the electroweak framework.
 
 It is strongly recommended to read [[gauge theory]] and [[Higgs]] before proceeding, as these contain essential background information necessary for understanding what follows. You should understand how gauge theory describes the interaction between particle and force fields, and how this interaction can give rise to a dynamic mass-like factor, which shows up in the conserved current density expression. This is precisely where the mass of the weak bosons will arise in the electroweak framework, for precisely the same reason. 
 

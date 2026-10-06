@@ -43,7 +43,6 @@ Another major constraint on both non-locality and configuration space comes from
 
 A further contradiction is that according to general relativity, the entropy inside a given region of spacetime is strictly limited, as a function of the surface area of the region, known as the _Bekenstein-Hawking_ bound ([[@Bekenstein81]]). This implies a corresponding limit in the number of degrees of freedom in the corresponding quantum state, which would be well below that corresponding to any kind of exponential configuration space. The interplay between this constraint and considerations from quantum [[field theory]] remains an active topic of investigation ([[@BoussoChandrasekaranShahbazi-Moghaddam20]]; [[@Witten22]]; [[@Giddings15]]; [[@Witten18]]; [[@Casini08]]). 
 
-Overall, it is difficult to draw strong conclusions from these existing analyses, but it does not seem certain that the exponential size of configuration space is an absolute irrevocable requirement to capture the phenomenology of quantum physics. Therefore, given how toxic such a thing is to the CA-based approach, we can adopt a pragmatic approach to see if indeed we can succeed at this enterprise, as documented in the [[Spinfield Model]].
+Overall, it is difficult to draw strong conclusions from these existing analyses, but it does not seem certain that the exponential size of configuration space is an absolute irrevocable requirement to capture the phenomenology of quantum physics.
 
-Ultimately, the most relevant data will come from [[quantum computing]], which is pushing the envelope on this issue, as the computational power derives directly from the exponential size of configuration space. See that page for relevant current status.
-
+Ultimately, the most relevant data will come from [[quantum computing]], which is pushing the envelope on this issue, as the computational power derives directly from the exponential size of configuration space. 

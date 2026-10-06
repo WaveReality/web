@@ -19,12 +19,6 @@ In general, the spin of something like an electron is thought to be a strongly [
 
 ## Spin as particle momentum and mass mechanism
 
-Under the current [[Spinfield Model]] plans, the phenomenon of spin reflects an internal dynamic process within discrete particles, operating over internal state values (similar to the spinors), that is responsible for the following particle properties:
-
-* Maintaining the particle's momentum value across time and space.
-* Causing a massive particle to have a resting mass / energy.
-* And, of course, its actual spin direction.
-
 The [[neutrino]] is a particle that _only_ has spin, indicating that this spin mechanism can dissociate from other particle properties. Thus, modeling this most mysterious of particles is a first-order goal, along with that of the [[electron]].
 
 The neutrino interacts only via the [[weak]] force, which is strongly localized to around $10^−18$m --- beneath the scale of the charge radius of a proton ($10^-15$m). This length scale is short because the [[boson]]s that carry the weak force are _massive_ (indeed they are much heavier than the mass of a proton).

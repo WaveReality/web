@@ -21,9 +21,7 @@ The central features of this abstract framework, which are carried through in th
 
 * To enable the linear Schrödinger equation to represent these wave-based, phase-driven correlations across different particles, the exponentially-large [[configuration space]] is used to encode the quantum state. There are multiple reasons to believe that the exponential size of this space is indeed exponentially excessive, as discussed in that page. The Standard Model typically uses a different kind of state space, known as a Fock space, which represents the momentum / energy of the relevant particles in terms of a Fourier space. Creation and annihilation operators add or remove sine waves to this space, with frequencies corresponding to the relevant particle energies. This infinite-dimensional state space must also be recognized as a calculational tool, which makes the math much simpler.
 
-The full complexity of the Standard Model relative to this more abstract framework is needed for explaining what happens in high-energy particle accelerators and cosmic events, when particles start changing into other particles, or disappear completely into a flash of energy.
-
-The ultra-microscopic realm of the Standard Model is thus the appropriate level for understanding what is really going on "under the hood", and is therefore the primary focus here. So far, there are many indications that some of the "messy" details present in this model provide useful constraints and inspiration for the [[Spinfield Model]], which are otherwise absent in the abstract framework.
+The full complexity of the Standard Model relative to this more abstract framework is needed for explaining what happens in high-energy particle accelerators and cosmic events, when particles start changing into other particles, or disappear completely into a flash of energy. The ultra-microscopic realm of the Standard Model is thus the appropriate level for understanding what is really going on "under the hood", and is therefore the primary focus here.
 
 ## Pedagogical presentation
 
@@ -41,7 +39,7 @@ The following sequence of pages develops an understanding of the wave equations 
 
 * In [[complex KG]], we apply the KG wave functions to a complex-valued wave state, which enables a conserved quantity that acts like electrical charge to be computed. Although the [[complex number]]s involved seem mysterious, we see that they are just a mathematical convenience, and we can eliminate them entirely in our second-order wave functions, which are computed using only real-valued numbers. This complex KG system can be directly coupled to [[Maxwell]]'s equations using the [[gauge theory]] principle of establishing a _local_ form of gauge invariance. This gets us very close to the goal of capturing all of the properties of an [[electron]].
 
-* Interestingly, this complex KG system provides a good model of the [[Higgs]] field, and the somewhat mysterious phenomenon of _spontaneous symmetry breaking_, which ends up giving mass to all massive particles. Understanding this dynamic is critical for developing the Spinfield Model.
+* Interestingly, this complex KG system provides a good model of the [[Higgs]] field, and the somewhat mysterious phenomenon of _spontaneous symmetry breaking_, which ends up giving mass to all massive particles.
 
 * The final step in the wave function development sequence is the second-order [[Dirac]] wave function, which builds on the complex KG system, and captures the phenomenon of [[spin]]. This then provides a physically complete description of the quantum dynamics of a [[fermion]] particle like the electron, and is largely responsible for the amazing predictive accuracy of the _quantum electrodynamics_ [[QED]] framework within the Standard Model.
 

@@ -3,15 +3,15 @@ Categories = ["Standard Model"]
 bibfile = "mechphys.json"
 +++
 
-The **neutrino** is perhaps the strangest, most difficult to study of all particles. And yet the fact that it has no electrical or strong charge makes it relatively simple from a physics perspective: it has all the essential particle properties of an electron, with none of the additional complexity. In particular, it has [[spin]] 1/2, and thus represents the simplest test case for how that works.
+The **neutrino** is perhaps the strangest, most difficult to study of all particles in the [[Standard Model]]. And yet the fact that it has no electrical or strong charge makes it relatively simple from a physics perspective: it has all the essential particle properties of an [[electron]], with none of the additional complexity.
 
-The difference between a neutrino and an anti-neutrino is purely to do with the spin, so spin is also an essential property of neutrino identity, and thus must be treated properly.
+In particular, it has [[spin]] 1/2, and thus represents the simplest example for how that works. The difference between a neutrino and an anti-neutrino is purely to do with the spin, so spin is also an essential property of neutrino identity, and thus must be treated properly. The chiral [[Weyl]] wave equation is required to represent this intrinsic spin property, which makes this (and not the [[Dirac]]) equation the core description of the [[lepton]] particles within the [[weak#electroweak]] framework.
 
 Critically, although the neutrino was originally thought to have no rest mass and thus always travel at the speed of light, it is now clear that it does have a very small rest mass. This also means that the speed translates into kinetic energy, as shown in this [wikipedia page](https://en.wikipedia.org/wiki/Measurements_of_neutrino_speed). As shown in that graph, the small rest mass means that even relatively small energy levels result in speeds close to the speed of light.
 
-The most fundamental phenomenon that defines the relationship between the [[electron]] and the neutrino in the [[Spinfield Model]] is **muon decay**: a muon typically decays into an electron, an electron antineutrino, and a muon neutrino. This occurs via the [[weak]] force in the standard model.
+The most fundamental phenomenon that defines the relationship between the [[electron]] and the neutrino is **muon decay**: a muon (heavy [[generation]] of an electron) typically decays into an electron, an electron antineutrino, and a muon neutrino. This occurs via the [[weak]] force in the Standard Model.
 
-Phenomenologically, it suggests that the extra mass associated with a muon versus an electron is tied up with some kind of additional spin oscillation energy in the muon, that is then emitted via the neutrinos. The muon is approximately 207 times as heavy as the electron, while the tau is 17 times heavier than the muon.
+Phenomenologically, this suggests that the extra mass associated with a muon versus an electron is tied up with some kind of additional spin oscillation energy in the muon, that is then emitted via the neutrinos. The muon is approximately 207 times as heavy as the electron, while the tau is 17 times heavier than the muon.
 
 The tau is heavy enough to decay into _hadrons_ in addition to _leptons_, but the ultimate cascade via the hadron route goes through a _pion_ which then decays into a muon. A pion is modeled as a combination of up and down quarks, which thus establishes the interchangability between all of these basic particle types.
 
@@ -22,7 +22,8 @@ From wikipedia:
 > So far, despite extensive and continuing searches for exceptions, in all observed leptonic processes there has never been any change in total lepton number; for example, if the total lepton number is zero in the initial state, then the final state has only matched lepton and anti-lepton pairs: electron neutrinos appear in the final state together with only positrons (anti-electrons) or electron antineutrinos, and electron antineutrinos with electrons or electron neutrinos.[12][13]
 
 
-https://en.wikipedia.org/wiki/Accelerator_neutrino
+[wikipedia Accelerator neutrino](https://en.wikipedia.org/wiki/Accelerator_neutrino)
+
 > To some extent, it is possible to control the direction and energy of neutrinos by properly selecting energy of the primary proton beam and focusing secondary pions and kaons, because the neutrinos take over part of their kinetic energy and move in a direction close to the parent particles.
 
 
