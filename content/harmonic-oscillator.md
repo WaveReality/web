@@ -1,13 +1,11 @@
 +++
-Categories = ["Spinfield Model"]
+Categories = ["Standard Model"]
 bibfile = "mechphys.json"
 +++
 
-The **simple harmonic oscillator** (SHO) captures the core oscillatory behavior of [[wave]]s, without any spatial dimensions to bother with. It can be seen as the 0-dimensional version of a wave, where the force that drives the oscillation comes not from neighbors, but from the position (height) of the wave itself.
+The **simple harmonic oscillator** (SHO) captures the core oscillatory behavior of [[wave]]s, without any spatial dimensions to bother with. It can be seen as the 0-dimensional version of a wave, where the force that drives the oscillation comes not from neighbors, but from the position (height) of the wave itself. 
 
-As such, it provides a potentially interesting role in the mechanics of [[stochastic motion]] because it can be entirely localized to one discrete grid cell within the [[cellular automaton]] framework. Thus, a particle in this view can be considered to be a simple harmonic oscillator that periodically jumps between cells. 
-
-This discrete jumping creates many potential issues in interaction with a radiative wave field, which is solved in the [[Spinfield Model]] by propagating the discrete particle properties to surrounding locations. The version with [[#complex numbers]] developed below is more robust and appropriate for this framework for a number of reasons, but we start with the second-order SHO which is consistent with the second-order [[wave]] equations, and provides a clear macroscopic physical model.
+There is also a simple version using [[#complex numbers]], which provides a clean way of understanding the difference between the second-order wave equation versus first-order [[complex waves]].
 
 {id="figure_sho" style="height:20em"}
 ![The mass-on-a-spring physical model of a simple harmonic oscillator, where the deviation of the mass from the neutral point of the spring creates a restoring force that drives the mass back toward the neutral point. Figure by [Svjo on wikimedia](https://commons.wikimedia.org/wiki/File:Mass-spring-system.png)](media/fig_harmonic_oscillator_mass_spring.png)
@@ -274,8 +272,6 @@ Thus, each complex value rotates into the other in proportion to $\omega$, which
 
 As is the case for all the other first-order complex wave functions, if you perform a discrete stepwise integration of these two functions, using the current values of _a_ and _b_ to compute the next values, the result is numerically unstable. However, unlike the [[wave]] functions, this oscillator is entirely local to one [[cellular automaton]] (CA) cell, so it is possible to update the _a_ and _b_ values in sequential order, using the updated value for _a_ to compute _b_, or vice-versa. By contrast, the wave functions require integrating over neighbors, so it is not possible to get the current state values in a discrete-time parallel update CA model.
 
-This subtle twist of numerical integration ultimately gives rise to the _CP violation_ that is otherwise so mysteriously present in the heart of fundamental physics. For example, the [[neutrino]] and its antimatter partner differ in the helicity of their [[spin]].
-
 The following simple simulation shows the behavior of the complex-valued SHO, using the $\omega = \frac{c}{\sqrt{m}}$ parameters for angular frequency.
 
 {id="sim_csho" title="Complex-valued simple harmonic oscillator" collapsed="true"}
@@ -536,8 +532,6 @@ addSlider(&phaseStr, &phase, -180, 180)
 addSlider(&massStr, &mass, 0.1, 1.0)
 addSlider(&hbarStr, &hbar, 0.1, 1.0)
 ```
-
-See the [[Spinfield Model]] for the application of all of these properties of the complex-valued harmonic oscillator to model particles.
 
 ## Quantum harmonic oscillator
 

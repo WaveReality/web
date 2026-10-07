@@ -53,7 +53,7 @@ $$
 
 From the perspective of the second-order wave equation ([[#eq_wave]]), the Schrödinger equation is a bit strange, because the spatial factor on the right-hand side is a _second-order_ spatial derivative (also written as $\nabla^2 \phi$ where $\nabla^2$ is the Laplacian).
 
-The critical advantage of this second-order spatial derivative is that _it doesn't care about direction:_ a spatial disturbance in any direction surrounding a given point in the wave state will give rise to a change in that wave state, proportional to the magnitude of the disturbance. This means that this equation supports waves traveling in any direction, just like the standard second-order wave equation, because that directional property depends entirely on the nature of the spatial derivative factor, which is shared with the second-order wave equation.
+The critical advantage of this second-order spatial derivative is that _it doesn't care about direction:_ a spatial disturbance in any direction surrounding a given point in the wave state will give rise to a change in that wave state, proportional to the magnitude of the disturbance. This means that this equation supports waves traveling in any direction, just like the standard second-order wave equation, because that directional property depends entirely on the nature of the spatial derivative factor.
 
 However, the coupling of this second-order spatial factor directly to the first-order temporal derivative in the Schrödinger equation results in an extremely high level of dispersion as shown in [[#figure_dispersion]]. By contrast, the [[Klein-Gordon]] and [[Dirac]] equations, because they are second-order, avoid a significant amount of this dispersion, but nevertheless still inevitably exhibit some dispersion because of the omnidirectional nature of the Laplacian.
 
@@ -75,7 +75,7 @@ Clearly, this fixed directionality is a significant limitation, but it provides 
 When coupled via the [[Pauli matrices]] (the same ones that drive spin in the [[Dirac]] equation under the influence of the magnetic field), all three spatial directions of the first-order partial derivative enter into each update equation. For example, here is the update equation for the 1a component of the right-handed case:
 
 $$
-\frac{\partial \phi_{1a}}{\partial t} = 2 c \left( \frac{\partial \phi_{1a}}{\partial z} + \frac{\partial \phi_{2a}}{\partial x} + \frac{\partial \phi_{2b}}{\partial y} \right)
+\frac{\partial \phi_{1a}}{\partial t} = - c \left( \frac{\partial \phi_{1a}}{\partial z} + \frac{\partial \phi_{2a}}{\partial x} + \frac{\partial \phi_{2b}}{\partial y} \right)
 $$
 
 Thus, because each spatial gradient is present, the wave can then propagate along any weighted combination of these three spatial axes, meaning that the wave can move in any arbitrary direction. However, the pattern of rotation among the complex-valued elements has a characteristic ordering relative to the direction of wave travel, which is what defines the helicity of the equation.
@@ -85,4 +85,8 @@ Furthermore, each separate helicity in the Weyl system naturally propagates at t
 Thus, the Weyl system also provides a novel way for mass to enter into the wave equation, distinct from that present in the [[Schrodinger]] or [[Klein-Gordon]] frameworks. And the fact that it naturally gives rise to a massless case with a fixed helicity essentially predicts the existence of the neutrino!
 
 There is, however, the important caveat that, in fact, neutrinos do have mass, which remains to be resolved with the rest of the Standard Model and the electroweak framework.
+
+[[#figure_dispersion]] shows that the Weyl equation for an electron, coupling the left and right helicities with the electron mass, exhibits the lowest levels of dispersion, consistent with the use of the directional first-order gradient instead of the omnidirectional Laplacian.
+
+In summary, you hopefully now have a deeper understanding of the dynamics and tradeoffs between these different forms of wave equations. Their different dispersion properties certainly raise questions about the use of the highly-dispersive Schrödinger equation in comparison to the Weyl equation.
 

@@ -23,7 +23,7 @@ wavesim.Embed(b,
 
 This simulation runs the [[Weyl]] equation in 3D.
 
-Overall, you can observe that it is rather "jittery" compared to the smooth nature of the second-order [[Dirac]] equation, and prone to generating high-frequency noisy modes. This is because of its first-order nature, despite using appropriate numerical integration techniques to deal with the potential issues.
+Overall, you can observe that it is rather "jittery" compared to the smooth nature of the second-order [[Dirac]] equation, and prone to generating high-frequency noisy modes. This is because of its first-order nature, despite using appropriate numerical integration techniques to deal with the potential issues. This is related to the physical phenomenon of [[zitterbewegung]].
 
 The [[#sim_weyl:Config]] initial configurations are as follows:
 

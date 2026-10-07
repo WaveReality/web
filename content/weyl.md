@@ -20,6 +20,8 @@ See [[complex waves]] for this and further important analyses of the implication
 
 Interestingly, Dirac derived his first-order wave equation directly from the second-order KG equation, by effectively taking the square root. Any time you take a square root, there are 2 solutions of different signs, and this is where the doubling of wave state variables comes from.
 
+Furthermore, the first-order Dirac equation for the [[electron]] can be seen as a coupling between the left and right helicity Weyl equations, with the mass factor providing the coupling constant. This provides a distinct way for mass to emerge within a wave equation relative to the second-order KG equation, and is related to the [[zitterbewegung]] phenomenon.
+
 In effect, the spinning that happens in the Weyl equations represents a rotation through the two coupled complex wave components:
 
 {id="eq_two-component" title="two-component complex wave state"}
@@ -31,7 +33,7 @@ This rotation happens at the speed of light, as the wave itself also propagates 
 
 The first-order, right-hand helicity of the Weyl equation in [[four-vector]] notation looks like this:
 
-{id="eq_weyl-first" title="first-order right-handed Weyl equation"}
+{id="eq_weyl-right" title="first-order right-handed Weyl equation"}
 $$
 \sigma^\mu \partial_\mu \psi = 0
 $$
@@ -46,7 +48,7 @@ i & 0 \end{bmatrix},  \begin{bmatrix} 1 & 0 \\
 0 & -1 \end{bmatrix} \right)
 $$
 
-With these, [[#eq_weyl-first]] expands to the following:
+With these, [[#eq_weyl-right]] expands to the following:
 
 $$
 \frac{\partial \psi}{\partial t} = -c \left( \sigma_x \frac{\partial \psi}{\partial x} + \sigma_y \frac{\partial \psi}{\partial y} + \sigma_z \frac{\partial \psi}{\partial z} \right)
@@ -70,7 +72,18 @@ $$
 \frac{\partial \phi_{2b}}{\partial t} = -c \left( \frac{\partial \phi_{1b}}{\partial x} + \frac{\partial \phi_{1a}}{\partial y} - \frac{\partial \phi_{2b}}{\partial z} \right)
 $$
 
-These spin matrices are in fact defined by the fact that applying them twice gets you back to where you started, which is what creates the alignment between the spinless second-order KG equation and the spinning first-order Dirac or Weyl equations ([[@Brown58]]; [[@Tonin59]]; [[@Marx67]]; [[@Marx70]]; [[@Case57]]; [[@Diaz-CruzLopezMeza-AldamaEtAl15]]; [[@KibblePolkinghorne58]]; [[@BarutMullen62]]; [[@BabinFigotin14]]; [[@Cardoso93]]; [[@Veblen33]]; [[@DreinerHaberMartin10]])
+The left-handed form of the Weyl equation uses the negative signed Pauli matrices, denoted $\bar{\sigma}$:
+
+{id="eq_weyl-left" title="left-handed Weyl equation"}
+$$
+\bar{\sigma}^\mu \partial_\mu \psi = 0
+$$
+
+which just causes everything to rotate in the opposite direction.
+
+## Relationship to second-order waves
+
+The Pauli spin matrices are defined by the fact that applying them twice gets you back to where you started, which is what creates the alignment between the spinless second-order KG equation and the spinning first-order Dirac or Weyl equations ([[@Brown58]]; [[@Tonin59]]; [[@Marx67]]; [[@Marx70]]; [[@Case57]]; [[@Diaz-CruzLopezMeza-AldamaEtAl15]]; [[@KibblePolkinghorne58]]; [[@BarutMullen62]]; [[@BabinFigotin14]]; [[@Cardoso93]]; [[@Veblen33]]; [[@DreinerHaberMartin10]])
 
 Interestingly, the second-order version of the Dirac equation only involves spin in the context of the coupling with the [[Maxwell]] EM field. The components themselves are not spinning into each other.
 
