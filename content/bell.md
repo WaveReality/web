@@ -3,6 +3,8 @@ Categories = ["Interpretations"]
 bibfile = "mechphys.json"
 +++
 
+<!--- TODO: quantum optics details for bell's tests on photons -- all the things you need to do to massage the thing into an actual superposition -->
+
 The definitive test of the [[non-locality]] of quantum physics is provided by a framework known as **Bell's inequality**, developed by [[@^Bell64]] (see [[@Bell04]]; [[@Bell66]]; [[@Bell81]] and [[@ClauserHorneShimonyEtAl69]]). The experimental tests of this logic have confirmed the quantum predictions, in ways that have also dealt with a number of possible loopholes in the logic ([[@AspectDalibardRoger82]]; [[@GiustinaVersteeghWengerowskyEtAl15]]; [[@HensenBernienDreauEtAl15]]; [[@ShalmMeyer-ScottChristensenEtAl15]]).
 
 {id="figure_bert" style="height:25em"}
@@ -135,7 +137,7 @@ The main question in this context is thus, how could Nature actually exhibit the
 
 ## The measurement observables
 
-TODO: this section needs further work to cleanup output from Claude!
+<!--- TODO: this section needs further work to cleanup output from Claude! -->
 
 Because you cannot directly observe the density matrix values shown above, actual experiments involve setting the parameters on the A and B detectors that each measure a spin component in the $x$–$z$ plane, at angles $\alpha$ and $\beta$. The outcome for A when set at an angle of $\alpha$ is:
 

@@ -16,5 +16,5 @@ All of the material was written by the main human author (Randall O'Reilly). Cla
 
 ## News
 
-* Oct, 2026: Version 1.0.0 released, with reasonable coverage of the Standard Model and Interpretations, and a sketch of the proposed Spinfield Model.
+* Oct, 2026: Version v0.9.0 released, with reasonable coverage of the Standard Model and Interpretations, and a sketch of the proposed Spinfield Model.
 

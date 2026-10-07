@@ -3,9 +3,6 @@ Categories = ["Standard Model"]
 bibfile = "mechphys.json"
 +++
 
-<!--- TODO: WaveC, Schrodinger, WaveCDir, Weyl logic. -->
-<!--- claude todo: try the idea of 2nd order complex wave?? -->
-
 The _second-order_ [[wave]] equation is the prototypical version of a wave, which corresponds to macroscopic water waves and other such familiar phenomena. The core dynamic in such waves is the continuous bidirectional conversion of energy between wrinkles in _space_ (potential energy) and movement through _time_ (kinetic energy). However, standard quantum mechanics is based on [[Schrodinger]] waves, which obey a _first-order_ equation that uses the rotational properties of [[complex number]]s instead of the second-order integration of kinetic-energy to accomplish the core oscillatory property of waves.
 
 The ability to capture oscillations through either a second-order kinetic system, or a first-order complex-number system, plays out in various ways throughout the larger space of quantum wave equations. Here, we develop a systematic understanding of this space, and the relative tradeoffs between these different wave functions.

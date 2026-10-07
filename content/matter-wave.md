@@ -26,6 +26,5 @@ In contrast, the rest of physics likes Schrödinger's equation because it is mor
 
 Thus, the overall difference is one of "mechanism" vs. "analysis," where standard physics is strongly weighted toward analysis (as a [[calculational tool]]).
 
-
-TODO: [[@DemiralpRabitz97]] -- dispersion-free wave packets!
+<!--- TODO: [[@DemiralpRabitz97]] -- dispersion-free wave packets! -->
 

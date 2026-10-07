@@ -11,9 +11,9 @@ bibfile = "mechphys.json"
 
 The [[Dirac]] equation introduced Dirac _spinors_ as a mathematical formulation of spin for describing the spin 1/2 property of fermions. Interestingly, in the second-order version of the Dirac equation, these spinors only affect the interaction between the particle wave and the EM wave, with no effect on the particle state values themselves, which update independently.
 
-TODO: figure out how this works for the first-order Dirac equation!
+<!--- TODO: figure out how this works for the first-order Dirac equation! -->
 
-TODO: what does spin up vs. spin down look like in terms of Dirac states? and their superposition? Really have no idea what the direction factor corresponds to -- must be some kind of phase relationship among vars?
+<!--- TODO: what does spin up vs. spin down look like in terms of Dirac states? and their superposition? Really have no idea what the direction factor corresponds to -- must be some kind of phase relationship among vars? -->
 
 In general, the spin of something like an electron is thought to be a strongly [[contextual]] property, meaning that it is easily shaped through interactions with the environment, and is not something that is otherwise strongly constrained by the intrinsic properties of the particle (except for neutrinos).
 

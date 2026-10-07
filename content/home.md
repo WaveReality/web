@@ -4,10 +4,6 @@ Title = ""
 bibfile = "mechphys.json"
 +++
 
-<!--- TODO: -->
-<!--- * complex-waves: finish -->
-<!--- quantum optics details for bell's tests on photons -- all the things you need to do to massage the thing into an actual superposition -->
-
 <img src="media/icon.png" style="width:128px;height:128px;align-self:center">
 
 **Wave reality** is dedicated to exploring the idea that the **quantum wave function** is _real_, and not just a description of our state of [[epistemic]] ignorance. The reality of the wave function is strongly indicated by the classic [[double-slit]] experiment results, where some kind of spatially-distributed wave-like interference phenomenon seems to be influencing the trajectories of discrete particles. In addition, there are increasingly strong theoretical and empirical attempts to show that a purely epistemic account contradicts quantum theory ([[@PuseyBarrettRudolph12]], [[@RingbauerDuffusBranciardEtAl15]]).

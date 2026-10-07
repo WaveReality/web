@@ -274,7 +274,9 @@ $$
 \mathcal{L}_{CC} = \frac{g}{\sqrt2}\left[\bar\nu_L\gamma^\mu e_L\,W^+_\mu + \text{h.c.}\right]
 $$
 
-Look at what that current *is*: it turns an electron into a neutrino. It is **off-diagonal in particle species**. TODO: this is what we need to unpack!
+Look at what that current *is*: it turns an electron into a neutrino. It is **off-diagonal in particle species**. 
+
+<!--- TODO: this is what we need to unpack! -->
 
 This means that there is no charged W current for a single electron:
 $$
@@ -310,7 +312,7 @@ In quantum language: $\langle\Psi|\,J^{+\mu}\,|\Psi\rangle \ne 0$ requires $|\Ps
 
 Here's the crux, and it's not about neutrino scarcity at all. $|e\rangle$ has electric charge $-1$ and $|\nu\rangle$ has charge $0$. A coherent superposition of those is a superposition of **different total electric charge**, which charge superselection forbids.
 
-**TODO: do more research on charge superselection** -- this seems like a very powerful, far-reaching principle!
+<!--- **TODO: do more research on charge superselection** -- this seems like a very powerful, far-reaching principle! -->
 
 The physical mechanism is worth stating, because it makes the rule feel less like an axiom: the long-range Coulomb field acts as a permanent measuring apparatus. The electric field out at infinity already "knows" whether you have an electron or a neutrino, so any such superposition decoheres immediately and completely. You cannot prepare one, anywhere, ever.
 
