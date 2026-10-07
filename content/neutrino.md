@@ -9,6 +9,8 @@ In particular, it has [[spin]] 1/2, and thus represents the simplest example for
 
 Critically, although the neutrino was originally thought to have no rest mass and thus always travel at the speed of light, it is now clear that it does have a very small rest mass. This also means that the speed translates into kinetic energy, as shown in this [wikipedia page](https://en.wikipedia.org/wiki/Measurements_of_neutrino_speed). As shown in that graph, the small rest mass means that even relatively small energy levels result in speeds close to the speed of light.
 
+The Standard Model, and the [[Weyl]] equations, do not properly capture the massive nature of the neutrino, representing a major, currently unsolved issue with this framework.
+
 The most fundamental phenomenon that defines the relationship between the [[electron]] and the neutrino is **muon decay**: a muon (heavy [[generation]] of an electron) typically decays into an electron, an electron antineutrino, and a muon neutrino. This occurs via the [[weak]] force in the Standard Model.
 
 Phenomenologically, this suggests that the extra mass associated with a muon versus an electron is tied up with some kind of additional spin oscillation energy in the muon, that is then emitted via the neutrinos. The muon is approximately 207 times as heavy as the electron, while the tau is 17 times heavier than the muon.

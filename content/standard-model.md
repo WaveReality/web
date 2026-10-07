@@ -55,7 +55,9 @@ The following sequence of pages develops an understanding of the wave equations 
 
 * Managing these infinite sums requires a [[renormalization]] procedure, where the infinities are swept away by using the empirically-observed _dressed_ values of particle masses and charges, and effectively working backward from these known values to estimate the _bare_ parameters that show up in the original wave equations. The seemingly unprincipled, empirical nature of the renormalization process has caused considerable concern for many physicists, but others have embraced it as an important constraint that evidently works to describe Nature.
 
-Thus, overall, the Standard Model represents a powerful mathematical framework that is at once spectacularly successful for computing highly accurate predictions for the outcomes of all known quantum physics experiments, and yet remarkably "kludgy" in some ways. Much of the difficulty is associated with managing the discretized accounting required by the field-theory framework and the consequent need for the renormalization procedure. But there are also many aspects of the model that seem rather strange and inexplicable, especially in the context of the [[weak]] interactions with their parity violations and spontaneous symmetry breaking, and the nature of the [[generation]]s of masses. This situation leaves many scientists dissatisfied, despite the obvious success of the framework. All of the attempts to go beyond the Standard Model, e.g., by doubling-down on the principle of symmetry ("supersymmetry") have been unsuccessful to date.
+Thus, overall, the Standard Model represents a powerful mathematical framework that is at once spectacularly successful for computing highly accurate predictions for the outcomes of all known quantum physics experiments, and yet remarkably "kludgy" in some ways. Much of the difficulty is associated with managing the discretized accounting required by the field-theory framework and the consequent need for the renormalization procedure.
+
+But there are also many aspects of the model that seem rather strange and inexplicable, especially in the context of the [[weak]] interactions with their parity violations and spontaneous symmetry breaking, and the nature of the [[generation]]s of masses. Furthermore, it is now known that [[neutrino]]s have mass, which is not captured in the standard model. This situation leaves many scientists dissatisfied, despite the obvious success of the framework. All of the attempts to go beyond the Standard Model, e.g., by doubling-down on the principle of symmetry ("supersymmetry") have been unsuccessful to date.
 
 ## Components
 
@@ -97,7 +99,9 @@ Note: the following math was greatly facilitated by this [latex source](https://
 
 ### Leptons, electroweak
 
-The electroweak model is derived in terms of a $B_\mu$ force field, known as a _weak hypercharge_ gauge field, that functions as the gauge boson vector potential, entirely analogous to the electromagnetic potential $A^\mu$ from [[Maxwell]]. This is supplemented with a _weak isospin_ field $\mathbf{W}_\mu$ that has 3 components, which will end up interacting with the Higgs field to gain mass. The actual post-symmetry-breaking W and Z weak fields, and the observed A electromagnetic field, are a mixture of the original B and W factors.
+The [[weak#electroweak]] model is derived in terms of a $B_\mu$ force field, known as a _weak hypercharge_ gauge field, that functions as the gauge boson vector potential, entirely analogous to the electromagnetic potential $A^\mu$ from [[Maxwell]]. This is supplemented with a _weak isospin_ field $\mathbf{W}_\mu$ that has 3 more copies of a gauge vector potential, which will end up interacting with the [[Higgs]] field to gain mass. The actual post-symmetry-breaking $W^\pm$ and $Z^0$ weak fields, and the observed $A^\mu$ electromagnetic potential field, are a mixture of the original $B_\mu$ and $\mathbf{W}_\mu$ fields.
+
+Note: see [[weak#electroweak]] for a much more in-depth treatment of this sector -- the following is a "textbook" summary just for reference.
 
 {id="eq_forces" title="force fields: EM, weak"}
 $$
@@ -112,13 +116,13 @@ $$
 
 essentially provide a more complicated way of writing the wave equation operating on the four-potential $B_\mu$, exactly as in Maxwell's equations. 
 
-The expression for the $\mathbf{W}_{\mu\nu}$ is more complex, involving a 2x2 traceless Hermitian matrix..??
+The expression for the $\mathbf{W}_{\mu\nu}$ is more complex, involving a 2x2 traceless Hermitian matrix:
 
 $$
 \mathbf{W}_{\mu\nu} = \partial_\mu\mathbf{W}_\nu - \partial_\nu\mathbf{W}_\mu + ig_2 \frac{\left(\mathbf{W}_\mu\mathbf{W}_\nu - \mathbf{W}_\nu\mathbf{W}_\mu\right)}{2}
 $$  
 
-Then we have the lepton particle dynamical terms, which are implicitly extended to include all three [[generation]]s (electron, muon, tau), for the charged particle ($e$ = electron) and the uncharged neutrino, $\nu$. The $L$ and $R$ suffixes indicate the left and right chiral spin orientations -- there is no right spin version of the [[neutrino]], so it is only specified for the electron.
+Then we have the lepton particle dynamical terms, which are implicitly extended to include all three [[generation]]s (electron, muon, tau), for the charged particle ($e$ = electron) and the uncharged neutrino, $\nu$. The $L$ and $R$ suffixes indicate the left and right chiral spin orientations -- there is no right helical version of the [[neutrino]], so it is only specified for the electron.
 
 {id="eq_lepton" title="lepton dynamical terms"}
 $$

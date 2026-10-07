@@ -232,6 +232,8 @@
 
 <p id="GeierNazaryanZaklamaEtAl25">Geier, M., Nazaryan, K., Zaklama, T., & Fu, L. (2025). Is attention all you need to solve the correlated electron problem? <i>Physical Review B, 112</i>, 045119. <a href="http://arxiv.org/abs/2502.05383">http://arxiv.org/abs/2502.05383</a><a href="http://doi.org/10.1103/qxc3-bkc7"> http://doi.org/10.1103/qxc3-bkc7</a></p>
 
+<p id="Geroch68">Geroch, R. (1968). What is a singularity in general relativity? <i>Annals of Physics, 48</i>, 526–540. <a href="https://www.sciencedirect.com/science/article/pii/0003491668901449">https://www.sciencedirect.com/science/article/pii/0003491668901449</a><a href="http://doi.org/10.1016/0003-4916(68)90144-9"> http://doi.org/10.1016/0003-4916(68)90144-9</a></p>
+
 <p id="GerritsmaKirchmairZahringerEtAl10">Gerritsma, R., Kirchmair, G., Zähringer, F., Solano, E., Blatt, R., & Roos, C.F. (2010). Quantum simulation of the Dirac equation. <i>Nature, 463</i>, 68–71. <a href="https://www.nature.com/articles/nature08688">https://www.nature.com/articles/nature08688</a><a href="http://doi.org/10.1038/nature08688"> http://doi.org/10.1038/nature08688</a></p>
 
 <p id="GerryKnight05">Gerry, C.C., & Knight, P.L. (2005). <i>Introductory Quantum Optics. </i> Cambridge University Press. </p>
@@ -273,6 +275,8 @@
 <p id="HarriganSpekkens10">Harrigan, N., & Spekkens, R.W. (2010). Einstein, Incompleteness, and the Epistemic View of Quantum States. <i>Foundations of Physics, 40</i>, 125–157. <a href="https://doi.org/10.1007/s10701-009-9347-0">https://doi.org/10.1007/s10701-009-9347-0</a><a href="http://doi.org/10.1007/s10701-009-9347-0"> http://doi.org/10.1007/s10701-009-9347-0</a></p>
 
 <p id="Hegerfeldt98">Hegerfeldt, G. (1998). Instantaneous spreading and Einstein causality in quantum theory. <i>Annalen der Physik, 510</i>, 716–725. <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.199851007-817">https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.199851007-817</a><a href="http://doi.org/10.1002/andp.199851007-817"> http://doi.org/10.1002/andp.199851007-817</a></p>
+
+<p id="HehlvonderHeydeKerlickEtAl76">Hehl, F.W., Heyde, P., Kerlick, G.D., & Nester, J.M. (1976). General relativity with spin and torsion: Foundations and prospects. <i>Reviews of Modern Physics, 48</i>, 393–416. <a href="https://link.aps.org/doi/10.1103/RevModPhys.48.393">https://link.aps.org/doi/10.1103/RevModPhys.48.393</a><a href="http://doi.org/10.1103/RevModPhys.48.393"> http://doi.org/10.1103/RevModPhys.48.393</a></p>
 
 <p id="HensenBernienDreauEtAl15">Hensen, B., Bernien, H., Dréau, A.E., Reiserer, A., Kalb, N., Blok, M.S., Ruitenberg, J., Vermeulen, R.F.L., Schouten, R.N., Abellán, C., Amaya, W., Pruneri, V., Mitchell, M.W., Markham, M., Twitchen, D.J., Elkouss, D., Wehner, S., Taminiau, T.H., & Hanson, R. (2015). Loophole-free Bell inequality violation using electron spins separated by 1.3 kilometres. <i>Nature, 526</i>, 682–686. <a href="https://www.nature.com/articles/nature15759">https://www.nature.com/articles/nature15759</a><a href="http://doi.org/10.1038/nature15759"> http://doi.org/10.1038/nature15759</a></p>
 
@@ -339,6 +343,8 @@
 <p id="KochenSpecker90">Kochen, S., & Specker, E.P. (1990). The Problem of Hidden Variables in Quantum Mechanics. In G. Jäger, H. Läuchli, B. Scarpellini, & V. Strassen (Eds.), <i>Ernst Specker Selecta</i> (pp. 235–263). Birkhäuser. <a href="https://doi.org/10.1007/978-3-0348-9259-9_21">https://doi.org/10.1007/978-3-0348-9259-9_21</a><a href="http://doi.org/10.1007/978-3-0348-9259-9_21"> http://doi.org/10.1007/978-3-0348-9259-9_21</a></p>
 
 <p id="KocsisBravermanRavetsEtAl11">Kocsis, S., Braverman, B., Ravets, S., Stevens, M.J., Mirin, R.P., Shalm, L.K., & Steinberg, A.M. (2011). Observing the Average Trajectories of Single Photons in a Two-Slit Interferometer. <i>Science, 332</i>, 1170–1173. <a href="https://www.science.org/doi/full/10.1126/science.1202218">https://www.science.org/doi/full/10.1126/science.1202218</a><a href="http://doi.org/10.1126/science.1202218"> http://doi.org/10.1126/science.1202218</a></p>
+
+<p id="Kopczynski72">Kopczyński, W. (1972). A non-singular universe with torsion. <i>Physics Letters A, 39</i>, 219–220. <a href="https://www.sciencedirect.com/science/article/pii/0375960172907141">https://www.sciencedirect.com/science/article/pii/0375960172907141</a><a href="http://doi.org/10.1016/0375-9601(72)90714-1"> http://doi.org/10.1016/0375-9601(72)90714-1</a></p>
 
 <p id="Kragh84">Kragh, H. (1984). Equation with the many fathers. The Klein–Gordon equation in 1926. <i>American Journal of Physics, 52</i>, 1024–1033. <a href="https://doi.org/10.1119/1.13782">https://doi.org/10.1119/1.13782</a><a href="http://doi.org/10.1119/1.13782"> http://doi.org/10.1119/1.13782</a></p>
 
@@ -435,6 +441,12 @@
 <p id="Poniatowski19">Poniatowski, N.R. (2019). Superconductivity, Broken Gauge Symmetry, and the Higgs Mechanism. <i>American Journal of Physics, 87</i>, 436–443. <a href="http://arxiv.org/abs/1905.07786">http://arxiv.org/abs/1905.07786</a><a href="http://doi.org/10.1119/1.5093291"> http://doi.org/10.1119/1.5093291</a></p>
 
 <p id="Popescu14">Popescu, S. (2014). Nonlocality beyond quantum mechanics. <i>Nature Physics, 10</i>, 264–270. <a href="https://www.nature.com/articles/nphys2916">https://www.nature.com/articles/nphys2916</a><a href="http://doi.org/10.1038/nphys2916"> http://doi.org/10.1038/nphys2916</a></p>
+
+<p id="Poplawski10">Popławski, N.J. (2010). Nonsingular Dirac particles in spacetime with torsion. <i>Physics Letters B, 690</i>, 73–77. <a href="https://www.sciencedirect.com/science/article/pii/S0370269310005691">https://www.sciencedirect.com/science/article/pii/S0370269310005691</a><a href="http://doi.org/10.1016/j.physletb.2010.04.073"> http://doi.org/10.1016/j.physletb.2010.04.073</a></p>
+
+<p id="Poplawski12">Popławski, N. (2012). Nonsingular, big-bounce cosmology from spinor-torsion coupling. <i>Physical Review D, 85</i>, 107502. <a href="https://link.aps.org/doi/10.1103/PhysRevD.85.107502">https://link.aps.org/doi/10.1103/PhysRevD.85.107502</a><a href="http://doi.org/10.1103/PhysRevD.85.107502"> http://doi.org/10.1103/PhysRevD.85.107502</a></p>
+
+<p id="Poplawski16">Popławski, N. (2016). UNIVERSE IN A BLACK HOLE IN EINSTEIN–CARTAN GRAVITY. <i>The Astrophysical Journal, 832</i>, 96. <a href="https://dx.doi.org/10.3847/0004-637X/832/2/96">https://dx.doi.org/10.3847/0004-637X/832/2/96</a><a href="http://doi.org/10.3847/0004-637X/832/2/96"> http://doi.org/10.3847/0004-637X/832/2/96</a></p>
 
 <p id="PoulinQarrySommaEtAl11">Poulin, D., Qarry, A., Somma, R.D., & Verstraete, F. (2011). Quantum simulation of time-dependent Hamiltonians and the convenient illusion of Hilbert space. <i>Physical Review Letters, 106</i>, 170501. <a href="http://arxiv.org/abs/1102.1360">http://arxiv.org/abs/1102.1360</a><a href="http://doi.org/10.1103/PhysRevLett.106.170501"> http://doi.org/10.1103/PhysRevLett.106.170501</a></p>
 

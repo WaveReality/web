@@ -4,7 +4,7 @@ Categories = ["Standard Model"]
 bibfile = "mechphys.json"
 +++
 
-The Weyl equations, developed by Hermann Weyl as a simplification of the [[Dirac]] wave function for a spin 1/2 particle ([[fermion]]) without any rest mass, provide a possible model of the [[neutrino]] if it were massless (which it does not appear to be). Because the neutrino mass is very small, it turns out that the Weyl equations nevertheless provide a reasonable approximation.
+The Weyl equations, developed by Hermann Weyl as a simplification of the [[Dirac]] wave function for a spin 1/2 particle ([[fermion]]) without any rest mass, provide a possible model of the [[neutrino]] if it were massless (which it does not appear to be). Because the neutrino mass is very small, it turns out that the Weyl equations nevertheless provide a reasonable approximation, but this remains a major unsolved problem with the current [[Standard Model]].
 
 Furthermore, the Weyl equations are having a bit of a recent comeback in the [[field theory]] framework for high-energy situations, where the rest mass is a relatively small portion of the total energy. The simpler two-component nature of the Weyl equations (versus the 4 required for the first-order Dirac equation) turns out to be advantageous in simplifying many important computations, forming the basis for the _spinor helicity formalism_ ([[@ElvangHuang14]]).
 
