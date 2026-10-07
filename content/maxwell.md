@@ -12,7 +12,7 @@ Although many people regard the vector fields as the primary physical reality un
 
 There are two electromagnetic potentials, the **electrical scalar potential**, which is variously written as $\Phi$ (capital Greek "Phi") or $V$ or $A_0$, and the **magnetic vector potential**, typically written as: $\vec{A} = (A_x, A_y, A_z)$. Most readers should be familiar with the notion of the electrical potential $V$, in terms of the voltage of a battery or an electrical outlet --- therefore, we'll focus on it first. Then we'll cover the more difficult vector potential, which underlies the magnetic field. After exploring each of these and obtaining a solid understanding of their behavior, we relate these potential wave equations back to the original Maxwell equations, and cover various important issues with our potential-based formulation of EM.
 
-What should not get lost in all this discussion is the bare amazing fact that all of EM can be captured in the simple second-order wave equation (with appropriate source terms from electrical charge and current): this is the _only_ equation we need to simulate the propagation of the EM fields over space and time. This wave equation naturally produces the **inverse square law** of the electrical force, and it does so through strictly local wave propagation mechanisms, avoiding the apparent action-at-a-distance that the calculational tool of the usual Coulomb version of this force law, where you literally compute the force as a function of the distance between two charges.
+What should not get lost in all this discussion is the bare amazing fact that all of EM can be captured in the simple second-order wave equation (with appropriate source terms from electrical charge and current): this is the _only_ equation we need to simulate the propagation of the EM fields over space and time. This wave equation naturally produces the **inverse square law** of the electrical force, and it does so through strictly local wave propagation mechanisms, avoiding the apparent action-at-a-distance of the calculational tool of the usual Coulomb version of this force law, where you literally compute the force as a function of the distance between two charges.
 
 Furthermore, the wave equation provides the framework for many aspects of [[special relativity]], such as the constant speed of light in a [[vacuum]]. The [[four-vector]] space-time notation establishes a deep connection between the way that space and time are interconnected in the wave equation, and in special relativity. This notation enables us to know immediately whether something is **manifestly covariant**, which means it is obviously compatible with the principles of special relativity (i.e., invariant with respect to the Lorentz transformation). See [[conservation]] for a broad overview.
 
@@ -20,10 +20,10 @@ As a sneak preview of where we end up, this is the four-vector version of all of
 
 {id="eq_four-potential-sneak" title="four-potential form of Maxwell's equations"}
 $$
-\partial_\mu \partial^\mu A^\mu = k^\mu J^\mu
+\partial_\nu \partial^\nu A^\mu = k J^\mu
 $$
 
-where $k^\mu$ are constant factors representing the properties of "free space" (i.e., the vacuum, or [[aether]] in Maxwell's conception), and $J^\mu$ is the four-current that includes charge and magnetic field components. The expression on the left-hand side is a very compact way of writing the standard wave equation, and the right-hand side represents the driving sources of the wave.
+where $k$ is a constant factor representing the properties of "free space" (i.e., the vacuum, or [[aether]] in Maxwell's conception), and $J^\mu$ is the four-current that includes charge and current components. The expression on the left-hand side is a very compact way of writing the standard wave equation, and the right-hand side represents the driving sources of the wave.
 
 The purely electrical component is the first component in the four-vector, while the magnetic components are the remaining three. This is a profound feature of all of physics, central to special relativity (i.e., the Minkowski time-space coordinates), where there is a single time-like factor and three space-like factors. In the wave equation in 3D, this time-like factor represents the _kinetic energy_ (velocity = rate of change over _time_), while the space-like factors represent the potential energy (very much like a compressed spring, full of potential). The [[Lagrangian]] and [[Hamiltonian]] frameworks upon which the [[Standard Model]] is built characterize how these two forms of energy are constantly shifting into each other, which is exactly what happens in a wave.
 
@@ -48,7 +48,7 @@ To include the effects of **electrical charge**, we can extend the equation to i
 
 {id="eq_scalar-pot-chg" title="electrical scalar potential, with charge"}
 $$
-\frac{\partial^2 {A_0}}{\partial t^2} = c^2 \nabla^2 A_0 + \frac{1}{\epsilon_0} \rho
+\frac{\partial^2 {A_0}}{\partial t^2} = c^2 \nabla^2 A_0 + \frac{c^2}{\epsilon_0} \rho
 $$
 
 we'll explain the $\epsilon_0$ (Greek epsilon) constant, known as the **permittivity of free space**, in more detail later. For now, it is just a constant that determines the impact of charge on the electric field. Remembering that the left-hand-side of this wave equation represents the acceleration of the electrical potential, this equation just says that in addition to the local curvature of the field driving acceleration as in the standard wave equation, electrical charge will impart an additional acceleration. It should be clear how our discrete cellular-automaton based wave equation can be augmented to include this extra charge force --- you literally just add this term into the acceleration, which then increments the velocity, which then increments the electrical potential state value.
@@ -76,7 +76,7 @@ $$
 
 This wave equation fully characterizes the behavior of the electrical field: _we don't need anything else to numerically simulate it, and account for all known behavior of the field itself._ Thus, from a physical perspective, we can imagine that only this electrical potential field exists, and things like light waves are just wave propagation over this field.
 
-However, to understand how this electrical field influences charged "particles" such as the electron, we do need to extract the electric field vector, which represents the force exerted by the electric field. We can think of this physically as reflecting the force impact of the electrical potential field, derived entirely from the potential, and not as a separate physical entity. Electrical forces ensue from the slope of change (i.e., the **gradient**, as introduced in the waves chapter and pictured in ([[#figure_gradient]]) of the electrical scalar potential across space, plus the rate of change of the magnetic vector field, which we'll discuss later.
+However, to understand how this electrical field influences charged "particles" such as the electron, we do need to extract the electric field vector, which represents the force exerted by the electric field. We can think of this physically as reflecting the force impact of the electrical potential field, derived entirely from the potential, and not as a separate physical entity. Electrical forces ensue from the slope of change (i.e., the **gradient**, as introduced in the waves chapter and pictured in [[#figure_gradient]]) of the electrical scalar potential across space, plus the rate of change of the magnetic vector potential, which we'll discuss later.
 
 Loosely speaking, if you have more potential in one place than another, there is a pressure to flow "downhill" along this gradient to equalize the potential. Mathematically speaking, this can be expressed as:
 
@@ -110,24 +110,24 @@ You can now explore how charge drives the electrical potential, the $1/r$ fallof
 Magnetism is a bit more complex than the electrical field. Instead of a single scalar potential field, it requires a vector potential field, and each of the three components of this vector potential field propagates according to the basic second-order wave equation, with the driving source being the **current** vector $\vec{J}$:
 
 $$
-\frac{\partial^2 \vec{A}}{\partial t^2} = c^2 \nabla^2 \vec{A} + \mu_0 \vec{J}
+\frac{\partial^2 \vec{A}}{\partial t^2} = c^2 \nabla^2 \vec{A} + c^2 \mu_0 \vec{J}
 $$
 
 Interestingly, the wave equation operates separately on each term. Therefore, the wave equation operating on the vector $\vec{A}$ is the same thing as having three separate wave equations operating in parallel on each of the components of the vector:
 
 $$
-\frac{\partial^2 A_x}{\partial t^2} = c^2 \nabla^2 A_x + \mu_0 J_x
+\frac{\partial^2 A_x}{\partial t^2} = c^2 \nabla^2 A_x + c^2 \mu_0 J_x
 $$
 
 $$
-\frac{\partial^2 A_y}{\partial t^2} = c^2 \nabla^2 A_y + \mu_0 J_y
+\frac{\partial^2 A_y}{\partial t^2} = c^2 \nabla^2 A_y + c^2 \mu_0 J_y
 $$
 
 $$
-\frac{\partial^2 A_z}{\partial t^2} = c^2 \nabla^2 A_z + \mu_0 J_z
+\frac{\partial^2 A_z}{\partial t^2} = c^2 \nabla^2 A_z + c^2 \mu_0 J_z
 $$
 
-The computation of the vector potential terms $\vec{A}$ similarly just follow the standard wave equations with an additional source term from the current vector $\vec{J}$. For the $x$ component of $\vec{A}$, the acceleration term is:
+The computation of the vector potential terms $\vec{A}$ similarly just follows the standard wave equations with an additional source term from the current vector $\vec{J}$. For the $x$ component of $\vec{A}$, the acceleration term is:
 
 $$
 \ddot A_x^{t+1} = \frac{3}{13} \sum_{j \in N_{26}} k_j ({A_x}_j - {A_x}_i) + \mu_0 J_x
@@ -141,7 +141,7 @@ Intuitively, curl indicates the extent to which the arrows in a local region are
 
 {id="eq_curl" title="curl"}
 $$
-\vec{\nabla} \times \vec{B} \equiv \left( \left\[\frac{\partial {B_z}}{\partial {y}} - \frac{\partial {B_y}}{\partial {z}} \right], \left[\frac{\partial {B_x}}{\partial {z}} - \frac{\partial {B_z}}{\partial {x}} \right], \left[\frac{\partial {B_y}}{\partial {x}} - \frac{\partial {B_x}}{\partial {y}} \right] \right)
+\vec{\nabla} \times \vec{B} \equiv \left( \left[\frac{\partial {B_z}}{\partial {y}} - \frac{\partial {B_y}}{\partial {z}} \right], \left[\frac{\partial {B_x}}{\partial {z}} - \frac{\partial {B_z}}{\partial {x}} \right], \left[\frac{\partial {B_y}}{\partial {x}} - \frac{\partial {B_x}}{\partial {y}} \right] \right)
 $$
 
 So, the $x$ (first) component of the curl is the crossed spatial gradient of the other two dimensions ($z$ by $y$ and $y$ by $z$), and likewise for the remaining factors. Intuitively, each component measures how much the field is spinning around that dimension.
@@ -203,7 +203,7 @@ Given what you now know about divergence, you should realize that the second law
 
 This is the job of the fourth law (Ampère's law, with Maxwell's extension to it), which states that the source of the magnetic field is the charge current density $\vec{J}$, which we saw previously in the magnetic vector potential wave equation above.
 
-However, Ampère's law also includes the rate of change of the electrical field ($\frac{\partial \vec{E}}{\partial t}$). Thus, moving charge and moving electrical fields create magnetism, but they do so not in a divergence-like way, but rather in terms of the _curl_, $\vec{\nabla} \times$ (Figure~\ref{fig.curl}). Intuitively, curl indicates the extent to which the arrows in a local region are spinning around.
+However, Ampère's law also includes the rate of change of the electrical field ($\frac{\partial \vec{E}}{\partial t}$). Thus, moving charge and moving electrical fields create magnetism, but they do so not in a divergence-like way, but rather in terms of the _curl_, $\vec{\nabla} \times$. Intuitively, curl indicates the extent to which the arrows in a local region are spinning around.
 
 The third law (Faraday's law of induction) states that the electric field can also exhibit curl, in proportion to the rate of change in the magnetic field. These last two laws have a certain symmetry to them, and indeed if you write Maxwell's equations for the empty space where there is no charge at all (i.e., $\rho = 0$ and $\vec{J} = (0,0,0)$), you get a nicely symmetric set of equations:
 
@@ -248,18 +248,18 @@ $$
 
 This condition is known as the [[continuity]] equation, and it corresponds to a situation where the total quantity of something (in this case the total scalar and vector potential) is conserved over time, because the total change across all of these partial derivatives is zero.
 
-Recall also that we saw the divergence of the electric force is equal to the charge density in the first of Maxwell's equations:
+Recall also that we saw the divergence of the electric force is equal to the charge density in the first of Maxwell's equations. Taking the divergence of Ampère's law and using this gives the corresponding continuity equation for the sources (charge conservation):
 
-{id="eq_b-source" title="source of magnetic potential"}
+{id="eq_b-source" title="continuity of the sources"}
 $$
-\vec{\nabla} \cdot \vec{A} = \mu_0 \vec{J}
+\frac{\partial \rho}{\partial t} + \vec{\nabla} \cdot \vec{J} = 0
 $$
 
 Therefore, this says that any source of the vector potential must then translate into corresponding changes in the scalar potential. Thus, the sources are balanced out with temporal changes, producing a net balance of zero --- no change. This is intuitively sensible, and should occur naturally.
 
 However, the main problem is that there are only 2 physical degrees of freedom that are well-established in classical EM experiments, corresponding to the oscillation between the $\vec{E}$ and $\vec{B}$ vector fields in a way that is orthogonal (transverse) to the direction of wave propagation. The wave propagation of the scalar potential $A_0$, and the propagation of the vector potential components in a _longitudinal_ direction (in the direction of wave propagation), are both non-physical degrees of freedom that are otherwise allowed by the wave equations operating on the four components of the EM potential ($A_0$, $\vec{A}$) ([[@Gupta50]]).
 
-Thus, in principle, the wave update equations need to be constrained to prevent these additional degrees of freedom from being arising. However, [[@^Gupta50]] argues that these additional degrees of freedom my be effective at short scales in virtual photons, but that they are not present in long-range macroscopic fields. This may mean that these degrees of freedom are only present in very high-frequency, transient wave dynamics, but that these are washed out over longer time / space timeframes.
+Thus, in principle, the wave update equations need to be constrained to prevent these additional degrees of freedom from arising. However, [[@^Gupta50]] argues that these additional degrees of freedom may be effective at short scales in virtual photons, but that they are not present in long-range macroscopic fields. This may mean that these degrees of freedom are only present in very high-frequency, transient wave dynamics, but that these are washed out over longer time / space timeframes.
 
 One additional simple possibility is that the scalar potential updates directly to the velocity, not the acceleration, which prevents oscillatory wave dynamics.
 
@@ -286,12 +286,12 @@ $$
 
 Therefore, we can write:
 
-{id="eq_four-potential" title="four-potential form of Maxwell's equations"}
+{id="eq_four-potential-maxwell" title="four-potential form of Maxwell's equations"}
 $$
-\partial_\mu \partial^\mu A^\mu = k^\mu J^\mu
+\partial_\nu \partial^\nu A^\mu = k J^\mu
 $$
 
-where $J^\mu = (J_0, J_x, J_y, J_z)$, and $J_0 = \rho$, and $k^\mu = \left( \frac{1}{\epsilon_0}, \mu_0, \mu_0, \mu_0 \right)$.
+where $J^\mu = (J_0, J_x, J_y, J_z)$, and $J_0 = \rho$, and $k = \mu_0 = \frac{1}{\epsilon_0}$ (in units where $c = 1$, so that $\mu_0 \epsilon_0 = 1$).
 
 This extreme level of simplicity accurately expresses the fundamental point that the electromagnetic force can be described using only the basic wave equation, plus the source driving terms. The charge density $\rho$ and current density $\vec{J}$ provide an external driving force on the electromagnetic field equations (and are thus the sources of the fields). Interestingly, this potential formalism just requires four variables, which is intriguingly convenient for the four-vector space-time framework.
 
@@ -366,7 +366,7 @@ $$
 $$
 
 $$
-\vec{\nabla} \times \vec{E} + -\vec{\nabla} \times \frac{\partial \vec{A}}{\partial t} = 0
+\vec{\nabla} \times \vec{E} + \vec{\nabla} \times \frac{\partial \vec{A}}{\partial t} = 0
 $$
 
 $$
@@ -422,18 +422,18 @@ $$
 $$
 
 $$
-\Box \vec{A} - \vec{\nabla} \left( \vec{\nabla} \cdot \vec{A} + \frac{1}{c^2} \frac{\partial {A_0}}{\partial t} \right) = -\mu_0 \vec{J}
+-\Box \vec{A} - \vec{\nabla} \left( \vec{\nabla} \cdot \vec{A} + \frac{1}{c^2} \frac{\partial {A_0}}{\partial t} \right) = -\mu_0 \vec{J}
 $$
 
 So, perhaps you can see that now we are getting somewhat closer to a wave equation. We now have the $\nabla^2$ terms showing up in both equations, and in the latter we have a $\frac{\partial^2 {}}{\partial t^2}$ term, such that we get the classic wave equation signature, as indicated by the last line where we substituted in the d'Alembertian operator ($\Box$):
 
 $$
-\Box = \frac{\partial^2}{\partial t^2} - \nabla^2
+\Box = \frac{1}{c^2} \frac{\partial^2}{\partial t^2} - \nabla^2
 $$
 
 which encapsulates the wave equation dynamics of second-order time minus second-order space differentials.
 
-But these equations are still quite messy, and certainly are not purely wave equations. Furthermore, there is still some extra degrees of freedom in these potentials in terms of their implications for the observable $\vec{E}$ and $\vec{B}$ fields. For example, you can add any kind of constant numerical offset to the entire electrical potential $A_0$, and this will not change the behavior of the system, because the observable electrical force is defined only in terms of the gradient or slope of this potential field, not its absolute magnitude.
+But these equations are still quite messy, and certainly are not purely wave equations. Furthermore, there are still some extra degrees of freedom in these potentials in terms of their implications for the observable $\vec{E}$ and $\vec{B}$ fields. For example, you can add any kind of constant numerical offset to the entire electrical potential $A_0$, and this will not change the behavior of the system, because the observable electrical force is defined only in terms of the gradient or slope of this potential field, not its absolute magnitude.
 
 In more formal parlance, it is said that one can choose different _gauges_ for these potentials, and this choice will affect the form of the equations. In the Lorenz gauge mentioned earlier, this extra degree of freedom is removed by defining:
 
@@ -450,7 +450,7 @@ $$
 When you take this latter form and plug it into the above two Maxwell equations, you end up canceling some of the nasty bits out, and you get a very nice form of standard wave equations. For [[#eq_maxeq-i]], we get:
 
 $$
-\nabla^2 A_0 + \vec{\nabla} \cdot \frac{\partial {\vec{A}}}{\partial t}} = - \frac{1}{\epsilon_0} \rho
+\nabla^2 A_0 + \vec{\nabla} \cdot \frac{\partial {\vec{A}}}{\partial t} = - \frac{1}{\epsilon_0} \rho
 $$
 
 $$
@@ -466,10 +466,10 @@ $$
 $$
 
 $$
-\frac{\partial^2 {A_0}}{\partial t^2} = c^2 \nabla^2 A_0 + \frac{1}{\epsilon_0} \rho
+\frac{\partial^2 {A_0}}{\partial t^2} = c^2 \nabla^2 A_0 + \frac{c^2}{\epsilon_0} \rho
 $$
 
-(where the boxes indicate the location of the substitution). The result is clearly a basic wave equation with an additional "driving" term of $\frac{1}{\epsilon_0} \rho$.
+The result is clearly a basic wave equation with an additional "driving" term of $\frac{c^2}{\epsilon_0} \rho$.
 
 For [[#eq_maxeq-iv]], you get:
 
@@ -490,7 +490,7 @@ $$
 $$
 
 $$
-\frac{\partial^2 \vec{A}}{\partial t^2} = c^2 \nabla^2 \vec{A} + \mu_0\vec{J}
+\frac{\partial^2 \vec{A}}{\partial t^2} = c^2 \nabla^2 \vec{A} + c^2 \mu_0\vec{J}
 $$
 
 Again, somewhat miraculously, a wave equation emerges, again with a driving term.

@@ -23,7 +23,7 @@ Aside from looking completely mesmerizing, these simple waves can exhibit some i
 ## The wave equation: Newtonian version
 
 {id="figure_eq" style="height:20em"}
-![Key elements of the basic wave equation, in a discretized space and time system, where each discrete location (across the horizontal axis, indexed by coordinate ''x'') has a discrete state value ''y'' at a given time step ''t'', indicated as $y^t_x$. The restoring force *f* pulling back on a given point is the total disturbance of that point relative to its two neighbors on either side, which is the sum of the differences between the state value at that point compared to the each of the two neighbors ($f = f_l + f_r$). This force *f* creates an acceleration $a=f/m$, which in turn updates the velocity, which in turn drives a change in the state value for the next time step. That's all there is to it. This system has a built-in inertia (due to the basic Newtonian physics of force, acceleration, and velocity), so it will end up overshooting the average of its neighbors (who meanwhile are on the move themselves). This all creates the fascinating wave dynamics.](media/fig_wave_eq_1d_simple.png)
+![Key elements of the basic wave equation, in a discretized space and time system, where each discrete location (across the horizontal axis, indexed by coordinate ''x'') has a discrete state value ''y'' at a given time step ''t'', indicated as $y^t_x$. The restoring force *f* pulling back on a given point is the total disturbance of that point relative to its two neighbors on either side, which is the sum of the differences between the state value at that point compared to each of the two neighbors ($f = f_l + f_r$). This force *f* creates an acceleration $a=f/m$, which in turn updates the velocity, which in turn drives a change in the state value for the next time step. That's all there is to it. This system has a built-in inertia (due to the basic Newtonian physics of force, acceleration, and velocity), so it will end up overshooting the average of its neighbors (who meanwhile are on the move themselves). This all creates the fascinating wave dynamics.](media/fig_wave_eq_1d_simple.png)
 
 We start by deriving the second order wave equation from basic Newtonian physical principles, in a simple one-dimensional case with discrete uniform cells each having a "state value" that represents the "stuff" that moves around in the wave (e.g., the height of water) ([[#figure_eq]]). Time is also discretized, with everything computed in discrete time steps, consistent with the [[cellular automaton]] (CA) framework. In the notation of the figure, we label the location of each cell using the index _x_, and each time step with the index _t_, and the current state value of a given cell as $y^t_x$. The restoring force is proportional to the difference in state values between a given point and its two neighbors on either side:
 
@@ -45,7 +45,7 @@ $$
 
 In the discrete time framework, we can simply increment a new _velocity_ term _v_ by this acceleration:
 
-{id="eq_" title="new velocity"}
+{id="eq_new-vel" title="new velocity"}
 $$
 v^{t+1}_x = v^t_x + a^t_x
 $$
@@ -54,7 +54,7 @@ where the time index for this new velocity is given by _t+1_, which is the next 
 
 Next, this new velocity is used to update the state value, completing a given time step of updating for a given location:
 
-{id="eq_" title="new state"}
+{id="eq_new-state" title="new state"}
 $$
 y^{t+1}_x = y^t_x + v^{t+1}_x
 $$
@@ -115,7 +115,7 @@ $$
 v^{t+1}_x = \dot y^{t+1}_x = \dot y^t_x + \ddot y^t_x
 $$
 
-{id="eq_vel" title="state"}
+{id="eq_state" title="state"}
 $$
 y^{t+1}_x = y^t_x + \dot y^{t+1}_x
 $$
@@ -124,7 +124,7 @@ $$
 
 As we progress to more complex wave equations, the concept of the energy associated with the wave will become critical. Energy must be strictly conserved over time, or otherwise the universe quickly gets out of balance --- exploding with too much energy or fading away into nothingness. Much of physics involves accounting for where all the energy is and how it gets transformed into different forms over time.
 
-Einstein's famous equation $E=mc^2$, which we saw some hint of above, is so important because it shows that there is energy trapped inside of matter, which can be liberated in various ways (e.g., nuclear bombs, or solar fusion reactions), which release great quantities of energy. This very fact of the ability to convert energy into different forms like this is suggestive of some kind of underlying common currency where matter and energy are fundamentally the same thing --- this is what the wave framework provides. Indeed, we will derive our matter wave equation by using Einstein's equation, showing exactly how matter and other forms of energy are all bound up together in single wave equation, whose undulations over time result in the constant conversion of energy into different forms.
+Einstein's famous equation $E=mc^2$, which we saw some hint of above, is so important because it shows that there is energy trapped inside of matter, which can be liberated in various ways (e.g., nuclear bombs, or solar fusion reactions), which release great quantities of energy. This very fact of the ability to convert energy into different forms like this is suggestive of some kind of underlying common currency where matter and energy are fundamentally the same thing --- this is what the wave framework provides. Indeed, we will derive our matter wave equation by using Einstein's equation, showing exactly how matter and other forms of energy are all bound up together in a single wave equation, whose undulations over time result in the constant conversion of energy into different forms.
 
 {id="figure_pendulum" style="height:20em"}
 ![Two forms of energy in a simple harmonic oscillator such as a pendulum: kinetic energy from the speed (velocity) of motion, and potential energy from the displacement relative to the resting position (in the pendulum case, this is gravitational energy that is then transformed into kinetic energy as the ball drops). Each cell in our discrete wave system is a simple harmonic oscillator with both of these forms of energy --- potential energy is a function of the difference between the neighbor state values --- the same thing that drives the restoring force.](media/fig_pendulum_energy.png)
@@ -172,7 +172,7 @@ $$
 E_k = \frac{1}{2 c^2} v_{mid}^2
 $$
 
-oIntuitively, the current velocity by itself doesn't coincide with the current state values, because it was really driven by the prior state values, so it needs to be updated with some influence of the velocity that was driven by the current state values (i.e., the new velocity) --- but this new velocity by itself goes too far, and thus the half-way point works out best.
+Intuitively, the current velocity by itself doesn't coincide with the current state values, because it was really driven by the prior state values, so it needs to be updated with some influence of the velocity that was driven by the current state values (i.e., the new velocity) --- but this new velocity by itself goes too far, and thus the half-way point works out best.
 
 ### Lack of strict conservation
 
@@ -211,7 +211,7 @@ Critically, this discretization of wavelength makes the atomic system stable: it
 
 Now that you understand how waves emerge from the simple wave equation, we can work in a bit more mathematical notation based on **derivatives**, moving beyond the dot and double-dot introduced above ([[#figure_derivative]]). This will help in obtaining a more complete understanding of the wave equation, and provides a simpler, more compact notation that will be used in developing more complex wave equations later.
 
-A derivative is just the slope of the function at a given point. In our discrete space and time CA framework, this is easily computed as the difference in state values *y* divided by the spacing between cells, which we label by convention with the greek character "epsilon" $\epsilon$ ([[#figure_derivative-1d]]):
+A derivative is just the slope of the function at a given point. In our discrete space and time CA framework, this is easily computed as the difference in state values *y* divided by the spacing between cells, which we label by convention with the Greek character "epsilon" $\epsilon$ ([[#figure_derivative-1d]]):
 
 {id="eq_spatial" title="spatial derivative (slope)"}
 $$
@@ -220,7 +220,7 @@ $$
 
 Technically speaking, the true derivative involves shrinking the epsilon infinitely small, and thus achieving a truly continuous derivative value. This is the mind boggling aspect of calculus, which gives people so much trouble, and we can avoid all that by sticking with discrete space and time, in which case our simple **difference equations** can be used as discrete approximations to the true derivatives. Where necessary, we can leverage the analytical power of the true continuum, but any actual computational solution to differential equations always uses a discretization: the continuum is an idealization that cannot be realized in practice.
 
-In addition to the spatial derivative (slope) shown in , there is also a **temporal derivative** that involves computing the change in the state values over a discrete increment in *time*, instead of over a discrete distance in *space*. These temporal derivatives have the special dot notation that we introduced earlier:
+In addition to the spatial derivative (slope) shown in [[#eq_spatial]], there is also a **temporal derivative** that involves computing the change in the state values over a discrete increment in *time*, instead of over a discrete distance in *space*. These temporal derivatives have the special dot notation that we introduced earlier:
 
 {id="eq_temporal" title="temporal derivative (rate of change)"}
 $$
@@ -258,21 +258,21 @@ This shows how this second order spatial derivative is computed in the discrete 
 
 {id="eq_x-2-2" title="second order spatial derivative"}
 $$
-\frac{\partial^2y}{\partial x^2} = \frac{\left( \frac{y^t_{x+1} - y^t_x}{\epsilon} \right) - \left( \frac{y^t_x - y^t_{x-1}}{\epsilon} \right)}{\epsilon} = \frac{1}{\epsilon^2} (y^t_{x+1} + y^t_{x-1}) - 2 y^t_x
+\frac{\partial^2y}{\partial x^2} = \frac{\left( \frac{y^t_{x+1} - y^t_x}{\epsilon} \right) - \left( \frac{y^t_x - y^t_{x-1}}{\epsilon} \right)}{\epsilon} = \frac{1}{\epsilon^2} \left( y^t_{x+1} + y^t_{x-1} - 2 y^t_x \right)
 $$
 
 Interestingly, this second order spatial derivative is effectively the same as the restoring force in the wave equation --- there is just a factor of the epsilon squared difference between them:
 
 {id="eq_r-f" title="restoring force"}
 $$
-f = \left( \frac{y^t_{x-1} + y^t_{x+1}}{2} \right) - 2 y^t_x = \epsilon^2 \frac{\partial^2y}{\partial x^2} = \left( y^t_{x+1} + y^t_{x-1} \right) - 2 y^t_x
+f = \left( y^t_{x-1} + y^t_{x+1} \right) - 2 y^t_x = \epsilon^2 \frac{\partial^2y}{\partial x^2} = \left( y^t_{x+1} + y^t_{x-1} \right) - 2 y^t_x
 $$
 
 We normally set this epsilon constant to be 1 in the native units of the simulation, so that it effectively disappears from the computation. Nevertheless, understanding these constants is important when trying to get all the units right, but they don't affect the core conceptual basis of what is going on, which is that the restoring force is driven by the curvature of the curvature (slope of the slope) of the wave medium.
 
 To complete our new second-order derivative based wave equation, we can write the acceleration as a second-order temporal derivative:
 
-{id="eq_acc" title="acceleration"}
+{id="eq_acc-deriv" title="acceleration"}
 $$
 a = \ddot y^t_x = \frac{\partial^2 y}{\partial t^2}
 $$
@@ -307,7 +307,7 @@ Next, we extend this wave equation to the full three-dimensional case, which jus
 
 ## Waves in three dimensions
 
-The second-order wave equation in three-dimensional space is not too different at an abstract mathematical level from the one dimension case --- you basically just have to add extra terms for each of the additional dimensions. One minor complication is that we conventionally use _x,y,z_ for the spatial dimensions, and we've been previously using _y_ to represent the state value, so now we'll switch over to the notation that is typically used in quantum physics, based on the Greek symbols "psi" $\psi$, "phi" $\phi$, and "chi": $\chi$.
+The second-order wave equation in three-dimensional space is not too different at an abstract mathematical level from the one-dimensional case --- you basically just have to add extra terms for each of the additional dimensions. One minor complication is that we conventionally use _x,y,z_ for the spatial dimensions, and we've been previously using _y_ to represent the state value, so now we'll switch over to the notation that is typically used in quantum physics, based on the Greek symbols "psi" $\psi$, "phi" $\phi$, and "chi" $\chi$.
 
 To keep things consistent and clear, we establish the following convention for these state variables:
 
@@ -332,7 +332,7 @@ $$
 {id="figure_gradient" style="height:20em"}
 ![The gradient, which is a vector consisting of the local slope along each of the different dimensions (two-dimensional case shown here).](media/fig_gradient.png)
 
-The symbol $\nabla$ (called a "nabla"; [wikipedia link](http://http://en.wikipedia.org/wiki/Nabla_symbol)) indicates the **gradient**, which just takes the first-order spatial derivatives along each dimension ([[#figure_gradient]]):
+The symbol $\nabla$ (called a "nabla"; [wikipedia link](https://en.wikipedia.org/wiki/Nabla_symbol)) indicates the **gradient**, which just takes the first-order spatial derivatives along each dimension ([[#figure_gradient]]):
 
 {id="eq_grad" title="gradient"}
 $$
@@ -345,7 +345,7 @@ The idea that the Laplacian is the gradient squared ($\nabla^2$) must be taken a
 
 {id="eq_div" title="divergence"}
 $$
-\nabla \cdot F = \frac{\partial F}{\partial x} + \frac{\partial F}{\partial y} + \frac{\partial F}{\partial z}
+\nabla \cdot F = \frac{\partial F_x}{\partial x} + \frac{\partial F_y}{\partial y} + \frac{\partial F_z}{\partial z}
 $$
 
 where **F** is a vector field, e.g., of the sort that would be generated by taking the gradient of a 3D scalar field. It is hopefully at least somewhat clear how taking the divergence of the gradient of our scalar field results in the expression for the Laplacian: each of the 3 separate derivatives in the gradient gets the second-order treatment by virtue of the derivatives in the divergence, and the result gets added up into a single overall number as shown in the divergence equation.
@@ -384,7 +384,7 @@ $$
 
 where _j_ is just an index into the set of 6 different faces and $\phi_0$ is the central point.
 
-The problem with only using the 6 face neighbors is that it misses all the curvature present in the other neighboring points (edges and corners; [[#figure_cubes]]) and as a result, the wave propagation is very **anisotropic** --- it is not the same in every possible direction. Waves flowing along one of the 3 primary dimensions work great, wave disturbances in other directions propagate very differently. If this was how nature worked, then we would easily be able to tell that the rules of physics are different in different directions, which is definitely not the case.
+The problem with only using the 6 face neighbors is that it misses all the curvature present in the other neighboring points (edges and corners; [[#figure_cubes]]) and as a result, the wave propagation is very **anisotropic** --- it is not the same in every possible direction. Waves flowing along one of the 3 primary dimensions work great, but wave disturbances in other directions propagate very differently. If this was how nature worked, then we would easily be able to tell that the rules of physics are different in different directions, which is definitely not the case.
 
 The anisotropy problem can be fixed by including all 26 neighbors, in a relatively simple generalization of the last sum-based expression:
 
@@ -393,7 +393,7 @@ $$
 \nabla^2 \phi = \frac{3}{13 \epsilon^2} \sum_{j \in N_{26}} k_j (\phi_j - \phi_0)
 $$
 
-The key to making this work is to have different weighting factors $k_j$ for the different neighbors, depending on their Euclidian distance *d* from the central point:
+The key to making this work is to have different weighting factors $k_j$ for the different neighbors, depending on their Euclidean distance *d* from the central point:
 
 {id="eq_wt" title="neighbor weight"}
 $$
@@ -427,7 +427,7 @@ One of the trickiest problems in making numerical simulations of wave phenomena 
 
 * **Wrap-around edges:** the opposite edges of space wrap back upon each other, creating a weird doughnut-like topology. This is good for exploring the motion of free wave packets, working somewhat like a treadmill where the wave keeps looping around through the same simulation space, without ever apparently hitting any edges. It is particularly useful for examining the spreading of wave packets over time. Computationally it is a bit more challenging to implement the wrap-around, but that is just a coding problem.
 
-* **Damping edges:** the edges essentially absorb the wave energy, producing the effect of the waves just continuing to propagate outward, without reflecting back. This is the best solution for EM waves. It is achieved by removing the acceleration term in the wave equation, so that the force directly drives the current velocity, without incrementing a prior velocity, which is also equivalent to the diffusion equation. It is also known as a Sommerfield boundary condition.
+* **Damping edges:** the edges essentially absorb the wave energy, producing the effect of the waves just continuing to propagate outward, without reflecting back. This is the best solution for EM waves. It is achieved by removing the acceleration term in the wave equation, so that the force directly drives the current velocity, without incrementing a prior velocity, which is also equivalent to the diffusion equation. It is also known as a Sommerfeld boundary condition.
 
 ## External potential
 
@@ -451,7 +451,7 @@ As you can see in the simulation described below, the presence of a potential ge
 {id="figure_scaling" style="height:20em"}
 ![Scaling behavior of the discrete Laplacian wave equation --- the bottom row of images are from a simulation that is 4 times larger than the one on the top row, and the snapshots are spaced 4 times further apart --- it is difficult to tell the difference visually, although there is some roughness on the high-curvature edges of the lower resolution simulation compared to the milky smoothness of the higher-resolution one, the overall wave propagation is identical. This also shows the inevitable spread of the wave packet, which quickly becomes distributed widely over space. Due to the use of wrap-around edges, the wave ends up superposing upon itself many times over, producing what looks like interference patterns.](media/fig_wave_scaling.png)
 
-Go to [[wave 3D simulation]] to see how the 3D waves behave, including the spreading behavior resulting from the Laplacian as described above. You can also see how smooth and symmetric (isomorphic in all directions) the 3D Laplacian approximation is --- there is no hint of any preferred directions or other kinds of numerical artifacts.
+Go to [[wave 3D simulation]] to see how the 3D waves behave, including the spreading behavior resulting from the Laplacian as described above. You can also see how smooth and symmetric (isotropic in all directions) the 3D Laplacian approximation is --- there is no hint of any preferred directions or other kinds of numerical artifacts.
 
 One question you might have is how the discrete Laplacian scales, and whether what we observe in a small-scale 3D simulation that fits on our laptop will generalize to a higher-resolution case, ultimately to whatever resolution that nature actually operates at (which could be extremely high resolution indeed). [[#figure_scaling]] shows that the scaling behavior is extremely good, in the sense that two simulations differing in resolution by a factor of 4 (along each dimension --- the larger one requires 64 times more total cells) behave essentially identically. Thus, we can generally be reasonably confident that our results will generalize at least qualitatively to higher resolution systems.
 

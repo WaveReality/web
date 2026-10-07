@@ -26,12 +26,12 @@ $$
 a = \frac{f}{m}
 $$
 
-{id="eq_" title="new velocity"}
+{id="eq_new-vel" title="new velocity"}
 $$
 v^{t+1} = v^t + a
 $$
 
-{id="eq_" title="new state"}
+{id="eq_new-state" title="new state"}
 $$
 y^{t+1} = y^t + v^{t+1}
 $$
@@ -61,7 +61,7 @@ As with the wave equation, the kinetic and potential energy of the system are de
 
 {id="eq_kinetic" title="kinetic energy"}
 $$
-E_k = \frac{1}{2} m v^2 = \frac{1}{2 c^2} v^2
+E_k = \frac{m}{2 c^2} v^2
 $$
 
 {id="eq_potential" title="potential energy"}
@@ -107,7 +107,7 @@ func valUpdate() {
     mv := array(0.0)
     v := array(0.0)
     pot := array(0.0)
-    kin := array(0,0)
+    kin := array(0.0)
     ##
     for t := range 100 {
         ##
@@ -222,15 +222,15 @@ $$
 All of this potential energy is converted into kinetic energy at position = 0:
 
 $$
-\frac{1}{2 c^2} v^2 = \frac{1}{2} y^2_0
+\frac{m}{2 c^2} v^2 = \frac{1}{2} y^2_0
 $$
 
 $$
-v^2 = c^2 y^2_0
+v^2 = \frac{c^2}{m} y^2_0
 $$
 
 $$
-v = c y_0
+v = \frac{c}{\sqrt{m}} y_0 = \omega y_0
 $$
 
 ## Complex numbers
@@ -404,7 +404,7 @@ $$
 \rho = e \left( b_2 a_1 - a_2 b_1\right)
 $$
 
-where _e_ is the value of the unitary (electron) charge, and we assume that the complex values _a_ and _b_ are normalized with unit radius, which results in the maximum charge value for 90 degrees out of phase being 1.
+where _e_ is the value of the unit (electron) charge, and we assume that the complex values _a_ and _b_ are normalized with unit radius, which results in the maximum charge value for 90 degrees out of phase being 1.
 
 This simulation shows the conserved charge value generated from these phase relationships, and also uses the $\omega_0$ factor reflecting the rest mass energy of a particle.
 
@@ -541,5 +541,5 @@ See the [[Spinfield Model]] for the application of all of these properties of th
 
 ## Quantum harmonic oscillator
 
-The quantum harmonic oscillator (QHO) is a well-studied entity (see [wikipedia](https://en.wikipedia.org/wiki/Quantum_harmonic_oscillator)) that might otherwise be confused with our use of the complex-valued harmonic oscillator in the [spinfield] quantum particle model. The QHO uses the [[Schrodinger]] wave function to model the behavior of the mass-on-a-spring system ([[#figure_sho]]) instead of using Newtonian physics. This results in much more complex behavior than the very simple complex-valued harmonic oscillator used here.
+The quantum harmonic oscillator (QHO) is a well-studied entity (see [wikipedia](https://en.wikipedia.org/wiki/Quantum_harmonic_oscillator)) that might otherwise be confused with our use of the complex-valued harmonic oscillator in the [[Spinfield Model|spinfield]] quantum particle model. The QHO uses the [[Schrodinger]] wave function to model the behavior of the mass-on-a-spring system ([[#figure_sho]]) instead of using Newtonian physics. This results in much more complex behavior than the very simple complex-valued harmonic oscillator used here.
 

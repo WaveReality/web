@@ -10,7 +10,7 @@ The KG wave function can be derived directly from Einstein's relativistic defini
 
 The incredible scope of phenomena accounted for by the simple KG equation makes it tempting to think that particles are actually [[matter wave]]s, in the form of a spatially-localized _wave packet_. However, despite all the amazing properties of the KG equation (and its more complicated iteration in the [[Dirac]] wave function), these matter waves have a fatal flaw: they inevitably diffuse away into amorphous blobs that fail to account for the precise localization of particles like electrons.
 
-If you were to imagine something like an electron to actually be a matter wave, then it becomes very difficult to understand how all of the widely distributed, far-flung bits could be somehow gathered up and accounted for, in order to satisfy strict conservation laws. Every time an electron is measured it has the exact same charge. And rest mass. This extremely difficult to imagine happening when you see what happens to the KG waves over time.
+If you were to imagine something like an electron to actually be a matter wave, then it becomes very difficult to understand how all of the widely distributed, far-flung bits could be somehow gathered up and accounted for, in order to satisfy strict conservation laws. Every time an electron is measured it has the exact same charge. And rest mass. This is extremely difficult to imagine happening when you see what happens to the KG waves over time.
 
 In fact, it is precisely as implausible as the standard [[Copenhagen]] interpretation of QM, which requires the complete collapse of far-flung wave equations, which are thought to determine the probability of particle properties being measured in any given location.
 
@@ -160,7 +160,7 @@ Anticipating these results, and relying on intuition for now, we see that with o
 
 ## What is the mass?
 
-The value $m_0$ in the KG equation is the **rest mass** of the particle that it describes (the 0 subscript indicates "rest"). It is a fixed, constant value for a given type of particle, e.g., $9.1x10^{-31}$ kg for an [[electron]], which is an extremely tiny amount of mass.
+The value $m_0$ in the KG equation is the **rest mass** of the particle that it describes (the 0 subscript indicates "rest"). It is a fixed, constant value for a given type of particle, e.g., $9.1 \times 10^{-31}$ kg for an [[electron]], which is an extremely tiny amount of mass.
 
 The value of $m_0$ also defines the **Compton wavelength** of a given particle, which is the wavelength of a particle at rest, due strictly to the rest mass. The formula for the Compton wavelength $\lambda_C$ is:
 
@@ -168,7 +168,7 @@ $$
 \lambda_C = \frac{h}{m_0 c}
 $$
 
-Interestingly, consider what happens when you set the rest mass of our particle to zero: that extra termm in the KG equation drops out, and you recover the basic wave equation from before. Thus, it is immediately obvious that "particles" with a zero rest mass must move at the speed of light. This is a basic postulate of special relativity. Note also that it is impossible for a massive particle to travel at the speed of light, because it would have to have an infinitely high frequency, and this is not possible (even in a continuous spatial model).
+Interestingly, consider what happens when you set the rest mass of our particle to zero: that extra term in the KG equation drops out, and you recover the basic wave equation from before. Thus, it is immediately obvious that "particles" with a zero rest mass must move at the speed of light. This is a basic postulate of special relativity. Note also that it is impossible for a massive particle to travel at the speed of light, because it would have to have an infinitely high frequency, and this is not possible (even in a continuous spatial model).
 
 One potential challenge with the KG equation is that this rest mass parameter must be "baked in" to the wave function equations. What if we are simulating different types of particles, beyond just electrons? For example, the [[lepton]]s class includes the much more massive _muon_ and _tau_ particles, which are otherwise identical to the electron. It seems rather inelegant to have to have different wave functions for each of these different types of particles, each with their own rest mass parameter.
 
@@ -194,7 +194,7 @@ Creating a moving wave packet that moves with a given velocity is a bit more com
 
 The Klein-Gordon equation that we've been exploring is typically introduced as a strange and problematic alternative to the Schrödinger wave equation, which provides the cornerstone of standard quantum physics, even to this day. In [[Hamiltonian]] (recommended as next reading), you can see how the KG equation can be derived from the relativistic total energy. By contrast, Schrödinger's equation can be derived from _Newtonian_ total energy, and therefore it fails to account for the phenomena of [[special relativity]].
 
-The fact that Schrödinger's equation remains the predominant tool used by practicing physicists can be attributed to its strict conservation properties, where the total probability value (computed as the complex conjugate of the wave values), is conserved as it propagates through space. In contrast, the KG equation does not have such a strict conservation behavior.
+The fact that Schrödinger's equation remains the predominant tool used by practicing physicists can be attributed to its strict conservation properties, where the total probability value (computed as the wave values times their complex conjugate), is conserved as it propagates through space. In contrast, the KG equation does not have such a strict conservation behavior.
 
 Furthermore, the Schrödinger equation is a first-order wave equation, which has many advantages from an analytical perspective, even as it makes it very difficult for many people to understand, due to its reliance on [[complex number]]s. In general, wave-like behavior can either be described by a second-order equation involving normal scalar variables (as we've been doing), or it can be described by a first-order equation involving complex numbers, exemplified by the Schrödinger equation.
 

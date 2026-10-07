@@ -9,7 +9,7 @@ bibfile = "mechphys.json"
 
 * [[Fermion]]s are massive particles like [[electron]]s and [[quark]]s, with a spin of +/- 1/2. Interestingly, the mysterious [[neutrino]] can be thought of as a particle that _only_ has spin and nothing else (no charge) -- it also has a spin of 1/2, but the "matter" neutrino is _always_ spinning in the left-hand direction, while the "antimatter" anti-neutrino spins in the right-hand direction. Although they are thought to have mass, it is possible that neutrinos have these fixed spin directions because they move at the speed of light in a kind of fixed helical pattern in relation to their spin, and they don't have a proper mass-like momentum property after all.
 
-The [[Dirac]] equation introduced Dirac _spinors_ as a mathematical formulation of spin for describing the spin 1/2 property of fermions. Interestingly, in the second-order version of the Dirac function, these spinors only affect the interaction between the particle wave and the EM wave, with no effect on the particle state values themselves, which update independently.
+The [[Dirac]] equation introduced Dirac _spinors_ as a mathematical formulation of spin for describing the spin 1/2 property of fermions. Interestingly, in the second-order version of the Dirac equation, these spinors only affect the interaction between the particle wave and the EM wave, with no effect on the particle state values themselves, which update independently.
 
 TODO: figure out how this works for the first-order Dirac equation!
 
@@ -21,7 +21,7 @@ In general, the spin of something like an electron is thought to be a strongly [
 
 The [[neutrino]] is a particle that _only_ has spin, indicating that this spin mechanism can dissociate from other particle properties. Thus, modeling this most mysterious of particles is a first-order goal, along with that of the [[electron]].
 
-The neutrino interacts only via the [[weak]] force, which is strongly localized to around $10^−18$m --- beneath the scale of the charge radius of a proton ($10^-15$m). This length scale is short because the [[boson]]s that carry the weak force are _massive_ (indeed they are much heavier than the mass of a proton).
+The neutrino interacts only via the [[weak]] force, which is strongly localized to around $10^{-18}$ m --- beneath the scale of the charge radius of a proton ($10^{-15}$ m). This length scale is short because the [[boson]]s that carry the weak force are _massive_ (indeed they are much heavier than the mass of a proton).
 
 The weak force is thus the obvious force for understanding dynamics within fermion particles. In particular, the [[lepton]]s (electron, muon, tau) are all different _flavors_ or _generations_ of the same particle, and the muon and tau decay back to the stable electron through the weak force, while emitting neutrinos (and energy in the form of photons??). Thus, it is clear that the weak force is somehow critically involved in these spin dynamics, which in turn are involved in the increased masses of these higher generation particle variants.
 
@@ -31,11 +31,11 @@ Thus, it makes sense to think of these generations as essentially excited states
 
 The property of **weak isospin** is effectively like the charge value that drives the weak force, coming in positive and negative 1/2 increments.
 
-The charged **W** boson is unstable and decays into an electron and a neutrino, so it can be thought of as a kind of anomolous excitation of this weak-spin system, with the extra spin component of the neutrino added to that of the electron.
+The charged **W** boson is unstable and decays into an electron and a neutrino, so it can be thought of as a kind of anomalous excitation of this weak-spin system, with the extra spin component of the neutrino added to that of the electron.
 
 The neutral **Z** boson is characterized by a weak charge value that is also a function of the momentum of the relevant particles, therefore supporting the connection between spin, momentum, and the weak force.
 
-The masses of these weak bosons is all tied up with the Higgs mechanism, so that also needs to be understood.
+The masses of these weak bosons are all tied up with the Higgs mechanism, so that also needs to be understood.
 
 Basically, the whole electroweak / spin soup needs to be probed to understand how an elementary particle like the [[electron]] actually works. It seems clear given the mutation rules that an electron is not really _elementary_ anymore: the elementary components are _spin_ and _charge_ and some kinds of interesting dynamics that make these all produce the relevant particle-like behavior.
 

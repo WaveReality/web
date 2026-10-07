@@ -6,7 +6,7 @@
 
 <p id="AharonovRohrlich08">Aharonov, Y., & Rohrlich, D. (2008). <i>Quantum Paradoxes: Quantum Theory for the Perplexed. </i> John Wiley & Sons. </p>
 
-<p id="Amrien69">Amrien, W.O. (1969). Localizability for Particles of Mass Zero. <i>Helvetia Physica Acta, 42</i>, 149–190. </p>
+<p id="Amrien69">Amrein, W.O. (1969). Localizability for Particles of Mass Zero. <i>Helvetica Physica Acta, 42</i>, 149–190. </p>
 
 <p id="AndersenMadsenReicheltEtAl15">Andersen, A., Madsen, J., Reichelt, C., Rosenlund Ahl, S., Lautrup, B., Ellegaard, C., Levinsen, M.T., & Bohr, T. (2015). Double-slit experiment with single wave-driven particles and its relation to quantum mechanics. <i>Physical Review E, 92</i>, 013006. <a href="https://link.aps.org/doi/10.1103/PhysRevE.92.013006">https://link.aps.org/doi/10.1103/PhysRevE.92.013006</a><a href="http://doi.org/10.1103/PhysRevE.92.013006"> http://doi.org/10.1103/PhysRevE.92.013006</a></p>
 
@@ -180,7 +180,7 @@
 
 <p id="EddiSultanMoukhtarEtAl11">Eddi, A., Sultan, E., Moukhtar, J., Fort, E., Rossi, M., & Couder, Y. (2011). Information stored in Faraday waves: the origin of a path memory. <i>Journal of Fluid Mechanics, 674</i>, 433–463. <a href="https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/abs/information-stored-in-faraday-waves-the-origin-of-a-path-memory/45202A36EA1A333B658849C11FE1E850">https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/abs/information-stored-in-faraday-waves-the-origin-of-a-path-memory/45202A36EA1A333B658849C11FE1E850</a><a href="http://doi.org/10.1017/S0022112011000176"> http://doi.org/10.1017/S0022112011000176</a></p>
 
-<p id="Einstein05a">Einstein, A. (1905). Über einem die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt. <i>Annalen der physik, 4</i>, <a href="https://sedici.unlp.edu.ar/handle/10915/2784">https://sedici.unlp.edu.ar/handle/10915/2784</a></p>
+<p id="Einstein05a">Einstein, A. (1905). Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt. <i>Annalen der Physik, 4</i>, <a href="https://sedici.unlp.edu.ar/handle/10915/2784">https://sedici.unlp.edu.ar/handle/10915/2784</a></p>
 
 <p id="Einstein05b">Einstein, A. (1905). On a heuristic point of view concerning the production and transformation of light. <i>Annalen der Physik, 17</i>, 132–148. <a href="https://cir.nii.ac.jp/crid/1571135650150373888">https://cir.nii.ac.jp/crid/1571135650150373888</a></p>
 
@@ -316,7 +316,7 @@
 
 <p id="Keller05">Keller, O. (2005). On the theory of spatial localization of photons. <i>Physics Reports, 411</i>, 1–232. <a href="https://www.sciencedirect.com/science/article/pii/S0370157305000438">https://www.sciencedirect.com/science/article/pii/S0370157305000438</a><a href="http://doi.org/10.1016/j.physrep.2005.01.002"> http://doi.org/10.1016/j.physrep.2005.01.002</a></p>
 
-<p id="Kempe09">Kempe, J. (2009). Quantum random walks: an introductory overview: Contemporary Physics: Vol 50 , No 1 - Get Access. <i>Contemporary Physics, 50</i>, 339–359. <a href="https://www.tandfonline.com/doi/abs/10.1080/00107510902734722">https://www.tandfonline.com/doi/abs/10.1080/00107510902734722</a><a href="http://doi.org/10.1080/00107510902734722"> http://doi.org/10.1080/00107510902734722</a></p>
+<p id="Kempe09">Kempe, J. (2009). Quantum random walks: an introductory overview. <i>Contemporary Physics, 50</i>, 339–359. <a href="https://www.tandfonline.com/doi/abs/10.1080/00107510902734722">https://www.tandfonline.com/doi/abs/10.1080/00107510902734722</a><a href="http://doi.org/10.1080/00107510902734722"> http://doi.org/10.1080/00107510902734722</a></p>
 
 <p id="Khrennikov01">Khrennikov, A. (2001). Linear representations of probabilistic transformations induced by context transitions. <i>Journal of Physics A: Mathematical and General, 34</i>, 9965. <a href="https://doi.org/10.1088/0305-4470/34/47/304">https://doi.org/10.1088/0305-4470/34/47/304</a><a href="http://doi.org/10.1088/0305-4470/34/47/304"> http://doi.org/10.1088/0305-4470/34/47/304</a></p>
 
@@ -528,7 +528,7 @@
 
 <p id="Veblen33">Veblen, O. (1933). Geometry of Two-Component Spinors. <i>Proceedings of the National Academy of Sciences, 19</i>, 462–474. <a href="https://www.pnas.org/doi/abs/10.1073/pnas.19.4.462">https://www.pnas.org/doi/abs/10.1073/pnas.19.4.462</a><a href="http://doi.org/10.1073/pnas.19.4.462"> http://doi.org/10.1073/pnas.19.4.462</a></p>
 
-<p id="Visscher91">Visscher, P.B. (1991). A fast explicit algorithm for the time‐dependent Schrödinger equation. <i>Computer in Physics, 5</i>, 596–598. <a href="https://doi.org/10.1063/1.168415">https://doi.org/10.1063/1.168415</a><a href="http://doi.org/10.1063/1.168415"> http://doi.org/10.1063/1.168415</a></p>
+<p id="Visscher91">Visscher, P.B. (1991). A fast explicit algorithm for the time‐dependent Schrödinger equation. <i>Computers in Physics, 5</i>, 596–598. <a href="https://doi.org/10.1063/1.168415">https://doi.org/10.1063/1.168415</a><a href="http://doi.org/10.1063/1.168415"> http://doi.org/10.1063/1.168415</a></p>
 
 <p id="VonNeumannBurks66">Von Neumann, J., & Burks, A.W. (1966). Theory of self-reproducing automata. <a href="http://www.cba.mit.edu/events/03.11.ASE/docs/VonNeumann.pdf">http://www.cba.mit.edu/events/03.11.ASE/docs/VonNeumann.pdf</a></p>
 

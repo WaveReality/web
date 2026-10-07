@@ -45,7 +45,7 @@ The following sequence of pages develops an understanding of the wave equations 
 
 * Using wave equations as building blocks, the full Standard Model can be specified in terms of a [[#Lagrangian]] equation, representing an interconnected system of partial differential equations. These are all expressed in [[four-vector]] notation with differential operators specified by the [[gauge theory]] transformations that implement the 7 conservation laws. In this form, it is entirely _classical_ and continuous -- no different in any essential respect from Maxwell's wave equations. 
 
-* The classical system of interconnected wave equations is _nonlinear_ in the weak, strong, and Higgs interaction terms ([[@GreinerMuller96]]; [[@Pich12]]; [[@Hansson00]]), and does not provide a suitable mechanism for representing the creation and annihilation of discrete particles, or for analyzing the probabilities of different kinds of _localized_ interactions among discrete particles. All of these problems are managed by using a _perturbation_ framework that iteratively peals away different "layers" (polynomial orders) from the otherwise intractable nonlinear system, using essentially the same power-series logic as the Taylor series.
+* The classical system of interconnected wave equations is _nonlinear_ in the weak, strong, and Higgs interaction terms ([[@GreinerMuller96]]; [[@Pich12]]; [[@Hansson00]]), and does not provide a suitable mechanism for representing the creation and annihilation of discrete particles, or for analyzing the probabilities of different kinds of _localized_ interactions among discrete particles. All of these problems are managed by using a _perturbation_ framework that iteratively peels away different "layers" (polynomial orders) from the otherwise intractable nonlinear system, using essentially the same power-series logic as the Taylor series.
 
 * The _Fock space_ representation of quantum [[field theory]] provides a purely momentum-space, Fourier representation of all the wave functions, in combination with the [[Feynman diagram]]s that enumerate all the possible discrete, localized, particle-based interactions. By working with this combination of the discrete, localized Feynman diagrams to construct the momentum-space Fock representation of the waves used in the field theory, both the particle and wave [[duality]] aspects of the quantum world are integrated together.
 
@@ -60,7 +60,7 @@ Thus, overall, the Standard Model represents a powerful mathematical framework t
 ## Components
 
 {id="figure_particles" style="height:40em"}
-![Elementary particles of the Standard Model. There are also antiparticle copies of all of the matter particles, with opposite charge values. All particles are actually represented by wave fields, and the particle is represented as frequency mode in these fields, corresponding to its energy. There are three colors of each quark, corresponding to the color charge property. Adapted from [MissMJ/Wikimedia](https://commons.wikimedia.org/wiki/File:Standard_Model_of_Elementary_Particles.svg).](media/fig_standard_model_particles.png)
+![Elementary particles of the Standard Model. There are also antiparticle copies of all of the matter particles, with opposite charge values. All particles are actually represented by wave fields, and the particle is represented as a frequency mode in these fields, corresponding to its energy. There are three colors of each quark, corresponding to the color charge property. Adapted from [MissMJ/Wikimedia](https://commons.wikimedia.org/wiki/File:Standard_Model_of_Elementary_Particles.svg).](media/fig_standard_model_particles.png)
 
 The Standard Model is composed of massive [[fermion]] [[particle]]s, and force fields ([[#figure_particles]]), which are characterized in terms of [[boson]]s as force-carrying particles. However, all of these are represented using various forms of wave equations ([[Dirac]] for the fermions), with no explicit representation of discrete particles at the level of the underlying Lagrangian formulation. Particles enter through the discretized path-integral framework based on Feynman diagrams, and are operationalized by adding or subtracting corresponding frequency modes to the quantum [[field theory]] fields, which only represent the momentum-space (Fourier space) picture.
 
@@ -68,7 +68,7 @@ The complete specification of all the elements of the standard model is a bit co
 
 * 7.5 Dirac fields for the fermions, per mass [[generation]] = 22.5 for all three generations: 1 electron, 1/2 for the left-handed neutrino (the right-handed does not exist), 3 for the up quark (3 colors), and 3 for the down quark (3 colors). Each Dirac field has 4 complex-valued state variables, so that is 90 total complex numbers, or 180 real-valued numbers.
 
-* 28 force field unique degrees of freedom, which can be obtained by counting the bosonic particles: 2 x 9 = 18 for the zero-mass photons and gluons, and 3 x 3 generations for the massive weak bosons = 9, plus one Higgs boson. Because these are all second-order wave fields, the derivatives of these fields are also relevant state variables, so it is 56 total.
+* 28 force field unique degrees of freedom, which can be obtained by counting the bosonic particles: 2 x 9 = 18 for the zero-mass photons and gluons, and 3 x 3 polarizations for the massive weak bosons = 9, plus one Higgs boson. Because these are all second-order wave fields, the derivatives of these fields are also relevant state variables, so it is 56 total.
 
 Thus, there are a grand total of **236 unique real-valued numbers** required to specify the total unique state of the Standard Model.
 
@@ -79,7 +79,7 @@ Thus, there are a grand total of **236 unique real-valued numbers** required to 
 
 [[#figure_feynman]] shows the elementary force interactions in the Standard Model, using [[Feynman diagram]]s. Each such diagram corresponds to [[#Lagrangian]] terms that must be added to capture the dynamics of a particular interaction (described in the next section), and it specifically does _not_ represent an actual spatial trajectory that one might observe in a given collider experiment. 
 
-These diagrams reflect the particle nature of the wave-particle [[duality]], by discretizing the interactions in terms of specific incoming and outgoing particles, and computing scattering matricies (S-matrix) that reflect possible interactions that would take place at close range. These interactions are subject to energy thresholds and other conservation principles that reflect the known rest mass and other quantum properties of the relevant particles.
+These diagrams reflect the particle nature of the wave-particle [[duality]], by discretizing the interactions in terms of specific incoming and outgoing particles, and computing scattering matrices (S-matrix) that reflect possible interactions that would take place at close range. These interactions are subject to energy thresholds and other conservation principles that reflect the known rest mass and other quantum properties of the relevant particles.
 
 Although these diagrams do not represent spatial particle trajectories, there is nevertheless an implicit localization that reflects the particle nature, in contrast to the Fourier space representation of the quantum field, which has no spatial localization at all. It is this joint calculation across these complementary basis representations, with the localization remaining implicit in the interactions that are computed, that enables the framework to capture the relevant phenomena.
 
@@ -107,12 +107,12 @@ $$
 These terms:
 
 $$
-B{\mu\nu}=\partial_\mu B_\nu-\partial_\nu B_\mu
+B_{\mu\nu}=\partial_\mu B_\nu-\partial_\nu B_\mu
 $$
 
 essentially provide a more complicated way of writing the wave equation operating on the four-potential $B_\mu$, exactly as in Maxwell's equations. 
 
-The expression for the $\mathbf{W}_{\mu\nu}$ is more complex, involving a 2x3 traceless Hermitian matrix..??
+The expression for the $\mathbf{W}_{\mu\nu}$ is more complex, involving a 2x2 traceless Hermitian matrix..??
 
 $$
 \mathbf{W}_{\mu\nu} = \partial_\mu\mathbf{W}_\nu - \partial_\nu\mathbf{W}_\mu + ig_2 \frac{\left(\mathbf{W}_\mu\mathbf{W}_\nu - \mathbf{W}_\nu\mathbf{W}_\mu\right)}{2}
@@ -152,7 +152,7 @@ plus a neutrino mass term (not officially part of the original Standard Model)
 
 {id="eq_neutrino-mass" title="neutrino mass term"}
 $$
-\mathcal{L}_{nm} = \frac{\sqrt{2}}{\nu}\left[\left(-\bar{e}_L,\bar{\nu}_L\right)\phi^{*}M^\nu\nu_R + \bar{\nu}_R\bar{M}^\nu\phi^T\binom{-e_L}{\nu_L}\right]
+\mathcal{L}_{nm} = -\frac{\sqrt{2}}{\nu}\left[\left(-\bar{e}_L,\bar{\nu}_L\right)\phi^{*}M^\nu\nu_R + \bar{\nu}_R\bar{M}^\nu\phi^T\binom{-e_L}{\nu_L}\right]
 $$
 
 and the Higgs field dynamical and mass term, where the mass term is what causes the spontaneous symmetry breaking:
@@ -182,7 +182,7 @@ $$
 \mathcal{L}_\phi = \overline{\left(\partial_\mu\phi\right)} \partial^\mu\phi - \frac{\mu\phi-m_h^2\left[\bar{\phi}\phi - \frac{\nu^2}{2}\right]^2}{2\nu^2}
 $$
 
-is minimized, and $h$ is a residual Higgs field
+is minimized, and $h$ is a residual Higgs field.
     
 ### Quarks, color force
 
@@ -201,11 +201,11 @@ $$
 $$
 
 $$
-D_\mu \binom{u_L}{d_L} = \left[\partial_\mu-\frac{ig_1}{6}B_\mu + \frac{ig_2}{2}\mathbf{W}_\mu+ig\mathbf{G}_\mu\right] \binom{u_L}{d_L}
+D_\mu \binom{u_L}{d_L} = \left[\partial_\mu+\frac{ig_1}{6}B_\mu + \frac{ig_2}{2}\mathbf{W}_\mu+ig\mathbf{G}_\mu\right] \binom{u_L}{d_L}
 $$
 
 $$
-D_\mu u_R = \left[\partial_\mu+\frac{i2g_1}{3}B_\mu + ig\mathbf{G}_\mu\right] u_r
+D_\mu u_R = \left[\partial_\mu+\frac{i2g_1}{3}B_\mu + ig\mathbf{G}_\mu\right] u_R
 $$
 
 $$

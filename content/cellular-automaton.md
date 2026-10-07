@@ -17,11 +17,11 @@ Why doesn't the Standard Model itself provide the desired level of description? 
 
 By contrast, [[Maxwell]]'s equations for electromagnetic (EM) radiation in the Lorenz gauge provide an entirely local, autonomous, _mechanistic_, model of wave propagation that doesn't require any human intervention or expertise to produce the resulting physics. It can just _happen_ like that autonomously, everywhere in space. See [[calculational tool]]s for more on this distinction.
 
-This satisfying level of understanding is what led the physicists in the late 1800's to believe that physics was nearly solved. Critically, they hypothesized the presence of the [[aether]] as a kind of physical substrate for these EM waves, which was then invalidated by the Michaelson-Morley experiment. This level of thinking was taking things one step too far, however. We don't need to impose any kind of macroscopic, intuitive mechanism underlying the basic physical mechanisms. 
+This satisfying level of understanding is what led the physicists in the late 1800's to believe that physics was nearly solved. Critically, they hypothesized the presence of the [[aether]] as a kind of physical substrate for these EM waves, which was then invalidated by the Michelson-Morley experiment. This level of thinking was taking things one step too far, however. We don't need to impose any kind of macroscopic, intuitive mechanism underlying the basic physical mechanisms. 
 
 The whole point is that, at the most fundamental level, there are just fundamental mechanisms that we can describe, but, because they are fundamental, it is pointless to try to then impose some further "steampunk" kind of gears and fluids underlying these fundamental mechanisms. You have to stop _somewhere_. And that description must be compatible with all known physical phenomena per the Standard Model.
 
-## The computabilty constraint
+## The computability constraint
 
 So what kind of principled constraints can we impose on the kind of description we seek? One fundamental constraint is that it should be **computable**. That is, the resulting theory should be able to be implemented on a universal computational device (i.e., a Turing machine), and it should run according to a **fixed program** over some kind of well-defined **state** variables. The fixed program may involve fundamentally stochastic processes, but it should not have any internal loops with a possibility of non-deterministic stopping behavior. There are obvious implications of this for [[quantum computing]].
 
@@ -69,7 +69,7 @@ In this CA (widely available as a screensaver), there is a two-dimensional grid 
 
 ## Physical implications
 
-One specific implication of the CA framework is that it unambiguously establishes the position basis as primary for representing discrete massive particles, consistent with the [[pilot-wave]] framework. In addition, the [[Pauli exclusion principle]] is strongly suggestive of a discrete CA-like state. This principle posits that only one _fermion_ (electron, quark, etc, with a quantum spin of 1/2) can occupy the same quantum state, including position, at a time.
+One specific implication of the CA framework is that it unambiguously establishes the position basis as primary for representing discrete massive particles, consistent with the [[pilot-wave]] framework. In addition, the [[Pauli exclusion principle]] is strongly suggestive of a discrete CA-like state. This principle posits that only one _fermion_ (electron, quark, etc., with a quantum spin of 1/2) can occupy the same quantum state, including position, at a time.
 
 Thus, the underlying CA state representation only needs to be able to hold one of each particle type, which eliminates the difficult problem of having to represent a variable number of such particles at each location. In other words, the "memory allocation" for each cell is constant, regardless of what kind of matter or energy might be present. This is not the case for the [[configuration space]] used in standard quantum frameworks, which has the hallmark of a calculational tool in that it is always constructed for each specific problem being solved.
 

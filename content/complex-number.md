@@ -26,7 +26,7 @@ These are the conventions for state variables:
 * $\chi$ = chi = complex-number state value: two independent real-valued numbers per cell.
 * $\psi$ = psi = full [[Dirac]] state value, which has two separate complex numbers, and captures the property of [[spin]]. We also use this for the [[Schrodinger]] wave state, as it is conventionally done, even though it is just a single complex number.
 
-Here's a few interesting facts about complex numbers:
+Here are a few interesting facts about complex numbers:
 
 To do algebra on them, you just have to remember to _keep the real-values sorted separately from the imaginary ones,_ but otherwise treat them just like a pair of numbers:
 
@@ -87,7 +87,7 @@ $$
 = a^2 + b^2
 $$
 
-This should be recognizable as simply the pythagorean theorem for the squared length of the hypotenuse of a right triangle ($a^2 + b^2 = c^2$). Again, complex numbers have no mystery: they just represent a two-valued vector.
+This should be recognizable as simply the Pythagorean theorem for the squared length of the hypotenuse of a right triangle ($a^2 + b^2 = c^2$). Again, complex numbers have no mystery: they just represent a two-valued vector.
 
 ## Rotation by the exponential
 
@@ -98,7 +98,7 @@ $$
 e^{i\theta} = \cos \theta + i \sin \theta
 $$
 
-Which is directly a rotation around the the complex plane: the real component is multiplied by the x-axis-like rotational factor, while the imaginary component gets the y-axis-like rotational factor. If $\theta$ is small, then cosine is close to 1 and sine is close to 0, and there isn't much rotation, etc.
+Which is directly a rotation around the complex plane: the real component is multiplied by the x-axis-like rotational factor, while the imaginary component gets the y-axis-like rotational factor. If $\theta$ is small, then cosine is close to 1 and sine is close to 0, and there isn't much rotation, etc.
 
 The essential insight for _why_ Euler's formula is true, is that the derivative of the sine function is cosine, and vice-versa:
 
@@ -115,10 +115,10 @@ $$
 So by putting the $i$ into this expression, Euler's formula emerges because the $i$ switches the real component into the imaginary one, and vice-versa:
 
 $$
-\frac{d}{dx} e^{i\theta} = \cos \theta + i \sin \theta = e^{i\theta}
+\frac{d}{d\theta} e^{i\theta} = -\sin \theta + i \cos \theta = i (\cos \theta + i \sin \theta) = i e^{i\theta}
 $$
 
-low and behold, the derivative is the same as the function itself!
+lo and behold, the derivative is the same as the function itself (times $i$)!
 
 Fundamentally, this deep connection between trigonometry and the natural exponential arises because the circle has this property, captured in the derivatives, that as you move along it, the _x_ and _y_ components are constantly accelerating and decelerating in just such a way as to keep the total radius constant. Thus, the slope (derivative) of one is equal to the value of the other, and vice-versa.
 

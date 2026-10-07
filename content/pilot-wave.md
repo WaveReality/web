@@ -43,7 +43,7 @@ The Bohmian version of the pilot-wave framework can be expressed succinctly in t
 
 {id="eq_bohm" title="Bohmian guidance formula"}
 $$
-\frac{d x(t)}{d t} = \frac{\hbar}{m} \frac{\psi^*_t \nabla \psi_t}{\psi^*_t \psi_t}
+\frac{d x(t)}{d t} = \frac{\hbar}{m} \, \mathrm{Im} \left( \frac{\psi^*_t \nabla \psi_t}{\psi^*_t \psi_t} \right)
 $$
 
 where $\psi_t$ is the [[Schrodinger]] wave function at time $t$, $m$ is the particle mass, and $\nabla$ computes the local spatial gradient as described in [[wave]].
@@ -62,7 +62,7 @@ The hydrodynamic model of the pilot-wave framework ([[#figure_hqa-wave]], known 
 
 > The theory of quantum mechanics is undoubtedly nonlocal. HQA is questioning the extent to which quantum physics need be nonlocal. Quantum nonlocality would appear to be ubiquitous, manifest everywhere from wave-function collapse to statistical projection effects to slit diffraction, from surreal trajectories to the Elitzur–Vaidman bomb tester. HQA has made clear that all these phenomena, at least, can be understood from a local realist perspective.
 
-What remains to be explained are really the [[Bell]]'s inequality tests of quantum [[non-locality]]. There is already an HQA model of the static version of such a test ([[@AspectDalibardRoger82]]), which explains the non-local effects in terms of the wave reflecting the stable structure of the detectors ([[@PapatryfonosVervoortRuelleEtAl25]]). Given the extreme difficulties associated with non-locality and the basic requirements of a [[universal basis]] representation for physics, and the increasingly limited scope of phenomena that non-locality is needed to explain, it is not unreasonable to therefore be motivated to find other ways of accounting for these phenomena.
+What remains to be explained are really the [[Bell]]'s inequality tests of quantum [[non-locality]]. There is already an HQA model of the static version of such a test ([[@AspectGrangierRoger82]]), which explains the non-local effects in terms of the wave reflecting the stable structure of the detectors ([[@PapatryfonosVervoortRuelleEtAl25]]). Given the extreme difficulties associated with non-locality and the basic requirements of a [[universal basis]] representation for physics, and the increasingly limited scope of phenomena that non-locality is needed to explain, it is not unreasonable to therefore be motivated to find other ways of accounting for these phenomena.
 
 In this respect, one notable feature of the HQA models is that they are both non-linear and **non-Markovian**, in that the wave is a double solution (per de Broglie) that is strongly influenced by the particle, and vice-versa, with evidence of significant path-based _memory_ emerging in the wave field ([[@EddiSultanMoukhtarEtAl11]]; [[@BushPapatryfonosFrumkin24]]). This property violates many standard assumptions in various analytical treatments of non-locality and the exponential configuration space (e.g., [[@Montina08]]; [[@Sciarretta18a]]; [[@Sciarretta21]]).
 

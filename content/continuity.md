@@ -65,7 +65,7 @@ $$
 \vec{\nabla} \cdot \vec{J} \equiv \frac{\partial J_x}{\partial x} + \frac{\partial J_y}{\partial y} + \frac{\partial J_z}{\partial z}
 $$
 
-(this is just the sum of the spatial derivatives along each spatial direction). We cover divergence in greater detail in [[Maxwell]] --- it represents the amount of new "stuff" accumulating in a given region of space from the flow in from its neighbors. If the total amount of stuff is to remain constant, then this increment needs to be offset by a change in the amount of stuff in that region itself, which is $\frac{\partial }{\partial t}\rho}$. This is what this equation captures.
+(this is just the sum of the spatial derivatives along each spatial direction). We cover divergence in greater detail in [[Maxwell]] --- it represents the amount of new "stuff" accumulating in a given region of space from the flow in from its neighbors. If the total amount of stuff is to remain constant, then this increment needs to be offset by a change in the amount of stuff in that region itself, which is $\frac{\partial }{\partial t}\rho$. This is what this equation captures.
 
 This continuity relationship can be expressed in a [[four-vector]] (space-time) derivative notation, in terms of a single four-vector charge / current variable $J^\mu$:
 
@@ -85,7 +85,7 @@ $$
 
 This one expression succinctly captures the key idea that the time-like first element is trading-off against the three space-like elements to produce an overall conservation of current, very much in the same way that the basic wave equations involve a tradeoff between time and space derivatives.
 
-From here, we can go back to [[#eq_conserve-int]] and establish the connection with the continuity equation, in the context of the KG wave function ([[@Greiner00]]; [[@Gingrich04]]), :
+From here, we can go back to [[#eq_conserve-int]] and establish the connection with the continuity equation, in the context of the KG wave function ([[@Greiner00]]; [[@Gingrich04]]):
 
 $$
 \chi^* (\partial_\mu \partial^\mu + m_0^2) \chi - \chi (\partial_\mu \partial^\mu + m_0^2) \chi^* = 0
@@ -112,7 +112,7 @@ $$
 $$
 
 $$
-\partial_\mu (\chi^* \partial_\mu \chi) - (\partial_\mu \chi^*)(\partial^\mu \chi) + m_0^2 \chi^* \chi
+\partial_\mu (\chi^* \partial^\mu \chi) - (\partial_\mu \chi^*)(\partial^\mu \chi) + m_0^2 \chi^* \chi
 $$
 
 and for the opposite configuration:
@@ -122,13 +122,13 @@ $$
 $$
 
 $$ 
-\partial_\mu (\chi \partial_\mu \chi^*) - (\partial_\mu \chi)(\partial^\mu \chi^*) + m_0^2 \chi \chi^*
+\partial_\mu (\chi \partial^\mu \chi^*) - (\partial_\mu \chi)(\partial^\mu \chi^*) + m_0^2 \chi \chi^*
 $$
 
 So when you subtract them, the second and third terms in each expression are the same, and cancel out, leaving only the difference in the first terms:
 
 $$
-(\partial_\mu \chi^*)(\partial^\mu \chi) - (\partial_\mu \chi)(\partial^\mu \chi^*) = 0
+\partial_\mu (\chi^* \partial^\mu \chi) - \partial_\mu (\chi \partial^\mu \chi^*) = 0
 $$
 
 $$

@@ -3,7 +3,7 @@ Categories = ["Standard Model"]
 bibfile = "mechphys.json"
 +++
 
-**Special relativity** is the first version of Einstein's famous relativity theories, published in 1904. Interestingly, most of the mathematical principles and phenomena were already well established prior to this publication. What the theory added was a comprehensive new framework for understanding these otherwise disparate phenomena.
+**Special relativity** is the first version of Einstein's famous relativity theories, published in 1905. Interestingly, most of the mathematical principles and phenomena were already well established prior to this publication. What the theory added was a comprehensive new framework for understanding these otherwise disparate phenomena.
 
 Apparently Einstein was motivated to come up with special relativity in part by thinking about what it would be like to catch up with a beam of light. Turns out you can't: light always moves at the same speed away from you, no matter how fast you are going. Thus, the [[wave]]s described by the basic wave equation are always speeding along at the same speed, and are relativistic in a fairly straightforward but also somewhat uninteresting way: they just cruise around at the same speed of light, and not much else can be said for them.
 
@@ -17,7 +17,7 @@ In contrast, things that have a non-zero rest mass are subject to three major ef
 ![Intuitive explanation of Lorentz contraction of space that occurs as something moves faster, in terms of the relationship between wave frequency and speed in the Klein-Gordon wave equation. Because faster movement is associated with higher frequency and shorter wavelength, the system contracts in the direction of motion as it speeds up. Thus, any measurements made in the faster system will have their basic constituents, including yard sticks and everything else, shrunk in this way. This is one of the main effects of special relativity.](media/fig_wave_contract.png)
 
 {id="figure_lorentz" style="height:20em"}
-![The Lorentz Transformation, a central property of special relativity, which causes length in the direction of motion to shrink and time to expand (dilate) as a function of relative speed, in just such a way as to preserve the observed speed of light regardless of how fast one is going. The matter wave equation exhibits exactly this behavior, which completely masks any fixed matrix in which such waves might be implemented. In this example, a speeding light ray is observed at a given time t by an observer in a train speeding along at 86.6% of the speed of light $(c \approx 3.0x10^8)$, and by "us" sitting in a stopped train (on a siding presumably). All the measurements in black are what we observe in this stopped reference frame, while those in red are what the speeding train guy observes. If we wait 100 nanoseconds (ns) ($1x10^{-7}$ seconds --- 100 times slower than the clock rate on a 1Ghz computer chip), then this light ray will have moved 30 meters. However, from our stopped perspective, the speeding train will be partially keeping up with the light ray, so that it will appear to have traveled only 4m relative to the moving train. Thus, in this stopped reference frame, where 100ns have passed for this light to appear to have traveled 4m, we might naively assume that someone on the speeding train would measure the speed of light as only $4x10^{7} m/s$ --- oops!  But the Lorentz transformations of length and time exactly compensate. The length of the train in the direction of motion shrinks in half, so that people on the train measure the 4m in the stopped reference frame as 8m in the moving reference frame --- twice as long. Furthermore, time moves more slowly for the speeding train, such that the 100ns in our reference frame is measured as only 50ns in the speeding train reference frame (at a static reference point in the speeding train, which is the very back of the coal tender in this example). The measurement of time is very strange in special relativity, because what is observed as occurring at the same time (simultaneity) across different reference frames depends on both time ''and location''. Thus, when the light ray is measured at 8m ahead of the back of the coal tender, this registers as only 26.8ns of elapsed time!  If you divide this 8m by that amount of time, it comes out to exactly the same speed of light as in the stopped frame. The time transformation equation is: $t' = \gamma (t-vx/c^2)$ and the position transformation is: $x' = \gamma (x-vt)$, where t' and x' are as measured on the speeding train and t, x are on the stopped one, and $\gamma = 1/\sqrt{1-v^2/c^2}$.](media/fig_lorentz_xform.png)
+![The Lorentz Transformation, a central property of special relativity, which causes length in the direction of motion to shrink and time to expand (dilate) as a function of relative speed, in just such a way as to preserve the observed speed of light regardless of how fast one is going. The matter wave equation exhibits exactly this behavior, which completely masks any fixed matrix in which such waves might be implemented. In this example, a speeding light ray is observed at a given time t by an observer in a train speeding along at 86.6% of the speed of light $(c \approx 3.0x10^8)$, and by "us" sitting in a stopped train (on a siding presumably). All the measurements in black are what we observe in this stopped reference frame, while those in red are what the speeding train guy observes. If we wait 100 nanoseconds (ns) ($1x10^{-7}$ seconds --- 100 times slower than the clock rate on a 1GHz computer chip), then this light ray will have moved 30 meters. However, from our stopped perspective, the speeding train will be partially keeping up with the light ray, so that it will appear to have traveled only 4m relative to the moving train. Thus, in this stopped reference frame, where 100ns have passed for this light to appear to have traveled 4m, we might naively assume that someone on the speeding train would measure the speed of light as only $4x10^{7} m/s$ --- oops!  But the Lorentz transformations of length and time exactly compensate. The length of the train in the direction of motion shrinks in half, so that people on the train measure the 4m in the stopped reference frame as 8m in the moving reference frame --- twice as long. Furthermore, time moves more slowly for the speeding train, such that the 100ns in our reference frame is measured as only 50ns in the speeding train reference frame (at a static reference point in the speeding train, which is the very back of the coal tender in this example). The measurement of time is very strange in special relativity, because what is observed as occurring at the same time (simultaneity) across different reference frames depends on both time _and location_. Thus, when the light ray is measured at 8m ahead of the back of the coal tender, this registers as only 26.8ns of elapsed time!  If you divide this 8m by that amount of time, it comes out to exactly the same speed of light as in the stopped frame. The time transformation equation is: $t' = \gamma (t-vx/c^2)$ and the position transformation is: $x' = \gamma (x-vt)$, where t' and x' are as measured on the speeding train and t, x are on the stopped one, and $\gamma = 1/\sqrt{1-v^2/c^2}$.](media/fig_lorentz_xform.png)
 
 Almost miraculously, all of these effects can be derived directly from the [[Klein-Gordon]] equation. Intuitively, the contraction of space along the direction of travel occurs because the length of a given thing is measured in terms of the wavelengths of the underlying particles that compose it. As these things move with greater velocity, their frequency increases and their wavelengths decrease, and this results in a shorter overall length (as viewed from an outside observer).
 
@@ -40,7 +40,7 @@ In contrast, a static observer watching the moving observer chasing after the li
 ![The amount of shrinkage as a function of velocity $v$ is determined by the Lorentz factor $\gamma$, which is plotted here (in natural units where the speed of light $c = 1$). Not much happens until you get very close to the speed of light (e.g., above 90% or .9).](media/fig_lorentz_factor.png)
 
 {id="figure_lorentz-coord" style="height:20em"}
-![Lorentz coordinate transformations, plotted in one spatial coordinate (x) and time (vertical axis). In the resting frame F, two points (think of them as marbles) just sit motionless, and thus form vertical trajectories through increasing time. When these are transformed into a reference frame F' (aligned at point (t=0,x=0) with F) moving to the left at $v = -.866$ (Lorentz factor $\gamma = 2$), several interesting features of the Lorentz transformation are evident. If we follow the marble that was originally located at (0,x) as it sits in frame F for 3 time steps, we see that it appears to move to the right in frame F', in the opposite direction of F' motion. Furthermore, because of the Lorentz factor, the 3 seconds in frame F amount to 6 seconds in F', and the distance it should travel due to the relative motion, computed in frame F ($-vt = .866 \times 3 = 2.598$) corresponds to 5.196 in frame F'. The second marble reveals a critical and somewhat counter-intuitive effect, where two events that are _simultaneous_ in frame F (i.e., t=0 for both of these), occur at ''different times'' in frame F'. Specifically the second marble sitting at rest at x=2 at t=0 is not &quot;encountered&quot; by the moving frame F' until 3.464 time seconds later (in F' time units), due to it being offset in space from the first marble. It takes the frame F' $(-vx = .866 * 2 = 1.732)$ time units to get to this second point (in the units of the F frame), and when this gets subject to the time dilation effect, you end up with the 3.464. From this starting point for the second marble, the same time and space increments as for the first marble occur for the subsequent point 3 time units later.](media/fig_lorentz_xform_coord.png)
+![Lorentz coordinate transformations, plotted in one spatial coordinate (x) and time (vertical axis). In the resting frame F, two points (think of them as marbles) just sit motionless, and thus form vertical trajectories through increasing time. When these are transformed into a reference frame F' (aligned at point (t=0,x=0) with F) moving to the left at $v = -.866$ (Lorentz factor $\gamma = 2$), several interesting features of the Lorentz transformation are evident. If we follow the marble that was originally located at (0,x) as it sits in frame F for 3 time steps, we see that it appears to move to the right in frame F', in the opposite direction of F' motion. Furthermore, because of the Lorentz factor, the 3 seconds in frame F amount to 6 seconds in F', and the distance it should travel due to the relative motion, computed in frame F ($-vt = .866 \times 3 = 2.598$) corresponds to 5.196 in frame F'. The second marble reveals a critical and somewhat counter-intuitive effect, where two events that are _simultaneous_ in frame F (i.e., t=0 for both of these), occur at _different times_ in frame F'. Specifically the second marble sitting at rest at x=2 at t=0 is not &quot;encountered&quot; by the moving frame F' until 3.464 time seconds later (in F' time units), due to it being offset in space from the first marble. It takes the frame F' $(-vx = .866 * 2 = 1.732)$ time units to get to this second point (in the units of the F frame), and when this gets subject to the time dilation effect, you end up with the 3.464. From this starting point for the second marble, the same time and space increments as for the first marble occur for the subsequent point 3 time units later.](media/fig_lorentz_xform_coord.png)
 
 {id="figure_lorentz-coord-c" style="height:20em"}
 ![An alternative situation to the previous Figure, where the points in frame F are now moving at the speed of light (indicated by their slopes being 1; they are now photons instead of marbles). The Lorentz conversions preserve these slopes, so that the speeds are still 1 in the F' frame. Thus, the speed of light is always the same to all observers.](media/fig_lorentz_xform_coord_c.png)
@@ -58,7 +58,7 @@ $$
 
 The shape of this function is shown in [[#figure_lorentz-factor]]. Because the velocity enters into this function as a squared term, the function has a parabolic shape, such that not much happens until the velocity gets very close to the speed of light.
 
-For the situation illustrated in , the moving rod in frame F' appears shortened in the static frame F by a factor of $\frac{1}{\gamma}$:
+For the situation illustrated in [[#figure_lorentz2]], the moving rod in frame F' appears shortened in the static frame F by a factor of $\frac{1}{\gamma}$:
 
 {id="eq_contract" title="Lorentz contraction"}
 $$
@@ -74,11 +74,11 @@ $$
 
 It is important to keep in mind that in these equations, the $l'$ and $t'$ refer to what something in the moving F' reference frame looks like to someone in the static frame, F, relative to these same quantities as measured in the static frame ($l$ and $t$). But this assumes that we have previously established in a common reference frame that the rod in F' actually has the same length as the one in F (and the second similarly has the same duration).
 
-An alternative (and more conventional, but sometimes more confusing) way of using the prime notation is to directly convert between coordinate systems of the two reference frames, where the primed and unprimed cases both refer to _the exact same event_ from the two different perspectives. In this case $l'$ would refer to how an observer _in F'_ would measure the rod length, whereas $l$ refers to what someone in F would measure _for the very same rod that is moving in F'_, not for the "standard length" of the rod when both reference frames where static.
+An alternative (and more conventional, but sometimes more confusing) way of using the prime notation is to directly convert between coordinate systems of the two reference frames, where the primed and unprimed cases both refer to _the exact same event_ from the two different perspectives. In this case $l'$ would refer to how an observer _in F'_ would measure the rod length, whereas $l$ refers to what someone in F would measure _for the very same rod that is moving in F'_, not for the "standard length" of the rod when both reference frames were static.
 
 In this case, things are exactly flipped, and we would say that $l'$ is the original rod length (say 1 meter), because it is in the F' reference frame that the rod is not moving, whereas in the F reference frame, the rod has shrunk to a shorter apparent length $l$ (say .5 meters, if $v=.866$). Similarly, the second measured in F' ($t'$) corresponds to a longer time interval $t$ in F (e.g., 2 seconds). It is definitely complicated to keep track of all this moving back and forth between reference frames!
 
-In this way of doing things, in frame F, we designate an event as occurring at space-time location $(t,x,y,z)$ (this is a [[four-vector]] or **space-time coordinate** in _Minkowski_ space. In frame F', this same event has coordinates $(t',x',y',z')$, where the two coordinate systems are aligned such that the origin (0,0,0,0) is the same in both. As before, we specify that the relative velocity $v$ between the two frames is entirely along the $x$ axis, for simplicity. We can compute these F' coordinates directly from our F coordinates, using Lorentz transformations (again in natural units where $c=1$, and $v$ goes between 0 and 1):
+In this way of doing things, in frame F, we designate an event as occurring at space-time location $(t,x,y,z)$ (this is a [[four-vector]] or **space-time coordinate** in _Minkowski_ space). In frame F', this same event has coordinates $(t',x',y',z')$, where the two coordinate systems are aligned such that the origin (0,0,0,0) is the same in both. As before, we specify that the relative velocity $v$ between the two frames is entirely along the $x$ axis, for simplicity. We can compute these F' coordinates directly from our F coordinates, using Lorentz transformations (again in natural units where $c=1$, and $v$ goes between 0 and 1):
 
 * $t' = \gamma (t - vx) $
 * $x' = \gamma (x - vt) $
@@ -120,11 +120,11 @@ Interestingly, if both velocities $w$ and $v$ are small (relative to the speed o
 | w = 0    | w' = -v |           | only relative motion    |
 | w = v    | w' = 0  |           | same speed              |
 | w = .2   | v = .1  | w' = .102 | slightly faster than .1 |
-| w = -.1  | v = .1  | w' = .199 | slightly slower than .2 |
-| w = .9   | v = .1  | w' = .87  | much faster than .8     |
-| w = -.9  | v = .1  | w' = .99  | much slower than 1.1    |
+| w = -.1  | v = .1  | w' = -.198 | slightly slower than .2 |
+| w = .9   | v = .1  | w' = .88  | much faster than .8     |
+| w = -.9  | v = .1  | w' = -.92 | much slower than 1.0    |
 | w = 1.0  | v = .1  | w' = 1.0  | speed of light is same  |
-| w = -1.0 | v = .1  | w' = 1.0  | speed of light is same  |
+| w = -1.0 | v = .1  | w' = -1.0 | speed of light is same  |
 
 One other important point to be made about special relativity is that there is an invariant calculation that can be made on the coordinates measured in any given reference frame, which will yield the same result as in any other reference frame. This is a kind of distance metric between two points $(t_1, x_1, y_1, z_1)$ and $(t_2, x_2, y_2, z_2)$ (both of which must be measured in the same reference frame):
 
@@ -132,7 +132,7 @@ $$
 ds^2 = (t_1 - t_2)^2 - (x_1 - x_2)^2 - (y_1 - y_2)^2 - (z_1 - z_2)^2
 $$
 
-You can try this out on the coordinates in for the same points in the different reference frames: you'll get the same results for either (with small differences due to round-off errors). Interestingly, when you try it for the second case with the photons moving at the speed of light, you see that this value is always 0. Thus, in effect, the distance in space is equal to the distance in time. If we just have motion in one spatial dimension (e.g., $x$), this is clear:
+You can try this out on the coordinates in [[#figure_lorentz-coord]] for the same points in the different reference frames: you'll get the same results for either (with small differences due to round-off errors). Interestingly, when you try it for the second case with the photons moving at the speed of light, you see that this value is always 0. Thus, in effect, the distance in space is equal to the distance in time. If we just have motion in one spatial dimension (e.g., $x$), this is clear:
 
 $$
 (t_1 - t_2)^2 - (x_1 - x_2)^2 = 0
@@ -177,7 +177,7 @@ $$
 E = \sqrt{\vec{p}^2 c^2 + (m_0 c^2)^2}
 $$
 
-which is different way of expressing the energy of the system. It is very sensible, in that the two main contributors to energy are the momentum (i.e., kinetic energy) and the rest energy. If you set $c=1$, it is even simpler:
+which is a different way of expressing the energy of the system. It is very sensible, in that the two main contributors to energy are the momentum (i.e., kinetic energy) and the rest energy. If you set $c=1$, it is even simpler:
 
 $$
 E^2 = \vec{p}^2+ m_0^2
@@ -187,7 +187,7 @@ $$
 E = \sqrt{\vec{p}^2+ m_0^2}
 $$
 
-You can think of the rest energy and momentum as two legs of a right triangle, such that the total energy is the hypotenuse, according to the pythagorean theorem.
+You can think of the rest energy and momentum as two legs of a right triangle, such that the total energy is the hypotenuse, according to the Pythagorean theorem.
 
 In the limit of a slow velocity (relative to the speed of light), this expression approaches the Newtonian expression for kinetic energy (plus the rest mass energy):
 
@@ -255,7 +255,7 @@ $$
 v = \frac{1}{\gamma m_0} p
 $$
 
-{id="eq_flip-v" title="substitute definition of p in terms of wavelength"}
+{id="eq_p-lambda" title="substitute definition of p in terms of wavelength"}
 $$
 v = \frac{\sqrt{1 - \frac{v^2}{c^2}}} {m_0} \frac{h}{\lambda}
 $$
@@ -295,7 +295,7 @@ $$
 v^2 = \frac{h^2 c^2}{c^2 m_0^2 \lambda^2 + h^2}
 $$
 
-{id="eq_flip-v" title="final expression: take square root"}
+{id="eq_v-final" title="final expression: take square root"}
 $$
 v = \frac{h c}{\sqrt{c^2 m_0^2 \lambda^2 + h^2}}
 $$ 

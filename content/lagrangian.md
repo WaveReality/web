@@ -7,14 +7,14 @@ bibfile = "mechphys.json"
 
 The Lagrangian (not to be confused with the _Laplacian_ that computes the spatial gradient of the [[wave]]), is typically defined as the total kinetic energy _T_ minus potential energy _V_:
 
-{eq="eq_lagrangian-general" title="Lagrangian in general form"}
+{id="eq_lagrangian-general" title="Lagrangian in general form"}
 $$
 \mathcal{L} = T - V
 $$
 
 By comparison, the [[Hamiltonian]] formulation (proposed in 1833) defines the total energy as the sum of kinetic and potential energy:
 
-{eq="eq_hamiltonian-general" title="Hamiltonian in general form"}
+{id="eq_hamiltonian-general" title="Hamiltonian in general form"}
 $$
 H = T + V
 $$
@@ -27,7 +27,7 @@ Thus, in the context of the [[four-vector]] notation that is particularly useful
 
 The Lagrangian is used to evaluate the **action** $S$, which is a **path integral** between two points (i.e., two distinct _states_ of the overall system):
 
-{eq="eq_action" title="action"}
+{id="eq_action" title="action"}
 $$
 S = \int \mathcal{L} dt
 $$
@@ -36,7 +36,7 @@ $$
 S = \int_{q_1}^{q_2} \mathcal{L}(\dot{q}, q) dt
 $$
 
-Where the latter expression provides the concrete parameterization of the two points $q_1$ and $q_2$, and the Laplacian being a function of the individual points along the way between these two points (i.e., the **path**), and the velocities along these paths.
+Where the latter expression provides the concrete parameterization of the two points $q_1$ and $q_2$, and the Lagrangian being a function of the individual points along the way between these two points (i.e., the **path**), and the velocities along these paths.
 
 The _q_ points are coordinates in the [[configuration space]] of the system, which are typically strategically chosen to simplify the computation, and in general expand exponentially in the number of dynamic elements in the system.
 
@@ -52,7 +52,7 @@ By contrast, in the quantum mechanical approach, _all possible paths_ are taken 
 
 The action effectively defines the **Euler-Lagrange** equation which can be used to derive laws of motion.
 
-{eq="eq_euler-lagrange" title="Euler-Lagrange equations"}
+{id="eq_euler-lagrange" title="Euler-Lagrange equations"}
 $$
 \frac{d}{dt} \left( \frac{\partial \mathcal{L}}{\partial \dot{q}_j} \right) = \frac{\partial \mathcal{L}}{\partial q_j}
 $$

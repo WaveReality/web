@@ -6,13 +6,13 @@ bibfile = "mechphys.json"
 The definitive test of the [[non-locality]] of quantum physics is provided by a framework known as **Bell's inequality**, developed by [[@^Bell64]] (see [[@Bell04]]; [[@Bell66]]; [[@Bell81]] and [[@ClauserHorneShimonyEtAl69]]). The experimental tests of this logic have confirmed the quantum predictions, in ways that have also dealt with a number of possible loopholes in the logic ([[@AspectDalibardRoger82]]; [[@GiustinaVersteeghWengerowskyEtAl15]]; [[@HensenBernienDreauEtAl15]]; [[@ShalmMeyer-ScottChristensenEtAl15]]).
 
 {id="figure_bert" style="height:25em"}
-![Illustration of the standard intuition about the local hidden variable version of the Bell's inequality test, provided by J.S. Bell in his 1981 paper ([[@Bell81]]). Bell's friend Bertlemann is eccentric and always wears different color socks. Thus, if you happen to see one sock, you know the other is a different color, without having to look at it. This is perfectly sensible. However, the challenging thing about Bell's test is that your "measurement" of the color of the first sock actually _determines_ what you see: it doesn't actually _have_ a specific color until this measurement, because the socks _must_ be in a **superposition** (entangled) state to see the effect. Once you make that measurement, it "magically" influences the result that you get when you measure the other sock! This apparent non-local communication of the results of the first measurement, effectively changing the color of the sock on the other foot ("mid-step" as it were), is what boggles the mind. However, one could argue that this is merely revealing the fact that we have no idea what it means for something to be in a state of superposition, or how a measurement actually works to collapse this superposition into a distinct result.](media/fig_bertlmanns_socks.png)
+![Illustration of the standard intuition about the local hidden variable version of the Bell's inequality test, provided by J.S. Bell in his 1981 paper ([[@Bell81]]). Bell's friend Bertlmann is eccentric and always wears different color socks. Thus, if you happen to see one sock, you know the other is a different color, without having to look at it. This is perfectly sensible. However, the challenging thing about Bell's test is that your "measurement" of the color of the first sock actually _determines_ what you see: it doesn't actually _have_ a specific color until this measurement, because the socks _must_ be in a **superposition** (entangled) state to see the effect. Once you make that measurement, it "magically" influences the result that you get when you measure the other sock! This apparent non-local communication of the results of the first measurement, effectively changing the color of the sock on the other foot ("mid-step" as it were), is what boggles the mind. However, one could argue that this is merely revealing the fact that we have no idea what it means for something to be in a state of superposition, or how a measurement actually works to collapse this superposition into a distinct result.](media/fig_bertlmanns_socks.png)
 
 The Bell's inequality framework involves computing the statistics of measurements of an **entangled** quantum system of two particles, which means that the quantum wave is in a state of **superposition**. While we can easily represent this superposition in the mathematics of the [[Hilbert space]], as we show below, it is unclear what the actual physical implication of such a superposition state is. People tend to think of it as an [[epistemic]] uncertainty, where somehow the system "really" is in some specific underlying state, but we just don't yet know what that state is.
 
 As illustrated in [[#figure_bert]] from [[@^Bell81]], this epistemic interpretation corresponds to a **local hidden variable** theory, which was the point of the original thought experiment by [[@^EinsteinPodolskyRosen35]] (EPR) that stimulated Bell's work. Specifically, under the epistemic interpretation, the measurement process merely _reveals_ what the unknown underlying state of the system was, thereby removing our lack of knowledge. The point of Bell's framework is to show that _if_ this was actually the case, then certain experimental results should follow. By contrast, the standard quantum math actually shows qualitatively different results.
 
-As described in [[#figure_bert]], the [[contextual]] property of quantum mechanics predicts that the process of measurement is actually changing the underlying quantum state, effectively _creating_ the resulting measurement outcome on the fly in the process of the measurement itself, rather than _revealing_ some kind of unknown but fully pre-existing state. And because of the entangled nature of the two particles, the further prediction is that this creation process operating on one measurement of the overall quantum state should also affect the other measurement! In effect, measuring the color "pink" on one of Bertlemann's feet actually _creates_, on the fly, the color of the other sock!
+As described in [[#figure_bert]], the [[contextual]] property of quantum mechanics predicts that the process of measurement is actually changing the underlying quantum state, effectively _creating_ the resulting measurement outcome on the fly in the process of the measurement itself, rather than _revealing_ some kind of unknown but fully pre-existing state. And because of the entangled nature of the two particles, the further prediction is that this creation process operating on one measurement of the overall quantum state should also affect the other measurement! In effect, measuring the color "pink" on one of Bertlmann's feet actually _creates_, on the fly, the color of the other sock!
 
 {id="figure_bell-packets" style="height:15em"}
 ![Illustration of the standard Bell test setup from the pilot-wave perspective of particles interacting with wave packets. Somehow, the waves are in a state of superposition as a result of entanglement, and this causes the results of measurement at A to influence the outcome at B. Or is it the other way around? This is a fundamental ambiguity in the framework.](media/fig_bell_packets.png)
@@ -31,7 +31,7 @@ But the obvious problem with such an approach is that there is at this point no 
 
 The non-locality of the configuration space does create very "real" problems for the Bohmian version of the [[pilot wave]] framework, because it postulates that the particle positions are continuously well-defined in 3D space, and yet they are being guided around by a non-local, exponentially-large configuration space wave state. Thus, it is not possible to dodge the conflict with special relativity in this framework by hiding behind the calculational tool argument, and this conflict thus remains one of the most significant difficulties with the pilot wave framework ([[@Norsen15]]; [[@Norsen11]]).
 
-The concept of superposition in the position basis is particularly interesting in the pilot-wave framework, because the positions of the discrete particles are continously defined: the particles themselves are _always_ in a specific, well-defined location. Thus, how can there be a superposition state in such a case? The answer is that the corresponding quantum wave can have the superposition state, and this ends up having the appropriate affects on the discrete particles such that they reflect the probabilities that you would otherwise get from the standard quantum formalism.
+The concept of superposition in the position basis is particularly interesting in the pilot-wave framework, because the positions of the discrete particles are continuously defined: the particles themselves are _always_ in a specific, well-defined location. Thus, how can there be a superposition state in such a case? The answer is that the corresponding quantum wave can have the superposition state, and this ends up having the appropriate effects on the discrete particles such that they reflect the probabilities that you would otherwise get from the standard quantum formalism.
 
 Here are a few other relevant high-level points.
 
@@ -39,7 +39,7 @@ Here are a few other relevant high-level points.
 
 * Extensive work has shown that classical waves, and corresponding optical wave phenomena, exhibit entanglement-like phenomena when put into a state of superposition ([[@Spreeuw98]]; [[@QianEberly11]]; [[@QianLittleHowellEtAl15]]; [[@KarimiBoyd15]]; [[@Khrennikov06]]).
 
-* However, superposition alone is insufficient. You also need the outer-product nature of [[configuration space]], which keeps the wave state of the two different particles _separated_, even as they are in a state of superposition. So the superposition is fundamentally about the possible state of _each_ particle separately, not about both particles being somehow superposed directly on top of each other. The space-like separation of A and B is indeed built into the tensor-product state representation, based on the requirement that such separated entities should be in different _non-commuting_ parts of the state space ([[@Peierls52]]).
+* However, superposition alone is insufficient. You also need the outer-product nature of [[configuration space]], which keeps the wave state of the two different particles _separated_, even as they are in a state of superposition. So the superposition is fundamentally about the possible state of _each_ particle separately, not about both particles being somehow superposed directly on top of each other. The space-like separation of A and B is indeed built into the tensor-product state representation, based on the requirement that such separated entities should be in different _commuting_ parts of the state space ([[@Peierls52]]).
 
 We return to these issues after exploring a fully worked-out example using the standard [[Hilbert space]] formalism, to get a better sense of what is happening at a mathematical level.
 
@@ -80,7 +80,7 @@ C = \begin{pmatrix}a & b\\ c & d\end{pmatrix}, \qquad \det C = ad - bc
 $$
 
 $$
-C_\otimes = \begin{pmatrix}1 & 0\\ 0 & 1\end{pmatrix}, \qquad \det C = 1 \neq 0
+C_\otimes = \begin{pmatrix}1 & 0\\ 0 & 1\end{pmatrix}, \qquad \det C_\otimes = 1 \neq 0
 $$
 
 As explained in [[hilbert-space#measurement]], the **density operator** $\rho$ contains all the information about all possible measurements on the given quantum state, providing the correlation matrix for different possible outcomes. For this entangled case, it is:
@@ -102,7 +102,7 @@ $$
 The determinant of the corresponding 2x2 matrix is zero:
 
 $$
-C_* = \begin{pmatrix}1 & 0\\0&0\end{pmatrix}, \qquad \det C = 0
+C_* = \begin{pmatrix}1 & 0\\0&0\end{pmatrix}, \qquad \det C_* = 0
 $$
 
 and the density matrix has no off-diagonal elements:
@@ -118,7 +118,7 @@ $$
 $$
 
 $$
-\rho_+ = |\psi_+\rangle \langle \psi_+ | = \begin{pmatrix} 0.5 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0.5 \end{pmatrix}
+\rho_+ = \begin{pmatrix} 0.5 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0.5 \end{pmatrix}
 $$
 
 Critically, this also has no off-diagonal elements, and thus only produces classical-like probability results.
@@ -143,7 +143,7 @@ $$
 A(\alpha) = \sin\alpha\,\sigma_x + \cos\alpha\,\sigma_z = \begin{pmatrix}\cos\alpha & \sin\alpha \\ \sin\alpha & -\cos\alpha\end{pmatrix}
 $$
 
-and likewise for $B(\beta)$. The $\sigma_x$ and $\sigma_z$ are the [[Pauli matricies]]. Each has eigenvalues $\pm 1$, with eigenvectors
+and likewise for $B(\beta)$. The $\sigma_x$ and $\sigma_z$ are the [[Pauli matrices]]. Each has eigenvalues $\pm 1$, with eigenvectors
 
 $$
 |{+}_\alpha\rangle = \begin{pmatrix}\cos\frac{\alpha}{2}\\[2pt] \sin\frac{\alpha}{2}\end{pmatrix},\qquad |{-}_\alpha\rangle = \begin{pmatrix}-\sin\frac{\alpha}{2}\\[2pt] \cos\frac{\alpha}{2}\end{pmatrix}
@@ -431,7 +431,7 @@ $$
 
 The Bell state is perfectly correlated in *every* basis. The mixture is perfectly correlated in *one* basis and uncorrelated in the conjugate one. That basis-independence is what has no classical analogue, and CHSH is the device that detects it by querying two incompatible bases at once.
 
-## Why no separable state can ever reach 2
+## Why no separable state can ever exceed 2
 
 For $\rho_{\text{mix}}$ the local hidden variable model is not hypothetical — write it down:
 

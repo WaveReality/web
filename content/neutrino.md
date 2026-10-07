@@ -13,7 +13,7 @@ The most fundamental phenomenon that defines the relationship between the [[elec
 
 Phenomenologically, this suggests that the extra mass associated with a muon versus an electron is tied up with some kind of additional spin oscillation energy in the muon, that is then emitted via the neutrinos. The muon is approximately 207 times as heavy as the electron, while the tau is 17 times heavier than the muon.
 
-The tau is heavy enough to decay into _hadrons_ in addition to _leptons_, but the ultimate cascade via the hadron route goes through a _pion_ which then decays into a muon. A pion is modeled as a combination of up and down quarks, which thus establishes the interchangability between all of these basic particle types.
+The tau is heavy enough to decay into _hadrons_ in addition to _leptons_, but the ultimate cascade via the hadron route goes through a _pion_ which then decays into a muon. A pion is modeled as a combination of up and down quarks, which thus establishes the interchangeability between all of these basic particle types.
 
 From wikipedia:
 

@@ -75,7 +75,7 @@ $$
 j^\mu = -i g \left[ \chi^*\partial^\mu\chi - (\partial^\mu\chi^*)\chi \right]
 $$
 
-The constant in front is conventional, and the _coupling factor_a $g$ determines how strongly it would drive a force field.
+The constant in front is conventional, and the _coupling factor_ $g$ determines how strongly it would drive a force field.
 
 The conserved nature of the current means that any accumulation of charge in a region is exactly accounted for by the current flowing across its boundary, so that the total charge integrated over all space never changes:
 
@@ -156,8 +156,8 @@ Expanding the covariant derivative splits the current into two pieces:
 
 {id="eq_kgc_split" title="the two halves of the current"}
 $$
-j_\mu = \underbrace{-i\tfrac{e}{\hbar}\left[\chi^*\partial_\mu\chi - (\partial_\mu\chi^*)\chi\right]}_{\text{convection}}
-\;-\; \underbrace{\tfrac{2e^2}{\hbar^2 c}\,|\chi|^2 A_\mu}_{\text{proportional to } A}
+j_\mu = \underbrace{-i g\left[\chi^*\partial_\mu\chi - (\partial_\mu\chi^*)\chi\right]}_{\text{convection}}
+\;-\; \underbrace{2 g^2\,|\chi|^2 A_\mu}_{\text{proportional to } A}
 $$
 
 The first term is conventionally described as a _convection_ factor (or the _paramagnetic_ current), and it corresponds to the original charge density that we started out with before introducing the covariant derivative. It depends on how $\chi$'s phase varies.

@@ -16,7 +16,7 @@ The critical step for transforming the KG equation into something that can repre
 
 It is this constant radius value that corresponds to the conserved charge value in the **complex KG** wave equations. This radius is the _hypotenuse_ of the triangle formed by the real and imaginary components of the complex number. According to the _Pythagorean theorem_, it is computed by the sum of the _squared_ values. In the language of complex numbers, this is computed by multiplying by the _complex conjugate_, and we'll see that this is how we compute the conserved charge value.
 
-Once we have the ability to compute charge from the complex KG wave equations, then we can drive the electromagnetic field using that charge as a source. In order to do this, we need to apply the [[gauge theory]] technique of local gauge invariance, which is known as **scalar electrodynamics** in the case of coupling with a spinless complex charge field, as we are doing here (the term _scalar_ can be used to distinguish from  spin, or complex values, depending on the context). To make this work, we actually need 2 complex-valued state variables, to align with the four values of the electromagnetic four-potenntial $A^\mu$.
+Once we have the ability to compute charge from the complex KG wave equations, then we can drive the electromagnetic field using that charge as a source. In order to do this, we need to apply the [[gauge theory]] technique of local gauge invariance, which is known as **scalar electrodynamics** in the case of coupling with a spinless complex charge field, as we are doing here (the term _scalar_ can be used to distinguish from  spin, or complex values, depending on the context). To make this work, we actually need 2 complex-valued state variables, to align with the four values of the electromagnetic four-potential $A^\mu$.
 
 Interestingly, this is actually a good model of how the [[Higgs]] mechanism works, because it involves precisely such a coupling between a spinless complex field and the gauge vector boson field $B^\mu$ that works just like the electromagnetic four-potential $A^\mu$.
 
@@ -43,7 +43,7 @@ $$
 
 where again the $\phi_a$ indicates a scalar state variable representing the real $a$ component of $\chi$, and $\phi_b$ represents the imaginary $b$ value.
 
-Ok, so how do you get a charge out of that, so to speak? As with Schrödinger's equation, the procedure involves multiplying by the complex conjugate ($\chi^* = \phi_a - i \phi_b$), which generally produces the overall magnitude or length of the vector represented by the two components of the complex number: $\phi_a^2 + \phi_b^2$. If you compute the sum of the "squared" (complex conjugate multiplied) wave values across all of space (actually an integral, using continuous equations), and set it equal to zero (so that it never changes), you end up with an expression for the density and motion (current) of a quantity that is conserved (i.e., the charge).
+Ok, so how do you get a charge out of that, so to speak? As with Schrödinger's equation, the procedure involves multiplying by the complex conjugate ($\chi^* = \phi_a - i \phi_b$), which generally produces the overall magnitude or length of the vector represented by the two components of the complex number: $\phi_a^2 + \phi_b^2$. If you compute the sum of the "squared" (complex conjugate multiplied) wave values across all of space (actually an integral, using continuous equations), and set its time derivative equal to zero (so that it never changes), you end up with an expression for the density and motion (current) of a quantity that is conserved (i.e., the charge).
 
 The details of this process are shown in the derivation of the [[continuity]] equation. The resulting expression for computing the density of charge (typically written as $\rho$, which is the Greek letter "rho"), which is to say, the amount of charge per cubic state unit, is:
 
@@ -221,7 +221,7 @@ Before proceeding, we look ahead to the next major development. We have ways of 
 To summarize, the computation of the current, which is a vector having three separate components ($J_x, J_y, J_z$), looks like this:
 
 $$
-J_x = \frac{e}{m_0} \left[ \phi_a \left( \sum_{j \in N_{X}} k_j {(\phi_b}_{j+} - {\phi_b}_{j-}) \right) - \phi_b \left( \sum_{j \in N_{X}} k_j ({\phi_a}_{j+} - {\phi_a}_{j-}) \right) \right]
+J_x = \frac{e}{m_0} \left[ \phi_a \left( \sum_{j \in N_{X}} k_j ({\phi_b}_{j+} - {\phi_b}_{j-}) \right) - \phi_b \left( \sum_{j \in N_{X}} k_j ({\phi_a}_{j+} - {\phi_a}_{j-}) \right) \right]
 $$
 
 $$
@@ -232,7 +232,7 @@ $$
 J_z = \frac{e}{m_0} \left[ \phi_a \left( \sum_{j \in N_{Z}} k_j ({\phi_b}_{j+} - {\phi_b}_{j-}) \right) - \phi_b \left( \sum_{j \in N_{Z}} k_j ({\phi_a}_{j+} - {\phi_a}_{j-}) \right) \right]
 $$
 
-Again, it does not look as simple as before, but nevertheless it is necessary to have a current to be able to drive the magnetic field in an manner consistent with known physics. Specifically, the electromagnetic field equations require both $\rho$ and $\vec{J}$ values as their sources (see [[Maxwell]]). In addition, this gradient operation is necessary for several other computations in our model, so, like the laplacian, it can be thought of as one of just a few basic operations that take place over the neighborhood of cells.
+Again, it does not look as simple as before, but nevertheless it is necessary to have a current to be able to drive the magnetic field in a manner consistent with known physics. Specifically, the electromagnetic field equations require both $\rho$ and $\vec{J}$ values as their sources (see [[Maxwell]]). In addition, this gradient operation is necessary for several other computations in our model, so, like the laplacian, it can be thought of as one of just a few basic operations that take place over the neighborhood of cells.
 
 ## Minimal Coupling of Charge Waves with Electromagnetic Fields
 
@@ -252,10 +252,10 @@ $$
 
 This makes sense, because force is the derivative of a potential, so potential is a first-order factor, and force is a second-order factor.
 
-Our KG (Klein-Gordon) charge wave equation is a second-order equation, expressed in terms of $\frac{\partial^2}{\partial t^2}$, and therefore we need to include external driving forces, not potentials. However, for various reasons, it is necessary to derive such an equation starting from the potential. To do this, we can re-derive a second-order wave equation by replacing the first-order derivative with the following first-order _covariant_ derivative operator $D$, that subtracts the external driving potential:
+Our KG (Klein-Gordon) charge wave equation is a second-order equation, expressed in terms of $\frac{\partial^2}{\partial t^2}$, and therefore we need to include external driving forces, not potentials. However, for various reasons, it is necessary to derive such an equation starting from the potential. To do this, we can re-derive a second-order wave equation by replacing the first-order derivative with the following first-order _covariant_ derivative operator $D$, that incorporates the external driving potential:
 
 $$
-D_\mu \equiv \partial_\mu - i \frac{e}{\hbar c} A_\mu
+D_\mu \equiv \partial_\mu + i \frac{e}{\hbar c} A_\mu
 $$
 
 This derivative can be derived from the principle of _local gauge invariance_, in [[gauge theory]], as a way to compensate for the introduction of a local phase factor, which is parameterized by the $A^\mu$ potential field. In other words, local gauge invariance means that the EM field potential might be different at every different point in space, and gauge theory shows you how to have the EM field and charge field interact in a way that makes this situation mutually compatible, so that charge and energy end up being conserved over time.
@@ -275,7 +275,7 @@ $$
 So the compact form of the KG wave equation with minimal coupling (local gauge invariance) is therefore:
 
 $$
-\left( \partial_\mu - i \frac{e}{c} A^\mu \right) \left(\partial^\mu - i \frac{e}{c} A_\mu \right) \chi = -m_0^2 \chi
+\left( \partial_\mu + i e A_\mu \right) \left(\partial^\mu + i e A^\mu \right) \chi = -m_0^2 \chi
 $$
 
 To get all the units right, and perhaps add some conceptual clarity, we can do the same thing with the four-momentum version of the wave equation, which is:
@@ -374,9 +374,9 @@ At this point, we have reached an important milestone --- if you take the equati
 
 ## Self-field interactions
 
-When you actually simulate these equations on the computer, the self-coupling interactions between these two fields has a tendency to result in positive feedback loops that quickly go to infinity. There is an important numerical integration fix, known as the _Boris push_, which deals with the fact that the electromagnetic potentials drive a rotation through the $\phi_a$ and $\phi_b$ variables, which is evident in the fact that they subtract from $\phi_b$ but add to $\phi_a$ --- these opposite signs are the signature of a rotation (and are caused by the presence of the imaginary $i$ numbers in the equations). The Boris push implements this rotation explicitly, instead of using discrete integration steps, and helps manage the numerical issues ([[@Boris70]]; [[@QinZhangXiaoEtAl13]]). It is also important to ensure that the numerical values do not exceed critical thresholds, which are within the constraints of the known physical parameters. 
+When you actually simulate these equations on the computer, the self-coupling interactions between these two fields have a tendency to result in positive feedback loops that quickly go to infinity. There is an important numerical integration fix, known as the _Boris push_, which deals with the fact that the electromagnetic potentials drive a rotation through the $\phi_a$ and $\phi_b$ variables, which is evident in the fact that they subtract from $\phi_b$ but add to $\phi_a$ --- these opposite signs are the signature of a rotation (and are caused by the presence of the imaginary $i$ numbers in the equations). The Boris push implements this rotation explicitly, instead of using discrete integration steps, and helps manage the numerical issues ([[@Boris70]]; [[@QinZhangXiaoEtAl13]]). It is also important to ensure that the numerical values do not exceed critical thresholds, which are within the constraints of the known physical parameters. 
 
-Meanwhile, we nee need to introduce just a bit more complexity into our KG wave equation before we have a fully satisfactory model of a fundamental particle of nature: the electron (and its antiparticle, the positron). This extra bit of complexity extends the phenomenon of rotation that we've just been discussing, to account for the strange quantum mechanical property of [[spin]]. The resulting equation goes by the name of the second-order Dirac equation. Once we have that, we will have a complete system that, if all the math is correct, should make direct and numerically accurate contact with observable phenomena!
+Meanwhile, we need to introduce just a bit more complexity into our KG wave equation before we have a fully satisfactory model of a fundamental particle of nature: the electron (and its antiparticle, the positron). This extra bit of complexity extends the phenomenon of rotation that we've just been discussing, to account for the strange quantum mechanical property of [[spin]]. The resulting equation goes by the name of the second-order Dirac equation. Once we have that, we will have a complete system that, if all the math is correct, should make direct and numerically accurate contact with observable phenomena!
 
 ## Summary
 

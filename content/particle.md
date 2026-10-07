@@ -21,7 +21,7 @@ The [[pilot-wave]] and [[semiclassical]] frameworks provide alternative interpre
 
 ## Discrete particle trajectories
 
-The raw data in high-energy particle physics experiments, e.g., at the [large hadron collider (LHC)](https://en.wikipedia.org/wiki/Large_Hadron_Collider), consists of trajectories of particles recorded in advanced detector chambers, capturing the fallout of high-energy collisions of protons with each other. In older experiments dating from the early 1900's, these trajectories were recorded in bubble chambers.
+The raw data in high-energy particle physics experiments, e.g., at the [large hadron collider (LHC)](https://en.wikipedia.org/wiki/Large_Hadron_Collider), consists of trajectories of particles recorded in advanced detector chambers, capturing the fallout of high-energy collisions of protons with each other. In older experiments dating from the early 1900's, these trajectories were recorded in cloud chambers.
 
 These trajectories inevitably form straight or curved lines, depending on the presence of magnetic fields and the charge of the relevant particles. Furthermore, the points of collision, and points of decay, inevitably show up as discrete spatial points along the trajectories, with clear discrete forks along the paths.
 

@@ -35,7 +35,7 @@ The [[#sim_weyl:Config]] initial configurations are as follows:
 
 * `Electron at Rest:` ?
 
-* `Electron Chiral Flip:` An electron starting with everything in the left-hand size, but mass causes it to move entirely to the right-hand size, and then back again. Mega [[zitterbewegung]].
+* `Electron Chiral Flip:` An electron starting with everything in the left-hand side, but mass causes it to move entirely to the right-hand side, and then back again. Mega [[zitterbewegung]].
 
 * `Electron in Field:` Adds a uniform electric field, which drives momentum, except if WeylQ is 0, in which case it is a neutrino that ignores the field.
 

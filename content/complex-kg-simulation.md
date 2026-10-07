@@ -27,7 +27,7 @@ The key properties of this equation are that it produces a conserved charge valu
 
 The [[#sim_kgc:Config]] initial configurations are as follows:
 
-* `Charge at Rest:` shows the conservation of charge (view the plot), as Gaussian wave blob oscillates and disperses over time. 
+* `Charge at Rest:` shows the conservation of charge (view the plot), as a Gaussian wave blob oscillates and disperses over time. 
 
 * `Charge at Rest Anti:` has the opposite charge value.
 

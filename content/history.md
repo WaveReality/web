@@ -18,9 +18,9 @@ The light quanta idea was initially rejected by most physicists ([[@Klassen11]])
 
 The major problem with the classical atom was that it is fundamentally unstable: the electron should emit electromagnetic radiation as it orbits around the nucleus, and thus lose energy. As it loses energy, the orbit must get tighter, and eventually the electron should just collapse into the nucleus, just like one of those quarters you roll around in a gravity well at a science museum. Furthermore, as its orbit gets tighter, it should emit higher frequency radiation, predicting a continuous and increasingly high frequency emission spectrum. Instead, it was known that atoms emit consistent, discrete frequencies of radiation.
 
-It was yet another ultraviolet catastrophe! And the same solution came to the rescue. In 1913, Bohr postulated that electrons can only have orbits where the angular momentum (i.e., the effective period of the orbit) is restricted to an integer multiple $n$ of Planck's constant:
+It was yet another ultraviolet catastrophe! And the same solution came to the rescue. In 1913, Bohr postulated that electrons can only have orbits where the angular momentum is restricted to an integer multiple $n$ of the reduced Planck constant:
 
-{id="eq_borh" title="Bohr wavelength = integer multiple of h"}
+{id="eq_bohr" title="Bohr angular momentum = integer multiple of ħ"}
 $$
 L = n \hbar = n \frac{h}{2\pi}
 $$

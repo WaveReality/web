@@ -27,18 +27,18 @@ $$
 \psi = \begin{bmatrix} \phi_{1a} + i \phi_{1b} \\ \phi_{2a} + i \phi_{2b} \end{bmatrix}
 $$
 
-This rotation happens at the speed of light, as the wave itself also propagates at light-speed. The two different _helicity_ variants of the Weyl equations reflects whether this rotation is effectively spinning in a right-hand or left-hand manner relative to the wave propagation direction. You can see this on your own hands, by having your thumb represent the motion direction, and the curled-around fingers represent the rotation direction.
+This rotation happens at the speed of light, as the wave itself also propagates at light-speed. The two different _helicity_ variants of the Weyl equations reflect whether this rotation is effectively spinning in a right-hand or left-hand manner relative to the wave propagation direction. You can see this on your own hands, by having your thumb represent the motion direction, and the curled-around fingers represent the rotation direction.
 
-The fist order, right-hand helicity of the Weyl equation in [[four-vector]] notation looks like this:
+The first-order, right-hand helicity of the Weyl equation in [[four-vector]] notation looks like this:
 
 {id="eq_weyl-first" title="first-order right-handed Weyl equation"}
 $$
 \sigma^\mu \partial_\mu \psi = 0
 $$
 
-where $\sigma^\mu$ are the Pauli spin matricies, that provide the essential rotation dynamics:
+where $\sigma^\mu = (1, \vec{\sigma})$ contains the Pauli spin matrices, that provide the essential rotation dynamics:
 
-{id="eq_pauli" title="Pauli matricies"}
+{id="eq_pauli" title="Pauli matrices"}
 $$
 \vec{\sigma} = \left( \begin{bmatrix} 0 & 1\\
 1 & 0 \end{bmatrix}, \begin{bmatrix} 0 & -i \\
@@ -49,28 +49,28 @@ $$
 With these, [[#eq_weyl-first]] expands to the following:
 
 $$
-\frac{\partial \psi}{\partial t} = c \left( \sigma_x \frac{\partial \psi}{\partial x} + \sigma_y \frac{\partial \psi}{\partial y} + \sigma_z \frac{\partial \psi}{\partial z} \right)
+\frac{\partial \psi}{\partial t} = -c \left( \sigma_x \frac{\partial \psi}{\partial x} + \sigma_y \frac{\partial \psi}{\partial y} + \sigma_z \frac{\partial \psi}{\partial z} \right)
 $$
 
 so each Pauli spin matrix operates on a corresponding first-order gradient term. When we write it all out, you end up with the following four coupled first-order equations:
 
 $$
-\frac{\partial \phi_{1a}}{\partial t} = 2 c \left( \frac{\partial \phi_{1a}}{\partial z} + \frac{\partial \phi_{2a}}{\partial x} + \frac{\partial \phi_{2b}}{\partial y} \right)
+\frac{\partial \phi_{1a}}{\partial t} = -c \left( \frac{\partial \phi_{1a}}{\partial z} + \frac{\partial \phi_{2a}}{\partial x} + \frac{\partial \phi_{2b}}{\partial y} \right)
 $$
 
 $$
-\frac{\partial \phi_{1b}}{\partial t} = 2 c \left( \frac{\partial \phi_{1b}}{\partial z} + \frac{\partial \phi_{2b}}{\partial x} - \frac{\partial \phi_{2a}}{\partial y} \right)
+\frac{\partial \phi_{1b}}{\partial t} = -c \left( \frac{\partial \phi_{1b}}{\partial z} + \frac{\partial \phi_{2b}}{\partial x} - \frac{\partial \phi_{2a}}{\partial y} \right)
 $$
 
 $$
-\frac{\partial \phi_{2a}}{\partial t} = 2 c \left( \frac{\partial \phi_{1a}}{\partial x} - \frac{\partial \phi_{1b}}{\partial y} - \frac{\partial \phi_{2a}}{\partial z} \right)
+\frac{\partial \phi_{2a}}{\partial t} = -c \left( \frac{\partial \phi_{1a}}{\partial x} - \frac{\partial \phi_{1b}}{\partial y} - \frac{\partial \phi_{2a}}{\partial z} \right)
 $$
 
 $$
-\frac{\partial \phi_{2b}}{\partial t} = 2 c \left( \frac{\partial \phi_{1b}}{\partial x} + \frac{\partial \phi_{1a}}{\partial y} - \frac{\partial \phi_{2b}}{\partial z} \right)
+\frac{\partial \phi_{2b}}{\partial t} = -c \left( \frac{\partial \phi_{1b}}{\partial x} + \frac{\partial \phi_{1a}}{\partial y} - \frac{\partial \phi_{2b}}{\partial z} \right)
 $$
 
-These spin matricies are in fact defined by the fact that applying them twice gets you back to where you started, which is what creates the alignment between the spinless second-order KG equation and the spinning first-order Dirac or Weyl equations ([[@Brown58]]; [[@Tonin59]]; [[@Marx67]]; [[@Marx70]]; [[@Case57]]; [[@Diaz-CruzLopezMeza-AldamaEtAl15]]; [[@KibblePolkinghorne58]]; [[@BarutMullen62]]; [[@BabinFigotin14]]; [[@Cardoso93]]; [[@Veblen33]]; [[@DreinerHaberMartin10]])
+These spin matrices are in fact defined by the fact that applying them twice gets you back to where you started, which is what creates the alignment between the spinless second-order KG equation and the spinning first-order Dirac or Weyl equations ([[@Brown58]]; [[@Tonin59]]; [[@Marx67]]; [[@Marx70]]; [[@Case57]]; [[@Diaz-CruzLopezMeza-AldamaEtAl15]]; [[@KibblePolkinghorne58]]; [[@BarutMullen62]]; [[@BabinFigotin14]]; [[@Cardoso93]]; [[@Veblen33]]; [[@DreinerHaberMartin10]])
 
 Interestingly, the second-order version of the Dirac equation only involves spin in the context of the coupling with the [[Maxwell]] EM field. The components themselves are not spinning into each other.
 
@@ -82,7 +82,7 @@ Thus, the conclusion from all these considerations is that:
 
 > **spin 1/2 is fundamentally a particle-level phenomenon** 
 
-Furthermore, the [[weak#electroweak]] system requires Weyl equations to capture the SU(2) symmetry structure interacting with the four gauge fields, representing the neutrino and electron lepton variants with the proper helicity asymmetry that results in the well-established CP violation properties of the weak force.
+Furthermore, the [[weak#electroweak]] system requires Weyl equations to capture the SU(2) symmetry structure interacting with the four gauge fields, representing the neutrino and electron lepton variants with the proper helicity asymmetry that results in the well-established parity violation properties of the weak force.
 
 ## Exploration
 

@@ -4,7 +4,7 @@ Categories = ["Simulations"]
 bibfile = "mechphys.json"
 +++
 
-{id="sim_sch3d" title="Schrodinger in 1D" collapsed="true"}
+{id="sim_sch3d" title="Schrodinger in 3D" collapsed="true"}
 ```Goal
 wavesim.Embed(b,
     func(sim *wavesim.Sim) {
@@ -33,7 +33,7 @@ The [[#sim_sch3d:Config]] options include:
 
 * `Box Standing Wave:` puts a wave state precisely between two fixed walls. If you click on [[#sim_sch3d:Mag]] you can see that the magnitude of the wave remains constant over time. It is a good idea to set the `View Interval` config value to 10 or 100 to speed this up.
 
-* `Box Two States:` are the two lowest standing wave waves superimposed. They exhibits a complicated beat-frequency oscillation overall.
+* `Box Two States:` are the two lowest standing waves superimposed. They exhibit a complicated beat-frequency oscillation overall.
 
 * `Hydrogen Ground:` simulates a simple version of the Hydrogen atom, as Bohr did back in the day, showing how the wave is trapped in an `S` type orbital with a discretized frequency.
 

@@ -3,7 +3,7 @@ Categories = ["Spinfield Model"]
 bibfile = "mechphys.json"
 +++
 
-To compute the vector gradient in our discrete space-time cellular automaton, we need to introduce a new fundamental computation over the neighbors. The basic wave equation only requires a single neighborhood computation for the Laplacian: $\nabla^2$. This is one sense in which the model starts getting a bit more complex (it turns out that this computation will also be needed later for coupling with the electromagnetic field as well). First, in a single spatial dimension for state variable $s$, the spatial gradient in one dimension can be approximated via a differenceas:
+To compute the vector gradient in our discrete space-time cellular automaton, we need to introduce a new fundamental computation over the neighbors. The basic wave equation only requires a single neighborhood computation for the Laplacian: $\nabla^2$. This is one sense in which the model starts getting a bit more complex (it turns out that this computation will also be needed later for coupling with the electromagnetic field as well). First, in a single spatial dimension for state variable $s$, the spatial gradient in one dimension can be approximated via a difference as:
 
 {id="eq_grad-approx" title="difference approximation for spatial gradient in one dimension"}
 $$
@@ -26,6 +26,6 @@ Where the neighborhood $N_9$ contains pairs of points $j+$ and $j-$ that are opp
 
 - **faces:** $k_j = \pm 1 $
 - **edges:** $k_j = \pm \frac{1}{\sqrt{2}} $
-- **corners:** $k_j = \pm \frac{1}{\sqrt{3}} $</text>
+- **corners:** $k_j = \pm \frac{1}{\sqrt{3}} $
 
 

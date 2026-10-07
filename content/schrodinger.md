@@ -1,7 +1,7 @@
 +++
 Name = "Schrodinger"
 Categories = ["Standard Model"]
-ibfile = "mechphys.json"
+bibfile = "mechphys.json"
 +++
 
 The **Schrödinger wave equation** captures non-relativistic Newtonian physics in a simple linear, first-order framework, and can be derived from a [[Hamiltonian]] representing the total energy of the system, which is strictly conserved over time. It captures the fundamental relationships between momentum and wave frequency at the heart of quantum physics, as discussed in [[Klein-Gordon]].
@@ -17,7 +17,7 @@ $$
 
 Compared to the full complexity of the [[gauge theory]] framework used in coupling the EM ([[Maxwell]]) field with a charged particle field like the [[Dirac]] equation, which is the basis for the [[Standard Model]], this Schrödinger framework represents a significant simplification. Indeed, because the Schrödinger wave equation is linear, it is incapable of capturing particle interactions, because the waves simply superpose (additively combine) past each other, without impacting each other at all.
 
-Thus, in order to capture relevant interactions, the Schrödinger wave equation requires the tensor-product, exponentially-large configuration space representation. For example, if there are two interacting particles in position space, then they each get their own set of 3D dimensional coordinates within this configuration space, and the entire wave function evolves over time so as to conserve the overall energy / probability represented in the configuration space. As such, configuration space is entirely [[non-locality|non-local]] by construction, representing at each instant of time the entire configuration of the system, regardless of how far apart any of the particles might be.
+Thus, in order to capture relevant interactions, the Schrödinger wave equation requires the tensor-product, exponentially-large configuration space representation. For example, if there are two interacting particles in position space, then they each get their own set of 3D coordinates within this configuration space, and the entire wave function evolves over time so as to conserve the overall energy / probability represented in the configuration space. As such, configuration space is entirely [[non-locality|non-local]] by construction, representing at each instant of time the entire configuration of the system, regardless of how far apart any of the particles might be.
 
 ## Schrodinger's equation
 
@@ -67,9 +67,9 @@ $$
 
 The net result is that we can conclude that Schrödinger's equation provides an accurate description of the flow of energy and momentum over time of a "particle" described by a wave, such that it obeys classical Newtonian physical laws. Note that in comparison with the KG equation, there is no speed-of-light factor $c$ in this equation, consistent with its non-relativistic nature.
 
-Omitting various constants (factors of $h$) and any external force potential, Schrödinger's equation is:
+Omitting various constants (factors of $\hbar$) and any external force potential, Schrödinger's equation is:
 
-{id="eq_schrodinger" title="Schrödinger's equation, essence"}
+{id="eq_schrodinger-essence" title="Schrödinger's equation, essence"}
 $$
 i \frac{\partial \chi}{\partial t} = - \frac{1}{2m_0} \nabla^2 \chi
 $$
@@ -90,7 +90,7 @@ i \frac{\partial ({\phi_a + i \phi_b})}{\partial t} = - \frac{1}{2m_0} \nabla^2 
 $$
 
 $$
--\frac{\partial {\phi_b}}{\partial t} + \frac{\partial {i \phi_a}}{\partial t} = -\frac{1}{2m_0} \nabla^2 \phi_a - i \nabla^2 \phi_b
+-\frac{\partial {\phi_b}}{\partial t} + \frac{\partial {i \phi_a}}{\partial t} = -\frac{1}{2m_0} \nabla^2 \phi_a - \frac{i}{2m_0} \nabla^2 \phi_b
 $$
 
 where $\phi_a$ indicates a scalar state variable that is the $a$ component of $\chi$, and $\phi_b$ is the $b$ component of $\chi$. Note that the derivatives operate separately on each of the two variables. At this point, we now can just separate all the terms that involve an $i$ from those that do not, to get update equations for each of the two variables. For the real-valued components (without the $i$):
@@ -139,7 +139,7 @@ One critical property of Schrödinger's equation (which the scalar [[Klein-Gordo
 
 For example, we can initialize the state with a localized wave packet (see [[matter wave]]s) to represent the initial probability for the location and velocity of a particle (velocity being a function of the frequency of the wave packet). If we then apply the Schrödinger equation repeatedly, we can interpret the resulting $\chi \chi^*$ values as the probability of the particle having moved to the corresponding location.
 
-In other words, the wave packet defines a kind of "cloud of probability" for finding a discrete particle within its midst. However, these probabilities have different meanings in different scenarios, and it is notoriously difficult to come up with a intuitively sensible interpretation of what these probability clouds mean (see [[Copenhagen]] for discussion).
+In other words, the wave packet defines a kind of "cloud of probability" for finding a discrete particle within its midst. However, these probabilities have different meanings in different scenarios, and it is notoriously difficult to come up with an intuitively sensible interpretation of what these probability clouds mean (see [[Copenhagen]] for discussion).
 
 ## Explorations
 

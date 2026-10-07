@@ -9,7 +9,7 @@ However, the **electroweak** unification of the electromagnetic force (i.e., [[M
 
 Thus, it is perhaps not an exaggeration to say that the electroweak framework is as revolutionary for understanding the nature of leptons as the [[quark]] framework is for understanding the hadrons: it provides an entirely different fundamental basis space, that parsimoniously integrates a wide range of disparate phenomena into a more coherent framework. To understand the most basic nature of the electron and electromagnetic interactions, understanding the electroweak model seems essential.
 
-However, the counter-argument is that the actual physical implications of this revolutionary rearrangement of the quantum furniture are somewhat difficult to detect, which presumably why this part of the story gets less attention than it otherwise might. The famously successful [[QED]] model, which preceded the electroweak model by more than a decade, persists unchanged!
+However, the counter-argument is that the actual physical implications of this revolutionary rearrangement of the quantum furniture are somewhat difficult to detect, which is presumably why this part of the story gets less attention than it otherwise might. The famously successful [[QED]] model, which preceded the electroweak model by more than a decade, persists unchanged!
 
 This fact says a lot about how different [[calculational tool]]s can be used to describe the same phenomena, but if the goal is to understand something about the underlying physical mechanisms, then it seems that there is much to learn from the electroweak framework.
 
@@ -21,7 +21,7 @@ The role of the Higgs field is, first and foremost, to provide the source of a n
 
 The electroweak framework is based on three fields, which together comprise a total of 4 four-vector potential-like fields, and the Higgs doublet, which has 4 real-valued numbers, organized into two complex values.
 
-* The **Higgs doublet** $\Psi$, which has 2 complex field elements (4 real numbers), one of which interacts with electric charge ($\chi^+$) and another that is electrically neutral ($\chi^0$). As a result of the spontaneous symmetry breaking property of the Higgs potential, the neutral component acquires a stable expected value of $v_h = 246 GeV$, which is what then provides the mass term for all other wave fields.
+* The **Higgs doublet** $\Psi$, which has 2 complex field elements (4 real numbers), one of which interacts with electric charge ($\chi^+$) and another that is electrically neutral ($\chi^0$). As a result of the spontaneous symmetry breaking property of the Higgs potential, the neutral component acquires a stable expected value of $v_h = 246$ GeV, which is what then provides the mass term for all other wave fields.
 
 * The **weak hypercharge** four-potential $B_\mu$, which is essentially just like the EM four-potential $A_\mu$, with four real-valued numbers, $B_0$ is the scalar electric potential, and the remaining three terms ($B_{(x,y,z)}$) are the vector potential. The source of this potential is the weak hypercharge value $Y_W$ which acts like the $Q$ charge for the EM potential. It interacts with the Higgs doublet through the same local gauge invariance mechanism (see [[gauge theory]]) that describes minimal coupling with the EM field, exactly as done in the case of the [[complex KG]] equation.
 
@@ -32,23 +32,23 @@ These fields are mixed together in specific combinations, using a standard unita
 The EM four-potential, which propagates without any mass:
 
 $$
-A_\mu = cos \theta_w B_\mu + sin \theta_w W^3_\mu
+A_\mu = \cos \theta_w B_\mu + \sin \theta_w W^3_\mu
 $$
 
 The four-potential associated with the weak neutral boson $Z^0$, which has a (large) mass:
 
 $$
-Z_\mu = -sin \theta_w B_\mu + cos \theta_w W^3_\mu
+Z_\mu = -\sin \theta_w B_\mu + \cos \theta_w W^3_\mu
 $$
 
 And the four-potentials associated with the two charged weak bosons $W^\pm$:
 
 $$
-W^+ = \frac{1}{\sqrt2} \left( W^1_\mu - W^2_\mu \right)
+W^+_\mu = \frac{1}{\sqrt2} \left( W^1_\mu - i W^2_\mu \right)
 $$
 
 $$
-W^- = \frac{1}{\sqrt2} \left( W^1_\mu + W^2_\mu \right)
+W^-_\mu = \frac{1}{\sqrt2} \left( W^1_\mu + i W^2_\mu \right)
 $$
 
 Furthermore, the electric charge $Q$ is also a mixture of two quantum numbers that are associated with different types of particles, _weak hypercharge_ ($Y$) and _weak isospin_ (third component: $T^3$):
@@ -78,19 +78,19 @@ $$
 D_\mu = \partial_\mu - i g' Y B_\mu - i g W^a_\mu T^a
 $$
 
-Where $g'$ and $g$ are arbitrary real-valued coupling parameters for each of the respective fields ($B_\mu$ and $W^a_\mu$), and $Y$ is the weak hypercharge quantum number value for the Higgs field (a real number), which is set to 1/2 by convention. The $T^a$ is a set of 3 different coupling matricies, one for each of the three $W^a_\mu$ four-vector components, that are defined by the SU(2) unitary rotation group -- i.e., a set of basis vectors that perform unitary rotations of a 2x2 matrix, which is what the Higgs field is (2 complex values for each of 2 doublets).
+Where $g'$ and $g$ are arbitrary real-valued coupling parameters for each of the respective fields ($B_\mu$ and $W^a_\mu$), and $Y$ is the weak hypercharge quantum number value for the Higgs field (a real number), which is set to 1/2 by convention. The $T^a$ is a set of 3 different coupling matrices, one for each of the three $W^a_\mu$ four-vector components, that are defined by the SU(2) unitary rotation group -- i.e., a set of basis vectors that perform unitary rotations of a 2-component complex vector, which is what the Higgs doublet is (2 complex values).
 
-These are none other than the [[Pauli matricies]], which are also used in the [[Dirac]] equation, and define the property of [[spin]] in the quantum world. This is why the $W$ field is called _isospin_, because it causes spinning. Each of these are also multiplied by the conventional 1/2 factor, but it turns out that the third Pauli matrix has a -1 on the bottom-right diagonal, which therefore gives the neutral Higgs doublet component $\chi^0$ a -1/2 effective $T^3$ quantum number.
+These are none other than the [[Pauli matrices]], which are also used in the [[Dirac]] equation, and define the property of [[spin]] in the quantum world. This is why the $W$ field is called _isospin_, because it causes spinning. Each of these is also multiplied by the conventional 1/2 factor, but it turns out that the third Pauli matrix has a -1 on the bottom-right diagonal, which therefore gives the neutral Higgs doublet component $\chi^0$ a -1/2 effective $T^3$ quantum number.
 
 This negative quantum number means that the $W^3$ component force field has a negative contribution, while the $B_\mu$ field has a positive contribution, and any field configuration that has positive values in each of these fields, in the correct ratio as defined below, will end up with no mass, due to the cancellation of these positive and negative contributions.
 
 The covariant derivative is used in the [[Lagrangian]] for the Higgs field (see [[gauge theory]] for details on how this is all computed, using a simpler single-valued complex KG particle field):
 
 $$
-\mathcal{L}_h = |D_\mu \Psi|^2 + V(\Psi)
+\mathcal{L}_h = |D_\mu \Psi|^2 - V(\Psi)
 $$
 
-where $V(\Psi)$ is the Higgs potential that leads to symmetry breaking, as described in detail in [[Higgs]], and the Higgs field $\Psi$ is the (1/2 normalized) complex doublet:
+where $V(\Psi)$ is the Higgs potential that leads to symmetry breaking, as described in detail in [[Higgs]], and the Higgs field $\Psi$ is the ($1/\sqrt2$ normalized) complex doublet:
 
 {id="eq_state" title="Higgs complex doublet"}
 $$
@@ -189,7 +189,7 @@ Z_\mu &\equiv g W^3_\mu - g' B_\mu
 \end{aligned}
 $$
 
-$P_\mu$ is the photon (EM field), up to normalization: dividing by $\sqrt{g^2+g'^2}$ turns $(g', g)$ into $(\sin\theta_W, \cos\theta_W). $Z_\mu$ is the $Z$, likewise up to normalization, and it obeys a massive wave equation with $M_Z^2 = \tfrac{v^2}{4}(g^2+g'^2)$.
+$P_\mu$ is the photon (EM field), up to normalization: dividing by $\sqrt{g^2+g'^2}$ turns $(g', g)$ into $(\sin\theta_W, \cos\theta_W)$. $Z_\mu$ is the $Z$, likewise up to normalization, and it obeys a massive wave equation with $M_Z^2 = \tfrac{v^2}{4}(g^2+g'^2)$.
 
 In summary, when you work through the final bit of math, there are two specific combinations of wave state magnitudes, one that results in zero effective mass (the photon) and one that has mass (the Z boson).
 
@@ -262,7 +262,7 @@ An electron generates a current that serves as a source for $B$ and $W^3$, but, 
 
 Here's Claude's explanation that remains to be fully digested:
 
-The weak isospin currents that drives the gauge fields is given by:
+The weak isospin currents that drive the gauge fields is given by:
 
 $$
 J^{a\mu} = \bar\psi_L\gamma^\mu T^a\psi_L
@@ -283,7 +283,7 @@ $$
 
 because the operator maps the electron to a neutrino and $\langle e|\nu\rangle = 0$. There is no charged-current density for an electron to carry, so there's no static $W^\pm$ field around it. W fields appear only in processes that actually change particle identity — beta decay, muon decay, and so on.
 
-At loop level (i.e., wrt [[virtual particles]] generated by high energy transients in the vaccum) the W absolutely is present around an electron. The electron self-energy includes a $W$–$\nu$ loop, and the electron is dressed in a virtual cloud of them. This contributes measurably to the anomalous magnetic moment — the electroweak contribution to the muon's $g-2$ is around $154\times10^{-11}$, small but well above experimental precision and essential to the $g-2$ analysis.
+At loop level (i.e., wrt [[virtual particles]] generated by high energy transients in the vacuum) the W absolutely is present around an electron. The electron self-energy includes a $W$–$\nu$ loop, and the electron is dressed in a virtual cloud of them. This contributes measurably to the anomalous magnetic moment — the electroweak contribution to the muon's $g-2$ is around $154\times10^{-11}$, small but well above experimental precision and essential to the $g-2$ analysis.
 
 So: no classical W field, but a real quantum one. The difference between "tree-level source" and "loop-level dressing" is the difference between a field configuration you could put on a lattice and a correction to a propagator.
 
@@ -472,7 +472,7 @@ $$
 \mathcal{G}_\mu = gW^a_\mu T^a + g'Y B_\mu = \frac12\begin{pmatrix} gW^3_\mu + g'B_\mu & g\left(W^1_\mu - iW^2_\mu\right)\\[4pt] g\left(W^1_\mu + iW^2_\mu\right) & -gW^3_\mu + g'B_\mu\end{pmatrix}
 $$
 
-Everything from here is reading off entries. Note the $\mp g W^3$ on the diagonal — that sign flip is $T^3 = \pm\tfrac12$, and it is why the two components feel opposite $W^3$ and identical $B$.
+Everything from here is reading off entries. Note the $\pm g W^3$ on the diagonal — that sign flip is $T^3 = \pm\tfrac12$, and it is why the two components feel opposite $W^3$ and identical $B$.
 
 ### Higgs with the vacuum expectation
 

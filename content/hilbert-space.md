@@ -4,7 +4,7 @@ Categories = ["Standard Model"]
 bibfile = "mechphys.json"
 +++
 
-By far the most widely-used calculational framework in standard QM is the algebraic **matrix mechanics** approach, pioneered by Heisbenberg, Dirac, Hilbert, von Neumann and others in the mid 1920s. It involves _state vector_ representations of the state of a system, encoded via complex-valued vectors representing _probability amplitudes_ (i.e., a '**Hilbert space**). This state vector is a specific way of encoding the [[configuration space]] of the entire set of relevant variables, and is thus manifestly [[non-locality|non-local]], and represents the entire state a given point in time, in a way that is thus incompatible with the principles of relativity.
+By far the most widely-used calculational framework in standard QM is the algebraic **matrix mechanics** approach, pioneered by Heisenberg, Dirac, Hilbert, von Neumann and others in the mid 1920s. It involves _state vector_ representations of the state of a system, encoded via complex-valued vectors representing _probability amplitudes_ (i.e., a **Hilbert space**). This state vector is a specific way of encoding the [[configuration space]] of the entire set of relevant variables, and is thus manifestly [[non-locality|non-local]], and represents the entire state at a given point in time, in a way that is thus incompatible with the principles of relativity.
 
 This state vector evolves under _unitary_ transformations (rotations in the complex vector space), which preserve the overall magnitudes of the vectors, even as they rotate around in the space. The unitary nature of the rotation transformations represents the behavior of the system when it is being governed by the [[Schrodinger]] wave dynamics under the Copenhagen dualistic framework, which perfectly preserves the overall underlying probability space as long as nobody "looks at it the wrong way" (i.e., makes a measurement). Then, at the end, a "measurement" is made by collapsing the probability space down to a single discrete outcome (i.e., along an eigenvector of the resulting state). 
 
@@ -22,7 +22,7 @@ $$
 \langle \mathbf{x}, \mathbf{y} \rangle = x_1 y_1 + x_2 y_2
 $$
 
-This inner product defines a _distance metric_ for the space, where the distance between the two vectors is the square root of this inner product.
+This inner product defines a _distance metric_ for the space, where the length of a vector is the square root of its inner product with itself.
 
 In quantum applications, the elements of the vectors are [[complex number]]s, and full understanding of these is required before proceeding. In this case, the inner product is defined as multiplication by the complex conjugate, e.g., for $z = (z_1, z_2) = ({z_1}_r + i{z_1}_i, {z_2}_r + i{z_2}_i)$ where the _r_ and _i_ subscripts denote the real and imaginary components of each value, and likewise for $w$:
 
@@ -93,7 +93,7 @@ $$
 This allows one to construct the **tensor product** or **outer product** of two _ket_ states, which is how you  construct the [[configuration space]] for two otherwise independent particle states:
 
 $$
-| a \rangle \otimes | b \rangle = | a \rangle \langle b | = \begin{pmatrix} a_1 \\ a_2 \end{pmatrix} (b_1, b_2) = \begin{pmatrix} a_1 b_1 & a_1 b_2 \\ a_2 b_1 & a_2 b_2 \end{pmatrix} 
+| a \rangle \otimes | b \rangle = | a \rangle \langle b | = \begin{pmatrix} a_1 \\ a_2 \end{pmatrix} (b^*_1, b^*_2) = \begin{pmatrix} a_1 b^*_1 & a_1 b^*_2 \\ a_2 b^*_1 & a_2 b^*_2 \end{pmatrix} 
 $$
 
 Here you can see that the number of elements in the state goes up as an exponential function of the number of times such an outer product is performed, i.e., $2^N$ for N 2D spin states.
@@ -121,7 +121,7 @@ This is effectively the full **correlation matrix** for every element of the sta
 A more general version of the overall framework includes the possibility of multiple different quantum states prepared with different probabilities $p_j$, in which case the aggregate density matrix can be computed as a weighted function of the probabilities, and then the projection matrix can be applied to that aggregate.
 
 $$
-p(m) = tr \left[ \Pi_m \left( \sum_j p_j \rho_j \right) \right] = tr \left[ \Pi_m \left( \sum_j p_j \langle \psi | \psi \rangle \right) \right] 
+p(m) = tr \left[ \Pi_m \left( \sum_j p_j \rho_j \right) \right] = tr \left[ \Pi_m \left( \sum_j p_j | \psi_j \rangle \langle \psi_j | \right) \right] 
 $$
 
 The critical point here is that _the density matrix $\rho$ contains all the relevant information about all possible measurement outcomes._ Therefore, in most cases, that is the single most informative thing to compute. Of course, the actual projections are still needed to predict the outcomes of specific experiments.

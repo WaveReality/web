@@ -24,7 +24,7 @@ For the point $a$ in space-time, the **covariant** form of the four-vector is de
 
 {id="eq_cov" title="covariant four-vector"}
 $$
-{a}_\mu = (t,-x,-y,-z) = (a_t,-a_x,-a_y,-a_z) = (a_0,-a_1,-a_2,-a_3)
+{a}_\mu = (t,-x,-y,-z) = (a^t,-a^x,-a^y,-a^z) = (a^0,-a^1,-a^2,-a^3)
 $$
 
 The little $\mu$ (Greek "mu") subscript goes from $0..3$ in counting out the different items in the vector, as shown. The time and space coordinates have different signs here in a way that directly matches their relationship in the wave equation, capturing their _covariant_ nature.
@@ -49,7 +49,7 @@ And the derivative of a four-vector can also be defined. In general only one for
 
 {id="eq_cov-deriv" title="covariant derivative"}
 $$
-\partial_\mu \equiv \frac{\partial {}}{\partial ^\mu} \equiv \left(\frac{\partial {}}{\partial {a^0}},\frac{\partial {}}{\partial {a^1}},\frac{\partial {}}{\partial {a^2}},\frac{\partial {}}{\partial {a^3}}\right) \equiv \left(\frac{\partial {}}{\partial {t}}, \vec{\nabla} \right)
+\partial_\mu \equiv \frac{\partial {}}{\partial a^\mu} \equiv \left(\frac{\partial {}}{\partial {a^0}},\frac{\partial {}}{\partial {a^1}},\frac{\partial {}}{\partial {a^2}},\frac{\partial {}}{\partial {a^3}}\right) \equiv \left(\frac{\partial {}}{\partial {t}}, \vec{\nabla} \right)
 $$
 
 where the $\vec{\nabla}$ symbol represents the spatial _gradient_ operator:
@@ -63,7 +63,7 @@ For the specific purpose of defining a second-order derivative, it is possible t
 
 {id="eq_con-deriv" title="contravariant derivative"}
 $$
-\partial^\mu \equiv \frac{\partial {}}{\partial _\mu} \left(\frac{\partial {}}{\partial {a^0}},-\frac{\partial {}}{\partial {a^1}},-\frac{\partial {}}{\partial {a^2}},- \frac{\partial {}}{\partial {a^3}}\right) \equiv \left(\frac{\partial {}}{\partial t}, -\vec{\nabla} \right)
+\partial^\mu \equiv \frac{\partial {}}{\partial a_\mu} \equiv \left(\frac{\partial {}}{\partial {a^0}},-\frac{\partial {}}{\partial {a^1}},-\frac{\partial {}}{\partial {a^2}},- \frac{\partial {}}{\partial {a^3}}\right) \equiv \left(\frac{\partial {}}{\partial t}, -\vec{\nabla} \right)
 $$
 
 This then allows you to take the second-order derivatives of a four-vector, by combining the vector multiplication rules with the derivative equations to get the following:
@@ -102,7 +102,7 @@ Although this is equivalent to our basic wave equation, this way of computing th
 
 {id="eq_maxwell" title="Maxwell's equation"}
 $$
-\partial_\mu \partial^\mu A^\mu = k^\mu J^\mu
+\partial_\nu \partial^\nu A^\mu = k J^\mu
 $$
 
 Notice that here the second-order derivative has a "source" term (instead of being $=0$), which acts like a driving force on the waves: it represents the charge and currents that drive the electromagnetic field.
@@ -121,11 +121,11 @@ $$
 To convert from one form of four-vector to another, you just multiply (we arbitrarily choose $g^{\mu\nu}$ here):
 
 $$
-a^\mu = g^{\mu\nu} a_\mu
+a^\mu = g^{\mu\nu} a_\nu
 $$
 
 $$
-a_\mu = g^{\mu\nu} a^\mu
+a_\mu = g^{\mu\nu} a^\nu
 $$
 
 Finally, as if we needed an even simpler version of the wave equation (and one more symbol to memorize), the **d'Alembertian** $\Box$:

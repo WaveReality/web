@@ -4,7 +4,7 @@ Categories = ["Standard Model"]
 bibfile = "mechphys.json"
 +++
 
-Using [[special relativity]], plus the notion of **conservation of energy** --- i.e., that the **total energy** of the system is strictly conserved over time, we can derive the [[Klein-Gordon]] (KG) equation from first principles. In keeping with physicist's penchant for assigning people's names to concepts that would otherwise be very easy to understand if just spelled out, the total energy of the system is also called the **Hamiltonian** ($H$), and standard Newtonian physics can all be derived from the appropriate Hamiltonian (which is what W. R. Hamilton did).
+Using [[special relativity]], plus the notion of **conservation of energy** --- i.e., that the **total energy** of the system is strictly conserved over time, we can derive the [[Klein-Gordon]] (KG) equation from first principles. In keeping with physicists' penchant for assigning people's names to concepts that would otherwise be very easy to understand if just spelled out, the total energy of the system is also called the **Hamiltonian** ($H$), and standard Newtonian physics can all be derived from the appropriate Hamiltonian (which is what W. R. Hamilton did).
 
 The Hamiltonian formulation is a version of [[Lagrangian]] mechanics, which predated it, and both formulations play a critical role in the [[Standard Model]].
 
@@ -14,7 +14,7 @@ This [Veritasium](https://www.youtube.com/watch?v=Q10_srZ-pbs) video is strongly
 
 In anthropomorphic terms, the quantum wave function is like a perceptual system for particles, telling them how to move in order to go in the most efficient way! And the Hamiltonian provides a mathematical framework for defining what "the most efficient way" actually means.
 
-The form of the total energy that is used as a starting point determines the scope of the physics that the resulting equations of motion support. The KG equations are derived directly from the relativistic total energy (from Einstein's [[special relativity]]), so they therefore automatically produce all of that relativistic phenomena. However, [[Schrodinger]]'s equation is derived from a _Newtonian_ total energy function, which means that it does _not_ handle relativistic phenomena. 
+The form of the total energy that is used as a starting point determines the scope of the physics that the resulting equations of motion support. The KG equations are derived directly from the relativistic total energy (from Einstein's [[special relativity]]), so they therefore automatically produce all of those relativistic phenomena. However, [[Schrodinger]]'s equation is derived from a _Newtonian_ total energy function, which means that it does _not_ handle relativistic phenomena. 
 
 The Hamiltonian can be extended to include spin and coupling to the EM field, to derive the [[Dirac]] equation (which is just a more complicated version of the KG equation). You will see that the total energy equation and the corresponding wave equation are very directly related mathematically, and thus this overall approach of using the total energy to derive the wave equation is a very powerful tool that is important to understand if you want to really understand what these wave equations are doing.
 
@@ -164,7 +164,7 @@ Which is right back to our KG wave equation.
 
 In summary, the core of the KG wave equation, and of special relativity, and much of quantum mechanics, can all be reduced to this one simple equation:
 
-{id="eq_klein-gordon" title="relativistic Hamiltonian"}
+{id="eq_rel-hamiltonian" title="relativistic Hamiltonian"}
 $$
 \hat{p}^\mu \hat{p}_\mu \phi = m_0^2 c^2 \phi
 $$

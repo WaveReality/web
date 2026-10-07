@@ -5,9 +5,9 @@ bibfile = "mechphys.json"
 
 The [[pilot-wave]] model posits a discrete, localized particle whose motion is influenced by a distributed, physically real [[quantum wave]]. In the [[cellular automaton]] (CA) framework, a discrete localized particle should live entirely within one CA cell.
 
-An obvious problem with this notion of something being contained entirely within a discrete cell is that it becomes challenging to imagine how it might ever move to another such cell. Such a move would have to happen in a discrete jump, creating a major discontinuity in the overall wave state, and potentially making the particle trajectory seemingly discontinuous and anisotrophic. 
+An obvious problem with this notion of something being contained entirely within a discrete cell is that it becomes challenging to imagine how it might ever move to another such cell. Such a move would have to happen in a discrete jump, creating a major discontinuity in the overall wave state, and potentially making the particle trajectory seemingly discontinuous and anisotropic. 
 
-The only way to overcome those difficulties is to use **stochastic** discrete jumps, such that, on longer time averages, the timing and spatial distribution of such jumps smooths out into a continuous, isotrophic distribution. Thus, contrary to Einstein's oft-cited objection that "God does not play dice with the universe", in fact it seems that an essential form of randomness is _necessary_ for discrete particles to move in a physically plausible manner.
+The only way to overcome those difficulties is to use **stochastic** discrete jumps, such that, on longer time averages, the timing and spatial distribution of such jumps smooths out into a continuous, isotropic distribution. Thus, contrary to Einstein's oft-cited objection that "God does not play dice with the universe", in fact it seems that an essential form of randomness is _necessary_ for discrete particles to move in a physically plausible manner.
 
 Furthermore, although the continuum limit is mathematically approachable through the tools of calculus, it is problematic from a physics perspective due to the nearly-infinite field strengths (and thus energies) that would be present in the immediate vicinity of a charged particle. This _ultraviolet catastrophe_ is a recurring theme throughout the [[history]] of quantum physics, and it is nicely resolved through the use of the discrete cubic lattice of the CA framework.
 
@@ -20,7 +20,7 @@ Critically none of this existing work involves an integrated wave-particle [[dua
 {id="figure_pf-origin" style="height:20em"}
 ![Stochastic origin of quantum momentum / frequency relationship. The momentum on the left is 0.5c while on the right is 0. The distribution of position is on the vertical axis, while time is on the horizontal axis, with each point centered at the origin in the center (i.e., the temporal autocorrelation function). The variance on the left is half of that on the right.](media/fig_asmom5_0_autoc.png)
 
-One key intuition for why discrete particle motion naturally exhibits quantum wave-like behavior is that a slow drift rate produces a wide cloud of space where particle could be, corresponding to a long wavelength in the probability cloud that the Schrödinger wave function describes. However, when the particle has high momentum (velocity), it moves more deterministically in a given direction, resulting in a narrower range of variance around the particle's mean trajectory, resulting in a narrower effective wavelength ([[#figure_pf-origin]]).
+One key intuition for why discrete particle motion naturally exhibits quantum wave-like behavior is that a slow drift rate produces a wide cloud of space where the particle could be, corresponding to a long wavelength in the probability cloud that the Schrödinger wave function describes. However, when the particle has high momentum (velocity), it moves more deterministically in a given direction, resulting in a narrower range of variance around the particle's mean trajectory, resulting in a narrower effective wavelength ([[#figure_pf-origin]]).
 
 While this pure particle-based approach is appealing in its simplicity, it does not appear to provide an explanation for phenomena such as the [[double-slit]] experiment, where somehow a particle can interfere _with itself_, but only if the other slit is open. Furthermore, it cannot be the case that these interference effects only arise in the rare cases when a discrete particle happens to wander so aimlessly as to go through both slits somehow.
 
@@ -60,14 +60,14 @@ TODO: [[Weyl]] and [[Dirac]] wave couples spin with direction as a helical thing
 
 ### Heat bath models
 
-There is a literature on coupling of a stochastic particle with a "heat bath", somewhat like the [[zero-point]] field, and trying to understand the aggregate behavior of such a system. [[@^DunkelHanggi05a]], [[@DunkelHanggi05]] provide a relatively accessible treatment, building on foundational work ([[@Dudley65]], [[@Dudley73]], [[@GuerraRuggiero78]], [[@Nakagomi88]]). This all builds on Langevin equations, which are stochastic equations of motion, with connections to Ornstein-Ullenbach and Fokker-Planck etc. The specific restriction to heat bath dynamics vs. some kind of other intrinsic stochastic process is perhaps overly restrictive, but they nevertheless have a four-vector representation that seems to involve a conservation of energy between the time and momentum factors, which is really the essential calculus for the SHO model.
+There is a literature on coupling of a stochastic particle with a "heat bath", somewhat like the [[zero-point]] field, and trying to understand the aggregate behavior of such a system. [[@^DunkelHanggi05a]], [[@DunkelHanggi05]] provide a relatively accessible treatment, building on foundational work ([[@Dudley65]], [[@Dudley73]], [[@GuerraRuggiero78]], [[@Nakagomi88]]). This all builds on Langevin equations, which are stochastic equations of motion, with connections to Ornstein-Uhlenbeck and Fokker-Planck etc. The specific restriction to heat bath dynamics vs. some kind of other intrinsic stochastic process is perhaps overly restrictive, but they nevertheless have a four-vector representation that seems to involve a conservation of energy between the time and momentum factors, which is really the essential calculus for the SHO model.
 
 One key "no-go" finding from [[@^Dudley65]] is that a purely Markovian position-based system doesn't capture particle motion -- you _need_ an additional momentum / velocity vector as part of the state. This is definitely key.
 
 * wave function trades energy against momentum -- momentum is $\gamma m0 \nu$, $E^2 = p^2 + m0^2$ so the 1 in above eq is like m0^2 -- not clear where the 1/2 comes from but whatever.
 * key idea that m0 is the internal motion of the particle rotating through spin, so need to just have that always going on as an "anchor", and then there are these extra $\nu_\mu$ factors where the x^2 + y^2 + z^2 hypotenuse of the momentum-velocity is v^2 relative to c^2 -- i.e., need to constrain total length to c^2.
 
-* probabilistically when it stays still it rotates the internal spin. if it never stays still it never rotates the spin. the nutrino very rarely rotates the spin, but does sometimes. spin coupling couples the two helicies of the Weyl. need to go back to that. are there 2 neutrinos trapped inside one electron??
+* probabilistically when it stays still it rotates the internal spin. if it never stays still it never rotates the spin. the neutrino very rarely rotates the spin, but does sometimes. spin coupling couples the two helices of the Weyl. need to go back to that. are there 2 neutrinos trapped inside one electron??
 
 ### Quantum cellular automata and random walks
 
@@ -79,7 +79,7 @@ The results from these analyses show that standard wave functions such as the [[
 
 The basic intuition is that these unitary update rules cause the propagation of a wave-like pattern at the speed of light (one unit cell per unit time), and if multiple internal cell states are present, this propagation can also include the [[spin]] property where the state rotates through these internal states as it also propagates. This is the essential feature of the [[Weyl]] wave functions, which describe a "pure spin" particle such as a massless [[neutrino]] that travels at the speed of light while spinning in one fixed helical rotation.
 
-Critically, these approaches do _not_ provide a model of a discrete particle moving with graded momentum (velocities) in an isotrophic manner along a cubic grid, which is what we develop here, building on the approach originated by [[@Nelson66]] in analyzing single-particle Brownian motion. We use equations of motion initially developed by [[@^Sciarretta18]].
+Critically, these approaches do _not_ provide a model of a discrete particle moving with graded momentum (velocities) in an isotropic manner along a cubic grid, which is what we develop here, building on the approach originated by [[@Nelson66]] in analyzing single-particle Brownian motion. We use equations of motion initially developed by [[@^Sciarretta18]].
 
 * todo:
 

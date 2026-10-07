@@ -6,11 +6,11 @@ bibfile = "mechphys.json"
 
 The **Dirac** wave function builds on the considerable progress made in the [[complex KG]] version of the [[Klein-Gordon]] (KG) wave function, which developed all of the tools needed to couple a [[matter wave]] that defines a **wave of charge** with the electromagnetic waves of [[Maxwell]]'s equations. This coupling of charge waves and EM waves has been pursued more recently in neoclassical self-coupled field theory ([[@JaynesCummings63]]; [[@CrispJaynes69]]; [[@BarutVanHuele85]]; [[@BarutDowling90]]; [[@Crisp96]]; [[@FinsterSmollerYau99a]]; [[@Radford03]]; [[@MasielloDeumensOhrn05]]).
 
-This final step in our long journey of progressively more complicated wave functions, is to come to terms with the full glory of the [[electron]]. The standard model of physics has a set of parameters that are used to characterize the basic properties of the fundamental particles. One such property is the rest mass $m_0$, which we introduced in [[Klein-Gordon]] to make the waves slow down and move at variable speeds.
+This final step in our long journey of progressively more complicated wave functions is to come to terms with the full glory of the [[electron]]. The standard model of physics has a set of parameters that are used to characterize the basic properties of the fundamental particles. One such property is the rest mass $m_0$, which we introduced in [[Klein-Gordon]] to make the waves slow down and move at variable speeds.
 
 Another such property is electrical charge, which we were able to extract from our wave equation once we used a complex-valued state variable, having two independent scalar values within it, in [[complex KG]]. Furthermore, we found that this charge could come with two different signs, positive or negative. This turns out to be convenient, because electrons also come in a positive form, called a positron. The positron has the same mass as the electron, but just an opposite charge.
 
-The third basic property of the electron is known as its **spin**. It is known as a spin $\frac{1}{2}$ particle, along with all of the other fundamental particles known (e.g., quarks). Unfortunately, our wave equations so far do not support this spin property, and so we'll need to do a little bit more work. However, once we're done, we'll find that our equations capture all of the fundamental properties of the electron: we should have a 100% complete description of it!
+The third basic property of the electron is known as its **spin**. It is known as a spin $\frac{1}{2}$ particle, along with all of the other fundamental matter particles known (e.g., quarks). Unfortunately, our wave equations so far do not support this spin property, and so we'll need to do a little bit more work. However, once we're done, we'll find that our equations capture all of the fundamental properties of the electron: we should have a 100% complete description of it!
 
 Actually there is one last thing, which is that the electron is a member of the [[lepton]] family, whereas the other fundamental particles are quarks, and they have other fundamental properties in addition to those carried by leptons. But, this is presumably because quarks live in some other set of state variables separate from the lepton state variables we're simulating here in our model. So, with that assumption, we might have captured everything about the electron.
 
@@ -20,7 +20,7 @@ This spin is very much like the first-order Schrödinger equation dynamics, wher
 
 Incidentally, quantum physics holds that photons (which we think of as wave packets of the electromagnetic field that we've already characterized above) have a spin of 1. Furthermore, the charged complex KG wave equation is described as having a spin of 0. This latter case makes sense to me, in that the two components of the complex number do not rotate into each other, and thus they do not spin at all. However, the electromagnetic field case is a bit more confusing, because as we saw, the four components of this field do not interact with each other in the basic wave equations either!
 
-Therefore, it would seem that it should have a spin of 0 as well. Countering this are two considerations. First, the observable variables of the electric and magnetic fields $\vec{E}$ and $\vec{B}$, which are derived from these non-interacting electrical potentials, do rotate around each other as the wave propagates. Second, when these potentials interact with our charge wave, the do so in a way that ends up coupling (and rotating) the two independent scalar values in the complex number, and thus they impart some spin on our otherwise spinless particle.
+Therefore, it would seem that it should have a spin of 0 as well. Countering this are two considerations. First, the observable variables of the electric and magnetic fields $\vec{E}$ and $\vec{B}$, which are derived from these non-interacting electrical potentials, do rotate around each other as the wave propagates. Second, when these potentials interact with our charge wave, they do so in a way that ends up coupling (and rotating) the two independent scalar values in the complex number, and thus they impart some spin on our otherwise spinless particle.
 
 Our first step is to introduce a new state variable $\psi$, to represent a field having four independent scalar values. Mathematically, this is defined as a vector of two complex numbers:
 
@@ -36,10 +36,10 @@ How do we extend our basic complex-coupled KG equation to include this spin fact
 The version of the equation described by [[@^FeynmanGell-Mann58]] is:
 
 $$
-\left[ \left(i {\nabla}_\mu - {A}_\mu\right)^2 + \vec{\sigma} \cdot \left(\vec{B} + i \vec{E} \right) \right] \psi = m_0^2 \psi
+\left[ \left(i {\nabla}_\mu - {A}_\mu\right)^2 - \vec{\sigma} \cdot \left(\vec{B} + i \vec{E} \right) \right] \psi = m_0^2 \psi
 $$
 
-where $\vec{\sigma}$ are the standard [[Pauli matricies]] that we'll describe in a moment. [[@^Hostler85]] describes a similar equation (which has the minus sign reversed in various places, but is otherwise the same):
+where $\vec{\sigma}$ are the standard [[Pauli matrices]] that we'll describe in a moment. [[@^Hostler85]] describes a similar equation (which has the minus sign reversed in various places, but is otherwise the same):
 
 $$
 \left[ \left(-i \partial_\mu - e {A}_\mu\right)^2 + m_0^2 + e i \vec{\sigma} \cdot \left(\vec{E} + i \vec{B}\right) \right] \psi = 0
@@ -48,12 +48,12 @@ $$
 It should be clear that the first squared term is just the complex KG equation coupled to the EM field. Therefore, we can write this equation in our current notation as:
 
 $$
-\left[\left(i \hbar \partial_\mu - \frac{e}{c}{A}_\mu \right)^2 + \frac{e \hbar}{c} \vec{\sigma} \cdot \left(\vec{B} + i \vec{E} \right) \right] \psi = m_0^2 c^2 \psi
+\left[\left(i \hbar \partial_\mu - \frac{e}{c}{A}_\mu \right)^2 - \frac{e \hbar}{c} \vec{\sigma} \cdot \left(\vec{B} + i \vec{E} \right) \right] \psi = m_0^2 c^2 \psi
 $$
 
-Now for the Pauli matricies $\vec{\sigma}$. This is a vector of values $(\sigma_x, \sigma_y, \sigma_z)$ that enter into a dot product with the complex-valued vector composed of the magnetic and electric field values $\vec{B}$ and $\vec{E}$:
+Now for the Pauli matrices $\vec{\sigma}$. This is a vector of values $(\sigma_x, \sigma_y, \sigma_z)$ that enter into a dot product with the complex-valued vector composed of the magnetic and electric field values $\vec{B}$ and $\vec{E}$:
 
-{id="eq_pauli" title="Pauli matricies"}
+{id="eq_pauli" title="Pauli matrices"}
 $$
 \vec{\sigma} = \left( \begin{bmatrix} 0 & 1\\
 1 & 0 \end{bmatrix}, \begin{bmatrix} 0 & -i \\
@@ -86,7 +86,7 @@ $$
 
 So, now we're getting some sense of how this works: different components of the electromagnetic field exert different forces on the different components of the $\psi$ state, producing a rotational effect.
 
-This entire result then is multiplied by the two complex numbers in the $\psi$ state:
+This entire result then is multiplied by the two complex numbers in the $\psi$ state, $\chi_1 = \phi_{1a} + i \phi_{1b}$ and $\chi_2 = \phi_{2a} + i \phi_{2b}$:
 
 $$
 \begin{bmatrix} B_z + iE_z & B_x + E_y + i(E_x - B_y) \\

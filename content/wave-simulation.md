@@ -38,7 +38,7 @@ The [[#sim_wave1d:Config]] menu allows you to select different initial configura
 
 You can view the [[#sim_wave1d:Root Stats Plot]] to see various summary statistics as the simulation runs. This includes the different components of energy (`Kinetic`, `Potential`, and the sum as `Energy`), along with stats that track the velocity and width of the wave. Mouse over each label to see what it is recording.
 
-The [[#sim_wave1d:Panel]] selector in the View toolbar allows you to move through the 4 different panels, going in a left-right, bottom-top order. You can see the variable update as you move through, and this allows you to change which variable (or any other view setting) for that panel.
+The [[#sim_wave1d:Panel]] selector in the View toolbar allows you to move through the 4 different panels, going in a left-right, bottom-top order. You can see the variable update as you move through, and this allows you to change the variable (or any other view setting) for that panel.
 
 ## Edges
 
