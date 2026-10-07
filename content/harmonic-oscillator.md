@@ -541,5 +541,5 @@ See the [[Spinfield Model]] for the application of all of these properties of th
 
 ## Quantum harmonic oscillator
 
-The quantum harmonic oscillator (QHO) is a well-studied entity (see [wikipedia](https://en.wikipedia.org/wiki/Quantum_harmonic_oscillator)) that might otherwise be confused with our use of the complex-valued harmonic oscillator in the [[Spinfield Model|spinfield]] quantum particle model. The QHO uses the [[Schrodinger]] wave function to model the behavior of the mass-on-a-spring system ([[#figure_sho]]) instead of using Newtonian physics. This results in much more complex behavior than the very simple complex-valued harmonic oscillator used here.
+The quantum harmonic oscillator (QHO) is a well-studied entity (see [wikipedia](https://en.wikipedia.org/wiki/Quantum_harmonic_oscillator)) that might otherwise be confused with our use of the complex-valued harmonic oscillator in the [[Spinfield Model]]. The QHO uses the [[Schrodinger]] wave function to model the behavior of the mass-on-a-spring system ([[#figure_sho]]) instead of using Newtonian physics. This results in much more complex behavior than the very simple complex-valued harmonic oscillator used here.
 

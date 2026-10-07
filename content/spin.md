@@ -35,7 +35,7 @@ The charged **W** boson is unstable and decays into an electron and a neutrino, 
 
 The neutral **Z** boson is characterized by a weak charge value that is also a function of the momentum of the relevant particles, therefore supporting the connection between spin, momentum, and the weak force.
 
-The masses of these weak bosons are all tied up with the Higgs mechanism, so that also needs to be understood.
+The masses of these weak bosons are all tied up with the [[Higgs]] mechanism, so that also needs to be understood.
 
 Basically, the whole electroweak / spin soup needs to be probed to understand how an elementary particle like the [[electron]] actually works. It seems clear given the mutation rules that an electron is not really _elementary_ anymore: the elementary components are _spin_ and _charge_ and some kinds of interesting dynamics that make these all produce the relevant particle-like behavior.
 

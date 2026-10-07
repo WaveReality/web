@@ -6,7 +6,7 @@
 
 <p id="AharonovRohrlich08">Aharonov, Y., & Rohrlich, D. (2008). <i>Quantum Paradoxes: Quantum Theory for the Perplexed. </i> John Wiley & Sons. </p>
 
-<p id="Amrien69">Amrein, W.O. (1969). Localizability for Particles of Mass Zero. <i>Helvetica Physica Acta, 42</i>, 149–190. </p>
+<p id="Amrein69">Amrein, W.O. (1969). Localizability for Particles of Mass Zero. <i>Helvetica Physica Acta, 42</i>, 149–190. </p>
 
 <p id="AndersenMadsenReicheltEtAl15">Andersen, A., Madsen, J., Reichelt, C., Rosenlund Ahl, S., Lautrup, B., Ellegaard, C., Levinsen, M.T., & Bohr, T. (2015). Double-slit experiment with single wave-driven particles and its relation to quantum mechanics. <i>Physical Review E, 92</i>, 013006. <a href="https://link.aps.org/doi/10.1103/PhysRevE.92.013006">https://link.aps.org/doi/10.1103/PhysRevE.92.013006</a><a href="http://doi.org/10.1103/PhysRevE.92.013006"> http://doi.org/10.1103/PhysRevE.92.013006</a></p>
 
@@ -15,6 +15,8 @@
 <p id="AskarCakmak78">Askar, A., & Cakmak, A.S. (1978). Explicit integration method for the time‐dependent Schrodinger equation for collision problems. <i>The Journal of Chemical Physics, 68</i>, 2794–2798. <a href="https://doi.org/10.1063/1.436072">https://doi.org/10.1063/1.436072</a><a href="http://doi.org/10.1063/1.436072"> http://doi.org/10.1063/1.436072</a></p>
 
 <p id="AspectDalibardRoger82">Aspect, A., Dalibard, J., & Roger, G. (1982). Experimental Test of Bell's Inequalities Using Time-Varying Analyzers. <i>Physical Review Letters, 49</i>, 1804–1807. <a href="https://link.aps.org/doi/10.1103/PhysRevLett.49.1804">https://link.aps.org/doi/10.1103/PhysRevLett.49.1804</a><a href="http://doi.org/10.1103/PhysRevLett.49.1804"> http://doi.org/10.1103/PhysRevLett.49.1804</a></p>
+
+<p id="AspectGrangierRoger82">Aspect, A., Grangier, P., & Roger, G. (1982). Experimental Realization of Einstein-Podolsky-Rosen-Bohm Gedankenexperiment: A New Violation of Bell's Inequalities. <i>Physical Review Letters, 49</i>, 91–94. <a href="https://link.aps.org/doi/10.1103/PhysRevLett.49.91">https://link.aps.org/doi/10.1103/PhysRevLett.49.91</a><a href="http://doi.org/10.1103/PhysRevLett.49.91"> http://doi.org/10.1103/PhysRevLett.49.91</a></p>
 
 <p id="BabinFigotin14">Babin, A., & Figotin, A. (2014). Neoclassical theory of elementary charges with spin of 1/2. <i>Journal of Mathematical Physics, 55</i>, 082901. <a href="https://doi.org/10.1063/1.4893336">https://doi.org/10.1063/1.4893336</a><a href="http://doi.org/10.1063/1.4893336"> http://doi.org/10.1063/1.4893336</a></p>
 
@@ -520,7 +522,7 @@
 
 <p id="Tegmark98">Tegmark, M. (1998). The Interpretation of Quantum Mechanics: Many Worlds or Many Words? <i>Fortschritte der Physik, 46</i>, 855–862. <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291521-3978%28199811%2946%3A6/8%3C855%3A%3AAID-PROP855%3E3.0.CO%3B2-Q">https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291521-3978%28199811%2946%3A6/8%3C855%3A%3AAID-PROP855%3E3.0.CO%3B2-Q</a><a href="http://doi.org/10.1002/(SICI)1521-3978(199811)46:6/8<855::AID-PROP855>3.0.CO;2-Q"> http://doi.org/10.1002/(SICI)1521-3978(199811)46:6/8<855::AID-PROP855>3.0.CO;2-Q</a></p>
 
-<p id="TeichSaleh88">Teich, M.C., & Saleh, B.E.A. (1988). I Photon Bunching and Antibunching* In E. Wolf (Ed.), <i>Progress in Optics</i> (pp. 1–104). Elsevier. <a href="https://www.sciencedirect.com/science/article/pii/S0079663808701744">https://www.sciencedirect.com/science/article/pii/S0079663808701744</a><a href="http://doi.org/10.1016/S0079-6638(08)70174-4"> http://doi.org/10.1016/S0079-6638(08)70174-4</a></p>
+<p id="TeichSaleh88">Teich, M.C., & Saleh, B.E.A. (1988). Photon Bunching and Antibunching. In E. Wolf (Ed.), <i>Progress in Optics</i> (pp. 1–104). Elsevier. <a href="https://www.sciencedirect.com/science/article/pii/S0079663808701744">https://www.sciencedirect.com/science/article/pii/S0079663808701744</a><a href="http://doi.org/10.1016/S0079-6638(08)70174-4"> http://doi.org/10.1016/S0079-6638(08)70174-4</a></p>
 
 <p id="Tomonaga46">Tomonaga, S. (1946). On a Relativistically Invariant Formulation of the Quantum Theory of Wave Fields. <i>Progress of Theoretical Physics, 1</i>, 27–42. <a href="https://doi.org/10.1143/PTP.1.27">https://doi.org/10.1143/PTP.1.27</a><a href="http://doi.org/10.1143/PTP.1.27"> http://doi.org/10.1143/PTP.1.27</a></p>
 

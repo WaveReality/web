@@ -41,7 +41,7 @@ Popławski (2012) gives the following estimates for the big bang parameters:
 
 * critical radius $≈ 5.9 × 10^{−4} m$ (from which the density could be computed)
 
-* momentum? frequency? associated with the critical temperature: $v(T_{cr}) ≈ 8.9 × 10^{34}$  (total energy?)
+* momentum? frequency? associated with the critical temperature: $v(T_{cr}) \approx 8.9 \times 10^{34}$  (total energy?)
 
 Popławski (2010) defines the Cartan radius of an electron to be on the order of $10^{-27} m$, which sets a minimum spatial scale for such a particle. The density of electrons all packed together at this radius would be $ρ = m_e / r^3 = 10^{51} {kg} m^{−3}$.
 
