@@ -8,7 +8,7 @@ This is the [WaveReality.org](https://wavereality.org) website with full documen
 
 **Wave reality** is dedicated to exploring the idea that the **quantum wave function** is _real_, and not just a description of our state of epistemic ignorance, based fundamentally on the de Broglie-Bohm **pilot-wave** framework. It incorporates graphical simulations of quantum waves using https://github.com/WaveReality/waves
 
-Everything is written in Go, using the [Cogent Core](https://cogentcore.org) GUI framework, specifically the `content` system that generates documents based on markdown sources, contained in the [content] directory -- see [content/home.md] for the overview (github displays it reasonably well).
+Everything is written in Go, using the [Cogent Core](https://cogentcore.org) GUI framework, specifically the `content` system that generates documents based on markdown sources, contained in the [content](content) directory -- see [home.md](content/home.md) for the overview (github displays it reasonably well).
 
 ## News
 
