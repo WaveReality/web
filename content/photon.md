@@ -13,7 +13,7 @@ Furthermore, the status of a standard quantum wave function for the photon (anal
 
 However, this energy density is not normalized, and thus cannot be used as a probability function in the standard Born-rule [[Copenhagen]] framework, unless it is "manually" normalized by simply dividing by an integral over all of space. And it is unclear to what extent it generates novel predictions relative to the classical [[Maxwell]] equations.
 
-In addition, [[@^PalmerducaQin25]] show that it is impossible to derive the spin angular momentum, separate from orbital angular momentum, from massless bosons such as the photon and the graviton. The assertion that the photon has spin 1 derives from the two polarization directions of light. It is nothing like the quantum spin associated with massive particles, and is instead really just a relabeling of properties already known in Maxwell's equations.
+In addition, [[@^PalmerducaQin25]] show that it is impossible to derive the spin angular momentum, separate from orbital angular momentum, from massless bosons such as the photon and the graviton. The assertion that the photon has spin 1 derives from the two polarization directions of light. It is nothing like the quantum spin associated with massive particles, and is instead really just a relabeling of properties already known in Maxwell's equations ([[@BliokhAlonsoOstrovskayaEtAl10]]; [[@BliokhSmirnovaNori15]]).
 
 See the [[semiclassical]] approach for an alternative interpretation that retains the classical field representation of the EM force, interacting with quantum fermion particles.
 

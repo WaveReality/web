@@ -68,6 +68,10 @@
 
 <p id="BilenkyPetcov87">Bilenky, S.M., & Petcov, S.T. (1987). Massive neutrinos and neutrino oscillations. <i>Reviews of Modern Physics, 59</i>, 671–754. <a href="https://link.aps.org/doi/10.1103/RevModPhys.59.671">https://link.aps.org/doi/10.1103/RevModPhys.59.671</a><a href="http://doi.org/10.1103/RevModPhys.59.671"> http://doi.org/10.1103/RevModPhys.59.671</a></p>
 
+<p id="BliokhAlonsoOstrovskayaEtAl10">Bliokh, K.Y., Alonso, M.A., Ostrovskaya, E.A., & Aiello, A. (2010). Angular momenta and spin-orbit interaction of nonparaxial light in free space. <i>Physical Review A, 82</i>, 063825. <a href="https://link.aps.org/doi/10.1103/PhysRevA.82.063825">https://link.aps.org/doi/10.1103/PhysRevA.82.063825</a><a href="http://doi.org/10.1103/PhysRevA.82.063825"> http://doi.org/10.1103/PhysRevA.82.063825</a></p>
+
+<p id="BliokhSmirnovaNori15">Bliokh, K.Y., Smirnova, D., & Nori, F. (2015). Quantum spin Hall effect of light. <i>Science, 348</i>, 1448–1451. <a href="https://www.science.org/doi/abs/10.1126/science.aaa9519">https://www.science.org/doi/abs/10.1126/science.aaa9519</a><a href="http://doi.org/10.1126/science.aaa9519"> http://doi.org/10.1126/science.aaa9519</a></p>
+
 <p id="Bohm52">Bohm, D. (1952). A Suggested Interpretation of the Quantum Theory in Terms of "Hidden" Variables. I. <i>Physical Review, 85</i>, 166–179. <a href="https://link.aps.org/doi/10.1103/PhysRev.85.166">https://link.aps.org/doi/10.1103/PhysRev.85.166</a><a href="http://doi.org/10.1103/PhysRev.85.166"> http://doi.org/10.1103/PhysRev.85.166</a></p>
 
 <p id="Bohm52a">Bohm, D. (1952). A Suggested Interpretation of the Quantum Theory in Terms of "Hidden" Variables. II. <i>Physical Review, 85</i>, 180–193. <a href="https://link.aps.org/doi/10.1103/PhysRev.85.180">https://link.aps.org/doi/10.1103/PhysRev.85.180</a><a href="http://doi.org/10.1103/PhysRev.85.180"> http://doi.org/10.1103/PhysRev.85.180</a></p>
@@ -227,6 +231,8 @@
 <p id="FredkinToffoli82">Fredkin, E., & Toffoli, T. (1982). Conservative logic. <i>International Journal of Theoretical Physics, 21</i>, 219–253. <a href="https://doi.org/10.1007/BF01857727">https://doi.org/10.1007/BF01857727</a><a href="http://doi.org/10.1007/BF01857727"> http://doi.org/10.1007/BF01857727</a></p>
 
 <p id="FuchsMerminSchack14">Fuchs, C.A., Mermin, N.D., & Schack, R. (2014). An introduction to QBism with an application to the locality of quantum mechanics. <i>American Journal of Physics, 82</i>, 749–754. <a href="https://doi.org/10.1119/1.4874855">https://doi.org/10.1119/1.4874855</a><a href="http://doi.org/10.1119/1.4874855"> http://doi.org/10.1119/1.4874855</a></p>
+
+<p id="FujikawaShrock80">Fujikawa, K., & Shrock, R.E. (1980). Magnetic Moment of a Massive Neutrino and Neutrino-Spin Rotation. <i>Physical Review Letters, 45</i>, 963–966. <a href="https://link.aps.org/doi/10.1103/PhysRevLett.45.963">https://link.aps.org/doi/10.1103/PhysRevLett.45.963</a><a href="http://doi.org/10.1103/PhysRevLett.45.963"> http://doi.org/10.1103/PhysRevLett.45.963</a></p>
 
 <p id="Gardner70">Gardner, M. (1970). Mathematical Games: The fantastic combinations of John Conway’s new solitaire game “life" <i>Scientific American, </i></p>
 
