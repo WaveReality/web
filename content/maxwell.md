@@ -233,7 +233,7 @@ This shows that the wave propagation dynamics in Maxwell's equations are due to 
 
 One key intuition is that these four separate equations (which we will compactly write in terms of four-vector notation shortly) provide the necessary basis space for representing the two different _polarization_ directions of EM waves traveling _along any arbitrary direction_. Thus, while at some basic level there are only two underlying degrees of freedom in the "photon" (as is often noted in the literature), that perspective neglects the direction in which the light wave is traveling as important additional degrees of freedom. In this respect, the four variables thus represent a very efficient representation of all the relevant degrees of freedom. There are further complications for the electric potential degrees of freedom, however, which we turn to next.
 
-## The Lorenz gauge and condition
+## The Lorenz gauge
 
 There is one important wrinkle in the connection between Maxwell's equations and the simple wave equations operating on the potentials, which has to do with the **Lorenz Condition** (note: not _Lorentz_!), which is why the wave equation version is known as the **Lorenz gauge**. The wave equations only correspond to Maxwell's standard four equations if this condition is met:
 
