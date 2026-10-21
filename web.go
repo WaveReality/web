@@ -13,7 +13,7 @@ import (
 	"cogentcore.org/core/text/csl"
 	"cogentcore.org/core/text/tex/texcache"
 	"cogentcore.org/core/tree"
-	_ "github.com/WaveReality/waves/yaegiwaves"
+	"github.com/WaveReality/waves/yaegiwaves"
 )
 
 // NOTE: you must make a symbolic link to the zotero MechPhys CSL file as mechphys.json
@@ -35,6 +35,11 @@ var mathcache embed.FS
 var icon string
 
 func main() {
+	// The code blocks of the content are compiled into the app by the core
+	// tool (contentcode_gen.go, see [ContentCode] in core.toml). Edited code
+	// runs in the yaegi interpreter, which js builds load when code is first
+	// edited (see [Web] DeferredFunctions in core.toml).
+	content.BindTextEditor = yaegiwaves.BindTextEditor
 	texcache.OpenFS(mathcache, "mathcache.json.gz")
 	texcache.SetShapeMath()
 	core.AppIcon = icon
