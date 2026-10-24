@@ -3,8 +3,8 @@ module github.com/WaveReality/web
 go 1.27.0
 
 require (
-	cogentcore.org/core v0.5.2
-	cogentcore.org/lab v0.2.1
+	cogentcore.org/core v0.5.4
+	cogentcore.org/lab v0.2.3
 	github.com/WaveReality/waves v1.0.3
 )
 
@@ -21,7 +21,7 @@ require (
 	github.com/chewxy/math32 v1.11.2 // indirect
 	github.com/cogentcore/readline v0.1.3 // indirect
 	github.com/cogentcore/typesetting v0.0.0-20261022123550-2cd93a91580e // indirect
-	github.com/cogentcore/yaegi v0.0.0-20261024094450-b0c6fff779d9 // indirect
+	github.com/cogentcore/yaegi v0.0.0-20261024142200-c0b92ec4f6b6 // indirect
 	github.com/dlclark/regexp2/v2 v2.7.1 // indirect
 	github.com/ericchiang/css v1.4.0 // indirect
 	github.com/fsnotify/fsnotify v1.9.0 // indirect
