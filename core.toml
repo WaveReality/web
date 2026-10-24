@@ -4,6 +4,7 @@ About = "Documents and graphical simulations exploring quantum physics wave equa
 [Web]
   # yaegi is loaded when code is first edited (see main)
   DeferredFunctions = ["github.com/WaveReality/waves/yaegiwaves.BindTextEditor"]
+  FontText = "āΩ"
 
 [ContentCode]
   # the Goal interpreter of yaegiwaves does not record math-mode variables in tensorfs
