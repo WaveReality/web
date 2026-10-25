@@ -1,9 +1,9 @@
 codeberg.org/go-pdf/fpdf v0.11.1 h1:U8+coOTDVLxHIXZgGvkfQEi/q0hYHYvEHFuGNX2GzGs=
 codeberg.org/go-pdf/fpdf v0.11.1/go.mod h1:Y0DGRAdZ0OmnZPvjbMp/1bYxmIPxm0ws4tfoPOc4LjU=
-cogentcore.org/core v0.5.4 h1:T49bV61C570gto6hCeic4qBh7lucDDFM0KmHFLV6YEA=
-cogentcore.org/core v0.5.4/go.mod h1:f6aErCXBDWuzxgI6I/8XTZIa8aiwuMx4VBRUbpIGrhs=
-cogentcore.org/lab v0.2.3 h1:13jY4yqJPoCXpHBy0wv+NTnPkO/3kdVL9IOOExHzMu4=
-cogentcore.org/lab v0.2.3/go.mod h1:Xz1vdSGwHXh1nEu0S+AHj8XAEIWjgQ31XamTcA+gGDk=
+cogentcore.org/core v0.5.5 h1:BszdtbomsnAFpEMDkijw2gECOsM7ifVp84gpx//yOWg=
+cogentcore.org/core v0.5.5/go.mod h1:f6aErCXBDWuzxgI6I/8XTZIa8aiwuMx4VBRUbpIGrhs=
+cogentcore.org/lab v0.2.4 h1:lPSDnIu7zHSgNMRzJCjNfRqk6UiBBT/+1E+EF+/4EeA=
+cogentcore.org/lab v0.2.4/go.mod h1:Xz1vdSGwHXh1nEu0S+AHj8XAEIWjgQ31XamTcA+gGDk=
 git.sr.ht/~sbinet/overlayfs v0.1.1 h1:HvCHXT1cs8RMSjNLQXxPPosB2hgR3tRC8RniH0f3ESg=
 git.sr.ht/~sbinet/overlayfs v0.1.1/go.mod h1:TmrIWKlxyPJJ7vchTqk85DUcW6IDsIa7ONLvSGIw438=
 github.com/Bios-Marcel/wastebasket/v2 v2.0.3 h1:TkoDPcSqluhLGE+EssHu7UGmLgUEkWg7kNyHyyJ3Q9g=
@@ -12,8 +12,8 @@ github.com/BurntSushi/toml v1.6.0 h1:dRaEfpa2VI55EwlIW72hMRHdWouJeRF7TPYhI+AUQjk
 github.com/BurntSushi/toml v1.6.0/go.mod h1:ukJfTF/6rtPPRCnwkur4qwRxa8vTRFBF0uk2lLoLwho=
 github.com/Masterminds/vcs v1.13.3 h1:IIA2aBdXvfbIM+yl/eTnL4hb1XwdpvuQLglAix1gweE=
 github.com/Masterminds/vcs v1.13.3/go.mod h1:TiE7xuEjl1N4j016moRd6vezp6e6Lz23gypeXfzXeW8=
-github.com/WaveReality/waves v1.0.3 h1:74PAS6/R+v51uQdMyB025VvX5YuNbOQZsN82AA8VJ0c=
-github.com/WaveReality/waves v1.0.3/go.mod h1:mgrd3SDtv6nba1FVBWTd59s8aQHsRMTLUFfIMdzCNZ4=
+github.com/WaveReality/waves v1.0.4 h1:sR7xdHGJi5USUVdootS3sxpme4RBU9m7QlUTKwLlt6o=
+github.com/WaveReality/waves v1.0.4/go.mod h1:wpfApjzGjsRcEFfb8JTbf5R0noBQ5Qd2Fp01IW9vKw8=
 github.com/adrg/strutil v0.3.1 h1:OLvSS7CSJO8lBii4YmBt8jiK9QOtB9CzCzwl4Ic/Fz4=
 github.com/adrg/strutil v0.3.1/go.mod h1:8h90y18QLrs11IBffcGX3NW/GFBXCMcNg4M7H6MspPA=
 github.com/alecthomas/assert/v2 v2.11.0 h1:2Q9r3ki8+JYXvGsDyBXwH3LcJ+WK5D0gc5E8vS6K3D0=
