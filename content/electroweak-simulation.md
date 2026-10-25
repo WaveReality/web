@@ -4,20 +4,7 @@ Categories = ["Simulations"]
 bibfile = "mechphys.json"
 +++
 
-{id="sim_ew" title="Electroweak" collapsed="true"}
-```Goal
-wavesim.Embed(b,
-    func(sim *wavesim.Sim) {
-	    sim.Config.Equation = wavesim.Electroweak
-		sim.Params.ThreeD.SetBool(true)
-		sim.ViewInitFunc = func(view *wavesim.View) {
-            wavesim.ViewInitFour(view)
-        }
-	    sim.Config.Size.Set(64, 64, 64)
-    },
-    func(sim *wavesim.Sim) { // init
-	})
-```
+<sim-electroweak>
 
 <div>
 

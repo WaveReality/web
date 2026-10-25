@@ -4,21 +4,7 @@ Categories = ["Simulations"]
 bibfile = "mechphys.json"
 +++
 
-{id="sim_wave3d" title="3D Waves" collapsed="true"}
-```Goal
-wavesim.Embed(b,
-    func(sim *wavesim.Sim) {
-	    sim.Config.Equation = wavesim.Wave
-		sim.Config.PacketSlab = false
-		sim.Params.ThreeD.SetBool(true)
-		sim.ViewInitFunc = func(view *wavesim.View) {
-            wavesim.ViewInitFour(view)
-        }
-	    sim.Config.Size.Set(64, 64, 64)
-    },
-    func(sim *wavesim.Sim) { // init
-	})
-```
+<sim-wave3d>
 
 <div>
 

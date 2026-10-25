@@ -9,7 +9,9 @@ import (
 
 	"cogentcore.org/core/content"
 	"cogentcore.org/core/core"
+	"cogentcore.org/core/htmlcore"
 	"cogentcore.org/core/icons"
+	"cogentcore.org/core/styles"
 	"cogentcore.org/core/text/csl"
 	"cogentcore.org/core/text/tex/texcache"
 	"cogentcore.org/core/tree"
@@ -33,6 +35,11 @@ var mathcache embed.FS
 
 //go:embed icon.svg
 var icon string
+
+// sims is a map of sim names to functions that embed a sim GUI.
+// This is only set on non-generatehtml platforms so that xyz does
+// not interfere with html generation.
+var sims map[string]func(tree.Node)
 
 func main() {
 	// The code blocks of the content are compiled into the app by the core
@@ -63,5 +70,23 @@ func main() {
 		})
 	})
 
+	AddSims(ctx)
+
 	b.RunMainWindow()
+}
+
+func AddSims(ctx *htmlcore.Context) {
+	for nm, em := range sims {
+		snm := "sim-" + nm
+		ctx.ElementHandlers[snm] = func(ctx *htmlcore.Context) bool {
+			fr := core.NewFrame(ctx.BlockParent)
+			fr.SetName(snm)
+			fr.Styler(func(s *styles.Style) {
+				s.Direction = styles.Column
+				s.Grow.Set(1, 1)
+			})
+			em(fr)
+			return true
+		}
+	}
 }

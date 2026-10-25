@@ -3,22 +3,7 @@ Categories = ["Simulations"]
 bibfile = "mechphys.json"
 +++
 
-{id="sim_wave1d" title="Basic 1D Waves" collapsed="true"}
-```Goal
-wavesim.Embed(b,
-    func(sim *wavesim.Sim) {
-	    sim.Config.Equation = wavesim.Wave
-		sim.Params.ThreeD.SetBool(false)
-        sim.Params.C = 1.0
-		sim.ViewInitFunc = func(view *wavesim.View) {
-            wavesim.ViewInitFour(view)
-            wavesim.ViewInitBars1D(view)
-        }
-	    sim.Config.Size.Set(128, 1, 1)
-    },
-    func(sim *wavesim.Sim) { // init
-	})
-```
+<sim-wave1d>
 
 <div>
 
