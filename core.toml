@@ -2,12 +2,13 @@ Name = "Wave Reality"
 About = "Documents and graphical simulations exploring quantum physics wave equations, including the pilot-wave framework where the quantum wave is physically real."
 
 [Web]
-  # yaegi is loaded when code is first edited (see main)
-  DeferredFunctions = ["github.com/WaveReality/waves/yaegiwaves.BindTextEditor"]
+  # mvm is loaded when code is first edited, and the simulations when the
+  # first one is shown (see main)
+  DeferredFunctions = ["github.com/WaveReality/waves/mvmwaves.BindTextEditor", "github.com/WaveReality/web/sims.Embed"]
   FontText = "āΩ"
 
 [ContentCode]
-  # the Goal interpreter of yaegiwaves does not record math-mode variables in tensorfs
+  # the Goal interpreter of mvmwaves does not record math-mode variables in tensorfs
   GoalRecord = false
   # code blocks use wavesim without importing it
   Imports = ["github.com/WaveReality/waves/wavesim"]
