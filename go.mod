@@ -5,7 +5,7 @@ go 1.27.0
 require (
 	cogentcore.org/core v0.5.11
 	cogentcore.org/lab v0.2.8
-	github.com/WaveReality/waves v1.0.6
+	github.com/WaveReality/waves v1.0.7
 	github.com/stretchr/testify v1.11.1
 )
 
