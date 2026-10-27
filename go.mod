@@ -3,7 +3,7 @@ module github.com/WaveReality/web
 go 1.27.0
 
 require (
-	cogentcore.org/core v0.5.10
+	cogentcore.org/core v0.5.11
 	cogentcore.org/lab v0.2.8
 	github.com/WaveReality/waves v1.0.6
 	github.com/stretchr/testify v1.11.1
