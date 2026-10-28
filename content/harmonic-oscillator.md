@@ -71,6 +71,7 @@ The following simulation shows the behavior of this harmonic oscillator.
 
 {id="sim_sho" title="Simple harmonic oscillator" collapsed="true"}
 ```Goal
+totalTime := 100
 ip := 1.0
 c := 0.2
 mass := 0.5
@@ -81,7 +82,6 @@ freq := 1.0 / lambda
 var massStr, cStr, ipStr, msgStr string
 
 ##
-totalTime := 100
 sp := zeros(totalTime)
 sv := zeros(totalTime)
 pE := zeros(totalTime)
@@ -96,9 +96,8 @@ func valUpdate() {
     csq = c * c
     lambda = (2 * math.Pi * math.Sqrt(mass)) / c
     freq = 1.0 / lambda
+
     ##
-    mf := array(mass)
-    cf := array(csq)
     p := array(ip)
     pp := array(ip)
     pv := array(0.0)
@@ -106,25 +105,23 @@ func valUpdate() {
     v := array(0.0)
     pot := array(0.0)
     kin := array(0.0)
-    ##
-    for t := range 100 {
-        ##
+    for t := range totalTime {
         pv = 1.0 * v  // if no 1.0 * then does direct assignment :(
         pp = 1.0 * p
-        v = pv - (cf * pp) / mf
+        v = pv - (c * pp) / mass
         p = pp + v
         
         mv = 0.5 * (v + pv) // midway
         pot = 0.5 * pp * pp
-        kin = (mv * mv * mf) / (2.0 * cf)
+        kin = (mv * mv * mass) / (2.0 * c)
         
         sp[t] = pp
         sv[t] = pv
         pE[t] = pot
         kE[t] = kin
         tE[t] = pot + kin
-        ##
     }
+    ##
     msgStr = fmt.Sprintf("<b>Total E: %7.3g λ: %7.3g f %7.3g </b>", tE.Float(99), lambda, freq)
 }
 
@@ -276,6 +273,7 @@ The following simple simulation shows the behavior of the complex-valued SHO, us
 
 {id="sim_csho" title="Complex-valued simple harmonic oscillator" collapsed="true"}
 ```Goal
+totalTime := 100
 ip := 1.0
 c := 0.2
 mass := 0.5
@@ -285,7 +283,6 @@ lambda := (2 * math.Pi * math.Sqrt(mass)) / c
 var massStr, cStr, ipStr, msgStr string
 
 ##
-totalTime := 100
 sa := zeros(totalTime)
 sb := zeros(totalTime)
 ##
@@ -295,15 +292,14 @@ func valUpdate() {
     cStr = fmt.Sprintf("c: %4.1f", c)
     ipStr = fmt.Sprintf("start: %4.1f", ip)
     lambda = (2 * math.Pi * math.Sqrt(mass)) / c
+
     ##
     omega := array(c) / sqrt(array(mass))
     aa := array(ip)
     bb := array(0.0)
     pa := array(ip)
     pb := array(0.0)
-    ##
-    for t := range 100 {
-        ##
+    for t := range totalTime {
         pa = 1.0 * aa // if no 1.0 * then does direct assignment :(
         pb = 1.0 * bb
         aa = pa - omega * pb
@@ -311,8 +307,8 @@ func valUpdate() {
         
         sa[t] = pa
         sb[t] = pb
-        ##
     }
+	##
     msgStr = fmt.Sprintf("<b>Total E: %7.3g ω: %7.3g λ: %7.3g </b>", tE.Float(99), omega.Float(0), lambda)
 }
 
@@ -406,6 +402,7 @@ This simulation shows the conserved charge value generated from these phase rela
 
 {id="sim_cc" title="Complex charge" collapsed="true"}
 ```Goal
+totalTime := 100
 ai1 := 1.0
 phase := 90.0
 c := 1.0
@@ -413,14 +410,13 @@ mass := 0.1
 hbar := 0.5
 e := 1.0
 csq := c * c
-mcSqOverH := (mass * csq) / hbar
+omega := (mass * csq) / hbar
 lambda := (hbar * 2.0 * math.Pi) / (mass * c)
 heOver2mCSq := (hbar * e) / (2.0 * mass * csq)
 
 var phaseStr, massStr, hbarStr, msgStr string
 
 ##
-totalTime := 100
 sa1 := zeros(totalTime)
 sb1 := zeros(totalTime)
 sa2 := zeros(totalTime)
@@ -429,10 +425,8 @@ chg := zeros(totalTime)
 ##
 
 func valUpdate() {
-    mcSqOverH = (mass * csq) / hbar
+    omega = (mass * csq) / hbar
     lambda = (hbar * 2.0 * math.Pi) / (mass * c)
-    // heOver2mCSq = (hbar * e) / (2.0 * mass * csq)
-    heOver2mCSq = e
     phaseStr = fmt.Sprintf("phase off: %4.0f", phase)
     massStr = fmt.Sprintf("m_0: %4.1f", mass)
     hbarStr = fmt.Sprintf("hbar: %4.1f", hbar)
@@ -446,29 +440,25 @@ func valUpdate() {
         bi2 = -math.Sqrt(1.0 - ai2 * ai2)
     }
     ##
-    omega := array(mcSqOverH)
-    cf := array(heOver2mCSq)
     a1 := array(ai1)
     b1 := array(0.0)
     a2 := array(ai2)
     b2 := array(bi2)
-    ##
     for t := range 100 {
-        ##
         sa1[t] = a1
         sb1[t] = b1
         sa2[t] = a2
         sb2[t] = b2
-        chg[t] = cf * (b2 * a1 - a2 * b1)
+        chg[t] = c * (b2 * a1 - a2 * b1)
         
         a1 -= omega * b1
         b1 += omega * a1
         
         a2 -= omega * b2
         b2 += omega * a2
-        ##
     }
-    msgStr = fmt.Sprintf("<b>Charge: %7.3g ω: %7.3g λ: %7.3g </b>", chg.Float(99), mcSqOverH, lambda)
+    ##
+    msgStr = fmt.Sprintf("<b>Charge: %7.3g ω: %7.3g λ: %7.3g </b>", chg.Float(99), omega, lambda)
 }
 
 valUpdate()
