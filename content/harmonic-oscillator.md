@@ -444,7 +444,7 @@ func valUpdate() {
     b1 := array(0.0)
     a2 := array(ai2)
     b2 := array(bi2)
-    for t := range 100 {
+    for t := range totalTime {
         sa1[t] = a1
         sb1[t] = b1
         sa2[t] = a2

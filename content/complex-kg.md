@@ -66,6 +66,7 @@ It becomes clear when explicitly written out in this manner that charge represen
 
 {id="sim_cc" title="Complex charge" collapsed="true"}
 ```Goal
+totalTime := 100
 ai := 1.0
 bphase := 90.0
 c := 1.0
@@ -79,7 +80,6 @@ heOverMCSq := (hbar * e) / (mass * csq)
 var bphaseStr, massStr, hbarStr, msgStr string
 
 ##
-totalTime := 100
 sa := zeros(totalTime)
 sb := zeros(totalTime)
 da := zeros(totalTime)
@@ -88,6 +88,7 @@ chg := zeros(totalTime)
 ##
 
 func valUpdate() {
+    csq = c * c
     mcOverHSq = (mass * mass * csq) / (hbar * hbar)
     heOverMCSq = (hbar * e) / (mass * csq)
     bphaseStr = fmt.Sprintf("b phase: %4.0f", bphase)
@@ -95,30 +96,26 @@ func valUpdate() {
     hbarStr = fmt.Sprintf("hbar: %4.1f", hbar)
     bi := ai * float64(math32.Cos(math32.DegToRad(float32(-bphase))))
     bvi := c * math.Sqrt(mcOverHSq) * ai * float64(math32.Sin(math32.DegToRad(float32(-bphase))))
+
     ##
-    cs := array(csq)
-    mf := array(mcOverHSq)
-    cf := array(heOverMCSq)
     ap := array(ai)
     bp := array(bi)
     av := array(0.0)
     bv := array(bvi)
-    ##
-    for t := range 100 {
-        ##
+    for t := range totalTime {
         sa[t] = ap
         sb[t] = bp
         da[t] = av
         db[t] = bv
-        chg[t] = cf * (bp * av - ap * bv)
+        chg[t] = heOverMCSq * (bp * av - ap * bv)
         
-        av -= cs * mf * ap
+        av -= csq * mcOverHSq * ap
         ap += av
         
-        bv -= cs * mf * bp
+        bv -= csq * mcOverHSq * bp
         bp += bv
-        ##
     }
+    ##
     msgStr = fmt.Sprintf("<b>Charge: %7.3g </b>", chg.Float(99))
 }
 
